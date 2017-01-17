@@ -398,3 +398,8 @@ var maxProduct = greatestProduct(matrix);
 console.log(maxProduct);
 // => 57,148,146
 ```
+
+## Extra Resources
+
+- [Functions - Mozilla Developer Network](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Functions)
+- [Arrays - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
