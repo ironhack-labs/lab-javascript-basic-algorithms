@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  color: #47494c;
+  font-weight: lighter;
+}
+
+.backgroundimage {
+   position: relative;
+   background-position: bottom;
+   text-align: center;
+   height: 700px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left:0;
+    right:0;
+    bottom:0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 80px;
+    font-weight: lighter;
+}
+
+.intro {
+  font-family: sans-serif;
+  color: #47494c;
+  font-weight: lighter;
+  text-align: center;
+  padding: 40px 100px 40px 100px;
+  margin: 40px 100px 40px 100px;
+  font-size: 25px;
+  line-height: 1.25em;
+}
+.foodprep {
+  text-align: center;
+  position: relative;
+}
+
+hr { width:70%; height:1px; background: #fff }
+
+#ingredients {
+  padding: 20px 100px;
+  margin: 20px 100px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -20px;
+}
+
+.method {
+  padding: 20px 100px;
+  margin: 20px 100px;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-weight: lighter;
+}
