@@ -1,3 +1,5 @@
+//By Ryan Jones and Darek Glowinski
+
 // Names and Input
 
 
