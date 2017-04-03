@@ -23,10 +23,7 @@ for(var i=0; i<driver1.length; i++) {
 }
 console.log(upperName);
 
-var backWards = "";
-for (var i = hacker2.length - 1; i >= 0; i--){
-  backWards += hacker2[i];
-}
+var backWards = reverseString(hacker2);
 console.log(backWards);
 
 
@@ -37,10 +34,7 @@ var palindrome = prompt("Type new string");
 palindrome = palindrome.replace(/[\s\,]/g, '');
 
 
-var checkPal ="";
-for (var i = palindrome.length - 1; i >=0; i--){
-  checkPal += palindrome[i];
-}
+var checkPal = reverseString(palindrome);
 
 if (palindrome === checkPal){
   console.log("It is a palindrome");
@@ -58,7 +52,6 @@ Maecenas vitae velit pretium, blandit odio a, aliquam nunc. Aliquam pretium, tur
 
 
 var words = string.split(' ');
-console.log(words);
 var split = words.length;
 console.log("There are " + split + "words");
 
@@ -70,3 +63,10 @@ for(var i = 0; i<words.length; i++ ) {
 }
 
 console.log("Et appears "+etCount+" times");
+
+function reverseString(string) {
+  var result = "";
+  for (var i = string.length - 1; i >= 0; i--){
+    result += string[i];
+  }
+}
