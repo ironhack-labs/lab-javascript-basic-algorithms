@@ -8,17 +8,11 @@ if(hacker1.length > hacker2.length){
 }else if( hacker1.length < hacker2.length){
   console.log("yo, navigator got the longuest name, it has "+ hacker2.length + " characters");
 
-  console.log("wow, you both got equally long names, "+ hacker1.length +" characters");
+
 }else{
+console.log("WOOOW, you both got equally long names, "+ hacker1.length +" characters");
 }
-  /*var seperator = "", result1 = "";
 
-  //for(var i =0; i < hacker1.length; i++){
-
-
-  result1 =  hacker1.split(seperator);
-  console.log(result1);
-  */
 
   for (var i=0; i<hacker1.length; i++){
    var hacker1Up = hacker1.toUpperCase();
@@ -26,20 +20,6 @@ if(hacker1.length > hacker2.length){
 
 
   }
-  /*function separateUppercase(hacker1){
-    var x= 0;
-    var separateName = "";
-
-    while (x<hacker1.length){
-      separateName = separateName + hacker1.charAt(x);
-      x++;
-    }
-    return separateName;
-  }
-
-
-  separateUppercase(hacker1);*/
-
 
   function invertWord(hacker2){
     var x=hacker2.length;
@@ -53,22 +33,6 @@ if(hacker1.length > hacker2.length){
   }
   invertWord(hacker2);
 
-
-
-  /*var newArray = [hacker1, hacker2];
-  function alfabet() {
-    newArray.sort();
-    if (hacker1 == newArray[0]){
-      console.log("The driver's name goes first "+ hacker1);
-    }else if(hacker2 == newArray[0]){
-      console.log("Yo, the navigator goes first definitely "+ hacker2);
-
-    }else{
-      console.log("What?! You both got the same name?");
-    }
-    console.log(newArray);
-  }
-  alfabet();*/
   var array = [hacker1, hacker2];
 console.log("Unordered array ---", array, "------------‘");
 
@@ -93,5 +57,31 @@ array.sort(function(a,b) {
 
 console.log("Ordered array ---", array, "------------");
 
-// return logic
+var palindrome = prompt("type in your word");
+var invertedWord = "";
+var as1 = palindrome.replace(" ",""); //remove space
+var as2 = as1.replace(/[^0-9a-z]/gi, "");  //remove symbols
+var as3 = as2.toLowerCase(); //lower case
+
+console.log("show the word without space and signs:  " + as3); //shows the word
+
+function CheckPalindrome(as3){ //function to check if palindrome
+  var x= as3.length;
+  var invertedWord = "";
+
+  while(x>=0){
+    invertedWord=invertedWord + as3.charAt(x);
+    x--;
+  }
+  console.log(invertedWord); //inverst the word
+
+ if (invertedWord === as3) //checks if the inverted word is the same as as3
+ {
+   console.log("true");
+ } else {
+   console.log("not true");
+ }
+}
+
+CheckPalindrome(as3);
 // Lorem ipsum generator
