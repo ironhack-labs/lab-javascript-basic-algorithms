@@ -51,17 +51,14 @@ for (i=0; i < hacker1.length; i++) {
   
   if (letterPosition1 < letterPosition2) {
     console.log("The driver's name goes first");
-    break;
   }
   
   else if (letterPosition1 > letterPosition2) {
     console.log("Yo, the navigator goes first definitely");
-    break;
   }
   
-  if (i== hacker1.length-1) {
+  else if (i== hacker1.length-1) {
     console.log("The driver's name goes first");
-    break;
   }
 }
 
