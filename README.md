@@ -36,9 +36,7 @@ When you are done and you have checked that everything works fine, go to https:/
  
  ![](https://i.imgur.com/ux5em6j.png)
 
-:::info
 **Remember:** Remember to add the extension of the file `fileName`**.js** in the *"Filename including extension"* input box so you can enjoy [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting) in your gist
-:::
  
 ## Exercise
 
