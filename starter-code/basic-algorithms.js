@@ -32,7 +32,7 @@ function splitAndUpper(str){
   var name = "";
   for(i=0; i< str.length; i++){
     name += str[i] ;
-    name += " "
+    name += " ";
   }
 
   console.log(name.toUpperCase());
