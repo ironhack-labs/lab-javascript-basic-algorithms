@@ -1,3 +1,6 @@
+
+//Random message
+
 // Names and Input
 
 var hacker1 = Manu;
