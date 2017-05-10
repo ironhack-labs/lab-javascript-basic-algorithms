@@ -1,3 +1,6 @@
+
+"ejem"
+
 ![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
 # JS | Basic Algorithms
@@ -33,18 +36,18 @@ Ready to start?
 ## Submission
 
 When you are done and you have checked that everything works fine, go to https://gist.github.com/, create a new [secret gist](https://help.github.com/articles/about-gists/#secret-gists) and send it to your Instructor.
- 
+
  ![](https://i.imgur.com/ux5em6j.png)
 
 **Remember:** Remember to add the extension of the file `fileName`**.js** in the *"Filename including extension"* input box so you can enjoy [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting) in your gist
- 
+
 ## Exercise
 
 ### Names and Input
 
 1. Create a variable `hacker1` with the driver's name
 
-2. Print `"The driver's name is XXXX"` 
+2. Print `"The driver's name is XXXX"`
 
 3. Create a variable `hacker2` and [ask the user](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) for the navigator's name
 
@@ -53,7 +56,7 @@ When you are done and you have checked that everything works fine, go to https:/
 ### Conditionals
 
 5. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
-	- `The Driver has the longest name, it has XX characters` or 
+	- `The Driver has the longest name, it has XX characters` or
 	- `Yo, navigator got the longest name, it has XX characters` or
 	- `wow, you both got equally long names, XX characters!!`
 
@@ -61,10 +64,10 @@ When you are done and you have checked that everything works fine, go to https:/
 
 6. Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
   ie. `"J O H N"`
-  
-7. Print all the characters of the navigator's name, in reverse order. 
+
+7. Print all the characters of the navigator's name, in reverse order.
   ie. `"nhoJ"`
-  
+
 8. Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print:
   - `The driver's name goes first`
   - `Yo, the navigator goes first definitely`
