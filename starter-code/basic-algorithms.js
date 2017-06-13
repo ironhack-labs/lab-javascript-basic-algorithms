@@ -25,12 +25,18 @@ if(hacker1>hacker2){
   console.log('What?! You both got the same name?');
 }
 
+//Loops
+var driversCapitalizedWithSpaces = ''
+for (var i=0; i<hacker1Length; i++) {
+  driversCapitalizedWithSpaces += hacker1[i].toUpperCase() + ' '
+}
+
+console.log(driversCapitalizedWithSpaces);
+
 function palindrome(str) {
- // Step 1. The first part is the same as earlier
- var re = /[^A-Za-z0-9]/g; // or var re = /[\W_]/g;
+ var re = /[^A-Za-z0-9]/g; 
  str = str.toLowerCase().replace(re, '');
 
-// Step 2. Create the FOR loop
  var len = str.length;
  for (var i = 0; i < len/2; i++) {
    if (str[i] !== str[len - 1 - i]) {
@@ -40,6 +46,7 @@ function palindrome(str) {
 }
  return true; 
 }
+
 palindrome(hacker1);
 
 // Lorem ipsum generator
