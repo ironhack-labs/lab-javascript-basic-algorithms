@@ -255,6 +255,10 @@ console.log(howManyDog);
 
 In the 20×20 grid below; What is the greatest product of four adjacent numbers in the same direction (up, down, left, right)?
 
+For example for the 08 we have at position [0][0], we will get 98 because we have to multiply 02(right) * 49(down). That´s all because we do not have any number to its left or up.
+
+Another example could the 49 that we have at position [1][1], the product will be 475.398 because we will multiply 02(up) * 99(right) * 49(down) * 49(left).
+
 ```javascript
 var matrix = [
   [08,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,08],
