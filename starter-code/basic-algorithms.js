@@ -63,4 +63,4 @@ for(var i = 0; i < s2.length; i++){
 if(s2.length > 0){
   count++;
 }
-console.log("Count: " + count +"\n" + "et Count: " + etCount);
+console.log("Word Count: " + count +"\n" + "et Count: " + etCount);
