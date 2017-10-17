@@ -50,7 +50,11 @@ for (var i= s.length -1; i >= 0; i-=1) {
 
 
 //Lorem ipsum generator----------------
-var s2 = "Hello world et et et";
+var s2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nibh nisl. Quisque eleifend egestas lorem, a egestas orci cursus id. Vestibulum faucibus efficitur nisl non mollis. Aliquam leo elit, scelerisque id lectus sit amet, congue congue risus. Nunc in lorem nisi. Maecenas porttitor arcu nec pharetra pulvinar. In posuere sagittis urna, non ullamcorper ante suscipit vel. Donec laoreet mi consectetur vulputate rutrum."
+
+"Morbi sit amet augue nibh. Fusce sed dolor sed sapien pretium mollis. Ut justo enim, tristique eget risus a, venenatis tempor mauris. Praesent quis gravida ligula, ac rutrum urna. Donec sed semper orci. Aliquam ullamcorper eros at mattis cursus. Nullam lacus risus, auctor in volutpat ut, sollicitudin sed urna. In hac habitasse platea dictumst. In ut leo neque. Nunc id mollis enim, at malesuada neque. Ut venenatis mauris sem, a consectetur neque rhoncus sed. Duis tempus, leo id sagittis tempor, quam urna auctor dolor, interdum tincidunt orci neque ac justo. Pellentesque molestie fermentum nunc eu iaculis. Aliquam fringilla interdum gravida. Sed venenatis lorem ipsum, sit amet commodo nisl fermentum congue."
+
+"Cras at euismod elit, nec laoreet est. Suspendisse at quam at ligula bibendum lacinia. Curabitur cursus leo sit amet lorem molestie, eget efficitur odio suscipit. Phasellus mattis et lacus id tempor. Nunc sed dui id orci sollicitudin tempor. In mi elit, cursus at sem non, aliquam mollis erat. Donec dapibus, ex id dapibus consectetur, eros turpis vehicula elit, sit amet hendrerit nibh risus at erat. Maecenas interdum a velit ac ultrices.";
 var count = 0;
 var etCount = 0;
 for(var i = 0; i < s2.length; i++){
