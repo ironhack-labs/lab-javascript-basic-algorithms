@@ -40,4 +40,6 @@ if(hacker1.localeCompare(hacker2) < 0){
   console.log("Yo, the navigator goes first definitely");
 } else console.log("What?! You both got the same name?");
 
+//9
+
 // Lorem ipsum generator
