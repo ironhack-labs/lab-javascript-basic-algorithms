@@ -41,5 +41,12 @@ if(hacker1.localeCompare(hacker2) < 0){
 } else console.log("What?! You both got the same name?");
 
 //9
+var newPhrase = prompt("Escriba una frase: ");
+
+if(newPhrase.replace(/\s|,|\!|\?/g, '').toLowerCase() === newPhrase.replace(/\s|,|\!|\?/g, '').split("").reverse().join("").toLowerCase()){
+  console.log("This phrase is a Palindrome");
+} else console.log("This a normal phrase");
+
+//10
 
 // Lorem ipsum generator
