@@ -31,3 +31,12 @@ for (var i = hacker2.length - 1; i >= 0; i--) {
 }
 
 console.log(reverseString);
+
+// lexographic order
+if (hacker1 < hacker2) {
+  console.log("The driver's name goes first");
+} else if ( hacker2 < hacker1) {
+  console.log("Yo, the navigator goes first definitely");
+} else {
+  console.log("What?! You both got the same name?");
+}
