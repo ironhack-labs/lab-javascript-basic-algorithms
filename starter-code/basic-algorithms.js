@@ -16,4 +16,12 @@ if(len1 > len2) {
   console.log("wow, you both got equally long names, " + len1 + " characters!!")
 }
 
+//Loops
+hacker1 = hacker1.toUpperCase();
+var uCaseDriver;
+for( i=0; i < len1; i++){
+  uCaseDriver[i] = hacker1[i];
+}
+console.log(uCaseDriver);
+
 // Lorem ipsum generator
