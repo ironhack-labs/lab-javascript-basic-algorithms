@@ -40,3 +40,19 @@ if (hacker1 < hacker2) {
 } else {
   console.log("What?! You both got the same name?");
 }
+
+// bonus
+
+var userInput = window.prompt("Please enter a word to check if it is a Palindrome");
+var inputUppercase = userInput.toUpperCase();
+var halfString = Math.floor(inputUppercase.length / 2);
+
+for(var i = 0; i < halfString; i++) {
+  if (inputUppercase[i] !== inputUppercase[inputUppercase.length - i - 1]) {
+    console.log("The word is not a palindrome");
+    break;
+  } else {
+    console.log("The word is a palindrome");
+    break;
+  }
+}
