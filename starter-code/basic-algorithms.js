@@ -38,4 +38,28 @@ else
 {
     console.log("What?! You both got the same name?");
 }
+
+//Palindrome
+var palindrome = window.prompt("Please insert a palindrome","Palindrome");
+
+palindrome = palindrome.replace(/[^a-zA-Z0-9! ]+/g, "").toUpperCase;
+
+var isFalse = false;
+
+for(var j=0;j<palindrome.length-1;j++)
+{
+    if(palindrome[j] != palindrome[palindrome.length-1-j])
+    {
+        isFalse = true;
+    }
+}
+
+if(isFalse)
+{
+    console.log("The sentence is not a palindrome.");
+}
+else
+{
+    console.log("The sentence is a palindrome.");
+}
 // Lorem ipsum generator
