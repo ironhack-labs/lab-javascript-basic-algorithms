@@ -47,6 +47,7 @@ if(newPhrase.replace(/\s|,|\!|\?/g, '').toLowerCase() === newPhrase.replace(/\s|
   console.log("This phrase is a Palindrome");
 } else console.log("This a normal phrase");
 
+// Lorem ipsum generator
 //10
 var paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum, diam in maximus pulvinar, nibh dolor aliquam sem, quis tempor tortor turpis at justo. Sed velit tortor, pharetra tristique nulla sed, finibus finibus arcu. Integer sollicitudin mattis nisi, quis lacinia eros placerat at. Aliquam viverra bibendum justo. Phasellus et justo sit amet nibh mollis dictum sed eget felis. Vestibulum suscipit dolor tempus enim vestibulum pulvinar. Integer faucibus quam in dapibus volutpat. Cras sed consequat leo. Nunc mollis facilisis dui a tincidunt. Vivamus semper vitae odio quis venenatis." + " " +
 "Aliquam aliquam, tortor a elementum vehicula, mauris sapien facilisis leo, vel auctor purus risus et massa. Phasellus at ante ex. In turpis justo, placerat nec odio vel, mollis aliquet urna. Cras tincidunt scelerisque dui, in pulvinar tortor pharetra at. Fusce lacinia, nisi vitae efficitur laoreet, est risus pharetra leo, sit amet sollicitudin urna mi a lectus. Praesent sodales eu nunc congue mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean tortor nisi, venenatis ut eleifend sit amet, porta nec ante. Sed imperdiet elit vitae dignissim aliquam." + " " +
@@ -57,5 +58,3 @@ var etWord = (paragraph.split(" et ").length - 1) + (paragraph.split(" et.").len
 
 console.log("Number of words: " + words);
 console.log("Number of 'et': " + etWord);
-
-// Lorem ipsum generator
