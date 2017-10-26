@@ -23,11 +23,8 @@ if(len1 > len2) {
 
 //Loops
 //6
-var uCaseDriver = "";
-for( i=0; i < len1; i++){
-  uCaseDriver += hacker1.toUpperCase()[i] + " ";
-}
-uCaseDriver = uCaseDriver.slice(0, uCaseDriver.length-1);
+var uCaseDriver = hacker1.toUpperCase();
+uCaseDriver = uCaseDriver.split("").join(" ");
 console.log(uCaseDriver);
 
 //7
