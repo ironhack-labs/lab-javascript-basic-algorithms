@@ -52,14 +52,9 @@ var paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras i
 "Aliquam aliquam, tortor a elementum vehicula, mauris sapien facilisis leo, vel auctor purus risus et massa. Phasellus at ante ex. In turpis justo, placerat nec odio vel, mollis aliquet urna. Cras tincidunt scelerisque dui, in pulvinar tortor pharetra at. Fusce lacinia, nisi vitae efficitur laoreet, est risus pharetra leo, sit amet sollicitudin urna mi a lectus. Praesent sodales eu nunc congue mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean tortor nisi, venenatis ut eleifend sit amet, porta nec ante. Sed imperdiet elit vitae dignissim aliquam." + " " +
 "Suspendisse convallis sem eu diam consectetur porta. Nulla dolor ante, semper non turpis vitae, pretium blandit sem. Cras et lacus vulputate, facilisis velit eu, tempus lorem. Vestibulum nec lectus dolor. Cras pretium cursus nibh, a mollis tellus rutrum ac. Etiam nibh magna, faucibus ut rhoncus vitae, eleifend id diam. Aliquam ut massa vitae magna scelerisque sodales. Fusce ac dictum est. Aliquam feugiat pulvinar lorem nec dictum. Nulla facilisi. Pellentesque vitae ante lorem. Morbi eu scelerisque turpis, vel commodo nibh."
 
-var words = 0;
-var etWord = 0;
+var words = paragraph.split(' ').length;
+var etWord = (paragraph.split(" et ").length - 1) + (paragraph.split(" et.").length - 1);
 
-for(i = 0; i < paragraph.length; i++){
-  words = paragraph.split(' ').length;
-  /*Posible solución -----> if(paragraph[i] === " " || paragraph[i] === "." && paragraph[i+1] !== " ") words++;*/
-  etWord = (paragraph.split(" et ").length - 1) + (paragraph.split(" et.").length - 1);
-}
 console.log("Number of words: " + words);
 console.log("Number of 'et': " + etWord);
 
