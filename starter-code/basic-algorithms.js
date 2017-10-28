@@ -1,4 +1,5 @@
 // Names and Input
+
 var hacker1 = "Marco";
 
 console.log("The driver's name is " + hacker1);
@@ -9,7 +10,9 @@ console.log("The navigator's name is " + hacker2);
 
 var len1 = hacker1.length;
 var len2 = hacker2.length;
+
 //Conditionals
+
 if(len1 > len2) {
   console.log("The Driver has the longest name, it has " + len1 + " characters");
 } else if(len1 < len2){
@@ -17,4 +20,11 @@ if(len1 > len2) {
 } else {
   console.log("wow, you both got equally long names, " + len1 + " characters!!");
 }
-// Lorem ipsum generator
+
+// Loops
+
+var driverName0 = hacker1.toUpperCase();
+var driverName1 = driverName0.split("").join(" ");
+console.log(driverName1);
+
+console.log(hacker2.split("").reverse().join(""));
