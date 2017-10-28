@@ -3,8 +3,6 @@ console.log("The driver's name is " + hacker1);
 var hacker2 = prompt("Whats your name?");
 console.log("The navigator's name is " + hacker2);
 
-var longitud1 = hacker1.length;
-var longitud2 = hacker2.length;
 
 if (hacker1.lenght > hacker2.length) {
   console.log("The driver has the longest name! It has " + hacker1.length + "characters");
