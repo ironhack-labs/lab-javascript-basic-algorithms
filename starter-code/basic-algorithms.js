@@ -1,8 +1,6 @@
-// Names and Input
-
 var hacker1 = "Cristina";
 var hacker2 = prompt("What is Your name?");
-var text;
+
 
 console.log( "The driver name is: " + hacker1);
 console.log( "The navigators name is: " + hacker2);
@@ -17,20 +15,22 @@ console.log( "The navigators name is: " + hacker2);
         console.log("wow, you both got equally long names" + hacker1.length + "characters!!");
      }
 
-//conditionals with switch
+//conditionals with switch ¿Por qué se va al default?
 
-switch (text){
+
+switch (hacker2){
 case "driver":
   if (hacker1.length>hacker2.length){
       console.log("The Driver has the longest name, it has" + hacker1.length + "characters");}
   break;
 case "navigator":
-  if (hacker2.length>hacker1.length){
+  if (hacker1.length<hacker2.length){
     console.log("Yo, navigator got the longest name, it has" + hacker2.length + "characters");}
   break;
 default:
-    console.log("wow, you both got equally long names" + hacker1.length + "characters!!");
+    console.log("wow, you both got equally long names " + hacker1.length + " characters!!");
     }
+
 
 //Cristina reverse
 
@@ -58,35 +58,6 @@ solution+=hacker1[i]+" ";
   return solution;
 }
 spaceHacker(hacker1);
-
-//Apuntes para recordad como print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
-
-function reverseString(myString) {
-    // Step 1. Create an empty string that will host the new created string
-    var newString = "";
-
-    // Step 2. Create the FOR loop
-    /* The starting point of the loop will be (str.length - 1) which corresponds to the
-       last character of the string, "o"
-       As long as i is greater than or equals 0, the loop will go on
-       We decrement i after each iteration */
-    for (var i = myString.length - 1; i >= 0; i--) {
-        newString += myString[i]; // or newString = newString + str[i];
-    }
-    /* Here hello's length equals 5
-        For each iteration: i = str.length - 1 and newString = newString + str[i]
-        First iteration:    i = 5 - 1 = 4,         newString = "" + "o" = "o"
-        Second iteration:   i = 4 - 1 = 3,         newString = "o" + "l" = "ol"
-        Third iteration:    i = 3 - 1 = 2,         newString = "ol" + "l" = "oll"
-        Fourth iteration:   i = 2 - 1 = 1,         newString = "oll" + "e" = "olle"
-        Fifth iteration:    i = 1 - 1 = 0,         newString = "olle" + "h" = "olleh"
-    End of the FOR Loop*/
-
-    // Step 3. Return the reversed string
-    return newString; // "olleh"
-}
-
-reverseString(myString);
 
 //Depending on the lexicographic order of the strings, print:
 //The driver's name goes first
@@ -119,13 +90,15 @@ console.log ("Yo, the navigator's name: " + hacker2 + " goes first");
 
 
 //Go to lorem ipsum generator and:
-
-var loremIpsum = "Lorem ipsum dolor sit amet. Suspendisse sodales elementum odio, ac elementum est pellentesque in. Duis cursus nulla at quam venenatis, vel finibus tortor cursus.";
-
 //Generate 3 parragraphs. Store the text in a String
+
+
+var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
 
 //Make your program count the number of words in the string
 
 console.log("Lorem Ipsum tiene: " + loremIpsum.split(" ").length + " palabras");
 
 //Make your program count the number of times the latin word etappears
+
+console.log("Lorem Ipsum has: " + loremIpsum.match(/et/g).length + "et");
