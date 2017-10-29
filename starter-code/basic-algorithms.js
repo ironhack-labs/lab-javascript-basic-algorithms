@@ -20,9 +20,7 @@ if(hacker1.length > hacker2.length) {
 
 // Loops
 
-var driverName0 = hacker1.toUpperCase();
-var driverName1 = driverName0.split("").join(" ");
-console.log(driverName1);
+console.log(hacker1.toUpperCase().split("").join(" "));
 
 console.log(hacker2.split("").reverse().join(""));
 
@@ -34,7 +32,13 @@ if (compare <= -1){
   console.log("Yo, the navigator goes first definitely");
 } else console.log("What?! You both got the same name?");
 
-// Bonus Time!
+// Bonus Time! - Palindrome
 
 var tryPalindrome = prompt("Write a text, we check if it is a palindrome");
 console.log("Sorry, we are working on this function");
+
+// Bonus Time! - Lorem ipsum
+
+var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed purus ut diam varius rhoncus vitae vel augue. In bibendum augue arcu, sit amet egestas dui suscipit vel. In hac habitasse platea dictumst.";
+console.log("Lorem ipsum has " + loremIpsum.length + " words.");
+console.log("Lorem ipsum has " + loremIpsum.match(/et/g) .length + " latin words with -et");
