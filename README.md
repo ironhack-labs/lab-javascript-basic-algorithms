@@ -6,15 +6,12 @@
 
 In this exercise you will apply:
 
-- Array iteration tecniques
+- Array iteration techniques
 - Using functions to manipulate and transform arrays
-
 
 ## Introduction
 
 Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
-
-Let's put this into practice. Use [https://repl.it/](https://repl.it/) to complete the following exercises with your partner.
 
 ## Requirements
 
@@ -27,53 +24,89 @@ Let's put this into practice. Use [https://repl.it/](https://repl.it/) to comple
 Upon completion, run the following commands
 ```
 $ git add .
-$ git commit -m "done"
+$ git commit -m 'done'
 $ git push origin master
 ```
 Navigate to your repo and create a Pull Request -from your master branch to the original repository master branch.
 
-In the Pull request name, add your name and last names separated by a dash "-"
+In the Pull request name, add your name and last names separated by a dash '-'
+
+## Testing Introduction
+
+### What is testing?
+
+Software testing is a process of executing an application to validate and verify that it meets the business and technical requirements and works as expected.
+
+Testing is a process, not a single activity. So the process of designing tests early at the beginning of the development and the product's lifecycle can help to prevent deficiencies in the code or product design.
+
+We have created all the tests you need to create the solution, and you have to execute them all and create the code to accomplish all the requirements.
+
+Tests prove that your code actually works in every situation in which it’s designed to work. Even when you are improving the design or creating new features, you can change your current code without breaking what already works.
+
+### Testing with Jasmine
+
+![Jasmine Logo](https://i.imgur.com/A1pop7h.png)
+
+Jasmine is an automated testing framework for JavaScript. It is designed to be used in BDD (behavior-driven development) programming which focuses more on the business value than on the technical details.
+
+We have already included Jasmine in the project you just forked, so let's see how to use it to implement our code.
+
+### Usage
+
+Before start coding, we will explain the project structure we have provided you:
+
+```
+starter-code/
+├── jasmine
+│   ├── jasmine-2.8.0/
+│   |   └── ...
+├── src
+│   └── functions-and-arrays.js
+├── tests
+│   └── FunctionsAndArraysSpec.js
+└─ SpecRunner.html
+```
+
+We will be working with the `functions-and-arrays.js` file inside the `src` folder. In the `jasmine` folder you can find all the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
+
+**Run tests**
+
+Run the tests with Jasmine is super easy, you just have to open the `SpecRunner.html` file in your browser. You will find something like this:
+
+![image](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)
+
+**Pass the tests**
+
+You have to write your code on the `src/functions-and-arrays.js` file. Following the instructions, you should go step by step passing all the tests. 
+
+Do not rush to go through all of them at once, take your time to read carefully about what the iteration is asking you, and solve the errors one by one. 
+
+When coding with tests, is super important to read and understand the errors we are having for each test, this way we will know what it expect from your code.
 
 ## Deliverables
 
-A single JavaScript file will be enough for now.
+All our work will be located in the `functions-and-arrays.js` file, so that will be enough. Anyway, you have to `push` the whole repo to Github.
 
 ## Find the maximum
 
-Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
-
-**Starter Code**
-
-```javascript
-function maxOfTwoNumbers(first, second){
-  // Your Code Here
-}
-
-var largest = maxOfTwoNumbers(2, 6);
-console.log(largest);
-// 6
-```
+Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest. 
 
 ## Finding Longest Word
 
-Write a function `findLongestWord` that takes an array of words and returns the length of the longest one.
+Write a function `findLongestWord` that takes an array of words and returns the length of the longest one. If there are 2 with the same length, it should return the first occurrence. 
 
 **Starter Code**
 
 ```javascript
 var words = [
-  "mystery",
-  "brother",
-  "aviator",
-  "crocodile",
-  "pearl",
-  "orchard",
-  "crackpot"
+  'mystery',
+  'brother',
+  'aviator',
+  'crocodile',
+  'pearl',
+  'orchard',
+  'crackpot'
 ];
-
-var longest = findLongestWord(words);
-console.log(longest);
-// crocodile
 ```
 
 ## Calculating a Sum
@@ -82,21 +115,12 @@ Calculating a sum is as simple as iterating over an array and adding each of the
 
 Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far.
 
-Calculate the sum of the following array:
-
-```javascript
-var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
-```
+Create a `sumArray` function that takes an array of numbers as a parameter, and calculate the sum of all its numbers:
 
 **Starter Code**
 
 ```javascript
-function sumArray(array){
-// Your Code here
-}
-
-var total = sumArray(numbers);
-// 87
+var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
 ## Calculate the Average
@@ -108,156 +132,109 @@ Calculating an average is an extremely common task.  Let's practice it a bit.
 1. Find the sum as we did in the first exercise
 2. Take the sum from step 1, and divide it by the number of elements in the list.
 
-
 ### Level 1: Array of Numbers
 
-Write code to calculate the average of the following array:
+Write a function `averageNumbers` that receives an array of numbers and calculate the average of the numbers:
+
+**Starter Code**
 
 ```javascript
 var numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
-**Starter Code**
-
-```javascript
-function averageNumbers(array){
-  // Your code here
-}
-
-var average = averageNumbers(numbers);
-console.log(average);
-// 6
-```
-
 ### Level 2: Array of Strings
 
-Write code to calculate the average *length* of the strings inside of the following array:
+Write a function `averageWordLength` that receives an array of words and calculate the average length of the words:
+
+**Starter Code**
 
 ```javascript
 var words = [
-	"seat",
-	"correspond",
-	"linen",
-	"motif",
-	"hole",
-	"smell",
-	"smart",
-	"chaos",
-	"fuel",
-	"palace"
+    'seat',
+    'correspond',
+    'linen',
+    'motif',
+    'hole',
+    'smell',
+    'smart',
+    'chaos',
+    'fuel',
+    'palace'
 ];
-```
-
-**Starter Code**
-
-```javascript
-function averageWordLength(array){
-  // Your code here
-}
-
-var averageLength = averageNumbers(words);
-console.log(averageLength);
-// 5.3
 ```
 
 ## Unique Arrays
 
 Take the following array, remove the duplicates, and return a new array. You're more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) function.
 
-Do this in the form of a function.
+Do this in the form of a function `uniquifyArray` that receives an array of words as a parameter.
 
 **Starter Code**
 
 ```javascript
-function uniquifyArray(array){
-  // Your code here
-}
-
 var words = [
-  "crab",
-  "poison",
-  "contagious",
-  "simple",
-  "bring",
-  "sharp",
-  "playground",
-  "poison",
-  "communion",
-  "simple",
-  "bring"
+  'crab',
+  'poison',
+  'contagious',
+  'simple',
+  'bring',
+  'sharp',
+  'playground',
+  'poison',
+  'communion',
+  'simple',
+  'bring'
 ];
 
-var uniqued = uniquifyArray(words);
-console.log(uniqued);
-// ["crab", "poison", "contagious", "simple", "bring", "sharp", "playground", "communion"]
 ```
 
 ## Finding Elements
 
 Let's create a simple array search.
 
-Write a function that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise return `false`. **Don't** use `indexOf` for this one. :)
+Write a function `doesWordExist` that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise, return `false`. **Don't** use `indexOf` for this one. :)
 
 **Starter Code**
-
 ```javascript
 var words = [
-  "machine",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "truth",
-  "disobedience"
+  'machine',
+  'subset',
+  'trouble',
+  'starting',
+  'matter',
+  'eating',
+  'truth',
+  'disobedience'
 ];
-
-var hasMatter = doesWordExist(words, "matter");
-console.log(hasMatter);
-// true
-
-var hasDog = doesWordExist(words, "dog");
-console.log(hasDog);
-// false
 ```
 
 ## Counting Repetion
 
-Write a function that will take in an array of words as one argument, and a word to search for as the other. The function will return the number of times that word appears in the array.
+Write a function `howManyTimes` that will take in an array of words as one argument, and a word to search for as the other. The function will return the number of times that word appears in the array.
 
 **Starter Code**
 
 ```javascript
 var words = [
-  "machine",
-  "matter",
-  "subset",
-  "trouble",
-  "starting",
-  "matter",
-  "eating",
-  "matter",
-  "truth",
-  "disobedience"
-  "matter"
+  'machine',
+  'matter',
+  'subset',
+  'trouble',
+  'starting',
+  'matter',
+  'eating',
+  'matter',
+  'truth',
+  'disobedience'
+  'matter'
 ];
-
-var howManyMatter = howManyTimes(words, "matter");
-console.log(howManyMatter);
-// 4
-
-var howManyDog = howManyTimes(words, "dog");
-console.log(howManyDog);
-// 0
 ```
 
 ## Bonus Quest
 
 In the 20×20 grid below; What is the greatest product of four adjacent numbers in the same direction (up, down, left, right)?
 
-For example for the 08 we have at position [0][0], we will get 98 because we have to multiply 02(right) * 49(down). That´s all because we do not have any number to its left or up.
-
-Another example could the 49 that we have at position [1][1], the product will be 475.398 because we will multiply 02(up) * 99(right) * 49(down) * 49(left).
+Write a function `greatestProduct` to find the answer!
 
 ```javascript
 var matrix = [
@@ -282,13 +259,4 @@ var matrix = [
   [20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54],
   [01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48],
 ];
-
-var maxProduct = greatestProduct(matrix);
-console.log(maxProduct);
-// => 57,148,146
 ```
-
-## Extra Resources
-
-- [Functions - Mozilla Developer Network](https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Functions)
-- [Arrays - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
