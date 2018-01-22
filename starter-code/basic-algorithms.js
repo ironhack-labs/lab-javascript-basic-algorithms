@@ -20,24 +20,29 @@ if (hacker1.length > hacker2.length) {
     }
     
   // Loops for Printing Names
+  console.log();
+  
     for (var i = 0; i < hacker1.length; i++) {
       console.log(hacker1[i].toUpperCase() + " ")
     }
+    
+    console.log();
     
   for (var i = hacker2.length - 1; i >= 0; i--) {
     console.log(hacker2[i]);
   }
   
+  console.log();
+  
   // Task 8. not sure how to run the code.
   for (var i = 0; i < hacker1.length && hacker2.length; i++) {
-    
-    if (hacker1[0] > hacker2[0]) {
+  
+    if (hacker1[0] < hacker2[0]) {
       console.log("The driver's name goes first")
-    } else if (hacker1[i] < hacker2[0]) {
+    } else if (hacker1[0] > hacker2[0]) {
       console.log("Yo, the navigator goes first definitely");
     } else {
       console.log("What?! You both got the same name?");
     }
-  }
-
-// Lorem ipsum generator
+    
+}
