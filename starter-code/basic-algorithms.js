@@ -35,8 +35,6 @@ for (var i = hacker2.length - 1; i >= 0; i--) {
 console.log("--------");
 
 
-
-
 for (var i = 0; i < hacker1.length && hacker2.length; i++) {
   
   if (hacker1[0] < hacker2[0]) {
@@ -51,12 +49,3 @@ for (var i = 0; i < hacker1.length && hacker2.length; i++) {
 
 
 console.log("---------");
-
-
-
-
-
-
-
-
-
