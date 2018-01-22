@@ -34,9 +34,24 @@ for (var i = hacker2.length - 1; i >= 0; i--) {
 
 console.log("--------");
 
+
+
+
 for (var i = 0; i < hacker1.length && hacker2.length; i++) {
-    return hacker1.split('').sort().join('');
+  
+  if (hacker1[0] < hacker2[0]) {
+    console.log("The driver's name goes first")
+  } else if (hacker2[0] > hacker1[0]) {
+    console.log("Yo, the navigator goes first definitely");
+  } else {
+    console.log("What?! You both got the same name?");
+  }
+  
 }
+
+
+console.log("---------");
+
 
 
 
