@@ -1,7 +1,3 @@
-// Names and Input
+var hacker1 = "Lexy";
+console.log("The drivers name is " + hacker1);
 
-
-//Conditionals
-
-
-// Lorem ipsum generator
