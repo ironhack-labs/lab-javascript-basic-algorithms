@@ -16,8 +16,6 @@ else{
   console.log('wow you both got equally long names, '  + hacker1.length + ' characters!!')
 }
 
-
-// Lorem ipsum generator
 var caps=""
 for (var j=0; j<hacker1.length; j++){
   caps += hacker1[j].toUpperCase() + " "
@@ -29,3 +27,37 @@ for (var i=(hacker2.length)-1; i>-1; i--){
   backwards += hacker2[i];
 }
 console.log(backwards)
+
+
+if(hacker2.length<=hacker1.length){
+  for(var k=0; k<hacker2.length; k++){
+    if (hacker1[k]<hacker2[k]){
+      console.log("The driver's name goes first");
+      break;
+    }
+    else if(hacker1[k]>hacker2[k]){
+      console.log('Yo the navigator definitely goes first ');
+      break;
+    }
+    else if(hacker1[k]===hacker2[k] && k===(hacker2.length-1)){
+      console.log("What?! You both got the same name?");
+    }
+  }
+  }
+  else{
+    for(var k=0; k<hacker1.length; k++){
+    if (hacker1[k]<hacker2[k]){
+      console.log("The driver's name goes first");
+      break;
+    }
+    else if(hacker1[k]>hacker2[k]){
+      console.log('Yo the navigator goes first definitely');
+      break;
+    }
+    else if(hacker1[k]===hacker2[k] && k===(hacker2.length-1)){
+      console.log("What?! You both got the same name?");
+    }
+  }
+  }
+
+// Lorem ipsum generator
