@@ -42,7 +42,7 @@ console.log(temp);
 
 //8.Determining the lexicographic order
 if(hacker1.charCodeAt(0) < hacker2.charCodeAt(0)){
-  console.log("Yes, it is smaller")
+  console.log("Yes, it is smaller");
 }
 
 
