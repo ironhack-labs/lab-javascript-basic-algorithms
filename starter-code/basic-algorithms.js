@@ -1,7 +1,7 @@
 //Names and input
 var hacker1 = "Bob";
-var hacker2 = prompt("What is the navigator's name?");
-console.log("The driver's name is " + hacker1);
+// var hacker2 = prompt("What is the navigator's name?");
+var hacker2 = "Stephen";
 console.log("The navigator's name is " + hacker2);
 
 //Conditionals
@@ -77,4 +77,40 @@ function isPalindrome(str) {
 console.log(isPalindrome("A man, a plan, a canal, Panama"));
 console.log(isPalindrome("this is not a palindrome"));
 
-//ran out of time for lorem ipsum generator
+//lorem ipsum generator
+var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim est, convallis ac mattis ut, fringilla eget massa. Pellentesque placerat tincidunt nisl, eu porta lacus suscipit malesuada. Nullam orci lectus, semper ut massa et, tempor eleifend tortor. Donec ornare eleifend sapien eget convallis. Duis ex dolor, commodo in sapien vitae, tincidunt iaculis nibh. Phasellus elementum odio nec tincidunt gravida. Aliquam erat volutpat. Cras mattis vestibulum elit, eu accumsan lorem fermentum vitae. Fusce convallis dui at porttitor pharetra. Etiam vel facilisis quam, in vestibulum est. Vivamus ac ultricies tellus. Nunc in nibh vel justo molestie sodales sed a odio. Nunc porta mauris in semper semper. Aliquam metus neque, elementum finibus dolor euismod, dapibus semper erat. Morbi dui odio, semper ut ex condimentum, viverra elementum erat. Duis feugiat vestibulum tempus. Vivamus imperdiet orci eget elit sagittis, ut ornare dolor bibendum. Proin pellentesque augue a neque euismod fermentum. Proin sed lacus bibendum, cursus turpis vel, accumsan orci.Donec interdum aliquam efficitur. Aliquam suscipit porta turpis eu feugiat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In in efficitur lectus. Vestibulum porta augue a est posuere, at hendrerit nulla venenatis. Suspendisse sed feugiat arcu. Morbi id purus massa. Proin luctus ac felis sit amet suscipit. Nullam eget bibendum urna, nec faucibus sapien. Donec at congue eros. Ut pulvinar ligula vitae sapien varius, consectetur aliquet sapien dapibus. In hac habitasse platea dictumst.";
+
+//counts words in a string
+function countWords(str)
+{
+  var count = 1;
+  for (var i = 0; i < str.length; i++)
+  {
+    if (str[i] === " ")
+    {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+//counts the number of instances of the word "et" in lorem ipsum
+function countEts(str)
+{
+  var testString = "";
+  var count = 0;
+  for (var i = 0; i < str.length; i++)
+  {
+    testString = str[i] + str[i+1] + str[i+2] + str[i+3];
+    if (testString === " et " || testString === " et." || testString === " et," || testString === " et?" || testString === " et!")
+    {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countWords(loremIpsum));
+console.log(countEts(loremIpsum));
