@@ -44,8 +44,8 @@ for (var i = 0; i < hacker1.length && hacker2.length; i++) {
   } else {
     console.log("What?! You both got the same name?");
   }
-  
+
 }
 
-
 console.log("---------");
+
