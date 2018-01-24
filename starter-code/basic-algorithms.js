@@ -41,9 +41,42 @@ for(i = hacker2.length-1; i >= 0; i--){
 console.log(temp);
 
 //8.Determining the lexicographic order
-if(hacker1.charCodeAt(0) < hacker2.charCodeAt(0)){
-  console.log("Yes, it is smaller")
+var shortestLength = 0;
+if(hacker1.length > hacker2.length)
+  shortestLength = hacker1.length;
+else
+  shortestLength = hacker2.length;
+
+for(var i = 0; i < shortestLength; i++){
+  if(hacker1.charCodeAt(i) > hacker2.charCodeAt(i)){
+  console.log("The driver's name goes first");
+  break;
+  }
+  else if(hacker1.charCodeAt(i) < hacker2.charCodeAt(i)){
+    console.log("Yo, the navigator goes first definitely");
+    break;
+  } else {
+    if(i === shortestLength-1 && hacker1.length === hacker2.length)
+      console.log("What?! You both got the same name?");
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
