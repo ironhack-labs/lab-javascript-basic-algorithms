@@ -10,7 +10,7 @@ Ready?
 
 ## Introduction
 
-For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can fine a REPL that runs in the browser for programming languages as JavaScript in [repl.it](https://repl.it/)
+For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages such as JavaScript in [repl.it](https://repl.it/)
 
 We could also type JavaScript code in an editor, and then execute it to see the results in the REPL.
 
@@ -20,7 +20,7 @@ Ready to start?
 
 - Go to [repl.it](https://repl.it/languages/javascript) and create an account (or login if you have one)
 - Open a new repl.it and make sure the language is ==JavaScript==
-- Type this in the ==Code Editor== (left panel)
+- Type this in the **Code Editor** (left panel)
 
   ```javascript
   console.log("I'm Ready!");
