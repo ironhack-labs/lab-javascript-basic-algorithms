@@ -1,7 +1,3 @@
-// Names and Input
+var driver = "me"
 
-
-//Conditionals
-
-
-// Lorem ipsum generator
+var navigator = "other person"
