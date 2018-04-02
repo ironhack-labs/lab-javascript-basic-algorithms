@@ -2,4 +2,4 @@
 * Ruben Vargas
 
 # Navigator
-* Richard 
+* Richard Batista 

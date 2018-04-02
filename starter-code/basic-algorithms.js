@@ -1,6 +1,6 @@
 // Incomplete Group Assignment - Pair Programming
 // Driver - Ruben Vargas
-// navigator - Richard
+// navigator - Richard Batista
 
 
 // Names and Input
