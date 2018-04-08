@@ -11,5 +11,8 @@ if (hacker1.length > hacker2.length) {
 } else if (hacker2.length > hacker1.length) {
   alert(`Yo, navigator ${hacker2} got the longest name, it has ${hacker2.length} characters`);
 } else if (hacker1.length === hacker2.length) {
-  alert('What?! You both got the same name?');
+  alert('What?! You both got the same name?')
 }
+
+const nameInCapitals = hacker1.toUpperCase().split('').join(' ');
+alert(`${nameInCapitals}`);
