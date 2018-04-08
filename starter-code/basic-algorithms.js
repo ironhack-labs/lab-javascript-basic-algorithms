@@ -19,3 +19,11 @@ const reverseName = hacker2.split('').reverse('').join('');
 const nameInCapitals = hacker1.toUpperCase().split('').join(' ');
 
 alert(`${nameInCapitals} ${reverseName}`);
+
+// https://github.com/marilyn-n/lab-javascript-basic-algorithms
+
+// 8 .Depending on the lexicographic order of the strings, print:
+
+// The driver's name goes first
+// Yo, the navigator goes first definitely
+// What?! You both got the same name?
