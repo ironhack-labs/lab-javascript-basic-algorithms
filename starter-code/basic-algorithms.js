@@ -14,5 +14,8 @@ if (hacker1.length > hacker2.length) {
   alert('What?! You both got the same name?')
 }
 
+const reverseName = hacker2.split('').reverse('').join('');
+
 const nameInCapitals = hacker1.toUpperCase().split('').join(' ');
-alert(`${nameInCapitals}`);
+
+alert(`${nameInCapitals} ${reverseName}`);
