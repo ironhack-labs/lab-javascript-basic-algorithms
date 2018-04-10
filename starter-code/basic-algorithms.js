@@ -24,10 +24,20 @@ const nameInCapitals = hacker1.toUpperCase().split('').join(' ');
 
 alert(`${nameInCapitals} ${reverseName}`);
 
-// https://github.com/marilyn-n/lab-javascript-basic-algorithms
 
 // 8 .Depending on the lexicographic order of the strings, print:
 
 // The driver's name goes first
 // Yo, the navigator goes first definitely
 // What?! You both got the same name?
+
+const lexicographicOrder = (driver, navigator) => {
+  if (driver > navigator) {
+    alert('The driver\'s name goes first');
+  } else if (driver > navigator) {
+    alert('Yo, the navigator goes first definitely');
+  } else {
+    alert('What?! You both got the same name?');
+  }
+};
+lexicographicOrder(hacker1, hacker2);
