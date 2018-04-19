@@ -39,3 +39,25 @@ const lexicographicOrder = (driver, navigator) => {
 };
 
 alert(lexicographicOrder(hacker1, hacker2));
+
+// Ask the user for a new string and check if it's a Palindrome
+
+const driver2 = prompt('write a palindrome word!');
+
+const palindromeWord = (driver) => {
+  let message;
+
+  const removeSpaces = driver.replace(/[^-a-z0-9]/ig, '').toLowerCase();
+
+  const reverseString = removeSpaces.split('').reverse('').join('');
+
+  if (removeSpaces === reverseString) {
+    message = `${driver} its palindrome!`;
+  } else {
+    message = `sorry ${driver} its not a palindrome`;
+  }
+  return message;
+};
+
+
+alert(palindromeWord(driver2));
