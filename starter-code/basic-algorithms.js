@@ -46,18 +46,25 @@ const driver2 = prompt('write a palindrome word!');
 
 const palindromeWord = (driver) => {
   let message;
-
   const removeSpaces = driver.replace(/[^-a-z0-9]/ig, '').toLowerCase();
-
   const reverseString = removeSpaces.split('').reverse('').join('');
 
-  if (removeSpaces === reverseString) {
-    message = `${driver} its palindrome!`;
-  } else {
-    message = `sorry ${driver} its not a palindrome`;
-  }
+  removeSpaces === reverseString
+    ? message = `${driver} its palindrome!`
+    : message = `sorry ${driver} its not a palindrome`;
+
   return message;
 };
 
-
 alert(palindromeWord(driver2));
+
+// Go to lorem ipsum generator and:
+
+// Generate 3 parragraphs. Store the text in a String
+// Make your program count the number of words in the string
+// Make your program count the number of times the latin word etappears
+
+const loremParagraph = 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.';
+
+const count = loremParagraph.match(/et/g).length;
+console.log(count);
