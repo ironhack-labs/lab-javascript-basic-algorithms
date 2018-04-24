@@ -5,3 +5,4 @@
 
 
 // Lorem ipsum generator
+var a;
