@@ -23,13 +23,13 @@ console.log(hacker2.split("").reverse().join(""))
 
 //8
 
-var n = hacker1.localeCompare(hacker2);
+var compareVariable = hacker1.localeCompare(hacker2);
 
-if(n === 0){
+if(compareVariable === 0){
     console.log("What?! You both got the same name?");
-  }else if(n < 0){
+  }else if(compareVariable < 0){
     console.log("The driver's name goes first");
-  }else if(n > 0){
+  }else if(compareVariable > 0){
     console.log("Yo, the navigator goes first definitely");
   }
   
