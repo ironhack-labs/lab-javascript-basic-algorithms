@@ -41,3 +41,9 @@ function countWords(str){
 }
 
      console.log(countWords(lorem)+" Words found at Lorem");
+
+
+     function countLatinWord(str1){
+      return str1.match("et").length;
+    }
+    console.log(countLatinWord(lorem) + "  Word 'et' found at lorem");
