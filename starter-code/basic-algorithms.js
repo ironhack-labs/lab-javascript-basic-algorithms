@@ -35,3 +35,9 @@ if(Name1>Name2){
 }
 
 // Lorem ipsum generator
+
+function countWords(str){
+  return str.split(" ").length;
+}
+
+     console.log(countWords(lorem)+" Words found at Lorem");
