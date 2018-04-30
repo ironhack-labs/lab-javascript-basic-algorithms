@@ -28,4 +28,17 @@ for (i = hacker2.length - 1; i >= 0; i--) {
 }
 console.log(reverseName);
 
+// Lexicographic order
+var order = hacker1.localeCompare(hacker2);
+
+if (order < 0) {
+    console.log("The driver's name goes first");
+}
+else if (order > 0) {
+    console.log("Yo, the navigator goes first definitely")
+}
+else if (order === 0) {
+    console.log("What?! You both got the same name?");
+}
+
 // Lorem ipsum generator
