@@ -35,13 +35,13 @@ console.log(hacker2.split('').reverse().join(''));
   - `Yo, the navigator goes first definitely`
   - `What?! You both got the same name?`*/
   
-if(hacker1 < hacker2){
-      console.log('The driver\'s name goes first');
-  } else if (hacker1 > hacker2) {
-      console.log('Yo, the navigator goes first definitely');
+  if(hacker1.toLowerCase() < hacker2.toLowerCase()){
+    console.log('The driver\'s name goes first');
+  } else if (hacker1.toLowerCase() > hacker2.toLowerCase()) {
+    console.log('Yo, the navigator goes first definitely');
   } else {
-      console.log('What?! You both got the same name?');
-}
+    console.log('What?! You both got the same name?');
+  }
 
 //Bonus time!
 
