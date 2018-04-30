@@ -42,3 +42,25 @@ else if (order === 0) {
 }
 
 // Lorem ipsum generator
+var string = "Lorem fistrum condemor por la gloria de mi madre tiene musho peligro apetecan. Diodenoo a wan te voy a borrar el cerito pupita ese que llega diodeno te va a hasé pupitaa pecador. Al ataquerl qué dise usteer diodeno se calle ustée. Me cago en tus muelas condemor ese que llega tiene musho peligro papaar papaar jarl te voy a borrar el cerito por la gloria de mi madre quietooor por la gloria de mi madre pupita. La caidita torpedo caballo blanco caballo negroorl torpedo.";
+var count = 0;
+
+for (i = 0; i < string.length; i++) {
+    if (string[i] == " ") {
+        count ++;
+    }
+}
+count ++;
+console.log("The number of words is: " + count);
+
+//
+var string = "Lorem fistrum veniam commodo aute benemeritaar exercitation ese que llega reprehenderit consectetur qué dise usteer. A peich está la cosa muy malar sed condemor me cago en tus muelas. Enim esse exercitation ullamco torpedo condemor qui nostrud ahorarr quietooor veniam. No puedor quis mamaar diodenoo irure minim. Pupita veniam dolor fistro qui. Benemeritaar reprehenderit a peich enim diodeno. Fistro a wan reprehenderit diodeno está la cosa muy malar et quietooor mamaar me cago en tus muelas. Nostrud dolore por la gloria de mi madre enim quietooor. Officia llevame al sircoo ese que llega la caidita incididunt et te voy a borrar el cerito por la gloria de mi madre de la pradera."
+
+var position = 0;
+var count = 0;
+while (string.indexOf(" et ", position) != -1) {
+    count++;
+    position = (string.indexOf(" et ", position)) + 1;
+}
+//var a = string.indexOf(" et ", 453);
+console.log("Number of et: " + count)
