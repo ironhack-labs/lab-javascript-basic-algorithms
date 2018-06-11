@@ -14,7 +14,9 @@ if (hacker1.length > hacker2.length) {
 }
 
 var aux = hacker1.toUpperCase();
+var aux2 = '';
 for (var i = 0; i < aux.length; i++) {
-    console.log(aux[i]+' ');    
+    aux2 += aux[i]+' ';    
 }
+console.log(aux2);
 // Lorem ipsum generator
