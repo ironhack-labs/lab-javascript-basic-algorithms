@@ -16,14 +16,19 @@ else if (hacker1.length < hacker2.length) {
 }
 else console.log('wow, you both got equally long names,' + hacker1.length + ' characters!!');
 
+var nombreEsp;
+
 for (var i = 0; i < hacker1.length; i++) {   
-  var nombreEsp = nombreEsp + hacker1[z].toUpperCase() + ' ';  
+  nombreEsp = nombreEsp + hacker1[z].toUpperCase() + ' ';  
 }
 console.log(nombreEsp);
 
+var aux;
+var nombreAlReves;
+
 for (var z = 0; z <= hacker1.length; z++) {
-  var aux = hacker1.length;
-  var nombreAlReves = nombreAlReves + hacker1[aux - z];
+  aux = hacker1.length;
+  nombreAlReves = nombreAlReves + hacker1[aux - z];
 }
 console.log(nombreAlReves);
 
