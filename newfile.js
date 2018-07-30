@@ -1,4 +1,5 @@
-/*
+// Exercise 30. July Helene & Astrid
+
 var hacker = 'Hans';
 console.log("The driver's name is " + hacker);
 
@@ -36,16 +37,25 @@ var hacker2 = prompt("What is the navigator\'s name?");
      console.log("What?! You both got the same name?");
    }
 
-*/
+
+
+
+//Bonus: Palindrome
 
 var pali = prompt ("Gimme a string");
 
-var splitPali = pali.split("");
+var splitPali = pali.split("")
+
+/*.filter(function(el) {
+  if(/[a-z][A-Z]/.test(el)) return true
+  return false
+}); */
+
 var reversePali = splitPali.reverse();
 var ipal = reversePali.join("");
 
 if (pali === ipal) {
   console.log("It\'s a palindrome, biatches");
 } else {
-  console.log("It\'s n")
+  console.log("It\'s not a palindrome")
 }
