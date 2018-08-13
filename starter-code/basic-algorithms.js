@@ -1,4 +1,3 @@
-
 // Names and Input
 
 let hacker1 = "Jonathan";
@@ -28,38 +27,30 @@ if (hacker1.length > hacker2.length) {
 // Lorem ipsum generator
 console.log("Driver's name");
 for (let i = 0; i < hacker1.length; i++) {
-
   console.log(hacker1[i].toUpperCase());
 }
 
 console.log("Nav's name");
-for (let i = hacker2.length -1 ; i >= 0; i--) {
-
+for (let i = hacker2.length - 1; i >= 0; i--) {
   console.log(hacker2[i]);
 }
 
-
 if (hacker1 < hacker2) {
-  console.log("The driver's name goes first")
+  console.log("The driver's name goes first");
 } else if (hacker1 > hacker2) {
-  console.log("yo, the navigators goes first definitely")
-
-} else if (hacker1 === hacker2){
-  console.log("what?! you both got the same name?")
-
+  console.log("yo, the navigators goes first definitely");
+} else if (hacker1 === hacker2) {
+  console.log("what?! you both got the same name?");
 }
 
-let palindrom = prompt ("input a word to test for palindrom", "harry potter")
+let palindrom = prompt("input a word to test for palindrom", "harry potter");
 
-function checkPalindrom (palindrom) {
-
-function checkPalindrom (palindrom) {
-for (let i = 0, j =palindrom.length ; i < palindrom.length; i++, j--)
-
-if (palindrom[i]=== palindrom[j]) {
-  return true;
-} else {
-  return false;
-}
-
+function checkPalindrom(palindrom) {
+  for (let i = 0, j = palindrom.length; i < palindrom.length; i++, j--) {
+    if (palindrom[i] === palindrom[j]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
