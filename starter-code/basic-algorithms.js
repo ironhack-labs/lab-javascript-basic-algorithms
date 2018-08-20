@@ -58,7 +58,7 @@ var newstring = result = window.prompt('Can you tell me a palindrome',"");
 if (newstring===result.split('').reverse().join('')) {
   console.log('Nice Palindrome')
 } else {
-  console.log('What?!? That\' not a Palindrome)
+  console.log('What?!? That\' not a Palindrome')
 }
 
 
