@@ -1,4 +1,4 @@
-![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)kjgh
+![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
 # JS | Basic Algorithms
 
