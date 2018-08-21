@@ -1,13 +1,13 @@
 'use strict';
 
-// Names and Input
+/* Names and Input*/
 var hacker1 = "Batman";
 console.log(hacker1);
 
 var hacker2 = window.prompt('Please, introduce the name of the second hacker', 'Robin, Ironman, etc.');
 console.log(hacker2);
 
-//Conditionals
+/*Conditionals*/
 if(hacker1.length > hacker2.length){
     console.log('The Driver has the longest name, it has ' + hacker1.length + ' characters');
 } else if (hacker2.length > hacker1.length) {
@@ -16,8 +16,7 @@ if(hacker1.length > hacker2.length){
     console.log('wow, you both got equally long name, ' + hacker1.length + ' characters');
 }
 
-//Loops
-
+/*Loops*/
 for(var j = hacker2.length; j > 0; j--){
     console.log(hacker2.charAt(j));
 }
@@ -28,12 +27,9 @@ for(var i = 0; i<hacker1.length; i++){
     var inCapitals = hacker1.toUpperCase();
     a = inCapitals.charAt(i) + ' ';
     console.log(a);
-    // console.log(inCapitals.char At(i) + ' ');
 }
 
-
-
-//Sort names
+/*Sort names*/
 var arrayNames = [hacker1, hacker2];
 
 function orderNames(){
@@ -46,68 +42,3 @@ function orderNames(){
         console.log('What?! You both got the same name?');
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Conditionals
-
-
-// Lorem ipsum generator
