@@ -17,7 +17,7 @@ if(hacker1.length > hacker2.length){
 }
 
 /*Loops*/
-for(var j = hacker2.length; j > 0; j--){
+for(var j = hacker2.length; j > -1; j--){
     console.log(hacker2.charAt(j));
 }
 
