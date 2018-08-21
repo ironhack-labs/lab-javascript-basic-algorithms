@@ -1,7 +1,7 @@
 'use strict';
 
 /* Names and Input*/
-var hacker1 = "Batman";
+var hacker1 = "Magneto";
 console.log(hacker1);
 
 var hacker2 = window.prompt('Please, introduce the name of the second hacker', 'Robin, Ironman, etc.');
@@ -29,16 +29,14 @@ for(var i = 0; i<hacker1.length; i++){
     console.log(a);
 }
 
-/*Sort names*/
-var arrayNames = [hacker1, hacker2];
-
 function orderNames(){
-    arrayNames.sort;
-    if(arrayNames[0] == hacker1){
-        console.log('The driver\'s name goes first');
-    } else if (arrayNames[0] == hacker2){
-        console.log('Yo, the navigator goes first definetly');
-    } else{
+    var name1 = hacker1.toUpperCase();
+    var name2 = hacker2.toUpperCase();
+    if(name1.charAt(0) < name2.charAt(0)){
+        console.log('The driver\'s name goes first (' + hacker1 + ')');
+    }else if(name1.charAt(0) > name2.charAt(0)){
+        console.log('Yo, the navigator goes first definetly (' + hacker2 + ')');
+    }else{
         console.log('What?! You both got the same name?');
     }
 }
