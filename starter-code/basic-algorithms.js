@@ -42,3 +42,5 @@ function orderNames(){
         console.log('What?! You both got the same name?');
     }
 }
+
+orderNames();
