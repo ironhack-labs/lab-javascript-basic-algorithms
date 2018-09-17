@@ -15,6 +15,7 @@ if (hacker1.length > hacker2.length) {
 }
 
 //loops
+//Ejercicio 6
 var nombreSeparado="";
 for(var i=0; i< hacker1.length; i++){
  if (i===hacker1.length -1){
@@ -24,4 +25,17 @@ for(var i=0; i< hacker1.length; i++){
  }
 };
 console.log(nombreSeparado);
-// Lorem ipsum generator
+//Ejercicio 7
+var nombreInvertido= "";
+for(var i=hacker1.length-1; i>=0; i--){
+  nombreInvertido += hacker1[i];
+}
+// Ejercicio 8
+console.log(hacker1[0]);
+if(hacker1[0]> hacker2[0]){
+  console.log("The driver's name goes first") 
+} else if(hacker1[0]< hacker2[0]){
+  console.log("Yo, the navigator goes first definitely")
+} else if (hacker1[0]=== hacker2[0]){
+  console.log("What?! You both got the same name?")
+}
