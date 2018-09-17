@@ -39,7 +39,32 @@ for (var i=hacker2.length-1; i>=0; i--){
 console.log(newNav);
 
 if (hacker1 < hacker2){
-  console.log("driver");
-}else {console.log("navigator")}
+  console.log("The driver's name goes first");
+}else if (hacker1 > hacker2){
+  console.log("Yo, the navigator goes first definitely");
+}else {console.log("What?! You both got the same name");}
 
+//Bonus
+
+var palindromo1;
+var palindromo2 = '';
+var palindromo3 = '';
+palindromo1 = window.prompt("Introduzca una cadena: ");
+var palindromo1L = palindromo1.toLowerCase();
+
+for (var i=palindromo1L.length-1; i>=0; i--){
+  if (palindromo1L[i] !== ' '){
+  palindromo2 += palindromo1L[i];
+  }
+ }
+ for (var j=0; j<palindromo1L.length; j++){
+  if (palindromo1L[j] !== ' '){
+  palindromo3 += palindromo1L[j];
+  }
+ }
+ console.log(palindromo2);
+ console.log(palindromo3);
+if (palindromo3 === palindromo2){
+  console.log("Es palíndromo " +palindromo1);
+}
 // Lorem ipsum generator
