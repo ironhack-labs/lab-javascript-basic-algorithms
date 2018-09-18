@@ -21,9 +21,18 @@ if (hacker1.length > hacker2.length)  {
     console.log('wow you both equally long names ' + hacker1.length + ' characters')
 }
 
+var space1="";
+
+for (var i = 0; i<hacker1.length; i++) {
+    space1 += hacker1[i].toUpperCase() + " ";
+
+        console.log(space1);
+
+var space2="";
+    for (var i = hacker2.length-1; i>=0; i--){
+        space2 += hacker2[i];
+    }
+    console.log(space2)
+
+
 // Lorem ipsum generator
-
-for (var i = 0; i < hacker1.length; i++) {
-    console.log(hacker1.toUpperCase[i] +  " ")
-
-}
