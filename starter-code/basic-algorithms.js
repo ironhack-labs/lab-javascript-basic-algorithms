@@ -21,6 +21,8 @@ if (hacker1.length > hacker2.length)  {
     console.log('wow you both equally long names ' + hacker1.length + ' characters')
 }
 
+//Loops
+
 var space1="";
 
 for (var i = 0; i<hacker1.length; i++) {
@@ -34,5 +36,26 @@ var space2="";
     }
     console.log(space2)
 
+var hacker1Length = 0;
 
+for (var i=0; i<hacker1.length; i++) {
+    if (hacker1[i] === hacker2[i]);
+    hacker1.length++;
+    if (hacker1Length==hacker1.length); {
+        console.log('What?! You both got the same name?')
+    }
+        } elseif (hacker1[i] < hacker2[i]); {
+            console.log('The drivers name goes first')
+
+        } elseif (hacker1[i] > hacker2[i]); {
+            console.log('Yo, the navigator goes first definitely')
+        }
+
+    }
 // Lorem ipsum generator
+
+var newString = prompt('Insert a string here')
+
+for (var i = newString.lenght-1; i>=0; i--){
+    console.log(newString)
+}
