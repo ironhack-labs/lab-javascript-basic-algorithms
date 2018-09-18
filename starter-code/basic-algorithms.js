@@ -16,8 +16,7 @@ if (hacker1.length > hacker2.length){
 //Print all the characters of the driver's name, separated by a space and in capitals ie. "J O H N"
 var hacker1Name = '';
 for(var i = 0 ; i < hacker1.length ; i++){
-  hacker1Name += hacker1[i] + ' ';
-  hacker1Name = hacker1Name.toUpperCase();
+  hacker1Name += hacker1[i].toUpperCase() + ' ';
 }
 console.log(hacker1Name.trimEnd());
 
