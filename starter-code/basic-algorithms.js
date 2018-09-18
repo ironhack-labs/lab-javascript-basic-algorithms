@@ -37,15 +37,19 @@ if (hacker1 < hacker2) {
 // Lorem ipsum generator
 var inputString = prompt('Insert a string: ').toLowerCase();
 var isPalindrome = '';
+var letra = 'abcdefghijklmnopqrstuvwxyzåäö';
+var cleanString = '';
 for (var i = inputString.length-1; i >= 0; i--) {
-  var letra = 'abcdefghijklmnopqrstuvwxyzåäö';
-  for (var j = 0; j < letra.length; j++) {
-    if (inputString[i] === letra[j]) {
-      isPalindrome += inputString[i];
-    }
+  if (letra.includes(inputString[i])) {
+    cleanString += inputString[i];
   }
 }
-if (inputString === isPalindrome) {
+console.log(cleanString);
+for (var j = cleanString.length-1; j >= 0; j--) {
+  isPalindrome += cleanString[j];
+}
+
+if (cleanString === isPalindrome) {
   console.log('Your string is a Palindrome! Congratulations!!!!');
 } else {
   console.log('Your string is not a Palindrome!');
