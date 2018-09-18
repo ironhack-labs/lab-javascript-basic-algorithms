@@ -1,22 +1,15 @@
 var hacker1 = "Mireia";
-
 console.log("The driver's name is " + hacker1);
 
 var hacker2 = prompt('What is the Navigators name?')
-
     console.log('The drivers name is ' + hacker1)
-
     console.log('The navigators name is ' + hacker2)
 
 if(hacker1.length > hacker2.length) {
-
-  
     console.log("The driver has the longest name. It has " + hacker1.length + " characters.");
 } else if(hacker2.length > hacker1.length) {
-
     console.log("Yo, navigator got the longest name. It has " + hacker2.length + " characters.");
 } else {
-    
     console.log("Wow! You both got equally long names! They have " + hacker1.length + " characters.");
 }
 
