@@ -1,52 +1,55 @@
-var hacker1 = "Mireia";
-console.log("The driver's name is " + hacker1);
+// Names and Input
 
-var hacker2 = prompt('What is the Navigators name?')
-    console.log('The drivers name is ' + hacker1)
-    console.log('The navigators name is ' + hacker2)
+var hacker1 = 'Elsa'
 
-if(hacker1.length > hacker2.length) {
-    console.log("The driver has the longest name. It has " + hacker1.length + " characters.");
-} else if(hacker2.length > hacker1.length) {
-    console.log("Yo, navigator got the longest name. It has " + hacker2.length + " characters.");
+console.log("The drivers name is " + hacker1);
+
+var hacker2 = prompt('What is the navigators name?');
+
+//Conditionals
+
+function insertSpace(hacker1toUppercase) {
+    var hacker1toUppercase = hacker1.toUpperCase();
+    var separatedName = hacker1toUppercase.split("").join(" ");
+    console.log(separatedName);
+    return separatedName;
+}
+insertSpace(hacker2);
+
+function reverseName(splitHacker){
+    var splitHacker = hacker1.split("");
+    var reverseArray = splitHacker.reverse();
+    var joinArray = reverseArray.join("");
+    console.log(joinArray);
+    return joinArray;
+}
+reverseName(hacker2);
+
+// Lorem ipsum generator
+
+function compareNames (a,b) {
+    var a= a.toUpperCase();
+    var b = b.toUpperCase();
+    if(a< b) {
+        console.log("The driver's name goes first.");
+      } else if (b < a) {
+        console.log('Yo, the navigator goes first definitely.');
+      } else {
+        console.log("What?! You both got the same name.");
+      }
+};
+compareNames(hacker1,hacker2);
+
+
+
+var message = prompt('Insert string and check if Palindrome!');
+message = message.replace(/[^a-zA-Z 0-9]+/g,'');
+message = message.split('');
+var cleanString = message.filter(function(letter){
+  return letter !== ' ';
+});
+if(cleanString.join() !== cleanString.reverse().join()){
+      console.log('not a palindrome')
 } else {
-    console.log("Wow! You both got equally long names! They have " + hacker1.length + " characters.");
-}
-
-var theName = []
-for(var i=0; i < hacker1.length; i++) {
-  theName.push(hacker1[i].toUpperCase());
-}
-
-var theJoinedName = theName.join(' ');
-console.log(theJoinedName);
-
-var hackerReverse = hacker2.split("");
-var reversedStr = hackerReverse.reverse().join("");
-console.log(reversedStr);
-
-var lowercaseDriverName = hacker1.toLowerCase();
-var lowercaseNavName = hacker2.toLowerCase();
-
-if(lowercaseDriverName < lowercaseNavName) {
-  console.log("The driver's name goes first.");
-} else if (lowercaseNavName < lowercaseDriverName) {
-  console.log('Yo, the navigator goes first definitely.');
-} else {
-  console.log("What?! You both got the same name.");
-}
-
-if(checkPalindrome(prompt("Is this a palindrome?").replace(/[^a-zA-Z]/g, ""))) {
-  console.log("This is a palindrome");
-} else {
-  console.log("This is NOT a palindrome");
-}
-  
-function checkPalindrome(str) {
-  for(j = 0; j < str.length; j++) {
-    if(str[j] !== str[str.length - j - 1]) {
-      return false;
-    }
-  }
-  return true;
+      console.log('palindrome')
 }
