@@ -33,14 +33,14 @@ if (hacker1.length == hacker2.length) {
 
 // Loops
 // Print all the characters of the driver's name, separated by a space and in capitals ie. "J O H N"
-// expected output: "012345678"
+console.log (hacker1.toUpperCase())
 // Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
 
 // Depending on the lexicographic order of the strings, print:
-
 // The driver's name goes first
 // Yo, the navigator goes first definitely
 // What?! You both got the same name?
+
 // Bonus Time!
 // Ask the user for a new string and check if it's a Palindrome. Examples of palindromes:
 
