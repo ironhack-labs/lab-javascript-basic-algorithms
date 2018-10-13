@@ -33,27 +33,31 @@ if (hacker1.length == hacker2.length) {
 
 // Loops
 // Print all the characters of the driver's name, separated by a space and in capitals ie. "J O H N"
-console.log (hacker1.toUpperCase())
+var spaceLetter = "";
+  for (var i = 0; i < hacker1.length; i++) {
+    spaceLetter += (hacker1.charAt(i) + " ");
+  }
+var upperDriver = spaceLetter.toUpperCase();
+console.log (upperDriver)
+
 // Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
+function reverseString(hacker2) {
+    var newString = "";
+    for (var i = hacker2.length - 1; i >= 0; i--) {
+        newString += hacker2[i];
+    }
+    return newString;
+}
+console.log (reverseString(hacker2));
 
 // Depending on the lexicographic order of the strings, print:
 // The driver's name goes first
 // Yo, the navigator goes first definitely
 // What?! You both got the same name?
-
-// Bonus Time!
-// Ask the user for a new string and check if it's a Palindrome. Examples of palindromes:
-
-// "A man, a plan, a canal, Panama!"
-// "Amor, Roma"
-// "race car"
-// "stack cats"
-// "step on no pets"
-// "taco cat"
-// "put it up"
-// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
-// Go to lorem ipsum generator and:
-
-// Generate 3 parragraphs. Store the text in a String
-// Make your program count the number of words in the string
-// Make your program count the number of times the latin word etappears
+if (hacker1.toLowerCase() < hacker2.toLowerCase()) {
+  console.log('The driver\'s name goes first');
+} else if (hacker1.toLowerCase() > hacker2.toLowerCase()) {
+  console.log('Yo, the navigator goes first defintely');
+} else {
+  console.log('What?! You both got the same name?');
+}
