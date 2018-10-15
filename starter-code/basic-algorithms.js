@@ -30,4 +30,14 @@ for(i=0; hacker1.length > i; i += 1){
 console.log(reverse);
 
 
+for(i=0; hacker1.length > i; i +=1){
+    if(hacker1[i] < hacker2[i]){
+        console.log("The driver's name goes first")
+    }else if (hacker1[i] > hacker2 [i]){
+        console.log("Yo, the navigator goes first definitely")
+    }else{
+        console.log("What!? You both got the same name?")
+    }
+} 
+
 // Lorem ipsum generator
