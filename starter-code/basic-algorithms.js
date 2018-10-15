@@ -16,7 +16,7 @@ if (hacker1.length > hacker2.length){
   } else if (hacker1 < hacker2.length){
     console.log("Yo, navigator got the longest name, it has " + hacker2.length + " characters");
   } else {
-    console.log("wow, you both got equally long names," + hacker1.length + " characters!!");
+    console.log("wow, you both got equally long names," + hacker1.length + " chsaracters!!");
   }
   
   if (hacker1[0] < hacker2[0]){
@@ -26,5 +26,16 @@ if (hacker1.length > hacker2.length){
   } else {
     console.log("What?! You both got the same name?")
   }
+
+  //palindrom
+var palindrome = prompt("Is it a palindrome?");
+var palindromeReverse = palindrome.split("").reverse().join("");
+
+if (palindrom = palindromeReverse) {
+console.log ("Yeah, It’s a palindrom!");
+}else{
+ console.log ("Nope, Not a palindrome.");
+}
+
 
 // Lorem ipsum generator
