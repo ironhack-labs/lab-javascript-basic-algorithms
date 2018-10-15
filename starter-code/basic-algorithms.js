@@ -39,6 +39,20 @@ console.log(text1.split(' ').length + ' palavras');
 console.log(text2.split(' ').length  + ' palavras');
 console.log(text3.split(' ').length  + ' palavras');
 
-console.log(text1.split('et').length + ' ets');
-console.log(text2.split('et').length  + ' ets');
-console.log(text3.split('et').length  + ' ets');
+if(text1.length === text1.split('et').length) {
+  console.log('0 ets');
+} else {
+  console.log((text1.split('et').length - 1) + ' ets');
+}
+
+if(text2.length === text2.split('et').length) {
+  console.log('0 ets');
+} else {
+  console.log((text2.split('et').length - 1) + ' ets');
+}
+
+if(text3.length === text3.split('et').length) {
+  console.log('0 ets');
+} else {
+  console.log((text3.split('et').length - 1) + ' ets');
+}
