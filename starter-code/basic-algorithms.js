@@ -47,10 +47,10 @@ console.log(alphabeticalOrder[0] + "'s name goes first");
 }
 
 
-var palindrome = "racecar";
-
-if ("race car" === palindrome.split('').reverse().join(''))
-{
+var palindrome = "race car";
+var regexp = palindrome.replace(/\s/g, "");
+if ("racecar" === regexp.split('').reverse().join(''))
+{ 
   console.log("you win");
   
 }
