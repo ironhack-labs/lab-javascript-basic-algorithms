@@ -16,15 +16,14 @@ else if (driver.length < navigator.length){
 }
 else console.log('wow, you both got equally long names, ' + driver.length + 'characters.');
 
-let capitalDriver = driver.toUpperCase();
-console.log(capitalDriver);
+let capitalDriver = [];
 
-for(i = 0 ; i < capitalDriver.length ; i += 1){
-  let capitalDriverSpace = [];
-
-  if(capitalDriver[i] !== ' '){
-    capitalDriverSpace[i]=capitalDriver[i]+' ';  
-  }
+for(i = 0 ; i < driver.length ; i += 1){
+  if (driver[i]!== ' '){
+    driver = driver.toUpperCase();
+    capitalDriver.push(driver[i] + ' ');
+  } 
 }
-console.log(capitalDriverSpace);
+
+console.log(capitalDriver.toString());
 // Lorem ipsum generator
