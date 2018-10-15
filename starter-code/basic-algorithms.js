@@ -17,8 +17,10 @@ if (hacker1.length > hacker2.length){
 let capitals = [];
 
 for(i=0; hacker1.length > i; i += 1){
+    hacker1 = hacker1.toUpperCase();
     capitals.push(hacker1[i], ' ');
 }
+
 console.log(capitals);
 
 let reverse = [];
@@ -26,4 +28,6 @@ for(i=0; hacker1.length > i; i += 1){
     reverse.unshift(hacker2[i]);
 }
 console.log(reverse);
+
+
 // Lorem ipsum generator
