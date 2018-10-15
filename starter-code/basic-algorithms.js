@@ -35,6 +35,10 @@ let text1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio
 let text2 = 'Sed sagittis mauris quis nisl auctor euismod. Vestibulum blandit imperdiet lacus, nec ultricies tellus aliquam ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi eleifend quis justo ut condimentum. Cras nec sollicitudin mauris. Vivamus sed quam in mauris dictum venenatis ac vel enim. Quisque a condimentum metus, a tincidunt magna. Aliquam nunc neque, bibendum sit amet diam vel, porttitor tristique tortor. Cras sed sagittis urna, vitae pulvinar massa.';
 let text3 = 'Duis in purus sit amet neque convallis lacinia. Nam pellentesque neque ut dictum facilisis. Fusce pulvinar tincidunt libero et efficitur. Fusce a dignissim elit. Integer euismod eu leo eu luctus. Sed ac mollis est. Aliquam justo leo, suscipit vel quam a, malesuada tempus tortor. Suspendisse non maximus nulla, eget lobortis eros. Aenean a orci volutpat quam maximus rutrum vitae nec arcu. Mauris quis ipsum scelerisque, pulvinar arcu et, vulputate metus. Vivamus tristique venenatis velit vel dictum. In vel lectus quis ligula mattis pharetra. Cras vitae nulla non libero varius imperdiet sit amet et ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean imperdiet sed neque nec egestas. Proin dictum nibh enim, ac blandit neque hendrerit at.';
 
-console.log(text1.split(/\W+/).length + ' palavras');
-console.log(text2.split(/\W+/).length  + ' palavras');
-console.log(text3.split(/\W+/).length  + ' palavras');
+console.log(text1.split(' ').length + ' palavras');
+console.log(text2.split(' ').length  + ' palavras');
+console.log(text3.split(' ').length  + ' palavras');
+
+console.log(text1.split('et').length + ' ets');
+console.log(text2.split('et').length  + ' ets');
+console.log(text3.split('et').length  + ' ets');
