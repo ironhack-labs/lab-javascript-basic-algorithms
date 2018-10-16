@@ -28,13 +28,13 @@ if (hacker1.length > hacker2.length){
   }
 
   //palindrom
-var palindrome = prompt("Is it a palindrome?");
-var palindromeReverse = palindrome.split("").reverse().join("");
+var palindrom = prompt("Is it a palindrome?");
+var palindromReverse = palindrom.split("").reverse().join("");
 
-if (palindrom = palindromeReverse) {
+if (palindrom === palindromReverse) {
 console.log ("Yeah, It’s a palindrom!");
 }else{
- console.log ("Nope, Not a palindrome.");
+ console.log ("Nope, Not a palindrom.");
 }
 
 
@@ -53,3 +53,4 @@ console.log(wordCount.length);
   }
 }
 console.log(counter);
+
