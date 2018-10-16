@@ -79,4 +79,4 @@ for (i=0;i<countWords.length;i++){
   }
 }
 
-console.log(countEt);
+console.log("There are " + countEt + " 'et' in this string.");
