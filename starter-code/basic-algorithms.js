@@ -1,7 +1,3 @@
-// Names and Input
-
-
-//Conditionals
-
-
-// Lorem ipsum generator
+function palinDrome() {
+    // blablal
+}
