@@ -6,4 +6,4 @@
 
 // Lorem ipsum generator
 
-//palindrome code here
+// update palindrome code here
