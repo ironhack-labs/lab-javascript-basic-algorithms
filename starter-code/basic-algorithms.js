@@ -5,3 +5,5 @@
 
 
 // Lorem ipsum generator
+
+//palindrome code here
