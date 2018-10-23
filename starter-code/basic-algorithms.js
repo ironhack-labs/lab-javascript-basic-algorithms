@@ -19,12 +19,6 @@ if (hacker1.length > hacker2.length) {
 console.log(hacker1.toUpperCase().split("").join(" "));
 console.log(hacker2.split("").reverse().join(""));
 
-var newString = window.prompt();
-newString = newString.toLowerCase().replace(/[^a-zA-Z0-9]/g,"");
-console.log(newString);
-var newStringReversed = newString.split("").reverse().join("");
-
-
 if (hacker1 === hacker2) {
   console.log('Names are identical')
 } else if (hacker1 < hacker2) {
@@ -32,6 +26,11 @@ if (hacker1 === hacker2) {
 } else {
   console.log(hacker2 + ' goes first')
 }
+
+var newString = window.prompt();
+newString = newString.toLowerCase().replace(/[^a-zA-Z0-9]/g,"");
+console.log(newString);
+var newStringReversed = newString.split("").reverse().join("");
 
 if (newString === newStringReversed) {
   console.log('You just wrote a palindrome!')
