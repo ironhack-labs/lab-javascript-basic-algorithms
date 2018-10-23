@@ -14,8 +14,8 @@ if (hacker1.length > hacker2.length){
 
 
 for (var i=0; i<hacker1.length; i++);
-console.log(hacker1.toUpperCase());
-console.log()
+console.log(hacker1[i].toUpperCase());
+
 
 
 for (var i=0; i<hacker1.length; i--);
