@@ -1,3 +1,10 @@
+//This was actually done on Tuesday 23rd October but I made a mess with commits and pushing
+//the wrong stuff, so I deleted the repo and forked it again CAUSE I DUNNO WHAT ELSE 2 DO
+//so here it is again now.
+//From this I have learned:
+//ALWAYS CHECK WHAT AND FROM WHERE YOU'RE CLONING AND ALWAYS CHECK WHAT YOU'RE
+//PUSHING AND TO WHEREEEEEEEEEE > ____ < 
+
 // Names and Input
 var hacker1 = 'Cecilia';
 var hacker2 = window.prompt('What\'s the navigator\'s name?');
