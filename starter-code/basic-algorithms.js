@@ -61,21 +61,29 @@ switch (index) {
 //9. Ask the user for a new string and check if it's a Palindrome:
 var sentence = prompt("Please, input your sentence");
 
-var sentenceMinusculas = sentence.toLowerCase();
-//console.log(sentenceMinusculas);
-var sentenceArrayReves = sentenceMinusculas.split(' ').reverse();
-//console.log(sentenceArrayReves);
-var sentenceFinal = sentenceArrayReves.join();
-//console.log(sentenceFinal);
+var palindrome = [];
 
-var isPalindrome = true;
-  for(var i = 0; i < sentence.length; i++) {
-    if (sentence[i] == sentenceFinal[i]) {
-    }
-    else {
-      isPalindrome = false;
-    }
-  } return resultado;
+for (var i = 0; i < sentence.length; i++) {
+  switch (sentence[i]) {
+    case ' ':
+    case ',':
+    case '.':
+    case '¡':
+    case '!':
+    case '¿':
+    case '?':
+    palindrome.push('');
+    break;
+    default:
+    palindrome.push(sentence[i].toLowerCase());
+  }
+}
+
+if (palindrome.join('') == palindrome.reverse(0).join('')) {
+  console.log('Es palindromo');
+} else {
+  console.log('No es palindromo');
+}
 
 
 // Lorem ipsum generator
