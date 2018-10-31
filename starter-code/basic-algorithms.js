@@ -61,12 +61,21 @@ switch (index) {
 //9. Ask the user for a new string and check if it's a Palindrome:
 var sentence = prompt("Please, input your sentence");
 
-isPalindrome = true;
-for (var i = 0; i < sentence.length/2; i++) {
-  if (sentence[0] != sentence[sentence.length -i]) {
-    console.log('Lo es');
-  }
-}
+var sentenceMinusculas = sentence.toLowerCase();
+//console.log(sentenceMinusculas);
+var sentenceArrayReves = sentenceMinusculas.split(' ').reverse();
+//console.log(sentenceArrayReves);
+var sentenceFinal = sentenceArrayReves.join();
+//console.log(sentenceFinal);
+
+var isPalindrome = true;
+  for(var i = 0; i < sentence.length; i++) {
+    if (sentence[i] == sentenceFinal[i]) {
+    }
+    else {
+      isPalindrome = false;
+    }
+  } return resultado;
 
 
 // Lorem ipsum generator
