@@ -72,6 +72,8 @@ for (var i = 0; i < sentence.length; i++) {
     case '!':
     case '¿':
     case '?':
+    case '@':
+    case '$':
     palindrome.push('');
     break;
     default:
