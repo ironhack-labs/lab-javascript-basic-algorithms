@@ -65,13 +65,13 @@ const lexicalNames = (name1, name2) => {
   if (name1 === name2) console.log('What?! You both got the same name?');
 
   for (let x = 0; x < name1.length; x++) {
-    console.log(name1.charCodeAt(x),name2.charCodeAt(x))
+    // console.log(name1.charCodeAt(x),name2.charCodeAt(x))
     if (name1.charCodeAt(x) < name2.charCodeAt(x)) {
       console.log('The driver\'s name goes first');
-      return;
+      break;
     } else if (name1[x].charAt() > name2[x].charAt()) {
       console.log('Yo, the navigator goes first definitely');
-      return;
+      break;
     };
   };
 };
