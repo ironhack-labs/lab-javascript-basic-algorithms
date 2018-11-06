@@ -59,7 +59,7 @@ const driverName = hacker1.split('').join(' ').toUpperCase();
 console.log(`The driver's name with caps and separated by spaces is ${driverName}`);
 
 const navigatorName = hacker2.split('').reverse().join('');
-console.log(`The inverted navigator's name is ${navigatorName}`);
+console.log(`The inverted navigator's name is ${navigatorName} - using ES6`);
 
 const lexicalNames = (name1, name2) => {
   if (name1 === name2) console.log('What?! You both got the same name?');
