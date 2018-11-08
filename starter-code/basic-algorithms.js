@@ -1,5 +1,8 @@
 // Names and Input
-var driver = 'Mariana';
+console.log(`--------------------------------------------------------------------`);
+console.log("Names and Input");
+
+var driver = 'Zabal';
 var navigator = 'João';
 console.log(`The driver's name is ${driver}`);
 console.log(`The navigator's name is ${navigator}`);
@@ -11,9 +14,11 @@ if (driver.length > navigator.length) {
 } else {
     console.log(`Yo, navigator got the longest name, it has ${navigator.length}`);
 }
-
 // Loops
 //Space and capitals letter
+console.log(`--------------------------------------------------------------------`);
+console.log(`Spaced and capital letter name:`);
+
 var spacedDriver = '';
 for (var i = 0; i < driver.length; i++) {
     spacedDriver += `${driver[i]} `;
@@ -21,18 +26,35 @@ for (var i = 0; i < driver.length; i++) {
 console.log(spacedDriver.toUpperCase());
 
 //Name reverse
+console.log(`--------------------------------------------------------------------`);
+console.log(`Name reverse:`);
+
 var reverseNavigator = '';
 for (var i = navigator.length - 1; i >= 0; i--) {
     reverseNavigator += navigator[i];
 }
 console.log(reverseNavigator);
-console.log(" ");
+console.log(`--------------------------------------------------------------------`);
 
 //Lexicographic order
+console.log("Lexicographic order:");
+if(navigator.localeCompare(driver) == 1){
+    
+    console.log(`The driver's name goes first`);
 
+}else if(driver.localeCompare(navigator) == 1){
+
+    console.log(`Yo, the navigator goes first definitely`);
+
+}else{
+
+    console.log(`What?! You both got the same name?`);
+}
+console.log(`--------------------------------------------------------------------`);
 
 //Bonus
 //Palindrome
+console.log("Palindrome");
 var str = `No 'x' in Nixon`;
 var wrapStr = '';
 for (var i = 0; i < str.length; i++) {
@@ -50,8 +72,11 @@ if (wrapStr === reverseStr) {
 } else {
     console.log(`The string '${str}' isn't a Palindrome`);
 }
-console.log(" ");
+console.log(`--------------------------------------------------------------------`);
+
+
 //Ex. 10
+console.log("Ex.10 - Lorem Ipsum:");
 var lorem = `Suspendisse at ipsum tempor, laoreet nisi nec, sodales turpis. 
 Phasellus tempus vestibulum sollicitudin. Nulla facilisi. 
 Donec pulvinar et orci at elementum. Nulla aliquet, felis fringilla eleifend tempor, 
@@ -73,5 +98,6 @@ for (var i = 0; i < noSpace.length; i++) {
 console.log(`The string: 
 "${lorem}" 
 has ${count} words.`);
+console.log(`-------------------------------`);
 console.log(" ");
 console.log(`Latin word 'et' appears ${count2}.`);
