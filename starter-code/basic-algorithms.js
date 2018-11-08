@@ -32,11 +32,3 @@ function orderNames(name1, name2) {
     return 'What?! You both got the same name?'
 }
 console.log(orderNames(hacker1, hacker2));
-
-
-var result = [(1,2), (3,4)]
-
-
-console.log('')
-console.log('asdsads')
-console.log(result.length)
