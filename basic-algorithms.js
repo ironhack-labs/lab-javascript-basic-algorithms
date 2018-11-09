@@ -24,6 +24,27 @@ Depending on the lexicographic order of the strings, print:
 The driver's name goes first
 Yo, the navigator goes first definitely
 What?! You both got the same name?
+
+Bonus Time!
+Ask the user for a new string and check if it's a Palindrome. Examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".
+
+
+Go to lorem ipsum generator and:
+
+Generate 3 paragraphs. Store the text in a String
+Make your program count the number of words in the string
+Make your program count the number of times the latin word 'et' appears
+
+
 */
 
 const hacker1 = "AJOC";
@@ -112,3 +133,36 @@ const isPalindrome = (str) => {
 console.log(isPalindrome('madam'));
 console.log(isPalindrome('stack cats'));
 console.log(isPalindrome('taco cat'));
+
+// Lorem Ipsum
+
+const loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices magna luctus dolor bibendum tristique. Quisque lobortis diam ut est porttitor finibus malesuada eu libero. Integer placerat interdum nisi, vel fermentum nulla fermentum semper. Quisque tortor tortor, placerat eget egestas at, bibendum ut lorem. Nam viverra libero eu eros pellentesque condimentum. Duis luctus dictum pellentesque. Etiam dignissim urna sed neque vestibulum, ut posuere eros lobortis. Phasellus placerat sodales lorem lacinia interdum. Maecenas ultrices tempor risus eu ultrices. Nunc consequat odio fringilla, consectetur risus id, rhoncus sem. Quisque a arcu vitae erat blandit facilisis. Aliquam sit amet neque eros. Pellentesque nec dui feugiat, mattis mauris eget, imperdiet nisl.
+
+ Nullam rutrum libero et est aliquam vulputate. In eget odio convallis ante dignissim feugiat. Nullam dignissim feugiat nisi et lacinia. Cras tincidunt massa a justo varius viverra. Cras id massa efficitur leo malesuada gravida non consequat elit. Vestibulum et augue a leo iaculis gravida. Quisque ex augue, iaculis nec rhoncus vel, elementum nec est. Suspendisse sit amet magna eget nisi tempus gravida.
+
+ Nam mollis neque maximus elit maximus egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet iaculis dolor. Suspendisse elementum sit amet ex sit amet placerat. Duis efficitur, neque ut finibus congue, massa felis cursus massa, nec aliquet diam velit id massa. Aliquam et magna fringilla, molestie eros ac, elementum mi. Pellentesque a ligula vestibulum, semper diam nec, euismod felis. Mauris neque elit, maximus eget tortor ac, egestas gravida dolor. Donec sed elementum odio, ut sagittis nibh. Proin malesuada mattis lorem, quis tincidunt leo consequat a. Quisque maximus ut ex a venenatis. Sed quis augue mattis, pulvinar orci vel, eleifend lacus. Phasellus sed volutpat neque, at dapibus magna. Fusce augue ipsum, viverra id purus et, fringilla mollis sapien. Nam efficitur tortor sed quam maximus, nec malesuada lacus maximus. Sed sed convallis tortor, non rutrum nisi.`;
+
+// wordcount
+console.log(`the lorem ipsum paragraphs have ${loremIpsum.split(' ').length} words,`);
+
+// wordcount regex approach
+// we're looking only for characteres that has one or more ocurrences
+// string.match() returns and array, containing the matches, one item for each match, or null if no match is found
+console.log(`using regex the lorem ipsum paragraphs have ${loremIpsum.match(/\S+/g).length} words.`);
+
+// 'et' occurrences
+
+let etCount = 0;
+let loremArr = loremIpsum.split(' ');
+for (let x = 0; x < loremArr.length; x++) {
+  if (loremArr[x] === 'et') {
+    etCount++;
+  }
+}
+
+console.log(`and ${etCount} 'et' occurrences.`);
+
+// 'et' occurrences
+// regex approach
+
+console.log(`and ${loremIpsum.match(/\set\s/g).length} 'et' occurrences with regex.`);
