@@ -93,7 +93,7 @@ Define a function `maxOfTwoNumbers` that takes two numbers as arguments and retu
 
 ## Finding Longest Word
 
-Write a function `findLongestWord` that takes an array of words and returns the length of the longest one. If there are 2 with the same length, it should return the first occurrence. 
+Write a function `findLongestWord` that takes an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence. 
 
 **Starter Code**
 

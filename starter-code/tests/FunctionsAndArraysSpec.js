@@ -170,7 +170,7 @@ describe('Counting Repetion - howManyTimes', function () {
   });
 
   it('returns false with an empty array', function () {
-    expect(howManyTimes([])).toBe(undefined);
+    expect(howManyTimes([])).toBe(false);
   });
 
   it('returns one when the word appears only one time on the array', function () {
