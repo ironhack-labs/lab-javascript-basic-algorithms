@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Some Title</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <script>
+
+      // Names and Input
+
+      let hacker1 = "Raphael";
+      let hacker2 = "João";
+      console.log("The driver's name is " + hacker1); 
+      console.log("The navigator's name is " + hacker2);
+
+      // Conditionals //
+
+      let largerName = "";
+
+      if (hacker1.length > hacker2.length) {
+        console.log("The Driver has the longest name, it has " + hacker1.length + " characters");
+        largerName = hacker1;
+      } else if (hacker2.length > hacker1.length) {
+        console.log("Yo, navigator got the longest name, it has " + hacker2.length + " characters");
+        largerName = hacker2;
+      } else {
+        console.log("Wow, you both got equally long names, " + hacker2.length + " characters!!");
+        largerName = hacker1;
+      }
+
+      // Loops //
+
+      let nameArray1 = hacker1.split("");
+      let nameArray2 = hacker2.split("");
+    
+      for (let i = 0; i < largerName.length; i += 1) {
+        if (nameArray1[i] > nameArray2[i]) {
+          console.log("Yo, the navigator goes first definitely");
+          break;
+        } else if (nameArray1[i] < nameArray2[i]) {
+          console.log("The driver's name goes first");
+          break;
+        } else {
+          console.log("What?! You both got the same name?");
+          break;
+        }
+      }
+
+      console.log(hacker1.split("").join(" ").toUpperCase());
+
+      let nameToArray = hacker2.split("");
+      let reverseName = "";
+
+      for (let i = 0; i < hacker2.length; i += 1) {
+        let nameLetter = nameToArray.pop();
+        reverseName += nameLetter;
+      }
+
+      console.log(reverseName);
+  
+    </script>
+  </body>
+</html>
