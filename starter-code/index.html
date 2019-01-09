@@ -1,0 +1,40 @@
+<html>
+  <script>
+    let hacker1 = 'Henrique Mendes';
+    console.log("The driver's name is " + hacker1);
+
+    let hacker2 = 'Cristiana Yasuda';
+    console.log("The navigator's name is " + hacker2);
+
+    if(hacker1.length > hacker2.length) {
+      console.log('The Driver has the longest name, it has ' + hacker1.length + ' characters');
+    } else if (hacker1.length < hacker2.length) {
+      console.log('Yo, navigator got the longest name, it has ' + hacker2.length + ' characters');
+    } else {
+      console.log('wow, you both got equally long names, ' + hacker2.length + ' characters!');
+    }
+
+    let h1Name = '';
+    let h2Name = '';
+
+    for (let i = 0; i < hacker1.length; i += 1) {
+      h1Name += hacker1[i] + ' ';
+    }
+    for (let j = 0; j < hacker2.length; j += 1) {
+      h2Name += hacker2[(hacker2.length - j - 1)];
+    }
+    for (let k = 0; k < hacker1.length; k += 1) {
+      if (hacker1[k] < hacker2[k]) {
+        console.log("The driver's name goes first");
+      } else if (hacker1[k] > hacker2[k]) {
+        console.log("yo, the navigator goes first definitely");
+      } else {
+        console.log("What?! You both have the same name?");
+      }
+      break;
+    }
+
+    /*console.log(h1Name.toUpperCase());
+    console.log(h2Name);*/
+  </script>
+</html>
