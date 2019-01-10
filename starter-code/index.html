@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic-algorithms</title>
+
+<script>
+
+
+    let hacker1 = "Claudio Demais";
+    
+    let hacker2 = prompt("What's your name? ");
+
+    if(hacker1.length >= 10) {
+        console.log("XX");
+        console.log("The navigator's name is " + hacker2);
+    } else if (hacker2.length >= 10) {
+        console.log("XX");
+        console.log("The driver's name is " + hacker1);
+    } else if (hacker1.length >= 10 && hacker2.length >= 10) {
+        console.log("XX");
+    } else {
+        console.log("The driver's name is " + hacker1);
+        console.log("The navigator's name is " + hacker2);
+    }
+
+    // <--------------------LOOPS-------------------->
+
+    console.log("Caixa Alta: ", hacker1.toUpperCase().split(""));
+    var let =  hacker1.toUpperCase().split("");
+    var nome = "";
+    for(var i = 0; i < hacker1.length; i++){
+        nome = nome + hacker1[i] + " ";
+    }
+    console.log(nome);
+
+    console.log(hacker1.split('').reverse().join(''));
+    
+    // loops exercício 8
+    // utilizei o switch para aprender
+    function weightLetter (letter) {
+        switch(letter) {
+            case "A":
+            letter = 1;
+            break;
+            case "B":
+            letter = 2;
+            break;
+            case "C":
+             letter = 3;
+             break;
+             case "D":
+             letter = 4;
+             break;
+            case "E":
+             letter = 5;
+             break;
+            case "F":
+             letter = 6;
+             break;
+            case "G":
+             letter = 7;
+             break;
+            case "H":
+             letter = 8;
+             break;
+            case "I":
+             letter = 9;
+             break;
+            case "J":
+             letter = 10;
+             break;
+            case "K":
+             letter = 11;
+             break;
+            case "L":
+             letter = 12;
+             break;
+            case "M":
+             letter = 13;
+             break;  
+            case "N":
+             letter = 14;
+             break;
+            case "P":
+             letter = 15;
+             break;
+            case "Q":
+             letter = 16;
+             break;
+            case "R":
+             letter = 17;
+             break;
+            case "S":
+             letter = 18;
+             break;
+            case "T":
+             letter = 19;
+             break;
+            case "U":
+             letter = 20;
+             break;
+            case "V":
+             letter = 21;
+             break;
+            case "X":
+             letter = 22;
+             break;
+        }
+        return letter;
+    }
+
+    var firstLetterDriver = hacker1.split("");
+    var firstLetterNavigator = hacker2.split("");
+    console.log(firstLetterNavigator[0]);
+
+    console.log(weightLetter(firstLetterDriver[0]));
+    if(weightLetter(firstLetterDriver[0]) > weightLetter(firstLetterNavigator[0])) {
+        console.log("The driver's name goes first");
+    } else if(weightLetter(firstLetterDriver[0]) < weightLetter(firstLetterNavigator[0])) {
+        console.log("Yo, the navigator goes first definitely");
+    } else if (weightLetter(firstLetterDriver[0]) == weightLetter(firstLetterNavigator[0])) {
+        console.log("What?! You both got the same name?");
+    }
+
+
+    // <---------------------- BONUS ------------------->
+    let phrase = prompt("Digite a frase: ").split('');
+    console.log("Frase: ", phrase);
+
+    let newArr = [];
+
+    for(let i = 0; i < phrase.length; i++) {
+        if( !(phrase[i] === "," || phrase[i] === " ")) {
+            console.log("Letra diferente ", phrase[i] );
+            newArr.push(phrase[i]);
+        }
+    }
+
+    let phraseReverse = newArr.slice().reverse().join('').toLowerCase();
+    console.log(phraseReverse);
+    let phraseRigth = "";
+    for(var i = 0; i < newArr.length; i++) {
+        phraseRigth += newArr[i];
+    }
+    console.log(phraseRigth);
+    if(phraseRigth.toLowerCase() === phraseReverse) {
+        console.log("São iguais!");
+    } else {
+        console.log("Não são iguais");
+    }
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
