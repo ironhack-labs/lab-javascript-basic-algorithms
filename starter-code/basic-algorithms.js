@@ -10,3 +10,11 @@ console.log("The driver's name is XXXX")
 // Lorem ipsum generator
 
 
+//Esto es en la terminal
+
+git add .
+
+git commit -m "comentario "
+
+git push origin master
+
