@@ -40,4 +40,8 @@ if (hacker1 < hacker2) {
     console.log("Yo, the navigator goes first definitely")
 }else {
     console.log("What?! You both got the same name?");
+
+
+    
 }
+hola
