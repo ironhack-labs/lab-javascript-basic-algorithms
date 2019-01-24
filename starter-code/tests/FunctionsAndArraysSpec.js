@@ -133,7 +133,7 @@ describe('Unique Arrays - uniquifyArray', function () {
     expect(uniquifyArray(['Ironhack', 'Ironhack', 'Ironhack'])).toEqual(['Ironhack']);
   });
 
-  it('returns the same array when no element is repeted', function () {
+  it('returns the same array when no element is repeated', function () {
     expect(uniquifyArray(['Cat', 'Dog', 'Cow'])).toEqual(['Cat', 'Dog', 'Cow']);
   });
 
@@ -164,7 +164,7 @@ describe('Finding Elements - doesWordExist', function () {
   });
 });
 
-describe('Counting Repetion - howManyTimes', function () {
+describe('Counting Repetition - howManyTimes', function () {
   it('Defines howManyTimes', function () {
     expect(typeof howManyTimes).toBe('function');
   });
@@ -186,7 +186,7 @@ describe('Counting Repetion - howManyTimes', function () {
   });
 });
 
-describe('Counting Repetion - greatestProduct', function () {
+describe('Bonus Quest - greatestProduct', function () {
   it('Defines greatestProduct', function () {
     expect(typeof greatestProduct).toBe('function');
   });
