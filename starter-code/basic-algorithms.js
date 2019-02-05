@@ -27,7 +27,7 @@ hacker2 = hacker2.split('');
 hacker2 = hacker2.reverse('');
 console.log(hacker2.join(''));
 
-//8 reparar
+//8 
 let flag = 0;
 for (let i = 0; i < hacker1.length; i++) {
   if (hacker1 === hacker2) {
@@ -50,4 +50,6 @@ for (let i = 0; i < hacker1.length; i++) {
   palabra2 = palabra2.join('');
   if (palabra === palabra2) {
     console.log('Es palíndrome');
+  } else {
+      console.log('No es palíndrome');
   }
