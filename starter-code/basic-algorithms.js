@@ -41,28 +41,18 @@ if(hacker1.localeCompare(hacker2) === -1){
 
 // Bunus
 
-let palindrome = prompt('Wirte your messaje');;
+//Ingresa el mensaje en el prompt.
+let palindrome = prompt('Wirte your messaje');
+//Limpia el mensaje en el prompt quitando los espacios y caracteres especiales.
+let cleanPalindrome = palindrome.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+//Escrible en revesa el palindromo para ser comparado.
+let reversePalindrome = cleanPalindrome.split("").reverse().join("");;
 
-let arrayPalindrome = []; 
-let reversePalindrome;
-
-for(let i = 0; i < palindrome.length; i++){
-   arrayPalindrome.push(palindrome[i]);
-}
-reversePalindrome = arrayPalindrome.reverse();
-
-arrayPalindrome = arrayPalindrome.join('');
-arrayPalindrome = arrayPalindrome.replace(' ', '');
-
-reversePalindrome = reversePalindrome.join('');
-reversePalindrome= reversePalindrome.replace(' ', '');
-
-console.log(arrayPalindrome);
+console.log(cleanPalindrome);
 console.log(reversePalindrome);
 
-
-if(arrayPalindrome === reversePalindrome){
-  console.log('is a palindrome!');
-} else {
-  console.log('isn\'t a palindrome');
+if(cleanPalindrome === reversePalindrome){
+   console.log('is a palindrome!');
+ } else {
+   console.log('isn\'t a palindrome');
 }
