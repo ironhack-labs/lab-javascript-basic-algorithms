@@ -31,7 +31,8 @@ if (hacker1.localeCompare(hacker2) < 0) {
     console.log("What?! You both got the same name?");
 }
 //Conditionals
-var string = prompt("Qual a string?");
+//var string = prompt("Qual a string?");
+var string = 'A man, a plan, a canal, Panama!';
 var checkagem = true;
 var w = 0;
 
@@ -49,6 +50,10 @@ var w = 0;
 } else if (checkagem == false) {
     console.log("É fake!");
 } */
+
+string = string.replace(/[^A-za-z]/g, '');
+string = string.toLowerCase();
+console.log(string);
 
 while (checkagem && w <= string.length-1) {
     if (string[w] == string[string.length-1-w]) {
