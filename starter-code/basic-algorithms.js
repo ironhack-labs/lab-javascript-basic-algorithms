@@ -31,8 +31,8 @@ if (hacker1.localeCompare(hacker2) < 0) {
     console.log("What?! You both got the same name?");
 }
 //Conditionals
-//var string = prompt("Qual a string?");
-var string = 'A man, a plan, a canal, Panama!';
+var string = prompt("Qual a string?");
+//var string = 'A man, a plan, a canal, Panama!';
 var checkagem = true;
 var w = 0;
 
