@@ -15,13 +15,24 @@ if (hacker1.length > hacker2.length) {
     console.log("wow, you both got equally long names, " + hacker1.length + " characters!!");
 }
 
-for (var i = 0; i <= hacker1.length-1; i++) {
-    console.log(hacker1[i].toUpperCase());
+var nameTransformed = '';
+var nameTransformedPart2 = '';
+
+for (var i = 0; i <= hacker1.length - 1; i++) {
+    if (i < hacker1.length - 1) {
+        nameTransformed = nameTransformed + (hacker1[i].toUpperCase() + ' ');
+    } else {
+        nameTransformed = nameTransformed + hacker1[i].toUpperCase();
+    }
 }
 
-for (var y = hacker2.length-1; y >= 0; y--) {
-    console.log(hacker2[y].toUpperCase());
+console.log(nameTransformed);
+
+for (var w = hacker2.length-1; w >= 0; w--) {
+    nameTransformedPart2 = nameTransformedPart2 + hacker2[w];
 }
+
+console.log(nameTransformedPart2);
 
 if (hacker1.localeCompare(hacker2) < 0) {
     console.log("The driver's name goes first");
