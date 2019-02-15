@@ -10,9 +10,7 @@ Ready?
 
 ## Introduction
 
-For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can fine a REPL that runs in the browser for programming languages as JavaScript in [repl.it](https://repl.it/)
-
-We could also type JavaScript code in an editor, and then execute it to see the results in the REPL.
+Edit the `basic-algorithms.js` file with your editor and check the solutions in the developer tools console.
 
 Ready to start?
 
