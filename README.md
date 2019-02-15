@@ -18,29 +18,22 @@ Ready to start?
 
 ## Requirements
 
-- Go to [repl.it](https://repl.it/languages/javascript) and create an account (or login if you have one)
-- Open a new repl.it and make sure the language is ==JavaScript==
-- Type this in the ==Code Editor== (left panel)
-
-  ```javascript
-  console.log("I'm Ready!");
-  ```
-- Press `run ►`
-- If you can see the message on the JavaScript REPL, you're ready!!
-
-  ![](https://i.imgur.com/4TQislb.png)
+- Fork this repo
+- Then clone this repo
 
 ## Submission
 
-When you are done and you have checked that everything works fine, go to https://gist.github.com/, create a new [secret gist](https://help.github.com/articles/about-gists/#secret-gists) and send it to your Instructor.
- 
- ![](https://i.imgur.com/ux5em6j.png)
-
-**Remember:** Remember to add the extension of the file `fileName`**.js** in the *"Filename including extension"* input box so you can enjoy [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting) in your gist
+- Upon completion, run the following commands:
+```
+$ git add .
+$ git commit -m "done"
+$ git push origin master
+```
+- Create Pull Request so your TAs can check up your work.
  
 ## Exercise
 
-### Names and Input
+### Iteration 1: Names and Input
 
 1. Create a variable `hacker1` with the driver's name
 
@@ -50,14 +43,14 @@ When you are done and you have checked that everything works fine, go to https:/
 
 4. Print `"The navigator's name is YYYY"`
 
-### Conditionals
+### Iteration 2: Conditionals
 
 5. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
 	- `The Driver has the longest name, it has XX characters` or 
 	- `Yo, navigator got the longest name, it has XX characters` or
 	- `wow, you both got equally long names, XX characters!!`
 
-### Loops
+### Iteration 3: Loops
 
 6. Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
   ie. `"J O H N"`
