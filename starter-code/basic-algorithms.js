@@ -15,13 +15,15 @@ if (hacker2.length < hacker1.length) {
 }
 
 //Loops
+var hacker1_1 = '';
+var hacker2_2 = '';
 for (i = 0; i < hacker1.length; i += 1) {
-	var hacker1_1 = hacker1_1 + (hacker1.charAt(i) + ' ');
+	hacker1_1 = hacker1_1 + (hacker1.charAt(i) + ' ');
 }
 console.log(hacker1_1.toUpperCase());
 
 for (i = 0; i < hacker1.length; i += 1) {
-	var hacker2_2 = hacker2_2 + (hacker2.charAt(i) + ' ');
+	hacker2_2 = hacker2_2 + (hacker2.charAt(i) + ' ');
 }
 console.log(hacker2_2.toUpperCase());
 
