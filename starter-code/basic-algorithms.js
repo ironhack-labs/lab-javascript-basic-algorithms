@@ -108,6 +108,10 @@ if (hacker1[0].toLowerCase() < hacker2[0].toLowerCase()) {
 //   ? console.log('yes it’s a palindrome')
 //   : console.log('no it’s not a palindrome');
 var userInput = prompt("Write something and we'll check if it's a Palindrome");
+let reversedInput = '';
+for (let i = userInput.length; i--; ) {
+  reversedInput += userInput[i];
+}
 
 function polish(w) {
   return w
@@ -116,9 +120,9 @@ function polish(w) {
     .join('')
     .toLowerCase();
 }
-
+console.log(reversedInput);
 var str = polish(userInput);
-var revStr = polish(reversedInput).reverse();
+var revStr = polish(reversedInput);
 str === revStr
   ? console.log('This is a Palindrome')
   : console.log('Unfortunately this is not a Palindrome');
