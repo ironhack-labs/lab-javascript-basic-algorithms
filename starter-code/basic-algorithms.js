@@ -44,5 +44,3 @@ if (hecker1.charAt(0) > hecker2.charAt(0)) {
 
 
 // Lorem ipsum generator
-
-
