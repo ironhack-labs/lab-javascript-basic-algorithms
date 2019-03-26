@@ -51,3 +51,23 @@ if(hacker1Count > hacker2Count) {
 } else {
   console.log (`What?! You both got the same name?`)
 }
+
+// Bonus
+
+let palindrome = prompt ()
+let palindromeReverse = ""
+
+for (i = palindrome.length; i >= 0; i--) {
+  palindromeReverse += palindrome.charAt(i)
+}
+if(palindrome === palindromeReverse) {
+  console.log(palindrome + " is a palindrome.")
+} else {
+  console.log(palindrome + " it's NOT a palindrome.")
+}
+
+let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sollicitudin mi. Aenean sed mauris ipsum. Maecenas condimentum, lectus ut commodo sodales, nisi massa lobortis orci, eu ultricies lectus massa ac risus. Maecenas blandit ultrices risus, nec lacinia leo mattis ut. Aliquam hendrerit, odio ac gravida maximus, enim nisl dictum libero, ac volutpat nulla lacus eget mauris. Duis interdum justo ex, sed vulputate lectus dictum id. Nullam vel dictum erat. Fusce metus massa, viverra eu consectetur quis, elementum sed erat. Duis tincidunt nunc a justo auctor, at interdum mauris vehicula. Curabitur volutpat lacus ac auctor efficitur. Donec viverra, nisi pretium imperdiet maximus, tortor leo dignissim est, quis suscipit orci urna malesuada lectus. Donec porttitor mauris sapien, sit amet efficitur est iaculis in. Pellentesque sit amet leo at orci vehicula tristique. Donec sed tortor et diam gravida pretium. Sed pellentesque massa sagittis lacinia tristique. Donec mollis non nisl eu mattis. Phasellus tempus lacus orci, id pharetra turpis laoreet ac. Sed commodo nulla mauris, at congue felis commodo non. Sed nunc enim, sodales eget viverra quis, suscipit eget urna. Maecenas nec porttitor lectus, at venenatis nisl. Nulla dui neque, laoreet vitae bibendum blandit, egestas id mi. Morbi vestibulum nisi augue, in mollis lectus mollis nec. Vivamus egestas ultricies lectus, ac iaculis orci finibus ut. Ut commodo elit id lacus volutpat, in iaculis tortor bibendum. Nam vel egestas lorem, eu rutrum dolor. In augue tortor, iaculis ac dolor vel, imperdiet maximus mi. Nam ornare turpis mi, vitae tristique dui commodo at. Praesent pellentesque turpis vel elementum porttitor. Mauris libero orci, maximus vel dui non, dapibus rutrum felis. Etiam lobortis metus tortor. Suspendisse varius scelerisque tellus at suscipit. Maecenas euismod, odio non interdum pulvinar, tellus tellus pulvinar lacus, a posuere nibh nulla sollicitudin nulla."
+
+console.log(text.split(" ").length)
+
+console.log (text.split("et").length)
