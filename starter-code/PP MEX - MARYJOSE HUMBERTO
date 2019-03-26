@@ -1,0 +1,37 @@
+let hacker1 = "Maryjose"
+    console.log("The driver's name is " + hacker1)
+  let hacker2;
+    hacker2 = prompt("introduce tu nombre")
+    console.log("The navigator is " + hacker1)
+
+if(hacker1.length > hacker2.length) {
+  console.log("the driver has the longest name, it has " + hacker1.length )
+} else if (hacker2.length > hacker1.length){
+  console.log("Yo, navigator got the longest name, it has " + hacker2.length + "characters") 
+}
+  else if (hacker1.length == hacker2.length){
+    console.log(`wow, you both got equally long names ${hacker1.length} characters!!`)
+  } 
+
+let newName = ""
+for(let i=0; i < hacker1.length; i++){
+  newName+=hacker1[i] + " "
+}
+  console.log(newName.toUpperCase())
+
+console.log('Maryjose'.split('').reverse().join(''))
+
+console.log("avier" < "ariel")
+
+let x = "Maryjose"
+let y = "Humberto"
+function comparisonWord(x, y) {
+  if(x > y) {
+    console.log ("The drivers name goes first")
+} else if (x < y) {
+    console.log("Yo, the navigator goes first definitely")
+} else if (x = y) {
+    console.log("What?! you both got the same name?")
+} 
+} 
+comparisonWord("Maryjose" , "Humberto")
