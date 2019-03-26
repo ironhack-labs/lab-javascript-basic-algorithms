@@ -1,8 +1,7 @@
 // Names and Input
 const hacker1 ="Ricardo"
 
-//const hacker2 = prompt("Tell me your name baby <3")
-hacker2 = "Regina"
+const hacker2 = prompt("Tell me your name baby <3")
 
 console.log(`The navigator's name is ${hacker2} honey!`)
 
