@@ -16,9 +16,9 @@ for (i =0; i < driverName.length; i++){
   nuevoName += driverName[i] + ' '
 }
 
-console.log(nuevoName.toUpperCase())
+console.log(nuevoName.toUpperCase()) //Bien, pero si notan les va a sobrar un espacio al final. Pueden removerlo con un .slice(0,-1) o un .trim() 
 
-let nuevoN=''
+let nuevoN='' //Traten de ser más explícito en los nombres de las variables, así va a ser más fácil entender qué hacen
 for(j=1;j <= navigatorName.length ; j++){
   nuevoN += navigatorName[navigatorName.length - j]
 }
