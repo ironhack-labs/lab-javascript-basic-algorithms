@@ -1,10 +1,3 @@
-// Names and Input
-
-
-//Conditionals
-
-
-// Lorem ipsum generator
 let hacker = "arara";
 let hacker2 = "amanda";
 if (hacker.length > hacker2.length) {
