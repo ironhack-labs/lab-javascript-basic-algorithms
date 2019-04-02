@@ -8,6 +8,10 @@ var person = prompt("What is the navigator's name?");
 
 if (hacker1.length > hacker2.length) {
   console.log("The driver has the longest name, it has " + hacker1.length + " characters.")
+} else if (hacker1.length < hacker2.length) {
+  console.log("Yo, navigator got the longest name, it has " + hacker2.length + " characters.")
+} else {
+  console.log("wow, you both got equally long names, " + hacker1.length + " characters!!")
 }
 
 
@@ -48,30 +52,26 @@ for (var i = 0; i < hacker1.length; i++) {
 
 var words = prompt("Is it a Palindrome?");
 function palindrome(str) {
-  string = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").toLowerCase();
+  
+  var string = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, "").toLowerCase();
 
-  // var tempVar = true;
-  // console.log(string)
-  //  str = string
-  // for (var i = 0; i < str.length; i++) {
-  //   if (str[i] !== str[(str.length - 1) - i]) {
-  //     tempVar = false
-  //   }
-  // }
-  // if (tempVar) {
-  //   console.log("Yes, it is a Palindrome!")
-  // } else {
-  //   console.log("No, it's not a Palindrome!")
-  // }
-
-
-  // amorroma
-  // []
-
-
-
-
-
+  var hasFailed = false;
+  
+  for (var i = 0; i < string.length; i++) {
+    var leftWord = string[i];
+    var rightWord = string[string.length - (i + 1)];
+  
+    if (leftWord !== rightWord) {
+      hasFailed = true;
+      break;
+    }
+  }
+  
+  if (!hasFailed) {
+    console.log("palindrome");
+  } else {
+    console.log("NO palindrome");
+  }
 }
 
 palindrome(words)
