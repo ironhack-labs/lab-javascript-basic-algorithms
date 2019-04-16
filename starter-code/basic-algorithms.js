@@ -20,6 +20,6 @@ if(hacker1.length==hacker2.length){
 
 // Lorem ipsum generator
 
-console.log(hacker1.toUpperCase())
+console.log(hacker1.toUpperCase().split('').join(' '));
 
-console.log(hacker2)
+console.log(hacker2.split('').reverse().join(''));
