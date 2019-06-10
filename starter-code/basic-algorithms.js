@@ -1,4 +1,4 @@
-// Names and Input
+// Names and Input (1-4)
 let hacker1 = `Billy`
 console.log(`The driver's name is ${hacker1}`)
 
@@ -7,7 +7,7 @@ let hacker2 = `Gulfiya`
 console.log(`The navigator's name is ${hacker2}`)
 
 
-//Conditionals
+// Conditionals (5)
 if (hacker1.length>hacker2.length){
    console.log(`The Driver has the longest name, it has ${hacker1.length} characters`);
 } else if(hacker1.length<hacker2.length){
@@ -16,15 +16,17 @@ if (hacker1.length>hacker2.length){
    console.log(`Wow, you both got equally long names, ${hacker1.length} characters!!`);
 }
 
+// Loops (6 & 7)
 let spaceName = "";
 for (i=0; i<hacker1.length; i++) {
  spaceName = spaceName + hacker1[i] + " ";
- console.log(spaceName.toUpperCase())
 }
+console.log(spaceName.toUpperCase())
 
 let reverseName = hacker2.split("").reverse()
- console.log(reverseName.join(""));
+console.log(reverseName.join(""));
 
+ // Lexicographic Order (8 - Incomplete)
 let lexiOrder = hacker1.localeCompare(hacker2)
 console.log(lexiOrder)
 
