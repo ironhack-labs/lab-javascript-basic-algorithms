@@ -39,11 +39,17 @@ if (hacker1Upper.localeCompare(hacker2back)){
 
 hacker3 = 'Ana';
 
-hacker3.toLowerCase();
+let hackerLower = hacker3.toLowerCase();
 let hacker3Update = "";
-for (let i = hacker3.length - 1; i >= 0; i--){
-    hacker3Update += hacker3[i];
+for (let i = hackerLower.length - 1; i >= 0; i--){
+    hacker3Update += hackerLower[i];
 }
 
-console.log
+if (hackerLower === hacker3Update){
+    console.log('Essa string é palíndroma');
+} else {
+    console.log('Essa string não é palíndroma');
+}
+
+
 // Lorem ipsum generator
