@@ -18,7 +18,7 @@ if (hacker1.length > hacker2.length) {
       hacker2.length
     } characters`
   );
-} else if (hacker1.length === hacker2.length) {
+} else{
   console.log(
     `wow, you both ${hacker1} and ${hacker2} got equally long names, ${
       hacker1.length
@@ -27,18 +27,20 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Lorem ipsum generator
-let driver = hacker1;
-let navigator = hacker2;
+let driver = "";
+let navigator = "";
 
-for (i = 0; i < driver.length; i++) {
-  console.log(driver[i].toUpperCase());
-  i += " ";
+for (let i = 0; i < hacker1.length; i++) {
+  driver += hacker1[i].toUpperCase() + " ";
 }
 
-for (j = navigator.length -1; j >= 0; j--){
-  console.log(navigator[j]);
-  j += " ";
+console.log(`The driver is ${driver}`)
+
+for (let i = hacker2.length -1; i >= 0; i--){
+  navigator += hacker2[i] + " ";
 }
+
+console.log(`The navigator is ${navigator}`);
 
 if(driver.localeCompare(navigator) < 0){
   console.log(`The driver's name ${driver} goes first`);
@@ -50,10 +52,17 @@ if(driver.localeCompare(navigator) < 0){
 
 //if it's palindrome
 
-let testPalindrome = prompt("Type a word");
-while(testPalindrome[0] === testPalindromee[testPalindrome.length -1]){
-  console.log(`Your word ${testPalindrome} is a palindrome!`);
+let testPalindrome = prompt("Type a word"); //can't do it with strings
+testPalindrome = testPalindrome.toLowerCase(); //in case there's an uppercase
+let isPalindrome="" // to save the result
+for(let i=0; i < testPalindrome.length; i++){
+  if(testPalindrome[i] !== testPalindrome[testPalindrome.length -1 - i]){
+    isPalindrome = "your word isn't a palindrome"
+  }else{
+    isPalindrome ="congrats! your word is a palindrome";
+  }
 }
+console.log(isPalindrome);
 
 //BONUS
 
