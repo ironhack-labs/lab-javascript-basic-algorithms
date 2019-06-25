@@ -52,17 +52,3 @@ for(var i=hacker2.length; i>=0; i--) {
    console.log("Not a palindrome!")  
  }
  
-
-
- 
-
-
-
-
-// Names and Input
-
-
-//Conditionals
-
-
-// Lorem ipsum generator
