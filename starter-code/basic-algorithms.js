@@ -62,7 +62,7 @@ console.log(cleaned.length);
 let matches = 0;
 
 for (i=0; i < loremIpsum.length; i++) {
-  loremIpsum.match('/^(et)\w+\g');
+  loremIpsum.match(/[et]/g);
   matches++;
 }
 console.log(matches);
