@@ -7,6 +7,7 @@ console.log ("The navigator's name is", hacker2);
 
 var hacker1Length = hacker1.length;
 var hacker2Length = hacker2.length;
+
 //Conditionals
 
 if (hacker1Length > hacker2Length ){
@@ -20,6 +21,24 @@ if (hacker1Length > hacker2Length ){
     console.log("wow, you both got equally long names,", hacker1Length, "characters!!")
   }
 
+//Loops
+
+navRev = hacker2.split("").reverse().join("");
+navCaps = hacker2.toUpperCase().split("").join(" ");
+
+
+console.log("\n The Navigator's name in reverse is", navRev);
+console.log("\n The Navigator's name is spelled", navCaps)
+
+if(hacker1.localeCompare(hacker2)===-1){
+console.log("\n The driver's name goes first")
+} 
+else if(hacker1.localeCompare(hacker2)===1){
+  console.log("\n Yo, the navigator goes first definitely")
+}
+else if(hacker1.localeCompare(hacker2)===0){
+  console.log("\n What?! You both got the same name?")
+}
 
 // Palindrome Checker
 
