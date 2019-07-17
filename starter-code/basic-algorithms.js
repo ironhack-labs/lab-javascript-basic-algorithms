@@ -24,4 +24,4 @@ if (hacker1Length > hacker2Length ){
     console.log("wow, you both got equally long names,", hacker1Length, "characters!!")
   }
 
-// Lorem ipsum generato
+// Lorem ipsum generato 
