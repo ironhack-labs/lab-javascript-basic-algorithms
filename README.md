@@ -1,5 +1,7 @@
 ![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
+# Pair programming exercise by Nan and Mel
+
 # JS | Basic Algorithms
 
 Welcome to your first bootcamp exercise at IronHack!
