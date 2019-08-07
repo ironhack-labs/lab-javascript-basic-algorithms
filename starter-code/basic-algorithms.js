@@ -96,7 +96,7 @@ for (let i =0; i<loremIpsumParagraphs.length; i++){
     wordcounter +=1;
   } else if (i == loremIpsumParagraphs.length){
     break;
-  } else if(loremIpsumParagraphs[i].toUpperCase =="E" && loremIpsumParagraphs[i-1] == " " && loremIpsumParagraphs[i+1].toUpperCase == "T"){
+  } else if(loremIpsumParagraphs[i].toUpperCase =="E" && loremIpsumParagraphs[i-1] == " " && loremIpsumParagraphs[i+1].toUpperCase == "T" && loremIpsumParagraphs[i+2].toUpperCase == " "){
     wordcounter +=1;
   }
 }
