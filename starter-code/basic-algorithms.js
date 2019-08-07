@@ -64,13 +64,25 @@ var count = 0;
 
 function countWords(words) {
     const tmp = words.split(/\W/);
-    var count = 0;
+    let count = 0;
     for (let i = 0; i < tmp.length; i += 1) {
       if (tmp[i]) count++;
     }
     console.log(count);
     }
     countWords(lorem);
+
+function countEt(words){
+    const dude = words.split(/\W/);
+    let newCount = 0;
+    for (let i = 0; i < dude.length; i+=1){
+        if (dude[i] == "et"){
+
+        newCount++;}
+    }
+    console.log(newCount);
+}
+countEt(lorem);
 
 
 //Conditionals
