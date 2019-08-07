@@ -23,7 +23,7 @@ if (hacker1.length > hacker2.length) {
 
 //-------- capitall name
 
-hacker1_upper = hacker1.toUpperCase;
+let hacker1_upper = hacker1.toUpperCase();
 let name_spaced = hacker1_upper[0];
 
 for (let i = 1; i < hacker1.length; i++) {
@@ -113,4 +113,4 @@ paragraphs_word_array.forEach(function(element) {
   }
 });
 
-console.log(`The word et is encountered ${et_count} in the string`);
+console.log(`The word et is encountered ${et_count} times in the string`);
