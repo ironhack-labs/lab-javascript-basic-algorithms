@@ -3,20 +3,20 @@
  console.log("The driver's name is Julie");
 
  let hacker2 = window.prompt("Enter navigator name");
- console.log("The navigator's name is Hacker2");
-
+ console.log("The navigator's name is: " + hacker2);
 
 //Conditionals
+let equal = hacker1.length && hacker2.length;
 
 if (hacker1.length > hacker2.length) {
-    console.log("The Driver has the longest name, it has XX characters" + hacker1);
+    console.log("The Driver has the longest name, it has " +  hacker1.length + " characters " + hacker1);
 
 }
 else if (hacker1.length < hacker2.length) {
-    console.log("Yo, navigator got the longest name, it has XX characters" + hacker2);
+    console.log("Yo, navigator got the longest name, it has " +  hacker2.length + " characters " + hacker2);
 }
 else {
-    console.log("wow, you both got equally long names, XX characters!!");
+    console.log("wow, you both got equally long names, "  + equal + " characters!!");
 }
 
 // Lorem ipsum generator
