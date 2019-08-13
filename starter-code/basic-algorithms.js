@@ -28,10 +28,11 @@ Integer faucibus in nunc et dignissim. Nunc eget justo elit. Duis a suscipit ant
 function wordcount (str){
   return str.split(" ").length;
 }
-wordcount(parrafo)
 
-let etwords = parrafo.search('et');
+
+let etwords = parrafo.split('et');
 console.log(etwords)
+wordcount(parrafo)
 
 //Name checker
 
