@@ -135,8 +135,8 @@ describe("Unique Arrays - uniquifyArray", function() {
     expect(typeof uniquifyArray).toBe("function");
   });
 
-  it("returns null with an empty array", function() {
-    expect(uniquifyArray([])).toBe(null);
+  it("returns [] with an empty array", function() {
+    expect(uniquifyArray([])).toEqual([]);
   });
 
   it("returns the correct array when having an array of the same element", function() {
