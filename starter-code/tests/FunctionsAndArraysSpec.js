@@ -203,8 +203,8 @@ describe("Counting Repetition - howManyTimes", function() {
     expect(typeof howManyTimes).toBe("function");
   });
 
-  it("returns false with an empty array", function() {
-    expect(howManyTimes([])).toBe(false);
+  it("returns 0 with an empty array", function() {
+    expect(howManyTimes([])).toBe(0);
   });
 
   it("returns one when the word appears only one time on the array", function() {
