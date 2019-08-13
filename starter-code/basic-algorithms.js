@@ -18,6 +18,23 @@ console.log(`wow, you both got equally long names, ${hacker1.length} characters!
 }
 
 // Lorem ipsum generator
+
+let parrafo = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis libero eu arcu dapibus, id lobortis erat vehicula. Mauris venenatis magna ac purus tempus, sed congue nunc aliquet. Proin varius viverra dolor, nec volutpat sapien. Maecenas volutpat nulla a ligula posuere lacinia. Duis luctus et elit non accumsan. Nulla suscipit turpis imperdiet ex ultricies vestibulum. Suspendisse eget nunc dignissim, facilisis augue at, ultrices magna. Duis viverra nibh ac sagittis lacinia. Nam vel fringilla ante, at fringilla elit. Etiam sit amet convallis libero. Curabitur elementum ex et ipsum vehicula blandit. Aliquam felis massa, ornare at mi pulvinar, accumsan bibendum dolor. Pellentesque faucibus, neque non gravida lobortis, dui risus pellentesque lacus, quis scelerisque diam elit sit amet velit. Donec quis elementum dui, non egestas orci.
+
+Sed lectus quam, lacinia ut elit non, scelerisque fringilla metus. Nullam vel vestibulum dolor. Curabitur eu sem ex. Suspendisse vel laoreet est. Vivamus hendrerit nisl vel erat condimentum auctor. Fusce vitae iaculis ex, in accumsan est. Proin vel orci nisi. In placerat purus id congue tincidunt. Nunc ut eros lorem. Aenean rutrum lacus felis, vel porta massa ultrices vitae.
+
+Integer faucibus in nunc et dignissim. Nunc eget justo elit. Duis a suscipit ante, porta maximus diam. Aenean nec eleifend neque. Proin tempus ultricies libero, ac pharetra lectus blandit sit amet. Nunc turpis nisl, convallis ac massa non, aliquet eleifend est. Aliquam sed bibendum ligula, id fringilla massa.`
+
+function wordcount (str){
+  return str.split(" ").length;
+}
+wordcount(parrafo)
+
+let etwords = parrafo.search('et');
+console.log(etwords)
+
+//Name checker
+
 let name = hacker1.toUpperCase()
 name = name.split(' ')
 let spaced = ''
@@ -47,6 +64,8 @@ if (hacker1>hacker2){
   }
 
 
+  //Palindrome
+
   let palindromo = prompt('Escribe algo aqui')
 
 function palindrome (palindromo){
@@ -62,16 +81,3 @@ function palindrome (palindromo){
 
 palindrome(palindromo)
 
-let parrafo = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis libero eu arcu dapibus, id lobortis erat vehicula. Mauris venenatis magna ac purus tempus, sed congue nunc aliquet. Proin varius viverra dolor, nec volutpat sapien. Maecenas volutpat nulla a ligula posuere lacinia. Duis luctus et elit non accumsan. Nulla suscipit turpis imperdiet ex ultricies vestibulum. Suspendisse eget nunc dignissim, facilisis augue at, ultrices magna. Duis viverra nibh ac sagittis lacinia. Nam vel fringilla ante, at fringilla elit. Etiam sit amet convallis libero. Curabitur elementum ex et ipsum vehicula blandit. Aliquam felis massa, ornare at mi pulvinar, accumsan bibendum dolor. Pellentesque faucibus, neque non gravida lobortis, dui risus pellentesque lacus, quis scelerisque diam elit sit amet velit. Donec quis elementum dui, non egestas orci.
-
-Sed lectus quam, lacinia ut elit non, scelerisque fringilla metus. Nullam vel vestibulum dolor. Curabitur eu sem ex. Suspendisse vel laoreet est. Vivamus hendrerit nisl vel erat condimentum auctor. Fusce vitae iaculis ex, in accumsan est. Proin vel orci nisi. In placerat purus id congue tincidunt. Nunc ut eros lorem. Aenean rutrum lacus felis, vel porta massa ultrices vitae.
-
-Integer faucibus in nunc et dignissim. Nunc eget justo elit. Duis a suscipit ante, porta maximus diam. Aenean nec eleifend neque. Proin tempus ultricies libero, ac pharetra lectus blandit sit amet. Nunc turpis nisl, convallis ac massa non, aliquet eleifend est. Aliquam sed bibendum ligula, id fringilla massa.`
-
-function wordcount (str){
-  return str.split(" ").length;
-}
-wordcount(parrafo)
-
-let etwords = parrafo.search('et');
-console.log(etwords)
