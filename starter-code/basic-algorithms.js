@@ -31,20 +31,17 @@ alrevez += hacker1[i]
 }
 console.log(alrevez)
 
-const usuarios = ["Gisela", "aicardo"]  
-console.log(usuarios)
-
-usuarios.sort()
-console.log(usuarios)
-for (let i=0; i<usuarios.length; i++) {
-    console.log(usuarios[i]);
+let ordenalf = hacker1.localeCompare(hacker2)
+if (ordenalf < 0){
+  console.log('The driver\'s name goes first')
+} else if (ordenalf > 0){
+  console.log('Yo, the navigator goes first definitely')
+} else if (ordenalf === 0){
+  console.log ('What?! You both got the same name?')
 }
- 
-let nombres = new Array(hacker1, hacker2)
-nombres.sort()
- 
-for (var i=0; i<nombres.length; i++) {
-    console.log(nombres[i]);
-}
+//crear una matriz (arreglo de un arreglo) donde va a estar ubicado nuestro rover
 
-// Lorem ipsum generator
+//hacer la inversa al forward
+
+//4 evaluar si el rover desea moverse hacia una direccion que esta ocupada
+//array.includes revisa las coordenadas si ya estan ocupadas (obstaculos)
