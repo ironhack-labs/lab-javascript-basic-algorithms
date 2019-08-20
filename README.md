@@ -32,7 +32,7 @@ Ready to start?
 
 When you are done and you have checked that everything works fine, click on the **Share** button and copy the link from the *Share Link* field. Send this link to your TAs so they can check up your work.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a4256fa95d57930c482bfa90bc7924c4.png =400x)
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_a4256fa95d57930c482bfa90bc7924c4.png)
 
  
 ## Instructions
