@@ -10,7 +10,7 @@ Ready?
 
 ## Introduction
 
-For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can fine a REPL that runs in the browser for programming languages as JavaScript in [repl.it](https://repl.it/)
+For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [repl.it](https://repl.it/)
 
 We could also type JavaScript code in an editor, and then execute it to see the results in the REPL.
 
@@ -46,7 +46,7 @@ When you are done and you have checked that everything works fine, go to https:/
 
 2. Print `"The driver's name is XXXX"` 
 
-3. Create a variable `hacker2` and [ask the user](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) for the navigator's name
+3. Create a variable `hacker2` with the navigator's name
 
 4. Print `"The navigator's name is YYYY"`
 
@@ -72,24 +72,13 @@ When you are done and you have checked that everything works fine, go to https:/
 
 ### Bonus Time!
 
-9. Ask the user for a new string and check if it's a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Examples of palindromes:
-	- "A man, a plan, a canal, Panama!"
-	- "Amor, Roma"
-	- "race car"
-	- "stack cats"
-	- "step on no pets"
-	- "taco cat"
-	- "put it up"
-	- "Was it a car or a cat I saw?" and "No 'x' in Nixon".
-
-10. Go to [lorem ipsum generator](http://www.lipsum.com/) and:
-  - Generate 3 parragraphs. Store the text in a String
+9. Go to [lorem ipsum generator](http://www.lipsum.com/) and:
+  - Generate 3 paragraphs. Store the text in a String
   - Make your program count the number of words in the string
-  - Make your program count the number of times the latin word [`et`](https://en.wiktionary.org/wiki/et#Latin)appears
+  - Make your program count the number of times the latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears
 
 ## Extra Resources
 
-- [prompt() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) | Ask user for input
 - [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [if - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [while - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
