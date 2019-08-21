@@ -33,6 +33,19 @@ else if (hacker1.length < hacker2.length) {
 }
 else console.log(`Their names are the same length!`)
 
+
+
+//////////////
+//AS FUNCTION
+
+function checkLength(name1, name2) {
+  if (name1.length > name2.length) console.log(`${name1} is the longest name it has ${name1.length} characters`)
+  else if (name1.length < name2.length) console.log(`${name2} is the longest name it has ${name2.length} characters`)
+  else console.log('Their names are the same length')
+}
+
+
+// checkLength(hacker1, hacker2)
 /*
 Iteration 3: Loops
 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
@@ -54,7 +67,7 @@ for(let i = 0; i < hacker1.length; i++) {
   else driver += hacker1[i].toUpperCase();
 }
 
-for (let i = hacker2.length-1; i > 0; i--) {
+for (let i = hacker2.length-1; i >= 0; i--) {
   navigator += hacker2[i]
 }
 console.log( `The new driver name is ${driver}. The new navigator name is ${navigator}`)
@@ -67,6 +80,35 @@ if (array[0] == array[1]) console.log('What?! You both got the same name?')
 else if (array[0] === driver.toLowerCase()) console.log(`The driver's name goes first.`)
 else if (array[0] === navigator.toLowerCase()) console.log('Yo the navigator goes first definitely')
 
+
+/////////////
+//AS FUNCTION 
+
+function upperCaseSplit(name) {
+  let newName = name.toUpperCase().split("").join(" ")
+  console.log(`The old name was ${name} it is now ${newName}`)
+}
+
+upperCaseSplit(hacker1)
+
+function reverseIt(name) {
+  let newName = name.split("").reverse().join("");
+  console.log(`The old name was ${name} it is now ${newName}`)
+}
+
+reverseIt(hacker2);
+
+
+function whatComesFirst(name1, name2) {
+  let array = [name1.toLowerCase(), name2.toLowerCase()]
+  array.sort();
+
+  if (array[0] == array[1]) console.log('What?! You both got the same name?')
+  else if (array[0] === name1.toLowerCase()) console.log(`The driver's name goes first.`)
+  else if (array[0] === name2.toLowerCase()) console.log('Yo the navigator goes first definitely')
+}
+
+whatComesFirst(name1, name2);
 
 /*
 Go to lorem ipsum generator and:
