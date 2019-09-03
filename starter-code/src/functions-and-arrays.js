@@ -1,7 +1,7 @@
 // Find the maximum
 
 // Finding Longest Word
-var words = [
+const words = [
   'mystery',
   'brother',
   'aviator',
@@ -13,14 +13,14 @@ var words = [
 
 // Calculating a Sum
 
-var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 // Calculate the Average
 
-var numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 // Array of Strings
-var wordsArr = [
+const wordsArr = [
   'seat',
   'correspond',
   'linen',
@@ -34,7 +34,7 @@ var wordsArr = [
 ];
 
 // Unique Arrays
-var wordsUnique = [
+const wordsUnique = [
   'crab',
   'poison',
   'contagious',
@@ -49,7 +49,7 @@ var wordsUnique = [
 ];
 
 // Finding Elements
-var wordsFind = [
+const wordsFind = [
   'machine',
   'subset',
   'trouble',
@@ -60,8 +60,8 @@ var wordsFind = [
   'disobedience'
 ];
 
-// Counting Repetion
-var wordsCount = [
+// Counting Repetition
+const wordsCount = [
   'machine',
   'matter',
   'subset',
@@ -74,9 +74,10 @@ var wordsCount = [
   'disobedience',
   'matter'
 ];
-// Bonus Quest
 
-var matrix = [
+// Bonus
+
+const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
   [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0],
   [81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65],
