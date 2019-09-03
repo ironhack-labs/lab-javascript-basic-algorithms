@@ -97,7 +97,7 @@ Write a function `findLongestWord` that takes an array of words and returns the 
 **Starter Code**
 
 ```javascript
-var words = [
+const words = [
   'mystery',
   'brother',
   'aviator',
@@ -119,7 +119,7 @@ Create a `sumArray` function that takes an array of numbers as a parameter, and 
 **Starter Code**
 
 ```javascript
-var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
 ## Iteration #4: Calculate the Average
@@ -138,7 +138,7 @@ Write a function `averageNumbers` that receives an array of numbers and calculat
 **Starter Code**
 
 ```javascript
-var numbers = [2, 6, 9, 10, 7, 4, 1, 9];
+const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
 ### Level 2: Array of Strings
@@ -148,7 +148,7 @@ Write a function `averageWordLength` that receives an array of words and calcula
 **Starter Code**
 
 ```javascript
-var words = [
+const words = [
     'seat',
     'correspond',
     'linen',
@@ -171,7 +171,7 @@ Do this in the form of a function `uniquifyArray` that receives an array of word
 **Starter Code**
 
 ```javascript
-var words = [
+const words = [
   'crab',
   'poison',
   'contagious',
@@ -195,7 +195,7 @@ Write a function `doesWordExist` that will take in an array of words as one argu
 
 **Starter Code**
 ```javascript
-var words = [
+const words = [
   'machine',
   'subset',
   'trouble',
@@ -214,7 +214,7 @@ Write a function `howManyTimes` that will take in an array of words as one argum
 **Starter Code**
 
 ```javascript
-var words = [
+const words = [
   'machine',
   'matter',
   'subset',
@@ -236,7 +236,7 @@ In the 20×20 grid below; What is the greatest product of four adjacent numbers 
 Write a function `greatestProduct` to find the answer!
 
 ```javascript
-var matrix = [
+const matrix = [
   [08,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,08],
   [49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,04,56,62,00],
   [81,49,31,73,55,79,14,29,93,71,40,67,53,88,30,03,49,13,36,65],
