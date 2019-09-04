@@ -52,14 +52,14 @@ console.log ("<-------------------------Bônus---------------------------->")
 /*Bônus Time!*/
 const textoIpsum =
   `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-It has survived not only five centuries, but also the leap et inet electronic typesetting, remaining essentially unchanged.`;
+Lorem Ipsum has been the industry 's standard dummy text ever since et the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap et inetet electronic typesetting, remaining essentially unchanged.`;
 
 
 const quantPalavras = textoIpsum.split(' ').length;
 console.log(quantPalavras);
 
-
+///pegar todos os "et" do texto, inclusive os que estão contidos em uma palavra.
 const letras = 'et';
 
 let cont = 0;
@@ -71,6 +71,6 @@ for (let i = 0; i < textoIpsum.length; i++) {
 }
 console.log(cont);
 
-
-/*let final = texto.match(/ef/g).length; ///Está com expressão regular, não sei se pode usar no exercício
-console.log(final);*/
+///Pega "et" que são palavras soltas. Está com expressão regular, não sei se poderia usar no exercício.
+let final = textoIpsum.match(/ et /g).length; 
+console.log(final);
