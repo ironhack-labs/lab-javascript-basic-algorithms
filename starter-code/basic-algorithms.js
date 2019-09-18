@@ -24,6 +24,17 @@ for (var i = 0; i < hacker2.length; i++) {
 }
 console.log(newName.concat());
 
+//1 via 2
+function concat(word) {
+  var result = "";
+  for (var i = 0; i < word.length; i++) {
+    result += (word.charAt(i) + '\t');
+  }
+  console.log(result.toUpperCase())
+  return result.toUpperCase();
+}
+concat(hacker2);
+
 //2
 function reverse(str) {
   return str.split('').reverse().join('');
@@ -51,17 +62,58 @@ if (newStr.toLowerCase() === reverse(newStr)) {
   console.log('Not enough cool!!');
 }
 
+//// Palindrome via 2
+
+var strUser = prompt('Say something cool!');
+var strUser = strUser.replace(/ /g,'');
+var middle = strUser.length / 2;
+
+var firstPart = strUser.slice(0,middle);
+var secondPart = strUser.slice(-middle);
+
+function reverseString(str) {
+    var splitString = str.split(""); 
+    var reverseArray = splitString.reverse(); 
+    var joinArray = reverseArray.join(""); 
+    return joinArray;
+}
+
+if(firstPart === reverseString(secondPart) ){
+    console.log('It\'s a Palindrome!!');
+}else{
+    console.log('It isn\'t a Palindrome...')
+}
+
+/// Palindrome via 3
+var sentence = window.prompt("Say someting cool!").toUpperCase();
+var original='';
+var reverse = '';
+
+for (var i = sentence.length-1; i >= 0; i--){
+  var chartCode = sentence[i].charCodeAt();
+  if((chartCode >= 65 && chartCode <= 90) || (chartCode >= 48 && chartCode <= 57)){
+    original = sentence[i] + original;
+    reverse += sentence[i];
+  }
+};
+
+if (original === reverse){
+  console.log("Yep Palindrome!!!");
+}else{
+  console.log('Nooop...!!!!');
+}
+
 //// Lorem ipsum generator
 
 var loremIpsum = 'Ut id mollis ligula. Maecenas ullamcorper mollis orci et ultrices. Mauris sed felis purus. Maecenas sit amet dapibus nulla. Vivamus nisi nibh, viverra faucibus vestibulum in, eleifend sed ante. In accumsan imperdiet felis, sit amet sodales ligula semper sed. Nullam consequat orci ipsum, vitae elementum odio tristique nec. Sed sodales non massa vel dignissim. Pellentesque libero ante, efficitur vel efficitur quis, convallis sed libero. Praesent eleifend tristique neque, vitae egestas nisi. Donec et leo neque. Nulla id pellentesque justo.\n Quisque vitae suscipit magna, sed vestibulum arcu.Sed sed sollicitudin sem.Donec sit amet nunc blandit, luctus velit sit amet, convallis augue.Ut vel ante ac mauris auctor aliquet vel et lectus.Nunc varius ligula et pulvinar facilisis.Cras auctor, dui non porttitor commodo, augue felis varius arcu, sit amet pulvinar odio nibh eget leo.Curabitur vitae purus ac velit egestas vehicula sagittis in est.Vivamus placerat sem vitae commodo sodales.Vivamus eleifend, urna vitae convallis rhoncus, ipsum elit volutpat lectus, sed ultricies ligula ipsum nec mi.Suspendisse eu tellus ac elit varius vestibulum.Aenean eget vestibulum elit.In non nibh pretium, pulvinar massa iaculis, finibus diam.Sed hendrerit fringilla cursus.Cras lacus ligula, vulputate ac efficitur blandit, porttitor sit amet mauris.Nullam pulvinar pellentesque sodales.\n Integer a commodo ligula, eu sagittis orci.Curabitur convallis justo vel risus fermentum, at maximus metus rhoncus.Etiam in iaculis arcu, non dictum urna.In auctor odio quis fermentum bibendum.Proin quis ex ut felis blandit consectetur nec sed lectus.Donec laoreet augue et ex sollicitudin scelerisque.Nunc sagittis est laoreet, convallis nunc non, auctor lectus.Vivamus at tortor lacinia, tempus velit in , ornare elit.Vivamus lobortis quam nec lorem ornare vulputate eget at erat.Quisque elementum sapien euismod, sodales nisi tristique, pulvinar odio.'
 
 var cleaned = loremIpsum.replace(/\s/g, "");
 console.log(cleaned.length);
-console.log(cleaned);
+console.log('Number of words:' + cleaned);
 
 let matches = 0;
 for (i = 0; i < loremIpsum.length; i++) {
   loremIpsum.match(/['et']/gi);
   matches++;
 }
-console.log(matches);
+console.log('Matches:' + matches);
