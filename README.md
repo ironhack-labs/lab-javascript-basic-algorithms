@@ -112,9 +112,9 @@ const words = [
 
 Calculating a sum is as simple as iterating over an array and adding each of the elements together.
 
-Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far.
+<!-- Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far. -->
 
-Create a `sumArray` function that takes an array of numbers as a parameter, and calculate the sum of all its numbers:
+Create a `sumArray` function that takes an array of numbers as a parameter, and calculate the sum of all its numbers. Later in the course you will learn how to use some array methods and you won't have to do this process "manually".
 
 **Starter Code**
 
