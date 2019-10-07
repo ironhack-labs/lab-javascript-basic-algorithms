@@ -1,81 +1,95 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+![Ironhack Logo](https://i.imgur.com/1QgrNNw.png)
 
-# Lab | JS Basic Algorithms
+# JS | Basic Algorithms
 
-Welcome to your first bootcamp exercise at Ironhack!
+Welcome to your first bootcamp exercise at IronHack!
 
-The goal of this exercise is to get you familiarized with the different data structures we have in JavaScript.
+The goal of this exercise is to get you acquainted with the different control structures we have in JavaScript.
 
 Ready?
 
 ## Introduction
 
-For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/nodejs](https://repl.it/languages/nodejs)
+For this Pair-Programming activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can fine a REPL that runs in the browser for programming languages as JavaScript in [repl.it](https://repl.it/)
+
+We could also type JavaScript code in an editor, and then execute it to see the results in the REPL.
 
 Ready to start?
 
 ## Requirements
 
-- Go to [repl.it](https://repl.it/languages/nodejs) and create an account (or login if you have one)
-- Type this in the *Code Editor* (left panel)
+- Go to [repl.it](https://repl.it/languages/javascript) and create an account (or login if you have one)
+- Open a new repl.it and make sure the language is ==JavaScript==
+- Type this in the ==Code Editor== (left panel)
 
   ```javascript
-  console.log("I'm ready!");
+  console.log("I'm Ready!");
   ```
 - Press `run ►`
-- If you can see the message in the right side panel, you are really ready!
+- If you can see the message on the JavaScript REPL, you're ready!!
 
-  <!-- ![](https://i.imgur.com/4TQislb.png) -->
-  ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_17f095b9bb4fa4bd1bee1c017c043327.png)
+  ![](https://i.imgur.com/4TQislb.png)
 
 ## Submission
 
-When you are done and you have checked that everything works fine, click on the **Share** button and copy the link from the *Share Link* field. Send this link to your TAs so they can check up your work.
-
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b2aa98f91affe5d4c5f12f216b069184.png)
-
+When you are done and you have checked that everything works fine, go to https://gist.github.com/, create a new [secret gist](https://help.github.com/articles/about-gists/#secret-gists) and send it to your Instructor.
  
-## Instructions
+ ![](https://i.imgur.com/ux5em6j.png)
 
-### Iteration 1: Names and Input
+**Remember:** Remember to add the extension of the file `fileName`**.js** in the *"Filename including extension"* input box so you can enjoy [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting) in your gist
+ 
+## Exercise
 
-  1.1 Create a variable `hacker1` with the driver's name.
+### Names and Input
 
-  1.2 Print `"The driver's name is XXXX"`.
+1. Create a variable `hacker1` with the driver's name
 
-  1.3 Create a variable `hacker2` with the navigator's name.
+2. Print `"The driver's name is XXXX"` 
 
-  1.4 Print `"The navigator's name is YYYY"`.
+3. Create a variable `hacker2` and [ask the user](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) for the navigator's name
 
-### Iteration 2: Conditionals
+4. Print `"The navigator's name is YYYY"`
 
-  2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
-	  - `The Driver has the longest name, it has XX characters` or 
-	  - `Yo, navigator got the longest name, it has XX characters` or
-	  - `Wow, you both got equally long names, XX characters!`
+### Conditionals
 
-### Iteration 3: Loops
+5. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
+	- `The Driver has the longest name, it has XX characters` or 
+	- `Yo, navigator got the longest name, it has XX characters` or
+	- `wow, you both got equally long names, XX characters!!`
 
-  3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-  i.e. `"J O H N"`
+### Loops
+
+6. Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+  ie. `"J O H N"`
   
-  3.2 Print all the characters of the navigator's name, in reverse order. 
-  i.e. `"nhoJ"`
+7. Print all the characters of the navigator's name, in reverse order. 
+  ie. `"nhoJ"`
   
-  3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print:
-    - `The driver's name goes first.`
-    - `Yo, the navigator goes first definitely.`
-    - `What?! You both got the same name?`
+8. Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print:
+  - `The driver's name goes first`
+  - `Yo, the navigator goes first definitely`
+  - `What?! You both got the same name?`
 
 ### Bonus Time!
 
-Go to [lorem ipsum generator](http://www.lipsum.com/) and:
-  - Generate 3 paragraphs. Store the text in a variable type of string.
-  - Make your program count the number of words in the string.
-  - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
+9. Ask the user for a new string and check if it's a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Examples of palindromes:
+	- "A man, a plan, a canal, Panama!"
+	- "Amor, Roma"
+	- "race car"
+	- "stack cats"
+	- "step on no pets"
+	- "taco cat"
+	- "put it up"
+	- "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+
+10. Go to [lorem ipsum generator](http://www.lipsum.com/) and:
+  - Generate 3 parragraphs. Store the text in a String
+  - Make your program count the number of words in the string
+  - Make your program count the number of times the latin word [`et`](https://en.wiktionary.org/wiki/et#Latin)appears
 
 ## Extra Resources
 
+- [prompt() - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) | Ask user for input
 - [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [if - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [while - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
