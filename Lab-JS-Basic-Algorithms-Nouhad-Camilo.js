@@ -61,7 +61,7 @@ Phasellus nec consequat libero. Aliquam id viverra ligula. In vitae elit venenat
 // Bonus - 1
 
 // function countTotalNumberOfWord() {
-//     return ipsum.split(" ").length-1;
+//     return ipsum.split(" ").length;
 // }
 
 // console.log(countTotalNumberOfWord())
@@ -69,7 +69,7 @@ Phasellus nec consequat libero. Aliquam id viverra ligula. In vitae elit venenat
 // Bonus - 2
 
 // function countTotalNumberOfWord() {
-//     return ipsum.split(" et ").length-1;
+//     return ipsum.split(" et ").length;
 // }
 
 // console.log(countTotalNumberOfWord())
