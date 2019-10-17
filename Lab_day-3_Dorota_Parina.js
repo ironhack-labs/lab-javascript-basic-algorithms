@@ -35,6 +35,9 @@ console.log(printToUppercase(hacker1));
 
 
 
+
+
+
 function reverseString(str) {
     let upperCasedFirstLetter = hacker2.slice(0, 1).toUpperCase();
     console.log(upperCasedFirstLetter)
@@ -64,11 +67,17 @@ function sortName(string) {
 console.log(sortName());
 
 
+var nullWord = null;
+var emptyWord = "";
+var paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec venenatis arcu, ut pellentesque velit. Praesent ante urna, ultrices in accumsan in, consequat nec metus. Donec tempor ligula viverra venenatis mollis. Sed euismod, mauris non euismod tristique, sem neque elementum est, vel porttitor lorem tellus id lacus. Fusce massa lorem, faucibus at tincidunt eu, cursus sed purus. In ut venenatis libero, et scelerisque dolor. Phasellus non est dapibus, hendrerit nisl vitae, molestie ipsum. In posuere sed mi a pretium. Integer lectus velit, tempus et mattis vel, porttitor ac enim. Curabitur interdum ante ut sapien iaculis, quis finibus ipsum hendrerit. Morbi at sem nisi. Mauris sodales eros posuere magna eleifend facilisis. Duis in enim scelerisque, tincidunt nibh nec, rutrum elit.";
+paragraph += " Fusce cursus mauris enim, sit amet maximus velit vestibulum vitae.Sed condimentum ipsum eget viverra volutpat.Donec risus massa, malesuada ut eros vel, rhoncus pulvinar metus.Maecenas cursus enim tellus, sed eleifend tortor posuere ut.Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Morbi suscipit sem eget tellus efficitur, et blandit magna molestie.Sed in vestibulum risus.";
+paragraph += " Praesent urna ante, consequat sit amet nisi eu, interdum egestas arcu.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.Quisque felis dolor, sollicitudin et condimentum ac, euismod at nulla.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Cras eleifend rutrum sapien, id suscipit ex varius ut.Phasellus et quam varius, porta erat in , porttitor sem.Vivamus convallis imperdiet ligula nec commodo.Aenean fringilla ex sit amet scelerisque dignissim.Aenean euismod, tellus in maximus fermentum, quam odio consequat nibh, vehicula consequat tellus elit ac quam.Nunc non massa eu lorem tempus aliquet quis ac lectus.";
 
-
-var str = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et orci sit amet massa sagittis egestas eu nec magna. Suspendisse nec tincidunt urna. Cras non pretium arcu. Maecenas ut lorem nunc. Morbi vehicula ipsum diam, eget accumsan metus tincidunt suscipit. Donec nec nisl purus. Nunc vel nisl scelerisque, congue sapien eu, faucibus erat. Suspendisse leo tellus, ultrices eget congue ac, molestie at arcu. Morbi vel varius lectus. Vestibulum in mollis dui. Sed ac lectus et ligula fermentum lacinia. Phasellus luctus dui id justo venenatis auctor ut vel ex.
-Donec hendrerit imperdiet ligula, ac tristique eros.Vestibulum eu turpis sed sapien cursus placerat.Etiam sit amet tristique odio.Donec dapibus sed velit non sagittis.Nam velit nunc, pharetra sed arcu sed, dignissim tincidunt metus.Praesent molestie et tortor vitae consequat.Praesent cursus ultricies risus eu tincidunt.Aenean non eleifend massa.Vestibulum in dapibus felis, a vestibulum diam.Morbi at magna eu velit sagittis rutrum.Donec sit amet orci sed elit bibendum vulputate.
-Donec egestas malesuada lacus ut tincidunt.
-';
-
-console.log(str + ' ' + str.length);
+function countWords(input) {
+    if (input == null || input.length == 0) {
+        return 0;
+    }
+    var words = input.split(" ");
+    return words.length;
+}
+console.log(countWords(paragraph));
