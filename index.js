@@ -50,17 +50,13 @@ if(hacker1.charAt(0)<hacker2.charAt(0)){
 let paragraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt metus non sem tempus, eget lobortis odio maximus. Suspendisse lectus elit, ullamcorper eu arcu et, elementum facilisis mauris. Morbi vestibulum interdum nibh, nec mattis mi congue ut. Mauris sed malesuada nisi. Ut et suscipit risus. Sed dapibus purus dignissim massa tincidunt, varius venenatis diam interdum. Mauris bibendum sapien eu magna rhoncus, non gravida nibh viverra. Donec fringilla elit sit amet nulla pellentesque faucibus. Proin quis sapien pretium, faucibus urna gravida, tempus est. Mauris ultricies lorem bibendum eros cursus pulvinar. Proin cursus ut mi sed congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In vulputate nisi leo, at sodales odio faucibus vitae. Praesent quis tristique lorem. Suspendisse et nisi vel erat condimentum venenatis. Pellentesque ut velit lacus. Fusce metus augue, porta id magna sit amet, venenatis vehicula massa. In quis arcu sed enim vehicula ultrices at at urna. Nunc sed ornare urna. Integer sit amet purus et nisl eleifend ultricies in eget urna. Nam nisl lacus, faucibus sit amet sapien at, tempus pulvinar risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sodales lobortis volutpat. Nullam euismod justo lacus. Praesent egestas tincidunt lacus, ut mattis risus accumsan eget. In hac habitasse platea dictumst. Morbi eget magna lectus. Vivamus cursus ultrices ligula sit amet sagittis. Donec lobortis vel tortor faucibus tristique. Etiam iaculis a ipsum auctor consequat. Aenean eget est convallis, elementum turpis eget, vulputate justo. Proin eget enim elit. Aliquam at mi arcu. Phasellus ac elit et lorem lobortis elementum. Donec nisl tortor, sollicitudin nec sapien in, ornare interdum metus. Integer maximus rhoncus lectus eget ultricies. Nullam consequat a turpis eleifend sodales. Sed viverra eros ante, vitae dignissim justo commodo non. Quisque scelerisque condimentum nisi, eget semper ante fermentum pellentesque. Mauris non accumsan lorem. Praesent pulvinar ut turpis et sagittis. Ut cursus eu libero a pretium. Etiam ac neque facilisis, vehicula justo eu, porttitor mauris. Aenean congue massa non nibh ornare, ac aliquam quam accumsan.'
 
 let counter = 0;
-for(i=0; i<paragraph.length; i++){
-  if(paragraph.charAt(i)===' ' ){
-    counter++;
-  }
-}
-console.log(`There are ${counter} words in the string`);
+let words = paragraph.split(' ');
+
+console.log(`There are ${words.length} words in the string`);
 
 let counter1 = 0;
 let latin = 'et'
 
-let words = paragraph.split(' ');
 
 for(i=0;i<words.length;i++){
   if(words[i]===latin){
