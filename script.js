@@ -13,7 +13,7 @@ console.log("Navigator has the longest name, it has " + hacker2.length + " chara
 else
 console.log("The names are the same length, they both have " + hacker2.length + " characters");
 
-let arr = hacker1.toUpperCase().join(" ");
+let arr = hacker1.toUpperCase();
 //let arr2 = arr.join(", ");
 
 console.log(arr[0]);
