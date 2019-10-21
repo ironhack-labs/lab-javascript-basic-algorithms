@@ -51,3 +51,16 @@ function WordCount(str) {
 }
 
 console.log(WordCount(paragraph));
+
+function findEts(text){
+  numberOfEts = 0;
+for (i=0; i<=WordCount(text); i++){
+  if (text.split(" ")[i]==="et"){
+  numberOfEts+=1;
+  }
+}
+return numberOfEts;
+}
+
+console.log(findEts(paragraph));
+
