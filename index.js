@@ -1,3 +1,4 @@
+console.log("I'm ready!");
 //Section 1
 let hacker1 = "Juan";
 console.log(`The driver's name is ${hacker1}`);
