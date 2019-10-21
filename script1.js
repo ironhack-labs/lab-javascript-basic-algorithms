@@ -1,2 +1,1 @@
-// testing 
-console.log("testing");
+let hacker1 = "Juan";
