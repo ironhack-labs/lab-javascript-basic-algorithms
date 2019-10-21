@@ -13,6 +13,8 @@ let hacker2 = "Snow";
 console.log("The driver's name is " + hacker2);
 
 /* Iteration 2*/
+
+// 2.1 Conditional statements
 if(hacker1.length > hacker2.length)
 console.log("Driver has the longest name, it has " + hacker1.length + " characters");
 else if(hacker1.length < hacker2.length)
