@@ -54,3 +54,15 @@ console.log("The driver's name goes first.");
 else if(arr3[0] === hacker2)
 console.log("Yo, the navigator goes first definitely.");
 
+/* Bonus */
+
+// Generate 3 paragraphs. Store the text in a variable type of string.
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet justo pellentesque, tempus turpis et, sollicitudin erat. Proin at risus non metus fermentum malesuada. Aliquam posuere lacinia mi, id scelerisque nisi porta vitae. Donec a ipsum mattis arcu mattis molestie in a quam. Duis dolor dolor, vehicula nec justo vel, venenatis laoreet lacus. Vestibulum at magna neque. Mauris gravida libero eget sollicitudin euismod. Morbi faucibus magna sagittis, fermentum odio a, efficitur ipsum. Sed ullamcorper vitae nibh non tincidunt. Donec bibendum tellus at fermentum vehicula. Vivamus nec ipsum tristique turpis lobortis fermentum. Proin et ligula sit amet orci eleifend dignissim. Vivamus aliquam lacinia urna eget dignissim. In eu nisl ut massa tempus maximus ac ut libero. Etiam faucibus vitae tortor nec fringilla. Praesent vulputate nisi id risus hendrerit feugiat. Donec ultrices ac nisi a efficitur. Vivamus sit amet odio suscipit, maximus quam non, tristique nulla. Curabitur consectetur est sit amet congue euismod. Sed congue rutrum lectus vel gravida. Quisque arcu neque, pulvinar quis arcu at, vestibulum pretium enim. Nulla a lectus sed mi aliquam gravida. Nunc eu lorem non ex auctor pharetra. Proin tincidunt laoreet odio quis faucibus. Suspendisse urna ipsum, aliquam ut leo dictum, interdum porttitor tellus. In non egestas enim, vel ultricies turpis. Quisque ultrices non augue in lobortis. In ullamcorper nisl feugiat mattis faucibus. Cras ut velit arcu. Fusce et fermentum felis. Praesent bibendum odio in pharetra condimentum. Cras tempus porta condimentum. Mauris ut lacus et orci molestie ultrices ut eu magna. Curabitur blandit nulla quis elementum imperdiet. Proin eget nisi vitae nisi ullamcorper auctor at id nunc. Integer maximus lectus ut dui laoreet, sed volutpat ligula sagittis. Phasellus lacinia volutpat leo sit amet condimentum. Ut eget arcu ultrices, finibus mi in, pretium dolor. Pellentesque pretium magna sit amet risus pulvinar facilisis. Suspendisse potenti. Nullam eget ex non libero iaculis tempus vel ut enim. Sed purus leo, dapibus sed efficitur non, consequat sit amet augue. Morbi neque nisl, sagittis et tristique a, mollis eget nisi. Vivamus venenatis aliquam hendrerit.";
+
+// Make your program count the number of words in the string.
+let arrLorem = lorem.split(" ");
+console.log(arrLorem.length);
+
+// Make your program count the number of times the Latin word et appears.
+let countEt = (lorem.match(/et/g)).length;
+console.log(countEt);
