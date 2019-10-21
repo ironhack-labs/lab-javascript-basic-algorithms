@@ -10,7 +10,7 @@ console.log("The driver's name is " + hacker1);
 let hacker2 = "Snow";
 
 // 1.4 Print "The navigator's name is YYYY".
-console.log("The driver's name is " + hacker2);
+console.log('The drivers name is ${hacker2}');
 
 /* Iteration 2 */
 
