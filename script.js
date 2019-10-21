@@ -90,3 +90,11 @@ function whoIsFirst() {
     }
   }
 }
+
+// Bonus Time Content
+
+let loremText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed eros orci. Aliquam consequat nisl id tristique interdum. Fusce fermentum ante iaculis magna auctor, in rutrum turpis elementum. Suspendisse justo velit, interdum ut pulvinar non, mollis a nisl. Integer lorem sapien, tincidunt at finibus et, placerat quis turpis. Fusce sed tincidunt orci. Maecenas molestie massa augue, a tempus lacus fringilla id. Suspendisse vehicula eros arcu, nec convallis nisl dignissim id. Maecenas sed ullamcorper quam. Sed vel bibendum erat, vitae iaculis mi. Nunc efficitur nisi et tortor egestas, eu fermentum odio euismod. In quis dui porta, elementum mauris vitae, fermentum ante. Sed elementum nisi vel accumsan euismod.
+
+Sed ultricies eros erat, id mollis ex placerat eget. Phasellus ullamcorper est at blandit vestibulum. Fusce non dui dolor. Vivamus pharetra velit vel sapien commodo, sit amet rutrum ipsum interdum. Sed hendrerit, tellus vel venenatis lacinia, sem nulla venenatis diam, at porttitor nunc massa quis justo. Vestibulum consequat, urna ac finibus elementum, lectus libero interdum nunc, id varius nisi lorem sit amet sem. Suspendisse laoreet dignissim pretium. Curabitur auctor lobortis tortor dictum varius. Fusce eu lobortis ligula.
+
+Pellentesque sit amet imperdiet tortor. Nulla ac ex pellentesque, posuere orci eget, ultricies neque. Nam vel tellus varius, imperdiet tellus et, dignissim lacus. Donec mollis sollicitudin neque, non placerat justo feugiat a. Donec dignissim eget dui condimentum malesuada. Duis posuere lorem vitae lorem bibendum sodales. Nam vitae nisl rutrum, eleifend ex suscipit, suscipit magna. Donec aliquet laoreet justo quis euismod. Morbi aliquam lobortis luctus. Pellentesque id eros leo. Vestibulum nec dictum lorem. Donec mollis pellentesque finibus. Fusce sed volutpat dui. Aliquam erat volutpat. Ut eu purus urna.`;
