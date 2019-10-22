@@ -231,9 +231,19 @@ const words = [
 
 ## Iteration #8: Bonus
 
-In the 20×20 grid below; What is the greatest product of four adjacent numbers in the same direction (up, down, left, right)?
+What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical o diagonal.
 
-Write a function `greatestProduct` to find the answer!
+For example, if we have a 5x5 Matrix like:
+
+[ 1,  2, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1, 20, 3, 4, 5]
+[ 1,  4, 3, 4, 5]
+
+The greatest product will be the 20x20x20x4 = 32,000;
+
+Write a function greatestProduct to find it in the 20×20 grid below!
 
 ```javascript
 const matrix = [
