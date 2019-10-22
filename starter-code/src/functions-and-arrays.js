@@ -1,15 +1,7 @@
 // Find the maximum
 
 // Finding Longest Word
-const words = [
-  'mystery',
-  'brother',
-  'aviator',
-  'crocodile',
-  'pearl',
-  'orchard',
-  'crackpot'
-];
+const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
 // Calculating a Sum
 
