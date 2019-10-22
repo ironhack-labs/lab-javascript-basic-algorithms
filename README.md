@@ -31,6 +31,15 @@ $ git push origin master
  
 ## Exercise
 
+
+### Linking the `.js` file to the `index.html`
+
+Before starting, the first step is to link our script file `basic-algorithms.js` with the `index.html` file.
+
+To do this add the `<script></script>` tag inside the `<body></body>` tags. Put it just before the closing `</body>` tag.
+
+<br>
+
 ### Iteration 1: Names and Input
 
 1. Create a variable `hacker1` with the driver's name
