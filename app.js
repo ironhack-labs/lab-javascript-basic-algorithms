@@ -15,7 +15,7 @@ console.log([...hacker2].reverse().join(""));
 hacker1 > hacker2
   ? console.log(hacker1)
   : hacker2 > hacker1
-  ? console.log(hacker2)
+  ? console.log(hacker2) 
   : console.log(`equal`);
 
 const par1 =
@@ -24,8 +24,6 @@ const par1 =
 let [words, etTimes] = [0, 0];
 par1.split(" ").map(word => {
   words += 1;
-});
-par1.split(" ").map(word => {
   if (word === "et") etTimes += 1;
 });
 console.log(`Total words: ${words}, total 'et': ${etTimes}`);
