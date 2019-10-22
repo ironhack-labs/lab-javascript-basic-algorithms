@@ -54,6 +54,9 @@ Sed ultricies eros erat, id mollis ex placerat eget. Phasellus ullamcorper est a
 
 Pellentesque sit amet imperdiet tortor. Nulla ac ex pellentesque, posuere orci eget, ultricies neque. Nam vel tellus varius, imperdiet tellus et, dignissim lacus. Donec mollis sollicitudin neque, non placerat justo feugiat a. Donec dignissim eget dui condimentum malesuada. Duis posuere lorem vitae lorem bibendum sodales. Nam vitae nisl rutrum, eleifend ex suscipit, suscipit magna. Donec aliquet laoreet justo quis euismod. Morbi aliquam lobortis luctus. Pellentesque id eros leo. Vestibulum nec dictum lorem. Donec mollis pellentesque finibus. Fusce sed volutpat dui. Aliquam erat volutpat. Ut eu purus urna.`;
 
+console.log(loremText.split(' ').length);
+
+console.log(loremText.match(/et/g).length);
 // -----------
 // V1
 // Variables
