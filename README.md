@@ -102,7 +102,7 @@ Calculating a sum is as simple as iterating over an array and adding each of the
 
 <!-- Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far. -->
 
-Declare a function named `sumArray` that takes as an argument an array of numbers, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier.
+Declare a function named `sumArray` that takes as an argument an array of numbers, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"manual"_ way using loops.
 
 **Starter Code**
 
