@@ -35,11 +35,11 @@ describe("Finding Longest Word - findLongestWord", function() {
     expect(typeof findLongestWord).toBe("function");
   });
 
-  it("returns null with an empty array", function() {
+  it("returns null when called with an empty array", function() {
     expect(findLongestWord([])).toBe(null);
   });
 
-  it("returns the word with an 1-word array", function() {
+  it("returns the word when called with a single-word array", function() {
     expect(findLongestWord(["foo"])).toBe("foo");
   });
 

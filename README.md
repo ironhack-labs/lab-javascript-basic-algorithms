@@ -86,7 +86,7 @@ Write your JavaScript in the provided `src/functions-and-arrays.js` file.
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-## Iteration #2: Finding Longest Word
+## Iteration #2: Find longest word
 
 Declare a function named `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
@@ -96,7 +96,7 @@ Declare a function named `findLongestWord` that takes as an argument an array of
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 ```
 
-## Iteration #3: Calculating a Sum
+## Iteration #3: Calculate the sum
 
 Calculating a sum is as simple as iterating over an array and adding each of the elements together.
 
@@ -110,7 +110,7 @@ Declare a function named `sumArray` that takes as an argument an array of number
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
-## Iteration #4: Calculate the Average
+## Iteration #4: Calculate the average
 
 Calculating an average is an extremely common task. Let's practice it a bit.
 
@@ -119,7 +119,7 @@ Calculating an average is an extremely common task. Let's practice it a bit.
 1. Find the sum as we did in the first exercise
 2. Take the sum from step 1, and divide it by the number of elements in the list.
 
-### Level 1: Array of Numbers
+### Level 1: Array of numbers
 
 Declare a function named `averageNumbers` that expects an array of numbers and returns the average of the numbers:
 
@@ -129,7 +129,7 @@ Declare a function named `averageNumbers` that expects an array of numbers and r
 const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
-### Level 2: Array of Strings
+### Level 2: Array of strings
 
 Declare a function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
 
@@ -150,7 +150,7 @@ const words = [
 ];
 ```
 
-## Iteration #5: Unique Arrays
+## Iteration #5: Unique arrays
 
 Take the following array, remove the duplicates, and return a new array. You're more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) Array method.
 
@@ -174,7 +174,7 @@ const words = [
 ];
 ```
 
-## Iteration #6: Finding Elements
+## Iteration #6: Find elements
 
 Let's create a simple array search.
 
@@ -195,7 +195,7 @@ const words = [
 ];
 ```
 
-## Iteration #7: Counting Repetition
+## Iteration #7: Count repetition
 
 Declare a function named `howManyTimes` that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
 

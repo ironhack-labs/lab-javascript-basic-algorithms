@@ -1,17 +1,17 @@
-// Find the maximum
+// Iteration #1: Find the maximum
 
-// Finding Longest Word
+// Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-// Calculating a Sum
+// Iteration #3: Calculate the sum
 
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-// Calculate the Average
-
+// Iteration #4: Calculate the average
+// Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-// Array of Strings
+// Level 2: Array of strings
 const wordsArr = [
   'seat',
   'correspond',
@@ -25,7 +25,7 @@ const wordsArr = [
   'palace'
 ];
 
-// Unique Arrays
+// Iteration #5: Unique arrays
 const wordsUnique = [
   'crab',
   'poison',
@@ -40,7 +40,7 @@ const wordsUnique = [
   'bring'
 ];
 
-// Finding Elements
+// Iteration #6: Find elements
 const wordsFind = [
   'machine',
   'subset',
@@ -52,7 +52,7 @@ const wordsFind = [
   'disobedience'
 ];
 
-// Counting Repetition
+// Iteration #7: Count repetition
 const wordsCount = [
   'machine',
   'matter',
@@ -67,7 +67,7 @@ const wordsCount = [
   'matter'
 ];
 
-// Bonus
+// Iteration #8: Bonus
 
 const matrix = [
   [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
