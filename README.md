@@ -1,13 +1,7 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png"/></p>
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# JS | Functions & Arrays
+# LAB | JS Functions & Arrays
 
-## Learning Goals
-
-In this exercise you will apply:
-
-- Array iteration techniques
-- Using functions to manipulate and transform arrays
 
 ## Introduction
 
@@ -228,14 +222,14 @@ const words = [
 What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical o diagonal.
 
 For example, if we have a 5x5 Matrix like:
-
+```bash
 [ 1,  2, 3, 4, 5]
 [ 1, 20, 3, 4, 5]
 [ 1, 20, 3, 4, 5]
 [ 1, 20, 3, 4, 5]
 [ 1,  4, 3, 4, 5]
-
-The greatest product will be the 20x20x20x4 = 32,000;
+```
+The greatest product will be the `20`x`20`x`20`x`4` = `32000`;
 
 Declare a function named `greatestProduct` to find it in the 20×20 grid below!
 
