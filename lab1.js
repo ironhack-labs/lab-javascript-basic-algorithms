@@ -48,11 +48,11 @@ if (lexi === -1) console.log("The driver's name goes first");
 
 // // 4. Bonus Time!
 //Create a program that counts word "et" in the string.
-//1.Create a string:
+//1st-Create a string:
 let text = "";
-//2.Ganerate lorem and insert to the string:
+//2nd-Ganerate lorem and insert to the string:
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a mi ante. Pellentesque sit amet erat neque. Maecenas interdum augue ut euismod iaculis. Fusce luctus tellus ut nisi aliquet semper sit amet ultrices metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et viverra risus. Aenean vel rutrum massa. Curabitur sed nibh nec nisl luctus pharetra sed eu neque. Fusce quis tortor metus. Quisque metus ipsum, semper in neque a, vehicula sollicitudin ex. Morbi sed est posuere, scelerisque quam consequat, mattis ex. Integer bibendum scelerisque dui. Vestibulum consequat dapibus semper. Cras fermentum orci eget ante facilisis lacinia. Maecenas augue elit, pellentesque at urna quis, tristique ultricies eros. Mauris ac est eros."
-//3.Create loop to count "et":
+//3rd-Create a loop to count word "et":
 let count = 0;
 for(let i = 0; i < text.length; i++){
   let wordCount = text[i] + text[i+1];
