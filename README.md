@@ -65,6 +65,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 ### Iteration 2: Conditionals
 
   2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
+  <br>
 	  - `The driver has the longest name, it has XX characters.` or <br>
 	  - `It seems that the navigator has the longest name, it has XX characters.` or <br>
 	  - `Wow, you both have equally long names, XX characters!`.
@@ -77,9 +78,9 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
   3.2 Print all the characters of the navigator's name, in reverse order. 
   i.e. `"nhoJ"`
   
-  3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print:
+  3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
     - `The driver's name goes first.` <br>
-    - `Yo, the navigator goes first definitely.`
+    - `Yo, the navigator goes first definitely.` <br>
     - `What?! You both have the same name?`
 
 ### Bonus Time!
@@ -94,13 +95,13 @@ Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 
 Ask the user for a new string and check if it's a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Examples of palindromes: 
   - "A man, a plan, a canal, Panama!"
-	- "Amor, Roma"
-	- "race car"
-	- "stack cats"
-	- "step on no pets"
-	- "taco cat"
-	- "put it up"
-	- "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+  - "Amor, Roma"
+  - "race car"
+  - "stack cats"
+  - "step on no pets"
+  - "taco cat"
+  - "put it up"
+  - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
 ## Extra Resources
 
