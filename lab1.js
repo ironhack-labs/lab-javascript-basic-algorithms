@@ -24,18 +24,18 @@ if (hacker1.length > hacker2.length) {
   for(let i = 0; i < hacker1.length; i++){
     driver1 += hacker1[i]+" ";
   }
-  console.log(driver1.toUpperCase());
+  console.log(driver1.toUpperCase()); //prints: K E V I N
   
   //3.2 Print navigator's name in reverse order.
   let reverseName = "";
   for(let i = hacker2.length - 1; i >= 0; i--){
     reverseName += hacker2[i];
   }
-  console.log(reverseName);
+  console.log(reverseName); //prints: farhsA
 
   // another way is:
-  console.log(hacker1.toUpperCase().split("").join(" "));
-  console.log(hacker2.split("").reverse().join(""));
+  console.log(hacker1.toUpperCase().split("").join(" ")); //the same,prints: K E V I N
+  console.log(hacker2.split("").reverse().join("")); //prints: farhsA
 
 // 3.3 Compare Depending on the [lexicographic order]
 // We used .localeCompare() method.
