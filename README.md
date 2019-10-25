@@ -4,18 +4,21 @@
 
 Welcome to your first bootcamp exercise at Ironhack!
 
-The goal of this exercise is to get you familiarized with the different data structures we have in JavaScript.
+The goal of this exercise is to get you familiarized with the primitive data structures we have in JavaScript, and we have just covered in class. Feel free to reference lesson materials but don't limit yourself but be curious and use Google to explore multiple solutions.
 
 Ready?
 
 ## Introduction
 
-For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/nodejs](https://repl.it/languages/nodejs)
+For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/nodejs](https://repl.it/languages/nodejs).
 
 Ready to start?
 
+
 ## Requirements
 
+- Fork this repo
+- Clone this repo
 - Go to [repl.it](https://repl.it/languages/nodejs) and create an account (or login if you have one)
 - Type this in the *Code Editor* (left panel)
 
@@ -28,13 +31,25 @@ Ready to start?
   <!-- ![](https://i.imgur.com/4TQislb.png) -->
   ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_17f095b9bb4fa4bd1bee1c017c043327.png)
 
+- When you are done completely or at any point after the first iteration, copy your code into the `js/index.js` file and follow the steps for submission. 
+
 ## Submission
 
-When you are done and you have checked that everything works fine, click on the **Share** button and copy the link from the *Share Link* field. Send this link to your TAs so they can check up your work.
+Upon completion, run the following commands:
+```
+$ git add .
+$ git commit -m "done"
+$ git push origin master
+```
+Create Pull Request so your TAs can check up your work.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b2aa98f91affe5d4c5f12f216b069184.png)
+_You should make a PR (stands for Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it._
 
- 
+<!-- ## Submission -->
+
+<!-- When you are done and you have checked that everything works fine, click on the **Share** button and copy the link from the *Share Link* field. Send this link to your TAs so they can check up your work.
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b2aa98f91affe5d4c5f12f216b069184.png) -->
+
 ## Instructions
 
 ### Iteration 1: Names and Input
@@ -50,9 +65,9 @@ When you are done and you have checked that everything works fine, click on the 
 ### Iteration 2: Conditionals
 
   2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
-	  - `The Driver has the longest name, it has XX characters` or 
-	  - `Yo, navigator got the longest name, it has XX characters` or
-	  - `Wow, you both got equally long names, XX characters!`
+	  - `The driver has the longest name, it has XX characters.` or <br>
+	  - `It seems that the navigator has the longest name, it has XX characters.` or <br>
+	  - `Wow, you both have equally long names, XX characters!`.
 
 ### Iteration 3: Loops
 
@@ -63,16 +78,29 @@ When you are done and you have checked that everything works fine, click on the 
   i.e. `"nhoJ"`
   
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print:
-    - `The driver's name goes first.`
+    - `The driver's name goes first.` <br>
     - `Yo, the navigator goes first definitely.`
-    - `What?! You both got the same name?`
+    - `What?! You both have the same name?`
 
 ### Bonus Time!
 
+#### Bonus 1:
 Go to [lorem ipsum generator](http://www.lipsum.com/) and:
   - Generate 3 paragraphs. Store the text in a variable type of string.
   - Make your program count the number of words in the string.
   - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
+
+#### Bonus 2:
+
+Ask the user for a new string and check if it's a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Examples of palindromes: 
+  - "A man, a plan, a canal, Panama!"
+	- "Amor, Roma"
+	- "race car"
+	- "stack cats"
+	- "step on no pets"
+	- "taco cat"
+	- "put it up"
+	- "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
 ## Extra Resources
 
