@@ -4,7 +4,7 @@ let hacker2 = "Jose";
 console.log("The navigator's name is: " + hacker2);
 
 
-//part 2
+//lenght compare
 
 
 if (hacker1.length > hacker2.length) {
@@ -28,6 +28,9 @@ if (hacker1.length === hacker2.length) {
 
 }
 
+
+//driver name letter by letter
+
 let letter = "";
 for (let i = 0; i < hacker1.length; i++) {
   letter += hacker1.charAt(i).toUpperCase() + " ";
@@ -48,11 +51,7 @@ function reverseString(str) {
 console.log(reverseString(letter));
 
 
-function sortString(str) {
-  let arr = str.split('');
-  let sorted = arr.sort();
-  return sorted.join('');
-}
+//alphabetical compare
 
 function compare(str1, str2) {
   let compareStr = str1.localeCompare(str2)
