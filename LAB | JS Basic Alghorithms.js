@@ -43,10 +43,6 @@ reverse(hacker1);
 //     - `The driver's name goes first.`
 //     - `Yo, the navigator goes first definitely.`
 //     - `What?! You both got the same name?`
-function reverse(str) {
-return str.split("").reverse().join("");
-}
-
 if (hacker1.localeCompare(hacker2) === -1) console.log("The driver's name goes first");
 else if (hacker1.localeCompare(hacker2) === 1) console.log("Yo, the navigator goes first definitely.")
 else console.log("What?! You both got the same name?")
