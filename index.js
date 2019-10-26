@@ -73,14 +73,58 @@ if (h1Loc === -1){
 //3.Make your program count the number of times the latin word etappears
 
 
-/* 1.
+//====BONUS===
+
+//Lorem ipsum generator
+
+//2.Make your program count the number of words in the string
+
+
+//3.Make your program count the number of times the latin word etappears
+
+
+
 let para1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ornare blandit. Duis molestie dui tellus, in luctus eros bibendum vel. Maecenas in feugiat nibh. Nam sit amet ipsum sit amet augue ultrices porta sed quis augue. Aenean vulputate lectus et ultricies pulvinar. Mauris malesuada gravida purus in vehicula. Donec sollicitudin a magna id vestibulum. Praesent aliquam quam risus, a placerat tellus laoreet eget. Maecenas condimentum tristique est nec gravida. Aenean elementum quis lacus sit amet lobortis."
- */
-  
+ 
+
+// let i = 0
+//  for(para1.charAt(i); i <=para1.length; i++){
+//   if(para1.charAt(i)===" "){
+//     console.log(i) 
+//   }   
+// }
+ // this tells me where all the spaces are vertically thinking if i count the space plus 1, meaning the last word woukd be the word count 
+// but thats not enough...
 
 
- /* let para2 = "Quisque nisl lorem, posuere in ante dictum, vulputate malesuada mauris. Etiam tempus dictum ex, nec pretium turpis elementum ac. Donec urna dolor, vestibulum vitae ex sit amet, dapibus pellentesque magna. Donec aliquam, ligula ac hendrerit gravida, ipsum nisl rutrum risus, a fringilla leo diam eu nibh. Nulla facilisi. Nullam in blandit nulla, et dignissim mi. Praesent at auctor felis, ac gravida metus. Vestibulum pulvinar varius lobortis. Aenean non pulvinar est. Praesent tincidunt elit ac libero dignissim, at auctor justo ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Ut a consectetur nisl. Maecenas at tortor congue, vehicula nisi quis, tincidunt nisi. Ut a consectetur magna, eu rhoncus sem."
- */
 
- /*let para3 = "Proin tincidunt semper ipsum, vitae blandit leo auctor vitae. Donec commodo eros nec lectus dignissim vulputate id feugiat ante. Sed placerat nulla felis, hendrerit scelerisque ex imperdiet ultricies. Nunc ultricies feugiat feugiat. Duis sem purus, aliquet nec suscipit sed, rhoncus congue odio. Pellentesque sit amet fermentum eros, efficitur tempor turpis. Maecenas facilisis, arcu et iaculis finibus, lorem turpis rutrum erat, quis fermentum mi massa sed quam. Pellentesque vehicula scelerisque magna at ultrices. Praesent in ullamcorper augue, sed convallis felis. Donec lacinia felis porta lobortis euismod. Quisque ut ante eu elit dapibus mattis at quis purus. Sed eget magna ut metus aliquet dignissim molestie in lacus. Donec bibendum enim nec suscipit vehicula. Pellentesque suscipit, magna a congue auctor, metus est tincidunt mi, vel porta nisl purus at sapien."
- */
+  let i = 0
+  let words = ""
+ for(para1.charAt(i); i <=para1.length; i++){
+  if(para1.charAt(i)===" "){
+   words = words += para1.charAt(i).length
+  }     
+}
+ console.log(words.length+1)
+
+
+
+  let para2 = "Quisque nisl lorem, posuere in ante dictum, vulputate malesuada mauris. Etiam tempus dictum ex, nec pretium turpis elementum ac. Donec urna dolor, vestibulum vitae ex sit amet, dapibus pellentesque magna. Donec aliquam, ligula ac hendrerit gravida, ipsum nisl rutrum risus, a fringilla leo diam eu nibh. Nulla facilisi. Nullam in blandit nulla, et dignissim mi. Praesent at auctor felis, ac gravida metus. Vestibulum pulvinar varius lobortis. Aenean non pulvinar est. Praesent tincidunt elit ac libero dignissim, at auctor justo ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Ut a consectetur nisl. Maecenas at tortor congue, vehicula nisi quis, tincidunt nisi. Ut a consectetur magna, eu rhoncus sem."
+ 
+ for(para2.charAt(i); i <=para2.length; i++){
+  if(para2.charAt(i)===" "){
+   words = words += para2.charAt(i).length
+  }     
+}
+ console.log(words.length+1)
+
+ let para3 = "Proin tincidunt semper ipsum, vitae blandit leo auctor vitae. Donec commodo eros nec lectus dignissim vulputate id feugiat ante. Sed placerat nulla felis, hendrerit scelerisque ex imperdiet ultricies. Nunc ultricies feugiat feugiat. Duis sem purus, aliquet nec suscipit sed, rhoncus congue odio. Pellentesque sit amet fermentum eros, efficitur tempor turpis. Maecenas facilisis, arcu et iaculis finibus, lorem turpis rutrum erat, quis fermentum mi massa sed quam. Pellentesque vehicula scelerisque magna at ultrices. Praesent in ullamcorper augue, sed convallis felis. Donec lacinia felis porta lobortis euismod. Quisque ut ante eu elit dapibus mattis at quis purus. Sed eget magna ut metus aliquet dignissim molestie in lacus. Donec bibendum enim nec suscipit vehicula. Pellentesque suscipit, magna a congue auctor, metus est tincidunt mi, vel porta nisl purus at sapien."
+ 
+ for(para3.charAt(i); i <=para3.length; i++){
+  if(para3.charAt(i)===" "){
+   words = words += para3.charAt(i).length
+  }     
+}
+ console.log(words.length+1)
+
+ 
