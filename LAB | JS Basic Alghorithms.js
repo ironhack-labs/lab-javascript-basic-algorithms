@@ -53,7 +53,6 @@ else console.log("What?! You both got the same name?")
 
 
 // ### Bonus Time!
-
 // Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 //   - Generate 3 paragraphs. Store the text in a variable type of string.
 //   - Make your program count the number of words in the string.
