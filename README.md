@@ -219,7 +219,7 @@ const words = [
 
 ## Iteration #8: Bonus
 
-What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical o diagonal.
+What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical or diagonal.
 
 For example, if we have a 5x5 Matrix like:
 ```bash
