@@ -4,7 +4,7 @@
 
 Welcome to your first bootcamp exercise at Ironhack!
 
-The goal of this exercise is to get you familiarized with the primitive data structures we have in JavaScript, and we have just covered in class. Feel free to reference lesson materials but don't limit yourself but be curious and use Google to explore multiple solutions.
+The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we just covered in the class. Feel free to reference lesson materials and don't limit yourself but be curious and use Google to explore multiple solutions.
 
 Ready?
 
