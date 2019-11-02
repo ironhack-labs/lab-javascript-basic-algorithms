@@ -72,16 +72,32 @@ for (let i = 0; i < newbonus.length; i++){
 
 console.log(foundEt)
 
-let extraSpecialBonus = prompt("Feed me palindrome")
+// Ask the user for a new string and check if it's a *palindrome*. Examples of palindromes:
 
-/*
-for (let i = 0; i < hacker1.length; i++){
-  
-  letter = hacker1[i];
-  letter += " ";
-  console.log(letter);
+// "A man, a plan, a canal, Panama!"
+// "Amor, Roma"
+// "race car"
+// "stack cats"
+// "step on no pets"
+// "taco cat"
+// "put it up"
+// "Was it a car or a cat I saw" and "No x in Nixon".
 
-  if (hacker1.length < (hacker1.length - 1)
-  break
-}
-*/
+let palindrome = "stack cats";
+
+  function checkPalindrome(palindrome) {
+  let palindromeSplit = "";
+  for (let i = 0; i < palindrome.length; i++) {
+    if (palindrome[i] !== " ") {
+      palindromeSplit += palindrome[i].toLowerCase();
+    }
+  }
+  let palindromeSplitReversed = palindromeSplit.split("").reverse().join("");
+  if (palindromeSplit === palindromeSplitReversed) {
+    return "This is a palindrome!";
+  } else {
+    return "This is NOT a palindrome!";
+  }
+};
+
+checkPalindrome(palindrome);
