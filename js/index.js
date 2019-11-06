@@ -25,3 +25,12 @@ for (let i=0; i<hacker2.length; i++) {
 aux[i] = hacker2[hacker2.length-i-1];
 }
 console.log(aux.join(""))
+
+//3.3
+if (hacker1.localeCompare(hacker2) == -1) {
+    console.log("The driver's name goes first.");
+    } else if (hacker2.localeCompare(hacker1) == -1) {
+    console.log("Yo, the navigator goes first definitely.");
+    } else {
+    console.log("What?! You both have the same name?")
+    }
