@@ -16,3 +16,5 @@ if (hacker1.length > hacker2.length) {
     
 
 // Iteration 3: Loops
+//3.1
+console.log(hacker1.toUpperCase().split("").join(" "))
