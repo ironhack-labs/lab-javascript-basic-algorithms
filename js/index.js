@@ -13,4 +13,16 @@ if(hacker1.length > hacker2.length) {
 } else {
   console.log("Wow, you both have equally long names,", hacker1.length,  "characters!")
 }
+
 // Iteration 3: Loops
+let driverLetters = "";
+for (let i = 0; i < hacker1.length; i++) {
+  driverLetters += hacker1[i].toUpperCase() + " ";
+}
+console.log(driverLetters);
+
+let navLetters = "";
+for (let i = hacker2.length -1; i >= 0; i--) {
+  navLetters += hacker2[i];
+}
+console.log(navLetters);
