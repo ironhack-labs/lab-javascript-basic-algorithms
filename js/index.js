@@ -18,3 +18,10 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 //3.1
 console.log(hacker1.toUpperCase().split("").join(" "))
+
+//3.2
+var aux = [];
+for (let i=0; i<hacker2.length; i++) {
+aux[i] = hacker2[hacker2.length-i-1];
+}
+console.log(aux.join(""))
