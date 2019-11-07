@@ -15,3 +15,30 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+// 3.1
+let driverUppercased = hacker1.toUpperCase();
+let driver = '';
+for (let i = 0; i < driverUppercased.length; i++) {
+	if (i === driverUppercased.length - 1) {
+		driver += `${driverUppercased[i]}`;
+	} else {
+		driver += `${driverUppercased[i]} `;
+	}
+}
+console.log(driver);
+
+// 3.2
+let navigator = '';
+for (let i = hacker2.length - 1; i >= 0; i--) {
+	navigator += hacker2[i];
+}
+console.log(navigator);
+
+// 3.3
+if (hacker1 < hacker2) {
+	console.log("The driver's name goes first.");
+} else if (hacker1 > hacker2) {
+	console.log('Yo, the navigator goes first definitely.');
+} else {
+	console.log('What?! You both have the same name?');
+}
