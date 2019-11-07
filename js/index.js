@@ -68,3 +68,20 @@ for(let i = 0; i < wordCount.length; i++){
 }
 console.log(wordCount.length)
 console.log(et)
+
+// Bonus 2
+function palindrome(text){
+  let x = text.replace(/[^\w]/g, "").split(" ").join("").toLowerCase()
+  let front = [];
+  let back = [];
+  for(let i = 0, j = x.length-1; i <= j; i++, j--){
+    front.push(x[i])
+    back.push(x[j])
+  }
+  if(front.join("") === back.join("")){
+      console.log("Text is a Palindrome.")
+    } else {
+      console.log("Text is not a Palindrome")
+    }
+}
+palindrome("stack cats")
