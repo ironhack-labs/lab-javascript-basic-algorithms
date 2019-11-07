@@ -59,3 +59,13 @@ for (let i = 0; i < loremText.length; i++) {
 	}
 }
 console.log(counter);
+
+// Bonus 2: Palindromes
+function isPalindrome(str) {
+	let arr = str.toLowerCase().replace(/\W/g, '').split('');
+	let arrReversed = [];
+	arr.forEach(item => {
+		arrReversed.unshift(item);
+	});
+	return arr.join('') === arrReversed.join('') ? true : false;
+}
