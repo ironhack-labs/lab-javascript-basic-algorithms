@@ -31,3 +31,27 @@ function nameReverse(name){
   console.log(reverse.join(""))
 }
 nameReverse(hacker2)
+
+function lexiOrder(a, b){
+  let i = 0;
+  for(; i < a.length || i < b.length; i++){
+    if(a[i] < b[i]){
+      console.log("The driver's name goes first")
+      break;
+    } else if(a[i] > b[i]){
+      console.log("Yo, the navigator goes first definitely")
+      break;
+    } else if(i === a.length-1 || i === b.length-1){
+      if(a.length < b.length){
+        console.log("The driver's name goes first")
+        break;
+      } else if(a.length > b.length){
+        console.log("Yo, the navigator goes first definitely")
+        break;
+      } else {
+        console.log("What?! You both have the same name?")
+      }
+    }
+  }
+}
+lexiOrder(hacker1, hacker2)
