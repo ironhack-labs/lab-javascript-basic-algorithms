@@ -37,3 +37,13 @@ if (hacker1.charAt(0) < hacker2.charAt(0)) {
 } else {
     console.log(`What?! You both have the same name?`);
 }
+
+
+// Bonus 1:
+let paragraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta erat a urna consequat scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris egestas elit vitae vulputate venenatis. Cras iaculis lorem quam, eget rutrum mauris pulvinar eget. Nam interdum dictum dui in pellentesque. Proin eget metus lorem. Donec pretium euismod cursus. Suspendisse gravida sollicitudin risus sit amet condimentum. Sed egestas pharetra laoreet.
+
+Morbi in velit mattis, eleifend lectus ornare, convallis libero. Etiam metus nibh, consectetur ut ex eget, porttitor laoreet nibh. Nunc sodales, elit nec aliquet viverra, velit eros varius lectus, at porttitor nisi ligula ut ex. Mauris et orci scelerisque, vehicula dolor sit amet, tincidunt justo. Vivamus dapibus turpis et ipsum semper, sed ultricies sapien fringilla. Curabitur et blandit ligula. Maecenas quis venenatis nisl, sit amet dignissim velit.
+
+Nunc gravida lectus ligula, ac iaculis nulla gravida in. Pellentesque pulvinar, metus a varius consequat, nunc erat rutrum lacus, vitae egestas velit tellus non nisl. Nullam scelerisque tincidunt urna sit amet feugiat. Curabitur sodales justo sed erat vulputate iaculis. Mauris a lacus in purus vehicula efficitur quis eget metus. Donec rhoncus a erat id dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non placerat nunc.`;
+
+paragraphs.replace(/\n+/g, ' ').split(' ').length;
