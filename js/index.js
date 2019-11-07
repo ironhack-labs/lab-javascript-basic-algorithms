@@ -55,3 +55,16 @@ function lexiOrder(a, b){
   }
 }
 lexiOrder(hacker1, hacker2)
+
+// Bonus 1
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi arcu, elementum eget tellus non, viverra sagittis orci. Vestibulum consectetur non nibh vel aliquam. Cras facilisis vel quam non venenatis. Etiam finibus leo sem, in cursus ex suscipit a. Maecenas pretium est ut lacus finibus, a tristique neque consectetur. Morbi feugiat libero sit amet tincidunt ultrices. Vivamus facilisis rhoncus tempor. Aliquam consectetur arcu odio, eu fermentum ipsum tempor finibus. Pellentesque lacinia sem sed erat tincidunt, et mollis nisl egestas. Donec dignissim massa libero, ut viverra tellus pulvinar ut. Aenean ornare vulputate eros, at porttitor lacus iaculis a. Proin porttitor quam sed justo venenatis finibus."
+
+let wordCount = loremIpsum.split(" ")
+let et = 0;
+for(let i = 0; i < wordCount.length; i++){
+  if(wordCount[i] === "et"){
+    et++;
+  }
+}
+console.log(wordCount.length)
+console.log(et)
