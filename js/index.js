@@ -47,3 +47,17 @@ if(loremWords[i] == "et") {
 }
 }
 console.log("et appears",counter,"times")
+
+//Bonus 2
+var { question } = require('readline-sync');
+var testPalindrome = question("Hey, write a string that you think MIGHT BE A PALINDROME. Thank you. >>")
+
+var inversePalindrome = [];
+for (let i=0; i<testPalindrome.length; i++) {
+inversePalindrome[i] = testPalindrome[testPalindrome.length-i-1];
+}
+if (inversePalindrome.join("").toLowerCase()==testPalindrome.toLowerCase()) {
+console.log("THIS IS A PALINDROME. Congrats");
+} else {
+console.log("This is not a Palindrome. Just google it lol")
+}
