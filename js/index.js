@@ -84,4 +84,5 @@ function palindrome(text){
       console.log("Text is not a Palindrome")
     }
 }
-palindrome("stack cats")
+let userText = prompt("Write some text to test if it's a palindrome:");
+palindrome(userText)
