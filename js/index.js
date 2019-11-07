@@ -23,3 +23,11 @@ function nameCapital(name){
 }
 nameCapital(hacker1)
 
+function nameReverse(name){
+  let reverse = [];
+  for (let i = name.length; i >= 0; i--){
+  reverse.push(name[i])
+  }
+  console.log(reverse.join(""))
+}
+nameReverse(hacker2)
