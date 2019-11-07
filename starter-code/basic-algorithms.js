@@ -3,8 +3,8 @@
 
 //Conditionals
 
-var l1 = hacker1.length;
-var l2 = hacker2.length;
+let l1 = hacker1.length;
+let l2 = hacker2.length;
 
 if (l1 > l2) {
  console.log("The Driver has the longest name, it has", l1, "characters");
