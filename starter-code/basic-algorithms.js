@@ -1,48 +1,18 @@
 // Names and Input
 
-var hacker1 = "Javi";
-console.log("The driver's name is " + hacker1);
-
-var hacker2;
-hacker2 = window.prompt("What's the navigator name?");
-console.log("The navigator's name is " + hacker2);
 
 //Conditionals
 
-if (hacker1.length > hacker2.length) {
+var l1 = hacker1.length;
+var l2 = hacker2.length;
 
-    console.log ("The Driver has the longest name, it has " + hacker1.length + " characters");
- 
- }
- 
- else if (hacker2.length > hacker1.length) {
-
-    console.log ("Yo, navigator got the longest name, it has " + hacker2.length + " characters")
- 
+if (l1 > l2) {
+ console.log("The Driver has the longest name, it has", l1, "characters");
+}
+else if (l1 < l2) {
+  console.log("Yo, navigator got the longest name, it has", l2, "characters");
 } else {
-    
-    console.log ("wow, you both got equally long names, " + hacker1.length + " characters!!");
-
+  console.log("wow, you both got equally long names", l1, "characters!!");
 }
-
-var upperC = hacker1.split(/(?=[a-z])/).join(" ");
-
-console.log (upperC.toUpperCase());
-
-
-if (hacker1 < hacker2){
-
-  console.log('The driver´s name goes first');
-
-}else if(hacker1 > hacker2){
-
-  console.log('The navigator goes first definitely');
-
-}else{
-
-  console.log('What?! You both got the same name?');
-}
-
-
 
 // Lorem ipsum generator
