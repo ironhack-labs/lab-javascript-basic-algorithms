@@ -42,3 +42,20 @@ if (hacker1 < hacker2) {
 } else {
 	console.log('What?! You both have the same name?');
 }
+
+// Bonus 1: Lorem ipsum
+// 1.1 Number of words
+const loremText =
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ligula erat, mattis non mattis a, imperdiet eu est. Suspendisse sed augue quam. Aenean eleifend purus et nisl mollis, eget dictum nulla pharetra. Duis massa orci, cursus eget aliquam ac, ullamcorper ac mauris. Nunc volutpat neque vitae ipsum sollicitudin, a lobortis lectus dapibus. Vivamus tempus lectus a orci tempus molestie. Integer a dictum justo. Cras dapibus facilisis eros cursus luctus.\nDuis vel eros mauris. Etiam sed placerat leo. Maecenas sollicitudin nunc posuere volutpat ultrices. Proin odio libero, consectetur id eros in, rutrum facilisis neque. Etiam nisl orci, viverra eu sapien pharetra, volutpat commodo odio. Aliquam erat volutpat. Phasellus feugiat fermentum lectus, at luctus magna interdum id. Mauris vestibulum tincidunt nisi at congue. Proin est purus, hendrerit et molestie at, imperdiet ac libero. Donec vel tempor lectus, eu dictum leo. Vivamus quis faucibus lectus,at efficitur leo.\nSuspendisse iaculis ante vehicula, tristique purus at, luctus nibh. Curabitur at tempor erat, nec maximus diam. Aliquam libero risus, efficitur malesuada mauris sit amet, mollis mattis massa. Vestibulum consectetur leo nec massa iaculis ultricies. Nulla rhoncus quam magna, at efficitur purus congue vel. Praesent scelerisque justo nec mauris tincidunt, eu tincidunt nulla sollicitudin. Nullam at varius purus. Morbi turpis libero, aliquam id felis sit amet, vulputate porta purus. In iaculis massa ipsum, at vehicula arcu sollicitudin vitae. Maecenas ac felis vel augue porta euismod.';
+let numOfWords = loremText.split(' ').length;
+console.log(numOfWords);
+
+// 1.2 Count of 'et' word
+let arrLorem = loremText.split(' ');
+let counter = 0;
+for (let i = 0; i < loremText.length; i++) {
+	if (arrLorem[i] === 'et' || arrLorem[i] === 'Et') {
+		counter++;
+	}
+}
+console.log(counter);
