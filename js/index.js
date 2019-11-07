@@ -32,10 +32,12 @@ console.log("\n\n");
 // Iteration 3: Loops
 //3.1
 console.log(">>Iteration 3.1");
-hacker1
-  .toUpperCase()
-  .split("")
-  .join(" ");
+console.log(
+  hacker1
+    .toUpperCase()
+    .split("")
+    .join(" ")
+);
 console.log("\n");
 
 //3.2
