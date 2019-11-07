@@ -14,8 +14,12 @@ if (hacker1.length > hacker2.length){
   console.log("Wow, you both have equally long names,", hacker1,"and", hacker2+"!")
 }
 // Iteration 3: Loops
-let name = [];
-for (let i = 0; i < hacker1.length; i++){
-  name.push(hacker1[i].toLocaleUpperCase())
+function nameCapital(name){
+  let nameCapitals = [];
+  for (let i = 0; i < name.length; i++){
+  nameCapitals.push(name[i].toLocaleUpperCase())
+  }
+  console.log(nameCapitals.join(" "))
 }
-console.log(name.join(" "))
+nameCapital(hacker1)
+
