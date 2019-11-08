@@ -68,6 +68,33 @@ console.log(arrayEt.length);
 
 let examplePalindrome = "A man, a plan, a canal, Panama!";
 
-examplePalindrome.forEach(function(e){
-  console.log(e)
-})
+isPalindrome(examplePalindrome);
+
+function cleanString(string){
+  let arrayElement = string.replace(/ /g, "").toUpperCase().split('');
+  for(let i=0; i < arrayElement.length; i++){
+    if(arrayElement[i] === "," || arrayElement[i] === "!" || arrayElement[i] === "'" || arrayElement[i] === '"' || arrayElement[i] === "?"){
+      arrayElement.splice(i,1);
+    }
+  }
+  return arrayElement;
+}
+
+function isPalindrome(string){
+
+  let arrayElement = cleanString(string);
+  
+  let counter = 0;
+  for(let i=0; i < arrayElement.length; i++){
+      if(arrayElement[i] === arrayElement[arrayElement.length-1-i]){
+        counter++;
+      }
+  }
+
+  if(counter === arrayElement.length){
+    console.log('The String is a Palindrome');
+  } else{
+    console.log('Not Palindrome');
+  }
+  
+}
