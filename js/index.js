@@ -31,3 +31,14 @@ for (let i = hacker1Length - 1; i >= 0; i--) {
     hacker1Array2 = hacker1Array2 + hacker1[i]
 }
 console.log(hacker1Array2)
+
+let hacker1FirstLetter = hacker1[0]
+let hacker2FirstLetter = hacker2[0]
+
+if (hacker1FirstLetter > hacker2FirstLetter) {
+    console.log(`The driver's name goes first.`);
+} else if (hacker1FirstLetter < hacker2FirstLetter) {
+    console.log(`Yo, the navigator goes first definitely.`);
+} else {
+    console.log(`What?! You both have the same name?`);
+}
