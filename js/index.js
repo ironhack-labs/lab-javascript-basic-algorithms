@@ -40,3 +40,25 @@ isLonger("Leonardo", "Washingnton");
 console.log(isLonger);
 
 // Iteration 3: Loops
+
+// 3.1
+hacker1Uppercase = hacker1.toUpperCase();
+
+console.log(hacker1Uppercase);
+
+separator = "";
+hacker1UppercaseSeparated = hacker1Uppercase.split(separator);
+
+console.log(hacker1UppercaseSeparated);
+
+// 3.2
+function reverseString(str) {
+  var splitString = str.split("");
+
+  var reverseArray = splitString.reverse();
+
+  var joinArray = reverseArray.join("");
+  return joinArray;
+}
+
+reverseString(hacker2);
