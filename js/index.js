@@ -1,36 +1,48 @@
 // Iteration 1: Names and Input
-let hacker1 = "Luigi";
+console.log(">> Iteration 1 <<");
+
+let hacker1 = "Mario";
 console.log("The driver's name is", hacker1);
 
-let hacker2 = "Google Chrome";
+let hacker2 = "Luigi";
 console.log("The navigator's name is ", hacker2);
 
 // Iteration 2: Conditionals
+console.log("\n>> Iteration 2 <<");
+
 let msg;
 if (hacker1.length > hacker2.length) {
-  msg = `The driver has the longest name, it has ${hacker1.length} characters.`
+  msg = `The driver has the longest name, it has ${hacker1.length} characters.`;
 } else if (hacker1.length < hacker2.length) {
-  msg = `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`
-}
-else {
-  msg = `Wow, you both have equally long names, ${hacker1.length} characters!`
+  msg = `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`;
+} else {
+  msg = `Wow, you both have equally long names, ${hacker1.length} characters!`;
 }
 
+console.log(msg);
+
 // Iteration 3: Loops
+console.log("\n>> Iteration 3 <<");
+
 function splitLetters(str) {
   let i = 0;
   let chain = str[i];
 
   do {
     i++;
-    if (str[i] !== ' ') chain += ' ' + str[i];
-  } while (i < str.length-1);
+    if (str[i] !== " ") chain += " " + str[i];
+  } while (i < str.length - 1);
 
   return chain;
 }
 
 console.log(splitLetters(hacker1.toUpperCase()));
-console.log(hacker2.split('').reverse().join(''));
+console.log(
+  hacker2
+    .split("")
+    .reverse()
+    .join("")
+);
 
 if (hacker1 < hacker2) {
   msg = "The driver's name goes first.";
@@ -39,4 +51,5 @@ if (hacker1 < hacker2) {
 } else {
   msg = "What?! You both have the same name?";
 }
+
 console.log(msg);
