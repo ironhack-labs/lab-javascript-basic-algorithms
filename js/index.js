@@ -53,3 +53,25 @@ for (j = 0; j < arrayLorem.length;j++){
   }
 }
 console.log(count);
+
+let cadena = "No 'x' in Nixon";
+let minusculas = cadena.toLowerCase();
+newInversa = " ";
+newCadena = " ";
+for(let i = 0; i < minusculas.length; i++){
+  if (minusculas.charCodeAt(i) > 96 && minusculas.charCodeAt(i) < 123){
+      newCadena += minusculas.charAt(i);
+      //console.log(newCadena);
+  }
+}
+let j = 0;
+for(let j = minusculas.length; j >= 0;j--){
+  if(minusculas.charCodeAt(j) > 96 && minusculas.charCodeAt(j) < 123){
+      newInversa += minusculas.charAt(j);
+      //console.log(newInversa);
+  }
+}
+
+if (newCadena === newInversa){
+  console.log("Palindro!!!!");
+}
