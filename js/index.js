@@ -48,10 +48,8 @@ console.log(`The word 'et' appears ${loremText.match(etRegExp).length} times`);
 // Bonus 2
 let text = prompt('Write a text to check if it is a palindrome');
 let letters = text.match(/\w/gi).join('').toLowerCase();
-let part1 = letters.slice(0, Math.ceil(letters.length / 2));
-let part2 = letters.slice(Math.floor(letters.length / 2), letters.length);
 
-if (part1 === part2.split('').reverse().join('')){
+if (letters === letters.split('').reverse().join('')){
   console.log("It's a palindrome! 😀");
 } else {
   console.log("Sorry, it's NOT a palindrome 🙁");
