@@ -31,7 +31,18 @@ if (hacker1.length > hacker2.length) {
 capitals i.e. "J O H N" */
 
 let spaceCapital = "";
+
 for (let i = 0; i < hacker1.length; i++) {
   spaceCapital += hacker1[i].toUpperCase() + " ";
 }
 console.log(spaceCapital.trimRight());
+
+//Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+
+let reverseOrder = "";
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  console.log(hacker2.length);
+  reverseOrder += hacker2[i];
+}
+console.log(reverseOrder);
