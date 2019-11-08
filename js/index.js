@@ -21,3 +21,29 @@ if(hacker1Lenght > hacker2Lenght){
 }
 
 // Iteration 3: Loops
+
+console.log(hacker1.toUpperCase().split('').join(' '));
+let arrayHacker2 = hacker2.split('');
+let arrayNew = [];
+
+arrayHacker2.forEach(function(e){
+  arrayNew.unshift(e);
+})
+
+console.log(arrayNew.join(''))
+
+let arrayOrden = [];
+
+arrayOrden.push(hacker1.toUpperCase(), hacker2.toUpperCase());
+
+arrayOrden.sort(function (a,b) {
+  if (a > b) {
+    console.log("The driver's name goes first.");
+    return;
+  } else if (a < b) {
+    console.log('Yo, the navigator goes first definitely.')
+    return;
+  }
+  console.log('What?! You both have the same name?')
+  return;
+});
