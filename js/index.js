@@ -27,3 +27,11 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+/*Print all the characters of the driver's name, separated by a space and in 
+capitals i.e. "J O H N" */
+
+let spaceCapital = "";
+for (let i = 0; i < hacker1.length; i++) {
+  spaceCapital += hacker1[i].toUpperCase() + " ";
+}
+console.log(spaceCapital.trimRight());
