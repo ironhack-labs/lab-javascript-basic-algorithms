@@ -105,3 +105,8 @@ function countSubstring(chain, substr) {
 
 console.log("The number of words are:", countWords(lorem_chain));
 console.log(`The word 'et' it's repeats ${countSubstring(lorem_chain, "et")} times`);
+
+// Bonus 2
+console.log("\n>> Bonus 2 <<");
+
+let chain_forward = prompt("Introduce a chain of characters: ");
