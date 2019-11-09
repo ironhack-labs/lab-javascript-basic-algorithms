@@ -53,3 +53,75 @@ if (hacker1 < hacker2) {
 }
 
 console.log(msg);
+
+// Bonus 1
+console.log("\n>> Bonus 1 <<");
+
+let lorem_chain = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Ut magna mi, porttitor cursus tincidunt quis, blandit mattis tellus. Mauris 
+at lacinia leo, non efficitur nunc. Donec molestie augue magna, ut mollis ante 
+facilisis ac. Donec auctor odio rhoncus, sollicitudin felis eu, dignissim 
+nulla. Vestibulum condimentum velit ac semper interdum. Nullam blandit aliquet 
+est, vitae facilisis justo. Integer nulla est, pellentesque vitae rhoncus eu, 
+rhoncus in turpis. Proin neque est, vulputate eu aliquam a, lobortis eget lorem. 
+Duis suscipit sodales consequat. Pellentesque imperdiet vestibulum dui vitae 
+commodo. Suspendisse feugiat sit amet urna quis commodo. In feugiat ullamcorper 
+diam, et faucibus ex. Sed mi augue, condimentum et scelerisque vitae, viverra 
+non metus. Cras in velit et orci lobortis euismod in vitae tellus. Cras magna 
+lorem, facilisis vitae turpis in, mattis finibus mi. Morbi euismod velit in ante 
+semper, vitae ultricies felis lobortis. Cras diam mauris, finibus a nisl nec, 
+egestas ornare orci. Nam ligula leo, lacinia in blandit sed, ultrices at libero. 
+Vivamus gravida ante a sem commodo cursus. Proin sit amet condimentum turpis, 
+maximus ultricies nunc. Aliquam sit amet porttitor mi. Integer lacinia erat nec 
+ligula eleifend, vitae vulputate tellus venenatis. Morbi consectetur est quis 
+magna semper, vel malesuada erat malesuada. Mauris in quam ac libero consectetur 
+porttitor. Sed consectetur, libero at porttitor ullamcorper, eros lorem rhoncus 
+metus, vel tempor dui nisi quis nunc. Fusce lorem tortor, aliquet eu suscipit a, 
+iaculis a urna. In et consectetur felis. Suspendisse luctus dui ac imperdiet vehicula. 
+Sed placerat accumsan nisi in luctus. Cras dapibus mauris vitae eros dignissim, vel 
+rutrum urna sodales. Vivamus eu sapien sed odio tristique vestibulum. Donec malesuada 
+euismod condimentum. Mauris a odio eget odio accumsan finibus. Curabitur fringilla 
+pellentesque ullamcorper. Praesent tincidunt ac ipsum sed mollis. Aenean et posuere 
+mi, nec porttitor augue. Praesent pellentesque arcu a malesuada facilisis. Duis 
+velit risus, eleifend quis magna at, consectetur lacinia ipsum. Suspendisse neque 
+risus, tempor ut ultricies at, tempus nec enim. Praesent varius iaculis vulputate. 
+Etiam arcu quam, lobortis et eros eget, volutpat hendrerit justo. Nunc eget vestibulum 
+mi, a sollicitudin ipsum. Praesent et ipsum sagittis, sodales lacus a, volutpat sem.`;
+
+function countWords(chain) {
+  return chain.split(" ").length;
+}
+
+function countSubstring(chain, substr) {
+  let count = 0;
+  chain = chain.split(" ");
+
+  for (let i = 0; i < chain.length; ++i) {
+    if (chain[i] === substr) count++;
+  }
+
+  return count;
+}
+
+console.log("The number of words are:", countWords(lorem_chain));
+console.log(
+  `The word 'et' it's repeats ${countSubstring(lorem_chain, "et")} times`
+);
+
+// Bonus 2
+console.log("\n>> Bonus 2 <<");
+
+let chain_backward = prompt("Introduce a text:");
+
+chain_backward = chain_backward.replace(/[^a-z-A-Z]/g, "").toLowerCase();
+
+let chain_forward = chain_backward
+  .split("")
+  .reverse()
+  .join("");
+
+if (chain_backward === chain_forward) {
+  console.log("This text is Palindrome.");
+} else {
+  console.log("This text is NOT Palindrome.");
+}
