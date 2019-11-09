@@ -61,17 +61,44 @@ newCadena = " ";
 for(let i = 0; i < minusculas.length; i++){
   if (minusculas.charCodeAt(i) > 96 && minusculas.charCodeAt(i) < 123){
       newCadena += minusculas.charAt(i);
-      //console.log(newCadena);
   }
 }
 let j = 0;
 for(let j = minusculas.length; j >= 0;j--){
   if(minusculas.charCodeAt(j) > 96 && minusculas.charCodeAt(j) < 123){
       newInversa += minusculas.charAt(j);
-      //console.log(newInversa);
   }
 }
 
 if (newCadena === newInversa){
   console.log("Palindro!!!!");
 }
+
+function devuelveCadena(cadena){
+  let minusculas = cadena.toLowerCase();
+  let newCadena="";
+  for(let i = 0; i < minusculas.length; i++){
+    if (minusculas.charCodeAt(i) > 96 && minusculas.charCodeAt(i) < 123){
+        newCadena += minusculas.charAt(i);
+    };
+  };
+  return newCadena;
+};
+
+function invierteCadena(cadena){
+  let minusculas = cadena.toLowerCase();
+  let newInversa="";
+  for(let i = minusculas.length; i >= 0;i--){
+    if(minusculas.charCodeAt(i) > 96 && minusculas.charCodeAt(i) < 123){
+        newInversa += minusculas.charAt(i);
+    };
+  };
+  return newInversa;
+};
+
+function comparaCadena(usuario = prompt()){
+  if (devuelveCadena(usuario) === invierteCadena(usuario)){
+    return "Palindro";
+  } else return "No es un palindro";
+
+};
