@@ -36,22 +36,26 @@ if (hacker1.localeCompare(hacker2) < 0) {
 }
 
 // Bonus 1
+//Generate lorem ipsum paragraph
 let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor ex in lorem pellentesque, ac consectetur tortor pretium. Sed posuere elit at velit porta, sed scelerisque arcu pellentesque. Proin non dapibus ipsum, vel fringilla mauris. Vestibulum rutrum venenatis erat vitae elementum. Nullam blandit neque ut ultricies pretium. Suspendisse sed orci blandit, aliquet erat eu, fringilla tortor. Etiam ut tortor gravida, interdum erat ac, pharetra eros. In sit amet condimentum magna, et placerat sapien. Nulla sodales laoreet eros, eget cursus nibh fringilla sed. Vestibulum malesuada ut ligula sit amet faucibus. Duis ut odio sed sapien vestibulum auctor. Sed tincidunt eu elit ac eleifend. Integer aliquam arcu et aliquet bibendum. Donec vestibulum lorem in neque consequat, eu ultricies enim posuere. Ut ut orci laoreet, mattis ligula vehicula, tempus metus. Vivamus fermentum, leo efficitur tempor sagittis, justo ante finibus sapien, id mattis sem elit sed lacus. \n Suspendisse potenti. Pellentesque at augue ante. Fusce fermentum viverra est, nec varius quam facilisis at. Curabitur vestibulum nec erat eu feugiat. Cras molestie tortor nulla, et lobortis dui dapibus sed. Nunc finibus tempus lorem, ut dictum nisi tincidunt sed. Sed ac convallis risus, eu sodales urna. Ut sit amet arcu non tortor maximus gravida. Proin fermentum non dui at feugiat. Etiam blandit a est id placerat. Suspendisse viverra facilisis sem, in dictum lectus elementum et. \n Donec posuere dictum sem vitae feugiat. Aliquam at metus nisl. Maecenas auctor, orci ac semper ullamcorper, risus sem aliquam dolor, quis porta mi lectus ut urna. Sed maximus, orci vitae posuere interdum, neque ante convallis sem, non viverra purus nisi non nunc. Maecenas porta imperdiet neque, vitae semper eros vestibulum in. Etiam ullamcorper viverra ipsum ut faucibus. Praesent ante velit, ultrices non ligula et, tincidunt volutpat felis. Praesent consequat lorem vel libero pellentesque pharetra. Curabitur molestie condimentum lorem eu vestibulum. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec pulvinar nibh, quis porta dui. Aliquam vel mi iaculis, vestibulum dui a, iaculis mauris. Pellentesque et mauris dui. Fusce vitae libero sapien."
-
+//Create an array to store every word 
 let words = lorem.toLowerCase().split(" ");
 console.log("The amount of words in the paragraph are" , words.length);
-
+//Iterate over the array to count the 'et' word
 let etCount = 0
 words.forEach( e => {
   if (e === "et") {
     etCount ++;
   }
 })
-
 console.log("The latin word 'et' appeared" ,etCount, "times");
 
+//Bonus 2
+
+//Prompt to ask for a phrase
 let input = prompt("Please enter a phrase to check if it`s palindrome", " ");
 
+//Declare variables to make 2 arrays with the letters, on reverse orders (the regex is for taking out the special characters)
 let regex = /[a-z]/;
 let test = (input.toLowerCase().split("")).filter(e => regex.test(e));
 let reverse = [];
@@ -60,6 +64,7 @@ test.forEach(e => {
   reverse.unshift(e)
 })
 
+//Check if the phrase is the same on both orders 
 if (test.join("") === reverse.join("")) {
   console.log("The phrase you gave is a palindrome")
 } else {
