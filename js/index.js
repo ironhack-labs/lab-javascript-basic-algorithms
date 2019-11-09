@@ -26,3 +26,18 @@ function alReves(x) {
   return x.split("").reverse().join("");
 }
 alReves(hacker1);
+
+var minuscUno = hacker1.toLowerCase('').split('').sort();
+var minuscDos = hacker2.toLowerCase('').split('').sort();
+console.log (minuscUno,minuscDos);
+
+function compara (x,y){
+  for(var i = 0; i < minuscUno.length; i++){
+    if (minuscUno[0] == "a"){
+      console.log("hola");
+    } else if (minuscDos[1] == "a") {
+      console-log ("bye")
+    }
+  }
+}
+compara (minuscUno,minuscDos)
