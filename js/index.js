@@ -68,3 +68,14 @@ for (let i = 0; i < stringReplace.length; i++) {
 console.log(
   "The number of words in the string ommiting spaces is : " + counter
 );
+
+//Latin word et:
+let countEt = 0;
+let splitLorem = lorem.split(" ");
+
+for (let i = 0; i < splitLorem.length; i++) {
+  if (splitLorem[i].toLowerCase() === "et") {
+    countEt += 1;
+  }
+}
+console.log("The number of et in the String is : " + countEt);
