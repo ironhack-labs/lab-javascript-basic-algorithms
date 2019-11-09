@@ -34,5 +34,5 @@ console.log(`The text has ${lorem.split(' ').length} words`);
 // Bonus 2: Palindrome checker
 let word = window.prompt("Write down a phrase: ");
 let wordRight = word.replace(/\W/g, "").toLowerCase();
-let wordReverse = wordRight.split("").reverse().join('').toLowerCase();
+let wordReverse = wordRight.split("").reverse().join('');
 alert(wordRight === wordReverse ? "The phrase is a palindrome!" : "The phrase is NOT a palindrome");
