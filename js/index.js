@@ -95,7 +95,7 @@ function countWords(chain) {
 function countSubstring(chain, substr) {
   let count = 0;
   chain = chain.split(" ");
-  
+
   for (let i = 0; i < chain.length; ++i) {
     if (chain[i] === substr) count++;
   }
@@ -104,4 +104,24 @@ function countSubstring(chain, substr) {
 }
 
 console.log("The number of words are:", countWords(lorem_chain));
-console.log(`The word 'et' it's repeats ${countSubstring(lorem_chain, "et")} times`);
+console.log(
+  `The word 'et' it's repeats ${countSubstring(lorem_chain, "et")} times`
+);
+
+// Bonus 2
+console.log("\n>> Bonus 2 <<");
+
+let chain_backward = prompt("Introduce a text:");
+
+chain_backward = chain_backward.replace(/[^a-z-A-Z]/g, "").toLowerCase();
+
+let chain_forward = chain_backward
+  .split("")
+  .reverse()
+  .join("");
+
+if (chain_backward === chain_forward) {
+  console.log("This text is Palindrome.");
+} else {
+  console.log("This text is NOT Palindrome.");
+}
