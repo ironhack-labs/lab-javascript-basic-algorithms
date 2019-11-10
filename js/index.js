@@ -91,3 +91,18 @@ function reverseString(str) {
 }
 
 reverseString(hacker2);
+
+// 3.3
+
+var hackers = [hacker1, hacker2];
+hackersSorted = hackers.sort();
+
+console.log(hackersSorted);
+
+function lexiOrder(hackersSorted) {
+  if (hacker1 == [0]) {
+    console.log("ppp");
+  }
+}
+
+lexiOrder();
