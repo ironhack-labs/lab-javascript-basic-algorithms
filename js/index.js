@@ -28,7 +28,9 @@ if (hacker1.length > hacker2.length) {
 
 let space = "";
 for (i = 0; i < hacker1.length; i++) {
+
   space += hacker1[i] + " ";
+  
 }
 console.log(space.toUpperCase());
 
