@@ -37,6 +37,11 @@ for (i = 0; i < hacker1.length; i++) {
 }
 console.log(space.toUpperCase());
 
-
+if (hacker1 === hacker2) {
+    console.log(
+      "What ? !You both have the same name?"
+    );
+  }
+  
 
 
