@@ -59,3 +59,4 @@ var sch = li.search(/(et)/g);
 console.log(sch + " times " + "repeated word:et");
 
 //Bonus 2:
+
