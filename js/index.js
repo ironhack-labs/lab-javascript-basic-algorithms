@@ -128,4 +128,32 @@ console.log(compareLexicograficOrder(hacker1,hacker2));
         "put it up"
         "Was it a car or a cat I saw?" and "No 'x' in Nixon".
     */
+
+    //window.prompt("Enter any sentece, the program will check if it's a palindrome!");
    
+    var sentence = "No 'x' in Nixon";
+    var regExp = /[^A-Za-z0-9]/g;
+    
+    function checkPalindrome(string){
+        
+        string = string.toLowerCase();
+        string = string.replace(regExp,'');
+
+        // string = string.replace(" ", '');
+        // string = string.replace(",", '');
+        // string = string.replace(".", '');
+        // string = string.replace("?", '');
+        // string = string.replace("!", '');
+        // string = string.replace("'", '');
+
+        //console.log(sentence);
+
+        for(let i = 0; i < string.length; i++){
+            if(string[i] !== string[(string.length)-1-i]){
+                return "The sentence is not a palindrome";
+            }
+            return "The sentence is a palindrome!";
+        }
+    }
+
+    console.log(checkPalindrome(sentence));
