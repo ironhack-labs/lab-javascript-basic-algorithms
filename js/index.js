@@ -66,9 +66,9 @@ console.log(arrayEt.length);
 
 //Bonus 2
 
-let examplePalindrome = "A man, a plan, a canal, Panama!";
+let stringUser =  prompt('Hello, Do you can to write a text?');
 
-isPalindrome(examplePalindrome);
+isPalindrome(stringUser);
 
 function cleanString(string){
   let arrayElement = string.replace(/ /g, "").toUpperCase().split('');
