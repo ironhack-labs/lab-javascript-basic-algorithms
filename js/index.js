@@ -2,12 +2,9 @@
 let hacker1 = "Leonardo";
 console.log("Driver´s name: ", hacker1);
 
-<<<<<<< HEAD
-=======
 let hacker1 = "Leonardo";
 console.log("Driver´s name: ", hacker1);
 
->>>>>>> 9358744b048f4029d34caf96c1b230a4b6307426
 let hacker2 = "Alberto";
 console.log("The navigator´s name is: ", hacker2);
 
@@ -40,12 +37,6 @@ function isLonger(hacker1, hacker2) {
   }
 }
 
-<<<<<<< HEAD
-isLonger("Leonardo", "Washingnton");
-console.log(isLonger);
-
-// Iteration 3: Loops
-=======
 function isLonger(hacker1, hacker2) {
   for (var i = 0; i < hacker1.length; i++) {
     var totalCaracter1 = [i];
@@ -100,4 +91,3 @@ function reverseString(str) {
 }
 
 reverseString(hacker2);
->>>>>>> 9358744b048f4029d34caf96c1b230a4b6307426
