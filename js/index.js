@@ -2,10 +2,9 @@
 
 var hacker1 = "Alberto";
 console.log("The drive´s name is" , hacker1);
+var hacker2 = prompt("what´s your name");
 
-//var hacker2 = prompt("what´s your name");
-
-var hacker2 = "Carlos";
+//var hacker2 = "Carlos";
 console.log("The navigator´s name is", hacker2);
 
 // Iteration 2: Conditionals
