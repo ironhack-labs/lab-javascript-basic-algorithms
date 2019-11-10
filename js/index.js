@@ -17,8 +17,8 @@ if (hacker1.length > hacker2.length) {
 if (hacker1.length < hacker2.length) {
   console.log(
     "It seems that the navigator has the longest name, it has " +
-      hacker2.length +
-      " characters"
+    hacker2.length +
+    " characters"
   );
 }
 if (hacker1.length === hacker2.length) {
@@ -28,3 +28,15 @@ if (hacker1.length === hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+let space = "";
+for (i = 0; i < hacker1.length; i++) {
+
+  space += hacker1[i] + " ";
+
+}
+console.log(space.toUpperCase());
+
+
+
+
