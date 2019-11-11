@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Names and Input
 
 let hacker1 = "Javi";
@@ -60,4 +58,3 @@ for (let i = 0; i < 1; i++) {
 }
 
 // Lorem ipsum generator
->>>>>>> develop
