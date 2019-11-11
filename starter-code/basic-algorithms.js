@@ -8,8 +8,6 @@ console.log("The navigator name is", hacker2);
 
 //Conditionals
 
-//Conditionals
-
 let l1 = hacker1.length;
 let l2 = hacker2.length;
 
@@ -20,8 +18,6 @@ if (l1 > l2) {
 } else {
   console.log("wow, you both got equally long names", l1, "characters!!");
 }
-
-//Conditionals
 
 // Loops
 
