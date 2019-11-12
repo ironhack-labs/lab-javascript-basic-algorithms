@@ -84,14 +84,12 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 ### Bonus Time!
 
 #### Bonus 1:
-<br>
 Go to [lorem ipsum generator](http://www.lipsum.com/) and:
   - Generate 3 paragraphs. Store the text in a variable type of string.
   - Make your program count the number of words in the string.
   - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
 
 #### Bonus 2:
-<br>
 Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
   - "A man, a plan, a canal, Panama!"
   - "Amor, Roma"
