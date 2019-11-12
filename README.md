@@ -93,7 +93,7 @@ Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 
 #### Bonus 2:
 
-Ask the user for a new string and check if it's a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Examples of palindromes: 
+Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
   - "A man, a plan, a canal, Panama!"
   - "Amor, Roma"
   - "race car"
@@ -102,6 +102,8 @@ Ask the user for a new string and check if it's a [Palindrome](https://en.wikipe
   - "taco cat"
   - "put it up"
   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+  
+  __Hint__: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as _join()_, _reverse()_, etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using `for` loop, `if-else` statements with some `break` and `continue`... Just sayin' :smiley: 
 
 ## Extra Resources
 
