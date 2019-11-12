@@ -63,7 +63,6 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
   	1.4 Print `"The navigator's name is YYYY"`.
 
 ### Iteration 2: Conditionals
-<br>
   2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
   <br>
 	  - `The driver has the longest name, it has XX characters.` or <br>
@@ -71,7 +70,6 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 	  - `Wow, you both have equally long names, XX characters!`.
 
 ### Iteration 3: Loops
-<br>
   3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
   i.e. `"J O H N"`
   
