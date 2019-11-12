@@ -31,7 +31,7 @@ Ready to start?
   <!-- ![](https://i.imgur.com/4TQislb.png) -->
   ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_17f095b9bb4fa4bd1bee1c017c043327.png)
 
-- When you are done completely or at any point after the first iteration, copy your code into the `js/index.js` file and follow the steps for submission. 
+- __When you are done completely or at any point after the first iteration, copy your code into the `js/index.js` file and follow the steps for submission.__
 
 ## Submission
 
