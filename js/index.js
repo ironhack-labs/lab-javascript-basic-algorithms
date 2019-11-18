@@ -26,6 +26,15 @@ if (hacker1.length > hacker2.length) {
   );
 }
 
+//<<<<<<<<<<<<<<<<<<<< Iteration 3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+let driver = "";
+for (let i = 0; i < hacker1.length; i++) {
+  driver += `${hacker1[i].toUpperCase()} `;
+}
+console.log(driver.trim());
+
+
 
 
 
