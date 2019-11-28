@@ -64,22 +64,22 @@ console.log(wordsInStr);
 
 function search_word(text, word){
     let numberOfEtWord = 0;
-    let countTwoLetters = 0;
+    let countWordLetters = 0;
     for (let i = 0; i < text.length; i += 1){
         if(text[i] === word[0]){ //If the 1st letter of word is equal to a letter of the text:
             for(let j = i; j < i + word.length; j += 1){ //Run another loop when the first letter of the word is find in the string
                 if(text[j] === word[j-i]){ //If the second letter of the word is equal to the next letter of the first founded letter:
-                    countTwoLetters += 1;
+                    countWordLetters += 1;
                 } else{
                     continue;
                 }
-                if (countTwoLetters === word.length){ //If counter = 3 add 1 to the variable numberOfEtWord
+                if (countWordLetters === word.length){ //If counter = 3 add 1 to the variable numberOfEtWord
                     numberOfEtWord += 1;
                 } else{
                     continue;
                 }
             }
-            countTwoLetters = 0; //Reset the number of letter after find it and beggin next loop
+            countWordLetters = 0; //Reset the number of letter after find it and beggin next loop
         }
     }
     console.log(`${word} was found ${numberOfEtWord} times.`);
