@@ -66,36 +66,152 @@ let textA = 'A man, a plan, a canal, Panama!';
 let textB = 'Amor, Roma';
 let textC = 'race car';
 let textD = 'stack cats';
-let textF = 'step on no pets';
-let textG = 'taco cat';
-let textH = 'put it up';
-let textI = 'Was it a car or a cat I saw? and No "x" in Nixon';
+let textE = 'step on no pets';
+let textF = 'taco cat';
+let textG = 'put it up';
+let textH = 'Was it a car or a cat I saw?';
+let textI = 'No "x" in Nixon';
 
-let name = ' ';
+let nameA = ' ';
 for (let i = 0; i < textA.length; i += 1) {
   if (textA[i] !== " " && textA[i] !== "," && textA[i] !== "!") {
-    name += textA[i].toLowerCase()
+    nameA += textA[i].toLowerCase()
   }
 }
-console.log(name)
+console.log(nameA)
 
-let reverseName = '';
-for (let i = name.length - 1; i >= 0; i -= 1) {
-  reverseName += name[i].toLowerCase();
+let reverseNameA = '';
+for (let i = nameA.length - 1; i >= 0; i -= 1) {
+  reverseNameA += nameA[i].toLowerCase();
 }
+console.log(reverseNameA)
 
-console.log(reverseName)
+//////////////////////////////////////
+
+let nameB = ' ';
+for (let i = 0; i < textB.length; i += 1) {
+  if (textB[i] !== " " && textB[i] !== "," && textB[i] !== "!") {
+    nameB += textB[i].toLowerCase()
+  }
+}
+console.log(nameB)
+
+let reverseNameB = '';
+for (let i = nameB.length - 1; i >= 0; i -= 1) {
+  reverseNameB += nameB[i].toLowerCase();
+}
+console.log(reverseNameB)
+
+//////////////////////////////////////
+
+let nameC = ' ';
+for (let i = 0; i < textC.length; i += 1) {
+  if (textC[i] !== " " && textC[i] !== "," && textC[i] !== "!") {
+    nameC += textC[i].toLowerCase()
+  }
+}
+console.log(nameC)
+
+let reverseNameC = '';
+for (let i = nameC.length - 1; i >= 0; i -= 1) {
+  reverseNameC += nameC[i].toLowerCase();
+}
+console.log(reverseNameC)
+
+//////////////////////////////////////
+
+let nameD = ' ';
+for (let i = 0; i < textD.length; i += 1) {
+  if (textD[i] !== " " && textD[i] !== "," && textD[i] !== "!") {
+    nameD += textD[i].toLowerCase()
+  }
+}
+console.log(nameD)
+
+let reverseNameD = '';
+for (let i = nameD.length - 1; i >= 0; i -= 1) {
+  reverseNameD += nameD[i].toLowerCase();
+}
+console.log(reverseNameD)
+
+//////////////////////////////////////
+
+let nameE = ' ';
+for (let i = 0; i < textE.length; i += 1) {
+  if (textE[i] !== " " && textE[i] !== "," && textE[i] !== "!") {
+    nameE += textE[i].toLowerCase()
+  }
+}
+console.log(nameE)
+
+let reverseNameE = '';
+for (let i = nameE.length - 1; i >= 0; i -= 1) {
+  reverseNameE += nameE[i].toLowerCase();
+}
+console.log(reverseNameE)
+
+//////////////////////////////////////
+
+let nameF = ' ';
+for (let i = 0; i < textF.length; i += 1) {
+  if (textF[i] !== " " && textF[i] !== "," && textF[i] !== "!") {
+    nameF += textF[i].toLowerCase()
+  }
+}
+console.log(nameF)
+
+let reverseNameF = '';
+for (let i = nameF.length - 1; i >= 0; i -= 1) {
+  reverseNameF += nameF[i].toLowerCase();
+}
+console.log(reverseNameF)
+
+//////////////////////////////////////
+
+let nameG = ' ';
+for (let i = 0; i < textG.length; i += 1) {
+  if (textG[i] !== " " && textG[i] !== "," && textG[i] !== "!") {
+    nameG += textG[i].toLowerCase()
+  }
+}
+console.log(nameG)
+
+let reverseNameG = '';
+for (let i = nameG.length - 1; i >= 0; i -= 1) {
+  reverseNameG += nameG[i].toLowerCase();
+}
+console.log(reverseNameG)
+
+//////////////////////////////////////
+
+let nameH = ' ';
+for (let i = 0; i < textH.length; i += 1) {
+  if (textH[i] !== " " && textH[i] !== "," && textH[i] !== "!" && textH[i] !== "?" ) {
+    nameH += textH[i].toLowerCase()
+  }
+}
+console.log(nameH)
+
+let reverseNameH = '';
+for (let i = nameH.length - 1; i >= 0; i -= 1) {
+  reverseNameH += nameH[i].toLowerCase();
+}
+console.log(reverseNameH)
+
+//////////////////////////////////////
+
+let nameI = ' ';
+for (let i = 0; i < textI.length; i += 1) {
+  if (textI[i] !== " " && textI[i] !== "," && textI[i] !== "!") {
+    nameI += textI[i].toLowerCase()
+  }
+}
+console.log(nameI)
+
+let reverseNameI = '';
+for (let i = nameI.length - 1; i >= 0; i -= 1) {
+  reverseNameI += nameI[i].toLowerCase();
+}
+console.log(reverseNameI)
 
 
-
-
-
-// console.log(element)
-
-// console.log(
-//   textA
-//     .toLowerCase()
-//     .split("")
-//     .reverse()
-//     .join("")
-// );
