@@ -65,5 +65,4 @@ for (i = 0; i < lorenSplit.length; i++) {
   if (lorenSplit[i] === "et") {
     wordsCounter++;
   }
-}
 console.log(wordsCounter);
