@@ -38,7 +38,7 @@ console.log(nameSpace);
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 
 let nameOrder = "";
-for (i = hacker2.length; i >= 0; i--) {
+for (i = hacker2.length -1; i >= 0; i--) {
     nameOrder += hacker2[i];
 }
 console.log(nameOrder);
@@ -83,11 +83,17 @@ console.log(countEt)
 //Bonus 2:
 //Create a new variable phraseToCheck and have it contain some string value.Write a code that will check if the value we assigned to this variable is a Palindrome.Here are some examples of palindromes:
 
-//"A man, a plan, a canal, Panama!"
-//"Amor, Roma"
-//"race car"
-//"stack cats"
-//"step on no pets"
-//"taco cat"
-//"put it up"
-//"Was it a car or a cat I saw?" and "No 'x' in Nixon".
+let phraseToCheck = "Car sac";
+let phraseToCheckLower = phraseToCheck.toLowerCase();
+let phraseToCheckLowerNoSpaces = phraseToCheckLower.replace(" ", "")
+
+let reversePhraseToCheck = "";
+for (i = phraseToCheckLowerNoSpaces.length - 1; i >= 0; i--) {
+    reversePhraseToCheck += phraseToCheckLowerNoSpaces[i];
+}
+if (phraseToCheckLowerNoSpaces === reversePhraseToCheck) {
+    console.log("It's a Palindrome");
+} else {
+    console.log("It's not  a Palindrome");
+}
+
