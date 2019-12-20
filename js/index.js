@@ -35,10 +35,12 @@ reverseHacker2 = reverseHacker2 + hacker2[k];
 
 console.log(reverseHacker2);
 
-if (hacker1 > hacker2){
-  console.log('The driver´s name goes first')
-} else if(hacker1 < hacker2){
-  console.log('The navigator goes first definitely')
-} else{
-  console.log('What?! You both got the same name?')
-}
+if (hacker1.length > hacker2.length){
+    console.log('The driver´s name goes first')
+  } else if(hacker1.length < hacker2.length){
+    console.log('The navigator goes first definitely')
+  } else{
+    console.log('What?! You both got the same name?')
+  }
+
+// BONUS
