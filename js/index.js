@@ -45,4 +45,14 @@ if ( hackerCharValues < hacker2CharValues) {
 const loremIpsumText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a aliquam dui. Donec sit amet ante nec eros eleifend venenatis vitae vel sapien. Nam viverra, felis ac rutrum sodales, lacus massa porta turpis, in bibendum nibh urna ac lorem. Morbi eleifend ultricies nisi, sed maximus enim egestas vitae. Curabitur porttitor erat risus, ut scelerisque tortor molestie sed. Duis dictum eros at ligula rhoncus, vitae vestibulum elit blandit. Aenean eget hendrerit ipsum. Nulla vitae ipsum vel tortor mollis volutpat. Suspendisse non sapien ut ante venenatis vulputate. Aliquam rutrum euismod ipsum, et consectetur mi. Vivamus nec vehicula nulla. Phasellus at nulla vel neque sodales pulvinar. Sed pretium lectus metus, nec euismod ante tincidunt non. Integer quis mauris tempus, mattis sapien non, semper mi. Vivamus placerat nunc ac ipsum suscipit, et dictum augue tempus. Sed malesuada leo aliquam elit lobortis, nec lobortis metus vestibulum. In nec neque metus. Nunc ornare elit vel neque bibendum aliquet. Vivamus cursus consectetur lacus quis scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed cursus sagittis vehicula. Etiam ut libero sit amet mauris porttitor aliquet. Nam placerat dolor eu mauris varius scelerisque. Morbi orci eros, sollicitudin vitae risus ut, ultricies laoreet ligula. Nam et euismod ante, quis ornare sapien.";
 
 console.log("Number of words (lorem ipsum) => " + loremIpsumText.split(' ').length);
-console.log("Number of 'et' (lorem ipsum) => " + (loremIpsumText.match('[et]/g')||[]).length);
+console.log("Number of 'et' (lorem ipsum) => " + (loremIpsumText.match(/et/g)||[]).length);
+
+let phraseToCheck = "step on no pets";
+let treatedPhrase = phraseToCheck.replace(/ /g, "");
+let turnedPhrase = "";
+for (let i = treatedPhrase.length -1; i >= 0; i--) {
+    turnedPhrase += treatedPhrase.charAt(i);
+}
+if (turnedPhrase == treatedPhrase) {
+    console.log("Is palindrome");
+}
