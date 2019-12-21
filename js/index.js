@@ -100,9 +100,9 @@ let paragraph = "Lorem ipsum Latin Latin";
 console.log(`Words: ${paragraph.split(' ').length}`);
 
 // - Make your program count the number of times the Latin word et appears.
-// Forma 1, graciosa:
+// Method 1, graciosa:
 console.log(`Latin first method: ${paragraph.split('Latin').length-1}`);
-// Forms 2, mas logica:
+// Method 2, mas logica:
 paragraphWordsArr = paragraph.split(' ');
 findedTimes = 0;
 for(let i = 0; i < paragraphWordsArr.length; i++){
@@ -128,6 +128,20 @@ Create a new variable phraseToCheck and have it contain some string value. Write
 let phraseToCheck = "step on no pets";
 phraseToCheckCleaned = phraseToCheck.replace(/ /g, '').toLowerCase()// Remove string spaces - Needs to improve for remove all special characters.
 
+// Method 1 - simplest
+// Reverse second part
+let phraseReversed = "";
+for(var i = phraseToCheckCleaned.length-1; i >= 0; i--){
+  phraseReversed += phraseToCheckCleaned[i];
+};
+if(phraseReversed == phraseToCheckCleaned){
+  console.log(`"${phraseToCheck}" is a palindrom`)
+} else{
+  console.log(`"${phraseToCheck}" isn't a palindrom`)
+}
+
+
+// Method 2 - complicated
 // From first char to half or half+1 if is it odd
 firstPart = phraseToCheckCleaned.slice(
   0,
@@ -140,10 +154,6 @@ firstPart = phraseToCheckCleaned.slice(
 secondPart = phraseToCheckCleaned.slice(
   (phraseToCheckCleaned.length/2)
 );
-
-console.log(firstPart)
-console.log(secondPart)
-
 
 // Reverse second part
 let secondPartReversed = "";
