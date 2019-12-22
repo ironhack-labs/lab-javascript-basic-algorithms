@@ -21,7 +21,24 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 console.log(spaceName)
 
+let reverseName = '';
+for(let i = hacker2.length -1; i >= 0; i--) {
+  reverseName = reverseName + hacker2[i];
+}
+console.log(reverseName);
+
+let orderName = hacker1.localeCompare(hacker2);
+if(orderName === -1) {
+  console.log("The driver's name goes first.")
+} else if (orderName === 1){
+  console.log("Yo, the navigator goes first definitely.")
+}else if (orderName === 0){
+  console.log("What?! You both have the same name?")
+}
+
+
 // Bonus 1
+
 
 // Bonus 2
 
