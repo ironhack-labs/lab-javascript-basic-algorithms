@@ -15,3 +15,13 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let spaceName = ' ';
+for (let i = 0; i < hacker1.length; i++) {
+  spaceName =spaceName + hacker1[i].toUpperCase() + ' ';
+}
+console.log(spaceName)
+
+// Bonus 1
+
+// Bonus 2
+
