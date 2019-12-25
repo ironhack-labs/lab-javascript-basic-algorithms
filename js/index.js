@@ -56,3 +56,17 @@ for (var i = 0; i < text.length; i++) {
   }
 }
 console.log(ets);
+
+//Bonus 2 
+let str='step onk no pets' 
+str = str.toLowerCase().replace(/\s+/g, '');
+let result='';
+for (let i=0; i < str.lenght/2; i++){
+ if (str[i] !== str[str.length-1-i]){
+   result = "not polindrome";
+ } 
+}
+result === "not polindrome" 
+  ? result = "not polindrome"
+  : result = "is polindrome";
+console.log(result);
