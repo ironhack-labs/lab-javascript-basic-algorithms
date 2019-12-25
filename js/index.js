@@ -38,3 +38,21 @@ if (hacker1.localeCompare(hacker2) < 0){
   } else {
   console.log('What?! You both have the same name?');
 }
+
+//Bonus 1
+const text = 'Lorem et ipsum dolor et sit amet et.';
+//counting words
+let words = 1;
+for (var i = 0; i < text.length; i++) {
+  if (text[i] === ' ') { 
+    words += 1; 
+  }
+}
+//counting specific word "et"
+let ets = 0;
+for (var i = 0; i < text.length; i++) {
+  if (text[i-1] === ' ' && text[i] ==='e' && text[i+1] === 't') { 
+    ets += 1; 
+  }
+}
+console.log(ets);
