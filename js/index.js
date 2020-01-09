@@ -1,27 +1,20 @@
 // Iteration 1: Names and Input
 console.log("I'm ready!");
-
 const hacker1 = 'Friso';
 console.log('The driver name is '+hacker1)
-const hacker2 = 'Navigator';
+const hacker2 = 'Boris';
 console.log('The navigator name is '+hacker2);
 
 // Iteration 2: Conditionals
 
 if ( hacker1.length > hacker2.length ) {
-
 console.log(`The driver has the longest name, it has ${hacker1.length}characters.`)
-
 }
-
 else if (hacker2.length > hacker1.length) {
-
 console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 
 }
-
 else if (hacker1.length === hacker2.length) {
-
 console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`)
 
 }
@@ -43,6 +36,27 @@ nameReverseOrder += `${hacker2[j]}`;
 }
 
 console.log(nameReverseOrder);
+
+// Lexical order
+
+
+if (hacker1 === hacker2) {
+
+console.log(`What?! You both have the same name?`);
+
+}
+
+else if (hacker1.localeCompare(hacker2) === -1) {
+  
+console.log(`The driver's name goes first`);
+}
+  
+else if (hacker1.localeCompare(hacker2) === 1) {
+
+console.log(`Yo, the navigator goes first definitely.`);
+
+}
+
 
 // Bonus Time! Bonus 1:
 
@@ -85,7 +99,6 @@ phraseReverseOrder += `${phraseWithoutSpaces[j]}`;
 }
 
 // Check if it is a palindrome or not
-
 
 if (phraseWithoutSpaces === phraseReverseOrder) {
 console.log('This is a palindrome')
