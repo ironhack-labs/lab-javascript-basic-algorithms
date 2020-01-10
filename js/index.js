@@ -44,4 +44,14 @@ function reverseString (string){
   return newString
 }
 
-reverseString(arrayHackerOne)
+console.log(reverseString(arrayHackerOne))
+
+// Iteration 3.3
+
+if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase) === -1){
+  console.log(`The driver's name goes first.`)
+} else if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase()) === 1){
+  console.log(`The navigator goes first definitely.`)
+} else {
+  console.log(`What?! You both have the same name?`)
+}
