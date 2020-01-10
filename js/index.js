@@ -52,6 +52,22 @@ if (hacker1.localeCompare(hacker2) < 0) {
 }
 
 //#### Bonus1 !
+let loremIpsum = require('lorem-ipsum');
+let output = loremIpsum({
+  count: 3                      // Number of words, sentences, or paragraphs to generate.
+, units: 'paragraphs'            // Generate words, sentences, or paragraphs.
+, sentenceLowerBound: 5         // Minimum words per sentence.
+, sentenceUpperBound: 15        // Maximum words per sentence.
+, paragraphLowerBound: 3        // Minimum sentences per paragraph.
+, paragraphUpperBound: 7        // Maximum sentences per paragraph.
+, format: 'plain'               // Plain text or html
+,  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default.
+  random: Math.random           // A PRNG function. Uses Math.random by default
+                   // The character to insert between paragraphs. Defaults to default EOL for your OS.
+});
+console.log(output)
+
+
 
 
 
