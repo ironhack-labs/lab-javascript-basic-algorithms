@@ -28,7 +28,7 @@ if (hackerOne.length > hackerTwo.length) {
 
 let arrayHackerOne = []
 
-for (let i = 0; i < hackerOne.length; i++){
+for (let i = 0; i < hackerOne.length; i++) {
   arrayHackerOne.push(hackerOne.charAt(i).toUpperCase())
 }
 
@@ -36,9 +36,9 @@ console.log(arrayHackerOne.join(' '))
 
 // Iteration 3.2
 
-function reverseString (string){
+function reverseString (string) {
   let newString = '';
-  for (let i = string.length -1; i >= 0; i--){
+  for (let i = string.length -1; i >= 0; i--) {
     newString += string[i]
   }
   return newString
@@ -48,9 +48,9 @@ console.log(reverseString(arrayHackerOne))
 
 // Iteration 3.3
 
-if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase) === -1){
+if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase) === -1) {
   console.log(`The driver's name goes first.`)
-} else if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase()) === 1){
+} else if (hackerOne.toUpperCase().localeCompare(hackerTwo.toUpperCase()) === 1) {
   console.log(`The navigator goes first definitely.`)
 } else {
   console.log(`What?! You both have the same name?`)
@@ -66,3 +66,19 @@ function wordCount (str) {
           .length
 }
 console.log(wordCount(stringOne))
+
+// Bonus 1 continued 
+
+function countSubstr (main_str, sub_str) {
+  main_str += ''
+  sub_str += ''
+
+  if (sub_str.length <= 0) 
+  {
+    return main_str.length + 1
+  }
+    subStr = sub_str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return (main_str.match(new RegExp(subStr, 'gi')) || []).length
+}
+
+console.log(countSubstr(stringOne, 'et'))
