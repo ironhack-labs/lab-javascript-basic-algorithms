@@ -24,9 +24,7 @@ if (hackerOne.length > hackerTwo.length) {
 
 // Iteration 3: Loops
 
-// for (let i = 0; i < hackerOne.length; i++){
-//   console.log(hackerOne.charAt(i).toUpperCase())
-// }
+// Iteration 3.1
 
 let arrayHackerOne = []
 
@@ -34,4 +32,16 @@ for (let i = 0; i < hackerOne.length; i++){
   arrayHackerOne.push(hackerOne.charAt(i).toUpperCase())
 }
 
-arrayHackerOne.join(' ')
+console.log(arrayHackerOne.join(' '))
+
+// Iteration 3.2
+
+function reverseString (string){
+  let newString = '';
+  for (let i = string.length -1; i >= 0; i--){
+    newString += string[i]
+  }
+  return newString
+}
+
+reverseString(arrayHackerOne)
