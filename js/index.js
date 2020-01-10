@@ -92,5 +92,5 @@ for (let i = firstPhrasePartClean.length - 1; i >= 0; i--) {
 if (firstPhrasePartClean === reversePhrasePart) {
   console.log("It's a palindrome!");
 } else {
-  console.log("Too bad.. no palindrome..");
+  console.log("Too bad.. no palindrome...");
 }
