@@ -44,16 +44,16 @@ for (let i = hacker2.length-1; i > -1; i--) {
 console.log(newHacker2);
 
 if (hacker1.localeCompare(hacker2) < 0) {
-  console.log(`The driver's name goes first.`);
+  console.log('The driver\'s name goes first.');
 } else if (hacker1.localeCompare(hacker2) > 0) {
-  console.log(`Yo, the navigator goes first definitely.`);
+  console.log('Yo, the navigator goes first definitely.');
 } else {
-  console.log(`What?! You both have the same name?`);
+  console.log('What?! You both have the same name?');
 }
 
 //#### Bonus1 !
 let loremIpsum = require('lorem-ipsum');
-let output = loremIpsum({
+let outPut = loremIpsum({
   count: 3                      // Number of words, sentences, or paragraphs to generate.
 , units: 'paragraphs'            // Generate words, sentences, or paragraphs.
 , sentenceLowerBound: 5         // Minimum words per sentence.
@@ -63,9 +63,50 @@ let output = loremIpsum({
 , format: 'plain'               // Plain text or html
 ,  // Custom word dictionary. Uses dictionary.words (in lib/dictionary.js) by default.
   random: Math.random           // A PRNG function. Uses Math.random by default
-                   // The character to insert between paragraphs. Defaults to default EOL for your OS.
 });
-console.log(output)
+console.log(outPut);
+
+
+let wordNum = 3;
+for (let i = 0; i<outPut.length; i++) {
+  if(outPut[i]===' ') {
+    wordNum++
+  }
+}
+console.log(wordNum);
+
+let etNum = 0;
+for (let i=0; i < outPut.length; i++) {
+  if(outPut.substr(i,4)===' et '|| outPut.substr(i,4)===' et.') {
+    etNum++;
+  }
+}
+ for(let i=0; i<outPut.length; i++) {
+   if(outPut.substr(i,3)==='Et '){
+     etNum++;
+   }
+ } 
+console.log(etNum);
+
+//#### bonus 2
+
+let phraseToCheck = 'hsu sosn ssos .,ndu';
+phraseToCheck = phraseToCheck.replace(/[^\w]|_/g,'');
+//console.log(phraseToCheck);
+let newPhrase = '';
+for(let i =phraseToCheck.length-1; i > -1; i--) {
+  newPhrase += phraseToCheck[i]
+}
+//console.log(newPhrase);
+
+if(newPhrase === phraseToCheck) {
+  console.log('This phrase is a Palindrome phrase.')
+} else {
+  console.log('This phrase is not a Palindrome phrase.')
+}
+
+
+
 
 
 
