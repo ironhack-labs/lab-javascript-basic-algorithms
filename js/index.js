@@ -24,6 +24,14 @@ if (hackerOne.length > hackerTwo.length) {
 
 // Iteration 3: Loops
 
+// for (let i = 0; i < hackerOne.length; i++){
+//   console.log(hackerOne.charAt(i).toUpperCase())
+// }
+
+let arrayHackerOne = []
+
 for (let i = 0; i < hackerOne.length; i++){
-  console.log(hackerOne.charAt(i).toUpperCase())
+  arrayHackerOne.push(hackerOne.charAt(i).toUpperCase())
 }
+
+arrayHackerOne.join(' ')
