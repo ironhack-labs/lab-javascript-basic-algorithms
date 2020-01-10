@@ -67,7 +67,8 @@ function wordCount (str) {
 }
 console.log(wordCount(stringOne))
 
-// Bonus 1 continued 
+// Bonus 1 continued - this code below is not a good solution!
+// It also counts the 'et' when it is 'Et'
 
 function countSubstr (main_str, sub_str) {
   main_str += ''
@@ -82,3 +83,12 @@ function countSubstr (main_str, sub_str) {
 }
 
 console.log(countSubstr(stringOne, 'et'))
+
+// Alternative count substr in string - perhaps the best code
+
+const count = (str) => {
+  const re = /et/g
+  return ((str || '').match(re) || []).length
+}
+
+console.log(count(stringOne))
