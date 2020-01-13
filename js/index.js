@@ -44,4 +44,10 @@ for (var i = 0; i <= loremIpsum.length; i++) {
     }
 }
 console.log(numberOfWords);
-console.log(loremIpsum.indexOf("et"));
+
+var count = 0;
+  for (var i = 0; i <= loremIpsum.length; i++){
+    if (loremIpsum[i] == " " && loremIpsum[i+1] == "e" && loremIpsum[i+2] == "t" && loremIpsum[i+3] == " ")
+      count++;
+  }
+console.log(count);
