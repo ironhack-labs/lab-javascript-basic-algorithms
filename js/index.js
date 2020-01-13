@@ -18,6 +18,7 @@ if (driverLength === navigatorLength) {
 }
 
 // Iteration 3: Loops
+//3.1
 var newDriverName = "";
 for (var i = 0; i < driverLength; i++) {
   if (i === driverLength - 1) {
@@ -29,6 +30,7 @@ for (var i = 0; i < driverLength; i++) {
 
 console.log(newDriverName);
 
+//3.2
 var newNavigatorName = "";
 for (var i = navigatorLength - 1; i >= 0; i--) {
   if (i === 0) {
@@ -39,3 +41,13 @@ for (var i = navigatorLength - 1; i >= 0; i--) {
 }
 
 console.log(newNavigatorName);
+
+//3.3
+var shortestNameValue;
+if (driverLength > navigatorLength) {
+  shortestNameValue = driverLength;
+} else if (driverLength < navigatorLength) {
+  shortestNameValue = navigatorLength;
+} else {
+  shortestNameValue = driverLength;
+}
