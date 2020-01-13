@@ -45,3 +45,22 @@ else if (hacker2 < hacker1) {
 else if (hacker2 === hacker1) {
   console.log(`What?! You both have the same name?`)
 }
+
+
+
+// Bonus 1:
+// Go to lorem ipsum generator and:
+// Generate 3 paragraphs. Store the text in a variable type of string.
+var loremIpsum = ` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi purus turpis, consequat ut egestas in, tincidunt ac dolor. Mauris et rutrum arcu. Donec tempor vehicula justo in pretium. Nullam aliquet pharetra enim, et maximus ante varius at. Morbi sed lectus commodo eros commodo facilisis nec quis ex. Sed non suscipit nunc, id blandit nibh. Mauris et eleifend erat. Integer eleifend velit mauris, eu faucibus est dapibus eget. Duis facilisis porta lectus, in congue dui molestie nec.
+
+In sed magna vitae nisl cursus commodo ac quis tellus. Proin at nisl sed odio blandit dapibus vel quis nibh. Nunc finibus, nibh dictum pulvinar eleifend, nibh enim maximus mi, vel pharetra nibh nisl dapibus sapien. Nunc dictum risus leo. Donec quis ante et neque pellentesque euismod. Cras sed maximus nisl. Etiam eget hendrerit elit, et sagittis risus. Mauris suscipit nunc augue, sodales interdum odio mattis non. Morbi urna nisl, scelerisque nec risus id, accumsan ultricies elit.
+
+Vivamus tempor condimentum orci, at tempus nisi ultrices at. Etiam mollis cursus augue, id auctor libero pulvinar quis. Pellentesque pulvinar cursus velit ac interdum. Quisque auctor felis in pharetra tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui odio, sodales id eros eu, consequat laoreet purus. Nulla cursus posuere malesuada. Nulla dignissim, ipsum ac tempus mollis, velit ipsum convallis metus, ac consectetur leo orci id dolor. Nulla facilisis malesuada mauris at sagittis. Cras vel dignissim mi. `;
+
+// Make your program count the number of words in the string.
+var wordCount = loremIpsum.split(' ').length;
+console.log(`loremIpsum string has ${wordCount} words`);
+
+// Make your program count the number of times the Latin word et appears.
+var etWordcount = loremIpsum.match(/et/gi).length;
+console.log(etWordcount);
