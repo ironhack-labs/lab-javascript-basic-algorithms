@@ -52,4 +52,8 @@ if (driverLength > navigatorLength) {
   shortestNameValue = driverLength;
 }
 for (var i = 0; i < shortestNameValue; i++) {
+  if (hacker1.charCodeAt(i) < hacker2.charCodeAt(i)) {
+    console.log("The driver's name goes first.");
+    break;
+  }
 }
