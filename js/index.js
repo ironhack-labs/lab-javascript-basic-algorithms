@@ -72,3 +72,12 @@ Aenean in nisi erat. Etiam quis maximus ante. Maecenas egestas porttitor purus i
 var numberOfWords = loremIpsum.split(" ");
 
 console.log(numberOfWords.length);
+
+var etCounter = 0;
+for (let i = 0; i > numberOfWords.length - 1; i++) {
+  if (numberOfWords[i] === "et") {
+    etCounter++;
+  }
+}
+
+console.log("The word 'et' appears", etCounter, "times.")
