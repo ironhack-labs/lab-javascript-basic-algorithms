@@ -31,6 +31,10 @@ console.log(newDriverName);
 
 var newNavigatorName = "";
 for (var i = navigatorLength - 1; i >= 0; i--) {
+  if (i === 0) {
+    newNavigatorName += hacker2[i].toUpperCase();
+    continue;
+  }
   newNavigatorName += hacker2[i];
 }
 
