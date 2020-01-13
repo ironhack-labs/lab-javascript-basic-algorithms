@@ -51,3 +51,5 @@ if (driverLength > navigatorLength) {
 } else {
   shortestNameValue = driverLength;
 }
+for (var i = 0; i < shortestNameValue; i++) {
+}
