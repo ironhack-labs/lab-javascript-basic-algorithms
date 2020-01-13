@@ -64,3 +64,4 @@ console.log(`loremIpsum string has ${wordCount} words`);
 // Make your program count the number of times the Latin word et appears.
 var etWordcount = loremIpsum.match(/et/gi).length;
 console.log(etWordcount);
+//
