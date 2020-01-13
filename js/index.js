@@ -20,6 +20,10 @@ if (driverLength === navigatorLength) {
 // Iteration 3: Loops
 var newDriverName = "";
 for (var i = 0; i < driverLength; i++) {
+  if (i === driverLength - 1) {
+    newDriverName += hacker1[i].toUpperCase();
+    continue;
+  }
   newDriverName += hacker1[i].toUpperCase() + " ";
 }
 
