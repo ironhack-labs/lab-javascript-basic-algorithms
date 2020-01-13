@@ -55,10 +55,10 @@ for (var i = 0; i < shortestNameValue; i++) {
   if (hacker1.toLowerCase() === hacker2.toLowerCase()) {
     console.log("What?! You both have the same name?");
     break;
-  } else if(hacker1.charCodeAt(i) < hacker2.charCodeAt(i)) {
+  } else if(hacker1[i] === undefined || hacker1.charCodeAt(i) < hacker2.charCodeAt(i)) {
     console.log("The driver's name goes first.");
     break;
-  } else if (hacker1.charCodeAt(i) > hacker2.charCodeAt(i)) {
+  } else if (hacker2[i] === undefined || hacker1.charCodeAt(i) > hacker2.charCodeAt(i)) {
     console.log("Yo, the navigator goes first definitely.");
     break;
   }
