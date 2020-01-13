@@ -6,6 +6,7 @@ var hacker2 = prompt("Write navigator's name:");
 console.log("The navigator's name is", hacker2);
 
 // Iteration 2: Conditionals
-
+var driverLength = hacker1.length;
+var navigatorLength = hacker2.length;
 
 // Iteration 3: Loops
