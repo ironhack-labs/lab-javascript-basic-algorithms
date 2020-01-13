@@ -28,3 +28,10 @@ for (var i = 0; i < driverLength; i++) {
 }
 
 console.log(newDriverName);
+
+var newNavigatorName = "";
+for (var i = navigatorLength - 1; i >= 0; i--) {
+  newNavigatorName += hacker2[i];
+}
+
+console.log(newNavigatorName);
