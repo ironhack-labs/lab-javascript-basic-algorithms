@@ -11,6 +11,8 @@ var navigatorLength = hacker2.length;
 
 if (driverLength > navigatorLength) {
   console.log("The driver has the longest name, it has", driverLength, "characters.");
+} else if (driverLength < navigatorLength) {
+  console.log("It seems that the navigator has the longest name, it has", navigatorLength, "characters.");
 }
 
 // Iteration 3: Loops
