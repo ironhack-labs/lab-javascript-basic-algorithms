@@ -64,9 +64,5 @@ for(i=0;i<=str1.length;i++){
 }
 console.log(count);
 
-var str="abc";
-var restr=str.split('').reverse;
-if (restr===str){
-    
-}
+
 
