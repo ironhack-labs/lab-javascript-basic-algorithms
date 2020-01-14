@@ -27,14 +27,22 @@ for (var i=hacker2.length-1;i>=0;i--){
 }
 console.log(result2);
 
-if(hacker1>hacker2){
-    console.log("Yo, the navigator goes first definitely.");
-}
-else if(hacker2>hacker1){
-    console.log("The driver's name goes first.");
-}
-else{
-    console.log("What?! You both have the same name?");
+for(var i=0;i<=hacker1;i++){
+    if(hacker1===hacker2){
+        console.log("What?! You both have the same name?");
+    }
+    else{
+        if(hacker1[i]>hacker2[i]){
+            console.log("Yo, the navigator goes first definitely.");
+        }
+        else if(hacker1[i]<hacker2[i]){
+            console.log("The driver's name goes first.");
+        }
+        else{
+            continue;
+        }
+
+    }
 }
 var str1=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus arcu quis gravida vehicula. Fusce sapien elit, molestie ut iaculis sed, pharetra sit amet nibh. Ut eu erat eu nibh gravida tincidunt feugiat in purus. Vestibulum fermentum maximus mi, quis ultricies leo porttitor sit amet. Donec a volutpat lectus. Nunc et iaculis ante, eu commodo leo. In vitae ante a odio elementum porta. Donec id porta risus, vitae interdum turpis. Nulla venenatis erat aliquet ornare fermentum. Quisque commodo, lacus ac pulvinar vehicula, arcu leo lacinia nulla, et hendrerit magna ipsum vitae felis. Sed eu purus leo. Vestibulum a tincidunt leo, facilisis maximus turpis. Phasellus hendrerit mi tristique, rhoncus nibh non, malesuada massa.
 
@@ -55,3 +63,5 @@ for(i=0;i<=str1.length;i++){
     }
 }
 console.log(count);
+
+
