@@ -54,21 +54,41 @@ if (hacker1.localeCompare(hacker2) > 0) {
   console.log("What?! You both have the same name?");
 }
 
+// BONUS 1
+
+let lorem =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+function programCount(text) {
+  return text.split(" ").length;
+}
+let textNoSpace = programCount(lorem);
+
+console.log(`Lorem tiene ${textNoSpace} caracteres`);
+
+let count = 0;
+
+for (let i = 0; i < lorem.length; i++) {
+  if (lorem.charAt(i).toLowerCase() == "e" && lorem.charAt(i + 1) == "t") {
+    count++;
+  }
+}
+console.log(`Aparece la palabra "et" ${count} veces`);
+
 // BONUS 2
 
 let phraseToCheck = prompt("añada aquí su frase");
-let fraseMinuscula = phraseToCheck.toLowerCase();
-let fraseSinEspacios = fraseMinuscula.replace(/ /g, "").replace(/,/g, "");
-
-let total = fraseSinEspacios.length;
-let fraseAlReves = "";
+let phraseLower = phraseToCheck.toLowerCase();
+let phraseNoSpace = phraseLower.replace(/ /g, "").replace(/,/g, "");
+let total = phraseNoSpace.length;
+let phraseRow = "";
 
 for (i = total - 1; i >= 0; i--) {
-  fraseAlReves += fraseSinEspacios[i];
+  phraseRow += phraseNoSpace[i];
 }
 
-if (fraseAlReves === fraseSinEspacios) {
+if (phraseRow === phraseNoSpace) {
   console.log("tu frase es un palindromo");
-} else if (fraseAlReves != fraseSinEspacios) {
+} else if (phraseRow != phraseNoSpace) {
   console.log("tu frase NO es un palindromo");
 }
