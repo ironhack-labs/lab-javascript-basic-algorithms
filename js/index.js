@@ -18,7 +18,7 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 let newHacker1 = "";
 for (let value of hacker1) {
-  newHacker1 = newHacker1 + value.toLocaleUpperCase() + " ";
+  newHacker1 += value.toLocaleUpperCase() + " ";
 }
 console.log(newHacker1)
 
