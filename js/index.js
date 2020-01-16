@@ -100,7 +100,7 @@ for (let j = 0; j < phrases.length; j++) {
     ) {
       continue;
     } else {
-      string1 += phraseToCheck[i].toLocaleLowerCase();
+      string1 += phraseToCheck[i].toLowerCase();
     }
   }
   console.log(string1);
