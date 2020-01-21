@@ -4,6 +4,15 @@ console.log('The drivers name is ' + hacker1);
 var hacker2 = 'Luca';
 console.log('The navigators name is ' + hacker2);
 
+// Iteration 2: Conditionals
+if(hacker1.length > hacker2.length) {
+  console.log('The driver has the longest name, it has '+hacker1.length+' characters.');
+} else if(hacker2.length > hacker1.length){
+  console.log('It seems that the navigator has the longest name, it has '+hacker2.length+' characters.')
+}else if(hacker1.length === hacker2.length){
+  console.log('Wow, you both have equally long names, '+ hacker2.length+' characters!.')
+}
+
 //3.1 - Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 const nameSplit = name => {
   const split = ' ';
