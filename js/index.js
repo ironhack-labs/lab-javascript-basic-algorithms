@@ -54,6 +54,40 @@ else {
 
 
 
+let str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in rhoncus purus. Sed consectetur in ex ac bibendum. Nulla vel elementum lectus, volutpat gravida dui. Nulla nulla felis, porta in nibh a, tempus molestie libero. Aenean dictum iaculis faucibus. Sed tincidunt nunc eu purus iaculis, non interdum sapien pulvinar. Vestibulum porta ipsum sit amet tincidunt consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Fusce eget ullamcorper ipsum. Proin molestie magna lorem. Morbi porttitor consequat ante quis sodales. Fusce porttitor arcu a risus malesuada faucibus. Morbi ultricies vel dolor eget iaculis. Proin quis elit nulla. Curabitur eget risus quis ante placerat hendrerit. Maecenas interdum elementum tellus sit amet volutpat. Maecenas ut mi fringilla, ultrices arcu semper, mattis diam. Etiam et ipsum dapibus, laoreet magna eget, aliquam orci.Fusce viverra purus urna, eu tincidunt dolor fringilla quis. Pellentesque ultrices enim ipsum. Aenean eros sapien, dictum in ullamcorper in, tempus et nisi. Morbi eu vehicula risus, eu feugiat purus. Pellentesque sit amet metus id arcu iaculis lacinia vitae ut turpis. Nam nisl ipsum, ullamcorper sit amet finibus vel, finibus eu mauris. Donec congue ante eget dignissim tempor. Morbi in ligula et sem laoreet posuere. Sed rhoncus lacus ex. Nam consectetur eleifend elit, in elementum felis. Praesent libero quam, consectetur in fermentum ut, viverra in tortor. Sed bibendum, augue nec faucibus efficitur, risus lorem condimentum diam, non feugiat nisl magna et massa. Sed ultricies luctus interdum. Aliquam posuere porta ante a iaculis."
+
+
+
+newStr = str.split(' ');
+console.log(newStr.length);
+
+let total = [];
+for (i = 0; i < newStr.length; i++) {
+  if (newStr[i] === "et") {
+    total.push(newStr[i])
+    
+    
+  }
+}
+
+console.log(total.length);
+
+
+
+
+let phraseToCheck = "A man, a plan, a canal, Panama!"
+
+let newPhrase = phraseToCheck.split('');
+reversePhrase = newPhrase.reverse();
+joinPhrase = reversePhrase.join('');
+
+if (joinPhrase === phraseToCheck) {
+  console.log(`This is a palindrome`)
+}
+
+else {
+  console.log(`This is not a palindrome`)
+}
 
 
 
@@ -62,35 +96,14 @@ else {
 
 
 
+// Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
+// - "A man, a plan, a canal, Panama!"
+// - "Amor, Roma"
+// - "race car"
+// - "stack cats"
+// - "step on no pets"
+// - "taco cat"
+// - "put it up"
+// - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
-
-
-
-// ### Iteration 1: Names and Input
-
-// 	1.1 Create a variable `hacker1` with the driver's name.
-
-// 	1.2 Print `"The driver's name is XXXX"`.
-
-//   	1.3 Create a variable `hacker2` with the navigator's name.
-
-//   	1.4 Print `"The navigator's name is YYYY"`.
-
-// ### Iteration 2: Conditionals
-//   2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
-//   <br>
-// 	  - `The driver has the longest name, it has XX characters.` or <br>
-// 	  - v or <br>
-// 	  - `Wow, you both have equally long names, XX characters!`.
-
-// ### Iteration 3: Loops
-//   3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-//   i.e. `"J O H N"`
-  
-//   3.2 Print all the characters of the navigator's name, in reverse order. 
-//   i.e. `"nhoJ"`
-  
-//   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
-//     - `The driver's name goes first.` <br>
-//     - `Yo, the navigator goes first definitely.` <br>
-//     - `What?! You both have the same name?`
+// __Hint__: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as _join()_, _reverse()_, etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using `for` loop, `if-else` statements with some `break` and `continue`... Just sayin' :smiley: 
