@@ -20,3 +20,31 @@ else if (hacker2.length > hacker1.length) {
   console.log('Wow, you both have equally long names, '+ hacker1.length + ' characters!')
 }
 // Iteration 3: Loops
+
+let x = '';
+
+for(let i = 0; i < hacker1.length; i++) {
+  x = x + hacker1[i].toUpperCase()+ ' '
+}
+
+console.log(x);
+
+let y = "";
+
+for(let i = hacker2.length -1 ; i >= 0; i--) {
+  y += hacker2[i]
+}
+
+console.log(y);
+
+let z = [hacker1, hacker2];
+
+z.sort();
+
+if (hacker1 === hacker2) {
+  console.log(`What?! You both have the same name?`)
+} else if (z[0] === hacker1){
+  console.log(`The driver's name goes first.`)
+} else if (z[0] === hacker2){
+  console.log(`Yo, the navigator's goes first definitely.`) 
+}
