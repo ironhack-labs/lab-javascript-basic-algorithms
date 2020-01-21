@@ -17,4 +17,39 @@ function longerName() {
     }
 }
 
+longerName();
+
 // Iteration 3: Loops
+
+// 3.1 //
+
+function sepName() {
+    let name = hacker1.toLocaleUpperCase();
+    let resName = name.split('').join(' ');
+    console.log(resName);
+}
+
+sepName();
+
+// 3.2 //
+
+function backName() {
+    let name = hacker2;
+    let newName = name.split('').reverse().join('');
+    console.log(newName);
+}
+backName();
+
+// 3.3 //
+
+function compare() {
+    var game = hacker1.localeCompare(hacker2);
+    if (game === -1) {
+        console.log("The driver's name goes first.")
+    } else if (game === 1) {
+        console.log("Yo, the navigator goes first definitely.")
+    } else {
+        console.log("What?! You both have the same name?")
+    }
+}
+compare();
