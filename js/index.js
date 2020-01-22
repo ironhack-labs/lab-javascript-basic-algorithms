@@ -16,6 +16,9 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+// 3.1
+
 let auxiliaryName = ' ';
 
 for (let i = 0; i < hacker1.length; i++) {
@@ -24,6 +27,8 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 auxiliaryName = auxiliaryName.trim();
 console.log(auxiliaryName);
+
+// 3.2
 
 function reverseStr(hacker2) {
   var newHacker2 = '';
@@ -36,3 +41,39 @@ function reverseStr(hacker2) {
 }
 
 reverseStr(hacker2);
+
+// 3.3
+
+const comparisonOrder = hacker1.localeCompare(hacker2);
+
+if (comparisonOrder < 0) {
+  console.log('Yo, the navigator goes first definitely.');
+} else if (comparisonOrder > 0) {
+  console.log("The driver's name goes first.");
+} else {
+  console.log('What?! You both have the same name?');
+}
+
+let auxiliaryLargestName;
+
+if (hacker1.length > hacker2.length) {
+  auxiliaryLargestName = hacker1;
+} else {
+  auxiliaryLargestName = hacker2;
+}
+
+for (let i = 0; i < auxiliaryLargestName.length; i++) {
+  const iterationComparisonOrder = hacker1[i].localeCompare(hacker2[i]);
+  if (iterationComparisonOrder > 0) {
+    console.log("The driver's name goes first.");
+    break;
+  } else if (iterationComparisonOrder < 0) {
+    console.log('Yo, the navigator goes first definitely.');
+    break;
+  } else {
+    if (auxiliaryLargestName.length - 1 === i) {
+      console.log('What?! You both have the same name?');
+      break;
+    }
+  }
+}
