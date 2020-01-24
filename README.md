@@ -2,7 +2,6 @@
 
 # LAB | JS Functions & Arrays
 
-
 ## Introduction
 
 Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
@@ -86,11 +85,11 @@ Write your JavaScript in the provided `src/functions-and-arrays.js` file.
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-## Iteration #2: Find longest word
+## Iteration #2: Find the longest word
 
 Declare a function named `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
-**Starter Code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
@@ -100,24 +99,35 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 Calculating a sum is as simple as iterating over an array and adding each of the elements together.
 
-<!-- Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far. -->
-
 Declare a function named `sumArray` that takes as an argument an array of numbers, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"manual"_ way using loops.
 
-**Starter Code**
+You can use the following array to test your solution:
 
 ```javascript
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+```
+
+### Bonus - Iteration #3.1: Calculate the sum for array filled with (_almost_) any type of data
+
+**The goal: Learn how to refactor your**
+In the iteration 3, you created a function that will return a sum of array of numbers. But what if we want to know how much is a sum of some array of words? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so it can be reused no matter what is in the array that is passed as argument when function `sumArray` is called.
+
+You can use the following array to test your solution:
+
+```javascript
+const mixedArr = [6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 56
 ```
 
 ## Iteration #4: Calculate the average
 
 Calculating an average is an extremely common task. Let's practice it a bit.
 
-**Algorithm**
+**The logic behind this:**
 
-1. Find the sum as we did in the first exercise
-2. Take the sum from step 1, and divide it by the number of elements in the list.
+1. Find the sum as we did in the first exercise (or how about reusing that the _sumArray()_?)
+2. Take that sum and divide it by the number of elements in the list.
 
 ### Level 1: Array of numbers
 
@@ -136,19 +146,12 @@ Declare a function named `averageWordLength` that receives as a single argument 
 **Starter Code**
 
 ```javascript
-const words = [
-  'seat',
-  'correspond',
-  'linen',
-  'motif',
-  'hole',
-  'smell',
-  'smart',
-  'chaos',
-  'fuel',
-  'palace'
-];
+const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 ```
+
+### Bonus - Iteration #4.1: A generic `avg()` function
+
+Create function `avg(arr)` that receive any array filled with numbers and/or strings and calculates average.
 
 ## Iteration #5: Unique arrays
 
@@ -183,16 +186,7 @@ Declare a function named `doesWordExist` that will take in an array of words as 
 **Starter Code**
 
 ```javascript
-const words = [
-  'machine',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'eating',
-  'truth',
-  'disobedience'
-];
+const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 ```
 
 ## Iteration #7: Count repetition
@@ -222,6 +216,7 @@ const words = [
 What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical o diagonal.
 
 For example, if we have a 5x5 Matrix like:
+
 ```bash
 [ 1,  2, 3, 4, 5]
 [ 1, 20, 3, 4, 5]
@@ -229,6 +224,7 @@ For example, if we have a 5x5 Matrix like:
 [ 1, 20, 3, 4, 5]
 [ 1,  4, 3, 4, 5]
 ```
+
 The greatest product will be the `20`x`20`x`20`x`4` = `32000`;
 
 Declare a function named `greatestProduct` to find it in the 20×20 grid below!
