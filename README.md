@@ -107,10 +107,12 @@ You can use the following array to test your solution:
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
-### Bonus - Iteration #3.1: Calculate the sum for array filled with (_almost_) any type of data
+### Bonus - Iteration #3.1: A generic `sum()` function
 
-**The goal: Learn how to refactor your**
-In the iteration 3, you created a function that will return a sum of array of numbers. But what if we want to know how much is a sum of some array of words? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so it can be reused no matter what is in the array that is passed as argument when function `sumArray` is called.
+**The goal: Learn how to refactor your code.** :muscle:
+In the iteration 3, you created a function that will return a sum of array of numbers. But what if we want to know how much is a sum of some array of words? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so it can be reused no matter what is in the array that is passed as argument when function _sumArray()_ is called.
+
+Let's create a new function `sum()` that calculates the sum for array filled with (_almost_) any type of data. Check the tests for more details.
 
 You can use the following array to test your solution:
 
@@ -151,7 +153,13 @@ const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart',
 
 ### Bonus - Iteration #4.1: A generic `avg()` function
 
-Create function `avg(arr)` that receive any array filled with numbers and/or strings and calculates average.
+Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans.
+
+```javascript
+const mixedArr = [6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 6.22
+```
 
 ## Iteration #5: Unique arrays
 

@@ -57,52 +57,68 @@ describe('Find the longest word', () => {
   });
 });
 
-describe('Calculate the sum', () => {
-  it('should create a function named sumArray', () => {
-    expect(typeof sumArray).toBe('function');
+describe('Calculate the sum of array of numbers', () => {
+  it('should create a function named sumNumbers', () => {
+    expect(typeof sumNumbers).toBe('function');
   });
 
   it('should return zero if receives an empty array when called', () => {
-    expect(sumArray([])).toBe(0);
+    expect(sumNumbers([])).toBe(0);
   });
 
   it('should return the sum with one number array', () => {
-    expect(sumArray([4])).toBe(4);
+    expect(sumNumbers([4])).toBe(4);
   });
 
   it('should return zero if all elements are zero', () => {
-    expect(sumArray([0, 0, 0, 0, 0])).toBe(0);
+    expect(sumNumbers([0, 0, 0, 0, 0])).toBe(0);
   });
 
   it('should return the sum when passed array of numbers', () => {
-    expect(sumArray([10, 5, 4, 32, 8])).toBe(59);
+    expect(sumNumbers([10, 5, 4, 32, 8])).toBe(59);
+  });
+});
+
+describe('Bonus: Calculate the sum', () => {
+  it('should create a function named sum', () => {
+    expect(typeof sum).toBe('function');
   });
 
-  it('bonus - should return the sum when passed array of strings', () => {
-    expect(sumArray(['ana', 'marco', 'nicolas', 'tania', 'ptwd'])).toBe(24);
+  it('should return zero if receives an empty array when called', () => {
+    expect(sum([])).toBe(0);
   });
 
-  it('bonus - should return the sum when passed array of mixed strings and numbers - ', () => {
-    expect(sumArray([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, 10])).toBe(
-      56
-    );
+  it('should return the sum with one number array', () => {
+    expect(sum([4])).toBe(4);
   });
-  it('bonus - should return the sum when passed array of mixed strings, numbers and booleans - ', () => {
+
+  it('should return zero if all elements are zero', () => {
+    expect(sum([0, 0, 0, 0, 0])).toBe(0);
+  });
+
+  it('should return the sum when passed array of numbers', () => {
+    expect(sum([10, 5, 4, 32, 8])).toBe(59);
+  });
+
+  it('should return the sum when passed array of strings', () => {
+    expect(sum(['ana', 'marco', 'nicolas', 'tania', 'ptwd'])).toBe(24);
+  });
+
+  it('should return the sum when passed array of mixed strings and numbers - ', () => {
+    expect(sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, 10])).toBe(56);
+  });
+  it('should return the sum when passed array of mixed strings, numbers and booleans - ', () => {
     // false is counted as 0
-    expect(
-      sumArray([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, false])
-    ).toBe(46);
+    expect(sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, false])).toBe(46);
     // true is counted as 1
-    expect(
-      sumArray([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, true])
-    ).toBe(47);
+    expect(sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, true])).toBe(47);
   });
   it('should throw an error when unsupported data type (object or array) present in the array', () => {
     // const arr = [6, 12, "miami", 1, "barca", "200", "lisboa", 8, [], {}];
 
-    expect(() =>
-      sumArray([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, [], {}])
-    ).toThrow(new Error("Unsupported data type sir or ma'am"));
+    expect(() => sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, [], {}])).toThrow(
+      new Error("Unsupported data type sir or ma'am")
+    );
   });
 });
 
@@ -112,6 +128,7 @@ describe('Calculate the average of an array of numbers', () => {
   });
 
   it('should return null if receives an empty array when called', () => {
+    // should it return null or zero?
     expect(averageNumbers([])).toBe(null);
   });
 
@@ -136,6 +153,7 @@ describe('Calculate the average of an array of strings', () => {
   });
 
   it('should return null if receives an empty array when called', () => {
+    // should it return null or zero?
     expect(averageWordLength([])).toBe(null);
   });
 
@@ -146,17 +164,26 @@ describe('Calculate the average of an array of strings', () => {
 
   it('should return the average of a the array', () => {
     expect(
-      averageWordLength([
-        'Ironhack',
-        'Madrid',
-        'Barcelona',
-        'Paris',
-        'Miami',
-        'Mexico',
-        'Berlin',
-        'Programmers'
-      ])
+      averageWordLength(['Ironhack', 'Madrid', 'Barcelona', 'Paris', 'Miami', 'Mexico', 'Berlin', 'Programmers'])
     ).toBe(7);
+  });
+});
+
+describe('Bonus: Calculate the average of a mixed elements array', () => {
+  it('should create a function named avg', () => {
+    expect(typeof avg).toBe('function');
+  });
+
+  it('should return null if receives an empty array when called', () => {
+    // should it return null or zero?
+    expect(avg([])).toBe(null);
+  });
+
+  it('should return the average of the array', () => {
+    // false is counted as 0
+    expect(avg([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, false])).toBe(5.11);
+    // true is counted as 1
+    expect(avg([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, true])).toBe(5.22);
   });
 });
 
@@ -183,17 +210,7 @@ describe('Unique array', () => {
 
   it('should return the uniquified array', () => {
     expect(
-      uniquifyArray([
-        'iPhone',
-        'Samsung',
-        'Android',
-        'iOS',
-        'iPhone',
-        'Samsung',
-        'Nokia',
-        'Blackberry',
-        'Android'
-      ])
+      uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])
     ).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
   });
 });
@@ -223,12 +240,7 @@ describe('Find elements', () => {
   // });
 
   it('should return true if the word we are looking for is in the array', () => {
-    expect(
-      doesWordExist(
-        ['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'],
-        'book'
-      )
-    ).toBe(true);
+    expect(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book')).toBe(true);
   });
 });
 
@@ -242,9 +254,7 @@ describe('Count repetition', () => {
   });
 
   it('should return 1 (one) when the word appears only one time in the array', () => {
-    expect(howManyTimes(['basketball', 'football', 'tennis'], 'tennis')).toBe(
-      1
-    );
+    expect(howManyTimes(['basketball', 'football', 'tennis'], 'tennis')).toBe(1);
   });
 
   it("should return 0 (zero) when the word doesn't appear in the array", () => {
