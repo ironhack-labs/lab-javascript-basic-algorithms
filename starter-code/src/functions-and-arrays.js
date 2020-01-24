@@ -12,18 +12,7 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 // Level 2: Array of strings
-const wordsArr = [
-  'seat',
-  'correspond',
-  'linen',
-  'motif',
-  'hole',
-  'smell',
-  'smart',
-  'chaos',
-  'fuel',
-  'palace'
-];
+const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -41,16 +30,7 @@ const wordsUnique = [
 ];
 
 // Iteration #6: Find elements
-const wordsFind = [
-  'machine',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'eating',
-  'truth',
-  'disobedience'
-];
+const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
 // Iteration #7: Count repetition
 const wordsCount = [
