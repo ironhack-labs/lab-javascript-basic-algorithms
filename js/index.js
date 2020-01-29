@@ -45,3 +45,16 @@ switch(hacker1.localeCompare(hacker2)){
   default:
     console.log("What?! You both have the same name?")
 }
+
+//Bonus 1
+
+let text = "Praesent ut gravida purus, at vehicula est. Maecenas pharetra aliquam nisi, in eleifend metus. Curabitur et mollis dui. Pellentesque suscipit volutpat mi quis blandit. Maecenas ante massa, auctor vitae odio at, rhoncus pulvinar massa. Suspendisse varius orci nec purus egestas sollicitudin. Donec eget euismod elit. Vestibulum finibus fermentum leo, aliquam molestie purus maximus hendrerit. Donec vel porta ligula, tincidunt lobortis tellus. Mauris ex est, convallis quis ligula in, porttitor posuere risus. Pellentesque imperdiet, quam nec ultrices elementum, lorem lectus accumsan nisi, in imperdiet dui justo et turpis. Quisque ac neque fringilla, semper erat eu, ullamcorper odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in sem orci. Integer lacinia leo venenatis est placerat, sit amet dictum massa consequat. Duis quis lobortis sapien. Morbi in orci vel odio fringilla ornare et sed nunc. Maecenas porttitor lorem eu nunc tincidunt, quis viverra erat molestie. Nullam facilisis id orci congue feugiat. Phasellus felis est, tristique sit amet lacus bibendum, porttitor lacinia dolor. Sed volutpat, odio vel iaculis blandit, dui velit tempor quam, id porttitor nunc sapien vitae dui. Donec quis rutrum libero, eget laoreet sem. Morbi mauris nisl, imperdiet et ultrices et, aliquam id ex. Etiam in elit at nunc luctus tristique. Aenean vel erat orci. Vestibulum at mi eu mauris iaculis mollis. Donec volutpat, odio sit amet egestas fermentum, sem dui ullamcorper diam, sed elementum felis massa gravida felis. Mauris nec risus finibus dolor gravida placerat. Sed non iaculis mauris. Maecenas metus velit, maximus vel euismod non, dapibus a tortor. Sed consectetur rhoncus sapien, in elementum justo gravida nec. Aliquam posuere ipsum vel massa aliquet lacinia. Pellentesque ut leo eu ex iaculis finibus in a mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+let arrayOfText = text.split(' ');
+
+console.log("The number of words in the text is: "+arrayOfText.length);
+
+let countOcurrences = 0;
+countOcurrences = text.split("et").length - 1;
+
+console.log(countOcurrences);
