@@ -10,6 +10,10 @@ console.log(`The navigator's name is ${hacker2}`)
 
 if (hacker1.length > hacker2.length){
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+} else if (hacker2.length > hacke1.length){
+  console.log(`The navigator has the longest name, it has ${hacker2.length} characters.`)
+} else {
+  console.log(`Both your hackers have the same length, they both have ${hacker1.length}`)
 }
 
 // Iteration 3: Loops
@@ -30,3 +34,10 @@ for ( let i = hacker2.length - 1; i >= 0; i--){
 }
 
 console.log(reversedResult)
+
+
+console.log(hacker1.substring(0, 1));
+
+console.log(hacker2.substring(0, 1));
+
+for ()
