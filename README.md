@@ -2,7 +2,6 @@
 
 # LAB | JS Functions & Arrays
 
-
 ## Introduction
 
 Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
@@ -58,25 +57,27 @@ starter-code/
 ├── src
 │   └── functions-and-arrays.js
 ├── tests
-│   └── FunctionsAndArraysSpec.js
+│   └── functions-and-arrays.spec.js
 └─ SpecRunner.html
 ```
 
 We will be working with the `functions-and-arrays.js` file inside of the `src` folder. In the `jasmine` folder you can find all of the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
 
-**Run tests**
+#### Run tests
 
 Running automated tests with Jasmine is super easy. All you need to do is open the `SpecRunner.html` file in your browser. You will find something similar this:
 
 ![image](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)
 
-**Pass the tests**
+#### Pass the tests
 
-You should write your code on the `src/functions-and-arrays.js` file. By following the instructions for each iteration, you should go every test and make sure it's _passing_.
+You should write your code on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's _passing_, before moving on.
 
 Do not rush. You should take your time to carefully read every iteration, and you should address the _breaking_ tests as you progress through the exercise.
 
 When coding with tests, it is super important that you carefully read and understand the errors you're getting, this way you'll know for sure what's expected from your code.
+
+Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
 
 ## Deliverables
 
@@ -86,11 +87,11 @@ Write your JavaScript in the provided `src/functions-and-arrays.js` file.
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-## Iteration #2: Find longest word
+## Iteration #2: Find the longest word
 
 Declare a function named `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
-**Starter Code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
@@ -98,26 +99,42 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 ## Iteration #3: Calculate the sum
 
-Calculating a sum is as simple as iterating over an array and adding each of the elements together.
+Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
 
-<!-- Semantically [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) is the best method to use for this, but you can use any loop we've discussed so far. -->
+Declare a function named `sumArray` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
 
-Declare a function named `sumArray` that takes as an argument an array of numbers, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"manual"_ way using loops.
-
-**Starter Code**
+You can use the following array to test your solution:
 
 ```javascript
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+```
+
+### Bonus - Iteration #3.1: A generic `sum()` function
+
+**The goal: Learn how to refactor your code.** :muscle:
+
+In the iteration 3, you created a function that returns the sum of an array of numbers. But what if we wanted to know how much is the sum of the length of all of the words in an array? What if we wanted to add _boolean_ values to the mix? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so that it can be reused no matter what is in the array that is passed as argument when function `sumArray()` is called.
+
+Here we're applying a concept we call **polymorphism**, that is, dealing with a functions' input independently of the types they're passed as.
+
+Let's create a new function `sum()` that calculates the sum for array filled with (_almost_) any type of data. Note that strings should have their length added to the total, and boolean values should be coerced into their corresponding numeric values. Check the tests for more details.
+
+You can use the following array to test your solution:
+
+```javascript
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 57
 ```
 
 ## Iteration #4: Calculate the average
 
 Calculating an average is an extremely common task. Let's practice it a bit.
 
-**Algorithm**
+**The logic behind this:**
 
-1. Find the sum as we did in the first exercise
-2. Take the sum from step 1, and divide it by the number of elements in the list.
+1. Find the sum as we did in the first exercise (or how about reusing that the _sumArray()_?)
+2. Take that sum and divide it by the number of elements in the list.
 
 ### Level 1: Array of numbers
 
@@ -148,6 +165,16 @@ const words = [
   'fuel',
   'palace'
 ];
+```
+
+### Bonus - Iteration #4.1: A generic `avg()` function
+
+Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We're following a similar logic to the one applied on the bonus iteration 4.1 :wink:
+
+```javascript
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+
+// should return: 5.7
 ```
 
 ## Iteration #5: Unique arrays
@@ -217,11 +244,12 @@ const words = [
 ];
 ```
 
-## Iteration #8: Bonus
+## Bonus - Iteration #8: Product of adjacent numbers
 
-What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other in horizontal, vertical or diagonal.
+What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other horizontally or vertically.
 
 For example, if we have a 5x5 Matrix like:
+
 ```bash
 [ 1,  2, 3, 4, 5]
 [ 1, 20, 3, 4, 5]
@@ -229,9 +257,10 @@ For example, if we have a 5x5 Matrix like:
 [ 1, 20, 3, 4, 5]
 [ 1,  4, 3, 4, 5]
 ```
+
 The greatest product will be the `20`x`20`x`20`x`4` = `32000`;
 
-Declare a function named `greatestProduct` to find it in the 20×20 grid below!
+Declare a function named `greatestProduct(matrix)` to find it in the 20×20 grid below!
 
 ```javascript
 const matrix = [
@@ -257,5 +286,9 @@ const matrix = [
   [01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48]
 ];
 ```
+
+## Bonus - Iteration #8.1: Product of diagonals
+
+Following the logic you've used in iteration #8, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
 
 **Happy coding!** :heart:
