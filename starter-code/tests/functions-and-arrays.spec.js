@@ -19,13 +19,15 @@ describe('Find the maximum', () => {
 
   it('should return greater of two arguments - if the first argument greater', () => {
     expect(maxOfTwoNumbers(2, 1)).toBe(2);
+    expect(maxOfTwoNumbers(5, -7)).toBe(5);
   });
 
   it('should return greater of two arguments - if the second argument greater', () => {
     expect(maxOfTwoNumbers(1, 3)).toBe(3);
+    expect(maxOfTwoNumbers(-5, 3)).toBe(3);
   });
 
-  it('should return greater of two arguments - if two arguments are equal', () => {
+  it('should return either arguments - if both arguments are equal', () => {
     expect(maxOfTwoNumbers(4, 4)).toBe(4);
   });
 });
@@ -164,7 +166,16 @@ describe('Calculate the average of an array of strings', () => {
 
   it('should return the average of a the array', () => {
     expect(
-      averageWordLength(['Ironhack', 'Madrid', 'Barcelona', 'Paris', 'Miami', 'Mexico', 'Berlin', 'Programmers'])
+      averageWordLength([
+        'Ironhack',
+        'Madrid',
+        'Barcelona',
+        'Paris',
+        'Miami',
+        'Mexico',
+        'Berlin',
+        'Programmers'
+      ])
     ).toBe(7);
   });
 });
@@ -210,7 +221,17 @@ describe('Unique array', () => {
 
   it('should return the uniquified array', () => {
     expect(
-      uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])
+      uniquifyArray([
+        'iPhone',
+        'Samsung',
+        'Android',
+        'iOS',
+        'iPhone',
+        'Samsung',
+        'Nokia',
+        'Blackberry',
+        'Android'
+      ])
     ).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
   });
 });
@@ -240,7 +261,9 @@ describe('Find elements', () => {
   // });
 
   it('should return true if the word we are looking for is in the array', () => {
-    expect(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book')).toBe(true);
+    expect(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book')).toBe(
+      true
+    );
   });
 });
 
