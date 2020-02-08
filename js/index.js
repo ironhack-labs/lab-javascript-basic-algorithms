@@ -30,4 +30,15 @@ let out2 = hacker1.split("").reverse();
 console.log(out2.join(""));
 
 // 3.3
+let pair = [hacker1, hacker2];
+pair = pair.sort();
+console.log(pair);
+
+if (hacker1 === hacker2) {
+  console.log("What?! Both have the same name?")
+} else if(pair[0] === hacker1) {
+  console.log("The driver's name goes first.");
+} else {
+  console.log("Yo, the navigator goes first definitely.");
+}
 
