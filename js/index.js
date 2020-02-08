@@ -55,3 +55,14 @@ for (let i = 0; i <= numOfWords; i++) {
 }
 
 console.log(`The text has ${numOfWords} words`)
+
+//Bonus 2
+let phraseToCheck = "Was it a car or a cat I saw?"
+let phraseForward = phraseToCheck.replace(/[^a-zA-Z]+/g, "").toUpperCase()
+let phraseBackward = phraseToCheck.replace(/[^a-zA-Z]+/g, "").toUpperCase().split("").reverse().join("")
+
+if (phraseForward == phraseBackward) {
+  console.log(`The phrase: \"${phraseToCheck}\" is a pallindrome`)
+} else {
+  console.log(`The phrase: \"${phraseToCheck}\" is a NOT pallindrome`)
+}
