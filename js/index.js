@@ -39,6 +39,8 @@ console.log(lex)
 //WEB-PT2 "nombre"
 //comentarios dudas
 
+//Bonus 1
+
 const latinTxt = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae eros nulla. Praesent dignissim, purus in luctus scelerisque, ipsum nulla iaculis nibh, eget sodales nulla eros eget sem. Praesent ipsum eros, laoreet quis ligula in, dapibus euismod mauris. Ut non nulla turpis. Pellentesque ligula enim, sagittis quis dictum ut, condimentum sit amet nisl. Donec non massa at orci elementum malesuada. Duis sed elit vel tellus sodales semper vitae eu mi. Donec non magna consequat, accumsan metus quis, maximus mauris. Cras interdum malesuada faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent orci leo, maximus ac neque at, egestas fermentum quam.
 Donec a lobortis nisi. Suspendisse dignissim eget massa sit amet accumsan. Maecenas quam libero, vestibulum sed nisl quis, eleifend luctus sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eget hendrerit ex. Vestibulum nec nibh nec nunc maximus placerat. Fusce lacus neque, maximus nec felis at, convallis euismod ante. Ut a massa eget orci tristique finibus non at mi. Praesent a leo malesuada, aliquet erat vitae, faucibus tortor. Morbi justo sapien, consequat et scelerisque tincidunt, faucibus a mi. Aenean vel sodales orci. Praesent nibh ligula, sollicitudin a sem nec, volutpat venenatis lorem. Sed rutrum urna eget dolor rutrum volutpat.
 Aenean malesuada mi id lorem cursus posuere. Etiam mollis et urna eu eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non interdum turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sed facilisis diam. Integer ut vehicula lectus, a dictum ex. Sed et ante a sapien rutrum sollicitudin mattis at nibh. Quisque vestibulum malesuada massa, ac commodo felis euismod at. Nullam interdum nibh vitae nunc efficitur, non egestas odio pharetra. Donec vestibulum tellus vitae nisi sodales fermentum.`;
@@ -49,3 +51,15 @@ for (i=0; i<latinTxt.length; i++) {
   }
 }
 console.log(x+1);
+
+//Bonus 2
+
+const palin = "Anita lava la tina"
+const baseStr = palin.toLowerCase().replace(/ /g,"");
+console.log(baseStr);
+const reverse = palin.toLowerCase().replace(/ /g,"").split("").reverse().join("");
+console.log(reverse);
+
+const isPalin = baseStr === reverse ? "Is palindrome" : "Is not palindrome";
+
+console.log(isPalin);
