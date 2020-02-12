@@ -39,7 +39,7 @@ for (let i = hacker2.length - 1; i >= 0; i--){
 }
 console.log(navigatorsNameReverse);
 
-// Q: if hacker2.length is 4, why does the loop run 5 times and prints out "undefinednhoJ" if i don't write "hacker2.length - 1"? Shouldn't it only run 4 times?
+// Q: if hacker2.length is 4, why does the loop run 5 times and prints out "undefinedadoY" if i don't write "hacker2.length - 1"? Shouldn't it only run 4 times?
 
 
 
