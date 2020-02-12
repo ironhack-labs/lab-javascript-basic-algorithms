@@ -101,4 +101,4 @@ console.log(countEt)
             //     output = `${phraseToCheck} is not a Palindrome. :( `
             //     break }
             // }
-            // console.log("Bonus 2: ",output)
+            // console.log("Bonus 2: ",output)  
