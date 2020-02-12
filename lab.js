@@ -16,16 +16,3 @@ if(hacker1.length > hacker2.length){
 
 // Iteration 3
 
-    // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
-let a= ''
-for (let i = 0; i < hacker1.length; i++) {
-    a += hacker1[i].toUpperCase() + ' ';
-}
-console.log(a);
-
-    // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
-// let b= ''
-// for (let i >= 0; i < hacker2.length; i--) {
-//     b += hacker2[i];
-// }
-// console.log(b);  
