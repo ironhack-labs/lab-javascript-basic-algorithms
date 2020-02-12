@@ -89,3 +89,23 @@ if(hacker1.localeCompare(hacker2) < 0){
     console.log("What?! You both have the same name?");
   }
 
+
+
+
+// BONUS TIME!
+
+let paragraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas diam neque, vitae egestas ligula faucibus sit amet. Sed sit amet justo vel quam sagittis tincidunt. Nulla in tristique orci. In rutrum, erat eu cursus malesuada, ipsum nisl cursus urna, sed mattis eros nisi vel lacus. Aliquam faucibus elit sed nunc tempus hendrerit. Aliquam eleifend, lectus in laoreet sagittis, mauris neque rutrum turpis, ut cursus arcu lacus a justo. Fusce dui dui, bibendum nec porttitor sit amet, gravida eget metus. Donec rhoncus ac ligula a egestas. Sed dolor augue, efficitur at vestibulum eget, mollis ut lorem. Praesent tortor lacus, mattis at lectus a, congue convallis magna. Fusce quam enim, dignissim at tempus ac, vulputate non massa. Integer non leo eu velit consequat efficitur rutrum in eros. Cras a tristique dolor.
+
+Phasellus et aliquam ante. Mauris lacus lacus, interdum vitae massa sit amet, tincidunt commodo ligula. Vestibulum dui leo, semper eu leo posuere, vehicula ullamcorper leo. Nullam tincidunt ex vitae dapibus mollis. Cras pharetra vestibulum sagittis. In sit amet enim faucibus, rutrum lacus sed, sodales urna. Donec a molestie nisi. Etiam vehicula auctor nisl nec porta. Donec blandit neque nisi, vel convallis ex vehicula ac. Aliquam posuere, metus a fermentum pulvinar, mi eros efficitur nunc, vel malesuada turpis erat at dolor. Nulla at lectus odio. Nam id pretium lectus, a pharetra justo. Nam elementum vel elit molestie euismod. Cras ut eros quis odio volutpat bibendum quis vitae enim. Donec iaculis, massa id faucibus maximus, mauris nulla pulvinar lectus, a pretium dui enim euismod nulla. Duis hendrerit, lectus in efficitur tincidunt, lectus ex volutpat leo, eu sagittis erat est et dui.
+
+Nunc vel magna efficitur, pharetra sem sed, volutpat eros. Aenean facilisis ultrices odio nec blandit. Mauris aliquam lectus at mi vulputate tincidunt. Fusce nec erat vitae ligula porttitor interdum. Suspendisse at orci at risus finibus scelerisque. Donec congue ex ligula, et egestas dui cursus ullamcorper. Sed ac ligula ultricies, interdum quam nec, tempor justo. Maecenas in arcu a ipsum tempor aliquet nec in odio. Fusce mattis viverra feugiat. Morbi luctus, nibh sit amet vulputate gravida, diam metus fermentum sem, et placerat metus massa nec risus. Vivamus et sagittis quam, in ultrices massa. Fusce fringilla ex nec eros mattis, sit amet lacinia orci pretium. Nam vel velit et mauris faucibus consequat. In venenatis, dolor eu convallis elementum, nunc nibh tristique ante, ac sodales arcu lacus sed augue.`
+
+/*
+Make your program count the number of words in the string.
+Make your program count the number of times the Latin word et appears.
+*/
+
+
+let wordCounter = paragraphs.split(" ").length;
+
+console.log(wordCounter); // output 393, but on Lorem Ipsum generator it says 395 words. I'm missing 2 words. Why?
