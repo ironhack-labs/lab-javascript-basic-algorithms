@@ -61,7 +61,7 @@ switch (hacker1.localeCompare(hacker2)) {
 
 //BONUS 1
 
-let lorem = `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+let loremParr = `Lorem ipsum dolor sit amet consectetur adipisicing elit.
 Corporis harum eaque corrupti nostrum autem vitae, ab blanditiis molestiae,
 voluptatum totam beatae cupiditate quis hic tenetur quae optio sit sed aperiam.`;
 
@@ -70,7 +70,31 @@ function countLorem(str){
   console.log("resultado:",splitLorem)
 }
 
-countLorem(lorem);
+countLorem(loremParr);
 
+////////////////////////
 
+let count = 0;
+let splitParr = loremParr.split(" ");
+for (let i=0; i < splitParr.length; i++) {
+  if (splitParr[i] === "et"){
+   count = count + 1;
+  }
+}
+console.log(count);
 
+//BONUS 2
+let phraseToCheck1 = "race car";
+let phraseToCheck2 = "Was it a car or a cat I saw?";
+let phraseToCheck3 = "No 'x' in Nixon";
+
+function checkPhrase(phrase) {
+let noSpace = phrase.replace(/[^a-zA-Z0-9]/g, "");
+let revPhraseNoSpace = phrase.split("").reverse().join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+if (noSpace === revPhraseNoSpace) {
+  console.log("Its a Palindrome!")
+} else {
+  console.log("Its not a Palindrome!")
+}
+}
+checkPhrase(phraseToCheck2);
