@@ -61,3 +61,21 @@ console.log(text.split(" ").length);
 console.log(text.split("et").length);
 
 
+//BONUS 2
+
+const palindrome = (str) => {
+
+    const strFinal = str
+        .replace(/[^a-zA-Z0-9]/g, '')
+        .toLowerCase();
+
+    const reversed = strFinal
+        .split("")
+        .reverse()
+        .join("");
+
+    return strFinal === reversed;
+};
+
+palindrome("stack cats");
+
