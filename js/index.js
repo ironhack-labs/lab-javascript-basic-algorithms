@@ -61,7 +61,6 @@ console.log(text.split(" ").length);
 console.log(text.split("et").length);
 
 
-
 //BONUS 2
 
 const palindrome = (str) => {
