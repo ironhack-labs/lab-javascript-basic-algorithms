@@ -21,24 +21,39 @@ if (hacker2.length > hacker1.length){
 
 }
 
+let compareLenghtNames = [hacker1, hacker2]
+
+compareLenghtNames.sort(function (a, b) {
+    
+return a.localeCompare(b)
+})
+
+console.log(compareLenghtNames);
 
 
 // Iteration 3: Loops
 
+hacker1 = hacker1.toUpperCase()
+//hacker2 = hacker2.toUpperCase()
 
-let charactersName = []
 
 /* SPLIT NAME */
-charactersName1 = hacker1.split([''])
-charactersName2 = hacker2.split([''])
+charactersName1 = hacker1.split(['']).join(" ")
+charactersName2 = hacker2.split('').join(" ")
+
+
+console.log(charactersName1)
+console.log(charactersName2)
 
 /* REVERSE NAME */
-let reverseName1 = charactersName1.reverse()
-let reverseName2 = charactersName2.reverse()
+//reverseName1 = charactersName1.reverse()
+//let reverseName2 = charactersName2.reverse()
 
 /* EXTRA JOIN NAME */
-let joinName1 = reverseName1.join()
-let joinName2 = reverseName2.join()
+//let joinName1 = reverseName1.join("")
+//let joinName2 = reverseName2.join()
+
+
 
 /* EXTRA CONSOLE LOG - JUST PLAYING 
 console.log(joinName1);
@@ -49,6 +64,9 @@ console.log(reverseName1.reverse());
 
 console.log(reverseName2.reverse());
 console.log(reverseName2.reverse());  */
+
+
+
 
 let paragraph1 = 'Lorem ipsum dolor sit amet, amet consectetur adipiscing elit. '
 
@@ -78,4 +96,5 @@ console.log(paragraph1.match(patternLatinWord));
 
 // alert(charactersName1.reverse()
 // console.log(splitName);
+
 
