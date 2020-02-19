@@ -41,9 +41,31 @@ console.log(str3.split(' et ').length - 1);
 
 // BONUS 2:
 
-let phraseToCheck =  "No 'x' in Nixon";
+// let phraseToCheck =  "No 'x' in Nixon";
 
-let phraseToLowerCase = phraseToCheck.toLowerCase().replace(/[^a-zA-Z ]/g, "").replace(/\s/g,'');
+// let phraseToLowerCase = phraseToCheck.toLowerCase().replace(/[^a-zA-Z ]/g, "").replace(/\s/g,'');
+
+// let reversePhrase = '';
+
+// for (let i = phraseToLowerCase.length - 1; i >= 0; i -= 1) {
+//   reversePhrase += phraseToLowerCase[i];
+// }
+
+// console.log(phraseToLowerCase === reversePhrase);
+
+
+// BONUS 2 (de outra forma)
+
+let phraseToCheck =  "A man, a plan, a canal, Panama!";
+let newPhrase = '';
+
+for (let i = 0; i < phraseToCheck.length; i += 1) {
+  if (phraseToCheck[i] === "'" || phraseToCheck[i] === "," || phraseToCheck[i] === "?" || phraseToCheck[i] === "!" || phraseToCheck[i] === " " || phraseToCheck[i] === '"' || phraseToCheck[i] === ".") {
+    continue;
+  }
+  newPhrase += phraseToCheck[i];
+}
+phraseToLowerCase = newPhrase.toLowerCase();
 
 let reversePhrase = '';
 
