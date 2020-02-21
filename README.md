@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Manipulating arrays in code is a very common operation. Whether you're creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you're probably going to be modifying or manipulating an array in some way.
+Manipulating arrays in code is a very common operation. Whether you are creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you are probably going to be modifying or manipulating an array in some way.
 
 ## Requirements
 
@@ -29,13 +29,13 @@ Create Pull Request so your TAs can check up your work.
 
 Automated software testing is the process of programmatically executing an application in order to validate and verify that it meets the business needs, as well as the technical requirements, and that it behaves as expected.
 
-Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex codebases.
+Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
 
-Having a strong _test suite_ can provide you ease of mind, since you'll be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
+Having a strong _test suite_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
 
 ### Testing labs
 
-This lab, along with some of the labs you'll be working on during the bootcamp, has a complete test suite that is meant to ensure that your work fulfills the requirements we established.
+This lab, along with some of the labs you will be working on during the bootcamp, has a complete test suite that is meant to ensure that your work fulfills the requirements we established.
 
 ### Testing with Jasmine
 
@@ -75,7 +75,7 @@ You should write your code on the `src/functions-and-arrays.js` file. While foll
 
 Do not rush. You should take your time to carefully read every iteration, and you should address the _breaking_ tests as you progress through the exercise.
 
-When coding with tests, it is super important that you carefully read and understand the errors you're getting, this way you'll know for sure what's expected from your code.
+When coding with tests, it is super important that you carefully read and understand the errors you are getting, this way you will know for sure what's expected from your code.
 
 Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
 
@@ -101,7 +101,7 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
 
-Declare a function named `sumArray` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we'll learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
+Declare a function named `sumNumbers` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we will learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
 
 You can use the following array to test your solution:
 
@@ -113,9 +113,9 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 **The goal: Learn how to refactor your code.** :muscle:
 
-In the iteration 3, you created a function that returns the sum of an array of numbers. But what if we wanted to know how much is the sum of the length of all of the words in an array? What if we wanted to add _boolean_ values to the mix? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so that it can be reused no matter what is in the array that is passed as argument when function `sumArray()` is called.
+In the iteration 3, you created a function that returns the sum of an array of numbers. But what if we wanted to know how much is the sum of the length of all of the words in an array? What if we wanted to add _boolean_ values to the mix? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so that it can be reused no matter what is in the array that is passed as argument when function `sumNumbers()` is called.
 
-Here we're applying a concept we call **polymorphism**, that is, dealing with a functions' input independently of the types they're passed as.
+Here we are applying a concept we call **polymorphism**, that is, dealing with a functions' input independently of the types they are passed as.
 
 Let's create a new function `sum()` that calculates the sum for array filled with (_almost_) any type of data. Note that strings should have their length added to the total, and boolean values should be coerced into their corresponding numeric values. Check the tests for more details.
 
@@ -133,14 +133,14 @@ Calculating an average is an extremely common task. Let's practice it a bit.
 
 **The logic behind this:**
 
-1. Find the sum as we did in the first exercise (or how about reusing that the _sumArray()_?)
+1. Find the sum as we did in the first exercise (or how about reusing that the _sumNumbers()_?)
 2. Take that sum and divide it by the number of elements in the list.
 
 ### Level 1: Array of numbers
 
 Declare a function named `averageNumbers` that expects an array of numbers and returns the average of the numbers:
 
-**Starter Code**
+**Starter code**
 
 ```javascript
 const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
@@ -150,26 +150,15 @@ const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 
 Declare a function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
 
-**Starter Code**
+**Starter code**
 
 ```javascript
-const words = [
-  'seat',
-  'correspond',
-  'linen',
-  'motif',
-  'hole',
-  'smell',
-  'smart',
-  'chaos',
-  'fuel',
-  'palace'
-];
+const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 ```
 
 ### Bonus - Iteration #4.1: A generic `avg()` function
 
-Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We're following a similar logic to the one applied on the bonus iteration 4.1 :wink:
+Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We are following a similar logic to the one applied on the bonus iteration 4.1 :wink:
 
 ```javascript
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
@@ -179,11 +168,11 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 
 ## Iteration #5: Unique arrays
 
-Take the following array, remove the duplicates, and return a new array. You're more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) Array method.
+Take the following array, remove the duplicates, and return a new array. You are more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) Array method.
 
 Do this in the form of a function `uniquifyArray` that receives an array of words as a argument.
 
-**Starter Code**
+**Starter code**
 
 ```javascript
 const words = [
@@ -207,26 +196,17 @@ Let's create a simple array search.
 
 Declare a function named `doesWordExist` that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise, return `false`. **Don't** use `indexOf` for this one.
 
-**Starter Code**
+**Starter code**
 
 ```javascript
-const words = [
-  'machine',
-  'subset',
-  'trouble',
-  'starting',
-  'matter',
-  'eating',
-  'truth',
-  'disobedience'
-];
+const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 ```
 
 ## Iteration #7: Count repetition
 
 Declare a function named `howManyTimes` that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
 
-**Starter Code**
+**Starter code**
 
 ```javascript
 const words = [

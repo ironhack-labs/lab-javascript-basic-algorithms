@@ -1,16 +1,16 @@
-function shuffle(currentArray) {
-  const array = currentArray.map(arr => arr.slice());
+const shuffle = currentArray => {
+  const array = [...currentArray];
   let counter = array.length;
 
   while (counter > 0) {
-    let index = Math.floor(Math.random() * counter);
+    let randomIndex = Math.floor(Math.random() * counter);
     counter--;
     let temp = array[counter];
-    array[counter] = array[index];
-    array[index] = temp;
+    array[counter] = array[randomIndex];
+    array[randomIndex] = temp;
   }
   return array;
-}
+};
 
 describe('Find the maximum', () => {
   it('should create a function named maxOfTwoNumbers', () => {
@@ -116,8 +116,6 @@ describe('Bonus: Calculate the sum', () => {
     expect(sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, true])).toBe(47);
   });
   it('should throw an error when unsupported data type (object or array) present in the array', () => {
-    // const arr = [6, 12, "miami", 1, "barca", "200", "lisboa", 8, [], {}];
-
     expect(() => sum([6, 12, 'miami', 1, 'barca', '200', 'lisboa', 8, [], {}])).toThrow(
       new Error("Unsupported data type sir or ma'am")
     );
@@ -130,19 +128,16 @@ describe('Calculate the average of an array of numbers', () => {
   });
 
   it('should return null if receives an empty array when called', () => {
-    // should it return null or zero?
     expect(averageNumbers([])).toBe(null);
   });
 
-  // do we need this?
-  // it("should return the average of a one-element array", () => {
-  //   expect(averageNumbers([9])).toBe(9);
-  // });
+  it('should return the average of a one-element array', () => {
+    expect(averageNumbers([9])).toBe(9);
+  });
 
-  // do we need this?
-  // it("should return the average even with negative values", () => {
-  //   expect(averageNumbers([9, -3, -4, 6])).toBe(2);
-  // });
+  it('should return the average even with negative values', () => {
+    expect(averageNumbers([9, -3, -4, 6])).toBe(2);
+  });
 
   it('should return the average of the array', () => {
     expect(averageNumbers([9, 10, 82, 92, 32, 102, 58])).toBe(55);
@@ -155,27 +150,16 @@ describe('Calculate the average of an array of strings', () => {
   });
 
   it('should return null if receives an empty array when called', () => {
-    // should it return null or zero?
     expect(averageWordLength([])).toBe(null);
   });
 
-  // do we need this?
-  // it("should return the average of a one-element array", () => {
-  //   expect(averageWordLength(["ironhack"])).toBe(8);
-  // });
+  it('should return the average of a one-element array', () => {
+    expect(averageWordLength(['ironhack'])).toBe(8);
+  });
 
   it('should return the average of a the array', () => {
     expect(
-      averageWordLength([
-        'Ironhack',
-        'Madrid',
-        'Barcelona',
-        'Paris',
-        'Miami',
-        'Mexico',
-        'Berlin',
-        'Programmers'
-      ])
+      averageWordLength(['Ironhack', 'Madrid', 'Barcelona', 'Paris', 'Miami', 'Mexico', 'Berlin', 'Programmers'])
     ).toBe(7);
   });
 });
@@ -186,7 +170,6 @@ describe('Bonus: Calculate the average of a mixed elements array', () => {
   });
 
   it('should return null if receives an empty array when called', () => {
-    // should it return null or zero?
     expect(avg([])).toBe(null);
   });
 
@@ -207,31 +190,17 @@ describe('Unique array', () => {
     expect(uniquifyArray([])).toEqual(null);
   });
 
-  // do we need this?
-  // it("should return the correct uniqified array when an array of the same elements passed as argument", () => {
-  //   expect(uniquifyArray(["Ironhack", "Ironhack", "Ironhack"])).toEqual([
-  //     "Ironhack"
-  //   ]);
-  // });
+  it('should return the correct uniqified array when an array of the same elements passed as argument', () => {
+    expect(uniquifyArray(['Ironhack', 'Ironhack', 'Ironhack'])).toEqual(['Ironhack']);
+  });
 
-  // do we need this?
-  // it("should return the same array when no element is repeated", () => {
-  //   expect(uniquifyArray(["Cat", "Dog", "Cow"])).toEqual(["Cat", "Dog", "Cow"]);
-  // });
+  it('should return the same array when no element is repeated', () => {
+    expect(uniquifyArray(['Cat', 'Dog', 'Cow'])).toEqual(['Cat', 'Dog', 'Cow']);
+  });
 
   it('should return the uniquified array', () => {
     expect(
-      uniquifyArray([
-        'iPhone',
-        'Samsung',
-        'Android',
-        'iOS',
-        'iPhone',
-        'Samsung',
-        'Nokia',
-        'Blackberry',
-        'Android'
-      ])
+      uniquifyArray(['iPhone', 'Samsung', 'Android', 'iOS', 'iPhone', 'Samsung', 'Nokia', 'Blackberry', 'Android'])
     ).toEqual(['iPhone', 'Samsung', 'Android', 'iOS', 'Nokia', 'Blackberry']);
   });
 });
@@ -245,25 +214,16 @@ describe('Find elements', () => {
     expect(doesWordExist([])).toBe(null);
   });
 
-  // do we need this test?
-  // it("should return true if the word we are looking for is the only one in the array", () => {
-  //   expect(doesWordExist(["machine"], "machine")).toBe(true);
-  // });
+  it('should return true if the word we are looking for is the only one in the array', () => {
+    expect(doesWordExist(['machine'], 'machine')).toBe(true);
+  });
 
-  // do we need this test?
-  // it("should return false if the word we are looking for is not in the array", () => {
-  //   expect(
-  //     doesWordExist(
-  //       ["machine", "poison", "eat", "apple", "horse"],
-  //       "ratatouille"
-  //     )
-  //   ).toBe(false);
-  // });
+  it('should return false if the word we are looking for is not in the array', () => {
+    expect(doesWordExist(['machine', 'poison', 'eat', 'apple', 'horse'], 'ratatouille')).toBe(false);
+  });
 
   it('should return true if the word we are looking for is in the array', () => {
-    expect(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book')).toBe(
-      true
-    );
+    expect(doesWordExist(['pizza', 'sandwich', 'snack', 'soda', 'book', 'computer'], 'book')).toBe(true);
   });
 });
 
