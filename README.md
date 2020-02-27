@@ -50,18 +50,18 @@ We have already included Jasmine in the project you just forked, so let's see ho
 Before start coding, we will explain the project structure we have provided you:
 
 ```
-starter-code/
-├── jasmine
-│   ├── jasmine-2.8.0/
-│   |   └── ...
-├── src
-│   └── functions-and-arrays.js
-├── tests
-│   └── functions-and-arrays.spec.js
-└─ SpecRunner.html
+lab-js-functions-and-arrays
+  ├── README.md
+  ├── SpecRunner.html
+  ├── jasmine
+  │   └── ...
+  ├── src
+  │   └── functions-and-arrays.js
+  └── tests
+      └── functions-and-arrays.spec.js
 ```
 
-We will be working with the `functions-and-arrays.js` file inside of the `src` folder. In the `jasmine` folder you can find all of the files that compose Jasmine, that is already linked with the `SpecRunner.html` file.
+We will be working with the `src/functions-and-arrays.js`. In the `jasmine` folder you can find all of the files needed to use Jasmine. All these files are already linked with the `SpecRunner.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
 #### Run tests
 
@@ -79,15 +79,13 @@ When coding with tests, it is super important that you carefully read and unders
 
 Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
 
-## Deliverables
+## Instructions
 
-Write your JavaScript in the provided `src/functions-and-arrays.js` file.
-
-## Iteration #1: Find the maximum
+### Iteration #1: Find the maximum
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
-## Iteration #2: Find the longest word
+### Iteration #2: Find the longest word
 
 Declare a function named `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
@@ -97,7 +95,7 @@ You can use the following array to test your solution:
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 ```
 
-## Iteration #3: Calculate the sum
+### Iteration #3: Calculate the sum
 
 Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
 
@@ -109,7 +107,7 @@ You can use the following array to test your solution:
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
 
-### Bonus - Iteration #3.1: A generic `sum()` function
+#### Bonus - Iteration #3.1: A generic `sum()` function
 
 **The goal: Learn how to refactor your code.** :muscle:
 
@@ -127,7 +125,7 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 // should return: 57
 ```
 
-## Iteration #4: Calculate the average
+### Iteration #4: Calculate the average
 
 Calculating an average is an extremely common task. Let's practice it a bit.
 
@@ -136,29 +134,29 @@ Calculating an average is an extremely common task. Let's practice it a bit.
 1. Find the sum as we did in the first exercise (or how about reusing that the _sumNumbers()_?)
 2. Take that sum and divide it by the number of elements in the list.
 
-### Level 1: Array of numbers
+#### Level 1: Array of numbers
 
 Declare a function named `averageNumbers` that expects an array of numbers and returns the average of the numbers:
 
-**Starter code**
+You can use the following array to test your solution:
 
 ```javascript
 const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
-### Level 2: Array of strings
+#### Level 2: Array of strings
 
 Declare a function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
 
-**Starter code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 ```
 
-### Bonus - Iteration #4.1: A generic `avg()` function
+#### Bonus - Iteration #4.1: A generic `avg()` function
 
-Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We are following a similar logic to the one applied on the bonus iteration 4.1 :wink:
+Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We are following a similar logic to the one applied on the bonus iteration 4.1. :wink:
 
 ```javascript
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
@@ -166,13 +164,13 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 // should return: 5.7
 ```
 
-## Iteration #5: Unique arrays
+### Iteration #5: Unique arrays
 
 Take the following array, remove the duplicates, and return a new array. You are more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) Array method.
 
 Do this in the form of a function `uniquifyArray` that receives an array of words as a argument.
 
-**Starter code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = [
@@ -190,23 +188,23 @@ const words = [
 ];
 ```
 
-## Iteration #6: Find elements
+### Iteration #6: Find elements
 
 Let's create a simple array search.
 
 Declare a function named `doesWordExist` that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise, return `false`. **Don't** use `indexOf` for this one.
 
-**Starter code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 ```
 
-## Iteration #7: Count repetition
+### Iteration #7: Count repetition
 
 Declare a function named `howManyTimes` that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
 
-**Starter code**
+You can use the following array to test your solution:
 
 ```javascript
 const words = [
@@ -224,7 +222,7 @@ const words = [
 ];
 ```
 
-## Bonus - Iteration #8: Product of adjacent numbers
+### Bonus - Iteration #8: Product of adjacent numbers
 
 What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other horizontally or vertically.
 
@@ -238,7 +236,7 @@ For example, if we have a 5x5 Matrix like:
 [ 1,  4, 3, 4, 5]
 ```
 
-The greatest product will be the `20`x`20`x`20`x`4` = `32000`;
+The greatest product will be the `20`x`20`x`20`x`4` = `32000`.
 
 Declare a function named `greatestProduct(matrix)` to find it in the 20×20 grid below!
 
@@ -267,7 +265,7 @@ const matrix = [
 ];
 ```
 
-## Bonus - Iteration #8.1: Product of diagonals
+### Bonus - Iteration #8.1: Product of diagonals
 
 Following the logic you've used in iteration #8, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
 
