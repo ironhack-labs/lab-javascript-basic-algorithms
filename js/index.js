@@ -39,7 +39,7 @@ console.log(wordsCount);
 
 let etCount = 0;
 for (let i = 0; i <= paragraph.split(' ').length - 1; i++){
-    if (paragraph.split(' ')[i] === 'et')https://github.com/SPECTR3R/lab-html-exercise
+    if (paragraph.split(' ')[i] === 'et')
         etCount++;
 }
 console.log(etCount);
@@ -52,14 +52,10 @@ for (let i = phraseToCheck.length - 1; i >= 0; i--) {
     reverse.push(phraseToCheck[i]);
 }
 if (phraseToCheck.replace(" " , "") === reverse.join("").replace(" ", "")){
-    console.log('Sí es un palíndrome')
+    console.log('Sí es un palíndrome');
 }
 
 else {
-    console.log('No lo es!')
+    console.log('No lo es!');
 }
 
-
-/*for(let i=0; i<= phraseToCheck.length; i++){
-    for(let j=phraseToCheck; j>= )
-}*/
