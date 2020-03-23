@@ -61,3 +61,5 @@ for (let i = 0; i < words.length; i++){
     wordEt = wordEt + 1;
   }
 }
+
+console.log(wordEt);
