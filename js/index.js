@@ -39,7 +39,7 @@ console.log(wordsCount);
 
 let etCount = 0;
 for (let i = 0; i <= paragraph.split(' ').length - 1; i++){
-    if (paragraph.split(' ')[i] === 'et')
+    if (paragraph.split(' ')[i] === 'et')https://github.com/SPECTR3R/lab-html-exercise
         etCount++;
 }
 console.log(etCount);
