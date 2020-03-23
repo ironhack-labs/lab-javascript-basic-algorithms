@@ -57,9 +57,9 @@ console.log(words.length);
 let wordEt = 0;
 
 for (let i = 0; i < words.length; i++){
-  if (words[i] == 'et'){
-    wordEt = wordEt + 1;
+    if (words[i] == 'et' || words[i] == 'et,' || words[i] == 'et.'){
+      wordEt = wordEt + 1;
+    }
   }
-}
-
-console.log(wordEt);
+  
+  console.log(wordEt);
