@@ -13,19 +13,19 @@ console.log(`The navigator's name is ${hacker2}`);
 // - The driver has the longest name, it has XX characters. or
 // - It seems that the navigator has the longest name, it has XX characters. or
 // - Wow, you both have equally long names, XX characters!.
+// Method 1:
 const namesComparision = (name1, name2) => {
   if (name1.length > name2.length) {
     return `The driver has the longest name, it has ${hacker1.length} characters.`;
   } else if (name1.length < name2.length) {
     return `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`;
   } else {
-    return `Wow, you both have equally long names, ${hacker2} characters!`;
+    return `Wow, you both have equally long names, ${hacker1} characters!`;
   }
 };
-console.log(namesComparision(hacker1, hacker2));
-
-/* named params */
-const namesComparision = ({ driverName, navigatorName }) => {
+console.log("Method 1 ", namesComparision(hacker1, hacker2));
+// Method 2: using named params
+const namesComparision2 = ({ driverName, navigatorName }) => {
   if (driverName.length > navigatorName.length) {
     return `The driver has the longest name, it has ${driverName.length} characters.`;
   } else if (driverName.length < navigatorName.length) {
@@ -34,7 +34,10 @@ const namesComparision = ({ driverName, navigatorName }) => {
     return `Wow, you both have equally long names, ${navigatorName} characters!`;
   }
 };
-console.log(namesComparision({ driverName: hacker1, navigatorName: hacker2 }));
+console.log(
+  "method 2 ",
+  namesComparision2({ driverName: hacker1, navigatorName: hacker2 })
+);
 
 // Iteration 3: Loops
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
@@ -59,21 +62,15 @@ const upperCaseHacker2 = str => {
 console.log("Method 2", upperCaseHacker2(hacker1));
 
 // Method 3 " spread notation + Built-in method Join"
-const upperCaseHacker3 = str => {
-  return [...str.toUpperCase()].join(" ");
-};
+const upperCaseHacker3 = str => [...str.toUpperCase()].join(" ");
 console.log("Method 3", upperCaseHacker3(hacker1));
 
-// implicit return
-// const upperCaseHacker3 = str => [...str.toUpperCase()].join(" ");
-
 // Method 4 : JavaScript Built-in Methods
-const upperCaseHacker4 = str => {
-  return str
+const upperCaseHacker4 = str =>
+  str
     .split("")
     .join(" ")
     .toUpperCase();
-};
 console.log("Method 4", upperCaseHacker4(hacker1));
 
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
@@ -101,12 +98,11 @@ const reverseString2 = str => {
 console.log("Method 2", reverseString2(hacker2));
 
 // Method 3 : JavaScript Built-in Methods
-const reverseString3 = str => {
-  return str
+const reverseString3 = str =>
+  str
     .split("")
     .reverse()
     .join("");
-};
 console.log("Method 3", reverseString3(hacker2));
 
 // Method 4 :for of
@@ -120,9 +116,8 @@ const reverseString4 = str => {
 console.log("Method 4", reverseString4(hacker2));
 
 // Method 5 :Recursion
-const reverseString5 = str => {
-  return str ? reverseString5(str.substr(1)) + str[0] : str;
-};
+const reverseString5 = str =>
+  str ? reverseString5(str.substr(1)) + str[0] : str;
 console.log("Method 5", reverseString5(hacker2));
 
 // 3.3 Depending on the lexicographic order of the strings, print:
@@ -154,6 +149,20 @@ const lexicographicOrder2 = (name1, name2) => {
 };
 console.log("Method 2 ", lexicographicOrder2(hacker1, hacker2));
 
+// Method 3: using named params
+const lexicographicOrder3 = ({ driverName, navigatorName }) => {
+  if (driverName.localeCompare(navigatorName) < 0) {
+    return "The driver's name goes first.";
+  } else if (driverName.localeCompare(navigatorName) > 0) {
+    return "Yo, the navigator goes first definitely.";
+  } else {
+    return "What?! You both have the same name?";
+  }
+};
+console.log(
+  "Method 3 ",
+  lexicographicOrder3({ driverName: hacker1, navigatorName: hacker2 })
+);
 // Bonus 1
 
 // Generate 3 paragraphs. Store the text in a variable type of string.
@@ -168,10 +177,11 @@ console.log("Method 1", paragraph.split(" ").length);
 
 // Method 2 : Regulat expression
 const countWords = word => {
-  word = word.replace(/(^\s*)|(\s*$)/gi, ""); //exclude  start and end white-space
-  word = word.replace(/[ ]{2,}/gi, " "); //2 or more space to 1
-  word = word.replace(/\n /, "\n"); // exclude newline with a start spacing
-  return word.split(" ").filter(function(str) {
+  let newWord = word;
+  newWord = newWord.replace(/(^\s*)|(\s*$)/gi, ""); //exclude  start and end white-space
+  newWord = newWord.replace(/[ ]{2,}/gi, " "); //2 or more space to 1
+  newWord = newWord.replace(/\n /, "\n"); // exclude newline with a start spacing
+  return newWord.split(" ").filter(function(str) {
     return str != "";
   }).length;
 };
@@ -179,15 +189,11 @@ console.log("Method 2", countWords(paragraph));
 
 // Make your program count the number of times the Latin word et appears.
 // Method 1
-const countOccurance = word => {
-  return word.split("et").length - 1;
-};
+const countOccurance = word => word.split("et").length - 1;
 console.log("Method 1", `there is ${countOccurance(paragraph)} Occurances`);
 
 // Method 2 : Regular expression
-const countOccurance1 = word => {
-  return (word.match(/et/g) || []).length;
-};
+const countOccurance1 = word => (word.match(/et/g) || []).length;
 console.log("Method 2", `there is ${countOccurance1(paragraph)} Occurances`);
 
 // Bomus 2
