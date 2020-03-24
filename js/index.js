@@ -76,7 +76,11 @@ for (let i = 0; i < randomParagraph.length; i++){
 }
 console.log(wordCount + 1);
 
-//Bonus 2:
+let etWordCount = randomParagraph.split('et');
+console.log(etWordCount.length);
+
+//Bonus 2: 
+//Using only FOR Loops
 
 function phraseCheck(str){
 let modifiedStr = '';
@@ -100,6 +104,8 @@ if (modifiedStr === reverse){
 }
 
 phraseCheck("A man, a plan, a canal, Panama!")
+
+
 
 
 
