@@ -26,3 +26,10 @@ for (const letter of hacker1) {
   //   letter.toUpperCase().join(" ");
 }
 console.log(res);
+
+let res2 = "";
+for (const letter of hacker2) {
+  res2 += letter
+}
+res2=res2.split("").reverse().join("")
+console.log(res2)
