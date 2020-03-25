@@ -70,7 +70,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 	  - `Wow, you both have equally long names, XX characters!`.
 
 ### Iteration 3: Loops
-  3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
+  3.1 Prinset all the characters of the driver's name, separated by a space and [in capitals]( )
   i.e. `"J O H N"`
   
   3.2 Print all the characters of the navigator's name, in reverse order. 
