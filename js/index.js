@@ -49,7 +49,7 @@ function numberOfWords(text) {
 console.log(numberOfWords(lorem));
 
 function countWord(text, word) {
-    return text.split(`${word} `).length - 1;
+    return text.split(` ${word} `).length - 1;
 }
 
 console.log(countWord(lorem, "et"));
