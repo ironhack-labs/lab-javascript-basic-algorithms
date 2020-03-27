@@ -18,23 +18,23 @@ if (hacker1.length > hacker2.length) {
   );
 }
 // Iteration 3: Loops
-let drivesName = ' ';
+let drivesName = '';
 for (let i = 0; i < hacker1.length; i++) {
   drivesName += hacker1[i].toUpperCase() + ' ';
 }
-console.log(drivesName);
+console.log(drivesName.trim()); //trim remove the white space, beggining and in the end.
 
-let reverseName = ' ';
+let reverseName = '';
 for (let i = hacker2.length - 1; i >= 0; i--) {
   reverseName += hacker2[i];
 }
 console.log(reverseName);
 
 for (let i = 0; i < hacker1.length; i++) {
-  if (hacker1[i] > hacker2[i]) {
+  if (hacker1[i] < hacker2[i]) {
     console.log(`The driver's name goes first.`);
     break;
-  } else if (hacker1[i] < hacker2[i]) {
+  } else if (hacker1[i] > hacker2[i]) {
     console.log(`Yo, the navigator goes first definitely.`);
     break;
   } else {
