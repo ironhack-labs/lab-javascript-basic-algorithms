@@ -20,9 +20,15 @@ if (hacker1.length > hacker2.length) {
 // 3.1
 let nameUpperCase = "";
 for (let i = 0; i < hacker1.length; i++) {
-    nameUpperCase += hacker1.charAt(i).toUpperCase() + " ";
+    if (i === hacker1.length - 1) {
+        nameUpperCase += hacker1.charAt(i).toUpperCase();
+    } else {
+        nameUpperCase += hacker1.charAt(i).toUpperCase() + " ";
+    }
+
 }
 console.log(nameUpperCase);
+
 
 //3.2
 let nameReverse = "";
@@ -33,20 +39,18 @@ console.log(nameReverse);
 
 //3.3
 
-function LexicoCompare(a, b) {
+function lexicoCompare(a, b) {
     if (a === b) {
         console.log(`What?! You both have the same name?`);
     } else if (a > b) {
         console.log(`Yo, the navigator goes first definitely.`);
 
     } else {
-
         console.log(`The driver's name goes first.`);
-
     }
 }
 
-LexicoCompare(hacker1, hacker2);
+lexicoCompare(hacker1, hacker2);
 
 // Bonus
 
@@ -71,3 +75,27 @@ for (let i = 0; i < text.length; i++) {
     }
 }
 console.log(counter);
+
+// Bonus 2
+
+let phrase = "A man, a plan, a canal, Panama!";
+let phraseToCheck = phrase.replace(/\s+/g, "").replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g, "").toLowerCase();
+
+function isPalindrome(string) {
+
+    if (string.length === 0 || string.length === 1) {
+        return "it's a Palindrome"
+    } else {
+        for (let i = 0; i < Math.round(string.length / 2); i++) {
+            if (string.charAt(i) === string.charAt(string.length - 1 - i)) {
+                continue
+            } else {
+                return "it's not a Palindrome"
+            }
+        }
+        return "it's a Palindrome"
+    }
+
+}
+
+console.log(isPalindrome(phraseToCheck));
