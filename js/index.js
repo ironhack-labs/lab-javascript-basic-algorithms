@@ -16,10 +16,20 @@ if (driver.length > navigator.length) {
 
 // Iteration 3: Loops
 let newArr = driver.split("");
-let arrLow = driver.split("");
+let arrLow = navigator.split("");
 
 for (i = 0; i < newArr.length; i++){
    newArr[i] = newArr[i].toUpperCase();  
 }
 console.log(newArr.join(" "));
 console.log(arrLow.reverse().join(""));
+
+let order = driver.localeCompare(navigator);
+
+if (order == 1) {
+    console.log(`${navigator}'s name goes first.`)
+} else if (order == 2) {
+    console.log(`${driver}'s name goes first.`)
+} else {
+    console.log(`What?! You both have the same name?`)
+}
