@@ -23,13 +23,41 @@ if (hacker2.length > hacker1.length) {
 let res = "";
 for (const letter of hacker1) {
   res += letter.toUpperCase() + " ";
-  //   letter.toUpperCase().join(" ");
 }
 console.log(res);
 
-let res2 = "";
-for (const letter of hacker2) {
-  res2 += letter
+// let res2 = "";
+// for (const letter of hacker2) {
+//   res2 += letter
+// }
+// res2=res2.split("").reverse().join("")
+// console.log(res2)
+
+// A FINIR
+// for (let index = hacker2.length - 1; index >= 0; index--) {
+//   console.log(hacker2[index]);
+// }
+
+// let i = 0;
+// while (hacker1[i] > hacker2[i]) {
+//   i++;
+//   console.log(i);
+// }
+for (let i = 0; i < hacker1.length; i++) {
+  for (let j = 0; j < hacker2.length; j++) {
+    if (hacker1[i] > hacker2[j]) {
+      console.log("The driver's name goes first.");
+      break;
+    } else if (hacker1[i] < hacker2[j]) {
+      console.log("Yo, the navigator goes first definitely.");
+      break;
+    } else {
+      console.log("What?! You both have the same name?");
+      break;
+    }
+  }
+  console.log(i);
 }
-res2=res2.split("").reverse().join("")
-console.log(res2)
+// The driver's name goes first.
+// Yo, the navigator goes first definitely.
+// What?! You both have the same name?
