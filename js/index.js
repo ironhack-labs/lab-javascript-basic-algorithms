@@ -97,7 +97,7 @@ let phraseToCheck = "A man a plan a canal Panama";
 
 function palindromeCheck(str) {
     let invertedStr = "";
-    str = str.replace(/\s/g, "").toLowerCase()
+    str = str.replace(/\s|\,/g, "").toLowerCase()
     for (let i = str.length - 1; i >= 0; i--) {
         invertedStr += str[i];
     }
