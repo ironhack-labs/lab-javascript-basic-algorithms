@@ -21,3 +21,27 @@ if(hacker1.length > hacker2.length){
   console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 };
 // Iteration 3: Loops
+
+let driver = hacker1.split("");
+//console.log(driver);
+
+for(i = 0; i < driver.length; i++){
+  driver[i] = driver[i].toUpperCase();
+}
+console.log(driver.join(" "));
+
+let navigator = hacker2.split("");
+//console.log(navigator);
+console.log(navigator.reverse().join(""))
+
+let lexicon = hacker1.localeCompare(hacker2);
+//console.log(lexicon);
+
+
+if(lexicon < 0){
+  console.log(`The driver's name goes first`);
+} else if (lexicon > 0){
+  console.log(`Yo, the navigator goes first definitely.`);
+} else {
+  console.log ('What?! You both have the same name?');
+};
