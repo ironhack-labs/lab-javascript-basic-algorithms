@@ -24,7 +24,7 @@ if (driver.length > navigator.length) {
 } else if (navigator.length > driver.length) {
     console.log(`The navigator is ${navigator}, has the longest name, it has ${navigator.length} characters`);
 } else {
-    console.log(`Wow, you both have equally long names, XX characters!`);
+    console.log(`Wow, you both have equally long names, `+ hacker1.length + ` characters!`);
 }
 
 
