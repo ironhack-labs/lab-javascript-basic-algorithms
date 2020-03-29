@@ -64,7 +64,6 @@ console.log(`Hay ${strToArray.length} palabras en la string`);
 
 // Make your program count the number of times the Latin word "et" appears.
 
-let strToArray = loremStr.split(" ");
 let search = "et";
 let searchCount = 0;
 
