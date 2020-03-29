@@ -59,7 +59,8 @@ let loremStr = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce q
 
 // Make your program count the number of words in the string.
 
-console.log(loremStr.split(" ").length);
+let strToArray = loremStr.split(" ");
+console.log(`Hay ${strToArray.length} palabras en la string`);
 
 // Make your program count the number of times the Latin word "et" appears.
 
@@ -67,13 +68,15 @@ let strToArray = loremStr.split(" ");
 let search = "et";
 let searchCount = 0;
 
+// check occurencies for "et" conjunction
 for (let i = 0; i < strToArray.length; i++){
   if(search === strToArray[i]){
     searchCount++;
   };
 };
 
-console.log(searchCount);
+// result
+console.log(`La conjunción "et" aparece ${searchCount} veces en la string`);
 
 // Bonus 2:
 // Create a new variable phraseToCheck and have it contain some string value. 
@@ -86,11 +89,19 @@ console.log(searchCount);
 // -- "A man a plan a canal Panama"
 // -- "step on no pets"
 
-let phraseToCheck = "Hello John";
-let phraseToCheckReverse = phraseToCheck.split("").reverse("").join("");
+let phraseToCheck = "Lorem, ipsum";
+let phraseRight = phraseToCheck.split(" ").join('').toLowerCase();
 
-if(phraseToCheck.toLowerCase() === phraseToCheckReverse.toLowerCase()) {
-  console.log("The string is a Palindrome");
-} else {
-  console.log("The string is not a Palindrome");
+let phraseReverse = "";
+
+// reverse for loop to create the phraseReverse
+for (let i = phraseRight.length - 1; i >= 0; i--) {
+  phraseReverse += phraseRight[i];
 }
+
+// validation
+if (phraseRight === phraseReverse){
+  console.log(`The string "${phraseToCheck}" is a palindrome`);
+} else {
+  console.log(`The string "${phraseToCheck}" is NOT a palindrome`);
+};
