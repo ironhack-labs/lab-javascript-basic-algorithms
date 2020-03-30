@@ -73,7 +73,7 @@ console.log(`Number of occurences of "${searchTerm}": ${etCount}`);
 
 //Bonus 2
 
-var phraseToCheck = `This is my sentence`;
+var phraseToCheck = `Amor, Roma`;
 var newPhrase = ``;
 var newReversePhrase = "";
 
@@ -87,6 +87,7 @@ for (var i = 0; i < phraseToCheck.length; i++) {
 }
 console.log(`Initial Phrase: ${newPhrase}`);
 
+//same construction as above but for reverse Phrase
 for (var i = phraseToCheck.length - 1; i >= 0; i--) {
   if (phraseToCheck[i] === " ") {
     continue;
@@ -96,23 +97,18 @@ for (var i = phraseToCheck.length - 1; i >= 0; i--) {
 }
 console.log(`Reverse phrase: ${newReversePhrase}`);
 
-if (newPhrase.length === newReversePhrase.length) {
-  //if they arent the same length, then obviously not palindrome.
-  var currentLetterMatch = false;
+var currentLetterMatch = false;
 
-  for (var i = 0; i < newPhrase.length; i++) {
-    if (newPhrase[i] === newReversePhrase[i]) {
-      currentLetterMatch = true;
-    } else {
-      currentLetterMatch = false;
-      console.log(`This string is not a palindrome.`);
-      break; //it works, but wasnt sure if a break inside an IF would break out of the parent loop. apparently it does :P
-    }
+for (var i = 0; i < newPhrase.length; i++) {
+  if (newPhrase[i] === newReversePhrase[i]) {
+    currentLetterMatch = true;
+  } else {
+    currentLetterMatch = false;
+    console.log(`This string is not a palindrome.`);
+    break; //it works, but wasnt sure if a break inside an IF would break out of the parent loop. apparently it does :P
   }
-  if (currentLetterMatch) {
-    //if the loop made it this far and currentMatch is still true, then it's a palindrome.
-    console.log(`This string is a palindrome!!!`);
-  }
-} else {
-  console.log(`This string is not a palindrome.`);
+}
+if (currentLetterMatch) {
+  //if the loop made it this far and currentMatch is still true, then it's a palindrome.
+  console.log(`This string is a palindrome!!!`);
 }
