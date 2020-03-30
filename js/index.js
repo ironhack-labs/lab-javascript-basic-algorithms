@@ -29,7 +29,7 @@ if (hacker1.length > hacker2.length) {
 let driverNameUpperCase = "";
 
 for (let i = 0; i < hacker1.length; i++) {
-  driverNameUpperCase += hacker1[i].toUpperCase();
+  driverNameUpperCase += hacker1[i].toUpperCase() + " ";
 }
 console.log(driverNameUpperCase);
 
@@ -90,3 +90,35 @@ for (let i = 0; i < lorem.length - 1; i++) {
 console.log(`This text contains the latin word "et" ${numEt} times`);
 
 // Bonus 2:
+
+let phraseToCheck = "Was it a car -- or a cat I saw?";
+
+j = phraseToCheck.length - 1;
+for (i = 0; i <= j; i++) {
+  if (j === i) console.log(`Your phrase "${phraseToCheck}" is a palindrome`);
+  while (
+    (phraseToCheck[i].toUpperCase() > "Z" ||
+      phraseToCheck[i].toUpperCase() < "A") &&
+    i < phraseToCheck.length - 1
+  ) {
+    i++;
+  }
+  while (
+    (phraseToCheck[j].toUpperCase() > "Z" ||
+      phraseToCheck[j].toUpperCase() < "A") &&
+    j > 0
+  ) {
+    j--;
+  }
+  if (
+    i === j ||
+    (i === j - 1 &&
+      phraseToCheck[i].toUpperCase() === phraseToCheck[j].toUpperCase())
+  )
+    console.log(`Your phrase "${phraseToCheck}" is a palindrome!`);
+  else if (phraseToCheck[i].toUpperCase() != phraseToCheck[j].toUpperCase()) {
+    console.log(`Your phrase "${phraseToCheck}" is not a palindrom`);
+    i = j + 1;
+  }
+  j--;
+}
