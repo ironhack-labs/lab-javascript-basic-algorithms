@@ -28,8 +28,10 @@ let order = driver.localeCompare(navigator);
 
 if (order == 1) {
     console.log(`${navigator}'s name goes first.`)
-} else if (order == 2) {
+}
+else if (order == 2) {
     console.log(`${driver}'s name goes first.`)
-} else {
+}
+else {
     console.log(`What?! You both have the same name?`)
 }
