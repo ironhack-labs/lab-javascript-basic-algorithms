@@ -54,7 +54,7 @@ for (x = 0; x < loremIpsum.length; x++) {
     }
 };
 console.log(`Number of Words: ${wordsCount + 1}`);
-//Shorter solution: console.log(`Words with Split ${loremIpsum.split(’ ’).length}`)
+//Shorter solution: console.log(`Words with Split ${loremIpsum.split(' ').length}`)
 
 const etNum = loremIpsum.match(/ et /gi);
 console.log(`'et' appears ${etNum.length} times in the test`);
@@ -67,10 +67,9 @@ let reversedDirectionPalindrome = "";
 for (let i = 0; i < palindrome.length; i++){
     if (palindrome[i] === "," || palindrome[i] === " " || palindrome[i] === "!" || palindrome[i] === "?"){
        continue;
-    } else {
-        rigthDirectionPalindrome += palindrome[i];
-        reversedDirectionPalindrome = palindrome[i] + reversedDirectionPalindrome;
-    }
+    } 
+    rigthDirectionPalindrome += palindrome[i];
+    reversedDirectionPalindrome = palindrome[i] + reversedDirectionPalindrome;
 }
 const lowerCasedRigthDirectionPalindrome = rigthDirectionPalindrome.toLowerCase();
 const lowerCasedReversedDirectionPalindrome = reversedDirectionPalindrome.toLowerCase();
