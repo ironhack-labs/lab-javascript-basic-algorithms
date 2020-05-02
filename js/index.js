@@ -26,13 +26,28 @@ if (hacker1.length > hacker2.length) {
 
   // Iteration 3.2
 
-  const hacker2Reverse = hacker2.split('').reverse().join('');
-  console.log(hacker2Reverse)
+  //Reverse with method
 
-   // Iteration 3.3
+  const hacker2ReverseMethod = hacker2.split('').reverse().join('');
+  console.log(hacker2ReverseMethod, "reverse1")
 
   
-   const str1 =  'The driver´s name goes first'
+
+  //Reverese with a for loop:
+
+  let hacker2Reverse = ''
+
+  for (let i = 1; i <= hacker2.length; i++) {
+      hacker2Reverse += hacker2[hacker2.length - i]
+  }
+
+  console.log(hacker2Reverse, 'reverse2')
+
+  // Iteration 3.3
+
+  // With a conditional:
+
+   const str1 = 'The driver´s name goes first'
    const str2 = 'Yo, the navigator goes first definitely'
    const str3 = 'What?! You both have the same name?'
 
@@ -46,6 +61,23 @@ if (hacker1.length > hacker2.length) {
      console.log(str1)
    }
 
+// With a Switch:
+
+hackerOrder = hacker1.localeCompare(hacker2)
+
+switch (hackerOrder) {
+  case -1:
+    console.log('The driver\'s name goes first.');
+    break;
+  case 1:
+    console.log('Yo, the navigator goes first definitely.');
+    break;
+  case 0:
+    console.log('What?! You both have the same name?');
+    break;
+}
+
+
 // Bonus 1:
 
 // Create a string with three paragraphs:
@@ -55,20 +87,62 @@ const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam di
 // Make tour program count the number of words in the string:
 
 const loremSplit = lorem.split(' ')
-console.log(loremSplit.length)
+console.log(loremSplit.length, 'method')
+
+// With a for loop:
+
+//This doesn't work if str has blank spaces but no words
+
+let words = 0
+
+if (lorem.length > 0) {
+  words = 1
+} 
+
+for (i = 0; i < lorem.length; i++)
+  if (lorem[i] === ' ' && lorem[i+1] != ' ') {
+    words ++
+  }
+
+console.log(words, 'for loop')
 
 //Make you program count the number of times the Latin word 'et' appears:
+
+//With a for loop:
+
 let acum = 0;
-/*
+
 for (let i = 0; i < loremSplit.length; i++) {
   if (loremSplit[i] === 'et' ) {
     acum++
   }
 }
-console.log(acum)*/
+console.log(acum, 'for loop')
+
+// With a filter method: 
+
  const filter = loremSplit.filter(j => j === 'et')
 
- console.log(filter.length)
+ console.log(filter.length, 'fiter method')
 
- 
-   
+ // Bonus 2:
+
+ function palindrome(str) {
+  const regEx = /[\W]/g;
+  const lowRegStr = str.toLowerCase().replace(regEx, '');
+  console.log(lowRegStr)
+  const reverseStr = lowRegStr.split('').reverse().join(''); 
+  console.log(reverseStr)
+
+  return reverseStr === lowRegStr?'It´s a palindrome':'Not a palindrome';
+}
+palindrome("A man, a plan, a canal. Panama");
+/*console.log(palindrome("Amor, Roma"))
+console.log(palindrome("race car"))
+console.log(palindrome("stack cats"))
+console.log(palindrome("step on no pets"))
+console.log(palindrome("taco cat"))
+console.log(palindrome("put it up"))
+console.log(palindrome("Was it a car or a cat I saw?"))
+console.log(palindrome("No 'x' in Nixon"))
+console.log(palindrome("No 'x' in Nixonsss"))*/
