@@ -30,6 +30,7 @@ function getAllCharacters(string) {
   console.log(characters);
 }
 
+// Iteration 3.1: Loops
 function getCharacterReverse(character) {
   let reversedName = '';
   for(let i = character.length - 1; i >= 0; i--) {
@@ -38,7 +39,7 @@ function getCharacterReverse(character) {
   console.log(reversedName);
 }
 
-//getAllCharacters(hacker1)
+getAllCharacters(hacker1)
 ​
-//getCharacterReverse(hacker1);
+getCharacterReverse(hacker1);
 
