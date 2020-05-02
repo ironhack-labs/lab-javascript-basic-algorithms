@@ -22,17 +22,26 @@ function longestName(){
 longestName();
 
 // Iteration 3: Loops
-
-let newName ='';
-for(let i = 0; hacker1.length>i; i++){
-  newName += hacker1[i].toUpperCase();
+// 3.1
+let newName = [];
+for (let i = 0; hacker1.length>i; i++) {
+  newName.push(hacker1[i].toUpperCase());
 }
-console.log(newName.split('').join(' '));
+console.log(newName.join(' '));
 
-
+//3.2
 let reverseOrderName ='';
-for(let i = hacker2.length-1; i>=0; i--){
-  //reverseOrderName += hacker2[i];
-  reverseOrderName += (hacker2[i])
+for (let i = hacker2.length-1; i>=0; i--) {
+  reverseOrderName += (hacker2[i]);
 }
 console.log(reverseOrderName);
+
+//3.3
+
+if (hacker1.localeCompare(hacker2) === -1) {
+  console.log('The driver\'s name goes first.');
+} else if (hacker1.localeCompare(hacker2) === 1) {
+  console.log('Yo, the navigator goes first definitely.');
+} else {
+  console.log('What?! You both have the same name?');
+}
