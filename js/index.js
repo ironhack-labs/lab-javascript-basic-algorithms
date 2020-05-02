@@ -30,13 +30,22 @@ function getAllCharacters(string) {
   console.log(characters);
 }
 
-// Iteration 3.1: Loops
+// Iteration 3.2: Loops
 function getCharacterReverse(character) {
   let reversedName = '';
   for(let i = character.length - 1; i >= 0; i--) {
     reversedName+= character.charAt(i);
   }
   console.log(reversedName);
+}
+
+// Iteration 3.3 Loops
+if (hacker2 > hacker1) {
+  console.log(`The driver's ${hacker2} goes first.`)
+} else if (hacker1 > hacker2) {
+  console.log(`Yo, the navigator ${hacker1} first definitely.`)
+} else {
+  console.log(`What?! You both have the same name?`)
 }
 
 getAllCharacters(hacker1)
