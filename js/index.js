@@ -1,3 +1,9 @@
+/* Mandatory exercises -
+- Names and Input
+- Conditionals
+- Loops
+*/
+
 // Iteration 1: Names and Input
 let hacker1 = "Frank";
 printMessage(`The driver's name is ${hacker1}`);
@@ -30,40 +36,36 @@ function decideLongerName(name1, name2) {
 }
 
 // Iteration 3: Loops
-function printNameInCapital(name){
-    let result = "";
-    for (let i=0;i<name.length;i++){
-        result += name[i].toUpperCase() + " ";
-    }
-    printMessage(`Name in capital is ${result}`);
-    return result;
+function printNameInCapital(name) {
+  let result = "";
+  for (let i = 0; i < name.length; i++) {
+    result += name[i].toUpperCase() + " ";
+  }
+  printMessage(`Name in capital is ${result}`);
+  return result;
 }
 
-function printNameInReverseOrder(name){
-    let result = "";
-    for(let i=name.length-1; i >= 0; i--){
-        result += name[i];
-    }
-    printMessage(`Name in reversed order of alphabets is ${result}`);
-    return result;
+function printNameInReverseOrder(name) {
+  let result = "";
+  for (let i = name.length - 1; i >= 0; i--) {
+    result += name[i];
+  }
+  printMessage(`Name in reversed order of alphabets is ${result}`);
+  return result;
 }
 
-function decideAlphabeticalOrder(name1, name2){
-    if(name1[0] === name2[0]){
-        printMessage(`What?! You both have the same name?`);
-    }
-    else if(name1[0] < name2[0]){
-        printMessage(`The driver's name goes first.`);
-    }
-    else{
-        printMessage('Yo, the navigator goes first definitely.');
-    }
+function decideAlphabeticalOrder(name1, name2) {
+  if (name1[0] === name2[0]) {
+    printMessage(`What?! You both have the same name?`);
+  } else if (name1[0] < name2[0]) {
+    printMessage(`The driver's name goes first.`);
+  } else {
+    printMessage("Yo, the navigator goes first definitely.");
+  }
 }
 
 /* Test samples */
-decideLongerName('Frank', 'Alex');
-printNameInCapital('Frank');
-printNameInReverseOrder('Alex');
-decideAlphabeticalOrder('Frank', 'Alex');
-
-
+decideLongerName("Frank", "Alex");
+printNameInCapital("Frank");
+printNameInReverseOrder("Alex");
+decideAlphabeticalOrder("Frank", "Alex");
