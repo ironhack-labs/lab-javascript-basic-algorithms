@@ -80,22 +80,26 @@ Curabitur vulputate, sem in ullamcorper laoreet, neque augue facilisis lacus, ut
 
 // Make your program count the number of words in the string
 function countNumberOfWords(string){
-    // There is always one more word than space
+    // There is always one more word than space, initalizing at 1
     let counter = 1;
-    if (string[string.length-1] <= 'A'){
-        counter --;
-    }
     for (let i=0; i<string.length; i++){
-        if (string[i] <= 'A' || string[i] === '\n'){
+        // Add 1 to counter if there is a character not in the alphabet
+        if (string[i] <= 'A'){
             counter ++;
         }
-        if ((string[i] <= 'A' && string[i+1] <= 'A')){
+        // Remove 1 to counter if there are two characters not in the alphabet in a raw
+        if ((string[i] <= 'A' && string[i-1] <= 'A')){
             counter --;
         }
+    }
+    // Remove 1 to counter if there is a point (or any other character) at the end of the text
+    if (string[string.length-1] <= 'A'){
+        counter --;
     }
     
     console.log(counter);
 }
+
 
 countNumberOfWords(paragraphs);
 
@@ -103,6 +107,7 @@ countNumberOfWords(paragraphs);
 function countSpecificWord(string){
     let counter = 0;
     for (let i=0; i<string.length; i++){
+        // Checking for "non letter" before and after the 'et' to make sure it is not part of another word
         if(string[i] === 'e' && string[i+1] === 't' && string[i-1] <= 'A' && string[i+2] <= 'A'){
             counter ++;
         }
