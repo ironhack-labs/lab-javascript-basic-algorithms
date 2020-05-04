@@ -50,16 +50,16 @@ if (hacker1[0] < hacker2[0]){
 }
 
 // OR WHOLE STRING IN ORDER
-// let lexicoOutcome = hacker1.localeCompare(hacker2);
-// console.log(lexicoOutcome);
+let lexicoOutcome = hacker1.localeCompare(hacker2);
+console.log(lexicoOutcome);
 
-// if (lexicoOutcome === -1){
-//     console.log("The driver's name goes first.");
-// } else if (lexicoOutcome === 1){
-//     console.log("Yo, the navigator goes first definitely.");
-// } else if (lexicoOutcome === 0){
-//     console.log("What?! You both have the same name?");
-// }
+if (lexicoOutcome === -1){
+    console.log("The driver's name goes first.");
+} else if (lexicoOutcome === 1){
+    console.log("Yo, the navigator goes first definitely.");
+} else if (lexicoOutcome === 0){
+    console.log("What?! You both have the same name?");
+}
 
 
 // Bonus Time
