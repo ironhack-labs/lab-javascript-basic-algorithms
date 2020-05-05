@@ -64,12 +64,10 @@ if (hacker1[0] < hacker2[0]) {
 //      "put it up"
 //      "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
-let sanitizedString = "";
-let reversedSanitizedString = "";
-
 // Function to Sanitize the string
 function sanitizeString(parameter){
     let toLowerCaseValues = parameter.toLowerCase();
+    let sanitizedString = "";
     for (let i = 0; i < parameter.length; i++) {
         if (toLowerCaseValues[i] <= "z" && toLowerCaseValues[i] >= "a") {
             sanitizedString += toLowerCaseValues[i];
@@ -80,7 +78,7 @@ function sanitizeString(parameter){
 
 // Function to Reverse the string
 function reverseTheString(parameter){
-    let reversedString = "";
+    let reversedSanitizedString = "";
     for (let i = parameter.length - 1; i >= 0; i--) {
         reversedSanitizedString += parameter[i];
     }
@@ -88,16 +86,15 @@ function reverseTheString(parameter){
 }
 
 // Function to check if the string is a Palindrome
-function checkIfPalindrome(parameter1, parameter2) {
-    if (parameter1 === parameter2) {
+function checkIfPalindrome(parameter1) {
+    if (reverseTheString(parameter1) === sanitizeString(parameter1)) {
         console.log(`The word "${parameter1}" is a Palindrome.`);
     } else {
         console.log(`The word "${parameter1}" is not a Palindrome.`);
     }
 }
-sanitizeString("test");
-reverseTheString(sanitizedString);
-checkIfPalindrome(sanitizedString, reversedSanitizedString);
+checkIfPalindrome("Anna");
+checkIfPalindrome("Nardo");
 
 
 // 10. Go to lorem ipsum generator and:
