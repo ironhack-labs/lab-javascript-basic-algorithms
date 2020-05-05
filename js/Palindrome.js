@@ -41,11 +41,10 @@ function reverseString(inputString) {
 
 //Checks whether a string is palindrome or not
 function checkPalindrome(text) {
-  let plainText = getStringWithoutSpecialChars(text.replace(" ", ""));
-
+  let lowerCaseText = text.replace(" ", "").toLowerCase();
+  let plainText = getStringWithoutSpecialChars(lowerCaseText);
   let reversedString = reverseString(plainText);
-
-  if (text.localeCompare(reversedString)) {
+  if (plainText===reversedString) {
     console.log("Yes, It is palindrome!" + " " + text);
   } else {
     console.log("Oh, not a palindrome one!" + " " + text);
