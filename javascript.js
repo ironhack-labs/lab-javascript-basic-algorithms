@@ -29,16 +29,17 @@ console.log(`the reverce name is ` ,reverceName)
 
 //Bonus 1
 function wordsCount(text) {
-var result = 0;
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] !== " ") {
-        result += text[i].length
-    }  
+    result = 0;
+    result1 = 0;
+  for (let i = 0; i < text.length; i++) { 
+      result = text.split(" ").length 
+      result1 = text.split("et").length-1
+return console.log(`the number of words is ` ,result, `and the number of times of latin words is ` ,result1)
 }
-return result
 }
-console.log(wordsCount("Lorem Ipsum is"))
+console.log(wordsCount("Lorm Ipsum is helllo et et et"))
 //Bonus 2
+//polindrome
 function cleanInput(someString) {
     var cleanString = " ";
        for ( let i = 0; i < someString.length; i++) {
