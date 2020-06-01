@@ -13,7 +13,7 @@ if(hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names ${hacker2.length} characters. `);
   }
 
-// Iteration 3: Loops
+// Iteration 3: Loops .
 let spaceDriver = " ";
 let driverUpperCase = hacker1.toUpperCase();
 for(i=0; hacker1.length > i; i++){
