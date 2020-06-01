@@ -42,7 +42,6 @@ Praesent tincidunt turpis ipsum, tincidunt suscipit nisl sollicitudin non. Etiam
 Vestibulum sodales turpis quis dolor finibus elementum in et quam. Cras dapibus venenatis felis, vitae posuere risus. Suspendisse vehicula nisl vel dolor gravida, sit amet fringilla ligula varius. Maecenas dui massa, interdum et risus et, ullamcorper consectetur libero. Donec sed ex semper, ullamcorper massa eget, egestas tortor. Etiam euismod, mauris in imperdiet pulvinar, arcu mauris luctus odio, a pharetra sapien sem in tellus. Duis placerat, nulla a tristique sagittis, velit lorem ornare neque, ac eleifend lectus sapien vitae nisl. Praesent sed hendrerit velit. In feugiat dolor eget odio feugiat, eu feugiat justo eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`;
 let removeWhiteSpaces = text.split(/\s+/);
 console.log(`The text contains ${removeWhiteSpaces.length} words.`);
-let count = 0;
 let editedText = text.toLowerCase().replace(/[^A-Z0-9]/ig, " ");;
 let words = editedText.split(' ');
 let wordCount = 0;
