@@ -43,8 +43,8 @@ Vestibulum sodales turpis quis dolor finibus elementum in et quam. Cras dapibus 
 let removeWhiteSpaces = text.split(/\s+/);
 console.log(`The text contains ${removeWhiteSpaces.length} words.`);
 let count = 0;
-let lowerCaseCleanedText = text.toLowerCase().replace(/[^A-Z0-9]/ig, " ");;
-let words = lowerCaseCleanedText.split(' ');
+let editedText = text.toLowerCase().replace(/[^A-Z0-9]/ig, " ");;
+let words = editedText.split(' ');
 let wordCount = 0;
 for (let i=0; i<words.length; i++) {
     if (words[i] === 'et') {
