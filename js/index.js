@@ -38,15 +38,16 @@ if(hacker1.charAt(0)<hacker2.charAt(0)){
 let text=`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum ut tristique et egestas. Dui nunc mattis enim ut tellus. Non consectetur a erat nam at lectus urna. Pretium quam vulputate dignissim suspendisse in est ante. Nec feugiat nisl pretium fusce id velit ut tortor pretium. Arcu vitae elementum curabitur vitae. Ac turpis egestas sed tempus. Mattis nunc sed blandit libero. Tincidunt tortor aliquam nulla facilisi. Viverra aliquet eget sit amet tellus. Et ligula ullamcorper malesuada proin libero. Vulputate dignissim suspendisse in est ante in nibh. Purus in massa tempor nec feugiat nisl pretium fusce id. Sagittis id consectetur purus ut faucibus. Mattis aliquam faucibus purus in massa tempor. Nec tincidunt praesent semper feugiat nibh. Orci a scelerisque purus semper eget duis at tellus.
 Praesent semper feugiat nibh sed pulvinar. Ut pharetra sit amet aliquam id. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Eget felis eget nunc lobortis mattis aliquam faucibus. Nunc aliquet bibendum enim facilisis. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Dignissim enim sit amet venenatis urna cursus eget. Nunc mattis enim ut tellus elementum. Augue eget arcu dictum varius duis at consectetur lorem donec. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Etiam non quam lacus suspendisse faucibus interdum posuere. Mauris rhoncus aenean vel elit scelerisque. Ac odio tempor orci dapibus ultrices in iaculis. Integer eget aliquet nibh praesent tristique magna sit amet purus. Diam sit amet nisl suscipit adipiscing. Neque ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Dictum sit amet justo donec enim diam vulputate ut. Praesent semper feugiat nibh sed pulvinar proin gravida. Tempor orci dapibus ultrices in iaculis nunc.
 Orci eu lobortis elementum nibh tellus molestie nunc non. Tellus molestie nunc non blandit massa enim nec dui nunc. At elementum eu facilisis sed odio. Ullamcorper malesuada proin libero nunc. Leo urna molestie at elementum eu facilisis. Adipiscing elit pellentesque habitant morbi tristique senectus et. Sodales ut eu sem integer vitae justo eget. Interdum velit laoreet id donec. Urna et pharetra pharetra massa massa. Nisi est sit amet facilisis magna etiam tempor orci eu. Suspendisse in est ante in nibh mauris. A diam sollicitudin tempor id. Potenti nullam ac tortor vitae. Felis donec et odio pellentesque diam volutpat commodo sed egestas.`
-
+let howManyWords=text.split(' ').length;
+console.log(howManyWords);
 let howManyTimes=text.match(/et/gi).length;
 console.log(howManyTimes);
 
 //bonus  2
-let phraseToCheck='lili3';
+let phraseToCheck="stack,cats";
 
 function checkMe(phraseToCheck){
-    let reversedPhrase=phraseToCheck.split('').reverse().join('');
+    let reversedPhrase=phraseToCheck.split(' ').reverse().join('');
     if(phraseToCheck===reversedPhrase){
         console.log('this is a palindrome')
     }else{
