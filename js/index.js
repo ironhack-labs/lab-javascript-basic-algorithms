@@ -44,11 +44,15 @@ let howManyTimes=text.match(/et/gi).length;
 console.log(howManyTimes);
 
 //bonus  2
-let phraseToCheck="stack,cats";
-
+let phraseToCheck="Amor, Romaa";
 function checkMe(phraseToCheck){
-    let reversedPhrase=phraseToCheck.split(' ').reverse().join('');
-    if(phraseToCheck===reversedPhrase){
+    let manipulatedPhrase=phraseToCheck.split(/\s/&&/\W/).join('').toLowerCase();
+    console.log(manipulatedPhrase)
+    let reversedPhrase=phraseToCheck.split(/\s/&&/\W/).join('').split('').reverse().join('').toLowerCase();
+    console.log(reversedPhrase);
+
+    if(manipulatedPhrase
+        ===reversedPhrase){
         console.log('this is a palindrome')
     }else{
         console.log('this is not a palindrome')
