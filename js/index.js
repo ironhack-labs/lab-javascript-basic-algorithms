@@ -69,12 +69,17 @@ console.log(numOfWords + numOfParagraphs); // it's missing 3 cause of the three 
 
 let numOfEts = 0;
 for (let i = 0; i < loremIpsum.length; i++) {
-  if (loremIpsum[i] == "e") {
-    if (loremIpsum[i+1] == "t")
-    numOfEts += 1; 
+  if (loremIpsum[i] == " ") {
+    if (loremIpsum[i+1] == "e") {
+      if (loremIpsum[i+2] == "t") {
+        if (loremIpsum[i+3] == " ") {
+         numOfEts += 1; 
+        }
+      }
+    }   
   }
 }
-console.log(numOfEts); // idk how to check if this is right 
+console.log(numOfEts); // idk how to check if this is right + i'm sure this is a very stupid way to solve this but...
 
 
 
