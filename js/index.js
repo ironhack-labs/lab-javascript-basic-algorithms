@@ -43,12 +43,15 @@ Vestibulum sodales turpis quis dolor finibus elementum in et quam. Cras dapibus 
 let removeWhiteSpaces = text.split(/\s+/);
 console.log(`The text contains ${removeWhiteSpaces.length} words.`);
 let count = 0;
-let lowerCaseText = text.toLowerCase();
-while (lowerCaseText.includes('et')) {
-    lowerCaseText = lowerCaseText.slice(lowerCaseText.indexOf('et') + 1);
-    count = count +1;
+let lowerCaseCleanedText = text.toLowerCase().replace(/[^A-Z0-9]/ig, " ");;
+let words = lowerCaseCleanedText.split(' ');
+let wordCount = 0;
+for (let i=0; i<words.length; i++) {
+    if (words[i] === 'et') {
+        wordCount++;
+    }
 }
-console.log(`The Latin word "et" appeared ${count} times in the text.`);
+console.log(`The Latin word "et" appeared ${wordCount} times in the text.`);
 // Bonus 2
 let phraseToCheck = 'Was it a car or a cat I saw?';
 let isPalindrome = true;
