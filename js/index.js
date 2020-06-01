@@ -31,7 +31,7 @@ const nameToArray = hacker2.split('');
 console.log(nameToArray.reverse().toString());
 const arrayNames = [hacker1, hacker2];
 arrayNames.sort()
-console.log("arrayNames", arrayNames)
+
 if (arrayNames[0] === arrayNames[1])
     console.log(`What?! You both have the same name?`);
 else if (arrayNames[0] === hacker2)
@@ -63,13 +63,15 @@ const wordCount = (text) => text.split(" ").length;
 console.log(`Text contains ${wordCount(textParagraph)} words!`)
 
 
-//Function find word et
+//Function find word et in text
 const findWordEt = (text) => text
     .split(" ")
     .filter((word) => word === "et")
     .length
 
 // Bonus -> 2
+
+// Array contains strings to check 
 const phraseToCheck = [
     "A man, a plan, a canal, Panama!",
     "Amor, Roma",
@@ -83,14 +85,14 @@ const phraseToCheck = [
     "Other thing"
 ];
 
-
+// Verify if is Palindrome an return true or false
 function isPalindrome(text) {
     const textFormated = text.toLowerCase().replace(/[\W_]/g, '')
     const reversedText = textFormated.split('').reverse().join('')
     return reversedText == textFormated
 }
 
-
+// iterate array and verify element is palindrome with isPalindrome function
 phraseToCheck.map((element) => {
     isPalindrome(element)
     console.log('Is palindrome', isPalindrome(element))
