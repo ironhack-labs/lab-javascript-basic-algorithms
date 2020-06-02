@@ -16,7 +16,7 @@ if (hacker1.length > hacker2.length) {
   } else if (hacker2.length > hacker1.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`) 
   } else {
-    console.log(`Wow, you both have equally long names, ${hacker1} characters!`)
+    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 };
   
 
@@ -68,19 +68,14 @@ for (let i = 0; i < loremIpsum.length; i++) {
 console.log(numOfWords + numOfParagraphs); // it's missing 3 cause of the three paragraphs that don't have a " " after the final words...
 
 let numOfEts = 0;
+let etsLower = loremIpsum.toLowerCase();
+let etWords = etsLower.split(" ")
 for (let i = 0; i < loremIpsum.length; i++) {
-  if (loremIpsum[i] == " ") {
-    if (loremIpsum[i+1] == "e") {
-      if (loremIpsum[i+2] == "t") {
-        if (loremIpsum[i+3] == " ") {
-         numOfEts += 1; 
-        }
-      }
-    }   
-  }
+ if (etWords[i] === "et"){
+      numOfEts++;
+ }
 }
-console.log(numOfEts); // idk how to check if this is right + i'm sure this is a very stupid way to solve this but...
-
+console.log(`The Latin word "et" appeared ${numOfEts} times in the text.`);
 
 
 
