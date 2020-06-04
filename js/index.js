@@ -50,16 +50,25 @@ Sed venenatis sed ex et malesuada. Pellentesque faucibus lobortis nulla eget tin
 
 Phasellus tristique id mi non tempus. Integer vel mi est. Nullam a mauris eget turpis pretium euismod. In hac habitasse platea dictumst. Duis accumsan diam eu auctor egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porttitor, urna sed euismod tincidunt, turpis eros iaculis velit, at dictum mi purus in quam. Pellentesque bibendum dolor molestie blandit consectetur. Nunc nec enim id nisl varius vulputate vehicula vulputate nisl. Cras placerat nisl et lobortis consequat. Nunc et augue quis metus vestibulum porta.`
 
-wordsCount = 0
+let words = lorem.split(" ");
+let cleanArrayWords = [];
 
-for( i=0 ; i <= lorem.length ; i++){
-  if (lorem[i] === " "){
-    wordsCount += 1;
-  }//adds 1 to the counter if it finds a space in the text. since at the end of each paragraph there's not a space, it's not couting those words
-} 
-wordsCount += 3; //one per paragraph so to include the missing words
+for (let i=0 ; i<words.length ; i++){ //loop that iterates through the words array
+  if(words[i].includes("\n\n")){ //if the words array contains an enter that continues in the next line
+    let internalWords = words[i].split("\n\n"); //new variable declaration that contains an array in which the enter words will be divided
+    for(let j=0 ; j<internalWords.length ; j++){
+      if(internalWords[j]==="//"){ //conditional to clean the // at the beginning of a paragraph
+        continue;
+      } else{
+      cleanArrayWords.push(internalWords[j]); //add the words to the array that will be used to count the words
+      }
+    }
+  } else{
+  cleanArrayWords.push(words[i]); // add the remaining words to the array
+  }}
 
-console.log(wordsCount);
+// console.log(cleanArrayWords);
+console.log(cleanArrayWords.length);
 
 // Bonus 2
 //Palindrome checker
