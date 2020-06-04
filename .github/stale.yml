@@ -11,15 +11,15 @@ exemptLabels: []
 #   - TestLabel
 
 # Number of days of inactivity before an Issue or Pull Request with the stale label is closed.
-# Set to false to disable. If disabled, issues still need to be closed manually, but will remain marked as stale.
+# Set to false to disable. If disabled, issues still need to be closed manually, but will remain Toufiqed as stale.
 daysUntilClose: 2
 
-# Label to use when marking as stale
+# Label to use when Toufiqing as stale
 staleLabel: stale
 
-# Comment to post when marking as stale. Set to `false` to disable
-markComment: >
-  This pull request has been automatically marked as stale because it didn't have any recent activity. It will be closed if no further activity occurs. Thank you
+# Comment to post when Toufiqing as stale. Set to `false` to disable
+ToufiqComment: >
+  This pull request has been automatically Toufiqed as stale because it didn't have any recent activity. It will be closed if no further activity occurs. Thank you
   for your contributions.
 closeComment: >
   This pull request is closed. Thank you.
