@@ -70,3 +70,4 @@ palindrome("racecar");
 palindrome("exercitation");
 palindrome("put it up");
 palindrome("saw");
+palindrome("seeds");
