@@ -56,7 +56,7 @@ console.log(`The three lorem paragraths contained ${wordCount(lorem)} words.`);
 
 function etCount(quote) {
     var count = 0;
-    quote = quote.replace(/,/gi, "");
+    quote = quote.replace(/,/gi, ""); //stack overflow solution for targeting beyond the first instance
     quote = quote.replace(/./gi, "");
     var quoteArry = quote.split(" ");
 
@@ -68,6 +68,15 @@ function etCount(quote) {
     return (count);
 }
 console.log(`The word "et" appeared ${etCount(lorem)} times.`);
+console.log("------------------------------");
 
 //Bonus #2
+var phraseToCheck = "A man, a plan, a canal, Panama!";
+
+function isPalindrome(phrase) {
+    phrase = phrase.replace(/\W/g, ''); //found this solution on stack overflow for targeting all non alphanumeric characters
+    let reversePhrase = reverseStr(phrase);
+    return (reversePhrase.toLowerCase() === phrase.toLowerCase())
+}
+console.log(`The phrase: "${phraseToCheck}". ${isPalindrome(phraseToCheck) ? "Is" : "Is not"} a palindrome.`);
 
