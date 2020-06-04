@@ -31,7 +31,8 @@ function reverseStr(str) {
     }
     return reverseArry;
 }
-console.log(reverseStr(hacker2) + "");
+console.log(reverseStr(hacker2));
+
 console.log("------------------------------");
 
 //3.3 lexicographical order
@@ -46,37 +47,40 @@ var lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
 
 Etiam tempor, dui at blandit mattis, eros nulla porttitor justo, eu tempus diam massa id odio. Fusce lorem quam, bibendum ut justo vitae, posuere hendrerit erat. Curabitur tempus eu tellus nec bibendum. Vivamus in porta magna. In sagittis felis a nisi luctus, vel sodales dolor lacinia. Ut ac tristique metus, viverra sodales leo. Mauris pulvinar arcu ac nulla mollis, quis euismod nunc interdum. Suspendisse convallis efficitur tellus quis euismod. Sed eu urna ut velit tempus consectetur. Etiam orci felis, placerat vel nulla at, malesuada mattis quam. Nunc mauris urna, suscipit in efficitur ut, porta a tortor. Nulla lacinia accumsan fermentum. Quisque lectus leo, tincidunt in porta vel, commodo eu sapien. Ut maximus ex non porttitor condimentum. Integer porta magna lorem, a dictum eros lacinia a. Phasellus eu elementum urna.
 
-In id molestie lacus, sit amet rhoncus velit. Ut turpis odio, accumsan at lectus sit amet, rhoncus pharetra neque. Vivamus vel imperdiet tellus. Donec vitae enim sed magna pulvinar scelerisque a sed dolor. Aenean eleifend mi justo, non sodales velit semper sit amet. Donec aliquet faucibus neque, a iaculis arcu efficitur eget. Nulla vitae vestibulum nunc, id viverra nibh. Sed molestie lectus magna, semper vulputate felis semper nec.`
+In id molestie lacus, sit amet rhoncus velit. Et turpis odio, accumsan at lectus sit amet, rhoncus pharetra neque. Vivamus vel imperdiet tellus. Donec vitae enim sed magna pulvinar scelerisque a sed dolor. Aenean eleifend mi justo, non sodales velit semper sit amet. Donec aliquet faucibus neque, a iaculis arcu efficitur eget. Nulla vitae vestibulum nunc, id viverra nibh. Sed molestie lectus magna, semper vulputate felis semper nec.`
 
+//word count of the lorem paragraphs
 function wordCount(quote) {
     var quoteArry = quote.split(" ");
     return (quoteArry.length);
 }
 console.log(`The three lorem paragraths contained ${wordCount(lorem)} words.`);
 
+// "et" count in lorem paragraphs
 function etCount(quote) {
-    var count = 0;
-    quote = quote.replace(/,/gi, ""); //stack overflow solution for targeting beyond the first instance
-    quote = quote.replace(/./gi, "");
-    var quoteArry = quote.split(" ");
+    let count = 0;
 
-    for (let i = 0; i < quoteArry.length - 1; i++) {
-        if (quoteArry[i] === "et") {
-            count += 1;
-        }
+    let newQuote
+    for (let char of quote) {
+        if (char === "," || char === ".") char = "";
+        newQuote += char.toLowerCase();
     }
+
+    let newQuoteArry = newQuote.split(" ");
+
+    for (let word of newQuoteArry) {if (word === "et") count += 1}
     return (count);
 }
 console.log(`The word "et" appeared ${etCount(lorem)} times.`);
+
 console.log("------------------------------");
 
 //Bonus #2
-var phraseToCheck = "A man, a plan, a canal, Panama!";
+let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 function isPalindrome(phrase) {
-    phrase = phrase.replace(/\W/g, ''); //found this solution on stack overflow for targeting all non alphanumeric characters
+    phrase = phrase.replace(/\W/g, ''); // /\w/ targets all non "word" characters and "g" allows for a glodal search throughout the string.
     let reversePhrase = reverseStr(phrase);
     return (reversePhrase.toLowerCase() === phrase.toLowerCase())
 }
 console.log(`The phrase: "${phraseToCheck}". ${isPalindrome(phraseToCheck) ? "Is" : "Is not"} a palindrome.`);
-
