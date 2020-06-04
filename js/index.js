@@ -20,3 +20,8 @@ if(hacker1.length > hacker2.length){
   }
 
 // Iteration 3: Loops
+
+let newName = "";
+for (let i = 0; hacker1.charAt(i); i++) {
+  newName = newName + hacker1[i].toUpperCase() + " ";
+}
