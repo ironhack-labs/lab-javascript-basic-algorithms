@@ -18,3 +18,17 @@ if (hacker1.length === hacker2.length){
   }
 
 // Iteration 3: Loops
+//Iteration 3.1
+let driverName = '';
+let navName = '';
+
+for(let char of hacker1){
+  char += ' ', driverName += char.toUpperCase();
+}
+console.log(driverName)
+
+//Iteration 3.2
+for(let char of hacker2){
+  char += ' ', navName += char.toUpperCase();
+}
+console.log(navName)
