@@ -25,3 +25,13 @@ let newName = "";
 for (let i = 0; hacker1.charAt(i); i++) {
   newName = newName + hacker1[i].toUpperCase() + " ";
 }
+
+console.log(hacker2.split('').reverse().join(''));
+
+if (hacker1.localeCompare(hacker2)) {
+    console.log("Yo, the navigator goes first definitely.");
+  } else if (hacker2.localeCompare(hacker1)) {
+    console.log("The driver's name goes first.")
+  } else {
+    console.log("What?! You both have the same name?");
+  }
