@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
 
-const hacker1 = "Arianna";
+let hacker1 = "Arianna";
 console.log(`The driver's name is ${hacker1}`);
-const hacker2 = "Banana";
+let hacker2 = "Banana";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -37,6 +37,8 @@ for (let i = hacker2.length-1; i>=0; i--) {
 console.log(backwardsName);
 
 
+hacker1 = hacker1.toLowerCase();
+hacker2 = hacker2.toLowerCase();
 if (hacker1 === hacker2) {
 	console.log("What?! You both have the same name?");
 } else {
