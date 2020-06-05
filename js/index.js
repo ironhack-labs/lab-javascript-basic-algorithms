@@ -55,3 +55,14 @@ let result1 = "";
   console.log('le nombre totale des mots est: ' +numberOfWord );
   let numberOfLatinWord= wordCount(text, ' et ')-1;
   console.log('le nombre de fois oû on trouve le mot latin "et" est:'+ numberOfLatinWord);
+  // bonus 2
+  function checkPalindrom (str) {
+    return str == str.split('').reverse().join('');
+  }
+  let textToCheck="step on no pets"
+  if (checkPalindrom(textToCheck)){
+    console.log(` ${textToCheck} is palindron `);
+  }
+    else {
+      console.log(`${textToCheck} is not palindrom`);
+    }
