@@ -43,16 +43,7 @@ console.log(str); // "N I N A"
 
 //3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 
-function reverseInPlace(str) {
-  var words = [];
-  words = str.match(/\S+/g);
-  var result = "";
-  for (var i = 0; i < words.length; i++) {
-    result += words[i].split("").reverse().join("") + " ";
-  }
-  return result;
-}
-console.log(reverseInPlace(hacker2)); // eninE
+console.log(hacker2.split("").reverse().join("")); // eninE
 
 //3.3 Depending on the lexicographic order of the strings, print:
 //- The driver's name goes first.
