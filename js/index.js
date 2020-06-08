@@ -58,3 +58,24 @@ for (const word of text.split(' ')) {
 
 console.log(`Words: ${wordCount}`)
 console.log(`etCount: ${etCount}`)
+
+//Bonus 2
+
+let phraseToCheck = "No 'x' in Nixon"
+
+phraseToCheck = phraseToCheck.replace(/\W|_/g, '').toLowerCase()
+console.log(phraseToCheck)
+
+let reversedWord = ""
+
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  reversedWord = reversedWord + phraseToCheck[i]
+}
+
+if (reversedWord == phraseToCheck) {
+  console.log("Word is a palindrome!")
+}
+
+else {
+  console.log("Not a palindrome")
+}
