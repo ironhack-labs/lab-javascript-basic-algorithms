@@ -8,7 +8,7 @@
 let hacker1 = "Rachel"
 
 // let hacker1 = prompt("Hacker #1 what is your name?") 
-// hacker1 = hacker1[0].toUpperCase() + hacker1.substring(1)
+// hacker1 = hacker1[0].toUpperCase() + hacker1.substring(1).toLowerCase()
 
 console.log(`The driver's name is ${hacker1}`)
 
@@ -16,8 +16,8 @@ console.log(`The driver's name is ${hacker1}`)
 let hacker2 = "Allie"
 
 // let hacker2 = prompt("Hacker #2 what is your name?")
-//hacker2 = hacker2[0].toUpperCase() + hacker2.substring(1)
-
+//hacker2 = hacker2[0].toUpperCase() + hacker2.substring(1).toLowerCase()
+toLowerCase()
 console.log(`The navigator's name is ${hacker2}`)
 
 
