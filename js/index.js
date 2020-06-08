@@ -54,3 +54,21 @@ for (let i = 0; i < loremArr.length; i++){
   }
 }
 console.log("Et appears " + count + " times.");
+
+// Bonus 2
+var phraseToCheck = "race car";
+var cleanedPhrase = phraseToCheck.replace(/[^a-z0-9+]+/gi, '');
+var isPalindrome = true;
+console.log(cleanedPhrase);
+for (let i = 0; i < cleanedPhrase.length; i++){
+  if (cleanedPhrase[i] != cleanedPhrase[cleanedPhrase.length - 1 - i]){
+    isPalindrome = false;
+    break;
+  }
+}
+if (isPalindrome){
+  console.log(phraseToCheck + " is a palindrome");
+}
+else {
+  console.log(phraseToCheck + " is not a palindrome");
+}
