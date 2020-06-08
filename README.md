@@ -21,7 +21,7 @@ Ready to start?
 - Clone this repo
 - Go to [repl.it](https://repl.it/languages/nodejs) and create an account (or login if you have one)
 - Type this in the *Code Editor* (left panel)
-
+  
   ```javascript
   console.log("I'm ready!");
   ```
@@ -43,7 +43,7 @@ $ git push origin master
 ```
 Create Pull Request so your TAs can check up your work.
 
-_You should make a PR (stands for Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it._
+_You should make a PR (stands for Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.
 
 <!-- ## Submission -->
 
