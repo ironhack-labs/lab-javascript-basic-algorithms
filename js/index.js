@@ -6,5 +6,5 @@ console.log(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
 
-
+console.log('test')
 // Iteration 3: Loops
