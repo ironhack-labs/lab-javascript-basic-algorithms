@@ -1,335 +1,231 @@
-function print(...param){
-  console.log(...param)
-}
-
+// https://repl.it/@rbfcccf8426/LAB-basic-algorithms2020 //use prompts & see full coding process
 
 // Iteration 1: Names and Input
-// 1.1 Create a variable `hacker1` with the driver's name.
-//let hacker1 = "Rachel"
 
-// 1.2 Print `"The driver's name is XXXX"`.
+/// uncomment prompts to see what I tired. just messing around with HTML...don't really know what I'm doing.. I'm def not repl.it!...There I use prompts for all
 
-// 1.3 Create a variable `hacker2` with the navigator's name.
+//for  VSC
+let hacker1 = "Rachel"
 
-// 1.4 Print `"The navigator's name is YYYY"`.
+// let hacker1 = prompt("Hacker #1 what is your name?") 
+// hacker1 = hacker1[0].toUpperCase() + hacker1.substring(1)
+
+console.log(`The driver's name is ${hacker1}`)
+
+//for VSC
+let hacker2 = "Allie"
+
+// let hacker2 = prompt("Hacker #2 what is your name?")
+//hacker2 = hacker2[0].toUpperCase() + hacker2.substring(1)
+
+console.log(`The navigator's name is ${hacker2}`)
+
 
 // Iteration 2: Conditionals
+if(hacker1.length > hacker2.length){
+  console.log(`The Driver has the longest name, it has ${hacker1.length} characters `);
+  } else if(hacker2.length > hacker1.length){
+    console.log(`Yo, navigator got the longest name, it has ${hacker2.length} characters`);
+  } else if(hacker1.length===hacker2.length){
+    console.log(`Wow, you both got equally long names, ${hacker1.length} characters`)
+  } else {
+    console.log("?????")
+  }
 
-// 2.1. Depending on which name is longer, print:
-// - The driver has the longest name, it has XX characters. or
-// - It seems that the navigator has the longest name, it has XX characters. or
-// - Wow, you both have equally long names, XX characters!.
+
+////or this quick mess//  
+// hacker1.length > hacker2.length ? console.log(`The Driver has the longest name, it has ${hacker1.length} characters `) : hacker1.length < hacker2.length ? console.log(`Yo, navigator got the longest name, it has ${hacker2.length} characters`) : console.log(`Wow, you both got equally long names, ${hacker1.length} characters`)
+
 
 // Iteration 3: Loops
 
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 
+let upperCaseName = ""
+for(let i = 0; i < hacker1.length; i++ ){
+  upperCaseName += `${hacker1[i]} `.toUpperCase()
+}
+ console.log(upperCaseName)
+
+
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 
+let backwardsName = ""
+for(let i = hacker2.length-1; i >= 0; i--){
+  backwardsName += hacker2[i]
+}
+  console.log(backwardsName)
+
 // 3.3 Depending on the lexicographic order of the strings, print:
-// - The driver's name goes first.
-// - Yo, the navigator goes first definitely.
-// - What?! You both have the same name?
+
+//using .localeCompare()
+if(hacker1.localeCompare(hacker2) === -1) console.log(`${hacker1} goes first.`) 
+if(hacker1.localeCompare(hacker2) === 1) console.log(`Yo, ${hacker2} goes first definitely..`)
+if(hacker1.localeCompare(hacker2) === 0) console.log("What?! You both have the same name?") 
+
+// or //
+// if(hacker1 < hacker2) console.log(`${hacker1} goes first.`) 
+// if(hacker1 > hacker2) console.log(`Yo, ${hacker2} goes first definitely..`)
+// if(hacker1 === hacker2) console.log("What?! You both have the same name?")
 
 
-// Bonus 1:
-// Go to lorem ipsum generator and:
 
+
+
+
+
+
+// BONUSES 
+// (hardcoded answers change manually paragraph# to check.. am aware multiple copies scope will mess up answers 😬 or see repl.it link above)
+
+// Bonus 1: LOREM IPSUM 
+
+// bonus 1.1
 // Generate 3 paragraphs. Store the text in a variable type of string.
 
 let lorem1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin erat non nunc sodales porttitor. Donec et ante commodo, gravida massa sed, rutrum tellus. Pellentesque efficitur, sem ut condimentum consectetur, metus dolor auctor tortor, et."
-//Generated 1 paragraph, 35 words  et = 2
+
 
 let lorem2 ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum rutrum arcu ac elit pellentesque, eget tempus orci dictum. Fusce ultricies eu leo non congue."
-//Generated 1 paragraph, 24 words et = 0
+
 
 let lorem3 ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum tincidunt dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur vulputate lectus euismod eros posuere, a dignissim risus tempus. Suspendisse potenti. Morbi sapien nunc, gravida at mattis non, semper vitae magna."
-//Generated 1 paragraph, 47 words  et = 1
 
+
+// bonus 1.2
 // Make your program count the number of words in the string.
-//lorem1 -> 35 lorem2 -> 24 lorem3 -> 47
+//lorem1 -> 35 lorem2 -> 24 lorem3 -> 47 
 
-                //HARDCODED ANSWERS:
-let lorem1Words = lorem1.split(" ").length
-console.log(lorem1Words)
-let lorem2Words = lorem2.split(" ").length
-console.log(lorem2Words)
-let lorem3Words = lorem3.split(" ").length
-console.log(lorem3Words)
+// HARDCODED ANSWERS: 
+
+// using FOR Loop
+let counter = 1
+for(let i = 0; i < lorem1.length; i++){
+  if(lorem1[i]===" "){
+    counter++ 
+  }
+}
+console.log(`The paragraph contains: ${counter} words`)
 
 
-                        ////OR////
+// // use split()                
+let loremWords = lorem1.split(" ").length
+console.log(`The paragraph contains: ${loremWords} words`)
 
-//let counter1 = 1
-// for(let i = 0; i < lorem1.length; i++){
-//   if(lorem1[i]===" "){
-//     counter1++ 
-//   }
-// }
-// //console.log(`The 1st paragraph contains: ${counter1} words`)
 
-// let counter2 = 1
-// for(let i = 0 ; i < lorem2.length; i++){
-//   if(lorem2[i]===" "){
-//     counter2++ 
-//   }
-// }
-// console.log(`The 2nd paragraph contains: ${counter2} words`)
-
-// let counter3 = 1
-// for(let i = 0; i < lorem3.length; i++){
-//   if(lorem3[i]===" "){
-//     counter3++ 
-//   }
-// }
-// console.log(`The 3rd paragraph contains: ${counter3} words`)
-
-        ///ALTernative (old answer)///
-
-let i=0
-let word1 =" "
-for(lorem1.charAt(i); i <=lorem1.length; i++){
+// // using charAt()) ("fixed" an old answer weird/long but works!?)//
+let i = 0
+let word =" " // "" -> i=1
+for(lorem1.charAt(i); i <= lorem1.length; i++){
   if(lorem1.charAt(i)===" "){
-   word1 = word1 += lorem1.charAt(i).length
+   word = word += lorem1.charAt(i).length
   }     
 }
- console.log(`The 1st paragraph contains: ${word1.length} words`)
+ console.log(`The paragraph contains: ${word.length} words`)
 
 
 
-let j = 0
-let word2 =" "
-for(lorem2.charAt(j); j <=lorem2.length; j++){
-  if(lorem2.charAt(j)===" "){
-   word2 = word2 += lorem2.charAt(j).length
-  }     
+// // DYNAMIC ANSWER: 
+// //using FUNCTION() 
+ function numberOfWords(lorem){
+  return lorem.split(" ").length
 }
-console.log(`The 2nd paragraph contains: ${word2.length} words`)
+console.log(numberOfWords(lorem1))
+console.log(numberOfWords(lorem2))
+console.log(numberOfWords(lorem3))
 
 
-//lorem3 ~~~~ with variable MUST BE INSIDE~~
-let k = 0
-let word3 =" "
-for(lorem3.charAt(k); k<=lorem3.length; k++){
-  let l3Char = lorem3.charAt(k) //outside scope = 1?
-    if(l3Char===" "){
-      word3 = word3 += l3Char.length
-    }     
-}
-console.log(`The 3rd paragraph contains: ${word3.length} words`)
-
-
-//DYNAMIC ANSWERs: 
-//  function numberOfWords(lorem){
-//   console.log(lorem.split(" ").length) 
-//   return lorem.split(" ").length
-// }
-// numberOfWords(lorem1)
-// numberOfWords(lorem2)
-// numberOfWords(lorem3)
-
-
-// ///// Make your program count the number of times the Latin word et appears.
+// // bonus 1.3
+// // ///// Make your program count the number of times the Latin word "et" appears.
       
-      //HARDCODED ANSWER: 
-
-//lorem1 = 2
-let strCheck1 = lorem1.toLowerCase().split(" ")
-let count1 = 0;
-  for (let i = 0; i <= strCheck1.length - 1; i++){
+// //HARDCODED ANSWER: 
+// //lorem1 = 2 lorem2 = 0 lorem3 = 1
+let strCheck = lorem1.toLowerCase().split(" ")
+let count = 0;
+  for (let i = 0; i <= strCheck.length - 1; i++){
     if(strCheck[i].split(/[^a-zA-Z]/).join("")==="et"){
-    count1++
+    count++
     }
   }
-    print(` "et" appears ${count1} times`)
+    console.log(` "et" appears ${count} times`)
 
-//lorem2 = 0
-let strCheck2 = lorem2.toLowerCase().split(" ")
-let count2 = 0;
-  for (let i = 0; i <= strCheck2.length - 1; i++){
-    if(strCheck2[i].split(/[^a-zA-Z]/).join("")==="et"){
-    count3++
-    }
-  }
-  print(` "et" appears ${count2} times`)
 
-//lorem3 = 1
-let strCheck3 = lorem3.toLowerCase().split(" ")
-let count3 = 0;
-  for (let i = 0; i <= strCheck3.length - 1; i++){
-    if(strCheck3[i].split(/[^a-zA-Z]/).join("")==="et"){
-    count3++
-    }
-  }
-  print(` "et" appears ${count3} times`)
-
-//DYNAMIC//
+// //DYNAMIC//
 function strAppear(lorem, str){
   str = str.toLowerCase()
   let strCheck = lorem.toLowerCase().split(" ")
   let count = 0;
   for (let i = 0; i <= strCheck.length - 1; i++){
-    if(strCheck[i].split(/[^a-zA-Z]/).join("")===str){
+    if(strCheck[i].split(/[^a-zA-Z]/).join("") === str){
       count++
     }
   }
-  print(` "${str}" appears ${count} times`)
   return ` "${str}" appears ${count} times`
 }
 
-strAppear(lorem2, "Vestibulum")
-strAppear(lorem1, "et")
-strAppear(lorem3, "lorem")
+console.log(strAppear(lorem1, "et"));
+console.log(strAppear(lorem2, "et"));
+console.log(strAppear(lorem3, "et"));
+
+
+//Bonus 2:
+// Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome
+
+// Here are some examples of palindromes: 
+//   - "A man, a plan, a canal, Panama!"
+//   - "Amor, Roma"
+//   - "race car"
+//   - "stack cats"
+//   - "step on no pets"
+//   - "taco cat"
+//   - "put it up"
+//   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
 
 
-// Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+//// HARDCODED answer:
 
-// "A man, a plan, a canal, Panama!"
-// "Amor, Roma"
-// "race car"
-// "stack cats"
-// "step on no pets"
-// "taco cat"
-// "put it up"
-// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+// let phraseToCheck = "No 'x' in Nixon"
+// //let phraseToCheck = prompt("Type a sentence...see if it is a PALINDROME!?!")
 
 
+// let stringNoSpace = string.toLowerCase().split(" ").join("")  
+// let reverseString = stringNoSpace.split("").reverse().join("")
 
-// Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
-
-// "A man, a plan, a canal, Panama!"
-// "Amor, Roma"
-// "race car"
-// "stack cats"
-// "step on no pets"
-// "taco cat"
-// "put it up"
-// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
-
-//HARDCODED//
-
-// deleted alot of my FAILS! below is no where near right. Figured it out before & I shall AGAIN! 😫😡
-//as well will do again with loop 
-
-// let phraseToCheck = prompt("Type Sentence Here: Will Check If It's A PALINDROME!? ")
-// //let phraseToCheck = "race car"
-// let noSpaces = phraseToCheck.split(" ").join("").toLowerCase
-// //print(phraseToCheck.split(" ").join(""))
-// let reverseStr = phraseToCheck.split(" ").reverse().join("").toLowerCase
-// //print(phraseToCheck.split(" ").reverse().join(""))
-//console.log("No 'x' in Nixon".split(" ").join(""))
-noSpaces === reverseStr ? console.log(`${phraseToCheck} is a palindrome!`) : console.log(`${phraseToCheck} is NOT a palindrome!`)
+// noSpaces === reverseStr ? console.log(`${phraseToCheck} is a palindrome!`) : console.log(`${phraseToCheck} is NOT a palindrome!`)
 
 
 // LOOP//
 
-
-//let phraseToCheck2 = prompt("Type Sentence Here: Will Check If It's A PALINDROME!? ")
-let phraseToCheck2 = "No 'x' in Nixon"
-let noSpace2 = ""
-for(i = 0; i < phraseToCheck2.length; i++){
-  if(phraseToCheck2[i]===" "){
-    continue;
-    } else {
-      noSpace2 += phraseToCheck2[i]
-    }  
-}
-print(noSpace2)
-
-
-
-
-let reverse = ""
-for(let i = noSpace2.length - 1; i >= 0; i--){
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      //HARD/DYNAMIC PLAYTIME FUN WITH🤮SCOPES🤮 EVIarL🤮 NOTEs:
-
-// //function DECLARATION hoisted = prints correct 
-//print(typeof numberOfWords(lorem1))
-// numberOfWords(lorem1) //
-// numberOfWords(lorem2) 
-// numberOfWords(lorem3)
-// // <-VAR...call before/after ->
-// // //function DECLARATION hoisted = prints correct 
-// function numberOfWords(lorem){
-//   console.log(lorem.split(" ").length) 
-//   return lorem.split(" ").length
+// let phraseToCheck = "No 'x' in Nixon"
+// let noSpace = ""
+// for(i = 0; i < phraseToCheck2.length; i++){
+//   if(phraseToCheck2[i]===" "){
+//     continue;
+//     } else {
+//       noSpace2 += phraseToCheck2[i]
+//     }  
 // }
-// numberOfWords(lorem1) 
-// numberOfWords(lorem2) 
-// numberOfWords(lorem3)
+// print(noSpace)
 
-// print(typeof numberOfWords(lorem1))
-// numberOfWords(lorem1) // <-VAR...call before ->
-// //function EXPRESSION not hoisted
-// //let/const = refError(not initialized)  
-//var= typeError- does not exist,undefined stored for initialization reference for assignment
-// var numberOfWords = function(lorem){
-//   console.log(lorem.split(" ").length) 
-//   return lorem.split(" ").length
+
+
+
+// let reverse = ""
+// for(let i = noSpace.length - 1; i >= 0; i--){
+
 // }
 
 
-//var reassign i=0 
-// leak? hoist? behavior  block scope
-// Without dynamic function
- //let/var counter = 1 -> accumulates previous values each next conditional block
 
-//let counter1 = 1
-// for(i = 0; i < lorem1.length; i++){
-//   if(lorem1[i]===" "){
-//     //counter1++ 
-//     counter++
-//   }
+
+
+//// DYNAMIC ///////////
+// function checkPal(string){
+//   let stringNoSpace = string.toLowerCase().split(/[^a-zA-Z]/).join("")
+//   let reverseString = string.toLowerCase().split(/[^a-zA-Z]/).join("").split("").reverse().join("")
+//   return  stringNoSpace===reverseString ? console.log("It's a palindrome") : console.log("NOT palindrome")
 // }
-// //console.log(`The 1st paragraph contains: ${wordCounter1} words`)
-// console.log(`The 1st paragraph contains: ${counter} words`)
-
-// //let counter2 = 1
-// for(i = 0 ; i < lorem2.length; i++){
-//   if(lorem2[i]===" "){
-//     //counter2++ 
-//     counter++
-//   }
-// }
-// // console.log(`The 2nd paragraph contains: ${counter2} words`)
-// console.log(`The 2nd paragraph contains: ${counter} words`)
-
-// //let counter3 = 1
-// for(i = 0; i < lorem3.length; i++){
-//   if(lorem3[i]===" "){
-//     //counter3++ 
-//     counter++
-//   }
-// }
-// // console.log(`The 3rd paragraph contains: ${counter3} words`)
-// console.log(`The 3rd paragraph contains: ${counter} words`)
-
-
-
-
-
-
+// checkPal("A man, a plan, a canal, Panama!");
+// checkPal("race car");
+// checkPal("i did this wrong");
