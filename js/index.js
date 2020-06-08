@@ -36,8 +36,12 @@ console.log(navName)
 //Iteration 3.3
 var names = [hacker2, hacker1];
 names.sort();
-if (names.startsWith("A", 0) === true) console.log("The driver's name goes first.");
-else if (names.startsWith("G", 0) === true) console.log("Yo, the navigator goes first definitely.");
+if ((names.startsWith("A", 0)) === true){
+  console.log("The driver's name goes first.");
+} 
+else if ((names.startsWith("G", 0)) === true){
+  console.log("Yo, the navigator goes first definitely.");
+} 
 else consle.log("What?! You both have the same name?");
 
-//returns an error at line 38: names.startsWith is not a function.
+//returns an error at line 39: names.startsWith is not a function.
