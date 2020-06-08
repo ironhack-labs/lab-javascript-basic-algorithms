@@ -1,6 +1,9 @@
 // Iteration 1: Names and Input
 
 let hacker1 = 'Daniel' // drivers name
+
+console.log(hacker1)
+
 let hacker2 = 'David' // navigators name
 
 console.log(hacker2)
