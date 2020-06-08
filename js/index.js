@@ -55,6 +55,8 @@ else{
 // wordCount++
 // console.log("words: " + wordCount)
 
+
+
 //Bonus 2
 
 
@@ -65,6 +67,6 @@ function phraseToCheck(str) { //sets the variable
         return "This is not palindrome"; //if it is not a palindrome
     return "This is a palindrome"; //if it is a palindrome
   }
-console.log(phraseToCheck("A man a plan a canal Panama"))
+console.log(phraseToCheck("racecar"))
 
-//Didnt really complete the Bonus but I am still working on it.
+//Didnt do well on the Bonus's. WIll continue to work on them.
