@@ -54,5 +54,3 @@ for (let i = 0; i<=loremText.length;i++) {
 }
 console.log('Words: ' + countWords);
 console.log('Et: ' + countEt);
-
-
