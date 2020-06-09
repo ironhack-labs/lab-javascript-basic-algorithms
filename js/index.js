@@ -79,8 +79,5 @@ for(i=res.length-1;i>=0;i--){
 }
 
 //Validate Palidrome
-if(res == resReverse){
-  console.log(palString+": Is a Palindrome")
-} else {
-  console.log(palString+": Not a Palindrome")
-}
+(res == resReverse)? console.log(palString+": Is a Palindrome") 
+  : console.log(palString+": Not a Palindrome");
