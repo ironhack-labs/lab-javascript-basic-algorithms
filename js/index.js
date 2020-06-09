@@ -36,9 +36,9 @@ console.log(reverseStr(hacker2));
 console.log("------------------------------");
 
 //3.3 lexicographical order
-if (hacker1 > hacker2) console.log(`The driver's name goes first.`)
-else if (hacker1 < hacker2) console.log(`Yo, the navigator goes first definitely.`)
-else console.log(`What?! You both have the same name?`)
+if (hacker1.localeCompare(hacker2) > 0) console.log(`The driver's name goes first.`);
+else if (hacker1.localeCompare(hacker2) < 0) console.log(`Yo, the navigator goes first definitely.`);
+else console.log(`What?! You both have the same name?`);
 
 console.log("------------------------------");
 
