@@ -54,20 +54,14 @@ for(i=0; i<etFind.length;i++){
   }
 }
 
-//counts total words in string
-for(i=0; i<lipstring.length;i++){
-  if(lipstring[i]=== " "){
-    cntTotal+=1;
-  }
-}
-
 //returns word and et count.
-console.log('Total words in string: '+cntTotal);
+console.log('Total words in string: '+lipstring.split(' ').length);
 console.log('Et count is: '+cntEt)
 
 
+
 //BONUS 2 Using loops instead of split
-let palString="Amor, Roma"
+let palString="cars surac"
 let res=''
 let resReverse=''
 
