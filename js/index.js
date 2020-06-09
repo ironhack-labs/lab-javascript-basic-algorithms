@@ -14,7 +14,7 @@ if(hacker1.length > hacker2.length)
     console.log(hacker1 + ' has a longer name' + ' he has ' + hacker1.length + 
     ' letters in his name')
 }
-else if(hacker2.legnth > hacker1){
+else if(hacker2.length > hacker1.length){
 
     console.log(hacker2 + ' has a longer name' + ' he has ' + hacker2.length + 
     ' letters in his name.' )
@@ -42,25 +42,23 @@ console.log(str)
 
 for(let h = 0; h < hacker1.length && hacker2.length; h++)
 {
-  if(hacker1[h] < hacker2[h]) // Compares actuall char A != a
-  {
-    console.log ('Driver is first')
-    break
-  }
-  else if (hacker2[h] < hacker1[h])
-  {
-    console.log('Navigator is first')
-    break
-  }
-  else (hacker1[h] == hacker2[h])
-  {
-    console.log('Same name')
-    break
-  }
-  
+ if(hacker1 === hacker2)
+ {
+   console.log("What?! You both have the same name?")
+   break
+ }
+ else if(hacker1[h] < hacker2[h])
+ {
+   console.log("The driver's name goes first.")
+   break
+
+ }
+ else(hacker2[h] < hacker1[h])
+ {
+   console.log("Yo, the navigator goes first definitely.")
+   break
+ }
 }
-
-
 
     
       
