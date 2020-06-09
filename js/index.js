@@ -27,17 +27,17 @@ for(let i=hacker2.length-1; i>=0;i--){
 }
 console.log(result2)
 
-function br(){i=hacker1.length;}
+
 for(i=0; i<hacker1.length;i++){
   if(hacker1 == hacker2){
     console.log('What?! You both have the same name?')
-    br()
+    break;
   } else if(hacker1[i]<hacker2[i]){
     console.log("The driver's name goes first.")
-    br()
+    break;
   } else if(hacker2[i]<hacker1[i]){
     console.log("Yo, the navigator goes first definitely.")
-    br()
+    break;
   }
 }
 
