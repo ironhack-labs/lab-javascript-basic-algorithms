@@ -2,7 +2,7 @@
 let hacker1= 'Jimyy'
 console.log(hacker1)
 
-let hacker2="Jimmy"
+let hacker2="Jamzmy"
 console.log(hacker2)
 
 // Iteration 2: Conditionals
@@ -27,14 +27,17 @@ for(let i=hacker2.length-1; i>=0;i--){
 }
 console.log(result2)
 
+function br(){i=hacker1.length;}
 for(i=0; i<hacker1.length;i++){
   if(hacker1 == hacker2){
     console.log('What?! You both have the same name?')
-    i=hacker1.length
+    br()
   } else if(hacker1[i]<hacker2[i]){
     console.log("The driver's name goes first.")
+    br()
   } else if(hacker2[i]<hacker1[i]){
     console.log("Yo, the navigator goes first definitely.")
+    br()
   }
 }
 
