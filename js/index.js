@@ -51,12 +51,13 @@ if (hacker1.localeCompare(hacker2) === -1) {
 
 let loremParagraph =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sapien dui. Integer quis nunc a eros aliquet finibus eu in enim. Nunc ullamcorper lorem tincidunt, convallis felis nec, efficitur elit. Maecenas sagittis, dolor ac vestibulum finibus, ipsum dui sodales eros, vel commodo sem risus et felis. Integer lacinia velit id vestibulum luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vel sapien non turpis scelerisque rutrum ac a neque. Donec eu dictum risus. Donec dignissim hendrerit enim, in sodales felis convallis eget. Ut laoreet efficitur nibh nec consequat. Donec porta vitae elit a accumsan. Nullam dapibus tincidunt turpis id viverra. Phasellus euismod placerat mauris sodales mollis. Praesent tincidunt orci at dolor tincidunt, in tristique neque elementum. Nulla placerat augue at tristique commodo. Ut metus est, iaculis eu mollis quis, convallis a quam. Nunc suscipit elit et massa mollis elementum. Sed tempor, diam ut scelerisque vulputate, nibh libero molestie dui, in interdum odio turpis sit amet augue. Maecenas in elementum odio. Nulla convallis lacus in erat ultrices varius. Duis ut sodales erat, a ornare dolor. Duis nec eros nec tellus vehicula convallis. Morbi commodo venenatis nibh sit amet interdum. Pellentesque aliquet euismod bibendum. Sed quam libero, semper pellentesque luctus sit amet, pretium nec quam. Aliquam ac accumsan nulla.Nulla facilisis ante lorem, eu porta justo varius eu. Vivamus auctor dignissim felis, quis cursus augue sollicitudin non. Nulla et egestas nisi, quis bibendum nisl. Pellentesque sodales, mauris id imperdiet luctus, velit dui bibendum turpis, et sagittis nulla neque ut neque. Aliquam sit amet tortor id quam varius interdum. Quisque nulla turpis, sagittis tristique mollis sit amet, suscipit eget odio. Nunc vestibulum diam at est dapibus venenatis. Maecenas et lacus eu enim tempus facilisis vel sit amet nulla. Vestibulum sodales tellus non nisl suscipit sodales. Quisque eget volutpat nisl, in dignissim libero. In hac habitasse platea dictumst. Nullam eget tempor augue, vitae tristique nibh.";
+// We found 317 words
 
 // Method One
 
 function wordCount(str) {
   let myTotal = 0;
-  for (i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     if (str[i] === " ") {
       myTotal++;
     }
@@ -72,7 +73,7 @@ function wordCount(str) {
 function countWords(str) {
   var count = 0;
   var words = str.split(" ");
-  for (i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     // inner loop -- do the count
     if (words[i] != "") count += 1;
   }
@@ -82,13 +83,17 @@ function countWords(str) {
 
 countWords(loremParagraph);
 
-/*
-Bonus 1:
-Go to lorem ipsum generator and:
+function countEt(str) {
+  let count = 0;
+  let words = str.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === "et") {
+      count++;
+    }
+  }
+  console.log("count " + count);
+  console.log(words);
+}
+countEt(loremParagraph);
 
-Generate 3 paragraphs. Store the text in a variable type of string.
-Make your program count the number of words in the string.
-Make your program count the number of times the Latin word et appears.
-
-l
-*/
+// the word "et" appears 7 times
