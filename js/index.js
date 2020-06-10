@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 
-var hacker1 = "Alan";
+var hacker1 = "Frederico";
 console.log(`The driver's name is ${hacker1}`)
 
 var hacker2 = "Alice"
@@ -24,17 +24,22 @@ else {
 
 console.log(hacker1.toUpperCase().split('').join(' '))
 
-var reverseName = ""
+var reverseName = "";
 for (var i=hacker2.length-1; i>=0; i--){
-    var lettersHacker2 = hacker2[i]
+    var lettersHacker2 = hacker2[i];
     reverseName = reverseName + lettersHacker2
 }
 console.log(reverseName)
 
 for (i=0, j=0; (i<hacker1.length) && (j<hacker2.length); i++, j++){
     var letterHacker1 = hacker1[i];
-    var letterHacker2 = hacker2[i];
-    if (letterHacker1 > letterHacker2) {
+    var letterHacker2 = hacker2[j];
+    
+    if (letterHacker1 === letterHacker2) {
+      continue;
+    }
+    
+    else if (letterHacker1 > letterHacker2) {
         console.log("Yo, the navigator goes first definitely")
         break;
     }
@@ -46,4 +51,3 @@ for (i=0, j=0; (i<hacker1.length) && (j<hacker2.length); i++, j++){
         console.log("What?! You both have the same name?")
     }
 }
-
