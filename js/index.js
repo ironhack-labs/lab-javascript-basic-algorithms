@@ -2,7 +2,7 @@
 let hacker1 = "Graziella";
 console.log("the driver's name is ", hacker1);
 
-let hacker2 = "Graziella";
+let hacker2 = "Fanny";
 console.log("the navigator's name is ", hacker2);
 
 // Iteration 2: Conditionals
@@ -48,7 +48,19 @@ if (hacker1.length > hacker2.length) {
     }
 }
 
+//Bonus 1
 
+var paragraph ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet maximus diam. Duis pellentesque tincidunt neque, in sodales diam tristique id. Praesent sodales accumsan neque, et venenatis massa dictum vel. Nulla nec nisi ullamcorper, suscipit purus pharetra, sollicitudin ex. Aenean varius lorem sed purus semper, nec lobortis ex fringilla. Nunc cursus ut nisi gravida dictum. Fusce egestas fermentum accumsan. Suspendisse laoreet sit amet urna in pulvinar. Mauris commodo odio quis libero gravida, non cursus ante egestas. Maecenas nulla ante, efficitur id consequat nec, porta in erat. Donec congue erat nec pulvinar volutpat. Aenean bibendum placerat magna et ultrices. Suspendisse vitae arcu et dui semper eleifend. Sed lobortis lacus ac laoreet interdum. Duis non egestas ante. Nulla mi sem, viverra a fringilla non, euismod vitae augue. Ut interdum nulla arcu, malesuada dapibus nisl egestas vel. In sed sem est. Donec sit amet eros ornare, varius sapien et, pretium enim. Integer rhoncus at justo sit amet interdum. Aliquam erat volutpat. Morbi sit amet nulla magna. Sed lobortis sem sed iaculis ultrices. Integer vitae nulla aliquet eros aliquet commodo. Integer vel placerat lorem. In id libero quis ligula cursus congue. Nulla elementum facilisis dictum. Maecenas molestie metus non condimentum egestas. Vestibulum augue turpis, pellentesque in semper ac, convallis convallis arcu. Proin eget faucibus erat."
 
+function numberOfWords(text){
+    return text.split(' ').length;
+}
 
+console.log(numberOfWords(paragraph));
+
+function countWord(text,word){
+    return text.split(word).length - 1;
+}
+
+console.log(countWord(paragraph,'et'));
 
