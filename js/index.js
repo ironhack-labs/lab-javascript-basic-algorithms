@@ -20,8 +20,34 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
+function nameSpace(str) {
+    str = str.toUpperCase()
+    name = ""
+    for (i = 0; i < str.length; i++) {
+        name += str[i] + " "
+
+    }
+    return name
+}
+
+console.log(nameSpace(hacker1))
+
+
+
 
 console.log(hacker1.split("").join(" ").toUpperCase())
+
+function nameBackward(str) {
+    name = ""
+    for (i = str.length - 1; i >= 0; i--) {
+        name += str[i]
+
+    }
+    return name
+}
+
+console.log(nameBackward(hacker2))
+
 console.log(hacker2.split('').reverse().join(''))
 
 if (hacker1 < hacker2) {
