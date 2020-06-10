@@ -94,20 +94,30 @@ function countEt(str) {
   console.log("count " + count);
   console.log(words);
 }
+
 countEt(loremParagraph);
 
 // the word "et" appears 7 times
 
-let phraseToCheck = "";
+/* Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes: */
 
-/* Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+let phraseToCheck = "ce nest pas un palindrome";
 
-"A man, a plan, a canal, Panama!"
-"Amor, Roma"
-"race car"
-"stack cats"
-"step on no pets"
-"taco cat"
-"put it up"
-"Was it a car or a cat I saw?" and "No 'x' in Nixon".
-Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin' 😃 */
+console.log(phraseToCheck.split(" ").join("").toLowerCase());
+
+function isPalindrome(someString) {
+  let motUn = someString.split(" ").join("").toLowerCase();
+  console.log("Mot 1: " + motUn);
+  let motDeux = "";
+  for (let i = motUn.length - 1; i >= 0; i--) {
+    motDeux += `${motUn[i]}`;
+  }
+  console.log("Mot 2 : " + motDeux);
+  if (motUn === motDeux) {
+    console.log("Your sentence is a palindrome!");
+  } else {
+    console.log("This is not a palindrome.");
+  }
+}
+
+isPalindrome(phraseToCheck);
