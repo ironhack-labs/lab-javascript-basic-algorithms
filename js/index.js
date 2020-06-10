@@ -17,7 +17,7 @@ let hacker2 = "Allie"
 
 // let hacker2 = prompt("Hacker #2 what is your name?")
 //hacker2 = hacker2[0].toUpperCase() + hacker2.substring(1).toLowerCase()
-toLowerCase()
+
 console.log(`The navigator's name is ${hacker2}`)
 
 
@@ -182,50 +182,84 @@ console.log(strAppear(lorem3, "et"));
 //   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
 
+//// DYNAMIC ///////////
+function checkPal(phraseToCheck){
+  let stringNoSpace = phraseToCheck.toLowerCase().split(/[^a-zA-Z]/).join("")
+  let reverseString = phraseToCheck.toLowerCase().split(/[^a-zA-Z]/).join("").split("").reverse().join("")
+  return  stringNoSpace===reverseString ? console.log("It's a palindrome") : console.log("NOT palindrome")
+}
+checkPal("A man, a plan, a canal, Panama!");
+checkPal("race car");
+checkPal("i did this wrong");
+checkPal("No 'x' in Nixon");
+
 
 //// HARDCODED answer:
-
 // let phraseToCheck = "No 'x' in Nixon"
-// //let phraseToCheck = prompt("Type a sentence...see if it is a PALINDROME!?!")
+// let phraseToCheck2 = "Nixon"
+//let phraseToCheck = prompt("Type a sentence...see if it is a PALINDROME!?!")
 
 
-// let stringNoSpace = string.toLowerCase().split(" ").join("")  
-// let reverseString = stringNoSpace.split("").reverse().join("")
+// let stringNoSpace = phraseToCheck.toLowerCase().split(" ").join("")  
+// let reverseString1 = stringNoSpace.split("").reverse().join("")
 
 // noSpaces === reverseStr ? console.log(`${phraseToCheck} is a palindrome!`) : console.log(`${phraseToCheck} is NOT a palindrome!`)
 
 
 // LOOP//
 
-// let phraseToCheck = "No 'x' in Nixon"
-// let noSpace = ""
-// for(i = 0; i < phraseToCheck2.length; i++){
-//   if(phraseToCheck2[i]===" "){
+//can't get it 🙁
+// let stringNoSpace = ""
+// for(i = 0; i < phraseToCheck.length; i++){
+//   if(phraseToCheck[i]===" "){
 //     continue;
 //     } else {
-//       noSpace2 += phraseToCheck2[i]
+//       stringNoSpace += phraseToCheck[i]
 //     }  
 // }
-// print(noSpace)
+// console.log(stringNoSpace)
 
 
 
 
-// let reverse = ""
-// for(let i = noSpace.length - 1; i >= 0; i--){
+
+// let reverseString = ""
+// for(let i = stringNoSpace.length - 1; i >= 0; i--){
+//   reverseString += stringNoSpace[i]
 
 // }
 
+// console.log(reverseString)
 
-
-
-
-//// DYNAMIC ///////////
-// function checkPal(string){
-//   let stringNoSpace = string.toLowerCase().split(/[^a-zA-Z]/).join("")
-//   let reverseString = string.toLowerCase().split(/[^a-zA-Z]/).join("").split("").reverse().join("")
-//   return  stringNoSpace===reverseString ? console.log("It's a palindrome") : console.log("NOT palindrome")
+///not worrkkk!!!!!
+// let phraseToCheck = "Nix on"
+// // let stringNoSpace = phraseToCheck.split(" ").join("") 
+// let  stringNoSpace = ""
+// for(i = 0; i < phraseToCheck.length; i++){
+//   if(phraseToCheck[i]===" "){
+//     continue;
+//     } else {
+//       stringNoSpace += phraseToCheck[i]
+//     }  
 // }
-// checkPal("A man, a plan, a canal, Panama!");
-// checkPal("race car");
-// checkPal("i did this wrong");
+
+// //console.log(stringNoSpace)
+
+
+// let reverseString = ""
+// for(let i = stringNoSpace.length - 1; i >= 0; i--){
+//   if(phraseToCheck[i]===" "){
+//     continue;
+//     } else {
+//      reverseString  += stringNoSpace[i]
+//     }  
+  
+// }
+// console.log("str: " + stringNoSpace)
+// console.log("rev: " + reverseString)
+//console.log()
+//console.log()
+//console.log(phraseToCheck.split("").join("") )
+ //console.log(reverseString.split("").reverse().join(""))
+//console.log(reverseString)
+
