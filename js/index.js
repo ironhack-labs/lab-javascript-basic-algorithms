@@ -26,6 +26,35 @@ if (hacker1 < hacker2) {
     console.log(`What?! You both have the same name?`)
 }
 
+// Iteration 3: WITH loops
+for (let i = 0; i < hacker1.length; i++) {
+    if (i !== hacker1.length - 1) {
+        process.stdout.write(hacker1[i].toUpperCase() + ' ');
+    } else {
+        process.stdout.write(hacker1[i].toUpperCase())
+    }
+}
+console.log();
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    process.stdout.write(hacker2[i]);
+}
+console.log();
+
+function compareNames(hacker1, hacker2) { 
+for (let i = 0; i < Math.min(hacker1.length, hacker2.length); i++) {
+        if (hacker1[i] < hacker2[i]) {
+            return `The driver's name goes first.`;
+        } else if (hacker1[i] > hacker2[i]) {
+            return `Yo, the navigator goes first definitely.`;
+        }
+        
+        return `What?! You both have the same name?`;
+    }
+}
+
+console.log(compareNames(hacker1, hacker2));
+
 // Bonus 1
 var paragraphe = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra turpis ut rhoncus fermentum. In sagittis lacus vitae neque tincidunt malesuada. Nunc ut egestas tellus, consequat iaculis neque. In ultrices risus at ultricies efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate facilisis facilisis. Mauris vel efficitur magna. Sed consectetur dolor eu orci rhoncus, ac cursus nulla bibendum. Integer feugiat nunc eu nibh varius pharetra. Vestibulum nec auctor tortor. Quisque gravida sem ac purus cursus bibendum. Donec laoreet, tellus ac facilisis ultrices, velit augue sollicitudin diam, non porttitor nulla est et justo. Morbi vestibulum pretium justo ut laoreet. Sed pellentesque convallis est ut consequat. Proin sollicitudin mauris tellus, ut ornare magna viverra quis. Sed feugiat sem elit, ut dapibus nulla vulputate mattis. Nullam fermentum dolor in purus scelerisque sollicitudin. Donec cursus leo id risus lobortis sagittis. Curabitur velit sem, varius eget lectus quis, bibendum laoreet metus. Donec massa lacus, rhoncus ac lacus in, placerat iaculis magna. Suspendisse porttitor, risus vel eleifend egestas, erat metus venenatis lorem, in porta arcu purus ut sem. Donec risus elit, lobortis auctor dictum vitae, sagittis at augue. Ut id dapibus mauris. Donec eget aliquam nisi. Proin ut ligula convallis, ultrices sapien eget, sagittis risus. Vivamus et odio velit. Ut vestibulum libero vel vehicula tristique. Integer ut enim eu quam congue accumsan. Curabitur eleifend mi sollicitudin, vehicula purus et, congue nisi. Pellentesque tincidunt diam tincidunt mi viverra, sed porta enim aliquet. Nulla consequat aliquet erat ut commodo. Curabitur lacus leo, venenatis quis ultricies ut, consequat et lacus. Suspendisse posuere lorem at ipsum posuere, sed commodo neque laoreet."
 
