@@ -19,3 +19,9 @@ if(hacker1.length > hacker2.length){
 }else{console.log('Wow, you both have equally long names,'+ bothhack + ' characters!')}
 
 // Iteration 3: Loops
+let test = hacker1.toUpperCase().split('').join(' ')
+
+console.log(test)
+
+console.log(hacker2.split('').reverse().join(''))
+
