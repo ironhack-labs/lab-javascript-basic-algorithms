@@ -32,8 +32,8 @@ Morbi venenatis mauris erat, ut auctor mi sollicitudin in. Fusce vitae ligula ac
 Nullam lobortis turpis nec eros sollicitudin semper. Etiam eu felis interdum, lacinia ex sit amet, suscipit quam. Nulla in est quis velit laoreet porttitor. Cras dictum ante dolor, a feugiat leo vehicula et. Sed ac quam lorem. Nulla vestibulum luctus ex eu placerat. In sed dolor sem. Duis gravida mauris sed eros aliquet, vel tempor sem tincidunt. Morbi eros magna, varius nec tincidunt a, pulvinar ac velit. Mauris ac neque sit amet lorem venenatis posuere et eget ipsum. In ut rutrum magna.`;
 
 // lets loop through the string and count the words
-wordcount(input){
-  return input.split(/\s+/).length;
-}
+function wordcount(input) {
+  return input.split(/\b/).length;
+};
 
 console.log(wordcount(paragraphs));
