@@ -36,7 +36,7 @@ console.log(sepName);
 let revName = '';
 
 for (let counter = hacker2.length - 1; counter >= 0; counter--) {
-  revName += hacker2[counter].toUpperCase() + ' ';
+  revName += hacker2[counter];
 }
 
 console.log(revName);
