@@ -73,11 +73,16 @@ switch (letters) {
 
 // Bonus 1
 
-let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet sapien finibus, dictum lectus vel, elementum justo. Donec aliquet dolor a tellus fermentum fringilla. Nullam sit amet felis in nisl finibus finibus eu vitae diam. Praesent mollis, lectus at laoreet rhoncus, orci odio tempor sapien, sit amet pharetra ante mauris a ipsum. Morbi pharetra tortor arcu, at sollicitudin orci aliquet in. Praesent laoreet quam eget ipsum venenatis porttitor. Suspendisse sit amet mattis ante. Nam non vehicula magna. Aenean a vestibulum augue. In convallis, erat nec ultricies hendrerit, tellus dolor mollis ligula, eget rhoncus mi lorem a risus. Etiam justo nisi, molestie imperdiet lacinia eu, tempor tristique nisl. Maecenas quis libero eget tortor suscipit consectetur. Phasellus a placerat elit.
-Curabitur feugiat lorem a aliquet dignissim. Mauris quis rhoncus justo, sit amet tincidunt dolor. Donec dapibus, neque interdum laoreet lacinia, dolor ex consequat nulla, et pretium risus massa non nibh. Morbi at euismod nunc. Praesent a arcu vel lacus dapibus pharetra eget quis urna. Donec bibendum risus vel arcu porttitor, vel fermentum sem efficitur. Nulla rhoncus fringilla accumsan. Integer feugiat at purus id pellentesque. Sed sodales, lorem sit amet scelerisque posuere, tellus nisi lacinia lectus, id volutpat nulla lectus sit amet arcu. Vestibulum et eleifend ligula. Nam ullamcorper nisl ut leo porttitor maximus. Aliquam non est imperdiet, pretium ex ac, maximus sapien. Curabitur aliquam sit amet nisl sed condimentum. Phasellus imperdiet nisl libero, eu faucibus elit tempus nec.
-Pellentesque mollis nibh justo, vitae pellentesque nisl placerat et. Sed tortor ex, tempor in nibh sed, facilisis tincidunt mauris. In mattis vitae magna id semper. Vivamus eget augue scelerisque, efficitur ante eu, egestas eros. Maecenas scelerisque lacinia mi sed aliquam. Vestibulum ut vehicula turpis. Aliquam vel semper augue. In pretium consequat venenatis. Cras eu sagittis erat, in fringilla elit. Vivamus enim odio, efficitur eu dictum sed, scelerisque quis velit. Quisque rhoncus congue libero ac consectetur. Ut dignissim dignissim leo, eget tempus tortor cursus ac.`;
-console.log(lorem.split(" ").length + lorem.split("\n").length);
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque mi, consectetur vitae bibendum et, interdum non elit. Aliquam maximus egestas mauris. Integer nulla lectus, tristique nec iaculis quis, egestas eu risus. Duis nec pulvinar elit, elementum mollis enim. Praesent pretium ante ut nisi molestie, non auctor ante rutrum. Proin nunc nunc, faucibus et vestibulum et, pretium id arcu. Praesent eget tortor id odio iaculis fringilla mattis eget nunc. Vivamus vitae mattis mauris.
+Aenean rutrum sed ex quis congue. Cras at elit elit. Maecenas metus tortor, tincidunt gravida risus a, semper consequat metus. Pellentesque et augue eros. Sed vitae tincidunt ex. Fusce et dui porta, mattis orci quis, congue mi. Duis tincidunt, sapien ac convallis dictum, urna sem blandit ex, in varius nulla arcu ac enim.
+Aliquam sed euismod orci. Aenean aliquam risus a urna tempor, at posuere lacus efficitur. Cras non vestibulum eros. Mauris tincidunt leo viverra, rhoncus nunc id, facilisis nibh. Nam maximus sed nibh ut lobortis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis luctus arcu justo, nec porttitor sapien auctor vitae. Aliquam vulputate enim non risus finibus, vestibulum interdum justo dignissim. Aenean lorem nulla, euismod vel pharetra vel, feugiat vel velit. Ut et lacus vitae mauris viverra dignissim. Sed vel ligula dui. Nulla bibendum mauris vel nibh iaculis tempus. Vestibulum dignissim neque eu nisl molestie euismod. Morbi commodo, risus et suscipit convallis, arcu massa dapibus nunc, molestie blandit sapien ante ac arcu.`;
 
+let countWord =
+  lorem.split(" ").length +
+  lorem.split(".  ").length +
+  lorem.split(".\n").length;
+
+console.log(countWord);
 // Bonus 2
 let phraseToCheck = "amor roma";
 let phrase = "";
