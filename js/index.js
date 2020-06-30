@@ -35,7 +35,7 @@ console.log(`My name with spaces and uppercased is ${nameUpperCased}`);
 // REVERSING THE NAME
 
 let reverseArray = [];
-for (let i = hacker1.length; i >= 0; i--) {
+for (let i = hacker1.length - 1; i >= 0; i--) {
   reverseArray.push(hacker1[i]);
 }
 
@@ -92,12 +92,3 @@ for (let i = 0; i < strArray.length; i++) {
   }
 }
 console.log(frequencyOfEt);
-
-// Bonus 2
-
-let phraseToCheck = 'race car';
-let phraseInArray = [];
-
-for (let i = 0; i < phraseToCheck.length; i++) {
-  if (phraseToCheck[i] !== ' ') console.log(phraseToCheck[i]);
-}
