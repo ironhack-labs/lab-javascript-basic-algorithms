@@ -98,33 +98,54 @@ console.log(`There are ${etCounter} "et" words in our Lorem random text.`);
 //Bonus 2
 
 let phraseToCheck = "step on no pets";
-
 let phraseReversed = "";
 /* Lo que dejamos a medias en clase
 for (let i = phraseToCheck - 1; i >= 0; i--) {
     phraseReversed += phraseToCheck[i];
 };*/
 
+//Sigo con el ejemplo de clase a ver si me sale con for
+let phraseNoSpace = "";
+
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+    if (phraseToCheck[i] != " ") {
+        phraseReversed += phraseToCheck[i];
+
+    }
+};
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i] != " ") {
+        phraseNoSpace += phraseToCheck[i];
+    }
+};
+
+if (phraseNoSpace === phraseReversed) {
+    console.log(`${phraseToCheck} is a palindrome`)
+} else {
+    console.log(`${phraseToCheck} is not a palindrome`)
+};
+
+/*------------------------------------------------------
 //Prueba 1 con funciones y métodos
 function palindrome(str) {
-    var newString = str.replace(/[^a-z0-9]/g, '').toLowerCase();
-    var array = newString.split("");
-    for (var i = 0; i < array.length / 2; i++) {
-        if (array[i] !== array[array.length - i - 1]) {
-            return false;
-        }
+  var newString = str.replace(/[^a-z0-9]/g, '').toLowerCase();
+  var array = newString.split("");
+  for (var i = 0; i < array.length/2; i++) {
+    if (array[i] !== array[array.length-i-1]) {
+      return false;
     }
-    return true;
+  }
+  return true;
 }
-palindrome(phraseToCheck);
 
 //Prueba 2 con funciones y métodos
 var isPalindrome = function (string) {
     if (string == string.split('').reverse().join('')) {
         alert(string + ' is palindrome.');
-    } else {
+    }
+    else {
         alert(string + ' is not palindrome.');
     }
 }
-
-isPalindrome(phraseToCheck);
+*/
