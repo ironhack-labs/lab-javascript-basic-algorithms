@@ -1,23 +1,3 @@
-
-
-
-
-Buscar en ironhack-webbcn0620
-
-
-1
-
-IW
-1
-2
-
-
-ironhack-webbcn0620
-Alejandro abad
-
-Hilos de conversaciones
-
-Elementos guardados
 // Iteration 1: Names and Input
 let hacker1 = 'Alejandro';
 console.log(`The driver's name is ${hacker1}`);
