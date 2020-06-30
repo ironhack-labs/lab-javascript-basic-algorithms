@@ -1,17 +1,17 @@
 // Iteration 1: Names and Input
 let hacker1 = "Victoria";
 
-console.log("The driver name is XXXX");
+console.log(`The driver's name is ${hacker1}.`);
 
 let hacker2 = "Sergio";
 
-console.log("The navigator name is YYYY");
+console.log(`The navigator's name is ${hacker2}.`);
 //------------------------------------------
 
 
 // Iteration 2: Conditionals
-console.log(hacker1.length);
-console.log(hacker2.length);
+console.log(`The word "${hacker1}" has ${hacker1.length} characters.`);
+console.log(`The word "${hacker2}" has ${hacker2.length} characters.`);
 
 const hacker1Length = hacker1.length;
 const hacker2Length = hacker2.length;
@@ -33,7 +33,8 @@ let hacker = "";
 for (let i = 0; i < hacker1Length; i++) {
     hacker += hacker1[i].toUpperCase() + " ";
 };
-console.log(hacker);
+
+console.log(`Spaced and capital letters: ${hacker}.`);
 
 //Reserve name
 let hackerReverse = "";
@@ -42,16 +43,14 @@ for (let i = hacker1Length - 1; i >= 0; i--) {
     hackerReverse += hacker1[i];
 };
 
-console.log(hackerReverse);
+console.log(`Reversed: ${hackerReverse}.`);
 
 //Lexicographic order
 
 let comparison = hacker1.localeCompare(hacker2);
 
-console.log(comparison);
-
 if (comparison === 1) {
-    console.log(`Yo, the navigator goes first definitely`)
+    console.log(`Yo, the navigator goes first definitely.`)
 } else if (comparison === 0) {
     console.log(`What?! You both have the same name?`)
 } else {
@@ -82,7 +81,7 @@ loremText = loremText.replace(/[ ]{2,}/gi, " ");
 loremText = loremText.replace(/\n /, "\n");
 let totalCount = loremText.split(' ').length;
 
-console.log(totalCount);
+console.log(`There are ${totalCount} words in our Lorem random text.`);
 
 //Bonus 1: Make your program count the number of times the Latin word et appears.
 let etCounter = 0;
@@ -93,18 +92,39 @@ for (let i = 0; i < loremText.length; i++) {
     }
 };
 
-console.log(etCounter);
+console.log(`There are ${etCounter} "et" words in our Lorem random text.`);
 
 //------------------------------------------
 //Bonus 2
-let phraseToCheck = "We are the fucking masters.";
+
+let phraseToCheck = "step on no pets";
 
 let phraseReversed = "";
-
+/* Lo que dejamos a medias en clase
 for (let i = phraseToCheck - 1; i >= 0; i--) {
-
     phraseReversed += phraseToCheck[i];
-    if (phraseReversed) {
+};*/
 
+//Prueba 1 con funciones y métodos
+function palindrome(str) {
+    var newString = str.replace(/[^a-z0-9]/g, '').toLowerCase();
+    var array = newString.split("");
+    for (var i = 0; i < array.length / 2; i++) {
+        if (array[i] !== array[array.length - i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+palindrome(phraseToCheck);
+
+//Prueba 2 con funciones y métodos
+var isPalindrome = function (string) {
+    if (string == string.split('').reverse().join('')) {
+        alert(string + ' is palindrome.');
+    } else {
+        alert(string + ' is not palindrome.');
     }
 }
+
+isPalindrome(phraseToCheck);
