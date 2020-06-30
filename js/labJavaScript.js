@@ -1,39 +1,151 @@
 
-// Iteration 1
-const hacker1 = 'Alonso';
-const hacker2 = 'Sainz';
 
+
+
+Buscar en ironhack-webbcn0620
+
+
+1
+
+IW
+1
+2
+
+
+ironhack-webbcn0620
+Alejandro abad
+
+Hilos de conversaciones
+
+Elementos guardados
+
+Personas
+
+Aplicaciones
+
+Archivos
+
+Mostrar menos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Invitar a otros
+
+
+
+Prueba premium para ti
+patricio
+
+
+
+Información
+1 mensaje nuevo
+
+
+patricio
+patricio
+Este es el principio de tu historial de mensajes con @patricio.
+Nuevo
+
+patricio  16:49
+// Iteration 1: Names and Input
+let hacker1 = 'Alejandro';
 console.log(`The driver's name is ${hacker1}`);
-console.log(`The navigator's name is ${hacker2}`)
-
-//Iteration2
-const nameLonger = hacker1.length>hacker2.length ? `The driver ${hacker1} has the longest name, it has ${hacker1.length} characters.` : `It seems that the navigator ${hacker2} has the longest name, it has ${hacker2.length} characters.`
-
-function IsNameLonger() {
-  if(hacker1.length>hacker2.length) {
-    return `The driver ${hacker1} has the longest name, it has ${hacker1.length} characters.`;
-  } else if(hacker2.length>hacker1.length) {
-    return `It seems that the navigator ${hacker2} has the longest name, it has ${hacker2.length} characters.`;
-  } else {
-    return 'What?! You both have the same name?';
-  }
-
+let hacker2 = 'Patricio';
+console.log(`The navigator's name is ${hacker2}`);
+// Iteration 2: Conditionals
+if (hacker1.length > hacker2.length) {
+    console.log(`The driver has the longest name, it has ${hacker1.length}`);
+} else if (hacker1.length < hacker2.length) {
+    console.log(`It seems the navigator has the longest name, it has ${hacker2.length}`);
+} else if(hacker1.length===hacker2.length){
+    console.log(`Wow, you both have equally long names, ${hacker2.length}`);
+}
+// Iteration 3: Loops
+let hacker1Capitalized=hacker1.toUpperCase();
+let temp='';
+for (let i = 0; i <= hacker1Capitalized.length; i++) {
+  temp += hacker1Capitalized.charAt(i) + ' ';
+  console.log(hacker1Capitalized[i])
+}
+console.log(temp)
+let reverseHacker2='';
+for(let i=hacker2.length; i>=0;i--){
+  reverseHacker2+=hacker2.charAt(i);
+}
+console.log(reverseHacker2);
+let hackersArray=[hacker1,hacker2];
+hackersArray.sort();
+switch(hackersArray[0]){
+  case hacker1:
+    console.log("The driver's name goes first");
+    break;
+  case hacker2:
+    console.log("Yo, the navigator goes first definitely");
+    break;
+  default:
+    console.log("What?! You both have the same name?")
 }
 
-console.log(nameLonger)
-console.log(IsNameLonger())
 
-//bonus time! 
-//Bonus 1
-const paragraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut varius neque. Phasellus dolor purus, sagittis vel facilisis in, pulvinar et purus. Curabitur sagittis aliquam augue, in vestibulum dui cursus nec. Aliquam in lectus eget nunc lacinia cursus et eget est. Etiam at mattis odio, id euismod neque. Nunc sodales ullamcorper lacus, eget facilisis leo suscipit eu. Maecenas at nunc quis augue bibendum sodales ac id purus.
+//bonus 2
+let a= `A man, a plan, a canal, Panama!`
+let b= `Amor, Roma`
+let c= `race car`
+let d= `stack cats`
+let e= `step on no pets`
+let f= `taco cat`
+let g= `put it up`
+let h= `Was it a car or a cat I saw?" and "No 'x' in Nixon`
 
-Morbi venenatis mauris erat, ut auctor mi sollicitudin in. Fusce vitae ligula ac augue rutrum facilisis nec euismod magna. Curabitur eget ligula vitae dolor tristique lacinia id tempor risus. In bibendum neque in posuere finibus. Etiam nec lacinia dolor. Praesent a leo odio. Aliquam sed dignissim mi, ac facilisis nisi. In hac habitasse platea dictumst. Curabitur tempor volutpat blandit. Pellentesque sed diam pulvinar justo ornare elementum. Vestibulum tincidunt ut dolor in porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sit amet magna nisi. Pellentesque ut sodales massa, quis placerat lectus.
+function isPalindromo(str) {
+  let palindromoReverseArray=[];
+  palindromoReverseArray.push(str.split(' '));
+  
+  //reverse variables palindromo
+  let palindromoReverse=[]
+  let palindromoWordReverse='';
+  let palindromoWord='';
+  let a=''
 
-Nullam lobortis turpis nec eros sollicitudin semper. Etiam eu felis interdum, lacinia ex sit amet, suscipit quam. Nulla in est quis velit laoreet porttitor. Cras dictum ante dolor, a feugiat leo vehicula et. Sed ac quam lorem. Nulla vestibulum luctus ex eu placerat. In sed dolor sem. Duis gravida mauris sed eros aliquet, vel tempor sem tincidunt. Morbi eros magna, varius nec tincidunt a, pulvinar ac velit. Mauris ac neque sit amet lorem venenatis posuere et eget ipsum. In ut rutrum magna.`;
+  let b=str.toString().replace(/\W/g, '').toLowerCase();
 
-// lets loop through the string and count the words
-function wordcount(input) {
-  return input.split(/\b/).length;
-};
+  for (let i = 0; i < palindromoReverseArray.length; i++) {
+    palindromoWord=palindromoReverseArray[i].toString();
 
-console.log(wordcount(paragraphs));
+      for(let j=palindromoWord.length; j>=0; j--){
+        palindromoWordReverse+=palindromoWord.charAt(j);
+      }    
+      a=palindromoWordReverse.replace(/\W/g, '').toLowerCase();    
+  }
+  if(a.localeCompare(b)!==0) {
+    console.log(a);
+    console.log(b);
+    return 'No es un palindromo'
+  } else {
+    console.log(a);
+    console.log(b);
+    return 'Es un palindromo';
+  }  
+}
+
+console.log(isPalindromo(a));
+console.log(isPalindromo(b));
+console.log(isPalindromo(c));
+console.log(isPalindromo(d));
+console.log(isPalindromo(e));
+console.log(isPalindromo(f));
+console.log(isPalindromo(g));
+console.log(isPalindromo(h));
