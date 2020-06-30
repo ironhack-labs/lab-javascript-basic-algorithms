@@ -18,48 +18,6 @@ Alejandro abad
 Hilos de conversaciones
 
 Elementos guardados
-
-Personas
-
-Aplicaciones
-
-Archivos
-
-Mostrar menos
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Invitar a otros
-
-
-
-Prueba premium para ti
-patricio
-
-
-
-Información
-1 mensaje nuevo
-
-
-patricio
-patricio
-Este es el principio de tu historial de mensajes con @patricio.
-Nuevo
-
-patricio  16:49
 // Iteration 1: Names and Input
 let hacker1 = 'Alejandro';
 console.log(`The driver's name is ${hacker1}`);
