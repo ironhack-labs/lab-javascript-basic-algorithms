@@ -91,15 +91,13 @@ let phraseReverse = "";
 for (let j = 0; j < phraseToCheck.length; j++) {
   phrase += phraseToCheck[j];
 }
-console.log(phrase);
 
 for (let i = phraseToCheck.length - 1; i >= 0; i--) {
   phraseReverse += phraseToCheck[i];
 }
-console.log(phraseReverse);
 
 if (phrase === phraseReverse) {
-  console.log("Son palíndromos");
+  console.log(`${phrase} es palíndromo`);
 } else {
-  console.log("No son palíndromos");
+  console.log(`${phrase} no es palíndromo`);
 }
