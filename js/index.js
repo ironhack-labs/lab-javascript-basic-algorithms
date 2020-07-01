@@ -137,13 +137,23 @@ for (let i = 0; i < palindrome.length; i++) {
 // Si hay más de dos palabras en la frase, requisito mínimo para un palindromo, los comparamos, invirtiendo la última palabra y comparándola con la pimera
 if (palindromeNumWords >= 1) {
   let firstWord = palindromeWords[0].toLowerCase();
-  let lastWordReversed = palindromeWords[palindromeWords.length - 1]
+  let lastWord = palindromeWords[palindromeWords.length - 1].toLowerCase();
+  let lastWordReverse = "";
+
+  for (let i = lastWord.length; i > -1; i--) {
+    lastWordReverse += lastWord.charAt(i)
+  }
+
+  //console.log(lastWordReverse);
+
+  /*let lastWordReverse = palindromeWords[palindromeWords.length - 1]
     .split("")
     .reverse()
     .join("")
     .toLowerCase();
+  */
 
-  if (firstWord === lastWordReversed) {
+  if (firstWord === lastWordReverse) {
     console.log(`Existe un palindromo`);
   } else {
     console.log("No hay un palindromo");
