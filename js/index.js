@@ -42,11 +42,7 @@ let resultado2 = "";
 
 /* Ejercicio 3 */
 
-let phrases= ["The driver's name goes first","Yo, the navigator goes first definitely","What?! You both have the same name?"]
-
-//let phrases= ["a","c","b"]
-
-//console.log("a".charCodeAt(0), "b".charCodeAt(0), "c".charCodeAt(0),)
+let phrases= [hacker1,hacker2];
 
 let phraseNumbers = 0;
 let phraseNumbersHight = 0;
@@ -72,5 +68,84 @@ for (let i=0; i<phrases.length; i++) {
   }  
 }
 //Pintamos la frase con más puntuación lexicográfica
-console.log(namephraseNumbersHight)
+if(namephraseNumbersHight == hacker1){
+  console.log(`The driver's name ${hacker1} goes first.`)
+}else if(namephraseNumbersHight == hacker2){
+  console.log(`Yo, the navigator ${hacker2} goes first definitely.`)
+} else {
+  console.log(`What?! You both have the same name?.`)
+}
 
+
+////////////////// Bonus track 
+
+
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis nibh at lectus rutrum congue. Proin ut sapien vulputate, gravida nunc non, sollicitudin nisi. Praesent dictum fermentum mollis. Quisque ultrices vehicula erat. Aliquam erat volutpat. Fusce tincidunt tellus suscipit risus ultricies, ut maximus nibh blandit. Sed iaculis, risus nec sollicitudin accumsan, elit lorem posuere dolor, ut sodales neque tortor sit amet mi. Proin ultrices maximus turpis vel tincidunt. Vestibulum enim elit, pellentesque sed ligula eget, euismod fringilla libero. Praesent vulputate nisl nisi, eu semper orci ultrices eget. Quisque placerat, dolor id auctor dictum, sem felis laoreet justo, a pharetra mi risus nec felis.
+
+In id sapien bibendum, porta eros ac, consequat urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas blandit nisi et mi dapibus dapibus. Vestibulum congue dolor luctus faucibus vehicula. Etiam enim mauris, sagittis at tristique a, sodales a felis. Phasellus vestibulum ex eu sem lobortis, et mollis magna volutpat. Mauris quis ligula luctus, ornare urna vel, laoreet felis. Pellentesque volutpat purus non nisl malesuada pellentesque. Morbi elementum non felis et congue. Phasellus tincidunt nibh et tristique facilisis. Nulla libero nibh, eleifend nec augue et, pellentesque viverra dui. Aliquam a leo a dui cursus tincidunt nec ut est. Integer vehicula aliquet libero in luctus. Integer cursus, purus ac posuere ornare, purus nunc dictum lectus, a sagittis nibh eros quis arcu. Nulla neque nisl, facilisis et rutrum sed, sollicitudin non neque. Donec consequat eu dui eu rutrum.
+
+Vestibulum non pretium turpis, congue rhoncus erat. Curabitur at molestie nisl. Vivamus suscipit tempor lorem non pretium. Ut pharetra malesuada nisl eget suscipit. Aliquam erat volutpat. Fusce dignissim elit nisl, a commodo magna pharetra nec. Proin ornare faucibus diam, at maximus sem efficitur quis. Vivamus in dictum urna. Nullam faucibus ut dui at pulvinar. Donec in quam turpis. Duis porttitor sapien sed nisl interdum, sit amet molestie elit suscipit. Phasellus et libero mauris.`;
+
+let words = [];
+let word = "";
+let keyword = "et";
+
+for (let i = 0; i < lorem.length; i++) {
+  if (lorem.charAt(i) == " " || lorem.charAt(i) == "\n") {
+    words.push(word);
+    word = "";
+  } else {
+    word += lorem.charAt(i);
+  }
+}
+
+console.log(`En este string hay ${words.length} palabras`);
+console.log(`La palabra "${keyword}" sale ${words.indexOf(keyword)} veces`);
+
+
+//////////////////////////////////////////////////////////////////////////////////
+
+//Array para evitar que cuente añanda signos de puntuación en las palabras
+let notWords = ["?", "!", "¡", '"', "'", ".", ","];
+
+let palindrome = `Amor, Roma.`;
+let palindromeNumWords = 0;
+let palindromeWord = "";
+let palindromeWords = [];
+
+// Recorremos el palindromo
+for (let i = 0; i < palindrome.length; i++) {
+  
+  // Si el caracter es un espacio o un . usamos la variable palindromeWord que ha ido almacenando los caracteres precedentes y lo añadimos al array palindromeWords
+  if (palindrome.charAt(i) == " " || palindrome.charAt(i) == ".") {
+    palindromeNumWords++;
+    palindromeWords.push(palindromeWord);
+    palindromeWord = "";
+  } else {
+    
+    // Cuando vamos almacenando la palabra antes del . o el espacio, comprobamos que no se nos cuelen signos de puntuación en la palabra. Usamos el arrey notWords para cotejar los caracteres que no se incluyen
+    let isAWord = true;
+    for (let j = 0; j < notWords.length; j++) {
+      if (palindrome.charAt(i) == notWords[j]) {
+        isAWord = false;
+      }
+    }
+    if (isAWord) palindromeWord += palindrome.charAt(i);
+  }
+}
+
+// Si hay más de dos palabras en la frase, requisito mínimo para un palindromo, los comparamos, invirtiendo la última palabra y comparándola con la pimera
+if (palindromeNumWords >= 1) {
+  let firstWord = palindromeWords[0].toLowerCase();
+  let lastWordReversed = palindromeWords[palindromeWords.length - 1]
+    .split("")
+    .reverse()
+    .join("")
+    .toLowerCase();
+
+  if (firstWord === lastWordReversed) {
+    console.log(`Existe un palindromo`);
+  } else {
+    console.log("No hay un palindromo");
+  }
+}
