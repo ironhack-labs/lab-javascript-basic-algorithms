@@ -1,7 +1,5 @@
-// Iteration 1: Names and Input
+// 1 iteration
+const driver1 = prompt('What is your name?')
+console.log(driver1)
 
-
-// Iteration 2: Conditionals
-
-
-// Iteration 3: Loops
+// ..... rest of the code
