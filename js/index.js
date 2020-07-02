@@ -40,9 +40,9 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 console.log(reversedName);
 
 // Iteration 3.3
-if (hacker1.localeCompare(hacker2)) {
+if (hacker1.localeCompare(hacker2, 'en', { sensitivity: 'base' }) > 0) {
   console.log("The driver's name goes first.");
-} else if (hacker1.localeCompare(hacker2)) {
+} else if (hacker1.localeCompare(hacker2, 'en', { sensitivity: 'base' }) < 0) {
   console.log('Yo, the navigator goes first definitely');
 } else {
   console.log('What?! You both have the same name?');
@@ -56,9 +56,13 @@ let loremIpsum_phrase =
 
 let totalWordCount = 0;
 for (let i = 0; i < loremIpsum_phrase.length; i++) {
-  if (loremIpsum_phrase[i] !== ' ') {
+  if (loremIpsum_phrase[i] === ' ') {
     totalWordCount++;
   }
+}
+
+if (loremIpsum_phrase) {
+  totalWordCount++;
 }
 console.log(totalWordCount);
 
@@ -68,7 +72,8 @@ for (let i = 0; i < loremIpsum_phrase.length; i++) {
     loremIpsum_phrase[i] === ' ' &&
     loremIpsum_phrase.toLowerCase()[i + 1] === 'e' &&
     loremIpsum_phrase[i + 2] === 't' &&
-    !(loremIpsum_phrase[i + 3] >= 'A' && loremIpsum_phrase[i + 3] <= 'z')
+    loremIpsum_phrase[i + 3] <= 'A'
+    //!(loremIpsum_phrase[i + 3] >= 'A' && loremIpsum_phrase[i + 3] <= 'z')
   ) {
     etWordCheck++;
   }
