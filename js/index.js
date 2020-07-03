@@ -145,3 +145,4 @@ if (onlyCharacters === onlyCharactersBackward){
   console.log(`Yes, \'${phraseToCheck}\' is a palindrome`)
 } else {
   console.log(`No, \' ${phraseToCheck} \' is not a palindrome`)
+}
