@@ -89,58 +89,26 @@ for (let i = 0; i < text.length - 1; i++) {
 console.log(etCounter)
 
 //Bonus 2:
-/* const paliStr = "A man, a plan, a canal, Panama!";
-const paliStrMid = paliStr.length / 2;
+//string which we want to check for palindrome
+const str = "A man, a plan, a canal, Panama!";
+//remove the punctuation 
+const onlyLetters = str.replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g,"");
+//make the lower case
+const lowerLetters = onlyLetters.toLowerCase();
+//remove the spaces
+const finalStr = lowerLetters.replace(/\s+/g, '');
 
-if (paliStrMid % 2 === 0) {
-    for (let i = 0; i <= paliStrMid; i++) {
-        if (paliStr[i] === paliStr[paliStr.length - i]) {
-            console.log("Palindromeee!")
-        } else {
-          console.log("Not palindrome")
-        }
-    }
-} else if (paliStrMid % 2 !== 0){
-    for (let j = 0; j < paliStrMid; j++) {
-      if (paliStr[j] === paliStrMid[paliStr.length - j]) {
-        console.log("Palindromeee!")
-      } else {
-        console.log("Not palindrome")
+
+function isPalindrome(string) {
+  let len = string.length;
+  for (let i = 0; i < len / 2; i++) {
+    if (string[i] !== string[len - 1 - i]) {
+      console.log("No, it is not palindrome")
+      return false;
       }
     }
-} */
-
-
-
-const paliStr = "A man, a plan, a canal, Panama";
-const paliStrMid = paliStr.length / 2;
-
-if (Number.isInteger(paliStrMid) === true && paliStrMid % 2 === 0) {
-    for (let i = 0; i <= paliStrMid; i++) {
-        if (paliStr[i] === paliStr[paliStr.length - i]) {
-            console.log("Palindromeee!")
-        } else {
-          console.log("Not palindrome")
-        }
-    }
-} else if (Number.isInteger(paliStrMid) === false || paliStrMid % 2 !== 0){
-    for (let j = 0; j < paliStrMid; j++) {
-      if (paliStr[j] === paliStr[paliStr.length - j]) {
-        console.log("Palindromeee!")
-      } else {
-        console.log("Not palindrome")
-      }
-    }
+  console.log("YES, it is palindrome! ")
+  return true;
 }
 
-/* const paliStr = "race car";
-const paliStrMid = paliStr.length / 2;
-
-if (paliStrMid % 2 === 0) {
-    for (let i = 0; i <= paliStrMid; i++) {
-        if (paliStr[i] === paliStr[paliStr.length - i]) {
-            console.log("Palindromeee!")
-        }
-    }
-} */
-
+isPalindrome(finalStr)
