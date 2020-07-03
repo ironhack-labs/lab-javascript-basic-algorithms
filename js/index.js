@@ -101,7 +101,6 @@ console.log(wordCount)
 
 //Counting number of times word 'et' appears in text
 const words = paragraph.split(' ')
-
 let countWordEt = 0
 
 for (let i = 0; i <= words.length; i++) {
@@ -110,3 +109,39 @@ for (let i = 0; i <= words.length; i++) {
   }  
 }
 console.log(countWordEt)
+
+/*Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. */
+
+let phraseToCheck = 'A man, a plan, a canal, Panama!'
+phraseToCheck = phraseToCheck.toLowerCase()
+
+// creating a string with only characters so it can be checked if it's a palindrome
+
+let i = -1    // I had to put it to -1 because when it was 0 the first letter of the string was not taken into account. I wasn't able to fix it another way. 
+let onlyCharacters = ""
+
+while (i < phraseToCheck.length) {
+  i++
+    if (phraseToCheck[i] === ',' ||  phraseToCheck[i] === " ") {
+    continue
+  } else if (phraseToCheck[i] === '!' || phraseToCheck[i] === '?') {
+    break
+  }
+  onlyCharacters += phraseToCheck[i]
+  
+}
+console.log(onlyCharacters)
+
+// writing onlyCharacters backwards
+let onlyCharactersBackward = "";
+for (let i = onlyCharacters.length -1; i >= 0; i--) {
+  onlyCharactersBackward += onlyCharacters[i];
+}
+console.log(onlyCharactersBackward);
+
+//checking if onlyCharacters and onlyCharactersBackward are the same
+if (onlyCharacters === onlyCharactersBackward){
+  console.log(`Yes, \'${phraseToCheck}\' is a palindrome`)
+} else {
+  console.log(`No, \' ${phraseToCheck} \' is not a palindrome`)
