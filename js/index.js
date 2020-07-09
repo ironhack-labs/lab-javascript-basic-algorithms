@@ -67,4 +67,12 @@ for (let j = 0; j < loremImpsum.length; j++) {
         counter++;
     }
 }
+
+for (let k = 0; k < loremImpsum.length; k++) {
+    let new_var = loremImpsum.substring(k, k + 4);
+    if (new_var === " et ") {
+        et_counter++;
+    }
+}
 console.log(counter);
+console.log(et_counter);
