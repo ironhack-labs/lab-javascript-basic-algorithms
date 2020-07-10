@@ -64,10 +64,10 @@ for (i=0; i< novoParagrafo.length; i++) {
 console.log(contadorEt);
 
 // Bonus 2
-let phraseToCheck = 'Os carros são amarelos, mas de noite são azuis'
+let phraseToCheck = 'Race car'
 let regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`\s{|}~]/g;
 
-  let phraseChecked = phraseToCheck.replace(regex, '');
+  let phraseChecked = phraseToCheck.replace(regex, '').toLowerCase();
   console.log(phraseChecked);
 
 let phraseCheckedReversed =''
@@ -78,3 +78,4 @@ if (phraseCheckedReversed === phraseChecked){
     console.log('é um palindrome');
 
 }else console.log('Its not a palindrome');
+
