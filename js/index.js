@@ -68,43 +68,43 @@ const threeParagraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 //let threeParagraphs = `   `;
 
-console.log (threeParagraphs);
+console.log(threeParagraphs);
 
 // number of words
-let numberWords=0;
+let numberWords = 0;
 
 let lastLetter = " ";
-if(threeParagraphs.includes(" ")) {
-    for (let i=0; i<threeParagraphs.length; i++){
-        if (threeParagraphs[i] === " " && lastLetter !== " "){
+if (threeParagraphs.includes(" ")) {
+    for (let i = 0; i < threeParagraphs.length; i++) {
+        if (threeParagraphs[i] === " " && lastLetter !== " ") {
             numberWords += 1;
         }
         lastLetter = threeParagraphs[i];
     }
-} else if (threeParagraphs.length !== 0){
+} else if (threeParagraphs.length !== 0) {
     numberWords = 1;
 }
 
-if (numberWords===0) {
+if (numberWords === 0) {
     console.log(`Your string does not have any word in it`);
-} else if (lastLetter===" "){
+} else if (lastLetter === " ") {
     console.log(`Your string has ${numberWords} word(s)`)
 } else {
-    console.log(`Your string has ${numberWords+1} word(s)`)
+    console.log(`Your string has ${numberWords + 1} word(s)`)
 }
 
 // number of "et" appearing in the string
 
-let numberEt=0;
+let numberEt = 0;
 
 let copyOfString = threeParagraphs;
 const wordToCount = "et"
 
 console.log(copyOfString.search(/\bet\b/i));
 
-while (copyOfString.search(/\bet\b/i)>=0) {
+while (copyOfString.search(/\bet\b/i) >= 0) {
     numberEt += 1;
-    copyOfString = copyOfString.substring(copyOfString.search(/\bet\b/i)+2);
+    copyOfString = copyOfString.substring(copyOfString.search(/\bet\b/i) + 2);
 }
 
 console.log(`The Latin word "et" has appeared ${numberEt} time(s)`);
@@ -116,7 +116,7 @@ let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 let lowerCasePhrase = phraseToCheck.toLowerCase();
 
-console.log("All lower case:",lowerCasePhrase);
+console.log("All lower case:", lowerCasePhrase);
 
 let onlyLetters = "";
 
@@ -134,7 +134,7 @@ for (let i = 0; i < lowerCasePhrase.length; i++) {
     }
 }
 
-console.log("Only letters:",onlyLetters);
+console.log("Only letters:", onlyLetters);
 
 let reversedPhrase = "";
 
@@ -142,10 +142,10 @@ for (let i = onlyLetters.length - 1; i >= 0; i--) {
     reversedPhrase += onlyLetters[i]
 }
 
-console.log("Reversed only letters phrase:",reversedPhrase);
+console.log("Reversed only letters phrase:", reversedPhrase);
 
-if (onlyLetters.localeCompare(reversedPhrase)===0) {
-    console.log (`The string "${phraseToCheck}" is a Palindrome`);
+if (onlyLetters.localeCompare(reversedPhrase) === 0) {
+    console.log(`The string "${phraseToCheck}" is a Palindrome`);
 } else {
-    console.log (`The string "${phraseToCheck}" is not a Palindrome`);
+    console.log(`The string "${phraseToCheck}" is not a Palindrome`);
 }
