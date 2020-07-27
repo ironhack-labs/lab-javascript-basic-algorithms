@@ -36,3 +36,12 @@ if (hacker1.localeCompare(hacker2) === -1) {
 } else {
   console.log('What?! You both have the same name?');
 }
+
+//Bonus 1
+
+let lorem = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id leo quis arcu fermentum ornare. Proin tristique, purus vel rhoncus interdum, dui odio egestas ipsum, scelerisque elementum augue leo vitae diam. Curabitur pharetra iaculis ex, ut luctus enim euismod eu. In rhoncus sem non dictum pharetra. Aenean a eros vitae sem luctus hendrerit. Integer at urna vitae dolor sollicitudin tincidunt a a enim. Nam hendrerit dignissim diam at elementum. Quisque feugiat tincidunt ultrices. Suspendisse vitae rhoncus tortor. Mauris dignissim commodo pellentesque. Quisque in nunc quam. Sed non dapibus est. Phasellus nulla mi, auctor at sollicitudin eu, egestas vel neque. Nullam dignissim ex arcu, non laoreet nisi pharetra non."
+console.log(lorem.split(' ').length);
+
+//Bonus 1 B
+let occurence = "et";
+console.log(occurence.split("et").length - 1);
