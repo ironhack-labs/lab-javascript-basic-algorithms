@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 // 1.1 Create a variable `hacker1` with the driver's name.
-const hacker1 = `MAXIM COOPIETERS`;
+const hacker1 = `Maxim Coopieters`;
 
 // 1.2 Print `"The driver's name is XXXX"`.
   console.log(`The driver's name is ${hacker1}`);
@@ -23,7 +23,8 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
-console.log(hacker1.split('').join(' '));
+let newHacker = hacker1.split('').join(' ');
+console.log(newHacker.toUpperCase());
   
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
   console.log(hacker2.split("").reverse().join(""));
