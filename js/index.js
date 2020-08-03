@@ -85,5 +85,25 @@ Nullam fringilla porta arcu, non interdum eros cursus id. Vivamus iaculis congue
 Donec efficitur diam a laoreet bibendum. Aenean quis maximus nibh, ac commodo justo. Nullam et nibh dolor. Fusce dapibus risus ac lacus sollicitudin suscipit. Sed vel imperdiet mi, in mattis tellus. Vivamus et lorem et ligula rhoncus mollis dapibus ut est. Proin vitae venenatis dolor, vitae ornare diam. Sed venenatis purus augue, ac cursus sem blandit at. Donec luctus est quis cursus faucibus. Nullam viverra libero ac est blandit facilisis. Suspendisse potenti. Praesent vitae semper leo.`;
 
 let wordCount = parrafoLoremIpsum.split(" ").length;
-
 console.log(wordCount);
+
+let wordEtCount = (parrafoLoremIpsum.match(/et/g) || []).length;
+console.log(wordEtCount);
+
+
+function esPalindromo(str) {
+    var regExp = /[^A-Za-z0-9]/g;
+    str = str.toLowerCase().replace(regExp, '');
+    var len = str.length;
+    for (var i = 0; i < len/2; i++) {
+      if (str[i] !== str[len - 1 - i]) {
+          return false;
+      }
+    }
+    return true;
+   }
+   
+   let textoPalindromo = 'taco cat'
+   // let textoPalindromo = 'radar'
+   let resultPalindromo = esPalindromo(textoPalindromo);
+   console.log(resultPalindromo);
