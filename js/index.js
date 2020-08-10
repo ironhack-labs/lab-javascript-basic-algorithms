@@ -9,6 +9,7 @@ if (hacker1.length > hacker2.length){
 } else if (hacker1.length < hacker2.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`);
 }
+
 // Iteration 3: Loops
 const compare = hacker1[0].localeCompare(hacker2[0]);
 if (compare < 0) {
@@ -16,6 +17,7 @@ if (compare < 0) {
 } else {
   console.log(hacker2);
 } 
+
 //Bonus 1
 const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper nisl eu arcu feugiat, id pellentesque ligula semper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nisl eros, fermentum eu nisl ut, feugiat tempor nunc. Ut fermentum mi et interdum facilisis. Suspendisse sollicitudin tincidunt aliquam. Nunc finibus enim neque. Aliquam erat volutpat.
 
