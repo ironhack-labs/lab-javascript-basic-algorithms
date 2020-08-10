@@ -23,7 +23,7 @@ const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus u
 
 Integer ut dui sem. In nec commodo tellus, nec elementum metus. Nullam faucibus dolor vitae est mollis venenatis. Quisque luctus sapien ut sem aliquet tristique. Ut non lectus et lorem feugiat iaculis vel at ipsum. Cras consequat, dolor ut fringilla cursus, mi nulla porttitor nisl, et dapibus purus lacus eu magna. Curabitur sed tellus vulputate, efficitur risus sed, blandit sapien. Suspendisse at nibh eu nisi volutpat dignissim.
 
-Nam tincidunt tempus quam id porta. Morbi ut dictum lorem. In vestibulum rutrum rutrum. Vivamus vel libero sit amet mi fringilla tincidunt eu sit amet ligula. Donec ullamcorper volutpat ligula vel aliquam. Aliquam vitae turpis pulvinar, faucibus ligula et, cursus turpis. Nunc vitae convallis eros, blandit faucibus nulla.`
+Nam tincidunt tempus quam id porta. Morbi ut dictum. In vestibulum rutrum rutrum. Vivamus vel libero sit amet mi fringilla tincidunt eu sit amet ligula. Donec ullamcorper volutpat ligula vel aliquam. Aliquam vitae turpis pulvinar, faucibus ligula et, cursus turpis. Nunc vitae convallis eros, blandit faucibus nulla.`
 
 console.log(`The number of words is ${text.split(' ').length}`)
 
