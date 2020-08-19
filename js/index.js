@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
-let hacker1 = "Niko";
+const hacker1 = "Niko";
 console.log("The driver's name is " + hacker1);
-let hacker2 = "Juan";
+const hacker2 = "Juan";
 console.log("The navigator's name is " + hacker1);
 
 // Iteration 2: Conditionals
@@ -39,12 +39,12 @@ console.log(result2);
 let sortedArray = [hacker1, hacker2];
 sortedArray.sort();
 
-if (hacker1 == hacker2) {
-  console.log("What?! You both have the same name?");
-} else if (sortedArray[0] == hacker1) {
+if (hacker1.localeCompare(hacker2) == -1) {
   console.log("The driver's name goes first.");
-} else {
+} else if (hacker1.localeCompare(hacker2) == 1) {
   console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?")
 }
 
 /*
