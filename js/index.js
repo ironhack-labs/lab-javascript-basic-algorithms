@@ -22,8 +22,8 @@ for (let i = 0; i < hacker1.length; i++) {
 console.log(result1.toUpperCase().trim())
 
 let result2 = ""
-for (let i = hacker2.length; i > 0; i--){
-    result2 += hacker2.charAt(i-1)
+for (let i = hacker2.length-1; i >= 0; i--){
+    result2 += hacker2.charAt(i)
 }
 
 console.log(result2)
