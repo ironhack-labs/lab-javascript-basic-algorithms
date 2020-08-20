@@ -78,3 +78,34 @@ if (hacker1.toUpperCase() === hacker2.toUpperCase()){
     }
   }
 }
+
+
+//BONUS//
+
+// bonus 1
+
+
+let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis auctor mi, et posuere justo. Praesent et tellus sit amet enim efficitur ornare non sed ipsum. Suspendisse orci nisl, laoreet id bibendum non, porttitor at turpis. Sed lobortis est arcu, eget imperdiet justo hendrerit eget. Cras rutrum erat in facilisis pellentesque. Curabitur maximus sit amet sapien eget condimentum. Aliquam porttitor, tortor non ornare porta, tellus nibh volutpat enim, at euismod neque erat ut nisl. Etiam hendrerit tincidunt tristique.
+
+Pellentesque sed lorem convallis diam rutrum vehicula non eget ante. Donec commodo metus eget ligula sollicitudin dictum. Etiam venenatis bibendum augue at scelerisque. Pellentesque vestibulum eros ac enim volutpat porta. Etiam vel dui id augue condimentum eleifend. Integer porta diam sed lectus laoreet ultrices. Sed pretium metus dictum aliquam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed ultrices nisl quis mattis sagittis. Nullam consequat neque eros, a vestibulum ex interdum eget. Nulla sodales euismod sagittis. Nullam ullamcorper velit tortor, vel varius massa pretium nec. Etiam fermentum nisi nec ligula ornare, a aliquam enim ullamcorper. Duis id dolor diam. Vestibulum in dictum libero. Nunc et sapien sed tellus venenatis semper."
+
+function count() {
+  text.split(" ").length
+}
+
+function countEt(){
+  let indices = []
+  for(var i = 0; i < text.length; i++) {
+	  if (text[i].toLowerCase() === "o") indices.push(i);
+  }
+}
+
+// Bonus 2
+
+
+let palindromo = "Amor, Roma";
+
+
+
