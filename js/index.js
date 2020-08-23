@@ -19,12 +19,11 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
-let result = []
+let result1 = []
 for (let i = 0; i < hacker1.length; i++) {
-    // console.log(hacker1[i])
-    result.push(hacker1[i].toUpperCase())
+    result1.push(hacker1[i].toUpperCase())
 }
-console.log(result.join(' '))
+console.log(result1.join(' '))
 
 
 console.log(hacker1.split('').join(' ').toUpperCase())
@@ -32,17 +31,18 @@ console.log(hacker1.split('').join(' ').toUpperCase())
 
 
 
-let result = ''
+let result2 = ''
 for (let i = hacker2.length - 1; i >= 0; i--) {
-    result += hacker2[i]
+    result2 += hacker2[i]
 }
-console.log(result)
+console.log(result2)
 
-if (hacker1.localeCompare(hacker2) > 0) {
+if (hacker1.localeCompare(hacker2) < 0) {
     console.log('The driver\'s name goes first.')
 
-} else if (hacker1.localeCompare(hacker2) < 0) {
+} else if (hacker1.localeCompare(hacker2) > 0) {
     console.log('Yo, the navigator goes first definitely.')
 } else {
     console.log('What?! You both have the same name?')
 }
+
