@@ -23,5 +23,42 @@ if (drLgth === nvLgth) {
     console.log("Wow, you both have equally long names, " + drLgth + " characters!")
 }
 
-// Iteration 3: Loops
+// Iteration 3-1: Loops
 
+let result = "";
+
+for (let i = 0; i < drLgth; i++) {
+    result = result + " " + hacker1[i];
+}
+
+console.log(result.toUpperCase());
+
+// Iteration 3-2: Loops
+
+result = "";
+
+var i = nvLgth - 1;
+while (i >= 0) {
+    result = result + hacker2[i];
+    i--
+}
+
+console.log(result)
+
+// for (let i = drLgth - 1; i > 0; i--) {
+//     result = result + " " + hacker1[i];
+// }
+
+// console.log(result.toUpperCase());
+
+// Iteration 3-3: Loops
+
+if (hacker1[0] > hacker2[0]) {
+    console.log("The driver's name goes first.")
+}
+if (hacker1[0] < hacker2[0]) {
+    console.log("Yo, the navigator goes first definitely")
+}
+if (hacker1[0] === hacker2[0]) {
+    console.log("What?! You both have the same name?")
+}
