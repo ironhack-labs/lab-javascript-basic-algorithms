@@ -46,4 +46,4 @@ switch (compareName) {
     console.log("What?! You both have the same name?");
     break;
 }
-console.log(compareName)
+console.log(compareName);
