@@ -63,19 +63,3 @@ if (numberOfChar%2 === 0) {
         console.log("yes it's a palindrome")
     } else {console.log("no it's not a palindrome")}
 }
-
-
-
-
-
-/*
-premiere boucle : prend la 1ere lettre de la string puis la seconde etc et elle les met dans une
-autre variable. d'abord la 1ere puis la seconde etc
-a chaque fois que la boucle tourne une fois, elle verifie que le nbr d'itération est 
-inferieur a la moitié du nbr de char de la variable
-si oui je continue la boucle
-si non je regarde si elle est égal à la moitié je passe a la boucle suivante,
-si elle est supérieur à la moitié faut sauter cette lettre là (+1)
-boucle suivante c'est la même sauf qu'elle va prendre les lettres 
-
-*/
