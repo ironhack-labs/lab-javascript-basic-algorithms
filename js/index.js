@@ -46,60 +46,35 @@ newNavigatorsName = reverseString(hacker2);
 
 console.log(`3.2 : ${newNavigatorsName}`);
 
-// ------
-// "traitement" pour récuper le plus court et le stocker 
-/*
-function compareName(driver, navigator) {
-  let indice = 0;
-  console.log("Print du localeCompare: "  + driver.localeCompare(navigator));
-  if( driver.localeCompare(navigator) < 0 ) {
-    console.log("The driver's name goes first.");
-    indice = 1;
-    return indice;
-  } else if(driver.localeCompare(navigator) > 0 ){
-    console.log("Yo, the navigator goes first definitely.");
-    indice = 1;
-    return indice;
-  } else if(driver.localeCompare(navigator) == 0   ){
-    console.log("What?! You both have the same name?");
-  }
+
+//This function come from: https://gist.github.com/marcelo-ribeiro/abd651b889e4a20e0bab558a05d38d77
+// the purpose is to transform any special char to something normal
+function slugify (str) {
+  var map = {
+      '-' : ' ',
+      '-' : '_',
+      'a' : 'á|à|ã|â|À|Á|Ã|Â',
+      'e' : 'é|è|ê|É|È|Ê',
+      'i' : 'í|ì|î|Í|Ì|Î',
+      'o' : 'ó|ò|ô|õ|Ó|Ò|Ô|Õ',
+      'u' : 'ú|ù|û|ü|Ú|Ù|Û|Ü',
+      'c' : 'ç|Ç',
+      'n' : 'ñ|Ñ'
+  };
+  
+  for (var pattern in map) {
+      str = str.replace(new RegExp(map[pattern], 'g'), pattern);
+  };
+
+  return str;
 };
 
-var shortestString = 0;
+var driver = slugify(hacker1);
+var navigator = slugify(hacker2);
 
-if(hacker1.length <  hacker2.length){
-  shortestString = hacker2.length ;
-} else if(hacker1.length > hacker2.length) {
-  shortestString = hacker1.length ;
-} else {
-  shortestString = hacker1.length;
-}
-
-for (let i = 0; i < shortestString; i++) {
-  console.log("permier hacker " + hacker1[i] + " deuxieme " + hacker2[i]);
-  if( compareName(hacker1[i], hacker2[i]) == 1) {
-    break;
-  } else {
-    // 
-    if( driver.localeCompare(navigator) < 0 ) {
-      console.log("The driver's name goes first.");
-      
-    } else {
-      console.log("Yo, the navigator goes first definitely.");
-    
-    }
-  } 
-   
-}
-
-
-//hacker1[i].localeCompare(hacker2[i]);
-*/
-
-
-if (hacker1 < hacker2){
+if (driver.toUpperCase() < navigator.toUpperCase()){
   console.log("The driver's name goes first.");
-} else if(hacker1 > hacker2) {
+} else if(driver.toUpperCase() > navigator.toUpperCase()) {
   console.log("Yo, the navigator goes first definitely.");
 } else {
   console.log("What?! You both have the same name?");
