@@ -1,4 +1,4 @@
-/ Iteration 1: Names and Input
+// Iteration 1 Names and Input
 const hacker1 = 'Luca'
 console.log("The driver's name is " + hacker1)
 const hacker2 = 'Rico'
