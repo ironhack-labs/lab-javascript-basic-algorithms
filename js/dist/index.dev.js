@@ -1,9 +1,9 @@
 "use strict";
 
 // Iteration 1 Names and Input
-var hacker1 = 'Luca';
+var hacker1 = "Luca";
 console.log("The driver's name is " + hacker1);
-var hacker2 = 'Rico';
+var hacker2 = "Rico";
 console.log("The navigator's name is ".concat(hacker2));
 console.log("_________________________________"); // Iteration 2: Conditionals
 
@@ -23,7 +23,7 @@ var checkNameLength = function checkNameLength(name1, name2) {
     return;
   }
 
-  console.log('there is a mistake somewhere');
+  console.log("there is a mistake somewhere");
 };
 
 checkNameLength(hacker1, hacker2);
@@ -36,7 +36,6 @@ var hackerNameToUppercase = function hackerNameToUppercase(name) {
     capitalizedName += name[i].toUpperCase() + " ";
   }
 
-  ;
   return capitalizedName.trim();
 };
 
@@ -50,7 +49,6 @@ var hackerNameReversed = function hackerNameReversed(name) {
     reversedName += name[i];
   }
 
-  ;
   return reversedName;
 };
 
@@ -72,3 +70,7 @@ var lexicography = function lexicography(name1, name2) {
 };
 
 console.log(lexicography(hacker1, hacker2)); // Bonus
+
+var phraseToCheck = "madam";
+
+var palindromCheck = function palindromCheck(string) {};
