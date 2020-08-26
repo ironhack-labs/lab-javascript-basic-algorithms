@@ -31,6 +31,19 @@ for (let i=hacker2.length-1; i>=0; i--) {
 }
 console.log(newNameNavigator);
 
+const compareName = hacker1.localeCompare(hacker2);
+switch (compareName) {
 
+    case 1:
+    console.log("Yo, the navigator goes first definitely.");
+    break;
+    
+    case -1: 
+    console.log("The driver's name goes first.");
+    break;
 
-console.log(hacker1.localeCompare(hacker2))
+    case 0:
+    console.log("What?! You both have the same name?");
+    break;
+}
+console.log(compareName)
