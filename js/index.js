@@ -77,7 +77,7 @@ for (let i = 0; i < lorem1.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords);
+console.log("There are " + nmbwords + " words");
 
 nmbwords = 1;
 
@@ -87,7 +87,7 @@ for (let i = 0; i < lorem2.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords);
+console.log("There are " + nmbwords + " words");
 
 nmbwords = 1;
 
@@ -97,7 +97,7 @@ for (let i = 0; i < lorem3.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords);
+console.log("There are " + nmbwords + " words");
 
 // Iteration bonus 1.3: Loops
 
@@ -112,3 +112,31 @@ for (let i = 0; i < lorem1.length; i++) {
 }
 
 console.log("There are " + nmbwords + " et");
+
+// Iteration bonus 2
+var phraseToCheck = "No 'x' in Nixon";
+var pTCclean = "";
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+    //remove space and special character from string
+    if (phraseToCheck[i].toUpperCase() != phraseToCheck[i].toLowerCase()) {
+        pTCclean += phraseToCheck[i].toLowerCase();
+    }
+}
+
+var isPalindrome = true;
+
+for (let i = 0; i < pTCclean.length; i++) {
+    //check if character is equal, if not, it isn't a palindrome
+    if (pTCclean[i] !== pTCclean[(pTCclean.length - 1) - i]) {
+        isPalindrome = false;
+    }
+}
+
+// console.log(pTCclean);
+
+if (isPalindrome) {
+    console.log(phraseToCheck + " IS a palindrome");
+} else {
+    console.log(phraseToCheck + " IS NOT a palindrome");
+}
