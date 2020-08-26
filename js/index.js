@@ -107,12 +107,13 @@ function reverseStringPal(str) {
   return phraseToReverse;
 }
 
+//This Regex handle a lot of special char
 var regex = /[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g;
-
+// removing special char by nothing
 function removePunctuation(string) {
   return string.replace(regex, "");
 }
-
+// removing space by nothing
 function removeSpace(string) {
   let regextab = / /gi;
   return string.replace(regextab, "");
