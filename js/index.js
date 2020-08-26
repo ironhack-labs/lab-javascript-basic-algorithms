@@ -40,10 +40,10 @@ result = "";
 var i = nvLgth - 1;
 while (i >= 0) {
     result = result + hacker2[i];
-    i--
+    i--;
 }
 
-console.log(result)
+console.log(result);
 
 // for (let i = drLgth - 1; i > 0; i--) {
 //     result = result + " " + hacker1[i];
@@ -54,13 +54,13 @@ console.log(result)
 // Iteration 3-3: Loops
 
 if (hacker1[0] > hacker2[0]) {
-    console.log("The driver's name goes first.")
+    console.log("The driver's name goes first.");
 }
 if (hacker1[0] < hacker2[0]) {
-    console.log("Yo, the navigator goes first definitely")
+    console.log("Yo, the navigator goes first definitely");
 }
 if (hacker1[0] === hacker2[0]) {
-    console.log("What?! You both have the same name?")
+    console.log("What?! You both have the same name?");
 }
 
 // Iteration bonus 1.2: Loops
@@ -77,7 +77,7 @@ for (let i = 0; i < lorem1.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords + " words");
+console.log("There are " + nmbwords + " word(s)");
 
 nmbwords = 1;
 
@@ -87,7 +87,7 @@ for (let i = 0; i < lorem2.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords + " words");
+console.log("There are " + nmbwords + " word(s)");
 
 nmbwords = 1;
 
@@ -97,7 +97,7 @@ for (let i = 0; i < lorem3.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords + " words");
+console.log("There are " + nmbwords + " word(s)");
 
 // Iteration bonus 1.3: Loops
 
@@ -111,10 +111,10 @@ for (let i = 0; i < lorem1.length; i++) {
     }
 }
 
-console.log("There are " + nmbwords + " et");
+console.log("There are " + nmbwords + " iteration(s) of the word *et*");
 
 // Iteration bonus 2
-var phraseToCheck = "No 'x' in Nixon";
+var phraseToCheck = "race car";
 var pTCclean = "";
 
 for (let i = 0; i < phraseToCheck.length; i++) {
@@ -126,17 +126,17 @@ for (let i = 0; i < phraseToCheck.length; i++) {
 
 var isPalindrome = true;
 
-for (let i = 0; i < pTCclean.length; i++) {
+for (let i = 0; i < pTCclean.length / 2; i++) {
     //check if character is equal, if not, it isn't a palindrome
     if (pTCclean[i] !== pTCclean[(pTCclean.length - 1) - i]) {
         isPalindrome = false;
     }
 }
 
-// console.log(pTCclean);
+//console.log(pTCclean);
 
 if (isPalindrome) {
-    console.log(phraseToCheck + " IS a palindrome");
+    console.log("*" + phraseToCheck + "* IS a palindrome");
 } else {
-    console.log(phraseToCheck + " IS NOT a palindrome");
+    console.log("*" + phraseToCheck + "* IS NOT a palindrome");
 }
