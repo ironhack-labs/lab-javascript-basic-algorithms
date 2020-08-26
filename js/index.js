@@ -83,11 +83,28 @@ Donec interdum pretium vulputate. Aenean malesuada, erat sed facilisis facilisis
 
 Vestibulum blandit eu tellus at pellentesque. Nulla eleifend, orci id varius aliquam, libero nibh finibus elit, id pulvinar tellus felis a eros. Pellentesque eu ipsum sit amet dui volutpat luctus in quis orci. Vivamus maximus hendrerit lacus ac aliquam. Donec vel turpis viverra, pretium libero egestas, rutrum lorem. Suspendisse luctus quam eu magna aliquet blandit. Donec dapibus imperdiet dolor, blandit interdum neque vestibulum non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec et fermentum ex. Nam fringilla nisi nisi, eget vulputate sapien porta nec. Nullam convallis mauris ultrices tincidunt sodales. Pellentesque sit amet mi et ante cursus sagittis. Mauris lacus odio, suscipit nec diam vel, gravida facilisis neque. Nam nec lorem risus.`
 
-const countLoremWords = text => text.split(/\n+|\s+/).length
+const homemadeSplit = textToSplit => {
+	let arr = []
+	let wordToPush = ""
+	
+	for (let i = 0; i <= textToSplit.length; i++) { 
+
+		if (textToSplit[i] === " " || textToSplit[i] === "\n" || i == textToSplit.length) {
+			arr.push(wordToPush)
+			wordToPush = ''
+		} else {
+			wordToPush += textToSplit[i]
+		}
+	}
+	arr = arr.filter(word => word != "")
+	return arr
+}
+
+const countLoremWords = text => homemadeSplit(text).length //text.split(/\n+|\s+/).length
 
 const etCount = text => {
 	let count = 0
-	let loremWords = text.split(/\n+|\s+/) 
+	let loremWords = homemadeSplit(text) 
 	for (word of loremWords) {
 		(word === "et") && count++
 	}
@@ -96,9 +113,35 @@ const etCount = text => {
 
 console.log(`3 paragraphs of lorem ipsum contain ${countLoremWords(lorem)} words, ${etCount(lorem)} of which are "et", Latin word for "&&"!`)
 
-/*
+console.log("_________________________________\n")
 
-3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+//palindromes 
 
-3.3 Depending on the lexicographic order of the strings, print:
-*/
+const splitAndJoin = word => {
+	let newWord = ""
+
+	for (let i = 0; i < word.length ; i++) {
+		word[i] !== " " && (newWord += word[i])
+	}
+
+	return newWord
+}
+
+const checkPalindromity = str => {
+    let strWords = splitAndJoin(str).toLowerCase() //str.toLowerCase().split(" ").join('').split('')
+    const strMiddle = Math.floor(strWords.length/2) - 1
+    const strEnd = strWords.length - 1
+   
+	for (let i = 0; i <= strMiddle; i++) {
+        if (strWords[i] !== strWords[strEnd - i]) {
+			return false
+        }
+    }
+    return true
+}
+let sentenceToCheck = "Anna"
+
+console.log(`Is ${sentenceToCheck} a palindrome? ${checkPalindromity(sentenceToCheck) ? "yes" : "non"}`)
+
+
+
