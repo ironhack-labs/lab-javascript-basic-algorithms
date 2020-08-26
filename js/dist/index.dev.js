@@ -70,7 +70,7 @@ var lexicography = function lexicography(name1, name2) {
 };
 
 console.log(lexicography(hacker1, hacker2));
-console.log("--------------------------------"); // Bonus
+console.log("--------------------------------"); // Bonus 1
 
 var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ante egestas, facilisis ex sit amet, porta sem. Suspendisse vulputate et enim ac eleifend. Cras eu hendrerit felis. Donec hendrerit, nibh vitae fringilla feugiat, odio quam lobortis arcu, at condimentum sapien tellus ut ligula. Praesent auctor tortor at ipsum vulputate convallis. Pellentesque maximus erat leo, a eleifend justo venenatis vel. Phasellus rhoncus ex felis, eu finibus lorem venenatis ac. Duis vitae nibh volutpat, congue ligula a, rhoncus erat.\n\nDonec interdum pretium vulputate. Aenean malesuada, erat sed facilisis facilisis, turpis diam sagittis sapien, eu sodales tortor metus ac magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi vitae felis elementum, sollicitudin mauris id, cursus ipsum. Vivamus at cursus ipsum. Suspendisse mollis nisl nec lectus tincidunt, in pulvinar ligula pharetra. Suspendisse ante neque, iaculis quis placerat volutpat, tempor ut nisi. Vestibulum euismod ante nec ipsum aliquam, vel facilisis dolor sagittis. Suspendisse id mi neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eleifend varius porta. Fusce ligula sem, vestibulum commodo ullamcorper in, ornare vel nibh.\n\nVestibulum blandit eu tellus at pellentesque. Nulla eleifend, orci id varius aliquam, libero nibh finibus elit, id pulvinar tellus felis a eros. Pellentesque eu ipsum sit amet dui volutpat luctus in quis orci. Vivamus maximus hendrerit lacus ac aliquam. Donec vel turpis viverra, pretium libero egestas, rutrum lorem. Suspendisse luctus quam eu magna aliquet blandit. Donec dapibus imperdiet dolor, blandit interdum neque vestibulum non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec et fermentum ex. Nam fringilla nisi nisi, eget vulputate sapien porta nec. Nullam convallis mauris ultrices tincidunt sodales. Pellentesque sit amet mi et ante cursus sagittis. Mauris lacus odio, suscipit nec diam vel, gravida facilisis neque. Nam nec lorem risus.";
 
@@ -110,7 +110,33 @@ var etCount = function etCount(text) {
 
 console.log(countLoremWords(lorem));
 console.log(etCount(lorem));
-console.log("--------------------------------");
-var phraseToCheck = "step on no pets";
+console.log("--------------------------------"); // BOnus 2
 
-var palindromCheck = function palindromCheck(string) {}; // console.log(palindromCheck(phraseToCheck))
+var phraseToCheck1 = "step on,no pets ?";
+var phraseToCheck = "Was it a car ,or a cat I saw?";
+var ToCheck = "";
+
+function topalindrom(str) {
+  var reSet = ToCheck;
+
+  for (var i = 0; i < str.length; i++) {
+    if (str[i].toUpperCase() !== str[i].toLowerCase()) {
+      reSet += str[i].toLowerCase();
+    }
+  }
+
+  return reSet;
+}
+
+var palindromCheck = function palindromCheck(str) {
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length - 1 - i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+console.log(topalindrom(phraseToCheck1));
+console.log(palindromCheck(phraseToCheck));
