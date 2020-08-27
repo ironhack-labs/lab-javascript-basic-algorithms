@@ -10,7 +10,7 @@ Ready?
 
 ## Introduction
 
-For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/nodejs](https://repl.it/languages/nodejs).
+For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/babel](https://repl.it/languages/babel).
 
 Ready to start?
 
