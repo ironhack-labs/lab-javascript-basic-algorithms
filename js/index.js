@@ -33,3 +33,7 @@ for (let i = hacker1.length -1; i >= 0; i--) {
  reverseResult = reverseResult + hacker1[i];
 }
 console.log(reverseResult)
+
+let elements = ["Marie" , "Ankling"]
+hacker1 = elements.sort((hacker1, hacker2) => hacker1.localeCompare(hacker2));
+document.write(hacker1)
