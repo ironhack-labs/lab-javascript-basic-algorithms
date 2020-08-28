@@ -23,19 +23,48 @@ else {
 
 // Iteration 3: Loops
 
-let emptyString = ""
+let resultString = "";
 
 for (let i = 0; i < hacker1.length; i++) {
-  emptyString += hacker1[i].toUpperCase() + " ";
-}
+    resultString += " " + hacker1[i].toUpperCase();  
+  }
+  console.log(resultString.substring(1));
 
-console.log(emptyString);
 
-
-/* First approach was: 
+/* First solution was: 
 
 for (let i = 0; i < hacker1.length; i++) {
   hackerName += hacker1[i];
 }
 console.log(hackerName.split('').join(' ').toUpperCase())
 */
+
+
+function reverseString(str) {
+  
+    let anotherResultString = "";
+    
+    for (let i = 0; i < str.length; i++) {  
+     anotherResultString = str[i] + anotherResultString;
+    }
+    return anotherResultString;
+  }
+
+  console.log(reverseString(hacker2));
+
+
+  // another task 
+
+  function compareLex(str1, str2) {
+  
+    if (str1 === str2) {
+      return "What?! You both have the same name?";
+    }
+    else if (str1 < str2) {
+      return "The driver's name goes first.";
+    }
+      return "Yo, the navigator goes first definitely.";
+    
+  }
+  
+  console.log(compareLex(hacker1, hacker2));
