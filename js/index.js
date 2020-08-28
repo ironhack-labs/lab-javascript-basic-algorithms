@@ -23,6 +23,8 @@ else {
 
 // Iteration 3: Loops
 
+// Task 3.1
+
 let resultString = "";
 
 for (let i = 0; i < hacker1.length; i++) {
@@ -39,6 +41,7 @@ for (let i = 0; i < hacker1.length; i++) {
 console.log(hackerName.split('').join(' ').toUpperCase())
 */
 
+// Task 3.2
 
 function reverseString(str) {
   
@@ -53,7 +56,8 @@ function reverseString(str) {
   console.log(reverseString(hacker2));
 
 
-  // another task 
+  // Task 3.3 
+
 
   function compareLex(str1, str2) {
   
