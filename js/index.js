@@ -56,6 +56,8 @@ if (hacker1.length < hacker2.length) {
   shorterName = hacker2
 }
 
+// Alternative for checking for shorter name: using Math.min()
+
 if (hacker1 === hacker2) {
     console.log("It seems that you have the same name");
   } else {
@@ -71,9 +73,12 @@ if (hacker1 === hacker2) {
   }
 
   // Bonus 1: Lorem Ipsum
+  // Create solution with split method
 let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et nunc ligula. Pellentesque in euismod massa. Ut maximus scelerisque risus, eget facilisis tortor sodales a. Sed rutrum nisi eu lacinia luctus. Maecenas ligula tellus, hendrerit ut cursus at, bibendum in diam. Proin enim lacus, ullamcorper eget nunc sit amet, lobortis bibendum odio. Nulla facilisi. Cras aliquet accumsan erat et commodo. Nullam lobortis purus eros, vel pharetra tellus ultricies ut. Sed vehicula, lectus et dignissim dictum, urna lorem lacinia turpis, id ultricies lorem mauris vel nunc. Proin convallis aliquet elit, sit amet blandit tellus vestibulum lobortis. Aenean vel tincidunt enim. Nulla tristique dignissim viverra. Morbi laoreet libero congue aliquam posuere. In mauris ante, gravida id lectus non, faucibus vestibulum arcu. Mauris vitae ligula turpis. Sed ultricies quis mauris a convallis. Praesent at est et magna tincidunt ultricies non in augue. In id rutrum nisl, nec eleifend urna. Nunc lacinia fermentum sapien ac facilisis. Nam bibendum lacinia lectus a vestibulum. Nam non fringilla nibh. Pellentesque consectetur sed enim interdum fermentum. Morbi at libero finibus nunc dignissim aliquam vel in velit. In venenatis sed augue tempor elementum. Nam imperdiet pellentesque convallis. Integer sollicitudin ultrices urna eget vulputate. Aenean vulputate finibus quam. Pellentesque vestibulum mollis mauris, non fringilla ante porta et. Praesent porta eget mauris et pulvinar. Donec euismod tempus tincidunt. Nulla ut venenatis neque, quis ultrices ante. Nullam condimentum, dolor vitae consequat placerat, augue ipsum lacinia lacus, nec accumsan odio turpis eget dolor. Suspendisse potenti. Nullam non placerat quam. Phasellus fringilla quis augue id posuere. Pellentesque faucibus pellentesque convallis."
 
 let wordCount
+
+// Check for an empty string alternative: lorem.length === 0
 
 if (lorem === "") {
   wordCount = 0
@@ -107,19 +112,39 @@ for (i = 0; i < lorem.length; i++) {
 console.log(countEt);
 
 // palindrome checker
-// Add a function to clean phrases
+// Added a function to clean phrases
 
-let phraseToCheck = "tacocat";
-let reversePhrase = "";
-
-for (i = phraseToCheck.length-1; i >= 0; i--) {
-  reversePhrase = reversePhrase + phraseToCheck[i];
-}
-
-if (reversePhrase === phraseToCheck) {
-  console.log(`${phraseToCheck} is a palindrome`)
-} else {
-  console.log(`${phraseToCheck} is not a palindrome`)
-}
-
-//console.log(reversePhrase);
+function cleanThePhrase(phrase) {
+  
+    let cleanedPhrase = ""
+    const letters = "abcdefghijklmnopqrstuvwxyz"
+    
+    phrase = phrase.toLowerCase()
+    
+    for(let i = 0; i < phrase.length; i++) {
+      if(letters.includes(phrase[i])) {
+        cleanedPhrase = cleanedPhrase + phrase[i]
+      } else {
+        continue
+      }
+    }
+    
+    return cleanedPhrase
+  }
+  
+  
+  let phraseToCheck = "No 'x' in Nixon";
+  let reversePhrase = "";
+  
+  let cleanPhrase = cleanThePhrase(phraseToCheck)
+  
+  for (let i = cleanPhrase.length-1; i >= 0; i--) {
+    reversePhrase = reversePhrase + cleanPhrase[i];
+  }
+  
+  if (reversePhrase === cleanPhrase) {
+    console.log(`${phraseToCheck} is a palindrome`)
+  } else {
+    console.log(`${phraseToCheck} is not a palindrome`)
+  }
+  
