@@ -18,9 +18,9 @@ if(hacker1.length > hacker2.length){
 let upSpace = ""
 for (let i = 0; i < hacker1.length; i++)
  {
-   upSpace += hacker1[i];
+   upSpace = upSpace + hacker1[i].toUpperCase() + ' ';
  }
-console.log("The driver's name is " + upSpace.toUpperCase().split('').join(' '));
+console.log("The driver's name is " + upSpace);
 
 let reverse = '';
 for(let i = hacker2.length-1; i >= 0; i--){
