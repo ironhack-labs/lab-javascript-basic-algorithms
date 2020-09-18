@@ -79,14 +79,14 @@ function ifPalindrome (phraseToCheck) {
         reversedPhrase += phraseToCheck[i];
     }
     if (phraseToCheck === reversedPhrase) {
-        console.log(true);
+        return true;
     } else {
-        console.log(false);
+        return false;
     }    
 }
 
 
-ifPalindrome("Was it a car or a cat I saw?");
-ifPalindrome("Amor, Roma");
-ifPalindrome("Was it a car or a cat I saw?");
+console.log(ifPalindrome("Was it a car or a cat I saw?"));
+console.log(ifPalindrome("Amor, Roma"));
+console.log(ifPalindrome("Was it a car or a cat I saw?"));
 
