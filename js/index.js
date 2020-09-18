@@ -71,8 +71,6 @@ console.log(someText.match(regex).length);
 
 // Bonus 2
 
-let phraseToCheck = "";
-
 function ifPalindrome (phraseToCheck) {
     phraseToCheck = phraseToCheck.replace(/[\s?',!.]/g, '').toUpperCase();
     let reversedPhrase = "";
