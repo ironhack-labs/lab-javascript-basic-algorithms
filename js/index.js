@@ -71,7 +71,7 @@ console.log(someText.match(regex).length);
 
 // Bonus 2
 
-function ifPalindrome (phraseToCheck) {
+function checkIfPalindrome (phraseToCheck) {
     phraseToCheck = phraseToCheck.replace(/[\s?',!.]/g, '').toUpperCase();
     let reversedPhrase = "";
 
@@ -86,7 +86,7 @@ function ifPalindrome (phraseToCheck) {
 }
 
 
-console.log(ifPalindrome("Was it a car or a cat I saw?"));
-console.log(ifPalindrome("Amor, Roma"));
-console.log(ifPalindrome("Was it a car or a cat I saw?"));
+console.log(checkIfPalindrome("Was it a car or a cat I saw?"));
+console.log(checkIfPalindrome("Amor, Roma"));
+console.log(checkIfPalindrome("Was it a car or a cat I saw?"));
 
