@@ -112,3 +112,6 @@ if (palindromeFinalResult) {
   console.log(palindrome);
   console.log("No es un palíndromo");
 }
+
+
+hola
