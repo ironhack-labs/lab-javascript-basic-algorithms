@@ -17,6 +17,19 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
-for (let name of hacker1) {
-    console.log(hacker1.toUpperCase());
+let loopDriver = " ";
+
+for (let i = 0; i < hacker1.length; i++) {
+    loopDriver += hacker1.charAt(i) + " ";
 }
+
+console.log(loopDriver.toUpperCase())
+
+let loopNavigator = " ";
+
+for (let i = hacker2.length -1; i >= 0; i-- ) {
+    loopNavigator += hacker2.charAt(i);
+};
+
+console.log(loopNavigator);
+
