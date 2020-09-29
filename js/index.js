@@ -36,7 +36,6 @@ for(let i=hacker2.length-1; i>=0; i--){
 console.log(reversedName);
 
 // 3.3 (Using loop instead of direct string comparison to match the exercise instructions)
-
 if (hacker1 === hacker2){
     console.log("What?! You both have the same name?");
 } else {
@@ -50,5 +49,19 @@ if (hacker1 === hacker2){
         }
     }
 }
+
+// Bonus 1
+let loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin neque sed erat posuere lobortis. Sed quis magna eget tellus convallis scelerisque a nec lacus. Nunc vitae commodo massa, sit amet maximus ligula. Integer mollis pharetra sapien nec iaculis. Aliquam sed elementum turpis. Proin finibus sagittis scelerisque. Phasellus quis efficitur massa, et dignissim nibh. Nullam urna nulla, viverra at maximus at, vestibulum ut magna. Praesent quis euismod mi, quis pellentesque ex. Pellentesque eros nulla, aliquet eu pharetra eget, lacinia id sem. Ut scelerisque a dui vitae malesuada. Donec eget convallis sem. Pellentesque blandit ex feugiat tincidunt gravida. Etiam sed suscipit libero. Mauris erat lectus, lacinia sed augue ut, commodo hendrerit neque.
+In hac habitasse platea dictumst. Fusce arcu diam, pretium ac nisi eget, aliquam ornare quam. Morbi aliquet lectus at rutrum accumsan. Integer volutpat hendrerit leo, sit amet imperdiet purus fringilla ac. Nunc ac bibendum leo. Pellentesque egestas nulla id convallis ornare. Fusce quam justo, facilisis in molestie quis, consequat sed libero. Vivamus accumsan vehicula nisi sed vulputate. Proin tincidunt nulla ac est finibus sollicitudin.
+Pellentesque semper elit dui, eu pharetra lacus pretium vel. Mauris at venenatis leo, vel dignissim ex. Praesent in bibendum massa. Nullam risus lectus, pulvinar in magna tempor, sodales faucibus lectus. Proin placerat elit finibus, egestas magna non, aliquet libero. Integer consectetur urna eu tortor vestibulum luctus. Praesent volutpat ipsum vitae ante finibus lacinia.`;
+
+var wordsArray = loremIpsum.split(/\s+/); // Split string into array of words
+numberOfWords = wordsArray.length; // Array length = number of words
+console.log(`The text contains ${numberOfWords}`);
+const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0); // count occurrences function
+console.log(`The word et appears ${countOccurrences(wordsArray, 'et')} times.`);
+
+//Bonus 2
+
 
   
