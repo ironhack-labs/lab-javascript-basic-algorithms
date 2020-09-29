@@ -66,3 +66,5 @@ if(phraseToCheck===phraseReverse){
 else{
   console.log("We don`t have a palindrome")
 }
+
+// End of Bonus 2
