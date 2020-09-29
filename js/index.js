@@ -48,10 +48,11 @@ function EtCount(str) {
   console.log(EtCount(`${lorem}`));
 
   //Bonus 2
-  const phraseToCheck = "";
-let phraseToCheckUpper = phraseToCheck.toUpperCase()
-let resultUpper = ""
-for (let i = phraseToCheck.length; i >= 0; i--) {
-resultUpper += phraseToCheck.charAt(i).toUpperCase();
-}
-phraseToCheckUpper === resultUpper
+  const phraseToCheck = "race car";
+  let phraseToCheckUpper = phraseToCheck.toUpperCase().split(" ").join("")
+  console.log(phraseToCheckUpper)
+  let resultUpper = ""
+  for (let i = phraseToCheckUpper.length; i >= 0; i--) {
+  resultUpper += phraseToCheckUpper.charAt(i).toUpperCase();
+  }
+  phraseToCheckUpper === resultUpper
