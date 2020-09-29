@@ -79,3 +79,17 @@ while (word !== -1) {
 }
 
 console.log(`The total amount of "et" words is: ${count}`);
+
+// Bonus 2
+
+var palindromo = "A man, a plan, a canal, Panama!";
+var palindromo = palindromo.toLowerCase().replace(/[" ","!"]/g, "");
+let reverpal = "";
+for (let i = palindromo.length - 1; i >= 0; i--) {
+  reverpal += palindromo[i];
+}
+if (palindromo === reverpal) {
+  console.log("Esta frase SI es un palíndromo");
+} else {
+  console.log("Esta frase NO es un palíndromo");
+}
