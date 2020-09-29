@@ -37,7 +37,7 @@
         console.log(reversed2.join(""))
         } */
   
-      let resultCompare = hacker1.localeCompare(hacker2)
+        let resultCompare = hacker1.localeCompare(hacker2)
         console.log(hacker1.localeCompare(hacker2))
          if (resultCompare == 1) {
         console.log("Yo, the navigator goes first definitely.")
@@ -49,3 +49,17 @@
         console.log("You haven't introduced your name")
         }
         }
+
+    //Bonus 1:
+
+    let msg1="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna nunc, hendrerit rutrum diam et, fringilla lobortis justo. Pellentesque in euismod lorem. Nunc at tellus nec risus egestas dignissim. Ut euismod nunc id ornare scelerisque. Vestibulum varius metus vel neque vehicula ullamcorper. Quisque bibendum nunc et lorem malesuada pulvinar malesuada non mi. Pellentesque euismod nisi nec sapien tincidunt sodales. Aliquam erat volutpat. Cras sed malesuada risus, ut porttitor risus. Nulla ex felis, commodo venenatis urna in, gravida laoreet nisl. Pellentesque tempor molestie volutpat. Donec rutrum nulla vel nisl bibendum elementum. Nunc ultrices commodo quam, quis finibus tortor ullamcorper ac.
+    Fusce sagittis pulvinar ligula quis placerat. Sed tristique vulputate enim at ultrices. Ut semper nisi a commodo pellentesque. Pellentesque eu velit egestas quam tincidunt eleifend nec sit amet odio. Fusce fermentum, justo ac elementum congue, ligula nulla iaculis nibh, tempor suscipit ipsum dui vitae erat. Sed in mi dignissim, faucibus sapien eget, fringilla urna. Nunc nec ante volutpat, feugiat nibh eget, faucibus lacus. Pellentesque volutpat sed felis vel cursus. Vivamus vitae commodo enim. Mauris nec lobortis purus, faucibus fringilla lacus. Suspendisse potenti. Maecenas sed odio sed nunc sagittis pharetra eu et arcu. Maecenas porta, turpis sit amet finibus suscipit, neque diam suscipit ligula, non convallis leo erat ultricies justo. Donec ornare risus non orci rhoncus, non vehicula lectus blandit. Mauris tincidunt nisi viverra, tincidunt eros et, pellentesque tellus.
+    Nunc consectetur ultricies gravida. Duis turpis tortor, interdum semper vestibulum ac, ultrices in lorem. Aenean id orci accumsan, tincidunt nisi quis, finibus metus. Ut pretium leo libero, non placerat sapien mattis at. Cras fringilla turpis a nibh bibendum, ultricies volutpat metus faucibus. Phasellus est ligula, accumsan ut pharetra vel, aliquam vitae magna. Nam suscipit lectus nulla, vitae convallis dolor semper nec. Nulla feugiat vulputate ipsum a posuere. Ut sit amet risus venenatis, mollis nibh et, dictum lectus. Nunc nunc nisl, accumsan non mollis at, mollis vitae nisi. Nulla interdum, tellus eget varius vehicula, odio ligula vestibulum turpis, sit amet ultricies risus augue a nulla. Donec molestie quam a elit venenatis, quis pretium enim dignissim. Nullam aliquet pellentesque eros sit amet semper. Quisque pretium lacinia cursus."
+
+    contador = texto.split(" ");
+    console.log (contador.length);
+
+    buscador = texto.split("et");
+    console.log(buscador.length);
+
+
