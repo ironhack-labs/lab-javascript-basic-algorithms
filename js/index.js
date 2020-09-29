@@ -61,8 +61,8 @@ let phraseToCheck1 = texto1.indexOf("et")
 let phraseToCheck2 = texto2.indexOf("et")
 let phraseToCheck3 = texto3.indexOf("et")
 let sumaPhrase= phraseToCheck1+phraseToCheck2+phraseToCheck3;
-//console.log(sumaPhrase)
-console.log(phraseToCheck1)
+console.log(sumaPhrase)
+
 
 
 
