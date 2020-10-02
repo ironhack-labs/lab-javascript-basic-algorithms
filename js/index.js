@@ -14,5 +14,10 @@ if (firstHacker.length > secondHacker.length){
     }
 
 // Iteration 3: Loops
+let name = "";
+for (let i = 0; i < firstHacker.length; i++) {
+    name += firstHacker[i].toUpperCase() + ' ';
+}
 
+console.log(name);
 
