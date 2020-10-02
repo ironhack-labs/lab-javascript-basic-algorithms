@@ -78,10 +78,10 @@ function palindromo(cadena){
 
   var result = `La cadena: "${cadena}", `;
   //Pasar el string a minisculas ya que a la hora de comparar caracteres es sensitivo
-  cadenaNueva = cadena.toLowerCase()
+  var cadenaNueva = cadena.toLowerCase()
   
   //Quitar espacios de la cadena
-  cadenaSinEspacios = cadenaNueva.replace(/ /g,"");
+  var cadenaSinEspacios = cadenaNueva.replace(/ /g,"");
   //Reemplazar comas y simbolos
   
   //Convertir el string a un array para poder comparar caracteres
