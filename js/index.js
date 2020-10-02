@@ -64,3 +64,30 @@ while (position !== -1) {
 }
 console.log(count)
 
+// Bonus 2
+
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+
+let inicio = 0;
+let final = phraseToCheck.length -1;
+let condition = true;
+
+while(inicio<=final){//recorremos el string en ambos sentidos hasta llegar a la mitad
+
+  while( !(phraseToCheck[inicio].toUpperCase() !== phraseToCheck[inicio].toLowerCase()) ) {//si el caracter inicial no es una letra avanzamos índice
+    inicio++;
+  } 
+  while( !(phraseToCheck[final].toUpperCase() !== phraseToCheck[final].toLowerCase()) ) {//si el caracter final no es una letra retrocedemos índice
+    final--;
+  }
+ 
+  if (phraseToCheck[inicio].toLowerCase()!==phraseToCheck[final].toLowerCase()){//si en algún momento no coinciden salimos del bucle
+    condition = false;
+    break;
+  }
+  inicio++;
+  final--;
+}
+
+if (condition) console.log("palindrome!");
+else console.log("not palindrome");
