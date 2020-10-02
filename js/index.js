@@ -74,21 +74,33 @@ console.log(count)
 //Bonus 2
 
 
-//No esta acabado, faltan muchas cosas por probar
+function palindromo(cadena){
 
-
-var palindromo = "race car";
-palindromo = palindromo.replace(/ /g,"");
-var x = palindromo.split("")
-console.log(x);
-git
-
-for (var i = 0; i < x.length; i++){
-  if (x[i] === x[x.length -i-1]){
-    console.log("Es palindromo")
-    
+  var result = `La cadena: "${cadena}", `;
+  //Pasar el string a minisculas ya que a la hora de comparar caracteres es sensitivo
+  cadenaNueva = cadena.toLowerCase()
+  
+  //Quitar espacios de la cadena
+  cadenaSinEspacios = cadenaNueva.replace(/ /g,"");
+  //Reemplazar comas y simbolos
+  
+  //Convertir el string a un array para poder comparar caracteres
+  var x = cadenaSinEspacios.split("")
+  
+  //Comparar caracteres de la cadena (Creo que se puede hacer con el metodo reverse pero he optado por hacerlo asi)
+  var iguales = true;
+  for (var i = 0; i < x.length-1; i++){
+    if (x[i] === x[x.length -i-1]){
+    } else {
+      iguales = false;
+    }
+  }  
+  //Si los caracteres coinciden, significa que iguales es true y entra en el bucle
+  if (iguales){
+  result += "es un palindromo"
   } else {
-    console.log("No lo es")
-  }
+    result += "no es un palindromo"
+  }  
+console.log(result);
 }
 
