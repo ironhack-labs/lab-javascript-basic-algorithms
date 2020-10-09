@@ -82,8 +82,17 @@ wordCount(para1)
 wordCount(para2)
 wordCount(para3_2)
 
-//Current
-
+//Current Lessons Way
+// wont work for para 3_2 need  refactor for
+let wordCounter = " "
+let numberOfwords;
+for(let i = 0; i <= para1.length;i++){
+  if(para1.charAt(i) === " "){
+   wordCounter += para1[i]
+  }
+  numberOfwords = wordCounter.length
+}
+console.log(numberOfwords)
 
 // 1.3 Make your program count the number of times the Latin word et appears.
 
