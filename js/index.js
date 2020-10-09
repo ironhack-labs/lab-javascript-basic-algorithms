@@ -104,6 +104,33 @@ countEt(para3)
 countEt(para3_2)
 
 
+//// CURRENT LESSONS WAY
+let count1 = 0
+  for(let i = 0; i <= para1.length;i++){
+   if(para1.substr(i,4)=== " et " || para1.substr(i,4)=== " et," || para1.substr(i,4)=== " et." ){
+      count1++
+    }
+  }
+  console.log(count1)
+
+let count2 = 0
+  for(let i = 0; i <= para2.length;i++){
+   if(para2.substr(i,4)=== " et " || para2.substr(i,4)=== " et," || para2.substr(i,4)=== " et." ){
+      count2++
+    }
+  }
+  console.log(count2)
+
+let count3 = 0
+  for(let i = 0; i <= para3_2.length;i++){
+   if(para3_2.substr(i,4)=== " et " || para3_2.substr(i,4)=== " et," || para3_2.substr(i,4)=== " et." ){
+      count3++
+    }
+  }
+  console.log(count3)
+
+
+
 
 //Bonus 2:
 // Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. 
