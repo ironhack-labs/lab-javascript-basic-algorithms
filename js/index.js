@@ -97,13 +97,13 @@ console.log(numberOfwords)
 
 // or 
 
-let wordCount = 1
+let wordCount2 = 1
 for(let i = 0; i <= para1.length;i++){
   if(para1.charAt(i) === " "){
-   wordCount++ 
+   wordCount2++ 
   }
 }
-console.log(wordCount)
+console.log(wordCount2)
 
 // 1.3 Make your program count the number of times the Latin word et appears.
 
@@ -157,7 +157,7 @@ let count3 = 0
 
 // Here are some examples of palindromes:
 
-let phraseToCheck = "A man, a plan, a canal, Panama!"
+// "A man, a plan, a canal, Panama!"
 // "Amor, Roma"
 // "race car"
 // "stack cats"
@@ -181,3 +181,21 @@ palindromeCheck("A man, a plan, a canal, Panama!")
 palindromeCheck("Hey! What's up?")
 
 //LOOP
+let phraseToCheck = "A man, a plan, a canal, Panama!"
+let phraseNospace = ""
+let reversePhrase = ""
+
+for(let i = 0; i < phraseToCheck.length;i++){
+  phraseToCheck = phraseToCheck.toLowerCase()
+  if(phraseToCheck[i]=== " " || phraseToCheck[i]=== "'" || phraseToCheck[i]=== "\""  || phraseToCheck[i]=== "," || phraseToCheck[i]=== "." || phraseToCheck[i]=== "!" || phraseToCheck[i]=== "?" || phraseToCheck[i]=== "-" ) continue;
+  else phraseNospace += phraseToCheck[i]
+}
+
+console.log(phraseNospace)
+
+for(let i = phraseNospace.length -1; i >=0 ;i--){
+  reversePhrase += phraseNospace[i]
+}
+console.log(reversePhrase)
+
+reversePhrase === phraseNospace ? console.log(`"${phraseToCheck}" IS a palindrome!`) : console.log(`"${phraseToCheck}" IS NOT a palindrome.`)
