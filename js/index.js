@@ -1,6 +1,8 @@
 // Iteration 1: Names and Input
-
-hi
+let hacker1 = "Daniel";
+console.log("The driver\'s name is " + hacker1);
+let hacker2 = "Michael"
+console.log("The navigator\'s name is " + hacker2)
 // Iteration 2: Conditionals
 
 
