@@ -19,46 +19,45 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
-// Split driver's name:
+// Split driver's name with methods:
 let split1 = hacker1.split("");
 let join1 = split1.join(" ");
 let upperCased1 = join1.toUpperCase()
 console.log (upperCased1);
 
 
-// With a loop:
+// Split driver's name  With a loop:
+// I don't understand how to get the output on single line:
 let upperCased = hacker1.toUpperCase();
 
-// I don't understand how to get the output in one line:
-/*
-let letters = for (let i=0; i< upperCased.length; i++) {
+for (let i=0; i< upperCased.length; i++) {
      console.log (`${upperCased[i]}`);  
 }
-console.log (letters);
-*/
 
 
-// Reverse navigator's name:
+// Reverse navigator's name with methods:
 let split = hacker2.split("");
 let reverse = split.reverse();
 let join = reverse.join("");
 console.log(join);
 
-
-for (let i=0; i<hacker2; i++) {
-  console.log (hacker2.charAt(i).reverse().join())
+// Reverse navigator's name with a loop:
+for (let i=hacker2.length-1; i >= 0; i--) {
+  console.log (hacker2[i])
 }
 
 
 // lexicographic order:
 
 if (hacker1.charAt(0) < hacker2.charAt(0)) {
-     console.log ("The driver's name goes first.");}
-     else if (hacker1.charAt(0) > hacker2.charAt(0)) {
-       console.log ("Yo, the navigator goes first definitely.")
-     } else {
-       console.log ("What?! You both have the same name?")
-     }
+    console.log ("The driver's name goes first.");}
+    else if (hacker1.charAt(0) > hacker2.charAt(0)) {
+      console.log ("Yo, the navigator goes first definitely.")
+    } else {
+      console.log ("What?! You both have the same name?")
+    }
+
+
 
 
 
@@ -73,14 +72,34 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 
 
 //As they are 2 space in between paragraph : +2 in total; but there is one word more because we start with a word. 
+
+
+/* No time to go back on this.
 function numberOfWords () {
-  let totalWords= 0;
-  for (let i=0; i< numberOfWords.length; i++) {
-  if (lorem(i) === " "){
-  totalWords =+ 1
+ let totalWords= 0;
+ for (let i=0; i< numberOfWords.length; i++) {
+ if (lorem(i) === " "){
+ console.log (totalWords =+ 1)
 }
 total =+ 1;
 }
 }
+*/
 
-console.log(lorem.numberOfWords())
+console.log(numberOfWords(lorem))
+
+
+//Count the number of "et"
+
+
+/* No time to go back on this.
+function numberOfEt () {
+ let occurence = 0;
+ for (let i=0; i< lorem.length; i++ ) {
+   if (lorem.includes("et")) {
+     occurence += 1;
+   }
+ }
+}
+console.log (numberOfEt(lorem))
+*/
