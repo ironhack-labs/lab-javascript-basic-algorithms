@@ -19,7 +19,22 @@ if (hacker1.length > hacker2.length) {
 
 console.log(hacker1.toUpperCase().split("").join(" "));
 
+// OR
+/*Today's Lab Hint*
+const name = "John";
+console.log('--loop--');
+for (let i = 0; i<name.length; i++) {
+    console.log(name[i]);
+}
+console.log('--reversed loop--');
+for (let i = name.length - 1; i >= 0; i--) {
+    console.log(name[i]);
+}*/
+
+
 console.log(hacker2.split("").reverse().join(""));
+
+//OR
 
 if (hacker1 < hacker2) {
     console.log(`The driver's name goes first`)}
@@ -29,6 +44,10 @@ if (hacker1 < hacker2) {
     {
     console.log("What?! You both have the same name?");
     }
+
+// OR
+
+
 
     // Bonus Time!
     // Bonus 1
