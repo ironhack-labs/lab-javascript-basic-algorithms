@@ -18,10 +18,12 @@ for (let i = 0; i < hacker1.length; i++) {
     console.log(hacker1.charAt(i).toUpperCase() + ' ');
 }
 //3.2
+let newHAcker1 = ""
 for (let i = hacker2.length; i >= 0 ; i--) {
    
-    console.log(hacker2.charAt(i));
+    newHAcker1 += hacker2.charAt(i) + " "
 }
+console.log(newHacker1);
 //3.3
 if(hacker1.localeCompare(hacker2) === -1){
     console.log("The driver's name goes first.")
