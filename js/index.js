@@ -50,6 +50,7 @@ let len = phraseToCheck.length;
 for (let i = 0; i < len/2; i++) {
   if (phraseToCheck[i] !== phraseToCheck[len - 1 - i]) {
     console.log(false);
+    break;
   } else {
     console.log(true);
     break;
