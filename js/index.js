@@ -13,17 +13,20 @@ if(hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 //3.1
+let newHacker1 = ""
 for (let i = 0; i < hacker1.length; i++) {
  
-    console.log(hacker1.charAt(i).toUpperCase() + ' ');
-}
-//3.2
-let newHAcker1 = ""
-for (let i = hacker2.length; i >= 0 ; i--) {
-   
-    newHAcker1 += hacker2.charAt(i) + " "
+    newHacker1 += hacker1.charAt(i).toUpperCase() + ' ';
 }
 console.log(newHacker1);
+
+//3.2
+let newHacker2 = ""
+for (let i = hacker2.length; i >= 0 ; i--) {
+ 
+  newHacker2 += hacker2.charAt(i);
+}
+console.log(newHacker2);
 //3.3
 if(hacker1.localeCompare(hacker2) === -1){
     console.log("The driver's name goes first.")
