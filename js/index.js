@@ -54,3 +54,18 @@ console.log(`The navigator's name is ${hacker2}`);
             console.log("What?! You both have the same name?");
         }
 
+    // Bonus Time!
+
+    //Bonus 1:
+    //Go to lorem ipsum generator and:
+        //Generate 3 paragraphs. Store the text in a variable type of string.
+            let paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+
+        //Make your program count the number of words in the string.
+            console.log(paragraph.split(" ").length);
+            
+        //Make your program count the number of times the Latin word et appears.*/
+    
+    //Bonus 2:
+
+    
