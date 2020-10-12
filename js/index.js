@@ -1,16 +1,7 @@
-// Iteration 1: Names and Input
-
-
-// Iteration 2: Conditionals
-
-
-// Iteration 3: Loops
-
-
 console.log("I'm ready!");
 
 
-// ITERATION 1 NAMES AND INPUTS
+// Iteration 1: Names and Input
 
 let hacker1="Ange";
 console.log (`The driver's name is ${hacker1}.`);
@@ -18,7 +9,7 @@ let hacker2="Simon";
 console.log (`The navigator's name is ${hacker2}.`);
 
 
-// ITERATION 2 CONDITIONALS
+// Iteration 2: Conditionals
 
 if (hacker1.length > hacker2.length) {
   console.log (`The driver has the longest name, it has ${hacker1.length} characters.`);
@@ -26,8 +17,7 @@ if (hacker1.length > hacker2.length) {
   console.log (`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 } else {console.log (`Wow, you both have equally long names, ${hacker2.length} characters!`)}
 
-// ITERATION 3 LOOPS
-
+// Iteration 3: Loops
 
 // Split driver's name:
 let split1 = hacker1.split("");
@@ -69,8 +59,6 @@ if (hacker1.charAt(0) < hacker2.charAt(0)) {
      } else {
        console.log ("What?! You both have the same name?")
      }
-
-
 
 
 
