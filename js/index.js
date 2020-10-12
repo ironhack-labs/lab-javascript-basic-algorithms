@@ -51,3 +51,16 @@ console.log(WordCount(text));
 
 console.log(text.includes('et'));
 console.log(text.match(' et ').length);
+
+
+// bonus 2
+let phraseToCheck = "Amor, Roma";
+// let phraseToCheckTwo = "Madam I'm Adam" ?? 
+console.log(phraseToCheck.toLowerCase().replace(/,\ /, ""));
+
+if (phraseToCheck.replace(/,\ /, "").toLowerCase() == phraseToCheck.replace(/,\ /, "").toLowerCase().split('').reverse().join('')) {
+    alert(phraseToCheck + ' is palindrome.');
+}
+else {
+    alert(phraseToCheck + ' is not palindrome.');
+}
