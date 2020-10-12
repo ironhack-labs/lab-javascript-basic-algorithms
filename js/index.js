@@ -46,15 +46,12 @@ console.log(countOfEt);
 // //Bonus 2
 
 let phraseToCheck = 'Rats live on no evil star'.toLowerCase();
-let fromTheEnd = phraseToCheck.length - 1
-let palindrome = false;
-
-for (var i = 0; i < phraseToCheck.length; i++){
-    if (phraseToCheck[i] === phraseToCheck[fromTheEnd]){
-        fromTheEnd--
-        continue;
-    } else {
-        console.log('Not a palindrome')
-        break;
-    }
+let len = phraseToCheck.length;
+for (let i = 0; i < len/2; i++) {
+  if (phraseToCheck[i] !== phraseToCheck[len - 1 - i]) {
+    console.log(false);
+  } else {
+    console.log(true);
+    break;
+  }
 }
