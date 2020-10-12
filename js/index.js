@@ -18,3 +18,14 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+//3.1
+hacker1 = hacker1.toUpperCase().split("").join(" ");
+
+for (let i = 0; i < hacker1.length; i++) {
+    console.log(hacker1.charAt(i))
+}
+//3.2
+for (let i = (hacker2.length - 1); i >= 0; i--) {
+    console.log(hacker2.charAt(i))
+}
+//3.2
