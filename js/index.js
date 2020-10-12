@@ -38,3 +38,48 @@ if(hacker1.localeCompare(hacker2) === -1){
 }else{
   console.log("What?! You both have the same name?");
 }
+
+//Bonus 
+
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus felis, luctus vel egestas ac, porta at neque. Integer gravida et dolor et sollicitudin. Aenean quam metus, rhoncus a sollicitudin sed, venenatis vitae ex. Sed diam neque, viverra sit amet ullamcorper nec, viverra vel lectus. Praesent pellentesque nunc turpis, a dictum urna bibendum sit amet. Nullam ornare maximus ipsum, semper sodales lorem placerat id. Pellentesque ut vestibulum mauris. In quis suscipit est. Nulla facilisi. Ut bibendum, lorem in hendrerit vestibulum, magna nibh placerat mauris, vitae sagittis mi tortor et justo. Morbi volutpat auctor dolor nec mollis. In magna quam, fermentum sit amet eleifend eu, condimentum ac mauris. Mauris accumsan placerat lacus in fermentum. In non porta nisi. Morbi quis ante ut ipsum laoreet tristique a id tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus cursus justo id nisi sollicitudin, id ultricies ligula euismod. Nam id velit metus. Proin laoreet, erat sed bibendum vehicula, lorem augue sollicitudin tellus, non ultrices nisl urna non felis. Nunc mauris nisi, sollicitudin in dapibus nec, scelerisque vitae arcu. Duis eu arcu eget elit feugiat imperdiet id quis augue. Vivamus orci nibh, fringilla eu felis a, pellentesque feugiat arcu. Praesent ac aliquam elit. Nunc enim odio, faucibus ut purus non, viverra placerat sem. Donec sollicitudin arcu tellus, at interdum quam ultricies et. Quisque iaculis et nunc quis feugiat. Nullam sit amet sapien eu erat cursus condimentum non luctus lectus. Nullam fringilla ultrices eros, quis ultrices massa aliquam et. Aenean id dolor interdum, scelerisque magna id, bibendum est. In ultricies lobortis nisi, sit amet tempor massa maximus posuere. Proin placerat risus eu est molestie tristique. Ut eu massa id massa tincidunt posuere eget quis nibh. Suspendisse sed massa non dui pellentesque porta."
+
+let loremIpsumLenght = loremIpsum.length;
+console.log(loremIpsumLenght);
+let count = 0;
+
+for (i = 0; i<loremIpsumLenght;i++){
+  if(loremIpsum[i] === "e"){
+    if(loremIpsum[i+1] === "t"){
+      count ++;
+    }
+  }
+}
+
+console.log(count);
+
+//Bonus 2
+
+let string = "No 'x' in Nixon";
+let stringLowerCase = string.toLowerCase();
+console.log(stringLowerCase);
+stringLowerCase = stringLowerCase.replace(/ /gi, "");
+stringLowerCase = stringLowerCase.replace(/,/gi, "");
+stringLowerCase = stringLowerCase.replace("?", "");
+stringLowerCase = stringLowerCase.replace(/!/gi, "");
+stringLowerCase = stringLowerCase.replace(/'/gi, "");
+
+let stringLowerCaseLength = stringLowerCase.length;
+let stringChecker = stringLowerCaseLength - 1;
+let isPalindrome = true;
+
+console.log(stringLowerCase);
+
+for (i=0;i<stringLowerCaseLength;i++){
+  if (stringLowerCase[i] != stringLowerCase[stringChecker]){
+    isPalindrome = false;
+    break;
+  }else{
+    stringChecker--;
+  }
+}
+console.log(isPalindrome);
