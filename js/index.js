@@ -21,3 +21,10 @@ if (hacker1.length > hacker2.length) {
 for (let i = 0; i < hacker1.length; i++)
 console.log(hacker1.toUpperCase().split("").join(" "));
 
+if(hacker1.localeCompare(hacker2) === -1){
+    console.log("The driver's name goes first.");
+  }else if (hacker1.localeCompare(hacker2) === 1){
+    console.log("Yo, the navigator goes first definitely.");
+  }else{
+    console.log("What?! You both have the same name?");
+  }
