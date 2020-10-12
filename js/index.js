@@ -33,10 +33,9 @@ if(hacker1.localeCompare(hacker2) === -1){
   }
 
 //Bonus 1
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet nulla sit amet et finibus sagittis. Mauris odio libero, volutpat luctus ante ac, rutrum pretium eros. Curabitur in placerat arcu. Suspendisse feugiat risus ut luctus auctor. Praesent nisl nunc, pulvinar feugiat purus volutpat, et lobortis euismod massa. Sed gravida pharetra ex et mattis. Fusce tristique at ex eget euismod. Class aptent taciti  sociosqu ad litora torquent et per conubia nostra, per inceptos himenaeos. Etiam interdum consequat orci non rhoncus.";
 
-let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet nulla sit amet finibus sagittis. Mauris odio libero, volutpat luctus ante ac, rutrum pretium eros. Curabitur in placerat arcu. Suspendisse feugiat risus ut luctus auctor. Praesent nisl nunc, pulvinar feugiat purus volutpat, lobortis euismod massa. Sed gravida pharetra ex et mattis. Fusce tristique at ex eget euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam interdum consequat orci non rhoncus.";
+console.log(loremIpsum.split(' ').length)
 
-function WordCount(str) {
-    return str.split(" ").length;
-}
-console.log(WordCount(loremIpsum));
+let count = (loremIpsum.match(/et/g) || []).length;
+console.log(count);
