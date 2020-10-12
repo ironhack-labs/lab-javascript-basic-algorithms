@@ -1,17 +1,12 @@
 // Iteration 1: Names and Input
 let hacker1 = 'Alicia';
-console.log(`The drivers name is ${hacker1}`);
+console.log(`The driver´s name is ${hacker1}`);
 
 let hacker2 = "Carolina";
 console.log(`The navigator´s name is ${hacker2}`)
 
+
 // Iteration 2: Conditionals
-
-
-// Iteration 3: Loops
-
-
-
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker1.length < hacker2.length) {
@@ -20,11 +15,10 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 
-let name = "";
+// Iteration 3: Loops
 for (let i = 0; i < hacker1.length; i++) {
-    name += hacker1.charAt(i).toUpperCase() + " ";
+    console.log(`${hacker1.charAt(i).toUpperCase()}`);
 }
-console.log(name);
 
 function reverseString(str) {
     let splitString = str.split("");
@@ -33,7 +27,6 @@ function reverseString(str) {
     console.log(joinArray);
 }
 reverseString(hacker2);
-
 
 if (hacker1.localeCompare(hacker2) === -1) {
     console.log(`The driver's name goes first.`);
