@@ -20,3 +20,6 @@ if (hacker1.length > hacker2.length) {
 }
 // Iteration 3: Loops
 console.log(hacker1.split("").join(" ").toUpperCase());
+
+let reverseHacker2 = hacker2.split("").reverse().join("");
+console.log(reverseHacker2);
