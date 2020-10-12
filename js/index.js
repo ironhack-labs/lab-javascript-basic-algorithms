@@ -21,6 +21,21 @@ else (
 // Iteration 3: Loops
 let sepName = "";
 for (i = 0; i < hacker1.length; i++) {
-    sepName = sepName + hacker1.charAt(i).toUpperCase()+" ";
+    sepName = sepName + hacker1.charAt(i).toUpperCase() + " ";
 }
 console.log(sepName);
+
+let sepNameRev = ""
+for (i = 0; i < hacker2.length; i++) {
+    sepNameRev = hacker2.charAt(i) + sepNameRev; 
+}
+console.log(sepNameRev);
+
+if (hacker1 < hacker2) {
+    console.log("The driver's name goes first");
+}
+else if (hacker1 > hacker2) { 
+    console.log("Yo, the navigator goes first definitely.")
+} 
+
+else console.log("What?! You both have the same name?")
