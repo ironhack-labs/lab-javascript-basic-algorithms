@@ -39,3 +39,21 @@ else if (hacker1 > hacker2) {
 } 
 
 else console.log("What?! You both have the same name?")
+
+// BONUS 1
+
+let Lore = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam sapien sit amet sapien maximus feugiat. Etiam congue nibh et odio auctor hendrerit. Morbi nec diam ac felis feugiat fringilla ultrices in nisi. Duis sollicitudin euismod congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id venenatis purus. Sed tellus arcu, rutrum non consectetur nec, fermentum a tortor. Pellentesque tincidunt erat at odio pretium mollis. Quisque auctor nibh dolor. Morbi posuere semper aliquam. Suspendisse tincidunt rhoncus eleifend. Aliquam sollicitudin, nunc at sodales scelerisque, velit nulla volutpat sapien, quis euismod nisi ex quis ligula. Nunc non efficitur neque. Maecenas in tincidunt libero. Cras efficitur ligula quis purus varius rhoncus. Maecenas iaculis tempus eros, sit amet rhoncus massa dictum vel. Morbi luctus facilisis quam, vitae interdum mauris varius ut. Praesent vel sem diam. Donec metus quam, ultricies eget mi non, venenatis volutpat sapien. Quisque lectus quam, iaculis vel molestie ac, eleifend sed felis. Vivamus congue tellus a ornare pharetra. Pellentesque vel ex porta, vestibulum nisi nec, auctor tortor. Sed commodo nisi a turpis venenatis accumsan. Proin gravida ligula sit amet lectus feugiat, a scelerisque sapien tempus. Proin ex massa, gravida et sollicitudin quis, sagittis ac turpis. Aenean aliquam nibh ut nibh tempor pulvinar. Praesent ut turpis nec ante commodo tempor vitae in ex.";
+
+let wordCount = 0
+let etCount = 0
+for ( i = 0 ; i < Lore.length ; i++ ) {
+    if (Lore.charAt(i) === " " ) {
+      //  wordCount = wordCount + 1;
+        wordCount++;
+    }
+    if (Lore.charAt(i-1) === "e" && Lore.charAt(i) === "t") {
+        etCount++;
+    }
+}
+console.log(wordCount);
+console.log(etCount);
