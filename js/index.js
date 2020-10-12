@@ -16,9 +16,11 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let name = "";
 for (let i = 0; i < hacker1.length; i++) {
-    console.log(`${hacker1.charAt(i).toUpperCase()}`);
+    name += hacker1.charAt(i).toUpperCase() + " ";
 }
+console.log(name);
 
 function reverseString(str) {
     let splitString = str.split("");
