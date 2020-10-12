@@ -31,3 +31,12 @@ if(hacker1.localeCompare(hacker2) === -1){
   }else{
     console.log("What?! You both have the same name?");
   }
+
+//Bonus 1
+
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet nulla sit amet finibus sagittis. Mauris odio libero, volutpat luctus ante ac, rutrum pretium eros. Curabitur in placerat arcu. Suspendisse feugiat risus ut luctus auctor. Praesent nisl nunc, pulvinar feugiat purus volutpat, lobortis euismod massa. Sed gravida pharetra ex et mattis. Fusce tristique at ex eget euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam interdum consequat orci non rhoncus.";
+
+function WordCount(str) {
+    return str.split(" ").length;
+}
+console.log(WordCount(loremIpsum));
