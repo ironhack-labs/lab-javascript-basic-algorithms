@@ -63,6 +63,20 @@ Cras nibh enim, pulvinar nec cursus et, elementum euismod tellus. Cras scelerisq
 // - Make your program count the number of words in the string.
 console.log('Number of words in the string: ', lorem.split('\n\n').join(' ').split(' ').length);
 // - Make your program count the number of times the Latin word et appears.
-  console.log('Number of times "et" appears: ', lorem.split(' et').length - 1);
+  console.log('Number of times "et" appears: ', lorem.split(',').join(' ').split('.').join(' ').split(' et ').length - 1);
+
 //Bonus 2:
 //Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome.
+let phraseToCheck = "Amor, Roma";
+let isTheSame;
+for (i = phraseToCheck.toLowerCase().split("").length-1; i>=0; i--) {
+  if (phraseToCheck[i] === ' ' || phraseToCheck[i] === ',' || phraseToCheck[i] === '.'){
+    continue;
+  }
+  if (phraseToCheck[i].toLowerCase() !== phraseToCheck[phraseToCheck.length-1-i].toLowerCase()){
+    isTheSame = false;
+    break
+   }
+  isTheSame = true;
+}
+console.log(isTheSame);
