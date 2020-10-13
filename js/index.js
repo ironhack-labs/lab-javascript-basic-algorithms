@@ -34,3 +34,5 @@ function reverseInPlace (str) {
   return result
 }
 console.log(reverseInPlace(name2));
+let arrayNames= [str2, str1];
+arrayNames.sort();
