@@ -15,7 +15,24 @@ else if ( hacker2.lenght = hacker1.length) {
   console.log (` Wow, you both have equally long names,${hacker1.length} chracters`)
 }
 
+test=" "
+for(let i=0; i<hacker1.length; i++){ 
+   test += hacker1.charAt(i).toUpperCase() + ' ';
+} 
 
-for (let i = 0; i < hacker1.length; i++) {
-  console.log(hacker1[i].toUpperCase());
+console.log(test) 
+
+test2= " "
+for(let u=hacker2.length; u>=0; u--) {
+test2 += hacker2.charAt(u) 
+}
+
+console.log(test2) 
+
+if (hacker1.localeCompare(hacker2) <0) {
+console.log(`The driver's name goes first`) 
+} else if (hacker1.localeCompare(hacker2) ===1 ){
+  console.log(`Yo, the navigator goes first definitely.`)
+} else if(hacker1.localeCompare(hacker2) ===0) {
+  console.log(`What?! You both have the same name?`)
 }
