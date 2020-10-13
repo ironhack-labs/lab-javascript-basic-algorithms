@@ -35,3 +35,11 @@ if(comparison === 1) {
 } else {
     console.log('What?! you both have the same name?')
 }
+
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit enim sed vestibulum interdum. Nam ut diam accumsan, condimentum metus et, gravida justo. Donec fringilla vulputate massa, eu volutpat elit venenatis non. Suspendisse euismod dui id lectus placerat euismod iaculis a nibh. Aenean eu nisl ultricies, pellentesque urna eu, convallis ipsum. Nullam nisl elit, bibendum lobortis orci nec, luctus interdum nisi. Suspendisse lectus quam, porta id tellus eget, posuere vulputate dui. Ut egestas, risus in blandit scelerisque, felis magna maximus risus, semper vulputate mi lacus et tellus. Praesent eget justo eget eros tincidunt suscipit eget vel leo. Donec mattis risus orci, vel aliquam dolor feugiat id. Vestibulum aliquet scelerisque est, sed luctus purus posuere a. Cras dapibus urna metus, in suscipit orci rhoncus vel. Donec ultricies tortor eget justo efficitur, non vestibulum sapien tincidunt. Mauris placerat eleifend sem, sit amet auctor sapien feugiat sit amet. Vestibulum varius ultrices augue fringilla bibendum. Nulla facilisi. Praesent facilisis laoreet lacinia. Mauris quis ipsum augue. Etiam tempus et nunc at imperdiet. Sed et quam congue, cursus diam molestie, venenatis justo. Ut venenatis interdum dictum. Donec ac purus in erat euismod viverra eget vel urna. Duis pharetra velit nec ipsum auctor pretium. Vivamus sollicitudin, velit in mattis hendrerit, lacus massa ultrices magna, ac bibendum arcu tellus iaculis nisi. Integer gravida elit ante, eu varius tellus tristique ut. Phasellus quis commodo urna. Sed quis orci a dui porta dignissim. In non fringilla quam. Aliquam faucibus mattis ex a vulputate. Proin fringilla augue eu viverra tempus. Maecenas non elementum augue. Donec vitae laoreet enim. Duis eget ullamcorper nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Donec sagittis feugiat mi eget eleifend. Donec nec sem felis.";
+
+let loremCount = lorem.split(" ").length;
+console.log(loremCount);
+
+let test = "Lorem ipsum dolor sit amet"
+letcou
