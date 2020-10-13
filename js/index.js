@@ -23,3 +23,14 @@ else{ if (str1.length > str2.length) console.log (`The driver has the longest na
 };
 
 // Iteration 3: Loops
+console.log (str1.toUpperCase())
+function reverseInPlace (str) {
+  var words = [];
+  words = str.match(/\S+/g);
+  var result = "";
+    for (var i = 0; i < words.length; i++) {
+     result += words[i].split('').reverse().join('') + " ";
+  }
+  return result
+}
+console.log(reverseInPlace(name2));
