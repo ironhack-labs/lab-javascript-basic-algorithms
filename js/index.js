@@ -127,7 +127,8 @@ countEt(para3_2)
 //// CURRENT LESSONS WAY
 let count1 = 0
   for(let i = 0; i <= para1.length;i++){
-   if(para1.substr(i,4)=== " et " || para1.substr(i,4)=== " et," || para1.substr(i,4)=== " et." ){
+    let paraLowercase = para1.toLowerCase()
+    if(paraLowercase.substr(i,4)=== " et " || paraLowercase.substr(i,4)=== " et," || paraLowercase.substr(i,4)=== " et." ){
       count1++
     }
   }
@@ -135,7 +136,8 @@ let count1 = 0
 
 let count2 = 0
   for(let i = 0; i <= para2.length;i++){
-   if(para2.substr(i,4)=== " et " || para2.substr(i,4)=== " et," || para2.substr(i,4)=== " et." ){
+    let paraLowercase = para2.toLowerCase()
+    if(paraLowercase.substr(i,4)=== " et " || paraLowercase.substr(i,4)=== " et," || paraLowercase.substr(i,4)=== " et." ){
       count2++
     }
   }
@@ -143,7 +145,8 @@ let count2 = 0
 
 let count3 = 0
   for(let i = 0; i <= para3_2.length;i++){
-   if(para3_2.substr(i,4)=== " et " || para3_2.substr(i,4)=== " et," || para3_2.substr(i,4)=== " et." ){
+    let paraLowercase = para3_2.toLowerCase()
+    if(paraLowercase.substr(i,4)=== " et " || paraLowercase.substr(i,4)=== " et," || paraLowercase.substr(i,4)=== " et." ){
       count3++
     }
   }
