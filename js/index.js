@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
-let hacker1 = "Sabela";
+let hacker1 = "Sabela"
 console.log(`The driver's name is ${hacker1}`)
 
-let hacker2 = "Nina";
+let hacker2 = "Nina"
 console.log(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
@@ -18,15 +18,22 @@ if (hacker1.length > hacker2.length) {
 /* 3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
   i.e. `"J O H N"` */
 
-hacker1 = hacker1.toUpperCase().split("").join(" "); 
-console.log(hacker1);
+hacker1 = hacker1.toUpperCase().split("").join(" ")
+console.log(hacker1)
 
 /* 3.2 Print all the characters of the navigator's name, in reverse order. 
   i.e. `"nhoJ"`*/
 
-for (let i = (hacker1.length); i >= 0; i-- ){
-    console.log(hacker1.charAt(i))
+// Old exercise  
+// for (let i = (hacker1.length); i >= 0; i-- ){
+//     console.log(hacker1.charAt(i))
+// }
+
+let hackerReverse = ""
+for (let i = (hacker1.length-1); i >= 0; i--){
+  hackerReverse += hacker1[i]
 }
+console.log(hackerReverse)
 
 /*3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
     - `The driver's name goes first.` <br>
@@ -34,11 +41,15 @@ for (let i = (hacker1.length); i >= 0; i-- ){
     - `What?! You both have the same name?`*/
 
 switch(hacker1.localeCompare(hacker2)) {
-    case 1: console.log(`The driver's name goes first.`);
+    case 1: console.log(`The driver's name goes first.`)
     break;
     case -1: console.log(`Yo, the navigator goes first definitely.`)
     break;
     case 0: console.log(`What?! You both have the same name?`)
+    break;
+    case 2: console.log(`The driver's name goes first.`)
+    break;
+    case -2: console.log(`Yo, the navigator goes first definitely.`)
     break;
   
   }
@@ -57,18 +68,18 @@ Sed laoreet ante vel quam auctor efficitur. Curabitur non metus vitae quam solli
 
 
 function WordCount(str) { 
-  return str.split(" ").length;
+  return str.split(" ").length
 }
 
-console.log(WordCount(LoremStr));
+console.log(WordCount(LoremStr))
 
 // Make your program count the number of times the Latin word [`et`] appears.
 
 function WordEtCount(str) { 
-    return str.split(`et`).length;
+    return str.split(` et `).length
   }
   
-  console.log(WordEtCount(LoremStr));
+  console.log(WordEtCount(LoremStr))
 
 
 
@@ -85,22 +96,30 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
   
   __Hint__: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as _join()_, _reverse()_, etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using `for` loop, `if-else` statements with some `break` and `continue`... Just sayin' :smiley: */
 
+//OLD exercise
+// function palindrome(str) {
+
+//     var newStr= str.toLowerCase()
+  
+//     for(var i=0; i < (newStr.length)/2; i++){ 
+//       if(newStr[i] == newStr[newStr.length-i-1]){ 
+//        } else return false 
+//     }
+//     return true
+//   }
+  
+// new one
 
 function palindrome(str) {
-
-    var newStr= str.toLowerCase().split("");
+  var newStr= str.toLowerCase()
+  for(var i=0; i < (newStr.length)/2; i++){
+    if(newStr[i] !== newStr[newStr.length-i-1]){ 
+     return false } 
+}
+return true
+}
   
-    for(var i=0; i < (newStr.length)/2; i++){ 
-      if(newStr[i] == newStr[newStr.length-i-1]){ 
-       
-      } else 
-        return false; 
-    }
-    return true;
-  }
-  
-  
-  palindrome("Amor Roma");
-  palindrome("race car");
-  palindrome("stack cats");
-  palindrome("taco cat");
+  palindrome("Amor Roma")
+  palindrome("race car")
+  palindrome("stack cats")
+  palindrome("taco cat")
