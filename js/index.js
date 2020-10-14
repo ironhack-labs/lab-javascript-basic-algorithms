@@ -48,19 +48,19 @@ let numberOfWordsArray = loremIpsum.split(" ");
 let cleanedWordsArray = [];
 numberOfWordsArray.forEach(word => {
   if(word !== " ") { // Removing double spaces
-    cleanedWordsArray.push(numberOfWordsArray);
+    cleanedWordsArray.push(word);
   }
 })
 console.log(cleanedWordsArray.length);
 
-// Number of Et
-let numberOfEt = 0;
-for (let i = 0; i < loremIpsum.length; i++) {
-  if (loremIpsum.startsWith("et", i)) {
-    numberOfEt++;
+// Number of words containing Et
+let wordsWithEt = 0;
+for (let x = 0; x < cleanedWordsArray.length; x++) {
+    if (cleanedWordsArray[x].includes("et")) {
+      wordsWithEt++;
   }
 }
-console.log(numberOfEt);
+console.log(wordsWithEt);
 
 // Bonus 2
 let phraseToCheck = "race car";
