@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
-let hacker1 = "Martins"
+let hacker1 = "Martins";
 console.log(`The driver's name is ${hacker1}`);
 
-let hacker2 = "Martins"
+let hacker2 = "Martins";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -14,11 +14,11 @@ console.log(`The navigator's name is ${hacker2}`);
   - Wow, you both have equally long names, XX characters!.*/
 
   if(hacker1.length > hacker2.length) {
-      console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+      console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
   } else if (hacker1.length < hacker2.length) {
-      console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+      console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
   } else {
-      console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+      console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
   }
 
 // Iteration 3: Loops
@@ -47,9 +47,9 @@ console.log(`The navigator's name is ${hacker2}`);
         - What?! You both have the same name? */
 
         if(hacker1.localeCompare(hacker2) === -1) {
-            console.log("The driver's name goes first.")
+            console.log("The driver's name goes first.");
         } else if (hacker1.localeCompare(hacker2) === 1) {
-            console.log("Yo, the navigator goes first definitely.")
+            console.log("Yo, the navigator goes first definitely.");
         } else {
             console.log("What?! You both have the same name?");
         }
@@ -59,13 +59,31 @@ console.log(`The navigator's name is ${hacker2}`);
     //Bonus 1:
     //Go to lorem ipsum generator and:
         //Generate 3 paragraphs. Store the text in a variable type of string.
-            let paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+            let paragraph = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. et et et";
 
         //Make your program count the number of words in the string.
             console.log(paragraph.split(" ").length);
             
         //Make your program count the number of times the Latin word et appears.*/
-    
+           
+            console.log(paragraph.split('et').length -1); // -> it splits the paragraph string, into an array with all the substrings. 
+
     //Bonus 2:
 
+        //Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+        let phraseToCheck = "eye";
+        /* console.log(phraseToCheck.split(" ").join(""));
+        console.log(phraseToCheck.split(" ").reverse().join("")); */
+    
+      if (phraseToCheck.split(" ").join("") === phraseToCheck.split(" ").reverse().join("")) {
+          console.log(`Yo ${phraseToCheck} is a palindrome`);
+      } else {
+          console.log('Sorry dude');
+      }
+
+      
+    //to convert from a string to an array we use split().
+    //to convert from an arry to a string we use join().
+   
     
