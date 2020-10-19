@@ -47,11 +47,9 @@ let paragraphs = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut co
 let listOfWords = paragraphs.split(" ");
 console.log(listOfWords.length);
 let etCounter = 0;
-for (m = 0;  m < listOfWords.length; m ++){
+for (m = 0;  m < listOfWords.length; m++){
   if (listOfWords[m] === "et"){
     etCounter++;
-    m++;
-  } else {
-    m++
-  }
-}
+  };
+};
+console.log(etCounter);
