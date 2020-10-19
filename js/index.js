@@ -28,12 +28,20 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
-// 3.1 Print all the characters of the driver's name,
-//separated by a space and in capitals i.e. "J O H N"
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 
 // console.log(hacker1.split("").join(" ").toUpperCase());
 let newHacker1 = "";
 for (let i = 0; i < hacker1.length; i++) {
   newHacker1 += hacker1[i].toUpperCase() + " ";
   console.log(newHacker1.trim());
+}
+
+// 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+// console.log(hacker2.split("").reverse().join(""));
+
+let newHacker2 = "";
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  newHacker2 += hacker2[i];
+  console.log(newHacker2);
 }
