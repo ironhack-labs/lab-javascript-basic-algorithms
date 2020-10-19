@@ -93,25 +93,25 @@ console.log(count); //counts the number of times "et" appears
 var word2 = "racecar";
 
 for (i = 0; i < word2.length; i++) {
-  if (word2[i] !== word2[word2.length - 1 - i]) {
-    console.log("nope, no palindrome");
+  if (word2[i] === word2[word2.length - 1 - i]) {
+    console.log("yep, its a palindrome");
     break;
-  } else console.log("yep, its a palindrome");
+  } else console.log("nope, no palindrome");
   break;
 }
 
 ///complete working solition using (some) array methods
 
 let word3 = "race car";
-let checkMe = word3.split(" ").join("");
+let checkMe = word3.toLowerCase().split(" ").join("");
 
 //and then the same loop as before
 
 for (i = 0; i < checkMe.length; i++) {
-  if (checkMe[i] !== checkMe[checkMe.length - 1 - i]) {
-    console.log("nope, no palindrome");
+  if (checkMe[i] === checkMe[checkMe.length - 1 - i]) {
+    console.log("yep, its a palindrome");
     break;
-  } else console.log("yep, its a palindrome");
+  } else console.log("nope, no palindrome");
   break;
 }
 
