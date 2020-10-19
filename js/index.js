@@ -40,18 +40,18 @@ var provelexicography = "a" < "b";
 console.log(provelexicography)
 
 //lexicography order
-for(i=0 ; i <= lastindex1; i++){
- if (hacker1[i] == hacker2[i]){
-   if (hacker1[i] == hacker1[lastindex1] && hacker2[i] == hacker2[lastindex2]){
-      console.log("What?! You both have the same name?");
-    } else {
-     continue;
+for(i=0, z=0; i <= lastindex1 || z<= lastindex2; i++,z++){
+    if (hacker1[i] == hacker2[z]){
+      if (hacker1[i] == hacker1[lastindex1] && hacker2[z] == hacker2[lastindex2]){
+         console.log("What?! You both have the same name?");
+        } else {
+        continue;
+        }
+    } else if (hacker1[i] < hacker2[z] || hacker1.length < hacker2.length){
+       console.log("The driver's name goes first.")
+       break;
+    } else if (hacker1[i] > hacker2[z] || hacker2.length < hacker1.length){
+       console.log("Yo, the navigator goes first definitely.")
+       break;
     }
-  } else if (hacker1[i] < hacker2[i]){
-    console.log("The driver's name goes first.")
-    break;
-  } else if (hacker1[i] > hacker2[i]){
-    console.log("Yo, the navigator goes first definitely.")
-    break;
-  }
 }
