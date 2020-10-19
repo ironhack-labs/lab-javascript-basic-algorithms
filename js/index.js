@@ -36,3 +36,26 @@ if (checkOrder === -1) {
   } else {
     console.log('What?! You both have the same name?');
   }
+
+// Bonus 1
+let text = "Fusce ex tortor, commodo gravida varius non, vestibulum at leo. Fusce vel ligula sem. Cras ornare sem mauris, ac venenatis nunc et commodo ut. Curabitur pellentesque justo vitae neque egestas sagittis. Sed id porttitor leo, sit amet consectetur ipsum. Phasellus accumsan est massa, non interdum sapien tempor ut. In eros et ante, cursus dignissim ultricies vitae, iaculis eget sem. Vestibulum rhoncus rutrum porta. Curabitur imperdiet suscipit massa, eget egestas mi tempus vel. Nulla vel efficitur felis. Sed ullamcorper accumsan ligula, vitae et semper erat dignissim sit amet. Sed at dui at massa blandit commodo hendrerit a tellus. Vivamus mi erat, dignissim ut dictum eget, fringilla a sapien. Duis massa elit, sagittis vitae consectetur a, tincidunt at neque. Sed ut tincidunt arcu.";
+
+let count = 0;
+
+   let words = text.split(" "); 
+    for (i = 0 ; i < words.length ; i++){
+       if (words[i] != '') {
+          count += 1;
+       }
+    }
+console.log(`There are ${count} words in the text.`);
+
+let countEt = 0;
+
+   let wordsEt = text.split(" "); 
+    for (j = 0 ; j < wordsEt.length ; j++){
+       if (words[j] === 'et') {
+          countEt ++;
+       }
+    }
+console.log(`The word "Et" appears ${countEt} times.`);
