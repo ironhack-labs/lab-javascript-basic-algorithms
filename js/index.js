@@ -71,12 +71,12 @@ console.log(`"et" appears ${count} times`);
 //Bonus 2
 var phraseToCheck = "A man, a plan, a canal, Panama!";
 var phraseClean = phraseToCheck.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
-var flag = true;
+var flag;
 for( var i = 0 ; i < phraseClean.length/2 ; i++){
   if(phraseClean[i] !== phraseClean[phraseClean.length - 1 - i]){
     console.log("It's not a Palindrome.");
-    break;
     flag = false;
+    break;
   }else{
     flag = true;
   }
