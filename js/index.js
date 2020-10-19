@@ -58,19 +58,36 @@ for (let i = 0; i < longestName.length; i++) {
 
 // Bonus Time!
 // Bonus 1:
-let threeParagraphs = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum justo id nunc bibendum tempus. Vestibulum vel quam et elit ultrices pellentesque a vitae turpis. Mauris sollicitudin dolor quam, nec finibus elit rhoncus sed. Suspendisse consectetur auctor ultrices. Etiam blandit nec dui nec hendrerit. Aenean euismod condimentum ornare. Ut gravida dui dolor, in aliquet nisl pulvinar eget. Aenean lobortis mattis leo in porttitor. Mauris et risus orci. Aliquam consequat nisl non sapien consequat tempus. Nunc volutpat maximus purus, scelerisque vulputate nibh cursus ut. Vivamus elementum eleifend ante nec iaculis. Cras tempus pretium erat, et tempus mauris mattis nec. Sed libero nisi, tempor ac suscipit ac, tempus nec urna. Donec et sodales lorem. Pellentesque eget mollis odio. Nullam ut magna at nisi aliquam malesuada. Cras euismod, nisi condimentum faucibus aliquet, turpis velit porta felis, eget interdum mi enim sed sapien. Nullam at feugiat justo. Curabitur fringilla libero sapien, id condimentum ante luctus nec. Sed dapibus metus justo, eu convallis libero hendrerit et. Phasellus est ex, tincidunt nec ultrices eu, ornare at arcu. In sodales feugiat tincidunt. Suspendisse semper diam at vulputate laoreet. Praesent a hendrerit mauris. Fusce vel tellus et felis rutrum commodo nec non ipsum. Nam in mauris quis lorem sodales faucibus. Morbi venenatis, metus quis placerat elementum, nulla lacus efficitur ex, eget mattis lectus nibh id elit. Nulla fringilla tempor ex, at convallis mauris bibendum vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec nisi elit, fringilla in lorem eu, hendrerit varius mauris. Quisque eu nisi ullamcorper, vulputate orci non, interdum sem. Donec sodales luctus volutpat. Pellentesque sed imperdiet lectus. Duis lobortis venenatis sem ac maximus.';
-function countingWords() {
+let threeParagraphs = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate, augue sit amet blandit tincidunt, lorem lorem ornare ante, vitae rhoncus tortor lorem a ligula. Pellentesque porta vehicula erat id iaculis. Etiam interdum justo dolor, pharetra ornare purus rutrum ut. Sed eu ullamcorper ante. Fusce nisl ipsum, pellentesque ut elit nec, laoreet hendrerit felis. Vivamus tempus dictum fringilla. Cras nec ante eu dui varius auctor sed sed felis. Proin tincidunt diam id sollicitudin posuere. Suspendisse viverra ut diam ut egestas.
+
+Donec dignissim quam id ullamcorper porttitor. In dui augue, feugiat cursus lorem id, commodo hendrerit mi. Donec ac sem ac lorem euismod efficitur. Quisque viverra lectus et cursus tristique. Etiam pretium id sapien non suscipit. In eu risus euismod, elementum felis vel, placerat ligula. Cras accumsan, enim eget consectetur congue, leo arcu dignissim augue, ut malesuada justo lectus vel massa. Mauris facilisis, lectus ut auctor tincidunt, ante ligula mattis odio, sed fermentum libero ipsum vitae felis.
+
+Nullam eget risus vestibulum, pharetra purus eu, iaculis tortor. Aliquam semper quis diam quis tincidunt. Aliquam erat volutpat. Maecenas ac felis id magna mollis blandit. Curabitur dapibus finibus nunc nec ultrices. Integer ut erat et leo malesuada pellentesque nec in ipsum. Morbi vel posuere est. Aenean ac bibendum augue. Curabitur augue est, convallis quis sem id, facilisis molestie justo. Suspendisse potenti. Cras lobortis, velit nec laoreet dignissim, ipsum ligula sollicitudin magna, nec finibus dui mi et tellus.`;
+//counting words
+function countingWords(str){
     let counter = 0;
-    for (let i = 0; i < threeParagraphs.length; i++) {
-        if (threeParagraphs[i] === ' ') {
-            counter++;
-        }
+    for(let i = 0; i < str.length; i++){
+      if(str[i] === ' '){
+        counter++;
+      }
     }
     counter++;
     return counter;
-}
-console.log(countingWords(threeParagraphs));
+    }
+    console.log(countingWords(threeParagraphs));
 
+//counting 'et'
+function countEt(str) {
+    let count = 0;
+    str = str.split(' ');
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'et') {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countEt(threeParagraphs));
 
 //bonus 2
 let phraseToCheck = 'race car';
