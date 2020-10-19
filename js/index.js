@@ -53,3 +53,25 @@ for (m = 0;  m < listOfWords.length; m++){
   };
 };
 console.log(etCounter);
+
+//Bonus 2
+let phraseToCheck = "Was it a car or a cat I saw?";
+let noPunct = "";
+for (let h = 0; h < phraseToCheck.length; h++){
+  if (phraseToCheck[h] === "," || phraseToCheck[h] === "!" || phraseToCheck[h] === "." || phraseToCheck[h] === ";" || phraseToCheck[h] === ":" || phraseToCheck[h] === "?" || phraseToCheck[h] === " " || phraseToCheck[h] === "'"){
+    continue;
+  } else {
+    noPunct += phraseToCheck[h].toLowerCase();
+  }
+}
+
+let reverseNoPunct = "";
+for (j = noPunct.length - 1; j >= 0; j--){
+  reverseNoPunct += noPunct[j];
+}
+
+if(noPunct === reverseNoPunct){
+  console.log("You found a palindrome!");
+} else {
+  console.log("Not a palindrome, sorry.");
+};
