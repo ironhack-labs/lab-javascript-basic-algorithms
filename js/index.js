@@ -30,3 +30,11 @@ console.log(finalString);
 
 let reverse = hacker2.split("").reverse("").join("");
 console.log(reverse);
+
+if (hacker1 > hacker2){
+  console.log("The driver's name goes first");
+}else  if (hacker2 > hacker1){
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
