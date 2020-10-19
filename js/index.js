@@ -86,22 +86,29 @@ console.log(count); //counts the number of times "et" appears
 ////////////////////////
 
 let word2 = "Race car";
-let tempWord = "";
+let tempword = "";
 
 for (i = 0; i < word2.length; i++) {
   if (word2[i] == " ") {
     continue;
   } else {
-    tempWord += word2[i];
+    tempword += word2[i];
   }
 }
 
-tempWord = tempWord.toLowerCase();
+tempword = tempword.toLowerCase();
 
-for (i = 0; i < tempWord.length; i++) {
-  if (tempWord[i] === tempWord[tempWord.length - 1 - i]) {
-    console.log("yep, its a palindrome");
+var result;
+
+for (i = 0; i < tempword.length; i++) {
+  if (tempword[i] !== tempword[tempword.length - 1 - i]) {
+    result = "nope, no palindrome";
     break;
-  } else console.log("nope, no palindrome");
-  break;
+  } else if (tempword[i] === tempword[tempword.length - 1 - i]) {
+    {
+      result = "yes its a palindrome";
+    }
+  }
 }
+
+console.log(result);
