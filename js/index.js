@@ -85,34 +85,23 @@ console.log(count); //counts the number of times "et" appears
 //BONUS2
 ////////////////////////
 
-//working solution on single words (without using any
-//fancy array methods)
-//but doesnt work on multiple word strings. because I
-//Dont know how to remove the spaces.
-
-var word2 = "racecar";
+let word2 = "Race car";
+let tempWord = "";
 
 for (i = 0; i < word2.length; i++) {
-  if (word2[i] === word2[word2.length - 1 - i]) {
+  if (word2[i] == " ") {
+    continue;
+  } else {
+    tempWord += word2[i];
+  }
+}
+
+tempWord = tempWord.toLowerCase();
+
+for (i = 0; i < tempWord.length; i++) {
+  if (tempWord[i] === tempWord[tempWord.length - 1 - i]) {
     console.log("yep, its a palindrome");
     break;
   } else console.log("nope, no palindrome");
   break;
 }
-
-///complete working solition using (some) array methods
-
-let word3 = "race car";
-let checkMe = word3.toLowerCase().split(" ").join("");
-
-//and then the same loop as before
-
-for (i = 0; i < checkMe.length; i++) {
-  if (checkMe[i] === checkMe[checkMe.length - 1 - i]) {
-    console.log("yep, its a palindrome");
-    break;
-  } else console.log("nope, no palindrome");
-  break;
-}
-
-/////////////////////////////////////////
