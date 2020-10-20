@@ -20,7 +20,7 @@ if (hacker1.length > hacker2.length) {
 let string = "";
 
 for (let i = 0 ; i < hacker1.length; i++) {
-  if (i === hacker1.length -1) {
+  if (i === hacker1.length -1) { //last character
     string += hacker1[i];
   } else {
     string += hacker1[i] + " ";
