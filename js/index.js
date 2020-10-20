@@ -13,5 +13,11 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`)
 }
 
-
 // Iteration 3: Loops
+
+let solution = ""
+for (let i = 0; i < hacker1.length; i++) {
+  
+  solution = solution + hacker1[i].toUpperCase() + " "
+}
+console.log(solution.slice(0, 17))
