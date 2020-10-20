@@ -9,6 +9,8 @@
 
 let hacker1="Marco";
 let hacker2="Marco";
+let newHacker1="";
+let newHacker2="";
 
 console.log(`The driver name is ${hacker1}`);
 console.log(`The navigator's name is ${hacker2}`);
@@ -34,15 +36,25 @@ Print all the characters of the driver's name, separated by a space and in capit
 */
 let finalName1="";
 for (let i=0; i<hacker1.length; i++){
-  finalName1+=" "+hacker1[i].toUpperCase();
+  if (i>0){
+    finalName1+=" "+hacker1[i].toUpperCase();
+  }else{
+    finalName1+=hacker1[i].toUpperCase();
+  }
+  
 }
 console.log(finalName1);
 /*
 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 */
 let finalName2="";
-for (let i=hacker2.length-1; i>=0; i--){
-  finalName2+=" "+hacker2[i].toUpperCase();
+
+for (i=hacker2.length-1; i>=0; i--){
+  if (i == hacker2.length-1){
+    finalName2+=hacker2[i].toUpperCase();
+  }else{
+    finalName2+=" "+ hacker2[i].toUpperCase();
+  }
 }
 console.log(finalName2);
 
