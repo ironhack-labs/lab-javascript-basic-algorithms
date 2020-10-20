@@ -122,7 +122,7 @@ console.log("Paragraph has "+count + " words");
 count=0;
 for (let i=0; i< string.length; i++){
   if (string[i]=="e"){
-    if (string[i-1]==" " && string[i+1]=="t" && string[i+2]==" ") {
+    if ((string[i-1]==" " && string[i+1]=="t" && string[i+2]==" ") || (string[i-1]==" " && string[i+1]=="t" && string[i+2]==",")) {
       count=count+1;
     }
   }
