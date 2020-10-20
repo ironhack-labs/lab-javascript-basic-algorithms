@@ -88,7 +88,7 @@ let etCount = 0;
 let textArray = text.split(" ");
 
 for (let i = 0; i < textArray.length; i++) {
-  if (textArray[i]==="et") {
+  if (textArray[i]==="et" || textArray[i] ==="et,") {
     etCount++;
   }
 };
