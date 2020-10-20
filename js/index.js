@@ -1,3 +1,5 @@
+console.log("it's all ready!");
+
 // Iteration 1: Names and Input
 
 
