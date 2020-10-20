@@ -40,7 +40,7 @@ ${sentence3}
 ${sentence2}`;
 console.log(result);
 
-/* Trying to do it dynamically below these lines, but array order returns undefined. why???
+//And now dynamically happening!
 var order = [];
 order[0] = sentence1.localeCompare(sentence2);
 order[1] = sentence2.localeCompare(sentence3);
@@ -87,7 +87,7 @@ ${sentence2}`;
     break; 
 }
 
-console.log (result);*/
+console.log (result);
 
 
 
