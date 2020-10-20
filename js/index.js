@@ -49,7 +49,8 @@ for (let k = 0; k < hacker1.length && k < hacker2.length; k++) {
 		console.log(`Yo, the navigator goes first definitely.`);
 		break;
 	}
-	else if (hacker1[k] === hacker2[k] && k + 1 === hacker2.length && k + 1 === hacker1.length)
+	else if (hacker1[k] === hacker2[k] && k + 1 === hacker2.length && k + 1 === hacker1.length) {
 		console.log("What?! You both have the same name?");
-	break;
+		break;
+	}
 }
