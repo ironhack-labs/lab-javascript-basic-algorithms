@@ -52,3 +52,15 @@ for (let i = 0; i < res.length; i++) {
   }
 }
 console.log(counter)
+
+let phraseToCheck = "taco cat";
+
+let reversePhraseToCheck = "";
+
+for (let i= phraseToCheck.length-1; i>= 0; i--){
+   reversePhraseToCheck += phraseToCheck[i];
+ }
+if (phraseToCheck.localeCompare(reversePhraseToCheck) === 0 ){
+  
+  console.log(`Yes, it's a Palindrome!`);
+} else (console.log(`Sorry, it's not a Palindrome :( `));
