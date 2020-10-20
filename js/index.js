@@ -32,7 +32,7 @@ if (hacker1.length > hacker2.length) {
 
 var tempName = "";
 for (i = 0; i < hacker1.length; i++) {
-  tempname += hacker1[i].toUpperCase() + " ";
+  tempName += hacker1[i].toUpperCase() + " ";
 }
 console.log(tempName);
 
@@ -41,7 +41,7 @@ console.log(tempName);
 
 var tempName2 = "";
 for (i = hacker2.length - 1; i >= 0; i--) {
-  tempname2 += hacker2[i];
+  tempName2 += hacker2[i];
 }
 
 console.log(tempName2);
