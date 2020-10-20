@@ -75,7 +75,7 @@ let text = "Lorem ipsum et dolor et sit amet, consectetur adipiscing elit et.";
 let counter = 1; //1 because of last word
 
 for (let i = 0; i <= text.length; i++) {
-  if (text[i] === " ") {
+  if (text[i] === " " || currentChar === "\n") { //or if current index is a new line!!!
     counter++;
   }
 };
@@ -92,6 +92,20 @@ for (let i = 0; i < textArray.length; i++) {
     etCount++;
   }
 };
+
+//different solution by looping through string:
+
+//for (var i = 0; i < text.length; i++) {
+//  var currentChar = text[i];
+//  var previousChar = text[i-1];
+//  var nextChar = text[i+1];
+//  var lastChar = text[i+2];
+//
+//  if(previousChar === " " && currentChar === "e" && nextChar === "t" && (lastChar === " " || lastChar===",")) {
+//    etCount+++;
+//  }
+//};
+
 
 console.log("Number of 'et': " + etCount);
 
