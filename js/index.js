@@ -22,9 +22,13 @@ if (hacker1.length > hacker2.length) {
 
 // 1
 
-for (let i = 0; i < hacker1.length; i++) {
-      console.log(hacker1[i].toUpperCase());
-    }
+var hackerToUpper = hacker1.toUpperCase();
+var hackerWithSpaces ='';
+for(var i=0; i < hackerToUpper.length; i++){
+  hackerWithSpaces += hackerToUpper[i];
+  hackerWithSpaces += " ";
+}
+console.log(hackerWithSpaces);
     
 // 2
     function reverseString(str) {
@@ -37,13 +41,18 @@ for (let i = 0; i < hacker1.length; i++) {
   reverseString(hacker2);
   
 //   3
-// empty array
-let names = []; 
-
-// pushes onto array
-names.push(hacker1, hacker2);
-
-// sorts in alphabetical order
-names.sort()
-
-// now not sure!
+for(var i = 0; i < hacker1.length; i++){
+      if(hacker1[i] < hacker2[i]){
+        console.log("The driver's name goes first.");
+        break;
+      }
+      else if(hacker1[i] > hacker2[i]){
+        console.log("Yo, the navigator goes first definitely.");
+        break;
+      }
+      else if(hacker1[i] == hacker2[i] && i < (hacker1.length-1))
+        continue;
+      if(i == (hacker1.length - 1))
+        console.log("What?! You both got the same name?");
+    }
+    
