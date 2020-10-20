@@ -37,3 +37,11 @@ if ((hacker1.localeCompare(hacker2)) == -1) {
 } else {
   console.log("What?! You both have the same name?")
 }
+
+//BONUS1
+
+let paragraphs = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id iaculis nisl. Fusce maximus felis eu porttitor congue. Vestibulum auctor sed erat non elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer vitae nisi fringilla, egestas tortor vel, scelerisque turpis. Nunc vitae diam non libero ornare volutpat. Ut ac ante porttitor, viverra neque et, imperdiet nisi. Phasellus mollis neque a lorem tristique tempor. Fusce facilisis vel felis in interdum. Morbi malesuada magna eu massa cursus, hendrerit tincidunt nisi posuere. Duis sodales odio eu dolor feugiat, a iaculis risus tincidunt. Donec et dui justo. In ultricies quis leo in molestie. Aliquam eget enim feugiat, consectetur dolor sit amet, tristique nulla. Etiam ultricies sapien leo, ut cursus massa convallis quis. Ut ac diam sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer et eros leo. Maecenas a egestas ex, et egestas turpis. Curabitur dui lorem, aliquet a bibendum a, imperdiet et est. Pellentesque efficitur, arcu sit amet fringilla congue, nisl odio aliquam dolor, sed condimentum ante metus quis orci. Suspendisse commodo tincidunt venenatis. Morbi convallis vitae eros eu dapibus. Nullam eu lectus orci. In congue imperdiet augue, in commodo eros pretium ut. Duis aliquam dolor magna. Morbi felis nunc, tristique at luctus quis, mattis in risus. Fusce leo nunc, porttitor ac justo in, commodo luctus elit. Maecenas vestibulum ornare sapien, vitae imperdiet enim sollicitudin mattis. Maecenas vitae neque sapien. Sed laoreet imperdiet neque, quis molestie dolor maximus ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc consequat, dui et faucibus suscipit, enim magna placerat neque, ac egestas arcu purus in lorem. Duis faucibus mi suscipit est hendrerit aliquet. In convallis lorem a vulputate accumsan. In pretium dolor nec semper hendrerit."
+
+console.log(paragraphs.split(" ").length);
+
+console.log(paragraphs.match(/et/g).length)
