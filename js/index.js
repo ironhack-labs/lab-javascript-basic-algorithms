@@ -45,3 +45,35 @@ for (i = 0; i < lipsumStr.length; i++) {
     }
 }
 console.log(`Wordcount is ${wordCount}`)
+
+
+loremStr = loremStr.toLowerCase();
+let etCount = 0
+for (i = 0; i < loremStr.length; i++) {
+    const checkArr = [" et ", " et.", "et,", " et!"]
+    if (checkArr.includes(loremStr.slice(i, i + 4))) etCount++;
+}
+console.log(` 'et' occurs ${etCount} times.`);
+
+// Bonus 2
+
+// console.log(testPalindrome("Ottttto"));
+// console.log(testPalindrome("This is a test"));
+// console.log(testPalindrome("A man, a plan, a canal, Panama!"));
+// console.log(testPalindrome("Put it up"));
+// console.log(testPalindrome("No 'x' in Nixon"));
+console.log(testPalindrome("Was it a car or a cat I saw?"));
+console.log(testPalindrome("Bbbnana boatbbb"));
+
+
+function testPalindrome(phaseToCheck) {
+    let phaseToCheckCopy = phaseToCheck.repeat(1);
+    phaseToCheck = phaseToCheck.toLowerCase();
+    phaseToCheck = phaseToCheck.replace(/[^A-Z0-9]/ig, "");
+    let j = 0;
+    while (j < (phaseToCheck.length / 2)) {
+        if (phaseToCheck.slice(j, j + 1) != phaseToCheck.slice(phaseToCheck.length - 1 - j, phaseToCheck.length - j)) return `${phaseToCheckCopy} is not a Palindrome`;
+        j++;
+    }
+    return `${phaseToCheckCopy} is a Palindrome`;
+}
