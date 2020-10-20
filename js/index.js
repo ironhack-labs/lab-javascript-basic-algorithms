@@ -21,3 +21,10 @@ for (let i = 0; i < hacker1.length; i++) {
   solution = solution + hacker1[i].toUpperCase() + " "
 }
 console.log(solution.slice(0, 17))
+
+let reverseName = "";
+
+ for (let i= hacker2.length-1; i>= 0; i--){
+   reverseName += hacker2[i];
+ }
+console.log(reverseName);
