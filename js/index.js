@@ -9,10 +9,10 @@
 // Lexo: Fabio, Paulo
 
 //1: names and input
-let hacker1 = `Fabio`;
+let hacker1 = `Paulo`;
 console.log(`The driver´s name is ${hacker1}`);
 
-let hacker2 = `Paulo`;
+let hacker2 = `Fabio`;
 console.log(`The navigator´s name is ${hacker2}`);
 
 // 2: conditionals
@@ -25,7 +25,7 @@ if (hacker1.length > hacker2.length){
 else if (hacker1.length < hacker2.length){
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
 }
-else if (hacker1.length = hacker2.length)
+else if (hacker1.length === hacker2.length)
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 
     //3: loops
@@ -42,14 +42,9 @@ for (letra of hacker1) {
 } 
 console.log(nomeAlcont);
 
-
-if (hacker1.length > hacker2.length){
-    console.log(`The driver's name goes first.`)
-}
-else if (hacker1.length < hacker2.length){
-    console.log(`Yo, the navigator goes first definitely.`)
-}
-else if (hacker1.length = hacker2.length)
-    console.log(`What?! You both have the same name?`)
-
-    // Para a ordem alfabética precisamos criar uma alfabeto como variável?     
+ 
+if (hacker1 < hacker2){
+console.log(`The driver's name goes first`);
+} else if (hacker1 > hacker2){
+console.log(`Yo, the navigator goes first definitely.`)
+} else {console.log(`What?! You both have the same name?`)}
