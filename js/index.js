@@ -25,6 +25,7 @@ let h1Loop = hacker1.toUpperCase().split("").join(" ");
 console.log(h1Loop);
 
 let h2Loop = "";
+// alteração
 
 for (let i = 1; i <= hacker2.length; i++) {
   h2Loop += hacker2[h2Length - i];
