@@ -20,12 +20,18 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
-console.log(hacker1.split('').join(' ').toUpperCase());
-console.log(hacker2.split("").reverse().join(""));
+//console.log(hacker1.split('').join(' ').toUpperCase());
+for (let i = 0; i < hacker1.length; i++) {
+    console.log(hacker1.charAt(i).toUpperCase());
+  }
+//console.log(hacker2.split("").reverse().join(""));''
+for (let i = hacker2.length; i >= 0; i--) {
+    console.log(hacker2.charAt(i));
 
-if (hacker1 < hacker2) {
+
+if (hacker1.toUpperCase() < hacker2.toUpperCase()) {
     console.log(`The driver's name goes first.`);
-  } else if (hacker1 > hacker2) {
+  } else if (hacker1.toUpperCase() > hacker2.toUpperCase()) {
     console.log(`Yo, the navigator goes first definitely.`);
   } else {
     console.log(`What?! You both have the same name?`);
@@ -41,3 +47,8 @@ Curabitur volutpat bibendum nisi. Sed suscipit ante eu convallis gravida. Fusce 
 
 console.log(`There are ${loremIpsum.split(' ').length} words in the text.`);
 console.log(`The word "et" appears ${(loremIpsum.match(/et/g) || []).length} times in the text.`);
+
+// Bonus 2
+
+let palindrome = "A man, a plan, a canal, Panama!";
+
