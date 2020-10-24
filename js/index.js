@@ -30,3 +30,14 @@ if (hacker1 < hacker2) {
   } else {
     console.log(`What?! You both have the same name?`);
   };
+
+// Bonus 1
+
+let loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et metus malesuada, ultricies tellus eu, hendrerit quam. Quisque ornare ac est sed consequat. Phasellus id neque libero. Nam odio ex, pharetra vitae orci non, venenatis euismod lectus. Donec lobortis efficitur nunc malesuada pellentesque. Nullam vel dignissim risus. Duis sapien est, posuere ut orci eu, imperdiet pulvinar leo. Integer tempus ex eu enim consectetur feugiat.
+
+Quisque aliquet sapien sit amet mauris feugiat feugiat in sit amet purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eleifend tortor sit amet commodo tempus. Morbi ac arcu quis metus consectetur mattis in nec quam. Aliquam pharetra, eros sed laoreet vehicula, mi purus congue leo, ac tempor est velit feugiat ligula. Ut ultricies nulla eu convallis ultricies. Etiam scelerisque pretium euismod.
+
+Curabitur volutpat bibendum nisi. Sed suscipit ante eu convallis gravida. Fusce rutrum interdum turpis sed eleifend. Sed et sagittis sapien. Suspendisse aliquam eleifend pretium. Nam suscipit eget quam quis interdum. Donec tellus nisl, ornare sed finibus a, euismod volutpat justo. Integer viverra elit nulla, sed fringilla leo tempor ut. Fusce lacinia efficitur justo sed tincidunt. Donec iaculis quis neque at fermentum.`;
+
+console.log(`There are ${loremIpsum.split(' ').length} words in the text.`);
+console.log(`The word "et" appears ${(loremIpsum.match(/et/g) || []).length} times in the text.`);
