@@ -14,12 +14,22 @@ if (hacker1.length > hacker2.length) {
   } else {`Wow, you both have equally long names, ${hacker1.length} characters!`}
 
 // Iteration 3: Loops
+// 3.1:
 
 let newHacker1 = '';
 for (let i=0; i<hacker1.length; i++) {
  newHacker1 = newHacker1 + ' ' + hacker1[i]
 }
 console.log(newHacker1.toUpperCase())
+
+// 3.2:
+let hacher2NameReverse = "";
+
+for(let i = hacker2.length-1; i>=0; i--){
+  hacher2NameReverse+= hacker2[i]
+}
+
+console.log(hacher2NameReverse)
 
 //BONUS 1
 let loremIpsumTest = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida, nibh vitae feugiat ultricies, leo tellus suscipit est, ut imperdiet urna massa id mi. Nam aliquam neque non interdum interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus mollis ligula mauris, ut ornare ante tincidunt vel. Nam egestas velit eget nulla pulvinar varius. Mauris sed mollis augue. Suspendisse imperdiet dictum nibh a aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.\
