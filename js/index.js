@@ -27,7 +27,7 @@ for (let i = 0; i < hacker1.length; i++) {
 //console.log(hacker2.split("").reverse().join(""));''
 for (let i = hacker2.length; i >= 0; i--) {
     console.log(hacker2.charAt(i));
-
+}
 
 if (hacker1.toUpperCase() < hacker2.toUpperCase()) {
     console.log(`The driver's name goes first.`);
