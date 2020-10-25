@@ -81,3 +81,38 @@ function etCounter(text) {
 }
 
 etCounter(loremIpsum);
+
+//bonus 2
+
+let phraseToCheck = "No 'x' in Nixon";
+
+function cleanText(text) {
+  text = text.toLowerCase();
+  let newText = '';
+  for (let i = 0; i < text.length; i++) {
+    switch (text[i]) {
+      case ' ':
+      case '!':
+      case '-':
+      case ',':
+      case "'":
+        break;
+      default:
+        newText = newText + text[i];
+    }
+  }
+  return newText;
+}
+
+function palindromeCheck(text) {
+  text = cleanText(text);
+  reverseText = '';
+  for (let i = text.length - 1; i >= 0; i--) {
+    reverseText = reverseText + text[i];
+  }
+  reverseText === text
+    ? console.log('Palindrome')
+    : console.log('Not a palindrome');
+}
+
+palindromeCheck(phraseToCheck);
