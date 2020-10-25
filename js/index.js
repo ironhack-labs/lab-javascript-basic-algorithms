@@ -24,7 +24,7 @@ for(let i=0;i<hacker1.length;i += 1){
 console.log(novoNome.toUpperCase());
 // Iteration 3.2: Loops
 // Comment: Invertendo uma string
-console.log(hacker2.split("").reverse().join());
+console.log(hacker2.split("").reverse().join(" "));
 // Interaction 3.3
 // Comment: Neste código verificamos a ordem alfabética do Driver e Navigator
 if(hacker1===hacker2){
