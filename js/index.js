@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("I'm ready!");
 
 // Iteration 1: Names and Input
@@ -21,13 +23,22 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 //console.log(hacker1.split('').join(' ').toUpperCase());
+let spacedOutNameInCapitals = "";
 for (let i = 0; i < hacker1.length; i++) {
-    console.log(hacker1.charAt(i).toUpperCase());
-  }
-//console.log(hacker2.split("").reverse().join(""));''
-for (let i = hacker2.length; i >= 0; i--) {
-    console.log(hacker2.charAt(i));
+    if (i === hacker1.length-1) {
+      spacedOutNameInCapitals += hacker1.charAt(i).toUpperCase();
+    } else {
+      spacedOutNameInCapitals += hacker1.charAt(i).toUpperCase() + " ";
+    }
 }
+console.log(spacedOutNameInCapitals);
+
+//console.log(hacker2.split("").reverse().join(""));''
+let nameBackwards = "";
+for (let i = hacker2.length; i >= 0; i--) {
+    nameBackwards += hacker2.charAt(i);
+}
+console.log(nameBackwards);
 
 if (hacker1.toUpperCase() < hacker2.toUpperCase()) {
     console.log(`The driver's name goes first.`);
@@ -45,10 +56,38 @@ Quisque aliquet sapien sit amet mauris feugiat feugiat in sit amet purus. Vestib
 
 Curabitur volutpat bibendum nisi. Sed suscipit ante eu convallis gravida. Fusce rutrum interdum turpis sed eleifend. Sed et sagittis sapien. Suspendisse aliquam eleifend pretium. Nam suscipit eget quam quis interdum. Donec tellus nisl, ornare sed finibus a, euismod volutpat justo. Integer viverra elit nulla, sed fringilla leo tempor ut. Fusce lacinia efficitur justo sed tincidunt. Donec iaculis quis neque at fermentum.`;
 
-console.log(`There are ${loremIpsum.split(' ').length} words in the text.`);
+let testText = `A trying time.
+
+For unfortunate, events.`
+
+console.log(`There are ${loremIpsum.split(' ').length + loremIpsum.split('\n\n').length - 1} words in the text.`);
+
 console.log(`The word "et" appears ${(loremIpsum.match(/et/g) || []).length} times in the text.`);
 
 // Bonus 2
 
 let palindrome = "A man, a plan, a canal, Panama!";
 
+let englishAlphabet = "abcdefghijklmnopqrstuvwxyz"
+
+let palindromeCheck = ""
+for (let i = 0; i < palindrome.length; i++) {
+  if (englishAlphabet.includes(palindrome[i].toLowerCase())) {
+    palindromeCheck += palindrome[i].toLowerCase();
+  }
+}
+
+let palindromeAnswer = ""
+let pic = palindromeCheck.length - 1;
+
+for (let i = 0; i < palindromeCheck.length / 2; i++) {
+  if (palindromeCheck[i] == palindromeCheck[pic - i]) {
+    palindromeAnswer = "is a palindrome";
+  } else {
+    palindromeAnswer = "is not a palindrome";
+  }
+}
+
+console.log(`The text:
+"${palindrome}"
+${palindromeAnswer}.`);
