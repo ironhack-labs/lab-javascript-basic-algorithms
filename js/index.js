@@ -48,27 +48,21 @@ function reverseString(str) {
   return str;
 }
 
-/*3.3 Lexoicographic order
-
-console.log ('Hello World'.toUpperCase());
-console.log ('J' < 'B');
-console.log ('j'.localeCompare('b'));
+//3.3 Lexoicographic order
 
 console.log (hacker1, hacker2)
 
 function lexoFunction (p1, p2) {
-  if (p1 1 === p2) {
+  if (p1 === p2) {
     console.log("What?! You both have the same name?");
   }
-  
-  if (p1 > p2){
+  else if (p1 > p2){
     console.log("The driver's name goes first.");
-  } 
-  
-  if (p1 < p2) {
+  }
+  else if (p1 < p2) {
     console.log("Yo, the navigator goes first definitely. ");
+  }
 }
-
 console.log(lexoFunction(hacker1, hacker2))
 
 */
