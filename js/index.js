@@ -77,17 +77,15 @@ for (let i = 0; i < palindrome.length; i++) {
   }
 }
 
-let palindromeAnswer = ""
+let palindromeAnswer = "is a palindrome"
 let pic = palindromeCheck.length - 1;
 
 for (let i = 0; i < palindromeCheck.length / 2; i++) {
-  if (palindromeCheck[i] == palindromeCheck[pic - i]) {
-    palindromeAnswer = "is a palindrome";
-  } else {
+  if (palindromeCheck[i] !== palindromeCheck[pic - i]) {
     palindromeAnswer = "is not a palindrome";
   }
 }
 
 console.log(`The text:
 "${palindrome}"
-${palindromeAnswer}.`);
+${palindromeAnswer}.`); 
