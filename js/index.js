@@ -58,5 +58,6 @@ function wordCount(text) {
 console.log(wordCount(text));
 
 //Count the number of time the latin word `et` appears
+(text.match( /et/ )||[]).length
 
 // Bonus 2
