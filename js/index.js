@@ -50,24 +50,20 @@ function reverseString(str) {
 
 //3.3 Lexoicographic order
 
-console.log (hacker1, hacker2)
+console.log(hacker1, hacker2);
 
-function lexoFunction (p1, p2) {
+function lexoFunction(p1, p2) {
   if (p1 === p2) {
     console.log("What?! You both have the same name?");
-  }
-  else if (p1 > p2){
+  } else if (p1 > p2) {
     console.log("The driver's name goes first.");
-  }
-  else if (p1 < p2) {
+  } else if (p1 < p2) {
     console.log("Yo, the navigator goes first definitely. ");
   }
 }
-console.log(lexoFunction(hacker1, hacker2))
+console.log(lexoFunction(hacker1, hacker2));
 
-*/
-
-// Bonus
+// Bonus 1.1
 
 let paragraph1 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus enim vel consectetur lobortis. Duis ac tellus sed odio pharetra tempor. Proin ultrices justo eu auctor lacinia. Cras erat enim, porttitor euismod convallis eget, mollis eu massa. Donec sollicitudin risus eget sem facilisis faucibus. Fusce a auctor justo. Pellentesque auctor velit et dapibus vestibulum. Proin sed libero ut mauris laoreet tincidunt in ac nulla. Donec in diam suscipit, rutrum odio id, mollis velit. Curabitur nec ligula nec augue consectetur congue eget dignissim erat. Nunc quis mi condimentum, vestibulum nunc vel, dictum nunc. Pellentesque facilisis blandit augue, ut malesuada quam ultricies in. Vestibulum a tortor eu eros dictum dignissim et at nisl. Suspendisse volutpat gravida purus ac sollicitudin.";
@@ -78,7 +74,6 @@ let paragraph2 =
 let paragraph3 =
   "Nullam non euismod elit, ut tincidunt ligula. Nulla viverra tristique tellus, in pellentesque odio malesuada vitae. Nulla facilisi. Aliquam volutpat tellus nulla. Donec bibendum, lorem eget laoreet bibendum, risus diam malesuada odio, sed imperdiet massa mauris sed ipsum. Phasellus semper, libero eget aliquet consectetur, leo mi interdum erat, nec aliquam enim tellus sed neque. Aliquam eget malesuada sapien. Pellentesque vel porttitor velit. Aenean et nulla risus. Vivamus euismod nulla leo, non elementum purus facilisis in. Morbi a arcu suscipit, imperdiet urna in, scelerisque quam.";
 
-// Bonus 1.1
 function countWords(str) {
   return str.split(" ").length;
 }
@@ -93,3 +88,27 @@ console.log(countWords(paragraph3));
 var temp = "This is a string.";
 var count = (paragraph1.match(/et/g) || []).length;
 console.log(count);
+
+// Bonus 2
+
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+
+let cleanedUpstring = "";
+for (let i = 0; i < phraseToCheck.length; i++) {
+  const character = phraseToCheck[i].toUpperCase();
+  if (character >= "A" && character <= "Z") {
+    cleanedUpstring += character;
+  }
+}
+console.log(cleanedUpstring);
+
+let isApalidrom = true;
+
+for (let i = 0; i < cleanedUpstring.length; i++) {
+  const a = cleanedUpstring[i];
+  const b = cleanedUpstring[cleanedUpstring.length - 1 - i];
+  if (a !== b) {
+    isApalidrom = false;
+  }
+}
+console.log(isApalidrom);
