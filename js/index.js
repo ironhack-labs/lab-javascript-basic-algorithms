@@ -30,7 +30,7 @@ for (let character of hacker1UpperCase) {
 
 // Iteration 3.2
 let hacker2Output = "";
-for (i=hacker2.length -1; i>=0; i--) {
+for (i = hacker2.length - 1; i >= 0; i--) {
   hacker2Output += hacker2[i];
 }
 
@@ -38,7 +38,7 @@ console.log(hacker1Output);
 console.log(hacker2Output);
 
 // Iteration 3.3                       
-for (let i=0; i<theShortest.length; i++) {
+for (let i = 0; i < theShortest.length; i++) {
   if (hacker1[i].charCodeAt() < hacker2[i].charCodeAt()) {
     console.log("The driver's name goes first.");
     break;
@@ -55,26 +55,11 @@ for (let i=0; i<theShortest.length; i++) {
 const paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a porta velit. Mauris quis luctus ex. Donec non lacus ac velit hendrerit tempus. Nunc felis nunc, facilisis quis quam in, venenatis tristique ipsum. Sed molestie hendrerit tortor elementum rutrum. Ut varius dolor ac fermentum vehicula. Maecenas quis magna lobortis lectus ornare faucibus. Proin et fermentum ipsum. In vel auctor felis, eu malesuada elit. Donec vitae erat at quam fringilla fermentum. Aliquam erat volutpat. Morbi non cursus turpis. Suspendisse rutrum sodales justo tincidunt vehicula.\nCras nec molestie sem, et condimentum massa. Aenean ac elit mi. Praesent aliquet venenatis odio, a finibus tellus dictum a. Pellentesque vulputate nisl in finibus bibendum. Vivamus vehicula ligula vitae sodales venenatis. Cras blandit in ipsum eu bibendum. Morbi felis eros, pulvinar a bibendum sed, pellentesque vitae eros.\nMauris ut orci ut eros lobortis lobortis. Nam pellentesque nibh sed porta fringilla. Phasellus dapibus, erat tempus tincidunt pellentesque, felis sem eleifend mauris, vel rhoncus tellus massa et ante. Fusce faucibus ultrices ornare. Donec sed libero laoreet, auctor nulla ut, egestas felis. Duis quis consequat massa. Ut tincidunt semper mi. Praesent mattis ligula id ligula commodo venenatis. In ultrices elit vitae vehicula tincidunt. Ut consequat dignissim leo, ut lacinia risus eleifend id."
 
 // Bonus 1: word counter
-let wordCounter = 0;
-for (let i=0; i<paragraph.length; i++) {
-  if (paragraph[i] === " ") {
-    wordCounter++;
-  } else if (paragraph[i] === "." && paragraph[i+1] !== " ") {
-    wordCounter++;
-  }
-};
+const wordCounter = paragraph.split(' ').length;
 console.log(`${wordCounter} words`);
 
 // Bonus 1: et counter
-let etCounter = 0;
-for (let i=0; i<paragraph.length; i++) {
-  if (paragraph[i] === " " && 
-      paragraph[i+1] === "e" &&
-      paragraph[i+2] === "t" &&
-      paragraph[i+3] === " ") {
-        etCounter++;
-      }
-};
+const etCounter = paragraph.split(' et ').length - 1;
 console.log(`"et" appears ${etCounter} times inside this string.`);
 
 // Bonus 2
@@ -92,7 +77,7 @@ for (character of phraseToCheckLC) {
 };
 
 let palindromeCounter = 0;
-for (let i=0; i<Math.floor(newPhraseToCheck.length/2); i++) {
+for (let i = 0; i < Math.floor(newPhraseToCheck.length/2); i++) {
   if (newPhraseToCheck[i] === newPhraseToCheck[newPhraseToCheck.length - 1 - i]) {
     palindromeCounter++;
   }
