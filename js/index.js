@@ -60,7 +60,6 @@ console.log(wordCount(text));
 
 //Count the number of time the latin word `et` appears
 
-const specificWord = `et`
 
 
 
