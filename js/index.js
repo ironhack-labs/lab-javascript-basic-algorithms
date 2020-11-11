@@ -68,3 +68,20 @@ for (i = 0; i < wordCounter; i++) {
 }
 
 console.log(numberEt);
+
+var phraseToCheck = prompt("Type a palindrome: ");
+var phraseToCheckCleaned = cleanWord(phraseToCheck);
+function cleanWord(word) {
+  return word.toLowerCase().replace(/\W/g, '');
+}
+var checkCondition = phraseToCheckCleaned.length % 2 ? (phraseToCheckCleaned.length - 1) / 2 : phraseToCheckCleaned.length / 2;
+
+for (i = 0, j= phraseToCheckCleaned.length - 1; i < checkCondition; i++, j-- ) {
+    if (phraseToCheckCleaned[i] !== phraseToCheckCleaned[j]) {
+        console.log(phraseToCheck + " => This is NOT a palindrome");
+        break;
+    } else { 
+        console.log(phraseToCheck + " => This is a palindrome")
+        break;
+    }
+}
