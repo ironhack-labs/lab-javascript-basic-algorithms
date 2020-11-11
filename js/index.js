@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-
+console.log("Im ready");
 
 // Iteration 2: Conditionals
 
