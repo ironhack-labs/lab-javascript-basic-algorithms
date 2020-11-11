@@ -75,13 +75,13 @@ for (let i = 0; i < phraseToCheck.length; i++) {
   let letter3 = phraseToCheck[i];
   check1 = check1 + letter3;
 }
-check1 = check1.replace(/ /g, "").toLowerCase;
+check1 = check1.replace(/ /g, "").toLowerCase();
 
 for (let i = phraseToCheck.length - 1; i >= 0; i--) {
   let letter4 = phraseToCheck[i];
   check2 = check2 + letter4;
 }
-check2 = check2.replace(/ /g, "").toLowerCase;
+check2 = check2.replace(/ /g, "").toLowerCase();
 
 if (check1 === check2) {
   console.log("It's a palindrome !!!");
