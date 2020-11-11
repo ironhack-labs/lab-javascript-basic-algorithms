@@ -60,4 +60,31 @@ var paragraphs =
 
 numberOfWords = paragraphs.split(" ").length - 1;
 
-console.log(numberOfWords + 1);
+console.log(`The number of words is ${numberOfWords + 1}.`);
+
+//Bonus 2
+
+var phraseToCheck = "";
+
+var check1 = "";
+var check2 = "";
+
+phraseToCheck = "put it up";
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  let letter3 = phraseToCheck[i];
+  check1 = check1 + letter3;
+}
+check1 = check1.replace(/ /g, "");
+
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  let letter4 = phraseToCheck[i];
+  check2 = check2 + letter4;
+}
+check2 = check2.replace(/ /g, "");
+
+if (check1 === check2) {
+  console.log("It's a palindrome !!!");
+} else {
+  console.log("Nope, no plaindrome here");
+}
