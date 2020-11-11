@@ -58,9 +58,13 @@ if (a >= 1) {
 var paragraphs =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum ipsum nec porttitor facilisis. Etiam suscipit magna nec mi gravida bibendum. Ut sit amet consectetur ex. Cras augue justo, euismod ac velit ac, tempor condimentum ligula. In varius ultricies ipsum a condimentum. Quisque tincidunt feugiat massa, vel aliquet felis fermentum eu. Aenean vel enim consequat, ornare dui non, sagittis sem. Etiam vitae arcu eu diam convallis dignissim. Maecenas tempus ipsum pulvinar justo pulvinar dapibus. Vivamus eu consectetur leo. Phasellus lacus diam, facilisis non tellus id, porta fringilla ante. Curabitur condimentum risus dui, id ornare erat pharetra sed. Donec vitae erat felis. Ut efficitur purus et nulla suscipit vestibulum. Quisque viverra tincidunt quam eu pellentesque. Proin ut pulvinar turpis. Cras malesuada purus finibus tellus tincidunt, eget finibus risus gravida. Aliquam ullamcorper eleifend dui vel sagittis. Nam consectetur tempus sollicitudin. Nulla maximus et lorem sed semper. Cras id dui vitae diam vehicula laoreet sed eget arcu. Cras aliquam aliquet quam a euismod. In sollicitudin tortor ac nulla tristique, et elementum velit tincidunt. Phasellus metus massa, rutrum ut nisl vitae, consequat tincidunt dolor. Mauris non odio eleifend, rutrum nibh quis, laoreet enim. Phasellus vitae augue vitae tortor consectetur gravida a sit amet nunc. Donec eget lacinia ipsum. Fusce sapien sem, condimentum vel ornare sit amet, ultrices eu nulla. Sed facilisis ac orci eget pulvinar. Sed fermentum sed mi et mattis.";
 
-numberOfWords = paragraphs.split(" ").length - 1;
+numberOfSpaces = paragraphs.split(" ").length - 1;
 
-console.log(`The number of words is ${numberOfWords + 1}.`);
+console.log(`The number of words is ${numberOfSpaces + 1}.`);
+
+numberOfElements = paragraphs.split("et").length - 1;
+
+console.log(`The number of 'et' is ${numberOfElements}.`);
 
 //Bonus 2
 
