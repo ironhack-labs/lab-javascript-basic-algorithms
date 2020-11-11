@@ -62,7 +62,7 @@ numberOfSpaces = paragraphs.split(" ").length - 1;
 
 console.log(`The number of words is ${numberOfSpaces + 1}.`);
 
-numberOfElements = paragraphs.split("et").length - 1;
+numberOfElements = paragraphs.split(" et ").length - 1;
 
 console.log(`The number of 'et' is ${numberOfElements}.`);
 
