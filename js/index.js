@@ -17,7 +17,7 @@ if (hacker1.length > hacker2.length) {
   );
 } else {
   console.log(
-    `Wow, you both have equally long names, ${hacker1.length}  characters!`
+    `Wow, you both have equally long names, ${hacker1.length} characters!`
   );
 }
 
