@@ -69,22 +69,22 @@ var phraseToCheck = "";
 var check1 = "";
 var check2 = "";
 
-phraseToCheck = "put it up";
+phraseToCheck = "Amor, Roma";
 
 for (let i = 0; i < phraseToCheck.length; i++) {
   let letter3 = phraseToCheck[i];
   check1 = check1 + letter3;
 }
-check1 = check1.replace(/ /g, "");
+check1 = check1.replace(/ /g, "").toLowerCase;
 
 for (let i = phraseToCheck.length - 1; i >= 0; i--) {
   let letter4 = phraseToCheck[i];
   check2 = check2 + letter4;
 }
-check2 = check2.replace(/ /g, "");
+check2 = check2.replace(/ /g, "").toLowerCase;
 
 if (check1 === check2) {
   console.log("It's a palindrome !!!");
 } else {
-  console.log("Nope, no plaindrome here");
+  console.log("Nope, no palindrome here");
 }
