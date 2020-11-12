@@ -33,6 +33,7 @@ if (hacker1.length > hacker2.length){
 for (i = 0; i < hacker1.length; i++){
   console.log(hacker1[i].toUpperCase());
 }
+
 // Option 2 (no loop)
 console.log(hacker1.split('').join(' ').toUpperCase())
 
@@ -45,15 +46,15 @@ for (i = hacker2.length -1; i >= 0; i--){
 console.log(hacker2.split('').reverse().join(''));
 
 // 3.3 Depending on the lexicographic order of the strings, print:
-if (hacker1.localeCompare(hacker2) === -1){
+if (hacker1.localeCompare(hacker2) <0){
   console.log(`${hacker1} goes first.`);
-} else if (hacker1.localeCompare(hacker2) === 1){
+} else if (hacker1.localeCompare(hacker2) >0){
   console.log(`Yo, ${hacker2} goes first definitely.`);
 } else {
   console.log(`What?! You both have the same name?`);
 }
 
-// Option 2 with switch
+// Option 2 with switch   --How can we use <0, >0, =0, on each case??--
 switch (hacker1.localeCompare(hacker2)){
   case -1:
     console.log(`${hacker1} goes first.`);
@@ -68,15 +69,13 @@ switch (hacker1.localeCompare(hacker2)){
 
 
 // === BONUS 1 ===
-// Store the text in a variable type of string.
-let loremImpsul = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus justo sit amet diam consectetur sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed consectetur risus. Donec vitae turpis tristique, ultricies augue ut, pretium nibh. Cras condimentum felis ipsum, ut faucibus nulla lobortis ut. Duis vitae eros ut tellus posuere feugiat. Quisque blandit urna nec nunc euismod, ac commodo dui aliquam. Nullam ut ante placerat, tincidunt justo quis, pellentesque dolor. Sed laoreet eros sed fermentum tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus commodo nunc in arcu fermentum, et sollicitudin justo elementum. Donec elit lectus, sodales a diam quis, porta ultricies enim. Mauris vitae nunc nunc. Vivamus quis odio ut nibh iaculis molestie vel iaculis orci. Ut ac sagittis ex. Sed id aliquet lacus. Vestibulum fermentum risus nisi, quis posuere risus consectetur sed. Etiam maximus, orci vulputate dignissim pulvinar, metus sem placerat sapien, id euismod lectus mauris at tortor. Praesent vitae aliquam felis. Cras interdum, mauris ac ornare maximus, justo est rhoncus lorem, posuere porta lorem lorem ut augue. Sed efficitur dui quis enim rutrum lacinia. Nulla at sem arcu. Proin suscipit eget erat mattis placerat. Praesent molestie sit amet dolor sed convallis. Morbi vitae lacus egestas, commodo odio vel, tempus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor sollicitudin libero non vehicula. Nullam eu cursus tortor et, ut laoreet erat. Nullam sed euismod purus, et pharetra sapien. Ut nec tortor quis nibh mollis molestie. Phasellus vel sagittis risus, et ut maximus quam. Curabitur sit amet nulla in tellus mattis porta. Praesent et mollis felis, eu semper lacus. Curabitur lacinia malesuada nisl a placerat. Mauris eu nunc imperdiet et, commodo purus eget, vulputate nisi. Aliquam convallis pretium libero. Integer vel orci at metus bibendum ornare eu et ac nisi. Duis bibendum non orci faucibus aliquet. Cras placerat ipsum id venenatis vehicula. Aliquam at suscipit erat, nec porttitor enim. Morbi at rhoncus sem. Phasellus eleifend, massa non tristique rutrum, elit elit posuere lectus, nec laoreet neque felis lobortis nisl. et,";
+let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus justo sit amet diam consectetur sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sed consectetur risus. Donec vitae turpis tristique, ultricies augue ut, pretium nibh. Cras condimentum felis ipsum, ut faucibus nulla lobortis ut. Duis vitae eros ut tellus posuere feugiat. Quisque blandit urna nec nunc euismod, ac commodo dui aliquam. Nullam ut ante placerat, tincidunt justo quis, pellentesque dolor. Sed laoreet eros sed fermentum tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus commodo nunc in arcu fermentum, et sollicitudin justo elementum. Donec elit lectus, sodales a diam quis, porta ultricies enim. Mauris vitae nunc nunc. Vivamus quis odio ut nibh iaculis molestie vel iaculis orci. Ut ac sagittis ex. Sed id aliquet lacus. Vestibulum fermentum risus nisi, quis posuere risus consectetur sed. Etiam maximus, orci vulputate dignissim pulvinar, metus sem placerat sapien, id euismod lectus mauris at tortor. Praesent vitae aliquam felis. Cras interdum, mauris ac ornare maximus, justo est rhoncus lorem, posuere porta lorem lorem ut augue. Sed efficitur dui quis enim rutrum lacinia. Nulla at sem arcu. Proin suscipit eget erat mattis placerat. Praesent molestie sit amet dolor sed convallis. Morbi vitae lacus egestas, commodo odio vel, tempus elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor sollicitudin libero non vehicula. Nullam eu cursus tortor et, ut laoreet erat. Nullam sed euismod purus, et pharetra sapien. Ut nec tortor quis nibh mollis molestie. Phasellus vel sagittis risus, et ut maximus quam. Curabitur sit amet nulla in tellus mattis porta. Praesent et mollis felis, eu semper lacus. Curabitur lacinia malesuada nisl a placerat. Mauris eu nunc imperdiet et, commodo purus eget, vulputate nisi. Aliquam convallis pretium libero. Integer vel orci at metus bibendum ornare eu et ac nisi. Duis bibendum non orci faucibus aliquet. Cras placerat ipsum id venenatis vehicula. Aliquam at suscipit erat, nec porttitor enim. Morbi at rhoncus sem. Phasellus eleifend, massa non tristique rutrum, elit elit posuere lectus, nec laoreet neque felis lobortis nisl. et,";
 
-// Count the number of words in the string
-let wordsCount = loremImpsul.split(' ').length;
+let wordsCount = loremIpsum.split(' ').length;
 console.log(`The number of words at 'text' string is ${wordsCount}`);
 
 // Count the number of times the Latin word et appears.
-let loremArray = loremImpsul.replace(/\./g, '').replace(/\,/g, '').split(' ');
+let loremArray = loremIpsum.replace(/\./g, '').replace(/\,/g, '').split(' ');
 let etCount = 0;
 
 for (i = 0; i < loremArray.length; i++){
@@ -84,7 +83,7 @@ for (i = 0; i < loremArray.length; i++){
     etCount += 1;
   }
 }
-console.log(etCount);
+console.log(`The number of times the Latin word 'et' appears at 'loremIpsum' string is ${etCount}`);
 
 
 // === BONUS 2 ===
@@ -105,8 +104,8 @@ if (phraseToCheckClean === phraseToCheckReverse){
 }
 
 
-// Option 2 with Loop
-let phraseCheck = 'put t up';
+// Option 2 with Loop (Trying to apply the knowledge we currently have).
+let phraseCheck = 'Roma amor';
 phraseCheck = phraseCheck.replace(/[\W_]/g, '').toLowerCase();
 
 let count = 0;
