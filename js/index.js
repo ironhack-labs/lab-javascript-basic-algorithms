@@ -61,9 +61,21 @@ for(let i=0;i<textArray.length;i++){
 }
 */
 
-console.log(`'et' appears ${numWords} times`);
+console.log(`'et' appears ${numWords} times\n`);
 
 
 
 // ------ Bonus 2 ------ 
+
+let phrase = 'step on no pets';
+let phraseWorked = phrase.replace(/[-+()\s!,]/g, '').toLowerCase();  
+
+
+if(phraseWorked===phraseWorked.split('').reverse().join(''))
+    console.log(`${phrase} is a Palindrome`);
+
+else
+    console.log(`${phrase} is not a Palindrome`);
+
+
 
