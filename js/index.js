@@ -81,19 +81,24 @@ console.log("Bonus 2****************");
 var phraseToCheck = `AWas it a car or a cat I saw?" and "No 'x' in Nixon`;
 
 function isPalindrome(string) {
-  // convert characters to lowercase, remove all special characters;
-  var characters = string.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
-  
-  var len = characters.length;
+  if (!string) {
+    return 'Check your string!';
+  } else {
+    // convert characters to lowercase, remove all special characters;
+    var characters = string.toLowerCase().replace(/[^A-Za-z0-9]/g, '');
 
-  for (let i = 0; (i < len / 2); i++) {
-    if (characters[i] !== characters[len - 1 - i]) {
-      return false;
+    var len = characters.length;
+
+    for (let i = 0; (i < len / 2); i++) {
+      if (characters[i] !== characters[len - 1 - i]) {
+        return false;
+      }
     }
+    return true;
   }
-  return true;
 }
 
 console.log(isPalindrome("Amor, Roma"));
 
 console.log(isPalindrome(phraseToCheck));
+console.log(isPalindrome(''));
