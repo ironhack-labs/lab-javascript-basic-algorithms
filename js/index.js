@@ -30,3 +30,4 @@ for(let i = 0; i<hacker1Mayus.length; i++){
     console.log(`hacker1Mayus[i] `)
     
 }
+//lkllk
