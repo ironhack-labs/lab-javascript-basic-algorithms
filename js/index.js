@@ -69,3 +69,79 @@ if (hachersCompared === 1) {
 } else {
   console.log("What?! You both have the same name?")
 }
+
+
+// Bonus 1:
+
+console.log('\nBonus 1:\n');
+
+
+// Generate 3 paragraphs. Store the text in a variable type of string.
+
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, augue at tincidunt vehicula, ante lectus hendrerit ex, et varius mi dui in diam. Fusce maximus purus sed quam malesuada vulputate. Curabitur ac dignissim enim. Nunc ac molestie orci. Sed non fermentum libero. Aliquam a tellus ut justo vulputate auctor. Nulla eu diam eu orci maximus auctor. Aenean sed posuere lorem. Fusce sit amet mollis lectus. Vestibulum euismod maximus finibus. Morbi mattis elementum sapien, at mattis risus euismod ut. Curabitur luctus risus lorem, non cursus risus porta non. Vivamus nisl ex, porta eu felis vel, scelerisque varius metus. Nunc a urna elit.
+
+Nam tincidunt metus diam, at condimentum mi ullamcorper ut. Duis non velit ex. Aliquam vitae sem leo. Etiam viverra tellus ut egestas condimentum. Nulla aliquet nibh id cursus gravida. Quisque a ex velit. Integer sit amet magna vel dui consectetur aliquet. Morbi rhoncus arcu a arcu fringilla, laoreet vehicula tellus elementum. Morbi lobortis ullamcorper cursus. Vestibulum quam mi, malesuada eget vehicula et, malesuada in nisl. Duis placerat in nisi at mattis. Phasellus sit amet ullamcorper ex.
+
+In luctus massa at fringilla fermentum. Maecenas scelerisque nisl et risus malesuada, id ultrices sem efficitur. Nam tempor ante vel porttitor blandit. Sed in massa magna. Vestibulum cursus lorem vel tempus eleifend. Integer non aliquet sapien, at pretium dui. Suspendisse pharetra arcu ex. Pellentesque imperdiet, justo semper aliquet sollicitudin, enim risus efficitur magna, eget fringilla mi ligula vitae dolor. Fusce efficitur, nisl quis interdum tincidunt, velit nisi eleifend urna, eu varius lectus massa eu neque. Duis pellentesque convallis nulla. Donec ac porttitor quam. Vivamus consectetur tortor eget risus congue, quis pellentesque velit elementum.`;
+
+
+// Make your program count the number of words in the string.
+
+let loremNoPunctuationMarks = lorem.split("");
+
+
+for (i = 0; i < loremNoPunctuationMarks.length; i++){
+  if (loremNoPunctuationMarks[i] == "." || loremNoPunctuationMarks[i] == ","){
+    loremNoPunctuationMarks.splice(i,1);
+    i--;
+  }
+}
+
+loremNoPunctuationMarks = loremNoPunctuationMarks.join("").split(" ");
+let numberOfWords = loremNoPunctuationMarks.length
+
+console.log(`The number of words in the string is ${numberOfWords}.`);
+
+
+
+// Make your program count the number of times the Latin word et appears.
+
+
+ let numberOfRepetitions = 0;
+
+ for (i = 0; i < numberOfWords; i++){
+   if (loremNoPunctuationMarks[i] == "et"){
+     numberOfRepetitions ++;
+   }
+ }
+
+console.log(`The Latin word "et" appears ${numberOfRepetitions} times in the text.`);
+
+
+// Bonus 2:
+
+console.log('\nBonus 2:\n');
+
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+
+function check (textToCheck) {
+  let noPunctuationMarks = textToCheck.toLowerCase();
+  noPunctuationMarks = noPunctuationMarks.split("");
+  for (i = 0; i < noPunctuationMarks.length; i++){
+  if (noPunctuationMarks[i] === "," || noPunctuationMarks[i] === "!" || noPunctuationMarks[i] === "?" || noPunctuationMarks[i] === "'"){
+    noPunctuationMarks.splice(i,1)
+    i--;
+  }
+} 
+  noPunctuationMarks = noPunctuationMarks.join("").split(" ").join("").split("");
+  const ok = noPunctuationMarks.join("");
+  let reversed = noPunctuationMarks.reverse().join("");
+  if (ok === reversed){
+    console.log ("It's a very cool phrase, it's a palindrome!")
+  } else {
+    console.log ("It is a very normal phrase!")
+  }
+}
+
+
+check (phraseToCheck);
