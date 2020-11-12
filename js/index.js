@@ -123,13 +123,3 @@ if (count === phraseCheck.length /2){
 } else {
   console.log(`"${phraseCheck}" is not a Palindrome`)
 }
-
-
-
-
-
-
-
-
-
-
