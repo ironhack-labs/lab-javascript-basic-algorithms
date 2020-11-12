@@ -54,8 +54,8 @@ for(let i=0;i<textArray.length;i++){
         contador++;
     }
 
-/*
-for(let i=0;i<textArray.length;i++){
+/* 
+for(let i=0;i<textArray.length;i++){            
     if(textArray[i].includes('et'))
         contador++;
 }
