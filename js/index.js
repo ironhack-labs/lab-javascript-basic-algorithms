@@ -39,6 +39,8 @@ Vestibulum dignissim interdum consectetur. Aenean laoreet in mi sed bibendum. Fu
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ut condimentum metus, sed vulputate est. Aenean et dolor id dui molestie lacinia eget in magna. Vivamus interdum lacus sed mi rhoncus accumsan. Duis a libero sed sapien interdum cursus nec sodales orci. Morbi ullamcorper ac nisi id suscipit. In nec tincidunt enim, quis lobortis ex. Fusce lobortis purus quis tempor luctus. Vivamus finibus nibh sit amet turpis laoreet, ut facilisis magna bibendum.`;
 
+/* First occurance of the team:
+
 let counter = 3; // One space for the last word. Two spaces for the breaks.
 console.log(counter);
 for (let i = 0; i <= text.length ; i++) {
@@ -46,5 +48,9 @@ for (let i = 0; i <= text.length ; i++) {
         counter += 1;
     }
 };
+console.log(counter); */
 
-console.log(counter);
+// Second occurance: shorter version
+console.log(text.split(' ').length + 2); // one for count index0. Other for the last word
+
+console.log(text.split(' et ').length);
