@@ -20,6 +20,12 @@ else
     console.log(`${hacker1} y ${hacker2} Both have equially long names. length = ${hacker1.length}\n`);
 
 
+for(let i = 0; i<hacker1Mayus.length; i++){
+    console.log(`hacker1Mayus[i] `)
+    
+}
+//lkllk
+// ------ Iteration 3: Loops ------
 // ------ Iteration 3: Loops ------
 
 //without loops
