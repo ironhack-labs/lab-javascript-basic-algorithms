@@ -34,3 +34,21 @@ else if(hacker1.length === hacker2.length){         //Condición 3
 }
 
 // Iteration 3: Loops
+
+letras = '';
+for (i = 0; i<hacker1.length;i++){
+    letras += hacker1[i] + ' ';
+
+} 
+letras = letras.toUpperCase();
+console.log(letras + '\n');
+
+
+inverso = '';
+for (i = 0; i<hacker2.length;i++){
+    inverso = hacker2[i] + inverso;
+
+} 
+console.log(inverso);
+
+
