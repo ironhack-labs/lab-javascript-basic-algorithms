@@ -7,10 +7,10 @@ let hacker1 = "Manuel Carrillo";
 console.log(`The driver's name is ${hacker1}`);
 
 // 1.3 Create a variable `hacker2` with the navigator's name.
-let hacker2 = "Jose Rascon"
+let hacker2 = "Jose Rascon";
 
 // 1.4 Print `"The navigator's name is YYYY"`.
-console.log(`The Navigator's name is ${hacker2}` )
+console.log(`The Navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 
@@ -27,7 +27,7 @@ if (hacker1.length > hacker2.length){
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
   }
 
-// ===Iteration 3: Loops===
+// === Iteration 3: Loops ===
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals
 // Option 1 - Loop
 for (i = 0; i < hacker1.length; i++){
@@ -48,20 +48,20 @@ console.log(hacker2.split('').reverse().join(''));
 if (hacker1.localeCompare(hacker2) === -1){
   console.log(`${hacker1} goes first.`);
 } else if (hacker1.localeCompare(hacker2) === 1){
-  console.log(`Yo, ${hacker2} goes first definitely.`)
+  console.log(`Yo, ${hacker2} goes first definitely.`);
 } else {
   console.log(`What?! You both have the same name?`);
 }
 
-/*Manu, creo que esto es lo que se buscaba en el 3.3
-Tal como lo teniamos lo he dejado aqui debajo comentado.
-Pero haciendolo asi, no cambiaba el orden al cambiar los nombres.
-Echale un ojo y comentamos*/
-
-/*if (hacker1.localeCompare(hacker2)){
-  console.log(`${hacker1} goes first.`);
-} else if (hacker2.localeCompare(hacker1)){
-  console.log(`$hacker2`)
-} else {
-  console.log(`What?! You both have the same name?`);
-}*/
+// SE ME OCURRE QUE PODEMOS USAR UN switch PARA EVITAR 3 IF ELSE PERO CUALQUIERA ESTA CORRECTO, SI QUIERES PODEMOS PONER AMBAS TAMBIÉN PARA QUE VEAN QUE LO INTENTAMOS DE VARIAS FORMAS. En lo otro tenías toda la razon, con las prisas ni lo vimos pero esta perfecto lo que has hecho!
+switch (hacker1.localeCompare(hacker2)){
+  case -1:
+    console.log(`${hacker1} goes first.`);
+    break;
+  case 1:
+    console.log(`Yo, ${hacker2} goes first definitely.`);
+    break;
+  case 0:
+    console.log(`What?! You both have the same name?`);
+    break;
+}
