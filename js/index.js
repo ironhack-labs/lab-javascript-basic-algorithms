@@ -69,7 +69,7 @@ for (i = 0; i < wordCounter; i++) {
 
 console.log(numberEt);
 
-var phraseToCheck = prompt("Type a palindrome: ");
+var phraseToCheck = "race car";
 var phraseToCheckCleaned = cleanWord(phraseToCheck);
 function cleanWord(word) {
   return word.toLowerCase().replace(/\W/g, '');
