@@ -41,12 +41,22 @@ if (hacker1Lenght > hacker2Lenght) {
 console.log('\nIteration 3: Loops\n');
 
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
-hacker1Spaced = hacker1NoSpace.toUpperCase().split("").join(" ");
+//OPTION 1: Method chain
+hacker1Spaced1 = hacker1NoSpace.toUpperCase().split("").join(" ");
 
-console.log(hacker1Spaced);
+console.log(`OPTION 1:\n${hacker1Spaced1}`);
+
+//OPTION 2: Loop
+hacker1Spaced2 = "";
+
+for (let i = 0; i < hacker1NoSpace.length; i++) {
+  hacker1Spaced2 = hacker1Spaced2 + hacker1NoSpace.toUpperCase()[i] + " "
+}
+
+console.log(`OPTION 2:\n${hacker1Spaced2}`);
+
 
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
-
 
 let hacker2Reverse = "";
 
@@ -87,7 +97,9 @@ In luctus massa at fringilla fermentum. Maecenas scelerisque nisl et risus males
 
 // Make your program count the number of words in the string.
 
+//OPTION 1: To list and remove punctuation
 let loremNoPunctuationMarks = lorem.split("");
+
 
 
 for (i = 0; i < loremNoPunctuationMarks.length; i++){
@@ -102,11 +114,11 @@ let numberOfWords = loremNoPunctuationMarks.length
 
 console.log(`The number of words in the string is ${numberOfWords}.`);
 
+//OPTION 2: Punctuation does not affect word count
 
+console.log(`The number of words in the string is ${lorem.split(" ").length}.`);
 
 // Make your program count the number of times the Latin word et appears.
-
-
  let numberOfRepetitions = 0;
 
  for (i = 0; i < numberOfWords; i++){
