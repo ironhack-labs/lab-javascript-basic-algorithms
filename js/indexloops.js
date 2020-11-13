@@ -29,8 +29,71 @@ else if(lengthHacker1<lengthHacker2)
 else
     console.log(`${hacker1} y ${hacker2} Both have equially long names. length = ${lengthHacker1}\n`);
 
-// ------ Iteration 3: Loops ------
+// ------ Iteration 3: Loops ------ 
+//----3.1----
 
+let arrayHacker1Upper=[];
+let arrayHacker1Spacer=[];
+
+for (let i=0; i<lengthHacker1; i++){
+    if (hacker1.charCodeAt(i) >=97)
+        arrayHacker1Upper[i] = `${hacker1.charCodeAt(i)-32} `;
+    else
+        arrayHacker1Upper[i] = `${hacker1.charCodeAt(i)} `;
+}
+
+for (let i=0; i<lengthHacker1; i++){
+    arrayHacker1Spacer += `${String.fromCharCode(arrayHacker1Upper[i])} `;
+}
+
+console.log(arrayHacker1Spacer);
+
+//----3.2----
+
+let invHacker2='';
+
+for(let i=lengthHacker2-1;i>=0;i--){
+    invHacker2+=hacker2[i];
+}
+console.log(`${invHacker2}\n`);
+
+//----3.3----
+
+let minusHacker1 = [];  //hacker1 in lowercase
+let minusHacker2 = [];  //hacker2 in lowercase
+let shortName = 0 ;
+
+for (let i=0; i<lengthHacker1; i++){
+    if (hacker1.charCodeAt(i) >=97)
+        minusHacker1[i] = `${hacker1.charCodeAt(i)-32} `;
+    else
+        minusHacker1[i] = `${hacker1.charCodeAt(i)} `;
+}
+
+for (let i=0; i<lengthHacker2; i++){
+    if (hacker2.charCodeAt(i) >=97)
+        minusHacker2[i] = `${hacker2.charCodeAt(i)-32} `;
+    else
+        minusHacker2[i] = `${hacker2.charCodeAt(i)} `;
+}
+
+if(lengthHacker1>=lengthHacker2)
+    shortName=lengthHacker1;
+else
+    shortName=lengthHacker2;
+
+for (let i=0; i<shortName; i++){
+    if(minusHacker1[i]>minusHacker2[i]){
+        console.log(`${hacker2} goes first.\n`);
+        break;
+    }
+    else if(minusHacker1[i]<minusHacker2[i]){
+        console.log(`${hacker1} goes first.\n`);
+        break;
+    }
+}
+if(hacker1===hacker2)
+    console.log(`${hacker1} and ${hacker2} are the same name.\n`);
 
 // ------ Bonus 1 ------ 
 
@@ -39,7 +102,7 @@ ${'Nam eget commodo risus, sed fermentum enim. Etiam tempus nunc massa, tincidun
 ${'Duis non dapibus urna. Aliquam iaculis risus eros, eu vulputate ligula consectetur id. Cras ut viverra nisi, non malesuada augue. Curabitur pharetra iaculis fringilla. Sed eu arcu in est sagittis ultricies quis sed orci. Aliquam suscipit leo at ullamcorper ultricies. Suspendisse rutrum, purus non sodales ultrices, felis augue posuere ligula, non sagittis nunc quam feugiat enim. Phasellus ornare interdum quam condimentum euismod. Duis non ante dui. Curabitur in urna augue. Ut elementum eros auctor enim bibendum pretium. In sit amet diam sed felis condimentum aliquet.'}`;
 
 let lengthText = 0;
-let numWords = 1; //Start in 1 because the last word dont have ' ' behind it.
+let numWords = 1; //Starts in 1 because the last word dont have ' ' behind.
 let numEt = 0;
 
 for(let i=0;text[i]!=undefined;i++){

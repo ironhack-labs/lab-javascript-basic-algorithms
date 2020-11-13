@@ -21,19 +21,17 @@ else
 
 // ------ Iteration 3: Loops ------
 
+console.log(hacker1.toUpperCase().split('').join(' '));         //3.1
+console.log(hacker2.split('').reverse().join(''));              //3.2
 
-//without loops
-console.log(hacker1.toUpperCase().split('').join(' '));
-console.log(hacker2.split('').reverse().join(''));
-
-if(hacker1.localeCompare(hacker2)<0)
+if(hacker1.localeCompare(hacker2)<0)                            //3.3
     console.log(`${hacker1} goes first.\n`);
 
 else if(hacker1.localeCompare(hacker2)>0)
     console.log(`${hacker2} goes first.\n`);
 
 else
-    console.log(`${hacker1} and ${hacker2} have the same name.\n`);
+    console.log(`${hacker1} and ${hacker2} are the same name.\n`);
 
 
 // ------ Bonus 1 ------ 
