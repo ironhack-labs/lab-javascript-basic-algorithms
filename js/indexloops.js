@@ -20,9 +20,6 @@ for(let i=0;hacker2[i]!=undefined;i++){
     lengthHacker2++;
 }
 
-console.log(lengthHacker1);
-console.log(lengthHacker2);
-
 if(lengthHacker1>lengthHacker2)
     console.log(`${hacker1} has the longest name. length = ${lengthHacker1}\n`);
 
@@ -36,6 +33,30 @@ else
 
 
 // ------ Bonus 1 ------ 
+
+let text = `${'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus orci facilisis turpis ultricies laoreet. Nullam ultricies orci vitae urna pulvinar, ut hendrerit orci malesuada. In hac habitasse platea dictumst. Pellentesque tempor nunc sem, eget dignissim erat molestie eget. In tellus nisl, pulvinar sit amet efficitur non, ultrices quis ante. Fusce varius nisi sed orci porta, vel pellentesque metus varius. Vestibulum est odio, blandit sed aliquet a, ullamcorper nec lectus.'} 
+${'Nam eget commodo risus, sed fermentum enim. Etiam tempus nunc massa, tincidunt fringilla tellus ultrices sed. Sed sit amet congue nisi, sit amet aliquet massa. Ut ultrices elit sit amet nunc pharetra, euismod auctor ipsum auctor. Aenean viverra rutrum rutrum. Nunc congue libero imperdiet purus commodo euismod. Suspendisse pellentesque enim sem, quis sagittis neque efficitur vitae. Mauris scelerisque placerat mauris eget ornare. Sed imperdiet libero libero, non varius purus eleifend non. Duis tempus sed turpis at sollicitudin.'} 
+${'Duis non dapibus urna. Aliquam iaculis risus eros, eu vulputate ligula consectetur id. Cras ut viverra nisi, non malesuada augue. Curabitur pharetra iaculis fringilla. Sed eu arcu in est sagittis ultricies quis sed orci. Aliquam suscipit leo at ullamcorper ultricies. Suspendisse rutrum, purus non sodales ultrices, felis augue posuere ligula, non sagittis nunc quam feugiat enim. Phasellus ornare interdum quam condimentum euismod. Duis non ante dui. Curabitur in urna augue. Ut elementum eros auctor enim bibendum pretium. In sit amet diam sed felis condimentum aliquet.'}`;
+
+let lengthText = 0;
+let numWords = 1; //Start in 1 because the last word dont have ' ' behind it.
+let numEt = 0;
+
+for(let i=0;text[i]!=undefined;i++){
+    lengthText++;
+}
+
+for(let i=0;i<=lengthText;i++){
+    if(text[i]===' ')
+        numWords++;
+}
+console.log(`The text has ${numWords} words`);
+
+for(let i=0;i<lengthText-2;i++){
+    if((text[i]===' ' && text[i+1]==='e' && text[i+2]==='t') || text[i]==='E' && text[i+1]==='t' && text[i+2]===' ')
+        numEt++;
+}
+console.log(`et appears ${numEt} times\n`);
 
 
 // ------ Bonus 2 ------ 

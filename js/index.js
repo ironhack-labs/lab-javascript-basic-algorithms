@@ -47,22 +47,14 @@ ${'Duis non dapibus urna. Aliquam iaculis risus eros, eu vulputate ligula consec
 console.log(`The text has ${text.split(' ').length} words`);
 
 let textArray = text.split(' ');
-let numWords = 0;
+let numEt = 0;
 
 for(let i=0;i<textArray.length;i++){
     if(textArray[i]==='et')
-        contador++;
+        numEt++;
     }
 
-/* 
-for(let i=0;i<textArray.length;i++){            
-    if(textArray[i].includes('et'))
-        contador++;
-}
-*/
-
-console.log(`'et' appears ${numWords} times\n`);
-
+console.log(`'et' appears ${numEt} times\n`);
 
 
 // ------ Bonus 2 ------ 
