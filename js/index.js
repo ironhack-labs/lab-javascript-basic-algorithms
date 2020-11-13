@@ -112,11 +112,11 @@ for (i = 0; i < loremNoPunctuationMarks.length; i++){
 loremNoPunctuationMarks = loremNoPunctuationMarks.join("").split(" ");
 let numberOfWords = loremNoPunctuationMarks.length
 
-console.log(`The number of words in the string is ${numberOfWords}.`);
+console.log(`OPTION 1: The number of words in the string is ${numberOfWords}.`);
 
 //OPTION 2: Punctuation does not affect word count
 
-console.log(`The number of words in the string is ${lorem.split(" ").length}.`);
+console.log(`OPTION 2: The number of words in the string is ${lorem.split(" ").length}.`);
 
 // Make your program count the number of times the Latin word et appears.
  let numberOfRepetitions = 0;
@@ -133,10 +133,9 @@ console.log(`The Latin word "et" appears ${numberOfRepetitions} times in the tex
 // Bonus 2:
 
 console.log('\nBonus 2:\n');
+//Option 1
 
-let phraseToCheck = "A man, a plan, a canal, Panama!";
-
-function check (textToCheck) {
+function checkPalindrome (textToCheck) {
   let noPunctuationMarks = textToCheck.toLowerCase();
   noPunctuationMarks = noPunctuationMarks.split("");
   for (i = 0; i < noPunctuationMarks.length; i++){
@@ -156,4 +155,30 @@ function check (textToCheck) {
 }
 
 
-check (phraseToCheck);
+checkPalindrome("A man, a plan, a canal, Panama!");
+checkPalindrome("Amor, Roma");
+checkPalindrome("Was it a car or a cat I saw?");
+
+//Option 2
+
+function checkPalindrome2 (phrase) {
+  //Remove spaces and all punctuation
+  phraseNoPunctuation = phrase.replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"").toLowerCase()
+
+  phraseLength = phraseNoPunctuation.length
+  let trueLetters = 0
+  for (i = 0; i < phraseLength; i++) {
+    if (phraseNoPunctuation[i] === phraseNoPunctuation[phraseLength - 1 - i]) {
+      trueLetters++
+    }
+  }
+  if (phraseLength === trueLetters) {
+    console.log ("It's a very cool phrase, it's a palindrome!")
+  } else {
+    console.log ("It is a very normal phrase!")
+  }
+}
+
+checkPalindrome2("taco cat");
+checkPalindrome2("stack cats");
+checkPalindrome("No 'x' in Nixon");
