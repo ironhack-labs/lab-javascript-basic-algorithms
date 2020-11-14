@@ -1,71 +1,63 @@
-// Iteration 1: Names and Input
+// 1.1 Create a variable `hacker1` with the driver's name.
+const hacker1 = 'Beatriz';
 
-//1.1    1.2
-const hacker1 = 'Joana';
+// 1.2 Print `"The driver's name is XXXX"`
 console.log(`The driver's name is ${hacker1}`);
 
-//1.3    1.4
-const hacker2 = 'Elizabeth';
+// 1.3 Create a variable `hacker2` with the navigator's name.
+const hacker2 = 'Gabriela';
+
+// 1.4 Print `"The navigator's name is YYYY"`.
 console.log(`The navigator's name is ${hacker2}`);
 
-// Iteration 2: Conditionals
-
-//2.1
+// 2.1. Depending on which name is longer, print:
 if (hacker1.length > hacker2.length) {
   console.log(
-    `The driver has the longest name, it has ${hacker1.length} characters`
+    `The driver has the longest name, it has ${hacker1.length} characters.`
   );
 } else if (hacker1.length < hacker2.length) {
   console.log(
     `It seems that the navigator has the longest name, it has ${hacker2.length} characters`
   );
-} else { 
+} else {
   console.log(
-    `Wow, you both have equally long names, ${hacker1.length} characters!`
+    `Wow, you both have equally long names, ${hacker2.length} characters!`
   );
 }
 
-// Iteration 3: Loops
-//3.1
-let betweenChars = ' ';
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
+const betweenChars = ' ';
 alert(hacker1.split('').join(betweenChars).toUpperCase());
 
-//3.2
-alert(hacker2.split('').reverse().join('').split(' ').reverse());
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+alert(hacker2.split('').reverse().join(''));
 
-//3.3
-let comparison = hacker1.localeCompare(hacker2);
+// 3.3 Depending on the lexicographic order of the strings, print:
+const comparison = hacker1.localeCompare(hacker2);
 
-if (comparison === 0) {
-  console.log(`What?! You both have the same name?`);
-} else if (comparison < 0) {
+if (comparison < 0) {
   console.log(`The driver's name goes first.`);
-} else {
+} else if (comparison > 0) {
   console.log(`Yo, the navigator goes first definitely.`);
+} else {
+  console.log(`What?! You both have the same name?`);
 }
 
 // Bonus 1
-// Count the number of words
-const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis pulvinar libero eget blandit. Donec nec convallis justo, vitae ultrices dolor. Aliquam tincidunt dui congue ex posuere, nec aliquam arcu vehicula. Fusce interdum massa quis dictum viverra. Integer nec tincidunt libero. Nullam sit amet augue non erat elementum laoreet sed ut felis. Mauris sagittis bibendum ante, nec dictum lacus convallis suscipit. Nulla facilisi. Phasellus finibus dolor enim, in interdum turpis molestie tristique. Sed nec dui sit amet libero maximus viverra vitae vitae nunc.
 
-Aliquam faucibus nulla ac nunc dapibus, mattis molestie lacus venenatis. Etiam vel bibendum mi. Fusce sit amet ligula sem. Etiam a nisi et nisi sollicitudin ornare. Nulla porta tortor sit amet blandit pellentesque. Nam vel pellentesque augue. Pellentesque quis justo cursus, dapibus nisi vel, ornare nulla. Sed velit lacus, rhoncus at justo ut, elementum consequat felis.
+const lorem =
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer augue magna, tempor eget odio vel, bibendum semper sapien. Sed tristique metus in nibh tempus, accumsan blandit libero sodales. Aenean id dignissim metus. In ac dapibus mauris. Mauris pharetra congue neque quis porttitor. Donec augue massa, elementum nec aliquet nec, placerat ut nisl. Donec tristique fringilla felis, vel fermentum libero pharetra sed. Quisque at ipsum nibh. Aenean vitae sem nisl.';
 
-Phasellus mi magna, lacinia eget convallis in, mollis a tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ac facilisis neque. Etiam in suscipit sapien. Integer et quam sapien. Duis pretium dolor tortor, sed aliquet justo bibendum sit amet. Etiam ipsum ipsum, finibus a libero quis, gravida mollis nulla. Donec diam libero, commodo vitae consequat at, suscipit nec diam. Aliquam sem nunc, sollicitudin at tempor quis, pharetra sit amet mi. Etiam tincidunt maximus ullamcorper. Donec volutpat auctor arcu sed commodo. Aliquam fermentum dictum augue, in tincidunt nisl fringilla a. Nulla sed enim feugiat, volutpat sem vitae, aliquet tellus. Pellentesque ac velit dolor. Fusce malesuada metus in lobortis ornare.`;
+// Count the number of words in the string
+const countWords = lorem.split(' ').length;
 
-function wordCount(text) { 
-  return text.split(" ").length;
-}
-console.log(wordCount(text));
+console.log(countWords);
 
-
-//Count the number of time the latin word `et` appears
-(text.match( /et/ ) || []).length;
-
-
+// Count the number of time the latin word 'et' appears
+(lorem.match(/ et /) || []).length;
 
 // Bonus 2
-
-const phraseToCheck = "A man, a plan, a canal, Panama!";
+const phraseToCheck = 'A man, a plan, a canal, Panama!';
 
 let sanitizedPhrase = '';
 
@@ -82,8 +74,5 @@ for (let i = 0; i < sanitizedPhrase.length; i++) {
   const a = sanitizedPhrase[i];
   const b = sanitizedPhrase[sanitizedPhrase.length - 1 - i];
   if (a !== b) {
-    
   }
 }
-
-
