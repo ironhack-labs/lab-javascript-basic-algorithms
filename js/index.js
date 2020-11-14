@@ -100,9 +100,14 @@ function WordCount() {
 console.log(WordCount("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent risus orci, cursus id massa quis, ullamcorper accumsan elit. Nulla in diam luctus ipsum ullamcorper bibendum quis non augue. Cras non mi nunc. Morbi lacinia ullamcorper ante, ut pretium augue semper nec. Integer purus quam, volutpat faucibus bibendum non, egestas at lectus. Integer varius facilisis velit, quis tincidunt lorem hendrerit eget. Maecenas aliquet, sem at pharetra commodo, eros odio consectetur sem, facilisis feugiat ipsum libero vitae nibh\nCurabitur a magna dictum, commodo risus at, scelerisque sapien. Donec vitae euismod massa, vitae feugiat arcu. Donec diam elit, fringilla vel tristique in, pharetra non ipsum. Suspendisse sed dolor pellentesque, luctus ante et, rutrum enim. Maecenas feugiat vitae nisl vitae auctor. Vestibulum eu faucibus velit. Phasellus a tristique metus. Nunc vitae erat vel leo ultrices venenatis a ut mi. Maecenas sagittis augue eu turpis sodales, dignissim cursus nisi tristique. Nunc scelerisque tempor libero id tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam eget venenatis quam. Curabitur pulvinar commodo dui, sed vulputate odio mattis non. Aenean cursus volutpat convallis. Vivamus fringilla sagittis neque, ut gravida ante varius et. Mauris luctus quam velit, eget porttitor nisl suscipit sollicitudin.\nVestibulum ornare dui sed lorem vestibulum, eget tempus elit elementum. Quisque varius, lacus eget egestas porta, nulla ligula tristique lorem, ac sodales erat tellus ut mauris. Vestibulum viverra mattis mauris ut finibus. Donec lacinia luctus odio, ut egestas magna tempus id. Vivamus porta, massa ut bibendum convallis, sapien tortor pellentesque ipsum, in pulvinar risus dui sed lectus. Phasellus metus lorem, tempor eu suscipit ac, lobortis sed lorem. Quisque dui velit, hendrerit ac dictum tristique, aliquam vitae lectus."));
 
 
-//bonus 1.3 Es una prueba, de moemnto no funciona.... y no se si funcionará xDD
-for (i = 0; i<lorem;i++)
-if (lorem.indexOf('et') !== lorem.lastIndexOf('et')) {
-  console.log('x')
-}
-
+//bonus 1.3 función para que cuente las veces que aparece et en la variable lorem
+function countWord (sentence, character){
+  let count= 0;
+  const words = sentence.split(' ')
+  for (var i = 0; i < words.length; i++){
+    if (words[i].includes(character)) {
+      count++;}
+    }
+  return count
+  }
+countWord (lorem, 'et');
