@@ -116,4 +116,29 @@ const palindromes = [ "A man, a plan, a canal, Panama!"
 console.log("\n", palindromes);
 
 
+let phraseToCheck;
+let reverse;
+let lettersOnly;
+let lowerCase;
+
+for(let phrase = 0; phrase < palindromes.length; phrase++) {
+    phraseToCheck = palindromes[phrase];
+    phraseToCheck = phraseToCheck.toLowerCase();
+
+    lettersOnly = ""; 
+    ndx = 0;
+    while(ndx < phraseToCheck.length) {
+        if(letters.includes(phraseToCheck[ndx]))
+            lettersOnly += phraseToCheck[ndx];
+        ndx += 1;
+         }
+
+    reverse = "";
+    ndx = lettersOnly.length - 1.
+    while(ndx >= 0) 
+        reverse += lettersOnly[ndx--]; 
+
+    console.log(`praseToCheck: ${phraseToCheck}; normalized reverse: ${reverse}; palindrome: ${lettersOnly === reverse}`);
+
+}
 
