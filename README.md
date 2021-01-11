@@ -54,6 +54,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 
 ### Iteration 1: Names and Input
 
+
 	1.1 Create a variable `hacker1` with the driver's name.
 
 	1.2 Print `"The driver's name is XXXX"`.
@@ -111,3 +112,4 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
 
 
 __Happy coding!__ :heart:
+
