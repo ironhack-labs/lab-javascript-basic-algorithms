@@ -1,7 +1,1 @@
-// Iteration 1: Names and Input
-
-
-// Iteration 2: Conditionals
-
-
-// Iteration 3: Loops
+// https://codepen.io/lilanika/pen/ExgeMVj
