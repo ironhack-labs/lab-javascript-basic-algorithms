@@ -110,4 +110,6 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
 - [for - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
 
-__Happy coding!__ :heart:
+__Happy coding!__ :heart: Vivi
+
+
