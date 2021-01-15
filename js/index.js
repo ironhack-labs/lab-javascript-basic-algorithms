@@ -56,3 +56,28 @@ if (hacker1 === hacker2) {
     console.log(`Yo, the navigator goes first definitely.`)
 }
 
+// //Bonus 1
+
+const latinText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non blandit dui. Suspendisse et nulla rhoncus, ultrices nunc molestie, tincidunt mi. Etiam euismod tellus vitae est vestibulum, nec lacinia tellus fermentum. Donec cursus porttitor sapien, quis tempus mauris elementum a. Fusce ullamcorper leo at dictum ultrices. Mauris metus nulla, ultrices sit amet hendrerit eget, fringilla ac nisl. Sed sit amet volutpat lectus. Nunc elit nulla, condimentum ut augue eu, cursus laoreet lectus. Mauris ac tempus elit, vitae consequat risus. Ut vehicula mauris ex, et sollicitudin mi porttitor eget. In hac habitasse platea dictumst. Nullam nec arcu a ligula tempus semper.
+
+Pellentesque vestibulum dignissim venenatis. Donec congue quis purus quis ultrices. Fusce risus ex, auctor ac pellentesque ut, rutrum at nibh. In et urna diam. Quisque eu mi tincidunt, consequat odio nec, gravida tellus. Praesent eu sem ligula. Vestibulum sit amet mi est. Vestibulum vel leo risus. Fusce neque urna, dictum at molestie nec, mollis non libero.
+
+Integer fringilla, mauris in mattis volutpat, urna lacus tincidunt ligula, eget feugiat augue arcu non sem. Cras vel finibus est, at luctus neque. Curabitur lacus arcu, gravida non aliquam gravida, feugiat a lacus. Sed ut magna nunc. Nullam blandit, magna faucibus varius placerat, eros lorem auctor est, nec sodales arcu felis et nibh. Praesent quis feugiat nisl, a auctor lectus. Morbi malesuada eget mauris sit amet viverra. Sed dapibus convallis massa, sit amet consequat lacus semper eget. Nunc consequat, augue et convallis lacinia, justo massa semper eros, interdum pulvinar nisi nisl et ipsum. Proin tristique eget augue dictum cursus. Nullam tincidunt sodales libero, vulputate auctor mauris tempor eget. In varius tortor orci, a tempor purus interdum non. Sed eu nisi varius, maximus erat sit amet, finibus eros.`
+
+const arrayOfLatinText = latinText.replace(/\n{2}/g, ' ').split(' ')
+
+console.log(arrayOfLatinText.length)
+
+const howManyOcurrences = (arrayOfText, wordRegex) => {
+    let ocurrences = 0;
+
+    for (let i = 0; i < arrayOfText.length; i++) {
+        if (wordRegex.test(arrayOfText[i])) {
+            ocurrences++;
+        }
+    }
+
+    return ocurrences;
+}
+
+console.log(howManyOcurrences(arrayOfLatinText, /^[Ee]t[,.]*$/));
