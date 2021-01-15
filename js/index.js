@@ -70,7 +70,7 @@ if (hacker1.localeCompare(hacker2) === 0) {
 
 // Bonus 1
 
-console.log('### Bonus 1');
+console.log('### Bonus 1: Count words');
 
 let loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor purus, posuere nec felis consectetur, rhoncus condimentum erat. Morbi vel ante rutrum libero egestas condimentum. Phasellus tellus turpis, porta a diam eget, aliquet finibus nisi. Vestibulum tempus auctor quam. Etiam nisi justo, vehicula vel placerat eu, faucibus sit amet mi. Curabitur vestibulum mollis viverra. Proin tempor nunc magna, ac pretium massa faucibus vel.
 Maecenas a porttitor dui. Mauris id neque sed velit consequat posuere. Duis vel arcu tempor, sagittis diam id, molestie mauris. Donec ac ex congue, rutrum neque sit amet, convallis odio. Pellentesque et massa metus. Nunc eget elementum enim. Pellentesque nisi enim, finibus vitae lectus a, commodo scelerisque arcu. Etiam vehicula nec ex quis semper.
@@ -86,3 +86,41 @@ let nbOccurrences;
 nbOccurrences = loremIpsum.replace(/\./g,'').replace(/\,/g,'').toLowerCase().split(' '+chosenWord+' ').length-1;
 
 console.log(`The number of occurrences of the Latin word ${chosenWord} is ${nbOccurrences}`);
+
+// Bonus 2
+
+console.log('### Bonus 2: Palindromes');
+
+let phraseToCheck = 'Was it a car or a cat I saw?';
+
+// Removing unwanted symbols from the string
+
+const symbolsToRemove = ['!','?','.',',',`'`,`"`];
+
+function removeSymbols(word, symbolsToRemove) {
+    for (let j = 0; j < word.length; j++) {
+        for (let i = 0; i < symbolsToRemove.length; i++) {
+            if (word[j]==symbolsToRemove[i]){
+                word = word.substring(0,j)+' '+word.substring(j+1,word.length);
+            };
+        }
+    }
+    return word.toLowerCase().replace(/ /g,''); 
+}
+
+phraseToCheckClean = removeSymbols(phraseToCheck, symbolsToRemove);
+
+// Checking whether word is a palindrome
+
+function isPalindrome(word) {
+    for (let k = 0; k < word.length/2; k++) {
+        if (word[k] != word[word.length-1-k]) {
+            console.log(`Iteration ${k+1}: char ${word[k]} does not equal char ${word[word.length-1-k]}`);
+            return false;
+        }
+    }
+    return true;
+}
+  
+  
+console.log(`Phrase ${phraseToCheck} is ${!isPalindrome(phraseToCheckClean) ? ' not ': ''}a palindrome`);
