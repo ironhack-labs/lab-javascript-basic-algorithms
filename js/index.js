@@ -46,7 +46,7 @@ if(hacker1.length > hacker2.length){
   }
 
 /// Itteration 3 /// 
-/// Print all the characters using looops
+/// Print all the characters using looops // 
 /// Why did we have to declare new value here? Is there any other way to approach this? 
 
 let nameSpace = ' '; // We declare new variable which will later have a space 
