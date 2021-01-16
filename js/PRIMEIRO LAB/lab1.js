@@ -42,8 +42,6 @@ if (hacker1 < hacker2) console.log('hacker1 goes first');
 else if (hacker1 > hacker2) console.log('hacker2 goes first');
 else console.log('You have same names');
 
-console.log("Bonus Time!");
-
 let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut blandit nibh. Cras venenatis vestibulum metus sit amet dictum. Suspendisse malesuada bibendum augue, eget efficitur diam ultricies feugiat. Nulla mollis ex tellus, semper elementum dui efficitur sit amet. Quisque convallis sapien in metus elementum, eget auctor sem ornare. Donec pharetra odio sit amet tellus tempor feugiat. Sed a enim ex. Curabitur nec turpis a augue facilisis blandit. Vestibulum molestie lectus in odio commodo luctus. Duis sem est, sodales a vehicula id, hendrerit eget velit. Nulla maximus justo id augue sagittis accumsan. Integer turpis eros, ultricies convallis posuere et, auctor non ante. Vestibulum posuere, elit sit amet dapibus ultrices, orci mi lacinia neque, nec venenatis nunc ex id ex. Aliquam et dapibus quam, at convallis condimentum. In sed accumsan dolor, et aliquam dolor.`
 
 let nbOfWords = 1;
