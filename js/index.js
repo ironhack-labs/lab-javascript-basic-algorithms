@@ -75,7 +75,9 @@ console.log(wordsCounter);
 
 let etCounter = 0;
 for (i = 0; i < loremText.length; i++) {
-  if (loremText[i] === "e" && loremText[i + 1] === "t") etCounter++;
+  if (loremText[i] === "e" && loremText[i+1] === "t" && (loremText[i-1] === " " || loremText[i-1] === "") 
+  && (loremText[i+2] === " " || loremText[i+2] === "."|| loremText[i+2] === "," || loremText[i+2] === "!" || loremText[i+2] === "?")) 
+  etCounter++;
 }
 
 console.log(etCounter);
