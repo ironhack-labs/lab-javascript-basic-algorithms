@@ -73,10 +73,12 @@ if (hacker1.localeCompare(hacker2) === 0) {
 console.log('### Bonus 1: Count words');
 
 let loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dolor purus, posuere nec felis consectetur, rhoncus condimentum erat. Morbi vel ante rutrum libero egestas condimentum. Phasellus tellus turpis, porta a diam eget, aliquet finibus nisi. Vestibulum tempus auctor quam. Etiam nisi justo, vehicula vel placerat eu, faucibus sit amet mi. Curabitur vestibulum mollis viverra. Proin tempor nunc magna, ac pretium massa faucibus vel.
+
 Maecenas a porttitor dui. Mauris id neque sed velit consequat posuere. Duis vel arcu tempor, sagittis diam id, molestie mauris. Donec ac ex congue, rutrum neque sit amet, convallis odio. Pellentesque et massa metus. Nunc eget elementum enim. Pellentesque nisi enim, finibus vitae lectus a, commodo scelerisque arcu. Etiam vehicula nec ex quis semper.
+
 Vivamus a dictum justo. Phasellus quis condimentum ante, non convallis ante. Praesent et viverra massa. Nam eget venenatis neque. Vestibulum euismod tempor velit. Quisque porttitor ultricies lorem pellentesque consequat. Maecenas consequat, dolor non condimentum tincidunt, sapien felis feugiat magna, a luctus magna eros vel dui. Donec egestas lectus eu odio tristique, a dapibus sem rhoncus. Fusce pharetra augue ornare, semper orci vel, congue ex. Mauris pulvinar vehicula leo quis ullamcorper. Nunc non nunc enim. Sed id purus maximus, tincidunt sem in, lacinia metus. Proin gravida velit a odio blandit, sed mollis augue tristique. Suspendisse accumsan mi nec sollicitudin rutrum. Nulla id tellus luctus, rutrum ante at, molestie augue.`
 
-loremIpsum = loremIpsum.replace(/(\r\n|\n|\r)/gm, " ");
+loremIpsum = loremIpsum.replace(/[\n]{1,}/gm, " ");
 
 console.log(`The number of words in  this string is ${loremIpsum.split(' ').length}`);
 
