@@ -33,7 +33,7 @@ switch(true){
 
 }
 
-/// Using it in 'if sentence'
+/// Using it in 'if sente'
 
 
 if(hacker1.length > hacker2.length){ 
