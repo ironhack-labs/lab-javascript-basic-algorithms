@@ -1,10 +1,10 @@
 // Iteration 1: Names and Input
 
-const hacker1 = 'Tahaís';
+const hacker1 = 'Thaís';
 
 console.log(`The driver's name is ${hacker1}.`)
 
-const hacker2 = 'Thaís';
+const hacker2 = 'Tahaís';
 
 console.log(`The navigator's name is ${hacker2}.`)
 
@@ -64,7 +64,7 @@ Pellentesque vestibulum dignissim venenatis. Donec congue quis purus quis ultric
 
 Integer fringilla, mauris in mattis volutpat, urna lacus tincidunt ligula, eget feugiat augue arcu non sem. Cras vel finibus est, at luctus neque. Curabitur lacus arcu, gravida non aliquam gravida, feugiat a lacus. Sed ut magna nunc. Nullam blandit, magna faucibus varius placerat, eros lorem auctor est, nec sodales arcu felis et nibh. Praesent quis feugiat nisl, a auctor lectus. Morbi malesuada eget mauris sit amet viverra. Sed dapibus convallis massa, sit amet consequat lacus semper eget. Nunc consequat, augue et convallis lacinia, justo massa semper eros, interdum pulvinar nisi nisl et ipsum. Proin tristique eget augue dictum cursus. Nullam tincidunt sodales libero, vulputate auctor mauris tempor eget. In varius tortor orci, a tempor purus interdum non. Sed eu nisi varius, maximus erat sit amet, finibus eros.`
 
-const arrayOfLatinText = latinText.replace(/\n{2}/g, ' ').split(' ')
+const arrayOfLatinText = latinText.replace(/\n{1,}/g, ' ').split(' ')
 
 console.log(arrayOfLatinText.length)
 
@@ -81,3 +81,67 @@ const howManyOcurrences = (arrayOfText, wordRegex) => {
 }
 
 console.log(howManyOcurrences(arrayOfLatinText, /^[Ee]t[,.]*$/));
+
+// Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+// "A man, a plan, a canal, Panama!"
+// "Amor, Roma"
+// "race car"
+// "stack cats"
+// "step on no pets"
+// "taco cat"
+// "put it up"
+// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+
+let phraseToCheck = "A man, a plan, a canal, Panama!"
+
+const checkIfPalindrome = phrase => {
+    let treatedPhrase = [];
+    let regex = /[^A-z]/;
+
+    for (let i = 0; i < phrase.length; i++) {
+        if (regex.test(phrase[i])) {
+            continue;
+        } else {
+            treatedPhrase.push(phrase[i].toLowerCase())
+        }
+    }
+
+    if (treatedPhrase.join() === treatedPhrase.reverse().join()) {        
+        return 'We have a palindrome!'
+    } else {
+        return 'The phrase is not a palindrome.'
+    }
+
+
+}
+
+console.log(checkIfPalindrome(phraseToCheck))
+
+//Checking for a palindrome withou the reverse() method or functions
+
+// let treatedPhrase = []
+// let reversedPhrase = [];
+// let regex = /[^A-z]/
+
+// for (let i = 0; i < phraseToCheck.length; i++) {
+//     if (regex.test(phraseToCheck[i])) {
+//         continue;
+//     } else {
+//         treatedPhrase.push(phraseToCheck[i].toLowerCase())
+//         reversedPhrase.unshift(phraseToCheck[i].toLowerCase());
+//     }
+// }
+
+// console.log(reversedPhrase, treatedPhrase)
+
+// for (let i = 0; i < reversedPhrase.length; i++) {
+//    if (reversedPhrase[i] === treatedPhrase[i] && i === reversedPhrase.length - 1) {
+//        console.log('We have a palindrome!');
+//    } else if (reversedPhrase[i] === treatedPhrase[i]) {
+//        continue;
+//    } else {
+//        console.log('The phrase is not a palindrome.');
+//        break;
+//    }
+// }
