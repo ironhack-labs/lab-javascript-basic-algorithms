@@ -56,7 +56,7 @@ if (hacker1 === hacker2) {
     console.log(`Yo, the navigator goes first definitely.`)
 }
 
-// //Bonus 1
+//Bonus 1
 
 const latinText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non blandit dui. Suspendisse et nulla rhoncus, ultrices nunc molestie, tincidunt mi. Etiam euismod tellus vitae est vestibulum, nec lacinia tellus fermentum. Donec cursus porttitor sapien, quis tempus mauris elementum a. Fusce ullamcorper leo at dictum ultrices. Mauris metus nulla, ultrices sit amet hendrerit eget, fringilla ac nisl. Sed sit amet volutpat lectus. Nunc elit nulla, condimentum ut augue eu, cursus laoreet lectus. Mauris ac tempus elit, vitae consequat risus. Ut vehicula mauris ex, et sollicitudin mi porttitor eget. In hac habitasse platea dictumst. Nullam nec arcu a ligula tempus semper.
 
@@ -82,16 +82,7 @@ const howManyOcurrences = (arrayOfText, wordRegex) => {
 
 console.log(howManyOcurrences(arrayOfLatinText, /^[Ee]t[,.]*$/));
 
-// Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
-
-// "A man, a plan, a canal, Panama!"
-// "Amor, Roma"
-// "race car"
-// "stack cats"
-// "step on no pets"
-// "taco cat"
-// "put it up"
-// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+//Bonus 2
 
 let phraseToCheck = "A man, a plan, a canal, Panama!"
 
@@ -118,7 +109,7 @@ const checkIfPalindrome = phrase => {
 
 console.log(checkIfPalindrome(phraseToCheck))
 
-//Checking for a palindrome withou the reverse() method or functions
+//Bonus 2 according to given instructions - checking for a palindrome withou the reverse() method or functions
 
 // let treatedPhrase = []
 // let reversedPhrase = [];
