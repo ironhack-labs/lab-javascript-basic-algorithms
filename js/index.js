@@ -4,7 +4,7 @@ const hacker1 = 'Thaís';
 
 console.log(`The driver's name is ${hacker1}.`)
 
-const hacker2 = 'Tahaís';
+const hacker2 = 'Thaísa';
 
 console.log(`The navigator's name is ${hacker2}.`)
 
@@ -26,35 +26,14 @@ console.log(hacker1.toUpperCase().split('').join(' '))
 
 console.log(hacker2.split('').reverse().join(''))
 
-const whitchNameFirst = (name1, name2) => {
-    let shortestName = name1.length <= name2.length ? name1 : name2;
-
-    let firstInAlphabet = shortestName;
-    
-    for (let i = 0; i < shortestName.length; i++) {
-        if (name1[i] !== name2[i]) {
-            if (name1[i].charCodeAt() < name2[i].charCodeAt()) {
-                firstInAlphabet = name1;
-                break;
-            } else {
-                firstInAlphabet = name2;
-                break;
-            }
-        } else {
-            continue;
-        }        
-    }
-
-    return firstInAlphabet;
-}
-
-if (hacker1 === hacker2) {
+if (hacker1.localeCompare(hacker2) === 0) {
     console.log('What?! You both have the same name?')
-} else if (whitchNameFirst(hacker1, hacker2) === hacker1) {
+} else if (hacker1.localeCompare(hacker2) === -1) {
     console.log(`The driver's name goes first.`)
 } else {
     console.log(`Yo, the navigator goes first definitely.`)
 }
+
 
 //Bonus 1
 
