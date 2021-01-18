@@ -75,3 +75,17 @@ function wordCount(str){
   //return the number of spaces + 1 to account for account for the last word
   return countofWords
 }
+
+
+
+//#### Bonus 2: 
+
+
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+phraseToCheck = phraseToCheck.replace(/\W)/,' ')
+
+function isPalindrome(stringToCheck){
+  let mainString = stringToCheck.toLowerChase()
+  
+  return mainString == mainString.split(' ').reverse().join('')
+}
