@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-let hacker1 = "Tom"lab-javascript-basic-algorithms
+let hacker1 = "Tom"
 
 console.log(`The driver´s name is ${hacker1}`);
 
@@ -23,7 +23,7 @@ let hacker1Name = "";
 for (let i = 0; i < hacker1.length; i++) {
   hacker1Name += `${hacker1UpperCase[i]} `;
 }
-console.log(hacker1Name)
+console.log(hacker1Name.trim())
 
 let hacker2UpperCase = hacker2.toUpperCase();
 let hacker2Name = "";
@@ -51,3 +51,53 @@ if (hacker1.localeCompare(hacker2) < 0) {
 } else {
   console.log(`What?! You both have the same name?`)
 }
+
+const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget semper urna. Cras lobortis neque condimentum euismod congue. Maecenas aliquet sed lacus sit amet ornare. Nunc nec leo mi. Suspendisse consequat arcu et ipsum consectetur, id volutpat massa consequat. Etiam eu lectus eget est elementum imperdiet. Vivamus venenatis urna non semper tempor. Pellentesque vitae ultricies massa. Nulla quis ante et leo dignissim sollicitudin id vel enim. Curabitur eget est et erat pellentesque faucibus. Phasellus pretium sodales nulla eget convallis.
+
+Nulla aliquam massa id quam dapibus, sit amet porta velit porttitor. Etiam vestibulum enim id imperdiet ornare. Integer rhoncus feugiat tempor. Phasellus nec mauris eget dui fermentum placerat. Vestibulum est lorem, fermentum eu luctus ut, rhoncus hendrerit libero. Vivamus vitae interdum lorem. Nunc a tincidunt mi. Sed sed augue tempus, consectetur nulla sit amet, pulvinar purus. Fusce sit amet tellus ut diam bibendum ultricies.
+
+Fusce mollis tincidunt leo. Donec bibendum ultrices lobortis. Nunc placerat purus rutrum erat varius, vitae porttitor urna finibus. Cras rutrum efficitur faucibus. Suspendisse ultricies, ligula vel viverra gravida, lorem ligula varius nunc, id porttitor purus sapien sed ante. Sed tincidunt neque ut augue tempus, quis faucibus nisl mollis. Vivamus sit amet gravida libero.`
+
+
+
+let count = text.split(' ').length
+
+for (let i = 0; i< text.length; i++) {
+  if (text[i] === '\n' && text[i - 1] !== '\n') {
+    count += 1;
+  }
+}
+
+console.log(count)
+
+let words = text.split(' ')
+let countEt = 0;
+for (let i = 0; i < text.length; i++) {
+  if (words[i] === 'et') {
+    countEt += 1;
+  }
+}
+console.log(countEt)
+
+const phraseToCheck = 'A man, a plan, a canal, Panama!';
+
+const lowerCaseString = phraseToCheck.toLowerCase();
+let onlyLetterString = '';
+console.log(lowerCaseString)
+
+for (let i = 0; i < lowerCaseString.length; i ++) {
+  const charCode = lowerCaseString.charCodeAt(i)
+    if (charCode >= 97 && charCode <= 122) {
+      onlyLetterString += lowerCaseString[i];
+    }
+ }
+console.log(onlyLetterString)
+
+ let reversedString = '';
+ for (let i = onlyLetterString.length - 1; i >= 0; i--) {
+   reversedString += onlyLetterString[i];
+ }
+console.log(reversedString)
+
+console.log(reversedString === onlyLetterString)
+ 
