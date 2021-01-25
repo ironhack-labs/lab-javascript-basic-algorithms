@@ -79,7 +79,6 @@ console.log(`What?! You both have the same name?`)
 Go to lorem ipsum generator and:
 Generate 3 paragraphs. Store the text in a variable type of string.
 Make your program count the number of words in the string.
-Make your program count the number of times the Latin word et appears.
 */
 
 let texto = `
@@ -94,3 +93,30 @@ console.log(`The text has ${texto.length} words`)
 
 //Make your program count the number of times the Latin word et appears.
 //
+
+const word='et'
+
+console.log(`The word "${word}" ${texto.includes(word) ? 'is' : 'is not'} in the texto ${word.length} times`);
+
+// BONUS2
+/*
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+*/
+
+let phraseToCheck = prompt ("A man, a plan, a canal, Panama!")
+function frasePalindromo(phraseToCheck){
+  frasePalindromo=frasePalindromo.toLowerCase().replace(/\s/g,"")
+  fraserReverse=phraseToCheck.split("").reverse().toString()
+   for (var i = 0; i < ((fraserReverse.length)-1); i++) {
+        fraserReverse=fraserReverse.replace(",","");
+      };
+      if(phraseToCheck==fraserReverse){
+        resultado="es un Palindromo";
+      }
+      else{
+        resultado="no es un Palindromo";
+      }
+      document.write("Tu frase "+resultado);
+    }
+   console.log(resultado)
+
