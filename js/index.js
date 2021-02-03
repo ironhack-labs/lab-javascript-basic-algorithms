@@ -50,3 +50,31 @@ function order(hacker1, hacker2) {
 }
 
 console.log(order (hacker1, hacker2));
+
+// BONUS CHALLENGE 1
+
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu ipsum quis mauris pretium blandit ac vitae eros. Aenean et sodales ligula. Phasellus orci lorem, hendrerit at orci sit amet, finibus fringilla arcu. Maecenas ut facilisis mi, eu dictum massa. Nullam sit amet interdum dolor, nec euismod tortor. Suspendisse in maximus libero. Nulla facilisi. Etiam et felis metus. Quisque vitae pretium dui, eu viverra quam.
+
+In et nisl nec elit convallis condimentum. Fusce eros neque, laoreet vel quam eget, malesuada porttitor tortor. Donec commodo, odio at bibendum efficitur, ligula justo rhoncus libero, at feugiat tortor arcu in dui. Donec mattis rhoncus elit sit amet lobortis. Cras interdum lectus ex, id pharetra odio gravida et. Sed placerat dolor vitae nisl varius sollicitudin. Phasellus a libero sollicitudin, imperdiet leo vel, consequat turpis. Ut vestibulum dolor nibh, in pulvinar arcu condimentum sed. Aliquam quis fermentum dui. Nulla odio sem, viverra in leo quis, accumsan suscipit nisl. Nulla a dictum velit. Morbi faucibus feugiat pulvinar. Aenean in accumsan augue.
+
+Ut placerat accumsan est a consectetur. In euismod nisl at maximus porta. Aliquam porttitor dui sed ipsum sodales pretium. Sed non dui imperdiet, euismod massa viverra, auctor elit. In in tempus dolor. Sed vehicula mauris sed ligula mollis semper. Etiam facilisis vestibulum enim, eu egestas sem dictum eu. Duis pharetra mattis rutrum. Pellentesque faucibus nulla eget nibh auctor cursus. Maecenas bibendum gravida accumsan. Fusce molestie lorem eget sapien aliquam auctor. Curabitur eleifend vel nisi ac egestas.`
+
+let count = 1
+
+for (let i = 0; i<lorem.length; i++) {
+if (lorem[i]=== ' ') {
+  count = count+1
+} 
+}
+
+console.log(count);
+
+let countet = 0
+
+for (let i = 0; i<lorem.length+2; i++) {
+if (lorem[i]+lorem[i+1]+lorem[i+2]+lorem[i+3]===" et ") {
+  countet = countet+1
+} 
+}
+
+console.log(countet);
