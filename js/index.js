@@ -44,13 +44,21 @@ console.log(verlan2);
 
 // ITERATION 3.3 (PAS FINI !!)
 
+//OPTION 1
+ if (hacker1.charAt(0)<hacker2.charAt(0)) {
+     console.log(`The driver's name goes first.`);}
+   else if (hacker1.charAt(0)>hacker2.charAt(0)) {
+     console.log(`Yo, the navigator goes first definitely.`);}
+   else {
+     console.log(`What?! You both have the same name?`);}
+
+//OPTION 2
 console.log(hacker1[0]);
 console.log(hacker2[0]);
 
 let is1longest;
 let is2longest;
 let equal;
-
 
 if (hacker1.length > hacker2.length) {
 console.log("Hacker 1 est le plus long");
@@ -74,8 +82,6 @@ if is1longest = true {
   else console.log(`1 n'est pas le plus long`)
 
 
-
-
 for (let i=0 ; i < hacker2.length ; i++) {
    
 if (hacker1[i] < hacker2[i]) {
@@ -87,8 +93,7 @@ if (hacker1[i] < hacker2[i]) {
 } else  {
   console.log("What?! You both have the same name?");
 }
-}
-
+}-->
 
 
 
