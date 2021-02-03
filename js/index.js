@@ -40,7 +40,7 @@ console.log(tmp.trim());
 // Reverse spelling loop
 let rvs = "";
 for (var i = hacker1.length - 1; i >= 0; i--) {
-  rvs += hacker1[i] + " ";
+  rvs += hacker1[i];
 }
 console.log(rvs.trim());
 // Reverse spelling console log
