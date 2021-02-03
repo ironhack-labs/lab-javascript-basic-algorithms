@@ -67,7 +67,36 @@ function whoGoesFirst (name1, name2) {
   }
 }
 
-console.log(whoGoesFirst(hacker1, hacker2));
+console.log(whoGoesFirst(hacker1, hacker2), "\n");
 
+/* Bonus 1:
+Go to lorem ipsum generator and:
 
+Generate 3 paragraphs. Store the text in a variable type of string.
+Make your program count the number of words in the string.
+Make your program count the number of times the Latin word et appears. */
 
+let parOne = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet tincidunt tortor, quis porttitor purus tincidunt et. Donec sit amet placerat urna, quis egestas mi. Maecenas congue dolor odio. Nam eu mi metus. Nullam luctus fringilla metus, vel pretium eros rhoncus ac. Donec sagittis, velit sit amet auctor blandit, arcu justo maximus leo, et egestas ligula metus non nisi. Proin quis luctus ex. Nam erat lacus, tincidunt nec enim eu, posuere pulvinar nulla. Donec et elit et tortor dignissim porta nec eget felis. Curabitur maximus molestie neque, sit amet blandit est efficitur a. Duis ornare in diam a tristique. In non massa non sapien commodo blandit. Quisque tortor magna, tristique nec mauris id, eleifend varius purus. Curabitur erat urna, rutrum at nisl eu, malesuada eleifend lectus."
+
+let parTwo = "Vestibulum posuere metus nec leo imperdiet, at efficitur turpis volutpat. Nullam consectetur sapien eu magna efficitur, vel volutpat mauris finibus. Donec eget pellentesque lectus. Ut scelerisque vehicula blandit. In hac habitasse platea dictumst. Nunc imperdiet a nulla nec pulvinar. Donec pretium ullamcorper purus, ac vehicula neque finibus non."
+
+let parThree = "Suspendisse rhoncus elit tellus, et cursus felis auctor vitae et et et."
+
+console.log(parThree.split(' '), "\n");
+
+function countWords (paragraph) {
+  let arrayOfWords = paragraph.split(" ");
+  let countOfWords = 0;
+  let countOfEt = 0;
+  for (let i = 0; i < arrayOfWords.length; i++) {
+    countOfWords += 1;
+    if (arrayOfWords[i] === "et" || arrayOfWords[i] === "et." || arrayOfWords[i] === "et,") {
+      countOfEt += 1;
+    }
+  }
+  return `The paragraph has ${countOfWords} words and the latin word 'et' appears ${countOfEt} times in the paragraph`
+};
+
+console.log(countWords(parOne), "\n");
+console.log(countWords(parTwo), "\n");
+console.log(countWords(parThree), "\n");
