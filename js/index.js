@@ -33,11 +33,25 @@ for (let i = 0; i < hacker1.length; i++) {
 console.log(str.toUpperCase())
 
 // STEP 3.2
+let str2 = "";
 for (var i = hacker1.length - 1; i >= 0; i--) {
-  console.log(hacker1[i]);
+  str2 = str2 + hacker1[i];
 }
+console.log(str2);
 
 // STEP 3.3
 
-// console.log(hacker1.localeCompare(hacker2));
-// expected output: 1
+if (hacker1.localeCompare(hacker2)=== -1) {
+  console.log("The driver's name goes first.")
+ } else if (hacker1.localeCompare(hacker2)=== 1) {
+  console.log("Yo, the navigator goes first definitely.")
+  } else if (hacker1.localeCompare(hacker2)=== 0){
+    console.log("What?! You both have the same name?");
+  }
+  else {
+    console.log("Invalid statement")
+  }
+
+
+
+
