@@ -100,3 +100,56 @@ function countWords (paragraph) {
 console.log(countWords(parOne), "\n");
 console.log(countWords(parTwo), "\n");
 console.log(countWords(parThree), "\n");
+
+/* Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes: */
+
+let pal1 = "A man, a plan, a canal, Panama!";
+let pal2 = "Amor, Roma";
+let pal3 = "race car";
+let pal4 = "stack cats";
+let pal5 = "step on no pets"
+let pal6 = "taco cat"
+let pal7 = "put it up"
+let pal8 = "Was it a car or a cat I saw?" 
+let pal9 = "No 'x' in Nixon'"
+
+function isPalindrome(string) {
+  let result = true;
+  let arrayOfLetters = [];
+  let reverseArrayOfLetters = [];
+  for (let i = 0; i < string.length; i ++) {
+    let currentLetter = string[i];
+    if (currentLetter === "," || currentLetter === " " || currentLetter === "!" || currentLetter === "." || currentLetter === "'" || currentLetter === "?" || currentLetter === `"`) {
+     continue;
+    }
+    arrayOfLetters.push(currentLetter.toLowerCase());
+  }
+  for (let k = string.length - 1; k > -1; k--) {
+   let currentChar = string[k];
+   if  (currentChar === "," || currentChar === " " || currentChar === "!" || currentChar === "." || currentChar === "'" || currentChar === "?" || currentChar === `"` ) {
+     continue;
+   }
+   reverseArrayOfLetters.push(currentChar.toLowerCase());
+ }
+ for (let j = 0; j < arrayOfLetters.length; j ++) {
+   if (arrayOfLetters[j] === reverseArrayOfLetters[j]) {
+     continue;
+   } result = false;
+ }
+ return result;
+};
+
+
+console.log("kayak is a palindrom: " + isPalindrome("kayak"))
+console.log("pal1 is a palindrom: " + isPalindrome(pal1));
+console.log("pal2 is a palindrom: " + isPalindrome(pal2));
+console.log("pal3 is a palindrom: " + isPalindrome(pal3));
+console.log("pal4 is a palindrom: " + isPalindrome(pal4));
+console.log("pal5 is a palindrom: " + isPalindrome(pal5));
+console.log("pal6 is a palindrom: " + isPalindrome(pal6));
+console.log("pal7 is a palindrom: " + isPalindrome(pal7));
+console.log("pal8 is a palindrom: " + isPalindrome(pal8));
+console.log("pal9 is a palindrom: " + isPalindrome(pal9));
+
+
