@@ -95,7 +95,7 @@ function calc_et(text){
             number + 1;
         }        
     }
-    console.log(number);
+    return console.log(number);
 }
 
 calc_et(paragraphs);
