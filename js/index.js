@@ -24,3 +24,16 @@ if(
   }
   
 // Iteration 3: Loops
+
+for (let i = 0; i < hacker1.length; i++) {
+    for (let j = i + 1; i < hacker1.length; j++) {
+    for (let k = j + 1; k < hacker1.length; k++) {
+    for (let l = k + 1; l < hacker1.length; l++) {  
+    console.log(`${hacker1[i].toUpperCase()} ${hacker1[j].toUpperCase()} ${hacker1[k].toUpperCase()} ${hacker1[l].toUpperCase()}`);
+        };
+      };
+    };
+  };
+
+// We know it's not THE answer but it is AN answer :)
+
