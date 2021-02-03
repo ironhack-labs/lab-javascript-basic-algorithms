@@ -22,11 +22,11 @@ if(
   }else{
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters`)
   }
-  
+
 // Iteration 3: Loops
 
 for (let i = 0; i < hacker1.length; i++) {
-    for (let j = i + 1; i < hacker1.length; j++) {
+    for (let j = i + 1; j < hacker1.length; j++) {
     for (let k = j + 1; k < hacker1.length; k++) {
     for (let l = k + 1; l < hacker1.length; l++) {  
     console.log(`${hacker1[i].toUpperCase()} ${hacker1[j].toUpperCase()} ${hacker1[k].toUpperCase()} ${hacker1[l].toUpperCase()}`);
@@ -36,4 +36,28 @@ for (let i = 0; i < hacker1.length; i++) {
   };
 
 // We know it's not THE answer but it is AN answer :)
+for (let i = 0; i < hacker2.length; i++) {
+    for (let j = i + 1; j < hacker2.length; j++) {
+    for (let k = j + 1; k < hacker2.length; k++) {
+    for (let l = k + 1; l < hacker2.length; l++) {  
+    console.log(`${hacker2[l]}${hacker2[k]}${hacker2[j]}${hacker2[i]}`);
+        };
+      };
+    };
+  };
 
+let names = [hacker1, hacker2];
+let namesSort = names.sort();
+
+/*The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! You both have the same name?*/
+
+if(namesSort[0]===hacker1){
+  console.log("The driver's name goes first.")
+
+}else if(namesSort[0]===hacker2){
+  console.log("Yo, the navigator goes first definitely.")
+}else if(hacker1===hacker2){
+  console.log("What?! You both have the same name?")
+}
