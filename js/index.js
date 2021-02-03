@@ -111,6 +111,7 @@ const phraseToCheck = (string) => {
             cleanWord += letter;
         }
     }
+    cleanWord = cleanWord.toUpperCase();
     
     //if first letter equal to last letter && if the length is not above half of lengh = increment
     let index = 0;
