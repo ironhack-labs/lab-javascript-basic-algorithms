@@ -48,3 +48,14 @@ console.log(hacker1.split("").reverse().join(""));
 console.log(hacker2.split("").reverse().join(""));
 
 // Alphabetical order loop
+function alphabeticalOrder(hacker1, hacker2) {
+  if (hacker1 === hacker2) {
+    return 'What?! You both have the same name?';
+    } else if (hacker1 < hacker2) {
+      return "The driver's name goes first.";
+      } else {
+        return 'Yo, the navigator goes first definitely.';
+    }
+}
+
+console.log(alphabeticalOrder(hacker1, hacker2));
