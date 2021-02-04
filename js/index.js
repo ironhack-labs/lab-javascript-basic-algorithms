@@ -50,24 +50,20 @@ console.log(hacker2Reverse);
 let string = "";
 
 if (hacker1 === hacker2){
-    console.log(`What?! You both have the same name?`);
+  console.log(`What?! You both have the same name?`);
 } else {
-  outerloop: for (let i = 0; i < hacker1.length; i++) {
-    for (let j = 0; j < hacker2.length; j++) {
-      if (hacker1[i] < hacker2[j]) {
-        string += "The driver's name goes first.";
-        console.log(string);
-        break outerloop;
-      } else if (hacker1[i] > hacker2[j]) {
-        string = "Yo, the navigator goes first definitely.";
-        console.log(string);
-        break outerloop;
-      }
+  for (let i = 0; i < hacker1.length; i++) {
+    if (hacker1[i] < hacker2[i]) {
+      string += "The driver's name goes first.";
+      console.log(string);
+      break;
+    } else if (hacker1[i] > hacker2[i]) {
+      string = "Yo, the navigator goes first definitely.";
+      console.log(string);
+      break;
     }
   }
 }
-
-
 //BONUS PART == Romain Only
 
 const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in neque facilisis, interdum ante auctor, pulvinar nisl. Sed fermentum a libero eget vestibulum. Sed id nunc sed ante luctus malesuada. Integer accumsan neque sed diam pharetra eleifend. Morbi ullamcorper rutrum lacus. Donec tempus libero ornare purus dapibus, quis sagittis enim gravida. Curabitur blandit dolor vulputate, tincidunt augue vel, sollicitudin augue. Vivamus ante augue, fermentum id nunc ut, hendrerit vehicula risus. Nam sapien justo, egestas sit amet diam nec, eleifend semper dui. Ut vulputate pulvinar tortor, in sagittis ex. Suspendisse rhoncus dapibus posuere. Sed dui purus, porta et mauris vitae, convallis interdum dui.
