@@ -38,15 +38,14 @@ function reverse(hacker2){
 
   //3.3
 
-
-/* //if(){
+  if(hacker1.length > hacker2.length){
     console.log("The driver's name goes first.")
   }
   
-  else if (){
+  else if (hacker2.length > hacker1.length){
     console.log(`Yo, the navigator goes first definitely.` )
   }
   
   else{
     console.log(`What?! You both have the same name?`)
-  } */
+  }
