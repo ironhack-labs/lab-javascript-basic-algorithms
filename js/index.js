@@ -70,6 +70,10 @@ if(namesSort[0]===hacker1){
 const typeOfString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt hendrerit ex, sit amet consequat mi vehicula sit amet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam aliquet euismod iaculis. Nunc accumsan magna eget risus scelerisque dignissim. Mauris vehicula efficitur libero. Duis a convallis massa. Phasellus ut risus id tortor bibendum aliquet vitae ut ante. Maecenas et commodo augue.Ut rhoncus molestie justo cursus egestas. Nullam pulvinar arcu in diam mattis lobortis. Proin sit amet feugiat ligula, vel scelerisque tortor. Nunc non urna in massa malesuada consequat eu vel elit. Praesent id rutrum magna. Maecenas et augue eget libero fringilla vulputate. Maecenas at urna nibh. Integer ullamcorper semper vehicula.Phasellus luctus fermentum sapien nec aliquam. Etiam molestie tellus est, vel sagittis diam dictum eget. Donec eget arcu nec neque rhoncus lobortis. Sed vehicula ut est id vehicula. Vestibulum maximus, ligula a tempus accumsan, elit magna dignissim sem, nec cursus nisl odio ut dolor. Curabitur sit amet cursus tortor. Sed felis nulla, tempor sed convallis in, fringilla ut nibh. Sed sagittis lobortis diam et eleifend. Maecenas interdum eget mauris ut elementum. Integer pharetra urna erat, et dignissim lectus luctus et. Nam vitae turpis faucibus, egestas lectus sit amet, maximus nisl. Phasellus pellentesque commodo lectus. In quis porttitor metus. Vestibulum nec sodales libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 const words = typeOfString.split(' ');
+const numberOfWords = words.length + 1;
+console.log(`The number of words in the Lorem Ipsum paragraph is ${numberOfWords}`)
 
-console.log(words.length);
+//Bonus 1 : Sub-onus 3
 
+let count = (typeOfString.match(/et/g) || []).length;
+console.log(`There are ${count} 'et' in the Lorem Ipsum paragraph `);
