@@ -47,24 +47,43 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 console.log(hacker2Reverse);
 
 // 3.3 //To stop the loop when conditions is true, we add a label to the outerloop.
+
+// NEW VERSION
 let string = "";
 if (hacker1 === hacker2){
     console.log(`What?! You both have the same name?`);
 } else {
-  outerloop: for (let i = 0; i < hacker1.length; i++) {
-    for (let j = 0; j < hacker2.length; j++) {
-      if (hacker1[i] < hacker2[j]) {
-        string += "The driver's name goes first.";
-        console.log(string);
-        break outerloop;
-      } else if (hacker1[i] > hacker2[j]) {
-        string = "Yo, the navigator goes first definitely.";
-        console.log(string);
-        break outerloop;
-      }
+  for (let i = 0; i < hacker1.length; i++) {
+    if (hacker1[i] < hacker2[i] || hacker1.length < hacker2.length) {
+      string += "The driver's name goes first.";
+      console.log(string);
+      break;
+    } else if (hacker1[i] > hacker2[i] || hacker1.length > hacker2.length) {
+      string = "Yo, the navigator goes first definitely.";
+      console.log(string);
+      break;
     }
   }
 }
+
+// OLDER VERSION
+// if (hacker1 === hacker2){
+//     console.log(`What?! You both have the same name?`);
+// } else {
+//   outerloop: for (let i = 0; i < hacker1.length; i++) {
+//     for (let j = 0; j < hacker2.length; j++) {
+//       if (hacker1[i] < hacker2[j]) {
+//         string += "The driver's name goes first.";
+//         console.log(string);
+//         break outerloop;
+//       } else if (hacker1[i] > hacker2[j]) {
+//         string = "Yo, the navigator goes first definitely.";
+//         console.log(string);
+//         break outerloop;
+//       }
+//     }
+//   }
+// }
 
 
 //BONUS PART == Romain Only
@@ -103,8 +122,8 @@ console.log(numberOfEt);
 
 const phraseToCheck = "Amor, Roma";
 let isPalindrom = true;
-//trying to learn to use regex
 
+//trying to learn to use regex
 let phraseWithoutSpace = phraseToCheck.replace(/[^\w]/g, "").toLowerCase();
 for (let i = 0; i < phraseWithoutSpace.length; i++) {
   if (phraseWithoutSpace[i] === phraseWithoutSpace[phraseWithoutSpace.length - 1 - i]) {
