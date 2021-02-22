@@ -31,3 +31,52 @@ else if (hacker1_length = hacker2_length) {
 }
 // Iteration 3: Loops
 
+//3.1 
+
+let hacker1 = "John"
+
+hacker1Capital = ""
+
+for ( i = 0; i < hacker1.length; i++)
+
+  hacker1Capital = hacker1Capital + hacker1[i].toUpperCase() + " "
+
+  console.log (hacker1Capital)
+
+
+//3.2
+
+let hacker1 = "John"
+
+hacker1Reverse = " "
+for (i = 0; i < hacker1.length; i++)
+  
+  hacker1Reverse = hacker1[i]  + hacker1Reverse
+
+  console.log (hacker1Capital)
+
+  //hackerName.split().join(" ").toUperCase
+
+//3.3 
+
+let hacker1 = "John"
+
+let hacker2 = "Philip"
+
+for (i = 0; i < 1; i++) 
+  if (hacker1[i] < hacker2[i]) {
+  console.log ("The driver's name goes first.")
+}
+else if 
+  (hacker1[i] > hacker2[i]) {
+  console.log ("Yo, the navigator goes first definitely.")
+}
+else if 
+  (hacker1[i] == hacker2[i]) {
+  console.log ("What?! You both have the same name?")
+}
+
+
+
+
+
