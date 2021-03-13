@@ -52,3 +52,60 @@ console.log(hacker2Reverse)
   } else {
     console.log(`What?! You both have the same name?`);
   }
+
+//bonus 1
+
+//Create a var storing 3 <p> of ipsum (i used samuelIpsum because that is fun and fun is motivating)
+const samuelIpsum = "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass."
+
+//Store each word as an element of an array (in the order they appear in my ipsum)
+// Used array method split to split words at ' ' and remove instances of ' ', did not worry about punctuation as that doesn't affect word count for this type of challenge, but could use split to remove these as well?
+const words = samuelIpsum.split(` `);
+
+//console.log(words) test to see if this works
+
+//Print out the number of words in my ipsum selection 
+//I used a word count tool to check for accuracy
+console.log(words.length);
+
+//Create a var to store number of word occurrences, used let because this number will be updated
+let numberOfDesiredWord = 0;
+
+//Create const for the word i'm going to check against ipsum (instead of et, i used toy because et will not appear in samuelIpsum)
+const desiredWord = `toy`;
+
+//Loop over the array of words created from ipsum with a for of loop
+for (word of words) {
+  if (word === desiredWord){
+    //Increases the value of numberOfDesiredWord by one each time desiredWord occurs in the word array
+    numberOfDesiredWord++;
+  }
+}
+
+//Print number of occurrences of desired word
+//Checked in a text doc
+console.log(numberOfDesiredWord)
+
+//Created variable to check
+const phraseToCheck = `Amor, Roma`;
+
+//Create new var to lowercase all chars (toLowerCase method), then remove all punctuation (replace method) (i found a regex dictionary to help with this!)
+const checkedPhrase = phraseToCheck.toLowerCase().replace(/[.,\/ #!$%?\^&\*;:{}=\-_`~()]/g,"");
+
+//Created a new var that is the reverse of checkedPhrase to compare order, then split it into an array so that i could use the reverse method on it, the rejoined it into a string
+const reversedCheckedPhrase = checkedPhrase.split('').reverse().join('');
+
+//Checked checkedPhrase against reversedCheckedPhrase to see if they are strictly equal and return boolean value true if this is true, I checked with non-palindromes
+isPalindrome = checkedPhrase === reversedCheckedPhrase;
+
+//Print isPalindrome to console
+console.log(isPalindrome);
+
+//Check if they are the same visually just in case
+console.log(checkedPhrase)
+console.log(reversedCheckedPhrase)
+
+
+
+
+
