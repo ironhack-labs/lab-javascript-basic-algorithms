@@ -11,8 +11,6 @@ jobs:
           check-latest: true
       - name: Install modules
         run: npm i
-      - name: Run tests
-        run: npm run test
   test:
     needs: prepare
     runs-on: ubuntu-latest
