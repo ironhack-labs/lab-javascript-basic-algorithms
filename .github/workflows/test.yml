@@ -14,9 +14,10 @@ jobs:
       - name: Install modules
         run: npm i
       - name: Run tests
-        run: npm run test:ci
+        run: npm run test -- --ci --reporters=default --reporters=jest-junit
       - name: Reports the results of tests
         uses: IgnusG/jest-report-action@v2.3.3
         if: always() # Or use "continue-on-error: true" in previous test step
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
+          run-name: test

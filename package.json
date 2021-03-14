@@ -8,8 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "test:ci": "npm run test -- --ci --reporters=default --reporters=jest-junit"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
