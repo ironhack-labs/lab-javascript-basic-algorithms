@@ -8,7 +8,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "test:ci": "npm run test -- --ci --reporters=default --reporters=jest-junit"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,15 @@
     "node": ">=15.11.0"
   },
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0"
   },
   "jest": {
     "transform": {}
+  },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
   }
 }
