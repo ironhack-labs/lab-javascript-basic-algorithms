@@ -15,5 +15,12 @@ jobs:
     needs: prepare
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "15"
+          check-latest: true
+      - name: Install modules
+        run: npm i
       - name: Run tests
         run: npm run test
