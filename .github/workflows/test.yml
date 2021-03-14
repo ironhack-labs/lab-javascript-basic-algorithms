@@ -4,7 +4,6 @@ jobs:
   prepare:
     runs-on: ubuntu-latest
     steps:
-      - name: Use appropriate version of Node.js
       - uses: actions/setup-node@v2
         with:
           node-version: "15"
