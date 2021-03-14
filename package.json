@@ -1,0 +1,33 @@
+{
+  "name": "lab-javascript-functions-and-arrays",
+  "version": "1.0.0",
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josecarneiro/lab-javascript-functions-and-arrays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josecarneiro/lab-javascript-functions-and-arrays/issues"
+  },
+  "homepage": "https://github.com/josecarneiro/lab-javascript-functions-and-arrays#readme",
+  "engines": {
+    "node": ">=15.11.0"
+  },
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "transform": {}
+  }
+}
