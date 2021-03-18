@@ -54,6 +54,17 @@ console.log(hacker2Split.split(" "));
 
 console.log(hacker2Split.split(" ").reverse().join(""));
 
+//----alternative method -----
+
+reverseName = [];
+
+for (letter of hacker2) {
+
+  reverseName.push(letter)
+  
+}
+console.log(reverseName.reverse().join(''));
+
 //3.3 Depending on the [lexicographic order]
 
 if (hacker2.localeCompare(hacker1) == 1) {
