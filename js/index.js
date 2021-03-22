@@ -34,7 +34,13 @@ if (hacker1.length > hacker2.length){
 //Iteration 3: Loops
 //3.1
 //Jamal Nasser
-console.log(hacker1.toUpperCase().split('').join(' '));
+let Hacker1UpperCase= hacker1.toUpperCase();
+console.log(Hacker1UpperCase);
+let seperatedHacker1 = '';
+for(let i = 0; i <Hacker1UpperCase.length; i++){
+ seperatedHacker1 += Hacker1UpperCase.charAt(i) + ' '; 
+}
+console.log(seperatedHacker1);
 
 //Jeroen van Bart
 // let Hacker1UpperCase= hacker1.toUpperCase();
@@ -43,7 +49,10 @@ console.log(hacker1.toUpperCase().split('').join(' '));
 // console.log(Hacker1UpperCase.split("").join(betweenLetters));
 //3.2
 //Jamal Nasser
-let reversedName = hacker2.split('').reverse().join('');
+let reversedName = '';
+for (let i = hacker2.length -1; i >= 0; i--){
+  reversedName += hacker2[i];
+}
 console.log(reversedName);
 
 //Jeroen van Bart
