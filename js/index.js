@@ -87,3 +87,38 @@ for (let i = 0; i < lorenIpsumWords.length; i++) {
 }
 
 console.log(`The word 'et' appears ${etCounter} times in the lorenIpsum string`);
+
+// Bonus 2
+let phraseToCheck = 'Taco cat';
+let phraseToCheckReversed = "";
+for(let i = phraseToCheck.length-1; i >=0 ; i--) {
+    phraseToCheckReversed += phraseToCheck[i];
+}
+
+for(let i = 0; i < phraseToCheck.length ; i++) {
+    let char = phraseToCheck[i].toLowerCase();
+    let charReversed = phraseToCheckReversed[i].toLowerCase();
+    switch(char) {
+        case '.':
+        case '!':
+        case '?':
+        case ',':
+        case ' ':
+            continue;
+    }
+    switch(charReversed) {
+        case '.':
+        case '!':
+        case '?':
+        case ',':
+        case ' ':
+            continue;
+    }
+
+    if(char != charReversed) {
+        console.log(`'${phraseToCheck}'' is not a palindrome!`);
+        break;
+    }
+    if (i == phraseToCheck.length - 1)
+        console.log(`'${phraseToCheck}' is a palindrome!`);   
+}
