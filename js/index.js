@@ -26,3 +26,43 @@ if (hacker1.length > hacker2.length){
 }
 
 // Iteration 3: Loops
+console.log(`Iteration 3: Loops`);
+
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
+let separetedHacker1 = '';
+for(let i = 0; i < hacker1.length; i++) {
+  if (i === 0) {
+    separetedHacker1 += `${hacker1[i].toUpperCase()}`;
+  } else {
+    separetedHacker1 += ` ${hacker1[i].toUpperCase()}`;
+  }
+}
+console.log(separetedHacker1);
+
+//You can do this without a loop:
+let separatedDriver = hacker1.toUpperCase().split(``).join(` `);
+console.log(separatedDriver);
+
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+let reverseHacker2 = '';
+for(let i = hacker2.length - 1; i >= 0; i--) {
+  reverseHacker2 += hacker2[i];
+}
+console.log(reverseHacker2);
+
+//You can do this without a loop:
+let reverseNavigator = hacker2.split(``).reverse().join(``);
+console.log(reverseNavigator);
+
+/*3.3 Depending on the lexicographic order of the strings, print:
+  - The driver's name goes first.
+  - Yo, the navigator goes first definitely.
+  - What?! You both have the same name?
+*/
+if (hacker1 > hacker2) {
+  console.log(`Yo, the navigator goes first definitely.`);
+} else if (hacker1 < hacker2) {
+  console.log(`The driver's name goes first.`);
+} else {
+  console.log(`What?! You both have the same name?`);
+}
