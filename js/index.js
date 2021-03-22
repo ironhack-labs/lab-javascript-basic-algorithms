@@ -56,3 +56,37 @@ console.log(wordCount)
 let etLatin = 0;
 etLatin = lorem.match(/et/gi).length; 
 console.log(etLatin);
+
+//Bonus 2:
+
+let phraseToCheck = `put it up`
+let phrase = ``
+
+for (let i = 0; i < phraseToCheck.length; i++){
+if (phraseToCheck[i] === ` `){
+
+}else {phrase += phraseToCheck[i]}
+}
+
+let rhalf= ``
+let lhalf= ``
+
+if (phrase.length % 2 == 0){
+for (let i = 0; i < phrase.length/2; i++){
+  lhalf += phrase[i]
+}
+
+for (let i = phrase.length-1; i >= (phrase.length/2); i--){
+  rhalf += phrase[i]
+}
+} else {
+  for (let i = 0; i < (phrase.length/2)-1; i++){
+  lhalf += phrase[i]
+}
+for (let i = phrase.length-1; i > (phrase.length/2); i--){
+  rhalf += phrase[i]
+}
+}
+if (rhalf === lhalf){
+  console.log(`${phraseToCheck} is a palindrome`)
+  } else {console.log(`${phraseToCheck} is not a palindrome`)}
