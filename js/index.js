@@ -12,3 +12,12 @@ if (hacker1.length > hacker2.length){
   }else {console.log(`Wow, you both have equally long names, ${hacker1.length} characters.`)}
 
 // Iteration 3: Loops
+
+let prueba=``
+for (let i = 0;i<hacker1.length;i++){
+  let caps = hacker1.toUpperCase()
+  
+
+  prueba += (caps[i] + ` `)
+}
+console.log(prueba)
