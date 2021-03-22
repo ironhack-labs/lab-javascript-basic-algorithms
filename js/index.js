@@ -56,7 +56,9 @@ function wordCounter(str) {
 console.log(wordCounter(loremIpsum));
 
 
-function wordCounter(str) {
+function specificWordCounter(str) {
     var words = str.split(" et ").length;
     return words;
 }
+
+console.log(specificWordCounter(loremIpsum));
