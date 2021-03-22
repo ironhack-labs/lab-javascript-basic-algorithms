@@ -66,7 +66,8 @@ console.log(`Word 'et' appears ${numberOfEt} times`)
 // BONUS 2
 
 let palindromeOrNot = 'put it up'
-let palindromeWithoutSpaces = palindromeOrNot.split(' ')
+let palindromeLowCase = palindromeOrNot.toLowerCase()
+let palindromeWithoutSpaces = palindromeLowCase.split(' ')
 let str = ''
 for (i = 0; i < palindromeWithoutSpaces.length; i++){
   str += palindromeWithoutSpaces[i]
