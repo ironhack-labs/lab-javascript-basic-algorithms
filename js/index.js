@@ -59,3 +59,39 @@ console.log(countOcurrences("et", lorem));
 function countOcurrences(ocurrence, sentence) {
 	return sentence.split(" ").filter((word) => word.includes(ocurrence)).length;
 }
+
+//Bonus 2:
+let phraseToCheck = "Was it a car or a cat I saw?";
+let regex = new RegExp("[A-Za-z]+", "g");
+//Turning sentence to same with only letters and lowercasered.
+let phraseToCheckOnlyLetters = phraseToCheck.match(regex).join("").toLowerCase();
+let firstHalf, secondHalf;
+
+//Converts a sentence into two halfs, the second one reversed.
+let divideSentence = (sentence) => {
+	if (sentence.length % 2 === 0) {
+		firstHalf = sentence.substring(0, sentence.length / 2);
+		secondHalf = sentence
+			.substring(sentence.length / 2)
+			.split("")
+			.reverse()
+			.join("");
+	} else {
+		firstHalf = sentence.slice(0, sentence.length / 2 + 1);
+		secondHalf = sentence
+			.slice(sentence.length / 2)
+			.split("")
+			.reverse()
+			.join("");
+	}
+};
+
+//Check if two words are equals and prints the result
+let isPalindrome = (first, second) => {
+	first === second
+		? console.log(`${phraseToCheck} is a palindrome`)
+		: console.log(`${phraseToCheck} isn't a palindrome`);
+};
+
+divideSentence(phraseToCheckOnlyLetters);
+isPalindrome(firstHalf, secondHalf);
