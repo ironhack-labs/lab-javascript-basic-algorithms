@@ -16,17 +16,32 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+//3.1
 var hacker1Cap = hacker1.toUpperCase();
-var wordWithSpaces = hacker1Cap.split('').join(' ');
-console.log(`${wordWithSpaces}`);
+var wordWithSpaces = "";
+for(var i=0; i<hacker1Cap.length; i++){  
+  wordWithSpaces += hacker1Cap[i] + " ";
+  }
+console.log(wordWithSpaces);
 
-var reversedString = hacker1.split('').reverse().join('');
-console.log(`${reversedString}`);
-
-if (hacker1 > hacker2){
-  console.log(`The driver's name goes first.`);
-}else if(hacker2 > hacker1){
-  console.log(`Yo, the navigator goes first definitely.`);
-}else{
-  console.log(`What?! You both have the same name?`);
+//3.2
+var reversedWord = "";
+for(var i=hacker1.length-1; i>=0; i--){
+  reversedWord += hacker1[i];
 }
+console.log(reversedWord);
+
+//3.3
+compare = hacker1.localeCompare(hacker2);
+
+  if(compare == -1){
+    console.log(`The driver's name goes first.`);
+    
+  }else if(compare == 1){
+    console.log(`Yo, the navigator goes first definitely.`);
+    
+  }else if (compare == 0){
+    console.log(`What?! You both have the same name?`);
+    
+  };
+//Bonus
