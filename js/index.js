@@ -40,3 +40,15 @@ let separateWords = str.split(' ');
 let countWords = separateWords.length;
 console.log(countWords);
 
+let wordEt = str.match(/et/gi);
+console.log(wordEt.length);
+
+// Bonus 2
+function isPalindrome(str) {
+    let first = str.match(/[a-z]+/ig).join('').toLowerCase()
+    let second = first.split('').reverse().join('');
+    return first === second;
+}
+console.log(isPalindrome('A man, a plan, a canal, Panama!'));
+console.log(isPalindrome('Was it a car or a cat I saw?" and "No \'x\' in Nixon'));
+console.log(isPalindrome('step on no pets'));
