@@ -21,6 +21,7 @@ console.log(
 		.split("")
 		.map((c) => (c += " "))
 		.join("")
+		.slice(0, this.length - 1)
 );
 
 console.log(hacker2.split("").reverse().join(""));
