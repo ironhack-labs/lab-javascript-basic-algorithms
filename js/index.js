@@ -1,41 +1,50 @@
-// Iteration 1: Names and Input
+/* Iteration 1: Names Input */
 
-let hacker1 = "David";
-let hacker2 = "Allan";
+let hacker1 = "Asif";
+let hacker2 = "Asif";
+console.log(`The Driver Name is: ${hacker1}`);
+console.log(`The navigator's Name is: ${hacker2}`);
 
-console.log("The driver name is" +" " + hacker1);
-console.log("The navigator's name is" +" " + hacker2);
+console.log("***********************************");
 
-// Iteration 2: Conditionals
+/* Iteration 2: Conditionals */
 
 if (hacker1.length > hacker2.length) {
-    console.log("The driver has the longest name. It has character: " + " " + hacker1.length);
-} else if (hacker1.length < hacker2.length) {
-    console.log("It seems that the navigators has the longest name. It has character: " + " " + hacker2.length);
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+} else if (hacker2.length > hacker1.length) {
+    console.log(`It seems that the Navigator has the longest name, it has ${hacker2.length} characters.`);
 } else {
-    console.log("Wow, you both have equally long names," + " " + hacker1.length + " " + "characters! and" + " " + hacker2.length + " " + "characters!");
+    console.log(`Wow, you both have equally long name, ${hacker2.length} characters.`);
 }
+console.log("***********************************");
 
-// Iteration 3: Loops
+/* Iteration 3: Loops */
 
-// 3.1 loops
-
-let j = ""
+let print = "";
 for (let i = 0; i < hacker1.length; i++) {
-    j += hacker1.charAt(i).toUpperCase() + " ";
+    print += hacker1.charAt(i) + " ";
 }
-console.log(j)
+console.log(print.toUpperCase());
 
-// 3.2 loops
+console.log("***********************************");
 
-let h = ""
+let print1 = "";
 for (let i = hacker2.length; i >= 0; i--) {
-    h += hacker2.charAt(i) + " ";
+    print1 += hacker2.charAt(i) + " ";
 }
-console.log(h)
+console.log(print1.toUpperCase());
 
-// 3.3 loops
+console.log("***********************************");
 
-let loremIpsumExample = "Lorem Ipsum one.Lorem Ipsum two.Lorem Ipsum three."
-let ams = hacker1.localeCompare(hacker2);
-console.log(ams);
+
+function newFunction(driver, navigator) {
+
+    if (driver < navigator) {
+        console.log("The driver's name goes first.");
+    } else if (navigator < driver) {
+        console.log("Yo, the navigator goes first definitely.");
+    } else {
+        console.log("What?! You both have the same name?");
+    }
+}
+newFunction(hacker1, hacker2);
