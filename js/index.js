@@ -42,13 +42,13 @@ nisl tristique, a cursus dui tincidunt. Donec venenatis sed risus vitae ornare. 
 iaculis ultricies id vitae metus. Sed eget posuere massa. Fusce gravida cursus ex, nec rhoncus mauris lobortis 
 elementum. Nunc interdum feugiat rutrum.
 
-Fusce tristique, augue sit amet blandit blandit, justo odio vestibulum felis, vehicula placerat velit magna eget felis. 
+Fusce tristique, augue sit amet blandit blandit, et justo odio vestibulum felis, vehicula placerat velit magna eget felis. 
 Nunc interdum metus ac risus mollis, nec posuere massa malesuada. Vestibulum sit amet faucibus nulla. Nunc congue libero 
-et facilisis consequat. Proin vulputate quis ante eu efficitur. Donec interdum metus enim, quis finibus nisi pellentesque
+et facilisis consequat. Proin vulputate quis ante et eu efficitur. Donec interdum metus enim, quis finibus nisi pellentesque
 at. Praesent iaculis augue sit amet dictum auctor. Vestibulum auctor urna ac pretium ornare. Ut cursus consequat sagittis. 
 Cras magna nibh, vehicula ut mauris at, volutpat dignissim enim.
 
-Donec aliquet tempus lorem id dictum. Cras sollicitudin, orci non facilisis pellentesque, enim sem tincidunt velit, 
+Donec aliquet tempus lorem id dictum. Cras et sollicitudin, orci non facilisis pellentesque, enim sem tincidunt velit, 
 quis dictum urna odio quis dolor. Vestibulum tempus ligula ex, non malesuada eros fringilla non. Vivamus eu pellentesque est. 
 Aenean eu ex at massa rutrum hendrerit. Fusce in ante aliquet, ultrices lorem quis, posuere nibh. Curabitur semper volutpat 
 libero vel finibus. Donec auctor nisl nisl, eu laoreet risus commodo eu. Quisque quis dictum arcu. Nulla in tristique ipsum, 
@@ -58,7 +58,7 @@ console.log(lorem.split(" ").length);
 console.log(countOcurrences("et", lorem));
 
 function countOcurrences(ocurrence, sentence) {
-	return sentence.split(" ").filter((word) => word.includes(ocurrence)).length;
+	return sentence.split(" ").filter((word) => word === ocurrence).length;
 }
 
 //Bonus 2:
@@ -72,19 +72,14 @@ let firstHalf, secondHalf;
 let divideSentence = (sentence) => {
 	if (sentence.length % 2 === 0) {
 		firstHalf = sentence.substring(0, sentence.length / 2);
-		secondHalf = sentence
-			.substring(sentence.length / 2)
-			.split("")
-			.reverse()
-			.join("");
 	} else {
 		firstHalf = sentence.slice(0, sentence.length / 2 + 1);
-		secondHalf = sentence
-			.slice(sentence.length / 2)
-			.split("")
-			.reverse()
-			.join("");
 	}
+	secondHalf = sentence
+		.slice(sentence.length / 2)
+		.split("")
+		.reverse()
+		.join("");
 };
 
 //Check if two words are equals and prints the result
