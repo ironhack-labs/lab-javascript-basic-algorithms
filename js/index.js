@@ -2,7 +2,7 @@
 let hacker1 = 'Juan';
 console.log(`The driver name is ${hacker1}`);
 
-let hacker2 = 'Jose';
+let hacker2 = 'Pepe';
 console.log(`The navigator name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -33,4 +33,7 @@ let h2Inverse = "";
 console.log(h2Inverse);
 
 //3.3
-for (let i=0; hacker)
+console.log(hacker1[0])
+console.log(hacker1[0].charCodeAt(0))
+console.log(hacker2[0])
+console.log(hacker2[0].charCodeAt(0))
