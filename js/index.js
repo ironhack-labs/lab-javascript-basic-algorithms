@@ -21,28 +21,38 @@ function lengthComparison() {
         console.log("Wow, you both have equally long names, " + hacker1Length + " characters!");
     }
 }
+lengthComparison();
 
 // Iteration 3: Loops
-
+let hacker1Name = '';
 for (var i = 0; i < hacker1Length; i++) {
-    console.log(hacker1[i].toUpperCase());
+    hacker1Name += hacker1[i].toUpperCase() + ' ';
 }
+console.log(hacker1Name);
 
+let hacker2Name = '';
 for (var i = hacker2Length - 1; i >= 0; i--) {
-    console.log(hacker2[i]);
+    hacker2Name += hacker2[i];
 }
+console.log(hacker2Name);
 
 function lexicographicOrder() {
-    if (hacker1 < hacker2) {
+    for (let i = 0; i < hacker1.length; i ++) {
+      char1 = hacker1[i];
+      char2 = hacker2[i];
+    
+      if (char1 < char2) {
         console.log("The driver's name goes first.");
-    } else if (hacker1 === hacker2) {
-        console.log("What?! You both have the same name?");
-    } else if (hacker1 > hacker2) {
+        return;
+      } else if (char1 > char2 || !char2) {
         console.log("Yo, the navigator goes first definitely.");
+        return;
+      }
     }
+    console.log("What?! You both have the same name?");
 }
 
-lexicographicOrder();
+lexicographicOrder()
 
 //Extra
 
