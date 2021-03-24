@@ -25,7 +25,7 @@ nameLength();
 var renameHacker1 = '';
 
 for (let i = 0; i < hacker1.length; i++) {
-    renameHacker1 += hacker1[i] + " ";
+    renameHacker1 += hacker1[i] + "";
 }
 
 console.log(renameHacker1.toUpperCase());
@@ -41,17 +41,49 @@ reverse(hacker2);
 
 
 //Exercise 3.3
-var hacker3 = hacker1.localeCompare(hacker2);
-console.log(hacker3);
+//No se realizar este ejercicio con un for, la unica solución aparte de un if, else, es poner un .sort(). Cuando corrijas este ejerciio a ver si puedes darme un ligera idea. 
 
-function myFunction() {
-    if (hacker3 <= -1) {
-        console.log("The driver's name goes first.")
-    } else if (hacker3 >= 1) {
-        console.log("the navigator goes first definitely.")
-    } else {
-        console.log("What?! You both have the same name?.")
-    }
+
+//Bonus 1
+let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mattis mauris ante, eget tincidunt arcu facilisis vitae. Integer eu mauris eget nisl efficitur rutrum. Duis sollicitudin Praesent."
+
+let text2 = text.split(" ");
+
+let contador = 0;
+for (i = 0; i < text2.length; i++) {
+    contador++
 }
+console.log(contador);
 
-myFunction();
+function bonus1() {
+    let palabraReplicada = "et";
+    let i = 0,
+        contador2 = 0;
+    while (i !== -1) {
+        i = text.indexOf(palabraReplicada, i);
+        if (i !== -1) {
+            i++
+            contador2++
+        }
+    }
+
+    return contador2;
+
+}
+bonus1();
+
+// Bonus 2 - Solo he podido hacerlo de esta manera, solamente puede analizar una palabra de 5 letras, sabría hacerlo con reverse(). Nose que se me escapa para hacerlo de la manera correcta.
+
+let palabra = "lotol";
+let phraseToCheck = palabra.toLowerCase().split("");
+let contador = 0
+
+function bonus2() {
+    for (i = 0; i < phraseToCheck.length; i++) {
+        contador++
+    }
+    if ((phraseToCheck[0] == phraseToCheck[4]) && (phraseToCheck[1] == phraseToCheck[3])) {
+        console.log("Es un palindromo");
+    } else {
+        console.log("No es un palindromo");
+    }
