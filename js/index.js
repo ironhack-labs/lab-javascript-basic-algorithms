@@ -19,10 +19,10 @@ if (hacker1.length > hacker2.length) {
 
 //3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 
-let name1 = ''; 
+let name1 = ""; 
 
-for (let i = 0; i < hacker1.length; i++) {
- name1 += hacker1[i]+ " ";  
+for (let i = 0; i <= hacker1.length -1; i++) {
+ name1 += hacker1[i]+ "";  
 };
 
 console.log(name1.toUpperCase());
@@ -43,12 +43,13 @@ function reverse(name) {
   - Yo, the navigator goes first definitely.
   - What?! You both have the same name?
   */
-  
-  
-  if (hacker1 > hacker2) {
-      console.log(`Yo, the navigator goes first definitely.`);
-    } else if (hacker1 < hacker2) {
-      console.log(`The driver's name goes first.`);
-    } else {
-      console.log(`What?! You both have the same name?`);
-    } 
+
+
+if (hacker1[0] < hacker2[0]) {
+  console.log("The driver's name goes first.");
+} else if (hacker1[0] > hacker2[0]) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+  }
+
