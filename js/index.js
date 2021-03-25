@@ -41,7 +41,25 @@ reverse(hacker2);
 
 
 //Exercise 3.3
-//No se realizar este ejercicio con un for, la unica solución aparte de un if, else, es poner un .sort(). Cuando corrijas este ejerciio a ver si puedes darme un ligera idea. 
+let hacker1 = "Adrian";
+console.log(`The driver name is ${hacker1}`);
+
+let hacker2 = "Pol";
+console.log(`The navigator name is ${hacker2}`);
+
+let hackers = [hacker1, hacker2];
+
+function order(hackers) {
+    for (let i = 0; i < hackers.sort(); i++) {}
+    if (hacker1 < hacker2) {
+        console.log(`he driver's ${hacker1} goes first.`);
+    } else if (hacker1 > hacker2) {
+        console.log(`Yo, the ${hacker2} goes first definitely.`)
+    } else {
+        console.log("What?! You both have the same name?")
+    }
+}
+order(hackers);
 
 
 //Bonus 1
@@ -75,7 +93,7 @@ bonus1();
 // Bonus 2 - Solo he podido hacerlo de esta manera, solamente puede analizar una palabra de 5 letras, sabría hacerlo con reverse(). Nose que se me escapa para hacerlo de la manera correcta.
 
 let palabra = "lotol";
-let phraseToCheck = palabra.toLowerCase().split("");
+let phraseToCheck = palabra.toLowerCase().reverse().split("");
 let contador = 0
 
 function bonus2() {
@@ -87,3 +105,4 @@ function bonus2() {
     } else {
         console.log("No es un palindromo");
     }
+}
