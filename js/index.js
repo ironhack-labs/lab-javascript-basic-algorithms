@@ -17,6 +17,19 @@ if (hacker1.length > hacker2.length) {
 
 let special_Name = "";
 
+const arrayName = hacker1.split("");
+
+console.log(arrayName)
+
+arrayName.forEach(i =>
+    special_Name += i.toUpperCase() + " "
+);
+
+
+
+
+let special_Name = "";
+
 for (let i = 0; i < hacker1.length; i++) {
     special_Name += hacker1.charAt(i).toUpperCase() + " ";
 }
