@@ -67,6 +67,29 @@ if (hacker1 > hacker2) {
   console.log(`What?! You both have the same name?`);
 }
 
+//UPDATE WITH NEW SOLUTION USING LOOPS
+//First we find the shortest name to stop the loop.
+let shortestName = '';
+if (hacker1.length > hacker2.length) {
+  shortestName = hacker2;
+} else {
+  shortestName = hacker1;
+}
+
+for (let i=0; i<shortestName.length; i++) {
+  if (hacker1[i] < hacker2[i]) {
+    console.log(`The driver's name goes first.`)
+    break;
+  } else if (hacker1[i] > hacker2[i]){
+    console.log(`Yo, the navigator goes first definitely.`)
+    break;
+  } else if (hacker1[i] === hacker2[i]){
+    break;
+  } else {
+    console.log(`What?! You both have the same name?`)
+  }
+}
+
 //Bonus 1:
 console.log(`Bonus 1`);
 //Go to lorem ipsum generator and:
