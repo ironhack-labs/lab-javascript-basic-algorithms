@@ -34,7 +34,7 @@ console.log(h2Inverse);
 
 //3.3
 debugger
-let shortWord = 0;
+let shortWord = "";
 if (hacker1.length < hacker2.length) {
   shortWord = hacker1;
 } else {
@@ -44,10 +44,8 @@ if (hacker1.length < hacker2.length) {
 for (let i=0; i<shortWord.length; i++) {
   if (hacker1[i] > hacker2[i]) {
     console.log(`The driver's name goes first.`)
-    break;
   } else if (hacker1[i] < hacker2[i]){
     console.log(`Yo, the navigator goes first definitely.`)
-    break;
   } else if (hacker1[i] === hacker2[i]){
     break;
   } else {
