@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 
-console.log('On my way!')
+console.log(":( I'm very sad!!!")
 
 
 // Iteration 2: Conditionals
