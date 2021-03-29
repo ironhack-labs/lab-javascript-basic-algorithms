@@ -58,3 +58,13 @@ for (let i = 0; i < words.length; i++) {
   }
 }
 console.log(counter)
+
+//Bonus
+const palindrome ="step on no pets"
+let palindromeInverse = ""
+for (i = palindrome.length -1; i >= 0; i--){
+ palindromeInverse += palindrome[i]
+}
+if (palindrome == palindromeInverse) {
+console.log(`Wow! It seems that your string it's a palindrome!`)}
+else {console.log(`Oh! Your string it's not a palindrome`)}
