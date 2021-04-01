@@ -64,3 +64,45 @@ if (a < b) {
 
   console.log(`What? You both have the same name?`)
 }
+
+
+/*Bonus1*/
+
+const paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+const paragraphLength = paragraph.length
+
+let numberSpace = 0
+
+let letter
+
+for (let i=0; i<paragraphLength; i++){
+
+  letter = paragraph[i]
+
+    if (letter.indexOf(' ')!= -1){
+      numberSpace ++
+    }      
+
+  }
+
+const wordNumber = numberSpace ++
+
+console.log(numberSpace)
+
+for (let i=0; i<paragraphLength; i++){
+
+  let numberEt 
+
+  let et = paragraph.indexOf(' et')
+  
+  if (et != -1){
+
+    numberEt ++
+
+   }
+ }
+
+ console.log(numberEt)
+
