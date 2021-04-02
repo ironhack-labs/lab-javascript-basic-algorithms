@@ -30,3 +30,8 @@ for(let i=0; i<hacker1.length; i++){
     console.log(letter.toUpperCase() + ' ');
 };
 
+for(let i=hacker1.length-1; i=0; i--){
+    let letter = hacker1.charAt(i);
+    console.log(letter.toUpperCase() + ' ');
+};
+
