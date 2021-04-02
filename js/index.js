@@ -4,7 +4,7 @@ console.log("I'm ready!");
 
 const hacker1 = "Daniel";
 
-console.log(`The dirver's name is ${hacker1}`);
+console.log(`The driver's name is ${hacker1}`);
 
 const hacker2 = "Joserra";
 
@@ -17,9 +17,11 @@ if(hacker1.length === hacker2.length){
     console.log(`Wow, you both have equally long names, ${length}`);
 } else if (hacker1.length < hacker2.length){
 
-}
-
-//Prueba de Git
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
+}else{
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+};
 
 // Iteration 3: Loops
+
 
