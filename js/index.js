@@ -68,4 +68,37 @@ if(hacker1 == hacker2){
 
 // Its Bonus Time!
 // // bonus 1:
+const lorem = `Nam nisl nunc, sollicitudin rhoncus tellus et, sodales accumsan turpis. Maecenas sit amet metus malesuada, viverra tellus sit amet, sagittis turpis. Vivamus tempus justo mattis odio imperdiet cursus nec a ipsum. Praesent ut sollicitudin est. Cras eu felis convallis, aliquet enim nec, mollis magna. Maecenas arcu quam, cursus vitae aliquam sit amet, scelerisque et nulla. Phasellus vel lorem nec purus tempor feugiat nec ut lacus.
+
+Praesent tempor urna diam, vitae aliquam nibh imperdiet vel. Duis a velit dapibus, sagittis odio quis, feugiat ex. Aliquam erat volutpat. Suspendisse sed fringilla nibh. Aenean nibh libero, feugiat ut vehicula quis, gravida sed ex. Phasellus scelerisque blandit metus, eu consectetur ante tincidunt eget. Donec eu quam vel diam tincidunt elementum. Pellentesque scelerisque finibus rhoncus. Etiam eget est eu lacus blandit varius vitae vitae nulla. Phasellus mauris tortor, facilisis ut turpis non, semper mollis purus. Aliquam erat volutpat. Mauris venenatis est at ante iaculis porta. Sed scelerisque auctor purus, sed pellentesque ipsum tincidunt nec. Sed dignissim dolor ante, et accumsan sapien tincidunt eu. Ut tempus lectus at urna suscipit tincidunt.
+
+Phasellus urna tortor, tempor finibus tellus et, lobortis posuere sapien. Duis volutpat pulvinar felis eget ultricies. Suspendisse a venenatis mi, eget consequat libero. Vivamus tempor lorem vel fringilla lobortis. Nullam vehicula dui vitae commodo auctor. Donec vulputate sem at augue sagittis sollicitudin. Maecenas fringilla leo sit amet felis elementum dapibus. In pretium sem in suscipit porttitor. Maecenas feugiat est non dolor bibendum fringilla. Aenean molestie suscipit elit, a tristique ante. Donec nec sapien eu tortor posuere bibendum. Aenean porta at ligula vitae maximus. Praesent bibendum nec purus nec viverra. Cras egestas elit quam, et laoreet nisl vehicula tempor. Aenean elementum ex orci, a maximus dolor bibendum id.`
+
+lorem_array = lorem.split(" ");
+console.log(lorem_array.length+1);
+
+const aux_et = lorem.split("et");
+console.log(aux_et.length);
+
 // // bonus 2:
+let phraseToCheck = prompt("What phrase do you want to check for palindromisisisisisity?").toLowerCase();
+phraseToCheck = phraseToCheck.split(" ").join("");
+phraseToCheck = phraseToCheck.split(",").join("");
+
+console.log("Checking if",phraseToCheck,"is a palindrome...");
+
+let palindrome = true;
+let i_string = 0;
+let i_break = true;
+const phraseLength = phraseToCheck.length;
+do{
+  if(phraseToCheck[i_string]!=phraseToCheck[phraseLength-i_string-1]){
+    palindrome = false;
+  }
+  if(i_string>phraseLength/2){
+    i_break = false;
+  }
+  i_string++;
+}while(palindrome && i_break)
+
+console.log('Result. Is your phrase a palindrome?:', palindrome);
