@@ -61,3 +61,5 @@ Cras semper mauris at ultricies ultricies. Praesent sodales mattis sem in lobort
   let wordCounter = paragraphs.split(' ').length;
   console.log(`Bonus 1: Paragraphs has ${wordCounter} words`);
 
+  let wordFinder = paragraphs.search("et")
+  console.log(`Bonus 2: Our pharagraphs have ${wordFinder} times the word "et"`)
