@@ -91,7 +91,9 @@ console.log(`il y a ${occurence} fois le mot "et" `);
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 // select and/or withdraw anything other than letters
-let notAlphaNum = /[\W_]/g; //=>/[^A-Za-z0-9]/g matches anything that is not enclosed between A-Z a-z 0-9
+let notAlphaNum = /[\W_]/g; 
+// => /[\W_]/g is equivalent to /[^A-Za-z0-9]/g >>>> matches anything that is not enclosed between A-Z a-z 0-9
+// => source: https://www.freecodecamp.org/news/two-ways-to-check-for-palindromes-in-javascript-64fea8191fd7/
 
 // toLowerCase in case (it's case sensitive)
 function subReady(phrase) {
@@ -109,20 +111,23 @@ let halfPhrase = subReady(phraseToCheck).substring(0, subReady(phraseToCheck).le
 
 // check console.log(halfPhrase) => amanaplana >>> OK!
 
-// reverse one part using first excercie methode
+// reverse halfPhrase using first excercie
 
-// Let halfPhraseReverse = "";
-// for (index = halfPhrase.length - 1; index >= 0; index--) {
+let halfPhraseReversed = "";
+for (index = halfPhrase.length - 1; index >= 0; index--) {
 
-//     halfPhraseReverse = halfPhraseReverse + halfPhrase[index] + " ";
+    halfPhraseReversed = halfPhraseReversed + halfPhrase[index];
 
-//   }
+  }
 
-//   console.log(halfPhraseReverse);
-// compare it to the other
+// check console.log(halfPhraseReversed) = > analpanama >>> OK !
 
+// compare it to the other we just use .includes methode it my not be as secure but is the easiest way
 
+if (subReady(phraseToCheck).includes(halfPhraseReversed)) {
 
+    console.log(`${phraseToCheck} is a  Palindrome.`);
+} else {
+    console.log(`${phraseToCheck} is a NOT Palindrome.`);
 
-
-// if ( halfPhrase.reverse === phraseToCheck.substring((phraseToCheck.length-1)/2,phraseToCheck.length)
+};
