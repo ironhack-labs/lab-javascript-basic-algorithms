@@ -90,9 +90,9 @@ for( let i = phraseToCheck.length-1; i > phraseToCheck.length / 2; i-- ) {
 }
    
 if( flag ) {
-  console.log('the word is palindrome.');
+  console.log('The string is a palindrome.');
 }
    
 else {
- console.log('the word is not palindrome.');
+ console.log('The string is not a palindrome.');
 }
