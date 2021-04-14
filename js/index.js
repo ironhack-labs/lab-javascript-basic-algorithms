@@ -26,3 +26,38 @@ if (hacker1.length > hacker2.length) {
   else {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
   }
+
+/*3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"*/
+
+console.log(hacker1.toUpperCase().split('').join(' '));
+
+
+/*3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"*/
+
+console.log(hacker2.split('').reverse().join(''));
+
+
+/*3.3 Depending on the lexicographic order of the strings, print:
+- The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! You both have the same name?*/
+
+let hacker1name = hacker1.toLowerCase().split('').sort().join('');
+
+let hacker2name = hacker2.toLowerCase().split('').sort().join('');
+
+console.log(hacker1name)
+console.log(hacker2name)
+
+
+if (hacker1name < hacker2name) {
+  console.log("The driver's name goes first.");
+}
+
+else if (hacker1name > hacker2name) {
+  console.log("Yo, the navigator goes first definitely.");
+}
+
+else {
+  console.log("What?! You both have the same name?");
+}
