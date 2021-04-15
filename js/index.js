@@ -139,7 +139,13 @@ let phraseToCheckInvNS = "";
 let phraseToCheckLength = phraseToCheck.length;
 
 for (i = 0; i < phraseToCheckLength; i++) {
-  if (phraseToCheck.charAt(i) == " ") {
+  if (
+    phraseToCheck.charAt(i) == " " ||
+    phraseToCheck.charAt(i) == "," ||
+    phraseToCheck.charAt(i) == "!" ||
+    phraseToCheck.charAt(i) == "?" ||
+    phraseToCheck.charAt(i) == "."
+  ) {
     continue;
   } else {
     phraseToCheckNS += phraseToCheck.charAt(i);
