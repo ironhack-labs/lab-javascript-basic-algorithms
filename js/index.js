@@ -39,12 +39,14 @@ for (index = hacker2.length - 1; index >= 0; index--) {
 }
 console.log(navCompound);
 
+// next step refacto using reverse() 
+
 // 3.3 Depending on the lexicographic order of the strings, print:
 // - The driver's name goes first.
 // - Yo, the navigator goes first definitely.
 // - What?! You both have the same name?
 
-// if same name ?=> cl( waw same name)
+// if same name ?=> clg( waw same name)
 // then for
 if (hacker1 === hacker2) {
   console.log("What?! You both have the same name?");
@@ -88,6 +90,7 @@ console.log(`il y a ${occurence} fois le mot "et" `);
 
 // BONUS 2
 
+
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 // select and/or withdraw anything other than letters
@@ -106,12 +109,13 @@ function subReady(phrase) {
 // check console.log(subReady(phraseToCheck)) => amanaplanacanalpanama >>> OK!
 
 // split in two part from the middle
+// next step refacto using split
 
 let halfPhrase = subReady(phraseToCheck).substring(0, subReady(phraseToCheck).length / 2);
 
 // check console.log(halfPhrase) => amanaplana >>> OK!
 
-// reverse halfPhrase using first excercie
+// reverse halfPhrase using first excercie   
 
 let halfPhraseReversed = "";
 for (index = halfPhrase.length - 1; index >= 0; index--) {
@@ -131,3 +135,14 @@ if (subReady(phraseToCheck).includes(halfPhraseReversed)) {
     console.log(`${phraseToCheck} is a NOT Palindrome.`);
 
 };
+
+// >>>>>>>>>>>>> HERE IS THE SHORTCUT <<<<<<<<<<<<<<<<<
+
+// function palindrome(str) {
+//     var re = /[\W_]/g;
+//     var lowRegStr = str.toLowerCase().replace(re, '');
+//     var reverseStr = lowRegStr.split('').reverse().join(''); 
+//     return reverseStr === lowRegStr;
+//   }
+//   palindrome("A man, a plan, a canal. Panama");
+
