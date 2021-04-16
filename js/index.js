@@ -64,15 +64,40 @@ else{
   }
 
 /* Bonus Time!
-    Bonus 1:
+    
+Bonus 1:
     Go to lorem ipsum generator and:
     
     Generate 3 paragraphs. Store the text in a variable type of string.
     Make your program count the number of words in the string.
     Make your program count the number of times the Latin word et appears.*/
 
-let loremipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit vel porta feugiat, eros dui viverra est, sit amet tempus purus justo et massa. Vestibulum dictum nisi eu vulputate aliquam. Phasellus suscipit eleifend lorem eu feugiat. Morbi tincidunt erat nec massa accumsan, sit amet semper nunc tempus. Morbi quam nisi, finibus quis viverra eget, fringilla malesuada dolor. Nulla at dui id ipsum hendrerit fermentum eu a tellus. Quisque et turpis sed ante vehicula sagittis eget sed quam. Praesent convallis nisl eget tincidunt egestas. Vestibulum aliquam dolor eu auctor pretium. Pellentesque tincidunt nulla sed congue facilisis. Pellentesque sem justo, imperdiet ut justo sed, suscipit dapibus arcu. Nam pellentesque nulla ac semper auctor. Nam blandit odio ac metus pharetra euismod. Fusce mattis lectus in est fringilla, eget scelerisque est suscipit. Maecenas in nisi sit amet risus dapibus posuere.
+let loremipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, elit vel porta feugiat, eros dui viverra est, sit amet tempus purus justo et massa. Vestibulum dictum nisi eu vulputate aliquam. Phasellus suscipit eleifend lorem eu feugiat. Morbi tincidunt erat nec massa accumsan, sit amet semper nunc tempus. Morbi quam nisi, finibus quis viverra eget, fringilla malesuada dolor. Nulla at dui id ipsum hendrerit fermentum eu a tellus. Quisque et turpis sed ante vehicula sagittis eget sed quam. Praesent convallis nisl eget tincidunt egestas. Vestibulum aliquam dolor eu auctor pretium. Pellentesque tincidunt nulla sed congue facilisis. Pellentesque sem justo, imperdiet ut justo sed, suscipit dapibus arcu. Nam pellentesque nulla ac semper auctor. Nam blandit odio ac metus pharetra euismod. Fusce mattis lectus in est fringilla, eget scelerisque est suscipit. Maecenas in nisi sit amet risus dapibus posuere.
 
 Nunc pharetra, mi ac consectetur tristique, nulla mauris consectetur est, ac consequat quam felis in risus. Aliquam malesuada odio sit amet volutpat lobortis. Proin pellentesque ex ac augue facilisis scelerisque. Morbi congue mattis tempor. In tincidunt tristique hendrerit. Quisque non enim eu purus tincidunt lacinia. Pellentesque ut eros eget metus pellentesque auctor id a ipsum. Cras ac diam blandit, tristique dolor id, ullamcorper magna. Quisque enim est, tristique et pellentesque sit amet, maximus eget nulla. Suspendisse non ante nisi.
 
-Vestibulum luctus, dui dapibus lacinia vulputate, lorem enim consequat erat, eget gravida dui dolor eget lectus. Integer nec egestas eros. Nam eu nisl nisi. Mauris lacus elit, dapibus ut aliquam eu, aliquet sit amet eros. Proin quis mauris pretium, egestas justo ut, imperdiet risus. Nulla suscipit feugiat mi sed volutpat. In luctus, neque sit amet fringilla varius, nulla tellus tristique dui, sed semper tortor turpis laoreet est. Sed pellentesque diam ac massa tempus, et imperdiet ligula iaculis. Proin nec diam quis orci mattis pharetra. Phasellus ultrices ullamcorper quam, id consectetur mi dapibus sed. Integer rutrum lobortis velit accumsan elementum. Suspendisse potenti."
+Vestibulum luctus, dui dapibus lacinia vulputate, lorem enim consequat erat, eget gravida dui dolor eget lectus. Integer nec egestas eros. Nam eu nisl nisi. Mauris lacus elit, dapibus ut aliquam eu, aliquet sit amet eros. Proin quis mauris pretium, egestas justo ut, imperdiet risus. Nulla suscipit feugiat mi sed volutpat. In luctus, neque sit amet fringilla varius, nulla tellus tristique dui, sed semper tortor turpis laoreet est. Sed pellentesque diam ac massa tempus, et imperdiet ligula iaculis. Proin nec diam quis orci mattis pharetra. Phasellus ultrices ullamcorper quam, id consectetur mi dapibus sed. Integer rutrum lobortis velit accumsan elementum. Suspendisse potenti.`
+
+
+
+
+/* Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. 
+Write a code that will check if the value we assigned to this variable is a Palindrome. 
+Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".*/
+
+function phraseToCheck(str) {
+  var str = str.replace(/[^a-zA-Z0-9]+/gi, '').toLowerCase();
+  return str == str.split('').reverse().join('');
+}
+
+console.log(phraseToCheck("No 'x' in Nixon"))
