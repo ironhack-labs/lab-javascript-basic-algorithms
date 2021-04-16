@@ -99,31 +99,6 @@ console.log(`There are ${etCount} "et" words`);
 
 */
 
-/*
-prompt phraseToCheck = "";
-
-switch(phraseToCheck) {
-  case "A man, a plan, a canal, Panama!":
-    
-}
-
-console.log(testArr.charAt(testArr.length - 1));
-
-
-
-let testArr = "socos";
-let testArrLength = testArr.length;
-let mitad = testArrLength / 2;
-
-for (i = 0; i < mitad; i++) {
-  if (testArr.charAt(i) == testArr.charAt(testArr.length - i)) {
-    continue;
-  }
-  console.log("maravillos");
-}
-
-*/
-
 // Bonus 2
 
 //let phraseToCheck = "taco cat";
