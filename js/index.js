@@ -64,3 +64,17 @@ for (let i = 0; i <= split2.length; i++) {
     count2 += 1;
 }
     console.log(count2)
+
+    // Bonus 2 
+
+    let phraseToCheck = prompt(`Write a phrase`).toLowerCase().replace(/[^a-zA-Z 0-9.]+ /g,'').replace(/ /g, "");
+let reversedPhraseToCheck = "";
+
+for(let i = phraseToCheck.length -1; i >= 0; i--){
+  reversedPhraseToCheck += phraseToCheck[i]
+}
+
+if(phraseToCheck == reversedPhraseToCheck){
+  console.log("yaaaay it's a palindrome")
+} else if (phraseToCheck != reversedPhraseToCheck)
+  console.log("OOOOH this is not a palindrome")
