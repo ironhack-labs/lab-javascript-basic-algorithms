@@ -87,27 +87,27 @@ if (hacker1 < hacker2) {
 
 // Bonus 1
 
-let paragraph1 =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt condimentum nunc."
-let paragraph2 =  "Ut sodales ante eu tortor gravida, sed viverra metus aliquam tincidunt molestie enim vitae."
-let paragraph3 =  "ut laoreet neque et fringilla quis. Donec at purus mi. Nunc fermentum lorem mi, sed posuere arcu lobortis."
+let paragraph1 =  "Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Integer tincidunt condimentum nunc."
+let paragraph2 =  "Ut sodales ante eu tortor gravida, sed viverra metus etaliquam tincidunt etmolestie enim vitae."
+let paragraph3 =  "ut laoreet neque et fringilla quis. Donec at purus mi. Nunc fermentum et lorem mi, sed posuere arcu lobortis."
 
 let sumaParagraph = paragraph1 + paragraph2 + paragraph3 
 console.log(sumaParagraph)
 
-let countWords = sumaParagraph.split(' ').length
+let arrayWords = sumaParagraph.split(' ')
+
+let countWords = arrayWords.length
 console.log(countWords)
 
-let word = "et"
-let countOccurences = 0
+let wordToCheck = "et"
+let countOccurences = 0;
 
-for (let posicion=0;posicion < sumaParagraph.length;posicion++) {
-  const substr = sumaParagraph.substr(posicion, 2);
- if (word === substr) {
-    countOccurences = countOccurences + 1
- }
+for (word of arrayWords) {
+    if (word === wordToCheck) {
+        countOccurences = countOccurences + 1
+    }
 }
-console.log(countOccurences)
-
+console.log(countOccurences);
 
 // Bonus 2
 
