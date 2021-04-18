@@ -1,3 +1,44 @@
+    // functions 
+
+function split(letters) {
+    let arrayLetters = [];
+
+    for (letter of letters) {
+        arrayLetters.push(letter)
+    }
+    return arrayLetters;
+
+}
+
+function reverseArray (arrayLetters) {
+    let reverseArray = [];
+
+    for (var i = arrayLetters.length -1; i >= 0; i--) {
+        let letter = arrayLetters[i]
+        reverseArray.push(letter);
+    }
+
+    return reverseArray;
+}
+
+function join(arrayLetters) {
+    let stringLetters = "";
+
+    for (letter of arrayLetters) {
+        stringLetters = stringLetters + letter
+    }
+    return stringLetters;
+}
+
+function reverseString(phrase) {
+
+    let splitted = split(phrase);
+    let reversed = reverseArray(splitted);
+    let result = join(reversed);
+    return result
+}
+
+
 
 // // iteration 1
 
@@ -7,13 +48,15 @@ let hacker2 = "Shirley"
 console.log (`The navigator's name is ${hacker2}`)
 
 // // iteration 2
+const hacker1Length = hacker1.length 
+const hacker2Length = hacker2.length 
 
-if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters`)
-} else if (hacker1.length < hacker2.length) {
-    console.log (`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
+if (hacker1Length > hacker2Length) {
+    console.log(`The driver has the longest name, it has ${hacker1Length} characters`)
+} else if (hacker1Length < hacker2Length) {
+    console.log (`It seems that the navigator has the longest name, it has ${hacker2Length} characters`)
 } else {
-    console.log (`Wow, you both have equally long names, ${hacker2.length}  characters!`)
+    console.log (`Wow, you both have equally long names, ${hacker2Length}  characters!`)
 }
 
 // iteration 3.1
@@ -23,7 +66,7 @@ console.log(name)
 
 // iteration 3.2
 
-let nameReverse = hacker1.split('').reverse().join('')
+let nameReverse = reverseString(hacker1)
 console.log(nameReverse)
 
 // iteration 3.3
@@ -68,46 +111,21 @@ console.log(countOccurences)
 
 // Bonus 2
 
-// solucion 1
-
-// let phraseToCheck = "put it up"
-
-// // manipulamos la cadena de texto
-// phraseToCheck = phraseToCheck.replaceAll(" ", "") // Borramos los espacios
-// phraseToCheck = phraseToCheck.toUpperCase() // convertimos en mayusculas
-// console.log(phraseToCheck)
-// let resultado = ''
-
-// for (let letter of phraseToCheck) {
-//   resultado = letter + resultado
-// }
-
-// if(phraseToCheck === resultado) {
-//   console.log("si es un palindromo");
-// } else {
-//   console.log("no es un palindromo");
-// }
-
-
-// solucion 2
-
-let phraseToCheck = "taco cat"
-
-phraseToCheck = phraseToCheck.replaceAll(" ", "") // Borramos los espacios
-phraseToCheck = phraseToCheck.toUpperCase() // convertimos en mayusculas
-console.log(phraseToCheck)
-
-let array = phraseToCheck.split('');
-console.log(array)
-let reverse = array.reverse('');
-console.log(array)
-let reverseWord = reverse.join('');
-console.log(reverseWord)
-
-if(phraseToCheck.toUpperCase() === reverseWord.toUpperCase()) {
-    console.log("si es un palindromo")
-} else {
-    console.log("no es un palindromo" )
+function isPalindrome(phrase)  {
+    phrase = phrase.toUpperCase().replaceAll(" ","")
+    const reversed = reverseString(phrase);
+  
+    if (phrase === reversed) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
+const phrase = prompt('Escribe la frase');
 
+if (isPalindrome(phrase)) {
+    alert(`"${phrase}" es un palindromo`);
+} else {
+    alert(`"${phrase}" no es un palindromo`);
+}
