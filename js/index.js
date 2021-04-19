@@ -70,3 +70,5 @@ function phraseToCheck (str) {
     }
   }
   phraseToCheck ("Was it a car or a cat I saw?")
+
+  
