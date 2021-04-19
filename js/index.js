@@ -30,15 +30,15 @@ console.log(newStr.reverse().join(''))
 //3.3
 
 if (hacker1[0] < hacker2[0]) {
-    console.log(`The driver's name goes first.`)
-  }
-  else if (hacker1[0] > hacker2[0])
-  {
-    console.log(`Yo, the navigator goes first definitely.`)
-  }
-  else {
-    console.log(`What?! You both have the same name?`)
-  }
+  console.log(`The driver's name goes first.`)
+}
+else if (hacker1[0] > hacker2[0])
+{
+  console.log(`Yo, the navigator goes first definitely.`)
+}
+else {
+  console.log(`What?! You both have the same name?`)
+}
 
 //Bonus 1
 let text1 = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
@@ -49,26 +49,25 @@ let text3 = "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu
 
 let textElements = [];
 textElements = text2.split (" ");
-  for ( i=0; i>textElements.length;i++) {
-    textElements [i];
-  }
+for ( i=0; i>textElements.length;i++) {
+  textElements [i];
+}
 
 
 //Bonus 2
 
 function phraseToCheck (str) {
-    var reg = /[\W\s]/g;
-    //reg = This is a regular expression which means find the following pattern \W (any non-alphanumerical character) and \s (any space) in all the string (G).
-    var strReg = str.toLowerCase().replace(reg,"");
-    //replace (reg,"") tells us that all the characters that str cointains must be replaced by an empty space.
-    console.log (strReg);
-    var reversed = strReg.split("").reverse().join("");
-    if (strReg == reversed) {
-      console.log ("This word is a palindrome");
-    } else {
-      console.log ("This word is not a palindrome");
-    }
+  var reg = /[\W\s]/g;
+  //reg = This is a regular expression which means find the following pattern \W (any non-alphanumerical character) and \s (any space) in all the string (G).
+  var strReg = str.toLowerCase().replace(reg,"");
+  //replace (reg,"") tells us that all the characters that str cointains must be replaced by an empty space.
+  console.log (strReg);
+  var reversed = strReg.split("").reverse().join("");
+  if (strReg == reversed) {
+    console.log ("This word is a palindrome");
+  } else {
+    console.log ("This word is not a palindrome");
   }
-  phraseToCheck ("Was it a car or a cat I saw?")
+}
+phraseToCheck ("Was it a car or a cat I saw?")
 
-  
