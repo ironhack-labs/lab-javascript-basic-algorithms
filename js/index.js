@@ -61,3 +61,40 @@ else if (hacker1name > hacker2name) {
 else {
   console.log("What?! You both have the same name?");
 }
+
+
+/* BONUS 2 */
+
+function phraseToCheck(string) {
+  
+  let re = /[\W_]/g;
+  
+  let lowString = string.toLowerCase().replace(re, '');
+  
+  let reverseString = lowString.split('').reverse().join('');
+  
+ 
+  let respuesta = '';
+  
+  if (lowString === reverseString)
+  {
+    
+   
+      respuesta = "It's a palindrome!";
+  }
+    
+   if (lowString !== reverseString)
+   {
+             
+        respuesta = "This is not a Palindrome. Try again!";
+
+   }
+  
+ return respuesta;
+}
+
+const string = prompt("Write your prompt here");
+
+const check = phraseToCheck(string);
+
+console.log(check);
