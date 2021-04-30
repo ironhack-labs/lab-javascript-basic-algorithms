@@ -41,17 +41,7 @@ This lab, along with some of the labs you will be working on during the bootcamp
 
 Jest is an automated test-runner for JavaScript.
 
-Before start coding, we will explain the project structure we have provided you:
-
-```
-lab-js-functions-and-arrays
-  ├── README.md
-  ├── SpecRunner.html
-  ├── src
-  │   └── functions-and-arrays.js
-  └── tests
-      └── functions-and-arrays.spec.js
-```
+Before start coding, we will explain the project structure we have provided you.
 
 We will be working with the `src/functions-and-arrays.js` file. To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to generate the `lab-solution.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
