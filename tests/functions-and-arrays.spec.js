@@ -1,4 +1,15 @@
-const shuffle = currentArray => {
+const {
+  maxOfTwoNumbers,
+  findLongestWord,
+  sumNumbers,
+  averageNumbers,
+  uniquifyArray,
+  doesWordExist,
+  howManyTimes,
+  greatestProduct
+} = require('./../src/functions-and-arrays');
+
+const shuffle = (currentArray) => {
   const array = [...currentArray];
   let counter = array.length;
 
@@ -13,7 +24,7 @@ const shuffle = currentArray => {
 };
 
 describe('Find the maximum', () => {
-  it('should create a function named maxOfTwoNumbers', () => {
+  it('should declare a function named maxOfTwoNumbers', () => {
     expect(typeof maxOfTwoNumbers).toBe('function');
   });
 
@@ -33,7 +44,7 @@ describe('Find the maximum', () => {
 });
 
 describe('Find the longest word', () => {
-  it('should create a function named findLongestWord', () => {
+  it('should declare a function named findLongestWord', () => {
     expect(typeof findLongestWord).toBe('function');
   });
 
@@ -60,7 +71,7 @@ describe('Find the longest word', () => {
 });
 
 describe('Calculate the sum of array of numbers', () => {
-  it('should create a function named sumNumbers', () => {
+  it('should declare a function named sumNumbers', () => {
     expect(typeof sumNumbers).toBe('function');
   });
 
@@ -82,7 +93,7 @@ describe('Calculate the sum of array of numbers', () => {
 });
 
 describe('Bonus: Calculate the sum', () => {
-  it('should create a function named sum', () => {
+  it('should declare a function named sum', () => {
     expect(typeof sum).toBe('function');
   });
 
@@ -123,7 +134,7 @@ describe('Bonus: Calculate the sum', () => {
 });
 
 describe('Calculate the average of an array of numbers', () => {
-  it('should create a function named averageNumbers', () => {
+  it('should declare a function named averageNumbers', () => {
     expect(typeof averageNumbers).toBe('function');
   });
 
@@ -145,7 +156,7 @@ describe('Calculate the average of an array of numbers', () => {
 });
 
 describe('Calculate the average of an array of strings', () => {
-  it('should create a function named averageWordLength', () => {
+  it('should declare a function named averageWordLength', () => {
     expect(typeof averageWordLength).toBe('function');
   });
 
@@ -165,7 +176,7 @@ describe('Calculate the average of an array of strings', () => {
 });
 
 describe('Bonus: Calculate the average of a mixed elements array', () => {
-  it('should create a function named avg', () => {
+  it('should declare a function named avg', () => {
     expect(typeof avg).toBe('function');
   });
 
@@ -182,7 +193,7 @@ describe('Bonus: Calculate the average of a mixed elements array', () => {
 });
 
 describe('Unique array', () => {
-  it('should create a function named uniquifyArray', () => {
+  it('should declare a function named uniquifyArray', () => {
     expect(typeof uniquifyArray).toBe('function');
   });
 
@@ -206,7 +217,7 @@ describe('Unique array', () => {
 });
 
 describe('Find elements', () => {
-  it('should create a function named doesWordExist', () => {
+  it('should declare a function named doesWordExist', () => {
     expect(typeof doesWordExist).toBe('function');
   });
 
@@ -228,7 +239,7 @@ describe('Find elements', () => {
 });
 
 describe('Count repetition', () => {
-  it('should create a function named howManyTimes', () => {
+  it('should declare a function named howManyTimes', () => {
     expect(typeof howManyTimes).toBe('function');
   });
 
@@ -267,7 +278,7 @@ describe('Count repetition', () => {
 });
 
 describe('Bonus Quest - greatestProduct', () => {
-  it('should create a function named greatestProduct', () => {
+  it('should declare a function named greatestProduct', () => {
     expect(typeof greatestProduct).toBe('function');
   });
 

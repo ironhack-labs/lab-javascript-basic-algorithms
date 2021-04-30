@@ -15,10 +15,10 @@ Manipulating arrays in code is a very common operation. Whether you are creating
 
 Upon completion, run the following commands:
 
-```
-$ git add .
-$ git commit -m "done"
-$ git push origin master
+```bash
+git add .
+git commit -m "done"
+git push origin master
 ```
 
 Create Pull Request so your TAs can check up your work.
@@ -31,47 +31,25 @@ Automated software testing is the process of programmatically executing an appli
 
 Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
 
-Having a strong _test suite_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
+Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
 
 ### Testing labs
 
 This lab, along with some of the labs you will be working on during the bootcamp, has a complete test suite that is meant to ensure that your work fulfills the requirements we established.
 
-### Testing with Jasmine
+### Testing with Jest
 
-<!-- ![Jasmine Logo](https://i.imgur.com/A1pop7h.png) -->
+Jest is an automated test-runner for JavaScript.
 
-Jasmine is an automated testing framework for JavaScript. It is designed to be used in Behavior-driven Development (**BDD**) programming, which focuses more on the business value than on the technical details.
+Before start coding, we will explain the project structure we have provided you.
 
-We have already included Jasmine in the project you just forked, so let's see how to use it to implement our code.
+We will be working with the `src/functions-and-arrays.js` file. To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to generate the `lab-solution.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
-### Usage
-
-Before start coding, we will explain the project structure we have provided you:
-
-```
-lab-js-functions-and-arrays
-  ├── README.md
-  ├── SpecRunner.html
-  ├── jasmine
-  │   └── ...
-  ├── src
-  │   └── functions-and-arrays.js
-  └── tests
-      └── functions-and-arrays.spec.js
-```
-
-We will be working with the `src/functions-and-arrays.js`. In the `jasmine` folder you can find all of the files needed to use Jasmine. All these files are already linked with the `SpecRunner.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
-
-#### Run tests
-
-Running automated tests with Jasmine is super easy. All you need to do is open the `SpecRunner.html` file in your browser. You will find something similar this:
-
-![image](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)
+Open the `lab-solution.html` file using the live server VSCode extension.
 
 #### Pass the tests
 
-You should write your code on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's _passing_, before moving on.
+You should work on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's _passing_, before moving on.
 
 Do not rush. You should take your time to carefully read every iteration, and you should address the _breaking_ tests as you progress through the exercise.
 
