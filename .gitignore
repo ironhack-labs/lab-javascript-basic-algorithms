@@ -1,4 +1,7 @@
-.DS_Store
 node_modules
+.DS_Store
+.vscode
 package-lock.json
-junit.xml
+yarn.lock
+*.log
+lab-solution.html
