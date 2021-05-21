@@ -4,11 +4,11 @@ console.log("I'm ready!");
 
 let hacker1 = "Thais"
 
-console.log(`The driver's name is ${hacker1}`)
+console.log(`The driver's name is ${hacker1}.`)
 
 let hacker2 = "Pedro"
 
-console.log(`The navigator's name is ${hacker2}`)
+console.log(`The navigator's name is ${hacker2}.`)
 
 // Iteration 2: Conditionals
 
@@ -60,14 +60,16 @@ if (hacker1[0] < hacker2[0]) {
 
 let paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tortor in velit luctus faucibus eu aliquam est. Nunc sodales id dui vehicula lacinia. In vel consectetur nibh. Integer id sapien blandit arcu dignissim eleifend eu blandit elit. Nullam a est et justo vestibulum interdum vel eu arcu. Mauris et pulvinar justo. Vestibulum et est id elit porttitor dapibus. Nunc at pellentesque nisi. \n Donec maximus scelerisque mi, id convallis urna vulputate id. Aenean dignissim purus justo, nec placerat purus mollis non. Nam egestas faucibus lorem eget euismod. Vestibulum at mollis lectus. Maecenas congue luctus augue, iaculis convallis lectus egestas eu. Aenean vitae neque nec justo vulputate sagittis. Nullam venenatis vel justo id auctor. Sed in tortor nunc. Proin mattis eros ac ligula tempor ornare. Nunc elementum ornare ultrices. \n et et et "
 
+// ? arrumar paragrafos, pq o terceiro nao ta indo
+
 function WordCount(str) { 
     return str.split(" ").length;
   }
-  console.log(WordCount(paragraph));
+  console.log("The paragraph has", WordCount(paragraph), "words."); // Sempre colocar vírgula , entre diferentes coisas que vão ser retornadas no console.log ("string", variable, "string") exemplo.
 
 
-  let count = (paragraph.match(/et/g) || []).length;
-  console.log(count);
+  let count = (paragraph.match(/et/g) || []).length; // ? deixar em funcoes que aprendemos ate agora
+  console.log("The paragraph has", count, "'et' words");
 
   // Bonus 2
 
@@ -79,8 +81,8 @@ for (let i = phraseToCheck.length - 1; i>= 0; i -= 1) { // reparar que o hacker.
     palindromeCheck += phraseToCheck[i]
 }
 
-if (phraseToCheck === palindromeCheck) { // esta faltando tirar os espacos do meio da string, senao todos estao dando not palindrome
+if (phraseToCheck === palindromeCheck) { // ? esta faltando tirar os espacos do meio da string, senao todos estao dando not palindrome
     console.log('Palindrome phrase')
 }   else {
-    console.log('Not palindrome')
+    console.log('Phrase chosen is not palindrome.')
 }
