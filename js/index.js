@@ -19,9 +19,9 @@ if(hacker1.length > hacker2.length){
 
 let uppercase= '';
 for(let i=0;i<hacker1.length;i++) {
-  uppercase+= `${hacker1[i].toUpperCase()} `
+  uppercase+= `${hacker1[i].toUpperCase()} ` 
 }
-console.log(uppercase)
+console.log(uppercase);
 
 let contrario='';
 for(let i= hacker2.length -1; i>= 0; i-= 1 ) {
