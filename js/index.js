@@ -80,9 +80,9 @@ let hacker2Upper= hacker2.toUpperCase();
                     }else if (hacker2.length > hacker1.length && hacker2.slice(0,hacker1.length) ==hacker1.slice(0,hacker1.length)){
                         console.log("The driver's name goes first.")
                     }else{
-                     
+                                                    
                             stopExternalFor:for (let a = 0 ; a<hacker1.length ; a+=1){
-                                                }
+                                                
                                                 for(let i = 0 ; i<alfabetoMaiusculo.length; i+=1){
                                                     if (hacker1Upper[a]==hacker2Upper[a]){
                                                 
@@ -98,7 +98,7 @@ let hacker2Upper= hacker2.toUpperCase();
                                                     }       
                                                 }
                                             }
-                                        
+                                        }
 
                         
                     
