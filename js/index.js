@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-let hacker1 = 'RODRIGOO'
+let hacker1 = 'RODRIGO'
 console.log (`The driver's name is ${hacker1}`)
 let hacker2 = 'ALUIZIO'
 console.log (`The navigator's name is ${hacker2}`)
@@ -45,3 +45,17 @@ if(hacker1.length > hacker2.length) {
 } else if(hacker1.length === hacker2.length) {
   console.log(`What?! You both have the same name?`)
 }
+
+// BONUS 1
+
+let loren = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer et a galley of type and scrambled it to make a type specimen et. It has survived not only five centuries, but also the leap into electronic typesetting, remaining et unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with"
+
+console.log(loren.split(' ').length);
+
+let count = 0 //parseInt("0")
+
+for (let i = 0; i < loren.length; i +=1) {
+  if (loren[i] === 'e' && loren[i+1] === 't') {
+    count += 1
+  } 
+} console.log(count)
