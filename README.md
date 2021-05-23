@@ -9,7 +9,8 @@ Manipulating arrays in code is a very common operation. Whether you are creating
 ## Requirements
 
 - Fork this repo
-- Clone this repo
+- Clone it to your machine
+- Visit the "actions" tab in your fork, and enable workflows.
 
 ## Submission
 
@@ -17,7 +18,7 @@ Upon completion, run the following commands:
 
 ```bash
 git add .
-git commit -m "done"
+git commit -m "Solved lab"
 git push origin master
 ```
 
