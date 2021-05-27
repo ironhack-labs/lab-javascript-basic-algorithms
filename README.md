@@ -54,9 +54,9 @@ Jest is an automated test-runner for JavaScript.
 
 Before start coding, we will explain the project structure we have provided you.
 
-We will be working with the `src/functions-and-arrays.js` file. To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to generate the `lab-solution.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
+We will be working with the `src/functions-and-arrays.js` file. To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
-Open the `lab-solution.html` file using the live server VSCode extension.
+Open the `lab-solution.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
 
 <br>
 
@@ -78,13 +78,13 @@ Note that **you don't need to execute the functions yourself**, the tests are re
 
 ### Iteration #1: Find the maximum
 
-Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
+Implement the function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
 
 <br>
 
 ### Iteration #2: Find the longest word
 
-Declare a function named `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
+Implement the function `findLongestWord` that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
 
 You can use the following array to test your solution:
 
@@ -98,7 +98,7 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
 
-Declare a function named `sumNumbers` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we will learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
+Implement the function named `sumNumbers` that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course we will learn how to do this by using the `reduce` array method, which will make your work significantly easier. For now, let's practice _"declarative"_ way adding values, using loops.
 
 You can use the following array to test your solution:
 
@@ -116,7 +116,7 @@ In the iteration 3, you created a function that returns the sum of an array of n
 
 Here we are applying a concept we call **polymorphism**, that is, dealing with a functions' input independently of the types they are passed as.
 
-Let's create a new function `sum()` that calculates the sum for array filled with (_almost_) any type of data. Note that strings should have their length added to the total, and boolean values should be coerced into their corresponding numeric values. Check the tests for more details.
+Let's implement the function `sum()` that calculates the sum for array filled with (_almost_) any type of data. Note that strings should have their length added to the total, and boolean values should be coerced into their corresponding numeric values. Check the tests for more details.
 
 You can use the following array to test your solution:
 
@@ -141,7 +141,7 @@ Calculating an average is an extremely common task. Let's practice it a bit.
 
 #### Level 1: Array of numbers
 
-Declare a function named `averageNumbers` that expects an array of numbers and returns the average of the numbers:
+Implement the function `averageNumbers` that expects an array of numbers and returns the average of the numbers:
 
 You can use the following array to test your solution:
 
@@ -153,7 +153,7 @@ const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 
 #### Level 2: Array of strings
 
-Declare a function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
+Implement the function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
 
 You can use the following array to test your solution:
 
