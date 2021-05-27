@@ -1,0 +1,36 @@
+{
+  "name": "lab-javascript-functions-and-arrays",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-html-reporter": "^3.3.0",
+    "jest-junit": "^12.0.0"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Lab Solution",
+          "outputPath": "lab-solution.html"
+        }
+      ]
+    ]
+  },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
+}
