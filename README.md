@@ -2,6 +2,8 @@
 
 # LAB | JS Functions & Arrays
 
+<br>
+
 ## Introduction
 
 Manipulating arrays in code is a very common operation. Whether you are creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you are probably going to be modifying or manipulating an array in some way.
@@ -24,7 +26,11 @@ git push origin master
 
 Create Pull Request so your TAs can check up your work.
 
+<br>
+
 ## Automated Testing Introduction
+
+<br>
 
 ### What is automated testing?
 
@@ -34,9 +40,13 @@ Testing should be viewed as a continuous process, not a discrete operation or si
 
 Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
 
+<br>
+
 ### Testing labs
 
 This lab, along with some of the labs you will be working on during the bootcamp, has a complete test suite that is meant to ensure that your work fulfills the requirements we established.
+
+<br>
 
 ### Testing with Jest
 
@@ -48,6 +58,8 @@ We will be working with the `src/functions-and-arrays.js` file. To run your test
 
 Open the `lab-solution.html` file using the live server VSCode extension.
 
+<br>
+
 #### Pass the tests
 
 You should work on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's _passing_, before moving on.
@@ -58,11 +70,17 @@ When coding with tests, it is super important that you carefully read and unders
 
 Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
 
+<br>
+
 ## Instructions
+
+<br>
 
 ### Iteration #1: Find the maximum
 
 Define a function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
+
+<br>
 
 ### Iteration #2: Find the longest word
 
@@ -73,6 +91,8 @@ You can use the following array to test your solution:
 ```javascript
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 ```
+
+<br>
 
 ### Iteration #3: Calculate the sum
 
@@ -85,6 +105,8 @@ You can use the following array to test your solution:
 ```javascript
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 ```
+
+<br>
 
 #### Bonus - Iteration #3.1: A generic `sum()` function
 
@@ -104,6 +126,8 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 // should return: 57
 ```
 
+<br>
+
 ### Iteration #4: Calculate the average
 
 Calculating an average is an extremely common task. Let's practice it a bit.
@@ -112,6 +136,8 @@ Calculating an average is an extremely common task. Let's practice it a bit.
 
 1. Find the sum as we did in the first exercise (or how about reusing that the _sumNumbers()_?)
 2. Take that sum and divide it by the number of elements in the list.
+
+<br>
 
 #### Level 1: Array of numbers
 
@@ -123,6 +149,8 @@ You can use the following array to test your solution:
 const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 ```
 
+<br>
+
 #### Level 2: Array of strings
 
 Declare a function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
@@ -133,6 +161,8 @@ You can use the following array to test your solution:
 const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 ```
 
+<br>
+
 #### Bonus - Iteration #4.1: A generic `avg()` function
 
 Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We are following a similar logic to the one applied on the bonus iteration 4.1. :wink:
@@ -142,6 +172,8 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 
 // should return: 5.7
 ```
+
+<br>
 
 ### Iteration #5: Unique arrays
 
@@ -167,6 +199,8 @@ const words = [
 ];
 ```
 
+<br>
+
 ### Iteration #6: Find elements
 
 Let's create a simple array search.
@@ -178,6 +212,8 @@ You can use the following array to test your solution:
 ```javascript
 const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 ```
+
+<br>
 
 ### Iteration #7: Count repetition
 
@@ -200,6 +236,8 @@ const words = [
   'matter'
 ];
 ```
+
+<br>
 
 ### Bonus - Iteration #8: Product of adjacent numbers
 
@@ -244,8 +282,12 @@ const matrix = [
 ];
 ```
 
+<br>
+
 ### Bonus - Iteration #8.1: Product of diagonals
 
 Following the logic you've used in iteration #8, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
+
+<br>
 
 **Happy coding!** :heart:
