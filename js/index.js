@@ -1,80 +1,95 @@
 //---LAB 01 - JS Basic Algorithms -- 21.05.2021
-//---Writen by Pedro Pasquali e Thais Silva 
+//---Writen by Pedro Pasquali e Thais Silva
+//---Code Diary--//
+/*
+30.05.21 - Arrumei 3.1 + 3.2 + 3.3 e fiz o Bonus.
 
-console.log(`hi there, testing, testing...1,2,3`) 
+*/
 
 // Iteration 1: Names and Input
+let hacker1 = `Pedro`;//--Driver
+let hacker2 = `Thais`;//--Navigator
 
-let hacker1 = `Pedro`//--Driver
-let hacker2 = `Thais`//--Navigator
+//--ANSWER HERE--//console.log(`The driver´s name is ${hacker1}`);
+//--ANSWER HERE--//console.log(`The navigator´s name is ${hacker2}`);
 
-console.log(`The driver´s name is ${hacker1}`)
-console.log(`The navigator´s name is ${hacker2}`)
+
 
 // Iteration 2: Conditionals
 
+//--ANSWER HERE--//
+/*
 if (hacker1.length>hacker2.length){
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker1.length<hacker2.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 } else {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
-}
-
-// Iteration 3: Loops 
-
-let index=0;
-let iterationN=0; //-not used
-let spacesNeeded=hacker1.length-1; //--- 4 ----not used
-let toAdd=(hacker1[index]+` `); //+hacker1[index+=1]+` `)
-let toAdd2=(hacker2.charAt(hacker2.length-1-index));
-let hacker1new=``;
-let hacker2new=``;
-
-/* //---3.1--- UNCOMMENT TO TEST
-
-while (index<hacker1.length){
-    hacker1new=toAdd;
-    index+=1;
-    toAdd+=(hacker1[index]+` `);
-} 
-console.log(hacker1new.toUpperCase());
+};
 */
 
 
-//---3.2--- UNCOMMENT TO TEST
-
-while (index<hacker2.length){
-    hacker2new+=toAdd2;
-    index+=1;
-//    toAdd2+=(hacker2.charAt(index-`hacker2.length`))
+// Iteration 3: Loops 
+//---3.1--- && //---3.2---
+function iteration31(anyhacker) {
+    let newhacker = ``
+    for (let i = 0; i < anyhacker.length; i += 1) {
+    newhacker += (` ${anyhacker[anyhacker.length-1-i]}`);
+    }
+    newhacker = newhacker.substring(1, newhacker.length)
+    return newhacker.toUpperCase()
 }
-console.log(hacker2new)
+//--ANSWER HERE--//console.log(iteration31(hacker1))
+
+
+//---3.3--- (nao terminado. Achei difícil. Fiquei com a sensacao de que nao sei por onde começar. Comeco um pensamento e mudo pra outro e assim por diante...)
+let alphabet = [`a`,`b`,`c`,`d`,`e`,`f`,`g`,`h`,`i`,`j`,`k`,`l`,`m`,`n`,`o`,`p`,`q`,`r`,`s`,`t`,`u`,`v`,`w`,`x`,`y`,`z`];
+/*
+function lexicoOrder(word1, word2) {
+  let alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z];
+  if (word1 === word2){
+    return `What?! You both have the same name? Incredible! What are the odds?!`;
+  } else if (word1.indexOf(alphabet[0]) === )
+}
+
+
+let word1LexOrder = ``
+for (let index = 0; index < word1.length; index += 1);
+
+  alphabet.findIndex(function(`p`){
+    console.log(`p`);
+  });
+
+  alphabet.forEach(function(checkIndexPosition)){
+                   let indexPosition = word
+                   }
+  word1LexOrder = 
+*/
 
 
 
-//------ BONUS-----NOT FINISHED
 
-let paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non tortor in velit luctus faucibus eu aliquam est. Nunc sodales id dui vehicula lacinia. In vel consectetur nibh. Integer id sapien blandit arcu dignissim eleifend eu blandit elit. Nullam a est et justo vestibulum interdum vel eu arcu. Mauris et pulvinar justo. Vestibulum et est id elit porttitor dapibus. Nunc at pellentesque nisi. \n Donec maximus scelerisque mi, id convallis urna vulputate id. Aenean dignissim purus justo, nec placerat purus mollis non. Nam egestas faucibus lorem eget euismod. Vestibulum at mollis lectus. Maecenas congue luctus augue, iaculis convallis lectus egestas eu. Aenean vitae neque nec justo vulputate sagittis. Nullam venenatis vel justo id auctor. Sed in tortor nunc. Proin mattis eros ac ligula tempor ornare. Nunc elementum ornare ultrices. \n et et et "
+//------ BONUS-1----Check no.of words
+let paragraphs = (`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at ante elementum, vulputate erat at, suscipit massa. Integer vel arcu vel urna volutpat ultrices vitae hendrerit ex. Nunc hendrerit dictum dui quis bibendum. Phasellus eget diam turpis. Vivamus vitae urna nec lectus tempor porta. Mauris imperdiet ullamcorper est. Fusce faucibus a velit non auctor. Fusce posuere tempus sollicitudin. Quisque posuere laoreet aliquam. Aliquam vel mattis nisi. Vivamus iaculis ante et urna placerat, nec tempus augue dictum. Fusce sed ullamcorper ex. Ut sed rutrum tellus. Suspendisse odio odio, suscipit eget libero dapibus, lacinia venenatis arcu.`+
 
-// ? arrumar paragrafos, pq o terceiro nao ta indo
+`Morbi at ipsum at orci semper pharetra. Sed gravida consequat velit. Aenean lorem mi, ullamcorper eget neque sit amet, rutrum mattis turpis. Aliquam pretium congue lobortis. Quisque laoreet nibh id orci posuere vestibulum. Aenean luctus, lorem eu ornare imperdiet, nisi nisl laoreet justo, a venenatis mauris odio et mi. Nulla ac ipsum ex. Sed justo urna, finibus quis mi sed, volutpat lobortis felis. Pellentesque euismod fermentum arcu, at malesuada eros varius non. In eget venenatis lacus, in cursus dolor. Aenean sit amet odio felis. Quisque dignissim mattis purus, non imperdiet est. Sed enim metus, fermentum sit amet tempor id, condimentum nec dui. Vivamus a bibendum diam, a placerat sem. Aliquam ornare purus eu metus ornare, quis dapibus felis mollis.`+
 
-function WordCount(str) { 
-    return str.split(" ").length;
+`Integer vel purus est. Proin pharetra odio nec varius porta. Curabitur sollicitudin dui ac est commodo, fermentum fermentum ex iaculis. Vivamus dui ligula, pharetra vitae tellus vel, lacinia eleifend eros. Ut euismod odio eget volutpat ornare. Aliquam vestibulum eros sapien, sed gravida arcu condimentum a. Sed accumsan sem ac sapien lobortis posuere. Nunc feugiat massa neque, quis ullamcorper sem efficitur eu. Maecenas at dui placerat, mollis diam at, tincidunt nulla.`)
+
+//--ANSWER HERE--//console.log(`We have ${paragraphs.split(` `).length} WORDS in the text`)
+//--ANSWER HERE--//console.log(`We have "ET" ${paragraphs.split(`et`).length} times in the text`)
+
+
+//------ BONUS-2----Check if palindrome
+
+/*
+str = `Amor, Roma`
+console.log(str.split(`,`))
+
+
+for( let index = 0; index < str.length; index += 1){
+  if (str[index] === str[str.length-1]) {
+    true
   }
-  console.log("The paragraph has", WordCount(paragraph), "words."); // Sempre colocar vírgula , entre diferentes coisas que vão ser retornadas no console.log ("string", variable, "string") exemplo.
-
-
-  let count = (paragraph.match(/et/g) || []).length; // ? deixar em funcoes que aprendemos ate agora
-  console.log("The paragraph has", count, "'et' words");
-
-  // Bonus 2
-
-	@@ -79,8 +81,8 @@ for (let i = phraseToCheck.length - 1; i>= 0; i -= 1) { // reparar que o hacker.
-    palindromeCheck += phraseToCheck[i]
 }
-
-if (phraseToCheck === palindromeCheck) { // ? esta faltando tirar os espacos do meio da string, senao todos estao dando not palindrome
-    console.log('Palindrome phrase')
-}   else {
-    console.log('Phrase chosen is not palindrome.')
+*/
