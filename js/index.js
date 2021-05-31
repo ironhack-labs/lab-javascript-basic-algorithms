@@ -23,8 +23,8 @@ for (let i = 0; i < hackerLen1; i++){
     nameHacker1 = nameHacker1 + hacker1[i].toUpperCase() + " "
 }
 
-for (let i = 0; i < hackerLen2; i++){
-    nameHacker2 = nameHacker2 + hacker2[i].toUpperCase() + " "
+for (let i = hackerLen2 -1; i >= 0; i--){
+    nameHacker2 = nameHacker2 + hacker2[i]
 }
 console.log(nameHacker1)
 console.log(nameHacker2)
