@@ -37,18 +37,24 @@ if (hacker1 < hacker2){ //
     console.log("What?! You both have the same name?");
 }
 
-// Bonus
-const lor = "Lorem ipsum dolor sit et amet asasas et"
+//Bonus 1
+const lor = "Lorem ipsum dolor sit et amet asasas et" //Its not all the paragraphs cause im testing
 let contador = 0;
 let contLor = 0;
 for (let i= 0; i<lor.length;i++){
     if (lor[i]=== " "){
-        contador++
-    }
-    if (lor.includes("et")){
-        contLor++
+        contador++;
     }
 }
 
-console.log(contador +1)
-console.log(contLor)
+console.log(contador +1);
+
+let lorSplit = lor.split(" ");
+for (let i = 0; i<lorSplit.length; i++){
+    if (lorSplit[i] === "et"){
+        contLor++;
+    }
+}
+console.log(contLor);
+
+//Bonus 2
