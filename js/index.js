@@ -38,4 +38,17 @@ if (hacker1 < hacker2){ //
 }
 
 // Bonus
-const lorem = ""
+const lor = "Lorem ipsum dolor sit et amet asasas et"
+let contador = 0;
+let contLor = 0;
+for (let i= 0; i<lor.length;i++){
+    if (lor[i]=== " "){
+        contador++
+    }
+    if (lor.includes("et")){
+        contLor++
+    }
+}
+
+console.log(contador +1)
+console.log(contLor)
