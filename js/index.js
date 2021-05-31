@@ -47,8 +47,26 @@ if (hacker1 > hacker2){
     console.log("What?! You both have the same name?");
 }
 
+//BONUS
+//Generate 3 paragraphs. Store the text in a variable type of string.
+//Make your program count the number of words in the string.
+//Make your program count the number of times the Latin word et appears.
 
+const text = "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce eu metus eu lorem pharetra finibus. Aenean mauris massa, gravida eu rhoncus eu, scelerisque eget nulla. Sed viverra facilisis metus, a elementum erat laoreet id. Vestibulum vestibulum tortor tortor, sit amet egestas augue pretium consectetur. In eu accumsan turpis. Sed dictum tortor neque, vitae vehicula nibh consectetur eget. Mauris vestibulum suscipit ligula, eget auctor nisl ullamcorper eget. Etiam tincidunt tincidunt dui, ac viverra nunc tristique quis.";
 
+let numWords = 0; //counter
 
+// Loop through the text and count spaces in it 
+for(let i = 0; i < text.length; i++){
+    let currentCharacter = text[i];
+
+    // Check if the character is a space
+    if (currentCharacter === " "){
+        numWords += 1;
+    }
+}
+
+// Add 1 to make the count equal to the number of words 
+console.log(numWords +1);
 
 
