@@ -58,19 +58,35 @@ for (let i = 0; i<lorSplit.length; i++){
 console.log(contLor);
 
 //Bonus 2
-
-let phrase = "Roma amor";
+let phrase = "No 'x' in Nixon";
 let testPalin = "";
-for (let i = phrase.length -1; i >= 0; i--){
-    testPalin = testPalin + phrase[i].toLowerCase();
+let clearPhrase = ""
+for (let i = 0; i<phrase.length; i++){
+    if (phrase[i] === "," || phrase[i] === "?" || phrase [i] === "!" || phrase[i] === "'" || phrase[i] === " "){
+        continue;
+    }
+    else{
+        clearPhrase = clearPhrase + phrase[i]
+    }    
 }
-let phraseTest = phrase.toLowerCase()
+console.log("-=".repeat(25))
+let phraseTest = clearPhrase.toLowerCase()
+for (let i = phraseTest.length -1; i >= 0; i--){
 
-if (phraseTest === testPalin){
+    testPalin = testPalin + phraseTest[i].toLowerCase();
+}
+
+console.log(phraseTest)
+if (phraseTest == testPalin){
     console.log(`${phraseTest} e ${testPalin} são palíndromos!`)
 }
 else {
     console.log(`${phraseTest} e ${testPalin} não são palíndromos!`)
 }
 
-console.log(phrase, testPalin)
+console.log(clearPhrase, testPalin)
+
+/*
+Tests:
+Tested all.
+*/
