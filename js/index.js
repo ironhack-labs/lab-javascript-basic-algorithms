@@ -20,11 +20,11 @@ if (hackerLen1 > hackerLen2){
 let nameHacker1 = "";
 let nameHacker2 = "";
 for (let i = 0; i < hackerLen1; i++){
-    nameHacker1 = nameHacker1 + hacker1[i] + " "
+    nameHacker1 = nameHacker1 + hacker1[i].toUpperCase() + " "
 }
 
 for (let i = 0; i < hackerLen2; i++){
-    nameHacker2 = nameHacker2 + hacker2[i] + " "
+    nameHacker2 = nameHacker2 + hacker2[i].toUpperCase() + " "
 }
 console.log(nameHacker1)
 console.log(nameHacker2)
