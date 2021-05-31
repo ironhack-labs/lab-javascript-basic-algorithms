@@ -58,3 +58,19 @@ for (let i = 0; i<lorSplit.length; i++){
 console.log(contLor);
 
 //Bonus 2
+
+let phrase = "Roma amor";
+let testPalin = "";
+for (let i = phrase.length -1; i >= 0; i--){
+    testPalin = testPalin + phrase[i].toLowerCase();
+}
+let phraseTest = phrase.toLowerCase()
+
+if (phraseTest === testPalin){
+    console.log(`${phraseTest} e ${testPalin} são palíndromos!`)
+}
+else {
+    console.log(`${phraseTest} e ${testPalin} não são palíndromos!`)
+}
+
+console.log(phrase, testPalin)
