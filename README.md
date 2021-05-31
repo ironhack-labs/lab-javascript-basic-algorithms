@@ -54,7 +54,20 @@ Jest is an automated test-runner for JavaScript.
 
 Before start coding, we will explain the project structure we have provided you.
 
-We will be working with the `src/functions-and-arrays.js` file. To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
+We will be working with the `src/functions-and-arrays.js` file. 
+In this first lab, we will take you through the process step by step. In the following labs, the process stays the same so refer to this step-by-step guide in case you get stuck on your next lab. (_And don't worry, it is completely okay to get stuck! We are here to help. 🤝_)
+
+To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. 
+
+```shell
+$ cd lab-javascript-functions-and-arrays
+$ npm install
+$ npm run test:watch
+```
+
+<br>
+
+In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
 Open the `lab-solution.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
 
