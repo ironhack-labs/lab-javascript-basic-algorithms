@@ -59,7 +59,7 @@ let numberOfWords = 0;
 
 
  for(let i = 0; i < threeParagraphs.length; i++){
-     if(threeParagraphs[i] === " "){
+     if(threeParagraphs[i] === " " || threeParagraphs[i] === "." || threeParagraphs[i] === ","){
         numberOfBlankSpaces++
      } 
 
@@ -70,7 +70,7 @@ let numberOfWords = 0;
 //console.log(numberOfBlankSpaces);
 
 numberOfWords = numberOfBlankSpaces + 1;
-//console.log(numberOfWords);
+console.log(`There are ${numberOfWords} words`);
 
 
 
@@ -132,6 +132,24 @@ if(tempWord.substring(0, Math.floor(tempWord.length/2)) === subTempWordInverted)
 } else {
     console.log(`"${phraseToCheck}" is not a Palindrome`);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
