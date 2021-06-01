@@ -100,19 +100,21 @@ console.log(`Et appears ${numberOfEt} times.`);
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 // creating a string with only the letters of the original phrase
-phraseToCheck = phraseToCheck.toLowerCase();
+lowerPhraseToCheck = phraseToCheck.toLowerCase();
 let tempWord = "";
 
-for (let i = 0; i < phraseToCheck.length; i++) {
+for (let i = 0; i < lowerPhraseToCheck.length; i++) {
 
     // this will filter anything that isn't a lowercase letter
-    if (phraseToCheck.charCodeAt(i) < 97 || phraseToCheck.charCodeAt(i) > 122) {
+    if (lowerPhraseToCheck.charCodeAt(i) < 97 || lowerPhraseToCheck.charCodeAt(i) > 122) {
         continue;
     }
 
-    tempWord = tempWord + phraseToCheck[i];
+    tempWord = tempWord + lowerPhraseToCheck[i];
 
 }
+
+/* old version
 
 // Taking only the last half portion of the new string
 const halfPoint = Math.ceil(tempWord.length / 2);
@@ -126,11 +128,41 @@ for (let i = subTempWord.length - 1; i >= 0; i--) {
     invertedSubTempWord = invertedSubTempWord + subTempWord[i]
 }
     
-/* now comparing the inverted last half string with the first half of the
-whole string, if it's a match, than it's a palindrome.
-*/
+// now comparing the inverted last half string with the first half of the
+//whole string, if it's a match, than it's a palindrome.
+
 if (tempWord.substring(0, tempWord.length / 2) === invertedSubTempWord) {
     console.log(`True, "${phraseToCheck}" is indeed a palindrome.`)
 } else {
     console.log(`False, sadly "${phraseToCheck}" is not a palindrome.`);
 }
+*/
+
+// new version
+
+
+// it's looking if the first index character is the same as the last index,
+// and moving inwards
+
+//it only needs to run until the half point of the string
+for (let i = 0; i < (tempWord.length / 2); i++) {
+
+    // if one character doesn't match, it breaks the for
+    if (!(tempWord[i] === tempWord[(tempWord.length - 1) - i])) {
+        console.log(`False, sadly "${phraseToCheck}" is not a palindrome.`);
+        break;
+    }
+
+    // if it gets to the last index, it means it is a palindrome
+    if (i === (tempWord.length - 1) / 2) {
+        console.log(`True, "${phraseToCheck}" is indeed a palindrome.`);
+    }
+
+}
+
+
+
+
+
+
+
