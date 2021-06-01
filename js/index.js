@@ -69,3 +69,26 @@ for (let i = 0; i < lorem.length; i++){
 }
 
 console.log(`The word "et" appears ${countWord} times`)
+
+//Bonus 2
+
+let phraseToCheck = "A man, a plan, a canal, Panama!"
+
+let phraseLowerCase = phraseToCheck.toLowerCase();
+let noSpaces = phraseLowerCase.replaceAll(" ","");
+let noCommas = noSpaces.replaceAll(",","");
+let noSymbol = noCommas.replaceAll("!","");
+
+console.log(noSymbol);
+
+let reversePhrase = '';
+
+for (let i = noSymbol.length - 1; i >= 0; i--) {
+        reversePhrase += noSymbol[i];
+} 
+
+if (noSymbol === reversePhrase) {
+  console.log(`"${phraseToCheck}" is a Palindrome!`)
+} else {
+  console.log(`"${phraseToCheck}" is not a Palindrome! `)
+}
