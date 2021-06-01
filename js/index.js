@@ -30,9 +30,9 @@ for(i = hacker1.length -1; i >= 0; i--){
 console.log(result2);
 
 
-if(hacker1[0] < hacker2[0]){
+if(hacker1 < hacker2){
     console.log(`The driver's name goes first`);
-} else if (hacker1[0] > hacker2[0]){
+} else if (hacker1 > hacker2){
     console.log(`Yo, the navigator goes first definitely`);
 } else {
     console.log(`What?! You both have the same name?`);
@@ -59,7 +59,7 @@ let numberOfWords = 0;
 
 
  for(let i = 0; i < threeParagraphs.length; i++){
-     if(threeParagraphs[i] === " " || threeParagraphs[i] === "." || threeParagraphs[i] === ","){
+     if(threeParagraphs[i] === " "){
         numberOfBlankSpaces++
      } 
 
