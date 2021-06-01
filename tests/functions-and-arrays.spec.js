@@ -4,6 +4,8 @@ const {
   sumNumbers,
   sum,
   averageNumbers,
+  averageWordLength,
+  avg,
   uniquifyArray,
   doesWordExist,
   howManyTimes,
