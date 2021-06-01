@@ -23,28 +23,28 @@ if(hacker1.length > hacker2.length){
 let driverUpperCase = hacker1.toUpperCase()
 let separatedBySpace= ""
 for (let i = 0;  i < driverUpperCase.length ; i++){
-      separatedBySpace += driverUpperCase[i] +" " 
-    }
+  separatedBySpace += driverUpperCase[i] +" " 
+}
 console.log(separatedBySpace)
 
 
 //Devuelve el nombre del hacker2 del revés
 let reverse = ""
 for (let i = hacker2.length-1;  i >= 0 ; i--){
-      reverse += hacker2[i]
-    }
+  reverse += hacker2[i]
+}
 console.log(reverse)
 
 // Devuelve el orden alfabetico de ambos nombres
 hacker1 = hacker1.toLowerCase()
 hacker2 = hacker2.toLowerCase()
-       if (hacker1.localeCompare(hacker2) < 0){
-        console.log("The driver's name goes first.")
-       } else if(hacker1.localeCompare(hacker2) > 0){
-         console.log("Yo, the navigator goes first definitely.")
-       } else{
-         console.log("What?! You both have the same name?")
-       }
+if (hacker1.localeCompare(hacker2) < 0){
+  console.log("The driver's name goes first.")
+} else if(hacker1.localeCompare(hacker2) > 0){
+  console.log("Yo, the navigator goes first definitely.")
+} else{
+  console.log("What?! You both have the same name?")
+}
     
 
 //Bonus 1:
@@ -57,15 +57,23 @@ Aenean mollis velit vitae varius scelerisque. Integer venenatis diam diam, vitae
 
 console.log(`The number of words is ${lorum.split(" ").length}`)
 
-//Bonus 2        No me he quedado satisfecho porque cuando contiene algun signo no puedo compararlo. Tienen que estar las palabras muy bien ordenadas para que se de el Palindrome.
-let phraseToCheck = "Amor Roma"
-phraseToCheck = phraseToCheck.toLowerCase()
-let reversePhrase = ""
-for (let i = phraseToCheck.length-1;  i >= 0 ; i--){
-      reversePhrase += phraseToCheck[i]
-    }
-if (phraseToCheck === reversePhrase){
-  console.log("Is a Palindrome")
-} else {console.log("Is not a Palindrome")}
+const numberOfEts = (text)=>{
+  return text.split(' ').filter((word)=>{
+    return word === 'et'
+  }).length
+}
 
-console.log(reversePhrase)
+//Bonus 2        
+
+let phraseToCheck = "race car"
+let reversePhrase = []
+for (let i = phraseToCheck.length-1;  i >= 0 ; i--){
+  phraseToCheck = phraseToCheck.toLowerCase().split(' ').join('')
+  reversePhrase.push(phraseToCheck[i])
+}
+reversePhrase = reversePhrase.join('')
+if (phraseToCheck.includes(reversePhrase)){
+  console.log("Is a Palindrome")
+} else {
+  console.log("Is not a Palindrome")
+}
