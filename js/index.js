@@ -29,7 +29,7 @@ console.log("What?! You both have the same name?");
 
 // Iteration 3: Loops
 
-let name = 'Vincius'
+let name = 'Vinicius'
 let result = name.toUpperCase().split("").join(" ").replace(/\s+/g, " ");
 console.log(result);
 
