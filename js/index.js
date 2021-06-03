@@ -8,9 +8,6 @@ console.log("The navigator's name is " + hacker2);
 
 // Iteration 2: Conditionals
 
-let driver = 'Gabriel';
-let navigator = 'Vinicius';
-
 if (driver.length > navigator.length) {
   console.log(`The ${driver} has the longest name, it has ${driver.length} characters.`);
 } else if (driver.length < navigator.length) {
@@ -21,15 +18,14 @@ if (driver.length > navigator.length) {
 
 let arr = [driver , navigator];
 for(i=0; i < arr.length -1; i++){
-if(driver.localeCompare(navigator) > 0){
+if(driver.localeCompare(navigator) < 0){
 console.log("The driver's name goes first.");
-}else if(driver.localeCompare(navigator) < 0){
+}else if(driver.localeCompare(navigator) > 0){
 console.log('Yo, the navigator goes first definitely.');
 }else {
 console.log("What?! You both have the same name?");
 }
 } 
-
 
 // Iteration 3: Loops
 
