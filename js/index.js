@@ -1,4 +1,5 @@
 // Iteration 1: Names and Input
+
 let hacker1 = 'Pedro';
 
 console.log(`The driver's name is ${hacker1}`);
@@ -20,3 +21,5 @@ if (hacker1.length > hacker2.length) {
   };
 
 // Iteration 3: Loops
+
+console.log(hacker1.toUpperCase().split("").join(" "));
