@@ -25,8 +25,14 @@ else if (hacker1.length == hacker2.length) {
 let newDriverName = ' '; //this is the original driver's name, but with the characters separated by spaces and in capital letters, so javascript will have to recognize it as a technically new name (but it's really just the old name with fancy commands, but we have to define the name in a new way because of this, hence "newDriverName")
 let driverUpperCase = hacker1.toUpperCase();
 
-for (let i=0; i < hacker1.length; i++) {
-   console.log(newDriverName += driverUpperCase[i] + ' ');
-}
+//for (let i=0; i < hacker1.length; i++) {
+//   console.log(newDriverName += driverUpperCase[i] + ' ');
+//}
 
-console.log(newDriverName);
+//console.log(newDriverName);
+
+for (let i=0; i < hacker1.length; i++) {
+  console.log(driverUpperCase[i])
+  newDriverName += driverUpperCase[i] + ' '
+}
+console.log(newDriverName)
