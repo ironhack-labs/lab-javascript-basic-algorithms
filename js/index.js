@@ -104,6 +104,11 @@ console.log(`Count of 'et': ${emCount(lorem)}`);
 
 const phraseToCheck = ["race car", "A man, a plan, a canal, Panama!", "Amor, Roma", "race car", "stack cats", "step on no pets", "taco cat", "put it up", "Was it a car or a cat I saw?", "No 'x' in Nixon"];
 
+
+/**
+ * Returns an array of objects like {str: string, isPalindrome: boolean}
+ * @param array array of palindromes on which to perform the validation.
+ */
 const isPalindrome = (arrPalindromes) => {
     const result = [];
 
