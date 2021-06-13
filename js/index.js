@@ -75,7 +75,6 @@ const compareLexicographically2 = (str1, str2) => {
     };
 }
 
-compareLexicographically(hacker1, hacker2);
 compareLexicographically2(hacker1, hacker2);
 
 // Bonus Time!
