@@ -23,9 +23,9 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 // 3.1
-let result1 = hacker1.charAt(0)
+let result1 = hacker1.charAt(0).toUpperCase()
 for (let i = 1; i<hacker1.length; i++){
-    result1 += ` ${hacker1.charAt(i)}`
+    result1 += ` ${hacker1.charAt(i).toUpperCase()}`
 }
 console.log(result1)
 
