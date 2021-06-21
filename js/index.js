@@ -1,11 +1,18 @@
 // Iteration 1: Names and Input
+
+// 1.1
 const hacker1 = `Diego Flores`
+// 1.2
 console.log(`The driver's name is ${hacker1}`)
 
+// 2.1
 const hacker2 = `Fernando Ramirez`
+// 2.2
 console.log(`The navigator's name is ${hacker2}`)
 
+
 // Iteration 2: Conditionals
+
 if (hacker1.length > hacker2.length)  {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters`)
 } else if (hacker2.length > hacker1.length) {
@@ -16,12 +23,16 @@ if (hacker1.length > hacker2.length)  {
 
 // Iteration 3: Loops
 
+// 3.1
+
 let newWord = ''
 for (i = 0; i < hacker1.length; i++) {
-    newWord += hacker1.charAt(i)
+    newWord += hacker1.charAt(i) + ' '
 }
 
 console.log(newWord.toUpperCase())
+
+// 3.2
 
 let newWord2 = ''
 for (i = hacker2.length -1; i >= 0; i--) {
@@ -29,6 +40,8 @@ for (i = hacker2.length -1; i >= 0; i--) {
 }
 
 console.log(newWord2)
+
+// 3.3
 
 if (hacker2 > hacker1) {
     console.log(`The driver's name goes first`)
@@ -38,13 +51,17 @@ if (hacker2 > hacker1) {
     console.log(`What?! you both have the same name?`)
 }
 
+
+// Bonus Time!
+
+// Bonus 1
+
 paragraph = `Lorem ipsum dolor sit amet,
 consectetur adipiscing elit. Duis luctus
 ex nulla, vel venenatis lacus dapibus non.
 Interdum et malesuada fames ac ante ipsum
 primis in faucibus. Nam lacinia scelerisque
-leo, at sodales ipsum. Duis consectetur et
-lacus ut ullamcorper. Fusce sodales lacus
+leo, at sodales ipsum. Duis consectetur et lacus ut ullamcorper. Fusce sodales lacus
 vitae nibh gravida tempor. Mauris erat nisl,
 fringilla non est sit amet, porta lobortis turpis.
 Morbi facilisis ligula id lorem imperdiet feugiat
@@ -60,4 +77,43 @@ Aenean lectus velit, pharetra in massa eget, eleifend porttitor nulla. Cras puru
 
 console.log(paragraph.length)
 
-console.log(paragraph.includes("et"))
+let counter = 0
+
+for (i = 0; i < paragraph.length; i++) {
+    if (paragraph.charAt(i) == "e" && paragraph.charAt(i+1) == "t" && paragraph.charAt(i-1)== ' ' &&
+    (paragraph.charAt(i+2)== ' ' || paragraph.charAt(i+2)== '.' || paragraph.charAt(i+2)== ',')) {
+        counter += 1
+    }
+}
+
+console.log(counter)
+
+
+// Bonus 2
+
+let phraseToCheck = 'Anita! Lava la tina.'
+
+let newCheckString = ''
+
+for (i=0; i < phraseToCheck.length; i ++) {
+    switch (phraseToCheck.charAt(i)) {
+        case ' ': case '?': case '!': case '.': case "'": case ',':
+            break
+        default:
+            newCheckString += phraseToCheck.charAt(i)
+    }
+}
+phraseLowerCase = newCheckString.toLowerCase()
+console.log(phraseLowerCase)
+
+let palindrome
+for (i=0; i< (phraseLowerCase.length); i++) {
+    if (phraseLowerCase[i] == phraseLowerCase.charAt(phraseLowerCase.length-(1+i))) {
+        palindrome = true
+    } else {
+        palindrome = false
+        break
+    }
+}
+
+console.log(`It is a palindrome: ${palindrome}`)
