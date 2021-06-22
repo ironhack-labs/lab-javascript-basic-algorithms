@@ -51,7 +51,24 @@ if (hacker1 < hacker2) {
 
 // Bonus 1
 
-let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat erat et lacus sagittis consequat. Fusce eget gravida sapien, nec rhoncus arcu. Sed dignissim turpis ullamcorper ipsum semper, sit amet sollicitudin odio luctus. Donec lobortis, massa a sollicitudin ullamcorper, quam sapien vestibulum purus, sit amet fringilla arcu mauris non massa. Vivamus sit amet mauris tempus, sodales enim ac, ultricies mauris. Phasellus dapibus eu justo vel accumsan. Sed eget rutrum lectus. Suspendisse potenti. Nullam a metus sem. Nunc vitae massa a nulla malesuada ullamcorper at et urna. Fusce quis dignissim nisl. Aliquam porta porttitor ipsum bibendum venenatis. Nulla fringilla leo ipsum, a pharetra purus ultrices vitae. Aliquam nunc elit, efficitur at elit et, venenatis accumsan est. Maecenas euismod nisl a metus ornare eleifend. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin eget massa felis. Nam sodales enim vel diam posuere dapibus ac sed velit. Quisque gravida sagittis magna nec rhoncus. Proin eu laoreet dui. Quisque consequat sem id suscipit condimentum. Vivamus in purus luctus, pulvinar lacus sed, ornare ex. Curabitur aliquet lorem et volutpat laoreet. Quisque pharetra nulla et semper sodales. Phasellus tristique enim leo, efficitur ultrices ligula venenatis nec. Nunc volutpat lacus a facilisis vestibulum. Donec varius scelerisque tortor. Donec finibus urna non nibh imperdiet, sed aliquet nisi porta. Aliquam imperdiet suscipit est, at fringilla elit suscipit non. Aliquam elit quam, ultricies in enim quis, vestibulum porttitor nisi. Etiam et tristique est. Sed vitae orci vulputate, tempus enim eget, sagittis nisi. Quisque dignissim posuere blandit. Pellentesque aliquam turpis eget nulla sollicitudin, ut condimentum ante varius. Etiam tempor felis id maximus consectetur."
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat erat et lacus sagittis consequat. 
+Fusce eget gravida sapien, nec rhoncus arcu. Sed dignissim turpis ullamcorper ipsum semper, sit amet sollicitudin odio luctus. 
+Donec lobortis, massa a sollicitudin ullamcorper, quam sapien vestibulum purus, sit amet fringilla arcu mauris non massa. 
+Vivamus sit amet mauris tempus, sodales enim ac, ultricies mauris. Phasellus dapibus eu justo vel accumsan. Sed eget rutrum lectus. 
+Suspendisse potenti. Nullam a metus sem. Nunc vitae massa a nulla malesuada ullamcorper at et urna. 
+Fusce quis dignissim nisl. 
+
+Aliquam porta porttitor ipsum bibendum venenatis. Nulla fringilla leo ipsum, a pharetra purus ultrices vitae. Aliquam nunc 
+elit, efficitur at elit et, venenatis accumsan est. Maecenas euismod nisl a metus ornare eleifend. Interdum et malesuada 
+fames ac ante ipsum primis in faucibus. Proin eget massa felis. Nam sodales enim vel diam posuere dapibus ac sed velit. Quisque 
+gravida sagittis magna nec rhoncus. Proin eu laoreet dui. Quisque consequat sem id suscipit condimentum. Vivamus in purus luctus, 
+pulvinar lacus sed, ornare ex. Curabitur aliquet lorem et volutpat laoreet. Quisque pharetra nulla et semper sodales. 
+
+Phasellus tristique enim leo, efficitur ultrices ligula venenatis nec. Nunc volutpat lacus a facilisis vestibulum. Donec varius 
+scelerisque tortor. Donec finibus urna non nibh imperdiet, sed aliquet nisi porta. Aliquam imperdiet suscipit est, at fringilla 
+elit suscipit non. Aliquam elit quam, ultricies in enim quis, vestibulum porttitor nisi. Etiam et tristique est. Sed vitae 
+orci vulputate, tempus enim eget, sagittis nisi. Quisque dignissim posuere blandit. Pellentesque aliquam turpis eget nulla sollicitudin, 
+ut condimentum ante varius. Etiam tempor felis id maximus consectetur.`
 
 let word = ""
 let wordCounter = 0
@@ -66,6 +83,9 @@ for (let i = 0; i<lorem.length; i++){
         word+=lorem.charAt(i);
     }
 }
+
+wordCounter++
+
 console.log(`Number of words: ${wordCounter}`)
 console.log(`Number of ets: ${etCounter}`)
 
