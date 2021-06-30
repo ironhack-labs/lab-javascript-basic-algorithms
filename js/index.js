@@ -9,6 +9,7 @@ let hacker2 = "Florian"
 console.log("The navigator's name is " + hacker2)
 
 
+
 // Iteration 2: Conditionals
 
 let driver = hacker1.length;
@@ -24,13 +25,16 @@ else {
     console.log(`Wow, you both have equally long names, ${driver} characters!`)
 }
 
+
+
 // Iteration 3: Loops
 
 
+// 3.1 
 hacker1 = hacker1.split('').join(' ').toUpperCase();
 console.log(hacker1)
 
-
+// 3.2
 let reverseHacker2 = ""
 for (let i = hacker2.length-1; i >= 0; i--) {
     reverseHacker2 += hacker2[i]
@@ -38,6 +42,8 @@ for (let i = hacker2.length-1; i >= 0; i--) {
 console.log(reverseHacker2)
 
 
+
+// 3.3
 function compare (hacker1,hacker2) {
 
     hacker1 = hacker1.toUpperCase()
@@ -91,14 +97,16 @@ for (let i =0; i < words.length; i++) {
 }
 console.log(etCounter)
 
-// PALINDROME
+
+
+
+// Bonus 2
 
 
 
 let phraseToCheck = "r!a!c!e c     ar";
 
 let newPhrase = ""
-// si l"infex en cours est un espace, on passe à l'itération suivante ==> continue 
 
 for (let i = 0; i < phraseToCheck.length; i++) {
     if (phraseToCheck[i].toUpperCase() != phraseToCheck[i].toLowerCase()) {
@@ -124,3 +132,32 @@ if (counterPal === newPhrase.length) {
 
 
 
+
+function palindromeCheck (phraseToCheck) {
+    let newPhrase = ""
+
+    for (let i = 0; i < phraseToCheck.length; i++) {
+        if (phraseToCheck[i].toUpperCase() != phraseToCheck[i].toLowerCase()) {
+            newPhrase += phraseToCheck[i].toLowerCase()
+        }
+    }
+    
+    let counterPal = 0
+    let phraseLength = newPhrase.length - 1
+    
+    for (let i = 0; i < newPhrase.length; i++) {
+        if (newPhrase[i] === newPhrase[phraseLength - i]) {
+            counterPal += 1
+        }
+        else {
+            return console.log("Pas un palindrome")
+        }
+    }
+    
+    if (counterPal === newPhrase.length) {
+        return console.log("C'est un palindrome")
+    }
+}
+
+palindromeCheck("r!a!c!e c     ar")
+palindromeCheck("dgdfgdf")
