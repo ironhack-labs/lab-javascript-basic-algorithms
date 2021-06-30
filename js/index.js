@@ -40,3 +40,24 @@ if (hacker1<hacker2) {
 }else {
     console.log("What ?! You both have the same name ?")
 }
+
+console.log('-------------------------------------------------------------------')
+
+
+//Bonus 1 
+
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum cursus tempus. Nulla tellus ex, rhoncus quis malesuada laoreet, volutpat ut nulla. In blandit, nisi sit amet volutpat suscipit, lorem libero euismod nunc, gravida ultricies quam ex sagittis lacus. Aenean diam risus, cursus ut velit ut, porttitor ultricies massa. Suspendisse cursus leo augue, vitae hendrerit diam dictum in. In at imperdiet magna. Ut consectetur placerat urna, eu eleifend odio cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras auctor massa ullamcorper, mollis est at, interdum nisl. Curabitur vitae elit lacus. Maecenas auctor, nisl ac congue volutpat, urna risus pretium lorem, in luctus nisl erat nec ligula. Quisque viverra leo pulvinar egestas lacinia. Nulla non orci arcu. Phasellus fermentum dui eget orci luctus blandit. Nullam tellus lectus, mollis id pharetra a, sodales ac dui. Aliquam in posuere felis, vitae molestie sapien. In non sagittis mauris, non eleifend est. Curabitur tincidunt diam felis, et ultrices felis sodales quis. Nulla dapibus non massa ut sodales. Pellentesque nec enim quam. Donec volutpat dignissim velit nec elementum. Mauris non accumsan urna, quis congue sapien. Maecenas faucibus erat a velit dapibus congue. Curabitur tristique blandit velit eu vehicula. Donec volutpat, neque efficitur egestas facilisis, enim tellus molestie nulla, accumsan gravida purus odio quis quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra, arcu in lobortis ornare, tortor ipsum ultricies augue, iaculis euismod est augue eu nibh."
+let testPhrase = "This is a sentence containing exactly 14 words, not one more, not one less."
+let nbWords = 1;
+for (let i = 0; i < lorem.length; i++) {
+    if (lorem[i] == ' ') {
+        console.log(`This is iteration ${i}`)
+        nbWords=nbWords + 1;
+
+        console.log(nbWords)
+    }
+    
+}
+
+
+
