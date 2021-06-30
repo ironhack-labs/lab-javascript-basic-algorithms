@@ -71,7 +71,11 @@ for (let i = 0; i < lorem.length; i++) {
     }
 }
 console.log(counter)
-let words = lorem.split(' ').length
+
+
+let words = lorem.indexOf("et")
+console.log(words)
+
 
 
 
