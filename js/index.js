@@ -106,12 +106,8 @@ for (let i = 0; i < phraseToCheck.length; i++) {
     }
 }
 
-console.log(newPhrase)
-
 let counterPal = 0
 let phraseLength = newPhrase.length - 1
-
-console.log(phraseLength)
 
 for (let i = 0; i < newPhrase.length; i++) {
     if (newPhrase[i] === newPhrase[phraseLength - i]) {
@@ -121,8 +117,6 @@ for (let i = 0; i < newPhrase.length; i++) {
         console.log("Pas un palindrome")
     }
 }
-
-console.log(counterPal)
 
 if (counterPal === newPhrase.length) {
     console.log("C'est un palindrome")
