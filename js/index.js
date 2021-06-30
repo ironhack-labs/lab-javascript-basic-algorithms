@@ -39,15 +39,27 @@ console.log(reverseHacker2)
 
 
 function compare (hacker1,hacker2) {
-    for (let i = 0; i < hacker2.length; i++) {
+
+    hacker1 = hacker1.toUpperCase()
+    hacker2 = hacker2.toUpperCase()
+    
+    let longestName = hacker1.length > hacker2.length ? hacker1 : hacker2
+    let shortestName = hacker1.length < hacker2.length ? hacker1 : hacker2
+    
+    for (let i = 0; i < longestName.length; i++) {
         if (hacker1[i] < hacker2[i]) {
             return "The driver's name goes first.";
         }
         else if (hacker1[i] > hacker2[i]) {
             return "Yo, the navigator goes first definitely.";
         }
-        else if (i === hacker2.length-1) { 
-            return "What?! You both have the same name?";
+        else if (shortestName[i] === undefined) { 
+            if (shortestName == hacker1) {
+                return "The driver's name goes first.";
+            }
+            else {
+                return "Yo, the navigator goes first definitely.";
+            }
         }
     }
 }
@@ -56,9 +68,9 @@ console.log(compare(hacker1,hacker2))
 
 // Bonus 1
 
-let lorem = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem qui eius voluptates, accusamus tempore dicta id, ipsum voluptatibus aut dolorem maxime cupiditate aliquid saepe, atque modi. Odit ratione tempora dignissimos?
-Quisquam ratione hic ducimus possimus facere magni eaque, incidunt sequi ut reiciendis optio, molestias distinctio natus iste sunt repellendus ab quasi. Perferendis, deleniti amet saepe quae deserunt officia nulla illo!
-Commodi sit tempore modi, laborum ullam voluptatibus repudiandae ipsum libero, earum nesciunt, saepe debitis quia dolore? Animi, expedita. Soluta molestiae nisi eius dignissimos nihil maxime assumenda aut perspiciatis id facilis.`
+let lorem = `Lorem, ipsum dolor sit amet et consectetur et adipisicing elit. Rem qui eius voluptates, accusamus tempore dicta id, ipsum voluptatibus aut dolorem maxime cupiditate aliquid saepe, atque modi. Odit ratione tempora dignissimos?
+Quisquam ratione hic ducimus possimus facere magni eaque, incidunt sequi ut reiciendis optio, molestias et distinctio natus iste sunt repellendus ab quasi. Perferendis, deleniti amet saepe quae deserunt officia nulla illo!
+Commodi sit tempore modi, laborum ullam et voluptatibus repudiandae ipsum libero, earum nesciunt, saepe et debitis quia dolore? Animi, expedita. Soluta molestiae nisi eius dignissimos nihil maxime assumenda aut perspiciatis id facilis.`
 
 let counter = 1
 for (let i = 0; i < lorem.length; i++) {
@@ -66,12 +78,18 @@ for (let i = 0; i < lorem.length; i++) {
         counter += 1;
     }
     else if (lorem[i] == '\n') {
-        console.log("Je fonctionne")
         counter += 1;
     }
 }
 console.log(counter)
-let words = lorem.split(' ').length
+let words = lorem.split(' ')
+let etCounter = 0;
+for (let i =0; i < words.length; i++) {
+    if (words[i] === 'et') {
+        etCounter += 1
+    }
+}
+console.log(etCounter)
 
 
 
