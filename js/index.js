@@ -1,7 +1,18 @@
 // Iteration 1: Names and Input
+let hacker1 = "XXXX"; 
+console.log("The driver's name is " + hacker1);
+let hacker2 = "YYYY"; 
+console.log("The navigator's name is " + hacker2);
 
 
 // Iteration 2: Conditionals
 
 
 // Iteration 3: Loops
+let test = "ABCD"
+add = "";
+
+for(i=0; i<test.length; i--) {
+    add = add + test[i]
+}
+console.log(add);
