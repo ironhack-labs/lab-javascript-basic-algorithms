@@ -59,5 +59,34 @@ for (let i = 0; i < lorem.length; i++) {
     
 }
 
+console.log('-------------------------------------------------------------------')
+
+let etOccurence = (lorem.match(/et/g) || []).length;
+console.log(etOccurence);
+
+console.log('-------------------------------------------------------------------')
+
+//Bonus 2 
+let phraseToCheck = "step on no pets";
+let isPalindrome = false;
+
+for (let i = 0; i < phraseToCheck.length; i++) {        
+        
+    if (phraseToCheck[i] == phraseToCheck[phraseToCheck.length -(i+1)]) {
+        isPalindrome = true;
+        continue;
+        }else{
+            isPalindrome = false;
+            break;
+        }
+        
+    }
+
+if (isPalindrome) {
+    console.log("The phrase is a Palindrome")
+}else{
+    console.log("The phrase is not a Palindrome")
+}
 
 
+    
