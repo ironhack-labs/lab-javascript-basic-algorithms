@@ -91,5 +91,42 @@ for (let i =0; i < words.length; i++) {
 }
 console.log(etCounter)
 
+// PALINDROME
+
+
+
+let phraseToCheck = "r!a!c!e c     ar";
+
+let newPhrase = ""
+// si l"infex en cours est un espace, on passe à l'itération suivante ==> continue 
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i].toUpperCase() != phraseToCheck[i].toLowerCase()) {
+        newPhrase += phraseToCheck[i].toLowerCase()
+    }
+}
+
+console.log(newPhrase)
+
+let counterPal = 0
+let phraseLength = newPhrase.length - 1
+
+console.log(phraseLength)
+
+for (let i = 0; i < newPhrase.length; i++) {
+    if (newPhrase[i] === newPhrase[phraseLength - i]) {
+        counterPal += 1
+    }
+    else {
+        console.log("Pas un palindrome")
+    }
+}
+
+console.log(counterPal)
+
+if (counterPal === newPhrase.length) {
+    console.log("C'est un palindrome")
+}
+
 
 
