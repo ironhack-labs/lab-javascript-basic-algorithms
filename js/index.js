@@ -40,15 +40,22 @@ console.log(count);
 
 // #### Bonus 2:
 
-let phrasetocheck = "cat"
-function checkPalindrome(str) {
-    const length = phrasetocheck.length;
+
+let phrasetocheck = "was it a car or a cat i saw";
+
+function checkPalindrome(phrasetocheck) {
+
+    let remove_space = phrasetocheck.replace(/ /g, "");
+    const length = remove_space.length;
     for (let i = 0; i < length / 2; i++) {
-        if (phrasetocheck[i] !== phrasetocheck[length - 1 - i]) {
+
+        if (remove_space[i] !== remove_space[length - 1 - i]) {
             return 'It is not a palindrome';
         }
     }
     return 'It is a palindrome';
 }
+
 const value = checkPalindrome(phrasetocheck);
+
 console.log(value);
