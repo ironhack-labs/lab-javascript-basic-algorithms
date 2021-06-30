@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
 let object = {
     hacker1 : "XXXX",
-    hacker2 : "YYYY",
+    hacker2 : "YYYY", // "Alex"
 }
 
 console.log(`The driver's name is ${object.hacker1}`);
@@ -23,7 +23,6 @@ else{
 }
 
 }
-
 
 // Iteration 3: Loops
 let phrase = "";
@@ -55,9 +54,32 @@ if (object.hacker1 < object.hacker2 === true) {
 //Bonus 1 :
 
 //1
-const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus libero a convallis volutpat. Fusce sit amet arcu fermentum, faucibus est vitae, ullamcorper est. Aenean nec pellentesque elit, ut luctus sem. Maecenas non lacus lectus. Mauris vel commodo urna, vel ullamcorper nisl. Maecenas maximus et elit in pellentesque. Aliquam molestie mollis metus eget cursus. Nullam et magna nec tellus scelerisque pulvinar.
-Nullam hendrerit elit nec nisl sagittis pretium. Proin viverra eros et velit aliquam euismod. Phasellus tincidunt, dui eget hendrerit tristique, diam massa tempus turpis, non ultrices neque odio ut neque. Vestibulum a nulla tortor. Donec felis quam, porttitor eget velit eget, facilisis congue turpis. Sed quis congue tellus. Duis semper lacinia leo, vitae auctor magna pretium in. Aenean congue iaculis imperdiet. Phasellus rhoncus quis neque eu maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id blandit libero.
-Nunc semper bibendum mauris sed auctor. Maecenas at ex eu tortor ultrices malesuada. Mauris sed accumsan augue, id gravida massa. Suspendisse potenti. Nam purus diam, condimentum ac hendrerit et, semper a justo. Donec at elementum enim, ac lacinia metus. Nulla elementum sapien at sodales convallis. Proin eu ante suscipit, viverra mauris ac, blandit metus. Aenean imperdiet faucibus nisl, nec scelerisque ligula. Etiam iaculis ligula nec lobortis malesuada. Quisque vehicula orci in eros vehicula, vel porttitor ante dictum. Nam sagittis elementum lorem, vitae efficitur est porttitor non. Sed scelerisque dui vel lorem aliquet venenatis. Ut malesuada rhoncus felis, et luctus nisi pellentesque vel. Donec gravida faucibus libero nec vestibulum.`;
+const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Cras tempus libero a convallis volutpat. Fusce sit amet arcu fermentum, 
+faucibus est vitae, ullamcorper est. Aenean nec pellentesque elit, ut 
+luctus sem. Maecenas non lacus lectus. Mauris vel commodo urna, vel 
+ullamcorper nisl. Maecenas maximus et elit in pellentesque. Aliquam 
+molestie mollis metus eget cursus. Nullam et magna nec tellus scelerisque 
+pulvinar.
+Nullam hendrerit elit nec nisl sagittis pretium. Proin viverra eros et 
+velit aliquam euismod. Phasellus tincidunt, dui eget hendrerit tristique, 
+diam massa tempus turpis, non ultrices neque odio ut neque. Vestibulum a 
+nulla tortor. Donec felis quam, porttitor eget velit eget, facilisis 
+congue turpis. Sed quis congue tellus. Duis semper lacinia leo, vitae 
+auctor magna pretium in. Aenean congue iaculis imperdiet. Phasellus 
+rhoncus quis neque eu maximus. Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Aliquam id blandit libero.
+Nunc semper bibendum mauris sed auctor. Maecenas at ex eu tortor ultrices 
+malesuada. Mauris sed accumsan augue, id gravida massa. Suspendisse potenti. 
+Nam purus diam, condimentum ac hendrerit et, semper a justo. Donec at 
+elementum enim, ac lacinia metus. Nulla elementum sapien at sodales 
+convallis. Proin eu ante suscipit, viverra mauris ac, blandit metus. 
+Aenean imperdiet faucibus nisl, nec scelerisque ligula. Etiam iaculis 
+ligula nec lobortis malesuada. Quisque vehicula orci in eros vehicula, 
+vel porttitor ante dictum. Nam sagittis elementum lorem, vitae efficitur 
+est porttitor non. Sed scelerisque dui vel lorem aliquet venenatis. Ut 
+malesuada rhoncus felis, et luctus nisi pellentesque vel. Donec gravida 
+faucibus libero nec vestibulum.`;
 
 //2
 // split en fonction d espace pour avoir objet separé. 
