@@ -89,3 +89,33 @@ function WordCounter (text) {
 console.log(WordCounter(loremIpsumText))
 
 console.log(loremIpsumText.split("et").length - 1);
+
+
+// Bonus 2.
+let phraseToCheck = "taco cat";
+let phraseWithoutSpaces = "";
+
+for (let i=0; i< phraseToCheck.length; i++) {
+  if (phraseToCheck[i] != ' ') {
+    phraseWithoutSpaces += phraseToCheck[i];
+  }
+}
+
+let backwardsCount = phraseWithoutSpaces.length-1;
+let countNo = 0;
+
+for (let i=0; i< backwardsCount; i++) {
+  if (phraseWithoutSpaces[i] != phraseWithoutSpaces[backwardsCount]) {
+    countNo++;
+    break;
+  }
+  else if (phraseWithoutSpaces[i] === phraseWithoutSpaces[backwardsCount]) {
+    backwardsCount--;
+  }
+}
+
+if (countNo>0) {
+  console.log("not a palindrome :\(")
+} else {
+  console.log("Wow, it is a palindrome!");
+}
