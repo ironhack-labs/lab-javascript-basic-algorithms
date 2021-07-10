@@ -66,3 +66,30 @@ else
         console.log("Yo, the navigator goes first definitely.");
     }
 }
+
+// Bonus Time!
+// Bonus 1:
+// Generate 3 paragraphs. Store the text in a variable type of string.
+const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in porta odio. Ut eleifend, lectus non congue fermentum, est turpis pretium ex, ut luctus neque diam eget ipsum. Proin mattis, dui placerat finibus porta, lectus purus gravida ligula, placerat ornare lacus mauris ac mauris. Ut rhoncus scelerisque pharetra. Ut sed interdum massa. Cras rhoncus, ligula eu vehicula interdum, libero ligula tempor tortor, nec posuere mi lacus non libero. Suspendisse facilisis ultrices sodales. Nunc non feugiat sapien, id commodo dui. Aenean nec lacus sollicitudin, mattis metus a, consectetur arcu. Nullam lectus enim, accumsan a hendrerit sit amet, blandit et orci. Ut condimentum auctor lacus, at commodo orci condimentum dictum. Cras ultrices maximus quam vitae malesuada. Ut neque eros, rhoncus et risus quis, sodales luctus nibh. Fusce a eleifend nisi. Morbi nunc turpis, tincidunt non elit ut, lacinia pharetra felis. Ut ornare sapien eget ex tempor, non iaculis libero tincidunt. Nunc viverra, mi a auctor rutrum, libero magna mollis nunc, eu lobortis lacus eros eu erat. Donec consequat tincidunt ipsum sed euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi a dictum turpis. Morbi pellentesque risus magna, nec gravida sem venenatis eu. Aenean accumsan velit id arcu viverra convallis. Etiam at risus non justo maximus scelerisque. Nullam lobortis nulla a ornare viverra. Ut tincidunt augue sed augue suscipit aliquet nec in quam. Ut ac luctus odio. Duis nec maximus erat. Nunc gravida, ligula consectetur pulvinar vulputate, metus mi ornare augue, at accumsan lectus ex in ante. Integer ut diam libero. Nulla tellus ligula, finibus eget nibh sed, elementum imperdiet nulla. Cras justo enim, venenatis sed elit a, rhoncus consequat turpis. Sed ex nisl, iaculis dictum mauris in, euismod venenatis dolor. Fusce ligula justo, pulvinar nec erat quis, ultrices viverra risus. Proin non pulvinar nunc. Suspendisse malesuada nisl ut mauris malesuada lacinia.';
+
+// Make your program count the number of words in the string.
+let words = 0;
+for (let i = 0; i < lorem.length; i++)
+{
+    if (lorem[i] === " ")
+    {
+        words++;
+    }    
+}
+console.log('There are ' + (words + 1) + ' words in the string.');
+
+// Make your program count the number of times the Latin word et appears.
+let et = 0;
+for (let i = 0; i < lorem.length; i++)
+{
+    if (lorem.slice(i, i + 2) === "et")
+    {
+        et++;
+    }
+}
+console.log(`The Latin word 'et' appears ${et} times.`);
