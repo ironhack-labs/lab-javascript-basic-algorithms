@@ -97,3 +97,4 @@ console.log(`Counting the ocurrence of the word Et in a string, this word appear
 
 //Bonus02
 
+//resultado teste 2
