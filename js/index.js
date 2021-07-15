@@ -14,16 +14,13 @@ console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 // 2.1. Depending on which name is longer, print:
-if (hacker1.length > hacker2.length)
-{
+if (hacker1.length > hacker2.length){
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 }
-else if (hacker1.length < hacker2.length)
-{
+else if (hacker1.length < hacker2.length){ 
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
-else
-{
+else{
     console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`);
 }
 
@@ -31,38 +28,32 @@ else
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals
 let spacedUpperedName = '';
 
-for (let i = 0; i < hacker1.length; i++)
-{
-    spacedUpperedName += hacker1[i].toUpperCase() + " ";
+for (let value of hacker1){
+    spacedUpperedName += value.toUpperCase() + " ";
 }
 console.log(spacedUpperedName);
 
 // 3.2 Print all the characters of the navigator's name, in reverse order
 let reversedName = '';
 
-for (let j = hacker2.length - 1; j >= 0 ; j--)
-{
+for (let j = hacker2.length - 1; j >= 0 ; j--){
     reversedName += hacker2[j];
 }
 console.log(reversedName);
 
 // 3.3 Depending on the lexicographic order of the strings, print:
-if (hacker1 === hacker2)
-{
+if (hacker1 === hacker2){
     console.log('What?! You both have the same name?');
 }
-else
-{
+else {
     const hackers = [];
     hackers.push(hacker1, hacker2);
     hackers.sort();
         
-    if (hacker1 === hackers[0])
-    {
+    if (hacker1 === hackers[0]){
         console.log("The driver's name goes first.");
     }
-    else
-    {
+    else {
         console.log("Yo, the navigator goes first definitely.");
     }
 }
@@ -74,10 +65,8 @@ const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
 
 // Make your program count the number of words in the string.
 let words = 0;
-for (let i = 0; i < lorem.length; i++)
-{
-    if (lorem[i] === " ")
-    {
+for (let i = 0; i < lorem.length; i++) {
+    if (lorem[i] === " ") {
         words++;
     }    
 }
@@ -85,11 +74,47 @@ console.log('There are ' + (words + 1) + ' words in the string.');
 
 // Make your program count the number of times the Latin word et appears.
 let et = 0;
-for (let i = 0; i < lorem.length; i++)
-{
-    if (lorem.slice(i, i + 2) === "et")
-    {
+for (let i = 0; i < lorem.length; i++) {
+    if (lorem.slice(i, i + 2) === "et") {
         et++;
     }
 }
 console.log(`The Latin word 'et' appears ${et} times.`);
+
+// Bonus 2:
+// Create a new variable phraseToCheck and have it contain some string value.
+let phraseToCheck = 'A man, a plan, a canal, Panama!';
+
+// Write a code that will check if the value we assigned to this variable is a Palindrome.
+
+// Turn the phrase to lowercase to make it non sensitive case
+phraseToCheck = phraseToCheck.toLowerCase();
+
+// Convert phrase to array to be able to identify non alphabetic chars
+const splitPhrase = phraseToCheck.split('');
+
+// An array to identify undesired chars to check for palindrome
+const nonAlphaArr = [' ', '.', '!',, '?', '-', '_', ',']
+
+// A new array to put only alphabetic char elements
+const onlyAlphaArr = [];
+
+// Loop to identify alphabetic chars and add them to "onlyAlphaArr" array
+for (let i = 0; i < splitPhrase.length; i++){
+    if (!nonAlphaArr.includes(splitPhrase[i])){
+        onlyAlphaArr.push(splitPhrase[i]);
+    }
+}
+
+// Variable to regroup items from array in a string - original phrase without non-alphabetic chars
+const lettersOnlyPhrase = onlyAlphaArr.join('');
+// Variable with the reverse of the above phrase
+const reversedPhrase = onlyAlphaArr.reverse().join('');
+
+// Conditional statement to compare both phrases and deliver the problem's answer
+if (lettersOnlyPhrase === reversedPhrase) {
+    console.log("phraseToCheck is a palindrome");
+}
+else {
+    console.log("phraseToCheck is not a palindrome");
+}
