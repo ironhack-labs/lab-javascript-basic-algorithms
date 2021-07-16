@@ -93,7 +93,21 @@ console.log(countWords(phraseToTest));
 
 countEt = phraseToTest.match(/et/g).length;
 
-console.log(`Counting the ocurrence of the word Et in a string, this word appear ${countEt}`);
+console.log(`Counting the ocurrence of the word Et in a string using the match method, this word appear ${countEt}`);
+
+function countingEt(phraseToCount){
+    phraseArray = phraseToCount.split(' ');
+    countRepetition = 0;
+    for(i = 0; i < phraseArray.length; i++){
+        if(phraseArray[i] === 'et'){
+            countRepetition += 1;
+        }    
+    }
+    return countRepetition;
+}
+
+
+console.log(`this is using a function to count ET ${countingEt(phraseToTest)}`);
 
 //Bonus02
 
