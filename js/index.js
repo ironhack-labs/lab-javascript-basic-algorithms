@@ -37,9 +37,9 @@
  let driverToCapital = hacker1.toUpperCase ();
  let driverSpace = "";
   
- for (character in driverToCapital)
+ for (i=0; i<driverToCapital.length; i++) 
  { 
-   driverSpace = driverSpace + driverToCapital[character] + " ";
+   driverSpace = driverSpace + driverToCapital[i] + " ";
  }
  
  console.log(driverSpace);
@@ -82,24 +82,25 @@
  
    //caso 1era palabra
  
-   if (stringToLowerCase[0] === "e" && stringToLowerCase[1] === "t" && stringToLowerCase[2] === " "){
-	 latinWordEtCount = 1;
+   if (stringToLowerCase[0] === "e" && stringToLowerCase[1] === "t" && (stringToLowerCase[2] === " " || stringToLowerCase[2] === ".")){
+	 latinWordEtCount ++;
    }
    
    //general
  
- for (i in stringToLowerCase){
-   if (string1[i] == " "){
+ for (let i = 0; i < stringToLowerCase.length; i++){
+   if (stringToLowerCase[i] === " "){
 	 wordCount++;
    }
- 
-   if (stringToLowerCase [i] = " " && stringToLowerCase[i+1] === "e" && stringToLowerCase [i+2] === "t" && (stringToLowerCase[i+3] === " " || stringToLowerCase[i+3] === ".")){
+   
+   if (stringToLowerCase[i] === " " && stringToLowerCase[i+1] === "e" && stringToLowerCase [i+2] === "t" && (stringToLowerCase[i+3] === " " || stringToLowerCase[i+3] === ".")){
 	 latinWordEtCount ++;
    }
  }
  
  console.log ("The number of words in the paragraph is: " + wordCount);
  console.log ("The number of times et appears is: " + latinWordEtCount);
+ 
  
  /* #### Bonus 2:
  Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
@@ -113,14 +114,14 @@
    - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
  */
  
- let phraseToCheck = "No 'x' in Nixon";
+ let phraseToCheck = "Was it a car or a cat I saw?";
  let phraseLowerCase = phraseToCheck.toLowerCase(phraseToCheck);
  
  //quitar caracteres especiales
  
  phraseReady = "";
    for(let i = 0; i < phraseLowerCase.length; i++) {
-	 if (phraseLowerCase[i] !== " " && phraseLowerCase[i] !== "'" && phraseLowerCase[i] !== "!" && phraseLowerCase[i] !== ","){
+	 if (phraseLowerCase[i] !== " " && phraseLowerCase[i] !== "'" && phraseLowerCase[i] !== "!" && phraseLowerCase[i] !== "," && phraseLowerCase[i] !== "?"){
 	 phraseReady = phraseReady + phraseLowerCase[i];
 	 }
    } 
@@ -145,4 +146,3 @@
  }
  
  console.log ("It´s a palindrome: " + palindrome)
- 
