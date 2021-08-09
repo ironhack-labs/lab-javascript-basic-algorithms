@@ -40,7 +40,7 @@ for (let j = hacker2.length - 1; j >= 0; j--) {
 }
 console.log(hacker2Reverse);
 
-//3.1
+//3.3
 if (hacker1[0] > hacker2[0]) {
 	console.log("The driver's name goes first.");
 } else if (hacker1[0] < hacker2[0]) {
