@@ -42,3 +42,17 @@ console.log(reverseHacker2)
 
 
 //3.3
+
+let hackerCompare = hacker1.localCompare(hacker2)
+
+switch(hackerCompare){
+    case -1:
+        console.log(`The driver's name goes first.`)
+        break;
+    case 1:
+        console.log(`Yo, the navigator goes first definitely.`)
+        break;
+    case 0 :
+        console.log(`What?! You both have the same name?`)
+        break;
+}
