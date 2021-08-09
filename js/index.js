@@ -71,3 +71,13 @@ for (let i=0; i< lorem.length; i++){
     }
 }
 console.log(numberOfWords)
+
+let numberOfEt = 0
+
+for (i=0; i<lorem.length; i++){
+    if (lorem.slice(i, i+3) === ' et'){
+        numberOfEt += 1
+    }
+}
+
+console.log(numberOfEt)
