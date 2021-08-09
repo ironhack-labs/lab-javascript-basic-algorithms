@@ -26,10 +26,10 @@ for(let i = hacker2.length; i >= 0; i--) {
     console.log(hacker2[i]);
 }
 
-if (hacker1[0]< hacker2[0]){
+if (hacker1 < hacker2){
     console.log(`The driver's name goes first.`);
-  } else if (hacker1[0] > hacker2[0]){
+  } else if (hacker1 > hacker2){
     console.log(`Yo, the navigator goes first definitely.`);
-  } else if  (hacker1[0] === hacker2[0]){
+  } else if  (hacker1 === hacker2){
     console.log(`What?! You both have the same name?`);
   }
