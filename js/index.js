@@ -82,3 +82,21 @@ function EtCounter(str) {
 }
 
 console.log(EtCounter(lorem3times));
+
+//Bonus2
+function isAPalindrome(str) {
+    const strToLower = str.toLowerCase()
+    const letters = strToLower.split("")
+    const revLetters = letters.slice().reverse();
+    const joinedLetters = letters.join("");
+    const joinedReverseLetters = revLetters.join("");
+    if (joinedLetters === joinedReverseLetters) {
+        return true;
+    } else {
+        return false;
+    }
+};
+console.log(isAPalindrome('Helloworld'))
+console.log(isAPalindrome('AmorRoma'))
+console.log(isAPalindrome("racecar"))
+console.log(isAPalindrome("stackcats"))
