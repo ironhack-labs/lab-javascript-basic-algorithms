@@ -25,6 +25,7 @@ for (var i = 0; i < hacker1.length; i++) {
 }
 
 console.log(splitString);
+
 //3.2
 var reverseString = '';
 for (var i = hacker1.length - 1; i >= 0; i--) {
@@ -34,7 +35,7 @@ for (var i = hacker1.length - 1; i >= 0; i--) {
 console.log(reverseString);
 
 //3.3
-//With a method
+//With localcompare method
 if (hacker1.localeCompare(hacker2) === -1) {
 	console.log("The driver's name goes first.");
 } else if (hacker1.localeCompare(hacker2) === 1) {
@@ -44,6 +45,7 @@ if (hacker1.localeCompare(hacker2) === -1) {
 }
 
 //with a loop - TODO
+/*
 for (let i = 0; i < hacker1.length; i++) {
 	for (let j = 0; j < hacker2.length; j++) {
 		if (hacker1[i] === hacker2[j]) {
@@ -51,6 +53,7 @@ for (let i = 0; i < hacker1.length; i++) {
 		}
 	}
 }
+*/
 //------------------------------------------------------------
 //Bonus 1
 //Generate 3 paragraphs. Store the text in a variable type of string.
@@ -76,8 +79,19 @@ for (let i = 0; i < wordsCounter.length; i++) {
 console.log(etWordCounter);
 //---------------------------
 //Bonus 2
-let phraseToCheck = 'A man, a plan, a canal, Panama!';
+let phraseToCheck = 'stack catsa'; //añadido una a para que de error
+let phraseWithoutSpaces = phraseToCheck.replace(/ /g, '');
+let phraseLength = phraseWithoutSpaces.length;
 
-for (let index = 0; index < array.length; index++) {
-	const element = array[index];
+console.log(phraseWithoutSpaces);
+
+for (let i = 0; i < phraseLength; i++) {
+	if (phraseWithoutSpaces[i] !== phraseWithoutSpaces[phraseLength - 1 - i]) {
+		//console.log(phraseToCheck[i],phraseToCheck[phraseLength-1] );
+		console.log('No palindromo');
+		break;
+	} else {
+		console.log('Palindromo');
+		break;
+	}
 }
