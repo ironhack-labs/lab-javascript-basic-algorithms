@@ -83,25 +83,28 @@ console.log(EtCounter(loremTimes3))
 console.log(loremIpsumCounter(loremTimes3));
 
 
-//below doesn't work as expected, for some reason I end up reversing both. In the process of figuring it out.
-// function isAPalindrome(str) {
 
-//     const strToLower = str.toLowerCase()
-//     const letters = strToLower.match(/[a-z]/g);
-//     const revLetters = letters.reverse();
-//     const joinedLetters = letters.join("");
-//     const joinedReverseLetters = revLetters.join("");
-
-//     return `${joinedLetters} + ${joinedReverseLetters}`
-
-//     // if (joinedLetters === joinedReverseLetters) {
-//     //     return true;
-//     // }else{
-//     //   return false;
-//     // }
-
-// }
+//check for Palindrome
+function isAPalindrome(str) {
 
 
-// console.log(isAPalindrome("A man, a plan, a canal, Panama"))
-// console.log(isAPalindrome('hello i am a dog'));
+    const strToLower = str.toLowerCase()
+    const letters = strToLower.split("")
+    const revLetters = letters.slice().reverse();
+    const joinedLetters = letters.join("");
+    const joinedReverseLetters = revLetters.join("");
+
+
+    if (joinedLetters === joinedReverseLetters) {
+        return true;
+    } else {
+        return false;
+    }
+
+
+}
+
+console.log(isAPalindrome('Helloworld'))
+console.log(isAPalindrome('AmorRoma'))
+console.log(isAPalindrome("racecar"))
+console.log(isAPalindrome("stackcats"))
