@@ -42,6 +42,7 @@ if (hacker1.localeCompare(hacker2) === -1) {
 } else {
 	console.log('What?! You both have the same name?');
 }
+
 //with a loop - TODO
 for (let i = 0; i < hacker1.length; i++) {
 	for (let j = 0; j < hacker2.length; j++) {
@@ -58,10 +59,25 @@ const parrafo =
 
 //Make your program count the number of words in the string.
 let wordsCounter = 0;
-let etWordCounter = 0;
 
 wordsCounter = parrafo.split(' ');
 //console.log(parrafo.length); // total letras 1687
 console.log(wordsCounter.length); // total palabras 248
 
 //Make your program count the number of times the Latin word et appears.
+let etWordCounter = 0;
+for (let i = 0; i < wordsCounter.length; i++) {
+	if (wordsCounter[i] === 'et') {
+		//probar otra palabra, ipsum por ejemplo, que no hay ninguna et y me he vuelto loco
+		etWordCounter++;
+	}
+}
+
+console.log(etWordCounter);
+//---------------------------
+//Bonus 2
+let phraseToCheck = 'A man, a plan, a canal, Panama!';
+
+for (let index = 0; index < array.length; index++) {
+	const element = array[index];
+}
