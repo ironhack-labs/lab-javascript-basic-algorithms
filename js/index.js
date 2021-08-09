@@ -16,7 +16,14 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
-let driverUppercase = hacker1.toUpperCase();
+let driverCaps = hacker1.toUpperCase();
+let space = ' '
+for (let i = 0; i < driverCaps.length; i++) {
+    console.log(`${driverCaps[i] + space} `)
+
+}
+
+
 
 
 
