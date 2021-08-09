@@ -58,3 +58,33 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 let wordCount = placeHolder.split(" ").length;
 
 console.log(wordCount);
+
+let wordCount = placeHolder.split(" ").length;
+
+console.log(wordCount);
+
+let etCount = placeHolder.split("et").length;
+
+console.log(etCount);
+
+
+// BONUS 2
+
+
+
+let phraseToCheck = "step on no pets";
+let phraseReversed = "";
+
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  phraseReversed += phraseToCheck[i]
+}
+
+
+//console.log(phraseToCheck);
+//console.log(phraseReversed);
+
+if (phraseReversed == phraseToCheck) {
+  console.log(true)
+} else {
+  console.log(false)
+}
