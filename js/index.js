@@ -35,6 +35,7 @@ let capitalName1 = hacker1.toUpperCase();
 let capitalName1SPACE = '';
 let hacker2BACKWARDS = ''
 
+let test = 1
 
 console.log(capitalName1.length)
 console.log(capitalName1)
