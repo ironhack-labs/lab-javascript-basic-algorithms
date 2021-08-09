@@ -138,7 +138,7 @@
  
  let palindrome = true;
  
- for (i in phraseReady) {
+ for (i = 0; i < phraseReady.length; i++) {
    if (revPhrase[i] !== phraseReady[i]){
 	 palindrome= false;
 	 break;
