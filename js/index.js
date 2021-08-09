@@ -58,11 +58,3 @@ let numberOfEt = latinString.split(" et ").length - 1;
 
 console.log(numberOfEt)
 
-// BONUS #2 //
-
-let phraseToCheck = " "
-
-for (let i = hacker2.length - 1 ; i > -1; i--){
-    reversedName += hacker2[i]
-}
-console.log(reversedName);
