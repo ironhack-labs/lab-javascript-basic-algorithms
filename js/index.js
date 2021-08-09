@@ -20,3 +20,25 @@ if (hacker1.length > hacker2.length){
 
 
 // Iteration 3: Loops
+
+//3.1 
+
+let capitalHacker1 = ""
+
+for (let i=0; i<hacker1.length; i++){
+    capitalHacker1 += `${hacker1[i].toUpperCase()} `
+}
+
+console.log(capitalHacker1)
+
+//3.2 
+
+let reverseHacker2 =""
+
+for (let i = hacker2.length-1; i>=0; i--){
+    reverseHacker2 += `${hacker2[i]}`
+}
+console.log(reverseHacker2)
+
+
+//3.3
