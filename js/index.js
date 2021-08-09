@@ -1,4 +1,4 @@
-// Iteration 1: Names and Input
+// Iteration 1: Names and Input //
 
 let hacker1 = 'Alejandro'
 console.log(`The driver's name is ${hacker1}`);
@@ -7,7 +7,7 @@ let hacker2 = "Vince"
 console.log(`The navigator's name is ${hacker2}`);
 
 
-// Iteration 2: Conditionals
+// Iteration 2: Conditionals //
 
 let shortest;
 
@@ -25,7 +25,7 @@ shortest = hacker1;
 }
 
 
-// Iteration 3: Loops
+// Iteration 3: Loops //
 
 driverCapitols = "";
 
@@ -51,7 +51,7 @@ console.log(navigatorReverse);
 
 
 
-// cycle through to see if individual characters coem first
+// Cycle through to see if individual characters come first
 let index = 0;
 
 while(index < shortest.length){
@@ -65,7 +65,7 @@ while(index < shortest.length){
     index++;
 }
 
-// otherwise, check for edgecases (same name, same first characters, uneven lengths, etc.)
+// Otherwise, check for edgecases (same name, same first characters, uneven lengths, etc.)
 if(index === shortest.length){
 
     if(hacker1 === hacker2){
