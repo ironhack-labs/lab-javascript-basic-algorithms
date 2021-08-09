@@ -81,6 +81,7 @@ console.log(loremIpsumCounter(loremTimes3));
 
 
 //check for Palindrome
+//found the easiest solution for me to figure out was the below
 function isAPalindrome(str) {
 
 
@@ -100,6 +101,9 @@ function isAPalindrome(str) {
 
 };
 
+const phraseCheck = "steponnopets"
+
+console.log(isAPalindrome(phraseCheck));
 console.log(isAPalindrome('Helloworld'));
 console.log(isAPalindrome('AmorRoma'));
 console.log(isAPalindrome("racecar"));
