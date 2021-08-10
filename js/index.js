@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
 let hacker1 = "Adam"
 console.log(`The drivers name is: ${hacker1}`)
-let hacker2 = "Ad"
+let hacker2 = "Adam"
 console.log(`The navigator's name is: ${hacker2}`)
 
 // Iteration 2: Conditionals
@@ -36,14 +36,15 @@ for (let i = hacker1.length - 1; i > -1; i--) {
 console.log(reverseName)
 
 // 3.3
-let name1 = hacker1[0]
-let name2 = hacker2[0]
 
-if (name1 === name2) {
+
+
+
+if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
-} else if (name1 < name2) {
+} else if (hacker1 < hacker2) {
     console.log("The driver's name goes first.")
-} else if (name1 > name2) {
+} else if (hacker1 > hacker2) {
     console.log("Yo, the navigator goes first definitely.")
 }
 // if (hacker1 === hacker2) {
