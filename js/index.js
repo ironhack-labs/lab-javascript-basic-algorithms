@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
-let hacker1 = "Andrea";
+let hacker1 = "andrea";
 console.log(`"The driver's name is ${hacker1}`);
 
-let hacker2 = "Andrea";
+let hacker2 = "Andreas";
 console.log(`"The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -24,6 +24,9 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 console.log(result);
 
+// additional you can use .trim() to remove empty spaces from the start and end of a string
+result.trim();
+
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 let reversedName = "";
 for (let i = 1; i <= hacker2.length; i++) {
@@ -38,27 +41,35 @@ else if (hacker1 < hacker2) console.log("The driver's name goes first.");
 else console.log("What?! You both have the same name?");
 
 // complex, not clean solution with while loops
-let i = 0;
-if (hacker1 === hacker2){
-    console.log("What?! You both have the same name?");
-} else if (hacker1.length < hacker2.length) {
-    while (hacker1[i] === hacker2[i] && i < hacker1.length) {
+let i = 0;      // index for accesing each character of both strings
+let hacker1Lowercase = hacker1.toLowerCase();   // names to lowercase so only the alphabetical order matters
+let hacker2Lowercase = hacker2.toLowerCase();
+
+if (hacker1Lowercase === hacker2Lowercase){
+    console.log("What?! You both have the same name?"); // the easiest case is checked, see if both strings are exaclty the same
+} else if (hacker1Lowercase.length < hacker2Lowercase.length)   // check if driver name is the shortest
+    {
+    while (hacker1Lowercase[i] === hacker2Lowercase[i] && i < hacker1Lowercase.length) // loop through both names and increse "i" until one letter is different in both names or until the drivers length
+    {
         i++;
     }
-    if (hacker1[i-1] === hacker2[i-1] && i === hacker1.length) {
+    if (hacker1Lowercase[i-1] === hacker2Lowercase[i-1] && i === hacker1Lowercase.length) // checks if the names are equal until the drivers name length, if yes, drivers names goes first
+    {
         console.log("The driver's name goes first.");
-    } else if (hacker1[i] < hacker2[i]) {
-        console.log("The driver's name goes first.");
+    } else if (hacker1Lowercase[i] < hacker2Lowercase[i])   // if "i" did not reach the end of drivers name, it means they have different letters in the "i" position, if the drivers letter goes first:
+    {
+        console.log("The driver's name goes first."); 
     } else {
-        console.log("Yo, the navigator goes first definitely.");
+        console.log("Yo, the navigator goes first definitely."); // the navigators name goes first
     }
-} else {
-    while (hacker1[i] === hacker2[i] && i < hacker2.length) {
+} else { // same process but in case the the if navigators name is the shortest
+    while (hacker1Lowercase[i] === hacker2Lowercase[i] && i < hacker2Lowercase.length) 
+    {
         i++;
     }
-    if (hacker2[i-1] === hacker1[i-1] && i === hacker2.length) {
+    if (hacker2Lowercase[i-1] === hacker1Lowercase[i-1] && i === hacker2Lowercase.length) {
         console.log("Yo, the navigator goes first definitely.");
-    } else if (hacker2[i] < hacker1[i]) {
+    } else if (hacker2Lowercase[i] < hacker1Lowercase[i]) {
         console.log("Yo, the navigator goes first definitely.");
     } else {
         console.log("The driver's name goes first.");
