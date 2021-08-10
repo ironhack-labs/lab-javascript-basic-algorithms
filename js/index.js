@@ -58,3 +58,30 @@ console.log(`Number of "et": `+(loremStr.split(" et ").length -1))
 
 //Bonus 2:
 let phraseToCheck = "A man, a plan, a canal, Panama!"
+
+let formatPhrase = phraseToCheck.toLowerCase()
+let arrayPhrase = formatPhrase.split("")
+
+let alpha = "abcdefghijklmnopqrstuvwyxz";
+
+let orderNormal =""
+for (let i = 0 ; i < arrayPhrase.length;i++){
+  if(alpha.indexOf(arrayPhrase[i])<0){
+    continue
+  }
+  orderNormal = orderNormal + arrayPhrase[i]
+}
+
+let orderInvert =""
+for (let i = arrayPhrase.length -1 ; i >= 0;i--){
+  if(alpha.indexOf(arrayPhrase[i])<0){
+    continue
+  }
+  orderInvert = orderInvert + arrayPhrase[i]
+}
+
+if (orderNormal === orderInvert){
+  console.log(`This phrase: "${phraseToCheck}" is a Palindrome!`)
+} else {
+  console.log(`This phrase: "${phraseToCheck}" not is a Palindrome`)
+}
