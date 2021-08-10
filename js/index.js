@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
 let hacker1 = "Adam"
 console.log(`The drivers name is: ${hacker1}`)
-let hacker2 = "Adam"
+let hacker2 = "Adr"
 console.log(`The navigator's name is: ${hacker2}`)
 
 // Iteration 2: Conditionals
@@ -38,33 +38,33 @@ console.log(reverseName)
 // 3.3
 
 
-
+// if (hacker1 === hacker2) {
+//     console.log("What?! You both have the same name?")
+// } else if (hacker1 < hacker2) {
+//     console.log("The driver's name goes first.")
+// } else if (hacker1 > hacker2) {
+//     console.log("Yo, the navigator goes first definitely.")
+// }
 
 if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
-} else if (hacker1 < hacker2) {
-    console.log("The driver's name goes first.")
-} else if (hacker1 > hacker2) {
-    console.log("Yo, the navigator goes first definitely.")
+} else {
+    let longerName = hacker1.length > hacker2.length ? hacker1 : hacker2;
+    console.log(longerName)
+    for (let i = 0; i < hacker1.length; i++) {
+        let nameOneChar = hacker1[i]
+        let nameTwoChar = hacker2[i]
+        // console.log(hacker1[i], hacker2[i])
+        if (nameOneChar > nameTwoChar) {
+            console.log("Yo, the navigator goes first definitely.")
+            break
+        } else if (nameOneChar < nameTwoChar) {
+            console.log("The driver's name goes first.")
+            break
+
+        }
+    }
 }
-// if (hacker1 === hacker2) {
-//     console.log("What?! You both have the same name?")
-// } else {
-//     let longerName = hacker1.length > hacker2.length ? hacker1 : hacker2;
-//     console.log(longerName)
-//     for (let i = 0; i < hacker1.length; i++) {
-//         let nameOneChar = hacker1[i]
-//         let nameTwoChar = hacker2[i]
-//         // console.log(hacker1[i], hacker2[i])
-//         if (nameOneChar > nameTwoChar) {
-//             console.log("Yo, the navigator goes first definitely.")
-//             break
-//         } else if (nameOneChar < nameTwoChar) {
-//             console.log("The driver's name goes first.")
-//             break
-//         }
-//     }
-// }
 
 // Bonus 1
 
