@@ -67,17 +67,23 @@ console.log(count(loremText));
 
 //BONUS 2
 
-let phraseToCheck = 'taco cat';
+let phraseToCheck = 'A man a plan a canal Panama';
+phraseToCheck = phraseToCheck.toLowerCase();
+phraseToCheck = phraseToCheck.replaceAll(' ','');
 let palindrome = '';
 
-for (let i = phraseToCheck.length - 1; i >= 0; i--) {
-    palindrome += phraseToCheck[i];
-}
 
-if (phraseToCheck == palindrome) {
+function palindromeCheck(phrase) {
+
+for (let i = phrase.length - 1; i >= 0; i--) {
+    palindrome += phrase[i];
+}
+if (phrase == palindrome) {
     console.log('This is a palindrome!');
 }
-
 else {
-    console.log('Not a palindrome :(.')
+    console.log('Not a palindrome :(.');
 }
+}
+
+palindromeCheck(phraseToCheck);
