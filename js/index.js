@@ -1,11 +1,8 @@
 // Iteration 1: Names and Input
 
 let hacker1 = "Perry"
-
 console.log("The driver's name is " + hacker1);
-
 let hacker2 = "Petunia" 
-
 console.log("The navigator's name is " + hacker2);
 
 // Iteration 2: Conditionals
@@ -20,23 +17,24 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
+// 1
 
-let msg = '';
+let upperCaseName = '';
 
 for (let i = 0; i < hacker1.length; i++) {
-    msg += `${hacker1[i]} `
+    upperCaseName += `${hacker1[i]} `
 }
-console.log(msg)
+console.log(upperCaseName)
 
-let msg2 = '';
+// 2
+
+let reverseName = '';
 for (let i = 1; i <= hacker2.length; i++) {
-    msg2 += hacker2[hacker2.length - i]
+    reverseName += hacker2[hacker2.length - i]
 }
-console.log(msg2)
-// console.log(hacker1.split("").join(" ").toUpperCase());
+console.log(reverseName)
 
-// console.log(hacker1)
-
+// 3
 
 if (hacker1 < hacker2) {
     console.log("The driver's name goes first.")
@@ -54,25 +52,32 @@ Nullam fringilla gravida risus, in sodales lectus auctor et. Nullam odio nibh, c
 
 Sed pulvinar, augue ut placerat faucibus, eros eros accumsan libero, at vestibulum eros eros sed sapien. Nam congue quam quam, sit amet ullamcorper turpis elementum sit amet. Phasellus venenatis eros eu felis sodales commodo. Vivamus finibus ultricies est vitae elementum. Etiam semper arcu in neque congue lobortis. Fusce quis ligula ut mauris porttitor imperdiet eu vel sem. Nullam porta blandit leo, ut pellentesque libero tristique eget. Aliquam erat volutpat. Fusce sodales eu mi quis vestibulum.`
 
-let count1 = 0
-let count2 = 0
+let wordCount = 1
+let countEt = 0
 
 for (let i = 0; i < loremIpsum.length; i++) {
     if (loremIpsum[i] === ' ') {
-        count1 += 1
+        wordCount += 1
     }
     if (`${loremIpsum[i]}${loremIpsum[i+1]}${loremIpsum[i+2]}${loremIpsum[i+3]}` === ' et ') {
-        count2 += 1
+        countEt += 1
     }
 }
-console.log(`We found ${count1} words`)
-console.log(`We found ${count2} occurrences of 'et'`)
+console.log(`We found ${wordCount} words`)
+console.log(`We found ${countEt} occurrences of 'et'`)
 
 // Bonus 2 :
 
 const phrasesToCheck = [
-    `Was it a car or a cat I saw?`,
+    `Was it a car or a cat I saw`,
 ]
+
+let lowerCaseName = '';
+
+for (let i = 0; i < phrasesToCheck.length; i++) {
+    lowerCaseName += `${phrasesToCheck[i]} `
+}
+console.log(lowerCaseName)
 
 for (let i = 0; i < phrasesToCheck.length; i++) {
     let word1 = '';
