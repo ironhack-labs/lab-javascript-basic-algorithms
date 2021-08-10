@@ -2,7 +2,7 @@
 
 # LAB | JS Basic Algorithms 
 
-Welcome to your first bootcamp exercise at Ironhack!
+Welcome to your first bootcamp exercise at Ironhack !
 
 The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we just covered in the class. Feel free to reference lesson materials and don't limit yourself but be curious and use Google to explore multiple solutions.
 
