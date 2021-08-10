@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
-let hacker1 = "Jane"
-let hacker2 = "jana"
+let hacker1 = "Tarzan"
+let hacker2 = "Jane"
 console.log(`The driver's name is ${hacker1}.`)
 console.log(`The navigator's name is ${hacker2}.`)
 
@@ -23,7 +23,7 @@ let spacedName = ""
 for (let i = 0; i <= hacker1.length; i++){
     spacedName += hacker1.charAt(i).toUpperCase() + " ";
 }
-console.log(spacedName)
+console.log(spacedName.trim())
 
 
 // 3.2
@@ -45,6 +45,9 @@ if (hacker1 < hacker2){
 } else if (hacker1 === hacker2){
     console.log("What?! You both have the same name?");
 }
+
+
+
 
 // BONUS #1 //
 
