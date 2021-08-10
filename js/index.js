@@ -32,6 +32,12 @@ for (let i = 1; i <= hacker2.length; i++) {
 console.log(reversedName);
 
 // 3.3 Depending on the lexicographic order of the strings, print:
+// best solution without loops
+if (hacker1 > hacker2) console.log("Yo, the navigator goes first definitely.");
+else if (hacker1 < hacker2) console.log("The driver's name goes first.");
+else console.log("What?! You both have the same name?");
+
+// complex, not clean solution with while loops
 let i = 0;
 if (hacker1 === hacker2){
     console.log("What?! You both have the same name?");
@@ -59,4 +65,39 @@ if (hacker1 === hacker2){
     }
 }
 
+// bonus 1
+let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor semper mi. Nulla facilisi. Mauris faucibus, erat id condimentum vulputate, orci mauris ultrices mauris, ut mattis diam erat quis lacus. Ut ipsum magna, condimentum sit amet ipsum nec, posuere finibus leo. Donec dignissim vel mi vitae tempor. Aenean dignissim in mauris sed venenatis. Etiam interdum tortor nec purus pharetra, id dignissim lorem iaculis. In et luctus lorem, quis faucibus est. Sed nisl ex, cursus ultrices volutpat eget, rutrum sit amet eros. Duis dignissim eros sapien. Donec blandit, diam ut commodo venenatis, lorem est finibus erat, et mollis dui justo lacinia nisl. Vivamus eget sem nisi.";
 
+let wordCount = 0;
+let etCount = 0;
+
+for (let i = 0; i < text.length; i++) {
+    if (text[i] !== " " && text[i] !== "," && text[i] !== ".") {
+    wordCount++;
+    }
+    if (text.slice(i, i+4) == ' et ') {
+        etCount++;
+    }
+}
+console.log(`Words in paragraph: ${wordCount}`)
+console.log(`Times "et" word appears: ${etCount}`)
+
+
+//bonus 2
+//Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+let phraseToCheck = "Was it a car or a cat I saw?";
+let phraseLowerCase = phraseToCheck.toLowerCase();
+let phraseNoSigns = "";
+let phraseReversed = "";
+for (let i = 0; i < phraseLowerCase.length; i++) {
+    if (phraseLowerCase[i] >= "a" && phraseLowerCase[i] <= "z")
+    phraseNoSigns += phraseLowerCase[i];
+}
+for (let i = phraseNoSigns.length -1 ; i >= 0; i--) {
+    phraseReversed += phraseNoSigns[i];
+}
+if (phraseNoSigns === phraseReversed) {
+    console.log("palindrome!!")
+} else {
+    console.log("no palindrome")
+}
