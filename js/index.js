@@ -84,7 +84,7 @@ let phraseWithoutSpaces = phraseToCheck.replace(/ /g, '');
 let phraseLength = phraseWithoutSpaces.length;
 
 console.log(phraseWithoutSpaces);
-
+debugger;
 for (let i = 0; i < phraseLength; i++) {
 	if (phraseWithoutSpaces[i] !== phraseWithoutSpaces[phraseLength - 1 - i]) {
 		//console.log(phraseToCheck[i],phraseToCheck[phraseLength-1] );
@@ -95,5 +95,3 @@ for (let i = 0; i < phraseLength; i++) {
 		break;
 	}
 }
-
-//testing github
