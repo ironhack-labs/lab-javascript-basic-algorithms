@@ -17,3 +17,19 @@ else{
   console.log(`Wow, you both have equally long names, ${driverLength} characters!`)
 };
 // Iteration 3: Loops
+let driverUpperCased = hacker1.toUpperCase();
+let navigatorUperCased = hacker2.toUpperCase();
+let driverUpperCasedSeparated = "";
+let navigatorUpperCasedSeparated = "";
+for (i = 0;i < driverUpperCased.length; i++){
+    driverUpperCasedSeparated += driverUpperCased[i] + " ";
+ }
+ console.log(driverUpperCasedSeparated);
+
+ let navigatorinreverse = "";
+ for (i = hacker2.length - 1; i >= 0; i--){
+     navigatorinreverse += hacker2[i];
+ }
+ console.log(navigatorinreverse);
+
+
