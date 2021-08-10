@@ -49,8 +49,8 @@ console.log(reverseName)
 if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
 } else {
-    let longerName = hacker1.length > hacker2.length ? hacker1 : hacker2;
-    console.log(longerName)
+    // let longerName = hacker1.length > hacker2.length ? hacker1 : hacker2;
+    // console.log(longerName)
     for (let i = 0; i < hacker1.length; i++) {
         let nameOneChar = hacker1[i]
         let nameTwoChar = hacker2[i]
