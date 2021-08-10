@@ -79,14 +79,21 @@ if (hacker1Lowercase === hacker2Lowercase){
 // bonus 1
 let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor semper mi. Nulla facilisi. Mauris faucibus, erat id condimentum vulputate, orci mauris ultrices mauris, ut mattis diam erat quis lacus. Ut ipsum magna, condimentum sit amet ipsum nec, posuere finibus leo. Donec dignissim vel mi vitae tempor. Aenean dignissim in mauris sed venenatis. Etiam interdum tortor nec purus pharetra, id dignissim lorem iaculis. In et luctus lorem, quis faucibus est. Sed nisl ex, cursus ultrices volutpat eget, rutrum sit amet eros. Duis dignissim eros sapien. Donec blandit, diam ut commodo venenatis, lorem est finibus erat, et mollis dui justo lacinia nisl. Vivamus eget sem nisi.";
 
-let wordCount = 0;
+let wordCount = 1;
 let etCount = 0;
 
 for (let i = 0; i < text.length; i++) {
-    if (text[i] !== " " && text[i] !== "," && text[i] !== ".") {
+    if (text[i] === " ") {
     wordCount++;
     }
-    if (text.slice(i, i+4) == ' et ') {
+    if (text.slice(i, i + 4) == ' et ')     //check if the word is between words
+    {
+        etCount++;
+    } else if (text.slice(i, i + 3) == 'Et ')   //check if the word is at the beginning of a sentence
+    {
+        etCount++;
+    } else if (text.slice(i, i + 4) == ' et.')  //check if the word is at the end of a sentence
+    {
         etCount++;
     }
 }
