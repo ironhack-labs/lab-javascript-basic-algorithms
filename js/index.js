@@ -74,7 +74,7 @@ console.log(randomText.split("et").length)
 
 // Bonus 2
 
-let phraseToCheck = "A man, a plan, a canal, Panamaa!"
+let phraseToCheck = "A man, a plan, a canal, Panama!"
 let updatedPhrase = phraseToCheck.toLowerCase().replaceAll(",", "").replaceAll(" ", "").replaceAll("!", "")
 console.log(updatedPhrase)
 let len = phraseToCheck.length
