@@ -81,3 +81,63 @@ for (i=0; i<lorem.length; i++){
 }
 
 console.log(numberOfEt)
+
+//Bonus 2
+
+let phraseToCheck = "taco cat"
+
+let cleanPhraseToCheck = ""
+
+for (i = 0; i<phraseToCheck.length ;i++){
+
+    if (phraseToCheck[i]!== (" " || "." ||","||"!"||"?")){
+          cleanPhraseToCheck += `${phraseToCheck[i].toLowerCase()}`;
+      }else{
+        continue
+      }
+}
+
+// for (i=0; i < (cleanPhraseToCheck.length-1)/2 ; i++){
+//     if(cleanPhraseToCheck.charAt(i) !== cleanPhraseToCheck.charAt(cleanPhraseToCheck.length-i)){
+//         console.log("It's not a palindrome")
+//         break
+//     }else{
+        
+//     }
+// }
+
+
+// for (i=0; i < (cleanPhraseToCheck.length-1)/2 ; i++){
+//     if(cleanPhraseToCheck.charAt(i) === cleanPhraseToCheck.charAt(cleanPhraseToCheck.length-1-i)){
+//         continue
+//     }else if(cleanPhraseToCheck.charAt(i) !== cleanPhraseToCheck.charAt(cleanPhraseToCheck.length-1-i)){
+//         console.log("It's not a palindrome")
+//         break
+//     }
+//     console.log("It's a palindrome")
+// }
+
+
+while (i !== (cleanPhraseToCheck.length-1)/2){
+    if(cleanPhraseToCheck.charAt(i) === cleanPhraseToCheck.charAt(cleanPhraseToCheck.length-1-i)){
+        i++
+    }else{
+        console.log("It's not a palindrome")
+        break
+    }
+    console.log("It's a palindrome")
+}
+
+while (i <= (cleanPhraseToCheck.length-1)/2){
+    if(cleanPhraseToCheck.charAt(i) === cleanPhraseToCheck.charAt(cleanPhraseToCheck.length-1-i)){
+        if (i<(cleanPhraseToCheck.length-1)/2){
+          i++
+        }else{
+          continue
+        }
+    }else{
+        console.log("It's not a palindrome")
+        break
+    }
+    console.log("It's a palindrome")
+}
