@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 let hacker1 = "Jane"
-let hacker2 = "Tarzan"
+let hacker2 = "jana"
 console.log(`The driver's name is ${hacker1}.`)
 console.log(`The navigator's name is ${hacker2}.`)
 
@@ -57,4 +57,31 @@ console.log(wordsAllParagraphs)
 let numberOfEt = latinString.split(" et ").length - 1;
 
 console.log(numberOfEt)
+
+// BONUS #2 //
+
+let palindrome = "put it up"
+let joinedPhrase = ""
+
+ for (let i = 0; i < palindrome.length; i++){
+     if (palindrome[i] !== " " && palindrome[i] !== ","  && palindrome[i] !== "!" && palindrome[i] !== "?"){
+         joinedPhrase += palindrome[i].toLowerCase();
+     }
+ }
+
+ console.log(joinedPhrase)
+
+ let isPalindrome = "";
+
+ for(let i = 0; i< joinedPhrase.length / 2; i++) {
+    if(joinedPhrase[i] === joinedPhrase[joinedPhrase.length - 1 - i]) {
+        isPalindrome = "is Palindrome!! :)"
+        
+    } else {
+        isPalindrome = "is not Palindrome!! :("
+        break;
+    }
+ }
+
+ console.log(isPalindrome)
 
