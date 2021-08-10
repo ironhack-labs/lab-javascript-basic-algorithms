@@ -77,3 +77,5 @@ for (let x = 0; x < stringUpperCase.length; x++){
   }
 
 console.log (wordEtCount)
+
+//Bonus 2
