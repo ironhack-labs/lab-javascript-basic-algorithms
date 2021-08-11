@@ -4,7 +4,7 @@ let hacker1 = `David`
 console.log(`The driver's name is ${hacker1}`)
 let hacker2 = `Jason`
 console.log(`The navigator's name is ${hacker2}`)
-
+debugger
 // Iteration 2: Conditionals
 let driver = hacker1.length
 let navigator = hacker2.length
