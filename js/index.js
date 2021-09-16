@@ -92,6 +92,22 @@ for (let word of lipsumArray) {
 console.log(etCount);
 
 // Bonus 2
-const phraseToCheck = 'race car';
+const phraseToCheck = 'stack cats';
 
-const palindromeCheck = (phrase) => {};
+let newPhrase = '';
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (phraseToCheck[i] === ' ') continue;
+  newPhrase += phraseToCheck[i];
+}
+// console.log(newPhrase);
+let letterCount = 0;
+for (let i = 0; i < newPhrase.length / 2; i++) {
+  if (newPhrase[i] === newPhrase[newPhrase.length - 1 - i]) {
+    letterCount++;
+  }
+}
+if (letterCount >= newPhrase.length / 2) {
+  console.log('Palindrome');
+} else {
+  console.log('Not a Palindrome');
+}
