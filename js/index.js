@@ -20,7 +20,6 @@ if (driver.length > navigator.length) {
 }
 
 // Iteration 3: Loops
-
 let driverInUpperCase = "";
 let navigatorInReverse = "";
 
