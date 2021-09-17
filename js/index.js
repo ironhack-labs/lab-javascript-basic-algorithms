@@ -63,6 +63,6 @@ for (word in paragraphsToWords) {
     etCount++;
   }
 }
-console.log(etCount);
+console.log("The Latin word 'et' occurs " + etCount + " times.");
 
 
