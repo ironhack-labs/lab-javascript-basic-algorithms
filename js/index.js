@@ -67,3 +67,37 @@ wordCount++;
 
 console.log("Paragraph has " + wordCount + " words.");
 console.log("The Latin word 'et' occurs " + etCount + " times.");
+
+//bonus 2
+
+let phraseToCheck = "stack cats";
+
+let phrase = "";
+let phraseReverse = "";
+
+for (i = 0; i < phraseToCheck.length; i++) {
+  const isSpace = phraseToCheck[i] === " ";
+  if (isSpace) {
+    continue;
+  }
+  phrase += phraseToCheck[i];
+}
+
+for (i = phraseToCheck.length - 1; i >= 0; i--) {
+  var isSpace = phraseToCheck[i] === " ";
+  if (isSpace) {
+    continue;
+  }
+  phraseReverse += phraseToCheck[i];
+}
+
+let isPalindrome = phrase === phraseReverse;
+console.log(isPalindrome);
+console.log(phrase);
+console.log(phraseReverse);
+
+if (isPalindrome) {
+  console.log(phraseToCheck + " is a palindrome");
+} else {
+  console.log(phraseToCheck + " is no palindrome");
+}
