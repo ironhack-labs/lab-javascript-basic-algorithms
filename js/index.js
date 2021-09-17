@@ -53,7 +53,6 @@ function lexicographicOrder(driver, navigator) {
   let navCounter = 0;
 
   for (let i = 0; i < iterations; i++) {
-    debugger
     if (driver[i].localeCompare(navigator[i]) < 0) {
       driverCounter +=1;
       if(driverCounter > navCounter) {
@@ -70,8 +69,6 @@ function lexicographicOrder(driver, navigator) {
       driverCounter +=1;
       navCounter +=1;
       if(i === iterations-1){
-        //console.log(`iterations: ${iterations-1}`);
-        //console.log(`i: ${i}`);
         if (driver.length < navigator.length) {
           console.log(`${driver}, the driver goes first`);
         } else if(navigator.length > driver.length) {
