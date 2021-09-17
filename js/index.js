@@ -41,6 +41,28 @@ if (driver > navigator) {
   console.log("What?! You both have the same name?")
 }
 
+//bonus
+let wordCount = 0;
+let etCount = 0;
 
+//count the words
+for (i = 0; i <= paragraphs.length; i++) {
+  let isSpaceBetweenWords = paragraphs[i] === " ";
+  if (isSpaceBetweenWords) {
+    wordCount++;
+  }
+}
+//add +1 to count for the last word
+wordCount++;
+console.log("Paragraph has " + wordCount + " words.");
+
+// count the word et
+let paragraphsToWords = paragraphs.split(' ');
+for (word in paragraphsToWords) {
+  if (paragraphsToWords[word] === "et") {
+    etCount++;
+  }
+}
+console.log(etCount);
 
 
