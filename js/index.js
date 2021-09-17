@@ -42,7 +42,7 @@ if (driver > navigator) {
   console.log("What?! You both have the same name?");
 }
 
-// Bonus
+// Bonus 1
 const paragraphs =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus risus, auctor et lacus ut, mollis semper risus. Nulla ullamcorper bibendum tellus. Praesent pulvinar nulla enim, at tempor lorem pretium eget. Aliquam erat volutpat. In maximus mauris vel tortor accumsan, ac euismod orci volutpat. Donec ornare, nibh in pulvinar tristique, turpis odio pellentesque tellus, eget bibendum nisl dui vel ligula. Praesent finibus arcu vel neque pellentesque viverra. Duis felis libero, tincidunt ac felis sed, accumsan porttitor neque. Ut sed egestas lacus. Etiam at molestie elit, eget finibus ex. Nulla et sapien nunc, iaculis sed varius id, pulvinar id nisi. Cras faucibus, risus non finibus suscipit, nisi sem vehicula arcu, sed aliquam sem nisi non velit. Integer pretium diam leo, at aliquam nibh lacinia quis. Sed sodales porta tellus nec finibus. Cras dictum nisl arcu, non consequat nisl vulputate in. Vestibulum arcu nisl, congue rutrum ornare quis, blandit euismod ante. Duis sed condimentum arcu. Aenean varius hendrerit enim vel finibus. Nulla eget blandit turpis. Donec lorem ex, iaculis dictum est a, euismod tempus urna. Suspendisse potenti. Fusce at justo rhoncus, dapibus lorem et, sollicitudin neque. Praesent condimentum viverra tincidunt. Sed tristique ipsum aliquam odio ultrices tincidunt. Nam dignissim nunc ut consequat mollis. Curabitur gravida ante vitae urna rhoncus, ut tempus quam tincidunt. Pellentesque convallis neque eget lectus accumsan ornare. Quisque lacinia bibendum malesuada. Duis nec est non est tempus vehicula. Pellentesque in pulvinar dolor. Donec luctus, leo at lacinia vehicula, lorem mauris vestibulum libero, et pellentesque dolor tortor non mauris.";
 
@@ -69,7 +69,6 @@ console.log("Paragraph has " + wordCount + " words.");
 console.log("The Latin word 'et' occurs " + etCount + " times.");
 
 //bonus 2
-
 let phraseToCheck = "stack cats";
 
 let phrase = "";
@@ -92,9 +91,6 @@ for (i = phraseToCheck.length - 1; i >= 0; i--) {
 }
 
 let isPalindrome = phrase === phraseReverse;
-console.log(isPalindrome);
-console.log(phrase);
-console.log(phraseReverse);
 
 if (isPalindrome) {
   console.log(phraseToCheck + " is a palindrome");
