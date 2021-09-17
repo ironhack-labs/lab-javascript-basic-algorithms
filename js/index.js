@@ -7,7 +7,6 @@ console.log(`the navigator's name is ${navigator}.`);
 
 
 // Iteration 2: Conditionals
-
 if (driver.length > navigator.length) {
   console.log(
     `The driver has the longest name, it has ${driver.length} characters`
@@ -21,3 +20,17 @@ if (driver.length > navigator.length) {
 }
 
 // Iteration 3: Loops
+let driverInUpperCase = "";
+let navigatorInReverse = "";
+
+for (let i = 0; i <= driver.length; i++) {
+  driverInUpperCase += driver.charAt(i).toUpperCase() + " "
+};
+console.log(driverInUpperCase);
+
+for (let i = navigator.length; i >= 0; i--) {
+  navigatorInReverse += navigator.charAt(i);
+};
+console.log(navigatorInReverse);
+
+
