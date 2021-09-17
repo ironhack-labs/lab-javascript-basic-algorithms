@@ -92,12 +92,12 @@ for (let word of lipsumArray) {
 console.log(etCount);
 
 // Bonus 2
-const phraseToCheck = 'stack cats';
+const phraseToCheck = 'Was it a car or a cat I saw?';
 
 let newPhrase = '';
 for (let i = 0; i < phraseToCheck.length; i++) {
-  if (phraseToCheck[i] === ' ') continue;
-  newPhrase += phraseToCheck[i];
+  if (!phraseToCheck[i].match(/[a-zA-Z]/)) continue;
+  newPhrase += phraseToCheck[i].toLowerCase();
 }
 // console.log(newPhrase);
 let letterCount = 0;
