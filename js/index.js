@@ -33,4 +33,14 @@ for (let i = navigator.length; i >= 0; i--) {
 };
 console.log(navigatorInReverse);
 
+if (driver > navigator) {
+  console.log("The driver's name goes first.")
+} else if (driver < navigator) {
+  console.log("Yo, the navigator goes first definitely.")
+} else {
+  console.log("What?! You both have the same name?")
+}
+
+
+
 
