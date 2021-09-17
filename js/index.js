@@ -1,8 +1,12 @@
 // Iteration 1: Names and Input
+const driver = "Karla";
+const navigator = "Philipp";
+
+console.log(`the driver's name is ${driver}.`);
+console.log(`the navigator's name is ${navigator}.`);
+
 
 // Iteration 2: Conditionals
-const driver = "Karl";
-const navigator = "Phil";
 
 if (driver.length > navigator.length) {
   console.log(
