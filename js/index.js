@@ -28,7 +28,7 @@ else {
 
 // Iteration 3: Loops
 
-let driverName = " "
+let driverName = ""
 
 for (let i=0; i<lengthOfHacker1; i++) 
 {
@@ -39,7 +39,7 @@ console.log(driverName);
 
 
 
-let navigatorName = " ";
+let navigatorName = "";
 
 for (let i = lengthOfHacker2 - 1 ; i >= 0 ; i-- ) {
   navigatorName += hacker2[i];
