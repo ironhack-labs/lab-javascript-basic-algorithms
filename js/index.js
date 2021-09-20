@@ -16,3 +16,10 @@ if (hacker1.length > hacker2.length) {
   };
 
 // Iteration 3: Loops
+
+console.log(hacker1.toUpperCase.split('').join(' '));
+
+console.log(hacker2.split('').reverse().join(''))
+
+
+}
