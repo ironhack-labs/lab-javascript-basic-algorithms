@@ -38,6 +38,15 @@ console.log(hacker2[0]);
 - Yo, the navigator goes first definitely.
 - What?! You both have the same name? */
 
+let result = 'hacker1'.localeCompare('hacker2');
+if (result = -1){
+   console.log("The driver's name goes first")
+} else if (result = 1) {
+  console.log("Yo, the navigator goes first definitely.")
+} else {
+  console.log("What?! You both have the same name);
+}
+
 //Bonus 1
 const paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat ex eget felis posuere scelerisque. Donec consequat eu urna at posuere. Cras scelerisque venenatis pretium. Etiam et tempor risus, eget condimentum augue. Vivamus rhoncus est lacus, eu pharetra nibh pharetra sed. Phasellus vel tincidunt quam. Integer a velit ut mi cursus tempus a nec augue. In hac habitasse platea dictumst. Suspendisse potenti. Mauris ullamcorper mattis ornare. Donec vehicula nisl massa, nec venenatis libero auctor ac. Nulla vel vestibulum augue, vel ullamcorper lacus. Morbi elit nisi, consectetur in ullamcorper a, mollis sed augue. Nunc faucibus purus in mauris consectetur semper. Proin a elit ullamcorper, dapibus nibh sit amet, porta nisi. Duis volutpat nisl id lectus condimentum, ac pharetra ligula tempor. Morbi in felis viverra, finibus nunc sit amet, efficitur risus. Fusce orci urna, commodo nec nulla non, iaculis commodo dolor. Etiam suscipit est risus, sit amet pellentesque dui aliquet quis. Nulla vitae est ligula. Integer ultricies consequat molestie. Praesent vel sapien malesuada, varius augue vitae, lacinia lacus. Aenean sagittis in mauris accumsan tempus. Vivamus pretium tincidunt augue a bibendum. Aliquam lacinia feugiat magna, et imperdiet turpis imperdiet ac. Maecenas maximus risus id nulla eleifend, vel tincidunt velit rhoncus. Morbi facilisis magna ligula, sed faucibus ipsum semper et. Fusce magna urna, efficitur a mauris at, dapibus mollis tellus."
 
