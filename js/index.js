@@ -43,8 +43,6 @@ for (let i = (navigatorLength - 1); i >= 0; i--) {
 }
 console.log(reverseNavigator);
 
-
-
 // 3.3 Depending on the lexicographic order of the strings, print:
 let charDriver;
 let charNavigator;
@@ -68,3 +66,55 @@ for (let i = 0; i < smallName; i++) {
     continue;
   }
 };
+
+// Bonus 1:
+let text = `Lorem, ipsum dolor et sit amet consectetur adipisicing elit. Beatae magnam, similique cum delectus ullam at maxime placeat aut eveniet tempore dolore praesentium laborum, id deserunt animi velit. Tempora, nemo et accusantium. 
+Lorem, ipsum dolor et sit amet consectetur adipisicing elit. Beatae magnam, similique cum delectus ullam at maxime placeat aut eveniet tempore dolore praesentium laborum, id deserunt animi velit. Tempora, nemo et accusantium. 
+Lorem, ipsum dolor et sit amet consectetur adipisicing elit. Beatae magnam, similique cum delectus ullam at maxime placeat aut eveniet tempore dolore praesentium laborum, id deserunt animi velit. Tempora, nemo et accusantium.`;
+
+let words = countWords(text);
+console.log(words);
+
+function countWords(text) {
+    let wordCount;
+    if (text[0] !== ' ') {
+        wordCount = 1;
+    } else {
+        wordCount = 0;
+    }
+
+    let n = text.length;
+    for (let i = 0; i < n; i++) {
+        let char = text[i];
+
+        if (char === ' ') {
+            wordCount += 1;
+        }
+    }
+    // If last char is a space, we don't count it as another word and for that reason we subtract 1 from the word count 
+    if (text[n - 1] === ' '){
+        wordCount -= 1;
+    }
+    return wordCount;
+}
+
+// Make your program count the number of times the Latin word et appears.
+let etWord = etWordsCount(text);
+console.log(etWord);
+
+function etWordsCount(text) {
+    let wordCount = 0;
+
+    let n = text.length;
+    for (let i = 0; i < n; i++) {
+      let charAnte = text[i -1];
+      let char = text[i];
+      let char2 = text[i + 1];
+      let char3 = text[i + 2];
+
+        if (charAnte === ' ' && char === 'e' && char2 === 't' && char3 === ' ') {
+            wordCount += 1;
+        }
+    }
+    return wordCount;
+}
