@@ -43,3 +43,15 @@ letters = hacker1;{
   } else if (driver == navigator){
     console.log("What?! You both have the same name?");
   }
+
+  let caracter = "et"
+let word = [];
+let contador = 0
+let items = text.toLowerCase().split(' ')
+for(let i = 0; i < text.length; i++) {
+	if (text[i].toLowerCase() === "et"){
+    contador++
+  }
+}
+
+console.log("How many times 'et' appears in the text: "+ contador)
