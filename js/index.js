@@ -31,5 +31,5 @@ if (hacker1<hacker2) {
   } else if (hacker1>hacker2) {
     console.log("Yo, the navigator goes first definitely.")
   } else if(hacker1=hacker2) {
-    console.log("What?! You both have the same name? ")
+    console.log("What?! You both have the same name?  ")
   }
