@@ -49,4 +49,14 @@ if (hacker1 < hacker2) {
     console.log(`What?! You both have the same name?`)
     }
 
+    //BONUS 1
+
+    const txt = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mauris eu odio ullamcorper, a tincidunt elit finibus. Phasellus convallis molestie est, a iaculis risus vulputate quis. Nam maximus nibh a arcu tincidunt, eget efficitur diam mollis. Cras varius sem id massa varius, non ultricies libero iaculis. Nulla auctor ligula eu dui pretium tincidunt. Nam nec sapien ut dui pharetra accumsan. In ullamcorper hendrerit suscipit. Integer mattis vestibulum metus sit amet accumsan. Nulla nec fringilla libero. Suspendisse auctor in est sed aliquet. Suspendisse a nisi nec est aliquet aliquet.Proin a ligula porttitor ipsum scelerisque ornare ac sed turpis. Nulla ac ipsum augue. Vestibulum tortor leo, rutrum non erat et, tristique porttitor sem. Aliquam elementum ipsum orci, eget tempor nisl commodo ut. Morbi lobortis enim quam, ac mollis neque pharetra et. Suspendisse vitae turpis a neque ultrices dignissim sed a massa. Nam est lectus, viverra eu lacinia id, mollis sed orci. Duis sit amet pulvinar enim, et condimentum tortor. Fusce sit amet pretium sem. Duis scelerisque ornare arcu, in suscipit ante malesuada eu. Ut fringilla interdum iaculis. Sed lorem sem, efficitur non tempor sit amet, sodales non quam. Aenean lobortis, dolor eget condimentum semper, lectus odio viverra elit, non volutpat est diam pellentesque enim. Maecenas luctus justo tortor, ac dapibus neque venenatis in. Aliquam euismod gravida justo, sed varius leo accumsan eu. Duis scelerisque ullamcorper nisl, et mattis leo sagittis et. Duis et odio feugiat, semper massa in, mattis tellus. Sed molestie est nisi, eu vehicula sapien vehicula id. Nulla tempus suscipit urna et dignissim. Suspendisse fermentum orci nunc, congue scelerisque nibh consequat in. Fusce consequat facilisis dignissim. In hac habitasse platea dictumst."
+
+
+let text = txt;
+text = text.split(".").join("");
+text = text.split(",").join("");
+text = text.split(" ");
+console.log(text.length);
 
