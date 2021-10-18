@@ -26,27 +26,19 @@ if(hacker1.length > hacker2.length){
 // Iteration 3: Loops
 
 
-var stringArr = hacker1.split(" ");
 
-for (let i = 0; i < hacker1.length; i++){
-    stringArr.push(hacker1[i]);
-    if(i != hacker1.length -1 ){
-        stringArr.push(' ');
-    }
 
+
+let driverName = '';
+for (i = 0; i < hacker1.length; i++){
+  hacker1[i];
+  driverName += hacker1[i].toUpperCase() + ' ';
+    console.log (driverName);
 }
 
-console.log(stringArr);
-
-
-var string = "text to split";
-    string = string.split(" ");
-var stringArray = new Array();
-for(var i =0; i < string.length; i++){
-    stringArray.push(string[i]);
-    if(i != string.length-1){
-        stringArray.push(" ");
-    }
+let reversedNavigator = '';
+for (i = hacker2.length - 1; i >= 0; i--){
+  hacker2[i];
+  reversedNavigator += hacker2[i].toUpperCase() + ' ';
+  console.log (reversedNavigator);
 }
-
-console.log(string);
