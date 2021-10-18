@@ -22,3 +22,31 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
+let output = "";
+for(let i=0; i<hacker1.length; i++) {
+  if(i === 0) {
+   output += hacker1[i].toUpperCase();  
+  } else {
+  output += ' ' + hacker1[i].toUpperCase(); 
+}
+}
+
+console.log(output);
+
+output = "";
+for(let j= Number(hacker1.length -1); j >= 0; j--) {
+  
+    output += hacker1[j];  
+}
+
+console.log(output);
+
+if (hacker1 < hacker2) {
+    console.log(`The driver's name goes first.`);
+  } else if (hacker1 > hacker2) {
+    console.log(`Yo, the navigator goes first definitely`);
+  } else {
+    console.log(`What?! You both have the same name?`)
+    }
+
+
