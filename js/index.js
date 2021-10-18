@@ -70,9 +70,7 @@ let trimmed = phraseToCheck.replace(/\s/g,'')
 let reversedPhrase = '';
 
 for (let i = trimmed.length - 1; i >= 0; i--) {
-  if (phraseToCheck[i] !== '') {
-    reversedPhrase += trimmed[i]
-  }
+  reversedPhrase += trimmed[i]
 }
 if (trimmed === reversedPhrase) {
   console.log('Palindrome');
