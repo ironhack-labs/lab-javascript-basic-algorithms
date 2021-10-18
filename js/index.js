@@ -76,3 +76,68 @@ else
 {
   console.log("What?! You both have the same name?");
 }
+
+/*Bonus Time!
+Bonus 1:
+Go to lorem ipsum generator and:
+
+Generate 3 paragraphs. Store the text in a variable type of string.
+Make your program count the number of words in the string.
+Make your program count the number of times the Latin word et appears.
+*/
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lectus nisi, euismod at eros a, hendrerit faucibus purus. Integer viverra ex id lorem consequat, at porta sapien tincidunt. Quisque aliquam orci et est molestie, vel ullamcorper arcu scelerisque. Sed accumsan finibus erat, ut dignissim felis tristique id. Duis vel tortor nulla. Quisque consectetur, ante ut lacinia laoreet, neque elit lacinia tellus, in sagittis odio lacus condimentum mi. Fusce leo quam, ullamcorper quis blandit id, aliquet ut ante. Proin varius augue massa, vel vulputate nisl ultrices id. Vestibulum sit amet nisl in metus rhoncus molestie eu eu massa.
+
+Curabitur malesuada odio in nibh finibus, nec pharetra ipsum accumsan. Donec luctus sodales imperdiet. Nam placerat leo nec purus volutpat egestas. Nam cursus a odio pharetra auctor. Cras condimentum interdum felis, sed suscipit elit venenatis vitae. Maecenas ac imperdiet dolor. Maecenas luctus commodo nisi, sed imperdiet quam volutpat non. Donec odio tortor, hendrerit at auctor at, placerat bibendum quam.
+
+Duis tincidunt ullamcorper dignissim. Mauris porta aliquam urna pretium efficitur. Duis quis odio sodales, condimentum ante sed, bibendum massa. Vestibulum nec neque in mi commodo semper ut non ex. Fusce lectus risus, malesuada eget risus non, lobortis auctor lacus. Cras gravida commodo sollicitudin. Integer leo odio, suscipit quis auctor non, iaculis iaculis turpis. Nam eu semper nisi, dignissim molestie eros. Praesent vitae sapien justo. Aliquam et erat volutpat. Suspendisse eu augue feugiat, imperdiet ligula quis, ullamcorper ipsum. In hac habitasse platea dictumst. et et`;
+let counter = 1;
+for (let j= 0; j < lorem.length; j++)
+{
+  if(lorem[j]===" ")
+  {
+    counter++;
+  }
+}
+console.log(`The lorem ipsum that got generated has ${counter} words`);
+counter = 0;
+for (let j= 0; j < lorem.length; j++)
+{
+  if(lorem[j]===" " && lorem[j+1]==="e" && lorem[j+2]==="t" && lorem[j]===" ")
+  {
+    counter++;
+  }
+}
+console.log(`The lorem ipsum texts contains the latin word et ${counter} times`)
+/*
+Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".
+Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin' 😃*/
+let phraseToCheck = "race car";
+let check1="";
+let check2 ="";
+for (let i = 0; i< phraseToCheck.length ; i++)
+{
+  if(phraseToCheck[i]!==" ")
+  {
+       check1 = check1 + phraseToCheck[i];
+       check2=phraseToCheck[i] + check2;  
+  }
+  
+}
+if(check1===check2)
+{
+  console.log("The given string is a palindrome")
+}
+else
+{
+    console.log("The given string is NOT a palindrome")
+}
