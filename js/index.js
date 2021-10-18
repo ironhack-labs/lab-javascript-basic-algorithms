@@ -34,7 +34,9 @@ console.log(reversedNavigator);
 
 // 3.3
 let arr = [hacker1, hacker2];
-const sortedArr = arr.sort();
+const sortedArr = arr.sort(function(a, b){
+  return a.localeCompare(b);
+});
 
 if (hacker1.localeCompare(hacker2) === 0) {
   console.log('What?! You both have the same name?')
@@ -43,6 +45,8 @@ if (hacker1.localeCompare(hacker2) === 0) {
 } else {
   console.log('Yo, the navigator goes first definitely.')
 }
+
+
 
 
 
