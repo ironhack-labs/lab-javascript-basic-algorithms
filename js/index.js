@@ -51,3 +51,25 @@ if (hacker1[0] < hacker2[0]) {
 }
 
 // Bonus
+let loremPar = `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat pariatur
+necessitatibus aliquam laborum animi. Facere quis suscipit tempora libero
+modi.
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat pariatur
+necessitatibus et aliquam laborum animi. Facere quis suscipit tempora libero
+modi.
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat pariatur
+necessitatibus aliquam laborum animi. Facere quis suscipit tempora libero
+modi.`;
+
+console.log(loremPar.split(' ').length);
+
+// Count number of times latin word appears
+let totalCountEt = '';
+for (let i = 0; i < loremPar.split(' ').length; i++) {
+  if (loremPar.split(' ')[i] === 'et') {
+    totalCountEt++;
+  }
+}
+console.log(totalCountEt);
