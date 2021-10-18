@@ -60,3 +60,26 @@ text = text.split(",").join("");
 text = text.split(" ");
 console.log(text.length);
 
+// BONUS 2
+
+
+const phraseToCheck = "A man, a plan, a canal, Panama!"
+let phrase = phraseToCheck;
+phrase = phrase.split(".").join("");
+phrase = phrase.split(",").join("");
+phrase = phrase.split("!").join("");
+phrase = phrase.split(" ").join("");
+phrase = phrase.toLowerCase();
+
+phraseInversed= "";
+for(let j= Number(phrase.length -1); j >= 0; j--) {
+  
+    phraseInversed += phrase[j];  
+} 
+
+
+if (phrase === phraseInversed) {
+  console.log("It's a palindrome");
+} else { 
+  console.log("It's not a palindrome");
+}
