@@ -8,6 +8,7 @@ console.log(`The navigator's name is ${hacker2}`)
 // Iteration 2: Conditionals
 const hacker1Length = hacker1.length
 
+
 const hacker2Length = hacker2.length
 if(hacker1Length > hacker2Length){
     console.log(`The driver has the longest name, it has ${hacker1Length} characters`)
