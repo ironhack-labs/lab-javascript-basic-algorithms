@@ -1,4 +1,4 @@
-}// Iteration 1: Names and Input
+// Iteration 1: Names and Input
 let hacker1 = 'Federico';
 console.log(`The driver's name is ${hacker1}`)
 
@@ -30,21 +30,17 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 //Count the number of words in the paragraph
 let wordCounter = 0
+let etCounter = 0
 for(let i = 0; i < lorem.length; i++){
   if(lorem[i] === " "){
     wordCounter++
   }
-}
-
-console.log(wordCounter)
-
-let etCounter = 0
-for(let i = 0; i < lorem.length; i++){
-  if(lorem[i] === "e" && lorem[i+1] === "t"){
+  else if(lorem[i] === "e" && lorem[i+1] === "t"){
   etCounter++
   }
 }
 
+console.log(wordCounter)
 console.log(etCounter)
 
 //Alternate form with a switch
