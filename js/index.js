@@ -61,4 +61,13 @@ const loreIpsum3 =
     return string.split(" ").length;
   }
 
-  //Bonus 2
+  function returnEt(string){
+    let characters = string.split(" ");
+    let totalEt = 0;
+      for(let i =0;i<characters.length;i++){
+          if(characters[i] === "et"){
+            totalEt++;
+          }
+        }
+    return totalEt;
+}
