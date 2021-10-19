@@ -30,21 +30,17 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 //Count the number of words in the paragraph
 let wordCounter = 0
+let etCounter = 0
 for(let i = 0; i < lorem.length; i++){
   if(lorem[i] === " "){
     wordCounter++
   }
-}
-
-console.log(wordCounter)
-
-let etCounter = 0
-for(let i = 0; i < lorem.length; i++){
-  if(lorem[i] === "e" && lorem[i+1] === "t"){
+  else if(lorem[i] === "e" && lorem[i+1] === "t"){
   etCounter++
   }
 }
 
+console.log(wordCounter)
 console.log(etCounter)
 
 //Alternate form with a switch
@@ -66,3 +62,32 @@ for(let i = 0; i < lorem.length; i++){
 
 console.log(wordCounter)
 console.log(etCounter)*/
+ 
+//Bonus2: Check whether a phrase is a palindrome or not
+function alphaOnly(phrase) { //Function that extracts letters from a string (sacada de gugel y adaptada)
+    var alphaText = '';
+    for (var i = 0; i < phrase.length; i++) {
+        if (phrase[i] >= 'A' && phrase[i] <= 'z'){ //Checks whether the character is a letter using the ASCII values of letters
+           alphaText += phrase[i].toLowerCase()
+        }
+    }
+    return alphaText;
+}
+
+
+// const phraseToCheck = prompt(`Input the phrase`)
+const phraseToCheck = "Amor, Roma!"
+const letras = alphaOnly(phraseToCheck) //Converts the phrase to letters using the function above
+
+let reversedPhrase = '';
+for(i = letras.length - 1; i >= 0; i--){ //Loops through the phrase in reverse storing it in another variable, as if the phrase is a palindrome, the reverse will read the same as the original
+  reversedPhrase += letras[i] 
+}
+
+if(reversedPhrase === letras){ //Makes the comparison
+  console.log(`The phrase ${phraseToCheck} is a palindrome`)
+}else{
+  console.log(`The phrase ${phraseToCheck} is not a palindrome`)
+}
+
+
