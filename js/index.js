@@ -62,3 +62,44 @@ for(let i = 0; i < lorem.length; i++){
 
 console.log(wordCounter)
 console.log(etCounter)*/
+ 
+//Bonus2: Check whether a phrase is a palindrome or not
+function alphaOnly(phrase) { //Function that extracts letters from a string (sacada de gugel y adaptada)
+    var alphaText = '';
+    for (var i = 0; i < phrase.length; i++) {
+        if (phrase[i] >= 'A' && phrase[i] <= 'z'){ //Checks whether the character is a letter using the ASCII values of letters
+           alphaText += phrase[i].toLowerCase()
+        }
+    }
+    return alphaText;
+}
+
+let flag //This flag keeps track of the state of the word as the loop progresses, true if its a palindrome, changes to false otherwise
+const phraseToCheck = prompt(`Input the phrase`)
+const letras = alphaOnly(phraseToCheck) //Converts the phrase to letters using the function above
+
+let reversedPhrase = '';
+
+for(i = letras.length - 1; i >= 0; i--){
+  // if(letras[i] == letras[(letras.length - 1) - i] && i < (letras.length - 1) - i){ //The first condition checks whether the pair of letters compared from each end are the same, the second condition makes sure the pairs are compared just once, in a word of a length of 8, there's 4 pairs of letters, so at i = 3 you'd be comparing the last pair, if the letters are the same, i = 3 < 4, on the next iteration i = 4, and 4 < 3, so that way we avoid going over the pair we just compared and the process ends
+
+  //   flag = true
+  //   continue
+  // }else{
+  //   flag = false
+  //   continue
+  // }
+
+  reversedPhrase += letras[i]
+
+  //reversedPhrase = 
+}
+
+console.log(reversedPhrase)
+
+
+if(reversedPhrase === letras){
+  console.log(`The phrase ${phraseToCheck} is a palindrome`)
+}else{
+  console.log(`The phrase ${phraseToCheck} is not a palindrome`)
+}
