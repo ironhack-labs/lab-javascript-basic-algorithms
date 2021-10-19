@@ -20,3 +20,38 @@ function getLongestName(name1,name2){
 
 // Iteration 3: Loops
 
+//3.1 
+
+function changeName(name){
+    let newName = "";
+    for (let i=0; i<hacker1.length;i++){
+        newName = newName + hacker1[i];
+    }
+    return newName.toUpperCase().split("").join(" ");
+}
+
+//3.2 
+
+function getReverse (name){
+    let reverseName = "";
+    for (let i=0;i<name.length;i++){
+        reverseName = name[i] + reverseName;
+    }
+    return reverseName;
+}
+
+//3.3
+
+function hackersOrder(name1, name2) {
+    let number = name1.localeCompare(name2);
+  
+    if (number === -1) {
+      return `The driver's name goes first.`;
+    } else if (number === 1) {
+      return `Yo, the navigator goes first definitely.`;
+    } else if (number === 0) {
+      return `What?! You both have the same name?`;
+    }
+  }
+  
+
