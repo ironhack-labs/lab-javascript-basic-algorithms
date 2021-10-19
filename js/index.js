@@ -21,17 +21,29 @@ if (length1 > length2) {
 
 // Iteration 3: Loops
 
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals
 const splittedHacker1 = hacker1.split('');
 const stringWithSpaces1 = splittedHacker1.join(' ');
 const upperCaseStringWithSpaces1 = stringWithSpaces1.toUpperCase();
 console.log(upperCaseStringWithSpaces1);
 
-//const splittedHacker2 = hacker2.split('');
-//const stringWithSpaces2 = splittedHacker2.join(' ');
-//const upperCaseStringWithSpaces2 = stringWithSpaces2.toUpperCase();
-//console.log(upperCaseStringWithSpaces2);
-
+// 3.2 Print all the characters of the navigator's name, in reverse order
 function ReverseString(str) {
    return str.split('').reverse().join('')
 }
 console.log (ReverseString(hacker2));
+
+// Depending on the lexicographic order of the strings
+function strcmp(hacker1, hacker2) {
+    if(hacker1 === hacker2) {
+        return "What?! You both have the same name?";
+    }
+
+    if (hacker1 > hacker2) {
+        return "Yo, the navigator goes first definitely.";
+    } else {
+      return "The driver's name goes first.";
+    }
+}
+
+console.log(strcmp(hacker1, hacker2));
