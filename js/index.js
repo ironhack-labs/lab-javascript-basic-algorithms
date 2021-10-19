@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 let hacker1 = 'Federico';
-console.log(`The driver's name is ${hacker1}`);
+console.log(`The driver's name is ${hacker1}`)
 
 let hacker2 = 'Aaron';
-console.log(`The navigator's name is ${hacker2}`);
+console.log(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
 if(hacker1.length > hacker2.length){
@@ -17,3 +17,7 @@ else{
 }
 
 // Iteration 3: Loops
+
+for(let i = 0; i < hacker1.length; i++){
+  console.log(hacker1[i].toUpperCase() +' ')
+}
