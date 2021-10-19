@@ -52,6 +52,42 @@ let loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
 let loremWords = loremText.split(" ")
 console.log(loremWords.length);
 
+function countOccurences(string, word) {
+    return string.split(word).length - 1;
+}
+console.log(countOccurences(loremText, 'et'));
 
+// Bonus 2
 
+let string1 = "A man, a plan, a canal, Panama!"
+let string2 = "Amor, Roma"
+let string3 = "race car"
+let string4 = "stack cats"
+let string5 = "step on no pets"
+let string6 = "taco cat"
+let string7 = "put it up"
+let string8 = "Was it a car or a cat I saw?"
+let string9 = "No x in Nixon"
 
+function isPalindrome(str) {
+    str = str.toUpperCase();
+    let newStr = ''
+    for(let i = 0; i < str.length; i++) {
+      const charCode = str.charCodeAt(i)
+      if(charCode >= 65 && charCode <= 90) {
+        newStr += str.charAt(i)
+      }
+    }
+    //console.log({str, newStr })
+  
+    for(let i = 0; i < Math.floor(newStr.length / 2); i++) {
+      const leftChar = newStr.charAt(i)
+      const rightChar = newStr.charAt(newStr.length - 1 - i)
+      if(leftChar !== rightChar) {
+        return false
+      }
+    }
+    return true
+  }
+  
+  console.log(isPalindrome(string1));
