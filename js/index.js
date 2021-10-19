@@ -67,19 +67,11 @@ console.log(count)
 let cleanPhrase = ""
 function clean(str){ 
     for (let i = 0; i <= str.length - 1; i++){
-        switch (str[i]) {
-            case "?":
-            case ",":
-            case "'":
-            case "!":
-            case " ":
-                break;
-            default:
+            if (str[i].toLowerCase() != str[i].toUpperCase()){
                 cleanPhrase += str[i]
-
+            }              
         }
     
-    }
     cleanPhraseLower = cleanPhrase.toLowerCase()
     return cleanPhraseLower
 }
@@ -88,10 +80,10 @@ function clean(str){
 
 function palindrome(str) {
     var len = str.length;
-    for (var i = 0; i < len/2; i++) {
-      if (str[i] !== str[len - 1 - i]) {
-          return false;
-      }
+    for (var i = 0; i < len/2; i++) {   
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
     }
     return true;
    }
