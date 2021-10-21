@@ -1,4 +1,5 @@
 // Iteration 1: Names and Input
+
 const hacker1 = "José Luis";
 const hacker2 = "Raquel";
 
@@ -20,6 +21,7 @@ function getLongestName(name1, name2) {
 // Iteration 3: Loops
 
 //3.1
+
 function changeName(name1) {
   let newName = "";
   for (let i = 0; i < hacker1.length; i++) {
