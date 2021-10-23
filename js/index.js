@@ -19,15 +19,16 @@ if ( hacker1.length > hacker2.length) {
 
 let nameToUpperCase = "";
 for (let i = 0; i < hacker1.length; i++){
-    nameToUpperCase += hacker1[i].toUpperCase().split("").join(" ")
-    console.log(nameToUpperCase)
+    nameToUpperCase += hacker1[i].toUpperCase() + " "
 }
+console.log(nameToUpperCase)
 
 let reverseName = ""
 for (let i = hacker2.length - 1 ; i >= 0; i--){
     reverseName += hacker2[i];
-    console.log(reverseName);
+   
 }
+console.log(reverseName);
 
 function nameFirst(hacker1, hacker2){
     if (hacker1 > hacker2) {
