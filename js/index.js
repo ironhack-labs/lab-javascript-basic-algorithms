@@ -28,3 +28,49 @@ function longerName(driver,navigator) {
     console.log(longerName("Miguel", "Martin"))
 
 // Iteration 3: Loops
+// 3.1
+
+let driver = "Miguel"
+driver = driver.toUpperCase()
+let result = ""
+
+for (i=0; i < driver.length; i++){
+  let char = driver[i]
+  result += `${char} ` 
+}
+console.log (result)
+
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+
+// Solucion posible 1 con Loop
+let navigator = "Martin"
+let result2 = ""
+
+for (i=(navigator.length - 1); i >= 0; i--){
+  let char2 = navigator[i]
+  result2 += `${char2}`
+}
+console.log(result2)
+
+// Solucion Posible 2 sin Loop
+
+function reverseString(navigator) {
+    return navigator.split("").reverse().join("");
+}
+console.log(reverseString("Martin"));
+
+//3.3 Depending on the 'lexicographic order' of the strings, print:
+let driver3 = "Miguel";
+let navigator3 = "Martin";
+
+if (navigator3.localeCompare(driver3) === -1) {
+console.log("The drivers name goes first.");
+
+if (navigator3.localeCompare(driver3) === 1) {
+  console.log(" Yo, the navigator goes first definitely.");
+
+} else {
+  console.log("What?! You both have the same name?");
+  }
+}
+
