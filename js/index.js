@@ -28,3 +28,39 @@ else {
 }
 
 // Iteration 3: Loops
+
+const HACKER1 = "Hector";
+const HACKER2 = "Edgar";
+let newName = ""
+for (i=0;i<HACKER1.length; i++) {
+   newName = newName + HACKER1[i] + " "
+}
+  console.log(newName);
+
+
+  //
+
+  const HACKER1 = "Hector";
+const HACKER2 = "Edgar";
+let newName= " " ;
+
+
+for (i=HACKER2.length-1;i>=0;i--){
+newName = newName + HACKER2[i];
+
+}
+
+console.log(newName);
+
+//
+
+const HACKER1 = "Hector";
+const HACKER2 = "Edgar";
+let newName = "";
+if (HACKER1.toLocaleLowerCase() < HACKER2.toLocaleLowerCase()) {
+      console.log(`The driver's name goes first.`);
+} else if (HACKER1.toLocaleLowerCase() > HACKER2.toLocaleLowerCase()) {
+  console.log(`Yo, the navigator goes first definitely.`);
+} else {
+  console.log(`What?! You both have the same name?`);
+}
