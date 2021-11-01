@@ -60,3 +60,23 @@ counEt(textLatin);
 
 //BONUS 2==========================
 
+function palindromo(phraseToCheck){
+  let phraseNoSpace = phraseToCheck.replace(/ /g, "").toLowerCase();
+  //eliminamos espacios en blanco y volvemos a minusculas la frase a analizar
+  let arrThePhrase = phraseNoSpace.split('');
+  //una vez hecho, volvemos la frase un array por cada letra como elemnto independiente
+  let phraseChecked = []; 
+  //creamos un nuevo array en el que volteamos el orden de las letras
+
+ for(let i=arrThePhrase.length; i >= 0; i--){
+    phraseChecked.push(arrThePhrase[i]);
+ }//devolvemos al array creado cada letra desde el final de la frase hacia el inicio
+
+ //analizamos la frase recibida y la creada en el nuevo array: hasta ahora verifica solo si la frase no tiene comillas internas.
+ //la funcion verifica si es igual la frase al derecho y al reves, sin incluir espacios ni caracteres especiales
+  if(arrThePhrase.join("") === phraseChecked.join("")){
+      console.log('Es un palindromo');
+   }else{
+     console.log('No es un palindromo');
+   }
+}
