@@ -1,14 +1,16 @@
 // Iteration 1: Names and Input
 /*1.1 Create a variable `hacker1` with the driver's name.
 1.2 Print `"The driver's name is XXXX"`. */
-let hacker1 = "Oscar";
+let hacker1 = "Giovanni";
 console.log(`"The driver's name is ${hacker1}."`);
+
 
 /*
 1.3 Create a variable `hacker2` with the navigator's name.
 1.4 Print `"The navigator's name is YYYY"`. */
-let hacker2 = "Giovanni";
+let hacker2 = "Oscar";
 console.log(`"The navigator's name is ${hacker2}."`);
+
 
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length ) {
@@ -24,16 +26,17 @@ console.log(`Wow, you both have equally long names, ${hacker1} characters!.`);
 /*3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N" */
 let hacker1Uppercase = "";
 for (let i of hacker1){
-  hacker1Uppercase += i.toUpperCase() + " "
-  //console.log(i.toUpperCase())
+  hacker1Uppercase += i.toUpperCase() + " ";
 }
+console.log(hacker1Uppercase);
 
-/*3.2 Print all the characters of the navigator's 
-name, in reverse order. i.e. "nhoJ" */
+
+/*3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ" */
 let hacker2Reverse = "";
 for ( let i = hacker2.length -1; i >= 0; i--) {
   hacker2Reverse += hacker2[i];
 }
+console.log(hacker2Reverse);
 
 
 /*3.3 Depending on the lexicographic order of the strings, print:
@@ -41,7 +44,7 @@ for ( let i = hacker2.length -1; i >= 0; i--) {
 - Yo, the navigator goes first definitely.
 - What?! You both have the same name? */
 let lexicographic = hacker1.localeCompare(hacker2);
-console.log(lexicographic);
+
 if (lexicographic === -1){
   console.log("The driver's name goes first.");
 } else if (lexicographic === 1){
@@ -53,29 +56,30 @@ if (lexicographic === -1){
 
 
 
-/* para terminar en casa */ 
-let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt, nisi ac suscipit dictum, ante urna accumsan libero, eu tincidunt ipsum neque nec mi. Nam at ante velit. Donec id tempus dui. Donec sit amet sodales massa. Suspendisse porttitor, nulla non tincidunt mattis, justo quam pharetra sapien, rhoncus ultricies nibh elit id ligula. Quisque pulvinar aliquam vulputate. Cras sed dui id neque euismod porttitor. Donec sit amet leo nec sem tempor efficitur et quis nibh. Donec in libero nec eros consectetur accumsan. Pellentesque luctus, felis non vulputate suscipit, metus erat molestie est, quis congue ligula nunc eu magna. Donec congue velit in congue commodo. Cras quis sollicitudin justo, varius semper tortor. Aenean ut tincidunt arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+//Bonus 1:
+let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna erat, ultricies nec mi venenatis, molestie egestas libero. Integer fermentum, velit sit amet tempus pellentesque, ex tellus finibus lectus, non mollis tortor est nec purus. Phasellus eu lectus posuere nisi pretium venenatis nec lacinia odio. Sed orci purus, iaculis a odio at, dapibus sagittis ex. Maecenas et ante maximus, vestibulum nunc et, finibus est. Vestibulum et tellus sed velit blandit vehicula eu quis urna. Ut dignissim, ligula nec porta placerat, risus lorem bibendum purus, ut auctor erat mauris nec dolor.
 
-Pellentesque sed augue cursus, cursus nunc at, volutpat lorem. Donec vel mattis arcu, in semper magna. Suspendisse mattis mattis purus, a malesuada neque. Etiam feugiat dignissim nisl ac vulputate. Sed pharetra pharetra est non congue. Quisque turpis enim, ornare ut pharetra in, fermentum eget nisi. Suspendisse hendrerit enim vitae felis ultrices, id fringilla justo euismod. Quisque venenatis augue sit amet elit tincidunt, nec tristique quam pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id lectus condimentum, accumsan mi non, fermentum ante. Vivamus volutpat lorem tellus, eget auctor arcu pretium at. Sed venenatis orci nec felis feugiat congue.
+Etiam mollis dictum velit quis varius. Ut aliquet fringilla erat a posuere. Integer imperdiet consequat tellus nec elementum. Praesent nec ante at eros posuere pretium. Pellentesque vitae rutrum tellus. Pellentesque pharetra convallis congue. Aenean vel molestie ex. Maecenas in mi posuere, eleifend felis quis, tincidunt ex. Etiam tortor mauris, feugiat eu erat id, tempor dapibus massa. Nunc posuere vehicula quam, vitae tincidunt dolor sollicitudin sit amet. Duis ut suscipit neque. Cras rhoncus fringilla elit vitae mollis.
 
-Nunc tempor massa in velit laoreet gravida. Mauris interdum dolor ac enim sagittis, et fringilla lacus gravida. Aenean dapibus elit aliquet, consectetur risus ut, blandit nisl. Nunc interdum eu enim vel cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras elementum sapien rutrum, semper sem ut, pretium ante. Aenean rhoncus augue sit amet pretium blandit. Aenean massa lorem, auctor vitae lectus vel, malesuada pharetra augue. Nam nec velit ac ipsum porttitor scelerisque. Pellentesque vel mauris nisl. Nunc ut tempor metus. Sed commodo neque sed sapien posuere euismod.`;
+Quisque ut mi mollis, ornare sem vel, tempor justo. Vestibulum volutpat libero id ligula tincidunt ornare. Quisque in arcu id augue facilisis blandit. Aliquam porta neque et diam ultricies condimentum. Fusce tincidunt venenatis mattis. Quisque mattis enim vel varius ultricies. Nunc sagittis ultricies quam, id congue est elementum vitae.`;
 
-const textoArray = lorem.split(" ")
-//console.log(textoArray)
+//dividimos el string en un array de strings
+let textoArray = lorem.split(' ');
+
 let counter = 0;
-let countersalto = 0;
+let counterEt = 0;
 
-for (let i = 0; i< textoArray.length; i++){
-  
-  //console.log(textoArray[i])
-  if (textoArray[i].includes("\n")){
-    counter +=1
-    countersalto++
+for (let i = 0; i < textoArray.length; i++){
+  // x cada salto de linea, como que se peguan 2 palabras,  => counter +1
+  if (textoArray[i].includes("\n\n")){
+    counter ++ ;
   }
-  counter = i
+  // x cada "et" => counterEt++
+  if (textoArray[i]=== "et" || textoArray[i]=== "et," || textoArray[i]=== "et." ){
+    counterEt++;
+  }
+  // x cada palabra  => counter +1
+  counter++;
 }
-
-console.log(counter,countersalto) 
-/*if (textoArray[i].includes("\n")){
-    counter++
-  } */
+console.log(`Las palabras totales son : ${counter}`);
+console.log(`Los "et" totales son : ${counterEt}`);
