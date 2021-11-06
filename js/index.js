@@ -1,7 +1,8 @@
 // Iteration 1: Names and Input
-let hacker1 = "Calvin";
+
+let hacker1 = "Ale";
 console.log(`The driver's name is ${hacker1}`);
-let hacker2 = "Ale";
+let hacker2 = "Calvin";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -21,6 +22,8 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+// 3.1;
 let tempString = hacker1.split("");
 let tempArray = [];
 
@@ -30,6 +33,7 @@ for (let i = 0; i < hacker1.length; i++) {
 
 console.log(tempArray.join(" "));
 
+// 3.2;
 let tempString2 = hacker2.split("");
 let tempArray2 = [];
 
@@ -38,10 +42,17 @@ for (let j = hacker2.length - 1; j >= 0; j--) {
 }
 console.log(tempArray2.join(""));
 
-if (hacker1 < hacker2) {
-  console.log("The driver's name goes first.");
-} else if (hacker2 < hacker1) {
-  console.log("Yo, the navigator goes first definitely.");
-} else {
-  console.log("What?! You both have the same name?");
+// 3.3;
+switch (hacker1.localeCompare(hacker2)) {
+  case -1:
+    console.log("The driver's name goes first.");
+    break;
+
+  case 1:
+    console.log("Yo, the navigator goes first definitely.");
+    break;
+
+  default:
+    console.log("What?! You both have the same name?");
+    break;
 }
