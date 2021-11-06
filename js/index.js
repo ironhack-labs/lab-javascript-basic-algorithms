@@ -6,17 +6,17 @@
     let hacker2 = "Isa"
 
     console.log(`The driver's name is ${hacker1}.`);
-    console.log (`The navigator's name is ${hacker2}.`);
-    
+    console.log(`The navigator's name is ${hacker2}.`);
+
 
 // Iteration 2: Conditionals - Check which name is longer
 
-    if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} letters.`)
-    } else if (hacker1.length < hacker2.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+    if ( hacker1.length > hacker2.length ) {
+        console.log(`The driver has the longest name, it has ${hacker1.length} letters.`)
+    } else if ( hacker1.length < hacker2.length ) {
+        console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
     } else {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
     };
 
 
@@ -26,9 +26,9 @@
 
         let lettersInName1 = hacker1.split("")
 
-        for (let i = 0; i < lettersInName1.length; i++) {
-        lettersInName1[i] = lettersInName1[i].toUpperCase() + ' '
-        console.log(lettersInName1[i])
+        for ( let i = 0; i < lettersInName1.length; i++ ) {
+            lettersInName1[i] = lettersInName1[i].toUpperCase() + ' '
+            console.log(lettersInName1[i])
         }
 
         console.log(lettersInName1.join(""));
@@ -45,10 +45,10 @@
         let lexOrder = hacker1.localeCompare(hacker2)
 
         if ( lexOrder === -1 ) {
-        console.log('The driver´s name goes first')
+            console.log('The driver´s name goes first')
         } else if ( lexOrder === 1) {
-        console.log('Yo, the navigator goes first definitely.')
+            console.log('Yo, the navigator goes first definitely.')
         } else {
-        console.log('What?! You both have the same name?')
+            console.log('What?! You both have the same name?')
         }
 
