@@ -21,3 +21,19 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let tempString=hacker1.split("");
+let tempArray=[];
+
+for (let i=0; i<hacker1.length; i++){
+  tempArray.push(hacker1[i].toUpperCase())
+}
+
+console.log(tempArray.join(" "));
+
+let tempString2=hacker2.split("");
+let tempArray2=[];
+
+for (let j=hacker2.length -1; j>=0; j--){
+  tempArray2.push(tempString2[j])
+}
+console.log(tempArray2.join(""))
