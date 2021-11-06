@@ -46,23 +46,31 @@ let loremVar = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
 
 //Count how many words are in the above three paragraphs of Lorem Ipsum text.
 
-function countWords(loremVar) {
-         loremVar = loremVar.replace(/(^\s*)|(\s*$)/gi,"");
-         loremVar = loremVar.replace(/[ ]{2,}/gi," ");
-         loremVar = loremVar.replace(/\n /,"\n");
-         console.log(loremVar.split(' ').length);
-      }
-      document.write(countWords(loremVar));
+let lipsumWordArr = loremVar.split(" ");
+console.log(lipsumWordArr.length);
 
-//Code sourced from https://newbedev.com/javascript-count-words-in-a-string-no-numbers-javascript-code-example
+// Found this method online, but not quite what we were supposed to be going for.
+// function countWords(loremVar) {
+//          loremVar = loremVar.replace(/(^\s*)|(\s*$)/gi,"");
+//          loremVar = loremVar.replace(/[ ]{2,}/gi," ");
+//          loremVar = loremVar.replace(/\n /,"\n");
+//          console.log(loremVar.split(' ').length);
+//       }
+//       document.write(countWords(loremVar));
+
+// //Code sourced from https://newbedev.com/javascript-count-words-in-a-string-no-numbers-javascript-code-example
 
 //Code to count "et" occurrences withing loremVar string.
 
-function countOccurences(loremVar, word) {
-   console.log(loremVar.split(word).length - 1);
+let numOfEt = 0;
+
+for (i = 0; i <= lipsumWordArr.length; i++) {
+  if ((lipsumWordArr[i] === "et") || (lipsumWordArr[i] === "et,") || (lipsumWordArr[i] === "et.")) {
+    numOfEt++; 
+  }
 }
-var text= loremVar; 
-var count=countOccurences(text,"et");
+
+console.log(numOfEt);
 
 //Code sourced from https://newbedev.com/javascript-count-how-many-times-a-word-appears-in-a-string-javascript-code-example
 
@@ -79,4 +87,34 @@ var count=countOccurences(text,"et");
 // "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 // Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin' 😃
 
-var phraseToCheck = ""
+var phraseToCheck = "stack cats";
+let cleanPhrase = "";
+let isPalindrome;
+
+for (let i = 0; i <= phraseToCheck.length - 1; i++) {
+  switch (phraseToCheck[i]) {
+    case '!':
+    case '?':
+    case '.':
+    case ',':
+    case ' ': break;
+    default: cleanPhrase += phraseToCheck[i].toLowerCase();
+  }
+}
+
+for (let i = 0; i < cleanPhrase.length; i++) {
+ // console.log(cleanPhrase[i], cleanPhrase[cleanPhrase.length - 1 - i] )
+  if (cleanPhrase[i] == cleanPhrase[cleanPhrase.length - 1 - i]) {
+    isPalindrome = true;} else
+    {isPalindrome = false; break; }
+  }
+
+isPalindrome ? console.log("It'sa me, a Palindrome") : console.log("No palindromes here chief");
+
+// can also be done like the below but I wanted to test out the ternary operator https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+/*if (isPalindrome === true) {
+  console.log("It'sa me, a Palindrome");
+} else {
+  console.log("No palindromes here chief");
+}*/
