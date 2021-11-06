@@ -32,8 +32,3 @@ if (name1 > name2){
 }
 
 // Iteration 3: Loops
-
-// Iteration 2: Conditionals
-
-
-// Iteration 3: Loops
