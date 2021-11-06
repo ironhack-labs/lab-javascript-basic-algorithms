@@ -7,7 +7,7 @@ console.log(`"The driver's name is ${hacker1}."`);
 /*
 1.3 Create a variable `hacker2` with the navigator's name.
 1.4 Print `"The navigator's name is YYYY"`. */
-let hacker2 = "Giovanni";
+let hacker2 = "Oscar";
 console.log(`"The navigator's name is ${hacker2}."`);
 
 // Iteration 2: Conditionals
@@ -28,4 +28,11 @@ for (let i of hacker1){
   //console.log(i.toUpperCase())
 }
 
-/*3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ" */
+/*3.2 Print all the characters of the navigator's 
+name, in reverse order. i.e. "nhoJ" */
+let hacker2Reverse = "";
+for ( let i = hacker2.length -1; i >= 0; i--) {
+  hacker2Reverse += hacker2[i];
+}
+
+
