@@ -83,3 +83,37 @@ for (let i = 0; i < textoArray.length; i++){
 }
 console.log(`Las palabras totales son : ${counter}`);
 console.log(`Los "et" totales son : ${counterEt}`);
+
+
+
+//Bonus 2:
+
+let texto = "No 'x' in Nixon"
+let alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+let model = [];
+let mirror = [];
+
+// x cada letra del texto, la hago lower case, 
+for (let i of texto){
+	i = i.toLowerCase();
+  // si es una letra, voy añadiendo letras a los 2 arrays, uno por delante, y uno por detras :}
+	if (alphabet.includes(i)){
+		model.push(i);
+		mirror.unshift(i)
+	}
+}
+
+// hago la comparacion entre los dos arrays 
+for (let i = 0; i < model.length;i++){
+	if (model[i] === mirror[i]){
+		//console.log(i, model[i], mirror[i])
+		if (i === model.length-1){
+			console.log(`The phrase "${texto}" is palindrome`)
+		}		
+	}
+	else {
+		console.log("Not  a palindrome!")
+		break
+	}
+}
