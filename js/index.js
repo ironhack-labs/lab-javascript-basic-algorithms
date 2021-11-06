@@ -42,3 +42,13 @@ if(hacker1.localeCompare(hacker2) < 0 ) {
 } else {
   console.log(`What?! You both have the same name?`)
 }
+
+//BONUS 1
+
+paragraphs = paragraphs.split(' ');
+
+function countWords(arr) {
+  console.log(arr.length);
+}
+
+countWords(paragraphs);
