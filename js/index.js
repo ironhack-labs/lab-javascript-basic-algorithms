@@ -51,10 +51,29 @@ Proin eget urna non lacus viverra congue. Ut eu est finibus turpis fermentum pre
 
 Aliquam in nunc sit amet nibh congue iaculis. Donec ullamcorper nulla ac mollis tincidunt. Quisque auctor, odio nec facilisis suscipit, risus quam imperdiet justo, nec elementum ante justo ut justo. Pellentesque luctus nulla eu lectus lobortis, et feugiat velit scelerisque. Donec sollicitudin libero vel felis vulputate, vitae rutrum odio ornare. Proin blandit magna a arcu convallis aliquam. Donec mollis vehicula mi id iaculis. Cras augue tortor, porta nec dui et, varius porttitor tortor. Quisque imperdiet nisl non nisl interdum, a convallis orci venenatis. Nulla ornare massa lectus, eget feugiat felis gravida in. Donec sed faucibus tortor. Mauris consequat sapien sed neque gravida facilisis. Quisque ut tellus mattis tellus fermentum finibus non mattis neque.`;
 
-paragraphs = paragraphs.split(' ');
+paragraphs = paragraphs.split(/[,\s]/);
 
-function countWords(arr) {
-  console.log(arr.length);
+function countingWords(arr) {
+  let countWords = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i]){
+    countWords++;
+    }
+  }
+  return countWords;
 }
 
-countWords(paragraphs);
+console.log(countingWords(paragraphs));
+
+let count = 0;
+
+function countEt(arr){
+  for (let i = 0; i < arr.length; i++){
+    if(arr[i] === 'et'){
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countEt(paragraphs));
