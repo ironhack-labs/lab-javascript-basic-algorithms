@@ -24,12 +24,11 @@ for(let i = 0; i < hacker1.length; i++){
 hacker1 = hacker1.join(' ');
 console.log(hacker1)
 
-
-let hacker2Backwards = [];
-for(let i = hacker2.length; i >= 0; i--){
-  hacker2Backwards.push(hacker2[i]);
+let hacker2Backwards = "";
+for(let i = hacker2.length - 1; i >= 0; i--){
+  hacker2Backwards += hacker2[i];
 }
-hacker2 = hacker2Backwards.join('');
+hacker2 = hacker2Backwards;
 console.log(hacker2);
 
 hacker1 = 'Pablo';
@@ -77,3 +76,52 @@ function countEt(arr){
 }
 
 console.log(countEt(paragraphs));
+
+// BONUS 2
+
+let phraseToCheck = "No 'x' in Nixon";
+phraseToCheck = phraseToCheck.toLowerCase();
+
+
+function palindromeChecker(str) {  
+  let regularText = "";
+  let reverseText = "";
+  
+  for (let i = 0; i < str.length; i++){
+     switch (str[i]) {
+      case ' ':
+      case ',':
+      case '!':
+      case '?':
+      case '.':
+      case ';':
+      case `'`:
+        break;
+      default:
+        regularText += str[i];
+     }
+   };
+  
+  for (let i = str.length - 1; i >= 0; i--){
+    switch (str[i]) {
+      case ' ':
+      case ',':
+      case '!':
+      case '?':
+      case '.':
+      case ';':
+      case `'`:
+        break;
+      default:
+        reverseText += str[i];
+    }
+  };
+  
+  if (regularText === reverseText){
+    console.log(`It's a palindrome`);
+  } else {
+    console.log(`Not a palindrome`);
+  }
+}
+
+palindromeChecker(phraseToCheck);
