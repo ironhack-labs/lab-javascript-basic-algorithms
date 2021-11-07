@@ -1,3 +1,5 @@
+// This exercise has been completed by Luis Guillermo García Pérez y Yaiza Rubio Viñuela.
+
 // Iteration 1: Names and Input
 
 let hacker1;
@@ -49,13 +51,12 @@ for (const character of hacker2){
 
 console.log(reversed);
 
-if('hacker1' < 'hacker2'){
+if ('hacker1' < 'hacker2'){
     'hacker1'.localeCompare('hacker2')
     console.log('Yo, the navigator name goes first directly')
-  } else if('hacker1'> 'hacker2') {
+  } else if ('hacker1'> 'hacker2') {
     'hacker2'.localeCompare('hacker2')
     console.log('The drivers name goes first')
   } else {
     console.log('What?! You both have the same name?')
   }
-  
