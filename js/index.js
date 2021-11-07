@@ -32,3 +32,19 @@ if (name1 > name2){
 }
 
 // Iteration 3: Loops
+
+let myStr = "";
+
+for (const value of hacker1){
+  myStr += value.toUpperCase() + " ";
+}
+
+console.log(myStr);
+
+let reversed = "";
+
+for (const character of hacker2){
+  reversed = character + reversed;
+}
+
+console.log(reversed);
