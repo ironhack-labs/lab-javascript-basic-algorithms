@@ -112,3 +112,22 @@ etCount++;
 
 console.log('words counter =', words);
 console.log('et counter =', etCount);
+
+
+
+//Bonus 2
+
+
+let phraseToCheck = "Amor, Roma";
+phraseToCheck = phraseToCheck.replace(/[ ,!, ?.]/g, "").toLowerCase();
+
+console.log(phraseToCheck)
+
+let reversedString = phraseToCheck.split('').reverse().join('');
+
+if (phraseToCheck === reversedString) {
+  console.log('String is a palindrome');
+}
+else {
+  console.log('Not a palindrome');
+}
