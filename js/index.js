@@ -45,3 +45,13 @@ Fusce elementum viverra feugiat. Fusce aliquam ipsum at facilisis rutrum. Nulla 
 let words = paragraphs.split(" ");
 console.log(words.length);
 
+let wordCount = 0;
+for (let i=0; i < words.length; i++){
+    let word = words[i].replace("," , "").replace("." , "");
+    if (word === "et"){
+        wordCount ++;
+    } else {
+        continue;
+    }
+}
+console.log(wordCount);
