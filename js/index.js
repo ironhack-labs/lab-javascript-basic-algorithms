@@ -107,22 +107,20 @@ for (i = 0; i < phraseToCheck.length; i++) {
     phraseToCheck[i] !== "'" &&
     phraseToCheck[i] !== '"'
   ) {
-    normalizePhrase += phraseToCheck[i];
+    normalizePhrase += phraseToCheck[i].toLowerCase();
   } else {
     continue;
   }
 }
 
-let lowercasePhrase = normalizePhrase.toLowerCase();
-
-for (j = 0; j < lowercasePhrase.length; j++) {
+for (j = 0; j < normalizePhrase.length; j++) {
   if (
-    lowercasePhrase[j] !== lowercasePhrase[lowercasePhrase.length - (j + 1)]
+    normalizePhrase[j] !== normalizePhrase[normalizePhrase.length - (j + 1)]
   ) {
     console.log('This is not a palindrome :(');
     break;
   } else {
-    if (j === lowercasePhrase.length - 1) {
+    if (j === normalizePhrase.length - 1) {
       console.log('This is a palindrome!');
     } else {
       continue;
