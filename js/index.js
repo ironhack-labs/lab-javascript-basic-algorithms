@@ -20,4 +20,35 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 
-console.log(hacker1.toUpperCase())
+//3.1
+console.log(hacker1.toUpperCase() + " ")
+
+/* ou
+for (let nameDriverUpper of hacker1){
+      console.log(nameDriverUpper.toUpperCase() + " ")
+}*/
+
+
+
+//3.2
+for (let j = hacker2.length;  j >= 0 ; j--){
+    console.log(hacker2[j])
+}
+
+
+//3.3
+let classificacao = "Juliana".localeCompare("Larissa")
+console.log(classificacao)   
+//str2 = larissa é maior, vem depois de j
+//str1 = juliana é menor, vem antes de L
+//retornou -1 
+
+if (classificacao === -1){
+    console.log(`The driver's name goes first.`)
+} else if (classificacao === 1) {
+    console.log(`Yo, the navigator goes first definitely.`)
+} else if (classificacao === 0){
+    console.log(`What?! You both have the same name?`)
+}
+
+
