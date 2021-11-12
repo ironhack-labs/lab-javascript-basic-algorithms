@@ -22,6 +22,7 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 let resultString1 = '';
+let resultString2 = '';
 
 for(let i = 0; i < hacker1.length; i += 1) {
     
@@ -35,5 +36,10 @@ for(let i = 0; i < hacker1.length; i += 1) {
         
 }
 
+for(let i = (hacker2.length - 1); i >= 0; i -= 1) {
+    resultString2 += hacker2[i];
+}
+
 console.log(resultString1)
+console.log(resultString2)
 
