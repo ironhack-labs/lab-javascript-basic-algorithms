@@ -55,3 +55,33 @@ for (let i=0; i < words.length; i++){
     }
 }
 console.log(wordCount);
+
+//Bonus 2
+
+let phrasesToCheck = [
+    "A man, a plan, a canal, Panama!",
+    "Amor, Roma",
+    "race car",
+    "stack cats",
+    "step on no pets",
+    "taco cat",
+    "put it up",
+    "Was it a car or a cat I saw?",
+    "No 'x' in Nixon"
+];
+
+function checkPalindrome(phraseToCheck){
+    phraseToCheck = phraseToCheck.replace(/[^a-zA-Z]/g, "").toLowerCase();
+    let invertedPhrase = "";
+    for (let i = phraseToCheck.length-1; i>=0; i--){
+        invertedPhrase += phraseToCheck[i];
+    }
+    
+    if (phraseToCheck === invertedPhrase){
+        console.log("This sentence is a Palindrome!");
+    }
+}
+for (let i = 0; i<phrasesToCheck.length; i++) {
+    checkPalindrome(phrasesToCheck[i]);
+}
+
