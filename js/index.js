@@ -48,7 +48,7 @@ if (hacker1 === hacker2) {
     console.log("The driver's name goes first.")
 }
 
-// Bonus!
+// Bonus 1!
 
 let loremIpsum
 
@@ -102,3 +102,40 @@ for (let i = 0; i <= loremIpsum.length; i++) {
 }
 
 console.log(countEt)
+
+// Bonus 2! 
+
+let phraseToCheck = "No 'x' in Nixon"
+let phraseWithoutPonctuation = ""
+
+
+//retirando pontuações e espaços
+for (let i = 0; i < phraseToCheck.length; i++) {
+    
+    if ((phraseToCheck[i] != ".") && (phraseToCheck[i] != ",")
+        && (phraseToCheck[i] != " ") && (phraseToCheck[i] != "?")
+        && (phraseToCheck[i] != "'")) {   
+
+        phraseWithoutPonctuation += phraseToCheck[i].toLocaleLowerCase()  
+    
+    }
+
+}
+
+//validando caracteres opostos
+let validatePalindrome = true
+let maxIndexOfPhrase = phraseWithoutPonctuation.length - 1
+
+for (let i = 0; i <= maxIndexOfPhrase; i++) {
+
+    if ((phraseWithoutPonctuation[i] !== phraseWithoutPonctuation[maxIndexOfPhrase-i])) {
+        validatePalindrome = false
+    }
+
+}
+
+if (validatePalindrome === true) {
+    console.log("É palíndrome!")
+} else {
+    console.log("Não é palíndrome :/")
+}
