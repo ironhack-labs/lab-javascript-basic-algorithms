@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
 
-let hacker1 = 'Joseph';
+let hacker1 = 'Lucas';
 
-let hacker2 = 'Elizabeth';
+let hacker2 = 'Alexandre';
 
 console.log(`"The driver's name is ${hacker1}"`);
 
@@ -20,3 +20,20 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+let resultString1 = '';
+
+for(let i = 0; i < hacker1.length; i += 1) {
+    
+    if(i === (hacker1.length - 1)) {
+        resultString += `${hacker1[i].toLocaleUpperCase()}`
+        break
+        }
+    else {
+     resultString += `${hacker1[i].toLocaleUpperCase()} `;
+    }
+        
+}
+
+console.log(resultString1)
+
