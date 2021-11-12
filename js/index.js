@@ -49,10 +49,11 @@ console.log(reverseNavigatorsName);
 - What?! You both have the same name? */
 
 
-if (hacker1 < hacker2) {
+
+if (hacker1.toUpperCase() < hacker2.toUpperCase()) {
     console.log(`The driver's name goes first.`)
 }
-    else if (hacker1 > hacker2) {
+    else if (hacker1.toUpperCase() > hacker2.toUpperCase()) {
         console.log(`Yo, the navigator goes first definitely.`)
 } 
     else {
