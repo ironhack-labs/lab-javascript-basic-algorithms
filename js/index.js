@@ -26,11 +26,11 @@ let resultString1 = '';
 for(let i = 0; i < hacker1.length; i += 1) {
     
     if(i === (hacker1.length - 1)) {
-        resultString += `${hacker1[i].toLocaleUpperCase()}`
+        resultString1 += `${hacker1[i].toLocaleUpperCase()}`
         break
         }
     else {
-     resultString += `${hacker1[i].toLocaleUpperCase()} `;
+     resultString1 += `${hacker1[i].toLocaleUpperCase()} `;
     }
         
 }
