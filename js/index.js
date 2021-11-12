@@ -21,12 +21,15 @@ if (hacker1.length > hacker2.length){
 // Iteration 3: Loops
 
 //3.1
-console.log(hacker1.toUpperCase() + " ")
 
-/* ou
-for (let nameDriverUpper of hacker1){
-      console.log(nameDriverUpper.toUpperCase() + " ")
-}*/
+let newNameSpace = " ";
+
+for (let i = 0; i < hacker1.length; i++){
+    newNameSpace = newNameSpace + hacker1[i] + " "
+    
+} 
+
+console.log(newNameSpace.toUpperCase() + "")
 
 
 
