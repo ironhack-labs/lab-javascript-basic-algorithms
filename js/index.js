@@ -91,5 +91,14 @@ for (let i = 0; i <= loremIpsum.length; i++) {
     }
 }
 
-console.log(loremIpsum.length)
 console.log(countWords)
+
+let countEt = 0
+
+for (let i = 0; i <= loremIpsum.length; i++) {
+    if ((loremIpsum[i] === " ") && (loremIpsum[i+1] === "e") && (loremIpsum[i+2] === "t"))  {
+        countEt += 1   
+    } 
+}
+
+console.log(countEt)
