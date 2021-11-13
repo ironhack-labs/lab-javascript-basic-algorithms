@@ -118,4 +118,4 @@ if (str.toLowerCase() === strReverse.toLowerCase()) {
   console.log(`The phrase: '${phraseToCheck}' is not a palindrom`);
 }
         
-    
+//Fim.
