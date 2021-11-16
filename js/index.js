@@ -36,7 +36,7 @@ for (let i = hacker2.length - 1; i >= 0; i -= 1) {
 console.log(reverseName);
 
 
-if (hacker1 === hacker2) {
+if (hacker1.toLowerCase() === hacker2.toLowerCase()) {
     console.log("What?! You both have the same name?");
   } else {
     let j = 0;
