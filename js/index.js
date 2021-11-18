@@ -15,7 +15,7 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
 // Iteration 3: Loops
-console.log("EXERCICIO 3!!!")
+
 let nomeEsp = ""
 
 for (let i = 0; i < hacker1.length; i++) {
@@ -28,22 +28,18 @@ for (let i = 0; i < hacker1.length; i++) {
     }
 }
 
-console.log (nomeEsp.toUpperCase())
-console.log (nomeEsp.length)
-
 let nomeAoCon = ""
 
 for (let i = hacker1.length - 1; i >= 0; i--) {
     if (i === 0) {
-        nomeAoCon += hacker1[i];
+        nomeAoCon += hacker1[i].toUpperCase();
     } else {
         nomeAoCon += hacker1[i];
         nomeAoCon += " ";
     }
 }
 
-console.log (nomeAoCon.toUpperCase())
-console.log (nomeAoCon.length)
+console.log (nomeAoCon)
 
 let names = [hacker1,hacker2];
 
@@ -102,8 +98,6 @@ for (let i = 0; i <= loremIpsum.length; i++) {
     }
 }
 
-console.log(countWords)
-
 let countEt = 0
 
 for (let i = 0; i <= loremIpsum.length; i++) {
@@ -111,8 +105,6 @@ for (let i = 0; i <= loremIpsum.length; i++) {
         countEt += 1   
     } 
 }
-
-console.log(countEt)
 
 // Bonus 2! 
 
