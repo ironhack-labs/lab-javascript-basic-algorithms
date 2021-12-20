@@ -10,7 +10,8 @@ Ready?
 
 ## Introduction
 
-For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in [https://repl.it/languages/babel](https://repl.it/languages/babel).
+For this **pair-programming** activity we are going to have both people in the pair work in their own repos.
+At the end of the exercise, both students should have identical code in their respective repos.
 
 Ready to start?
 
@@ -19,14 +20,14 @@ Ready to start?
 
 - Fork this repo
 - Clone this repo
-- Go to [repl.it](https://repl.it/languages/nodejs) and create an account (or login if you have one)
-- Type this in the *Code Editor* (left panel)
+- Type this in the *File Tab* (left panel)
 
   ```javascript
   console.log("I'm ready!");
   ```
-- Press `run ►`
-- If you can see the message in the right side panel, you are really ready!
+- Save
+- Open a terminal and navigate to the directory where the script file is, then issue the following command `node js/index.js`
+- If you can see the message in the terminal panel (bottom), you are really ready!
 
   <!-- ![](https://i.imgur.com/4TQislb.png) -->
   ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_17f095b9bb4fa4bd1bee1c017c043327.png)
