@@ -29,10 +29,7 @@ Ready to start?
 - Open a terminal and navigate to the directory where the script file is, then issue the following command `node js/index.js`
 - If you can see the message in the terminal panel (bottom), you are really ready!
 
-  <!-- ![](https://i.imgur.com/4TQislb.png) -->
-  ![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_17f095b9bb4fa4bd1bee1c017c043327.png)
-
-- __When you are done completely or at any point after the first iteration, copy your code into the `js/index.js` file and follow the steps for submission.__
+- __After the first iteration, or later at any point, or once you finish, follow the steps for submission.__
 
 ## Submission
 
