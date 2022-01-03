@@ -37,6 +37,7 @@ for(let i = navigatorNameLength -1; i >= 0 ; i-- ) {
 }
 console.log(outPutNavigator);
 
+// Depending on the lexicographic order of the driver and navigator.
 switch (hacker1.localeCompare(hacker2)){
     case 0:
         console.log("What?! You both have the same name?")
