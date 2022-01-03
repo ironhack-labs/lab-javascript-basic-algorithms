@@ -53,3 +53,31 @@ console.log(navReverse);
         } else {
             console.log("What?! You both have the same name?");
         }
+
+//bonus 1
+let lorem = `Watch yourself, Wedge! Three from above! Red Three, Red Two, pull in! Got it! 
+Three of them coming in, twenty degrees! Cut to the left! I'll take the leader! They're heading for the medical frigate. 
+Pressure's steady. Only the fighters are attacking. I wonder what those Star Destroyers are waiting for. We're in attack position now, sir. 
+Hold here. We're not going to attack? I have my orders from the Emperor himself. He has something special planned for them. 
+We only need to keep them from escaping.
+Yes! I said closer! Move as close as you can and engage those Star Destroyers at point-blank range. 
+At that close range, we won't last long against those Star Destroyers. We'll last longer then we will against that Death Star...and we might just take a few of them with us. 
+She's gonna blow! I'm hit!
+They did it! I'm sure Luke wasn't on that thing when it blew. He wasn't. I can feel it. You love him, don't you? Yes. All right. 
+I understand. Fine. When he comes back, I won't get in the way. No, it's not like that at all. He's my brother.`
+
+//count number of words in string
+let wordNumber = lorem.split(" ").length; //not sure why i have to use .length here?
+console.log(`The string 'Lorem' has ${wordNumber} words`);
+
+//count the number of times et (I chose 'it' instead) appears
+//search for pattern in 'splitString'
+let itCount = 0;
+//splits the string by the times ' it' is found
+//the lack of space on the right is on purpose so the 'it!' or 'it.' are accounted for
+const itSplit = lorem.split(" it");
+for (let i = 0; i < itSplit.length - 1; i++) {
+  itCount++;
+}
+console.log(`\"it\" appears ${itCount} times.`);
+
