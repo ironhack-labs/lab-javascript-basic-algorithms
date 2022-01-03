@@ -2,7 +2,7 @@
 // 
 let hacker1 = "Johny";
 console.log(`The driver's name is ${hacker1}`);
-let hacker2 = "Davidd";
+let hacker2 = "David";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -18,3 +18,15 @@ else{
 
 
 // Iteration 3: Loops
+// 3.1
+let output1 = "";
+for (let i = 0; i < hacker1.length; i++){
+    output1 += hacker1[i].toUpperCase() + " ";
+}
+console.log(output1);
+// 3.2
+let output2 = "";
+for (let i = hacker2.length - 1; i >= 0; i--){
+    output2 += hacker2[i];
+}
+console.log(output2);
