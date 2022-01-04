@@ -33,19 +33,23 @@ if(hacker1.length > hacker2.length){
 //Print all the characters of the driver's name, separated by a space and in capitals
 let driver = "";
 for (var i = 0; i < hacker1.length; i++) {
-  driver += hacker1.charAt(i).toUpperCase() + " ";
+  //we want a variable to store our upper case letters
+  let upperCaseLetter = hacker1[i].toUpperCase();
+  driver += upperCaseLetter + " ";
 }
 console.log(driver);
 
 //Print all the characters of the navigator's name, in reverse order.
 let navReverse = "";
-for (var i = hacker2.length; i >= 0; i--) {
-  navReverse += hacker2.charAt(i).toUpperCase() + " ";
+//you get the last index by saying lenght -1
+for (var i = hacker2.length -1; i >= 0; i--) {
+  navReverse += hacker2[i];
 }
 console.log(navReverse); 
 
 //sort strings alphabetically
 
+//sort with 'localeCompare'
         if (hacker1.localeCompare(hacker2) === 1){
         console.log("Yo, the navigator goes first definitely.");
         } else if (hacker1.localeCompare(hacker2) === -1){
@@ -53,6 +57,28 @@ console.log(navReverse);
         } else {
             console.log("What?! You both have the same name?");
         }
+
+//sort with if and for loop
+let longestWord = "";
+
+if (hacker1.length >= hacker2.length) {
+  longestWord = hacker1;
+} else {
+  longestWord = hacker2;
+}
+
+for (let i = 0; i < longestWord.length; i++) {
+  if (hacker1 === hacker2){
+    console.log("What?! You both have the same name?");
+    break;
+  } else if (hacker1[i] < hacker2[i] || hacker1[i] === undefined){//this orders characters alphabetically
+    console.log("The driver's name goes first.");
+    break;
+  } else if (hacker2[i] < hacker1[i] || hacker2[i] === undefined){
+    console.log("Yo, the navigator goes first definitely.");
+    break;
+  }
+}
 
 //bonus 1
 let lorem = `Watch yourself, Wedge! Three from above! Red Three, Red Two, pull in! Got it! 
