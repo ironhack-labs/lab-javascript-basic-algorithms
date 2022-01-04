@@ -21,6 +21,7 @@ else if(driverNameLength === navigatorNameLength){
         console.log(`Wow, you both have equally long names, ${driverNameLength} characters!`)
         }
 // Iteration 3: Loops
+//3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 let driverUppercase = hacker1.toUpperCase()
 
 let outPutDriver =""
@@ -30,6 +31,7 @@ for(let i = 0; i <= driverNameLength; i++ ) {
 }
 console.log(outPutDriver)
 
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 let outPutNavigator =""
 for(let i = navigatorNameLength -1; i >= 0 ; i-- ) {
     outPutNavigator += hacker2[i];
