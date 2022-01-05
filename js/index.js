@@ -71,4 +71,4 @@ console.log(loremIpsum.match(/ et /g).length)
 // $ git add .
 // $ git commit -m "done"
 // $ git push origin master
-C:\Users\DKCHKRSO\OneDrive - LEGO\Documents\IronHack\Week1_Day1_LAB1 - JavaScript Basic Algorithms\lab-javascript-basic-algorithms\js\index.js
+
