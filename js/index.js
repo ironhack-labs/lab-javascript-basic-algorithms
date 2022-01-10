@@ -58,4 +58,38 @@ for(let y = 0; y < palabras.length; y++) {
 }
 console.log('La cantidad de veces que aparece la palabra et son: ', contador);
 
+//Bonus 2
+const phrase = 'A man, a plan, a canal, Panama';
+const phraseToCheck = phrase.toLowerCase();
 
+let m1 = [];
+let m2 = [];
+for(let g = 0; g < phraseToCheck.length; g++) {
+  if(phraseToCheck[g] === " " || phraseToCheck[g] === ",") {
+    continue;
+  } else {
+    m1.push(phraseToCheck[g])
+  }
+}
+
+for(let h = phraseToCheck.length - 1; h >= 0; h--) {
+  if(phraseToCheck[h] === " " || phraseToCheck[h] === ",") {
+    continue;
+  } else {
+    m2.push(phraseToCheck[h]);
+  }
+}
+
+console.log(m1, m2)
+let n = 0;
+for(let k = 0; k < m1.length; k++) {
+  if(m1[k] !== m2[k]) {
+    console.log("No es un palíndromo");
+    break;
+  } else {
+    n += 1;
+  }
+}
+if(n === m1.length) {
+  console.log("Es un palíndromo");
+}
