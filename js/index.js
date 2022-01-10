@@ -33,28 +33,25 @@ console.log(upperCaseStringWithSpaces);
 
 // 3.2.
 
-// program to reverse a string
 
-function reverseString(str) {
+function reverse(hacker1){
+let store = ""
+let store2 = ""
 
-    // return a new array of strings
-    const arrayStrings = str.split("");
-   
-    // reverse the new created array elements
-    const reverseArray = arrayStrings.reverse();
- 
-    // join all elements of the array into a string
-    const joinArray = reverseArray.join("");
-    
-    // return the reversed string
-    return joinArray;
+for(let i = hacker1.length / 2; i >= 0; i--){
+  if(hacker1.length % 2 !== 0) {
+     store += hacker1.charAt(i) 
+     store2 += hacker1.slice((hacker1.length / 2) + 1, hacker1.length).charAt(i)
+  } else {
+      store += hacker1.charAt(i-1) 
+      store2 += hacker1.slice((hacker1.length / 2), hacker1.length).charAt(i)
+    }
+  
 }
- 
-// take input from the user
-const string = 'John';
+return store2 + store
+}
 
-const result = reverseString(string);
-console.log(result);
+console.log(reverse(hacker1))
 
 
 
