@@ -3,7 +3,7 @@
 
 let hacker1 = "gaberella";
 console.log("The driver's name is " + hacker1);
-let hacker2 = "gabe";
+let hacker2 = "gabeA";
 console.log("The navigator's name is " + hacker2);
 
 // Iteration 2: Conditionals
@@ -87,7 +87,7 @@ for (letter of loremIpsum) {
     }
 }
 
-console.log(++wordCount);
+console.log("There are this many words: " + ++wordCount);
 
 let etCount = 0;
 let checkLetters = "";
