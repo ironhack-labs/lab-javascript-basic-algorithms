@@ -80,3 +80,57 @@ function commentOnLexicographicalOrder(driver, navigator) {
 
 commentOnLexicographicalOrder(hacker1, hacker2);
 
+
+// Bonus question 1
+
+const lorem = `
+    
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel aliquet tellus. Aenean quis metus tellus. Proin porttitor odio at elit porttitor interdum. Vestibulum eget turpis non sem viverra finibus a sed risus. Aliquam dolor purus, interdum quis felis et, accumsan tempor metus. Phasellus luctus, est ut bibendum ornare, lorem ipsum sagittis ipsum, quis interdum erat neque vel ante. Aliquam nibh massa, faucibus condimentum leo eget, elementum malesuada diam. Pellentesque commodo orci quis libero porttitor, tincidunt ultrices elit facilisis. Proin nibh libero, ornare nec bibendum in, vehicula vel arcu. Vivamus diam diam, vehicula porta malesuada vel, pellentesque vitae urna. Mauris vehicula malesuada dui quis commodo.
+
+Mauris gravida ante consectetur ante imperdiet vehicula. Maecenas ultricies dapibus purus sed dignissim. Nam elementum augue quis nunc euismod, nec fringilla felis porttitor. Ut viverra finibus vulputate. Suspendisse potenti. Suspendisse ut neque non augue condimentum tincidunt scelerisque a ex. Sed interdum luctus erat in imperdiet. Aenean placerat purus vitae libero aliquet pellentesque. Donec aliquet tellus dui, vel dapibus magna ultricies quis. Nullam eget elit sollicitudin, tempus justo finibus, maximus nibh.
+
+Donec ac rhoncus mauris. Etiam nec arcu est. In hac habitasse et platea et dictumst. Curabitur mattis ex ex. Nullam vestibulum convallis dictum. Duis tristique hendrerit libero eget sollicitudin. Ut ultricies sodales scelerisque. Duis ac dignissim sem. Maecenas magna quam, faucibus quis blandit ac, commodo eget nisi. Mauris auctor elementum malesuada. Duis id lorem elementum diam varius commodo. Morbi pulvinar velit felis, quis varius libero laoreet ac. Cras nisi orci, sodales semper mauris eu, dictum malesuada lacus et?`;
+
+function countNumberOfWords(string) {
+    let numberOfWhiteSpaces = 0;
+    for (let i=0; i < string.length; i++) {
+        if (string[i]= " ") {
+            numberOfWhiteSpaces++;
+        }
+
+    }
+    
+    const numberOfWords = numberOfWhiteSpaces - 1;
+    console.log("Number of words of Lorem text: ", numberOfWords);
+    return numberOfWords;
+}
+
+countNumberOfWords(lorem);
+
+function countNumberOfEts(string) {
+    
+    let index;
+    let slicedString;
+    let numberOfEts = 0;
+
+    while (true) {
+        index = string.indexOf(" et");
+    if (index === -1) {
+        break;
+    }
+    if ((index !== -1) &&
+        (string[index + 3] === " " ||
+        string[index + 3] === "," ||
+        string[index + 3] === ";" ||
+        string[index + 3] === "." ||
+        string[index + 3] === "!" ||
+        string[index + 3] === "?")) {
+        numberOfEts++;
+    }
+    string = string.slice(index + 2, string.length);
+    }
+    console.log("Number of words 'et': ", numberOfEts);
+    return numberOfEts;
+}
+
+countNumberOfEts(lorem);
