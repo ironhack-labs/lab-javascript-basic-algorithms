@@ -83,6 +83,8 @@ commentOnLexicographicalOrder(hacker1, hacker2);
 
 // Bonus question 1
 
+console.log("\n BONUS QUESTION 1 \n");
+
 const lorem = `
     
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel aliquet tellus. Aenean quis metus tellus. Proin porttitor odio at elit porttitor interdum. Vestibulum eget turpis non sem viverra finibus a sed risus. Aliquam dolor purus, interdum quis felis et, accumsan tempor metus. Phasellus luctus, est ut bibendum ornare, lorem ipsum sagittis ipsum, quis interdum erat neque vel ante. Aliquam nibh massa, faucibus condimentum leo eget, elementum malesuada diam. Pellentesque commodo orci quis libero porttitor, tincidunt ultrices elit facilisis. Proin nibh libero, ornare nec bibendum in, vehicula vel arcu. Vivamus diam diam, vehicula porta malesuada vel, pellentesque vitae urna. Mauris vehicula malesuada dui quis commodo.
@@ -134,3 +136,70 @@ function countNumberOfEts(string) {
 }
 
 countNumberOfEts(lorem);
+
+console.log("\n BONUS QUESTION 2 \n");
+
+// bonus question 2 (Palindrome)
+
+function phraseToCheck(string) {
+
+    let upperCaseLettersOnly = toUpperCaseLettersOnly(string);
+    let reversedString = reverseString(upperCaseLettersOnly);
+
+    if (upperCaseLettersOnly === reversedString) {
+        console.log(`True: the phrase \"${string}\" is a Palindrome!`);
+    } else {
+        console.log(`False: the phrase \"${string}\" is NOT a Palindrome!`);
+    }
+}
+
+ // create clean string of letters only in uppercase without spaces or special characters
+
+function toUpperCaseLettersOnly(string) {
+    let newString = "";
+    for (let i=0; i < string.length; i++) {
+        if (string[i] !== " " &&
+            string[i] !== "," &&
+            string[i] !== "'" &&
+            string[i] !== ";" &&
+            string[i] !== "?" &&
+            string[i] !== "!" &&
+            string[i] !== ".") {
+            newString += string[i];
+        }
+        
+    } 
+    newString = newString.toUpperCase();
+    console.log("Clean string: ", newString);
+    return newString;  
+}
+
+// reverse string
+
+function reverseString(string) {
+    let reversedString = "";
+    for (let i = string.length - 1; i >= 0; i--) {
+        reversedString += string[i];
+    }
+    console.log("Reversed string: ", reversedString);
+    return reversedString;
+}
+
+phraseToCheck("A man, a plan, a canal, Panama!");
+phraseToCheck("Amor, Roma");
+phraseToCheck("race car");
+phraseToCheck("stack cats");
+phraseToCheck("step on no pets");
+phraseToCheck("taco cat");
+phraseToCheck("put it up");
+phraseToCheck("Was it a car or a cat I saw?");
+phraseToCheck("No 'x' in Nixon");
+phraseToCheck("Random other phrase");
+
+
+
+
+
+
+
+
