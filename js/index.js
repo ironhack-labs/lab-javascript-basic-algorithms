@@ -69,17 +69,31 @@ for (let i = 0; i < wordList.length; i++) {
     }
 }
 
-console.log(`Word "${wordToBeCounted}" appears ${count} times in paragraph.`)
+console.log(`Word "${wordToBeCounted}" appears ${count} times in paragraph.`);
+
 
 // Bonus 2:
 
+let phraseToCheck = `Anna`;
 
-let phraseToCheck = `Anna`
+phraseToCheck = phraseToCheck.replace(/[^\w\s ]/g, ""); // strip signs
 
-phraseToCheck = phraseToCheck.replace(/[^\w\s ]/g,"") // strip signs
+for (let i = 0; i < phraseToCheck.length; i++) {
 
-letterIsEqual = [];
-for (let i = 0; )
+    let letter = phraseToCheck[i].toLowerCase(); 
+    let letterReverse = phraseToCheck[phraseToCheck.length - i - 1].toLowerCase();
+    let letterIsEqual = (letter == letterReverse);
+    
+    if (!letterIsEqual) {
+        console.log("Not a palindrome.")
+        break;
+    } else if (letterIsEqual && i == phraseToCheck.length - 1){
+        console.log("Phrase is a palindrome")
+    } else {
+        continue;
+    }
+}
+
 
 
 
