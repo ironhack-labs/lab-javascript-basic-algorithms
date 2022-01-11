@@ -54,7 +54,6 @@ Ut egestas elementum venenatis. Sed blandit, mi at blandit auctor, leo est lobor
 Aenean dapibus nisl mauris. Etiam in odio tellus. Sed sagittis felis dolor, quis faucibus nibh euismod sed. Phasellus sollicitudin nunc finibus tempus venenatis. Nulla facilisi. Mauris tincidunt purus at justo posuere, at lacinia augue scelerisque. Suspendisse id lacus lectus. Morbi nec lectus tempor, dictum sem ut, mollis nibh. Mauris vitae egestas lorem, quis posuere ante. Proin convallis mollis libero, vitae congue dui vestibulum non. Cras id mi ultricies, lobortis metus vitae, consectetur lacus. Praesent arcu ante, porttitor eget magna ac, consequat varius augue. Etiam sed tristique justo. Nam auctor euismod ultricies.
 `;
 
-myParagraph = myParagraph.replace(/[^\w\s]/g," ") // strip signs and replace with space
 let wordList = myParagraph.split(" ");
 console.log(`Paragraph has ${wordList.length} words.`)
 
@@ -63,6 +62,7 @@ const wordToBeCounted = "et";
 let count = 0;
 for (let i = 0; i < wordList.length; i++) {    
     word = wordList[i].toLowerCase();
+    word = word.replace(/[^\w\s]/g,"") // strip signs
     if (word === wordToBeCounted) {
         console.log(wordList[i]);
         count++;
@@ -72,6 +72,14 @@ for (let i = 0; i < wordList.length; i++) {
 console.log(`Word "${wordToBeCounted}" appears ${count} times in paragraph.`)
 
 // Bonus 2:
+
+
+let phraseToCheck = `Anna`
+
+phraseToCheck = phraseToCheck.replace(/[^\w\s ]/g,"") // strip signs
+
+letterIsEqual = [];
+for (let i = 0; )
 
 
 
