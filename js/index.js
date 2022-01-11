@@ -46,3 +46,32 @@ console.log(lettersReversed)
 
 // Bonus 1:
 
+let myParagraph = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu ultrices nisi. Aliquam erat volutpat. Phasellus diam felis, imperdiet sit amet iaculis at, consequat id felis. Nunc ultrices ultricies placerat. Duis ac ipsum at odio aliquet consequat vel et sapien. Quisque iaculis dolor quis tellus suscipit placerat. Vivamus pulvinar eros a dolor accumsan, id varius risus ultricies. Donec auctor sem id pulvinar porttitor. Nam luctus suscipit libero et rhoncus. Nullam congue tellus felis, faucibus rhoncus mauris tempor at. Praesent eu orci quis metus pharetra laoreet. Morbi sed molestie metus, at hendrerit ex. Integer urna neque, tincidunt ac interdum faucibus, rhoncus vitae augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris luctus tincidunt lorem, ullamcorper cursus odio volutpat a.
+
+Ut egestas elementum venenatis. Sed blandit, mi at blandit auctor, leo est lobortis lacus, ac commodo sapien dolor feugiat diam. Nullam nec viverra nulla. Morbi quis mi non enim fringilla gravida. Vestibulum et est vel nisl pellentesque condimentum. Praesent sit amet quam eu neque porta blandit. Vivamus lobortis laoreet libero. Nulla cursus blandit lorem. Vestibulum cursus rhoncus nibh vel porttitor. Duis eleifend ultrices condimentum. Praesent pulvinar eleifend justo, in fermentum justo. Nunc fermentum nec quam eu sodales. Aliquam sed ex tristique, maximus velit nec, dignissim erat. Nullam maximus sagittis suscipit.
+
+Aenean dapibus nisl mauris. Etiam in odio tellus. Sed sagittis felis dolor, quis faucibus nibh euismod sed. Phasellus sollicitudin nunc finibus tempus venenatis. Nulla facilisi. Mauris tincidunt purus at justo posuere, at lacinia augue scelerisque. Suspendisse id lacus lectus. Morbi nec lectus tempor, dictum sem ut, mollis nibh. Mauris vitae egestas lorem, quis posuere ante. Proin convallis mollis libero, vitae congue dui vestibulum non. Cras id mi ultricies, lobortis metus vitae, consectetur lacus. Praesent arcu ante, porttitor eget magna ac, consequat varius augue. Etiam sed tristique justo. Nam auctor euismod ultricies.
+`;
+
+myParagraph = myParagraph.replace(/[^\w\s]/g," ") // strip signs and replace with space
+let wordList = myParagraph.split(" ");
+console.log(`Paragraph has ${wordList.length} words.`)
+
+const wordToBeCounted = "et";
+
+let count = 0;
+for (let i = 0; i < wordList.length; i++) {    
+    word = wordList[i].toLowerCase();
+    if (word === wordToBeCounted) {
+        console.log(wordList[i]);
+        count++;
+    }
+}
+
+console.log(`Word "${wordToBeCounted}" appears ${count} times in paragraph.`)
+
+// Bonus 2:
+
+
+
