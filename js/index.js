@@ -66,7 +66,7 @@ console.log(wordCount);
 function countEt (lorumIpsum) {
   let count = 0;
   for (let i = 0; i < lorumIpsum.length; i++)
-    if((lorumIpsum[i] == "e") && (lorumIpsum[i+1] == "t")) {
+  if((lorumIpsum[i] == " ") && (lorumIpsum[i+1] == "e") && (lorumIpsum[i+2] == "t") && (lorumIpsum[i+3] == " " || "." || ",")) {
       count += 1;
     }
   console.log(count);
