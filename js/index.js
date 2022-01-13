@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-// 
+ 
 var hacker1 = 'John';
 
 console.log(hacker1);
@@ -7,7 +7,6 @@ console.log(hacker1);
 var hacker2 = 'Alex';
 
 console.log(`The navigator's name is ${hacker2}`);
-
 
 // Iteration 2: Conditionals
 
@@ -62,7 +61,8 @@ let hacker2 = 'Alex'
 if (hacker1[0] < navigator[0]) {
   console.log(`${hacker1} goes first.`) 
 } else if (hacker1[0] == hacker2[0]) {
-    console.log('What?! You both have the same name?')
-  } else {
-    console.log(`Yo, ${hacker2} goes first definitely.`)
-  }
+  console.log('What?! You both have the same name?')
+} else {
+  console.log(`Yo, ${hacker2} goes first definitely.`)
+}
+// Iteration 3: Loops
