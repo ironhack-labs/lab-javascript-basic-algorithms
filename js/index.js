@@ -45,4 +45,28 @@ if (hacker1Lower < hacker2Lower) {
     console.log("What? You both have the same name?");
 }
 
-  //Bonus 1
+//Bonus 1
+let paragraph = ("Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nulla leo ligula, cursus et elementum non, lobortis a quam.Quisque fermentum, dui vitae pulvinar hendrerit, elit elit pellentesque est, in convallis dolor dolor nec orci.Etiam magna sem, finibus non auctor et, volutpat tempus leo.Aliquam porttitor molestie leo eget molestie.Quisque nec iaculis urna.Mauris ac bibendum arcu.Cras sed magna quis ante dapibus faucibus.Praesent aliquam convallis felis at commodo.Nam id pellentesque nisl, et convallis ex.Nullam sollicitudin mi ut nunc ultricies, quis commodo lacus blandit.Nam imperdiet eros eu tincidunt ultrices.Nunc elementum massa eget ullamcorper rutrum.Nulla dapibus turpis urna, eget dignissim enim mattis nec.Vivamus in condimentum mi.Duis dignissim quam ligula, nec tincidunt lectus feugiat in.Nullam congue enim mattis, iaculis magna vitae, porttitor tellus.Cras venenatis vehicula erat eu lacinia.Quisque eu porttitor ante.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.Vestibulum imperdiet aliquet justo, vel scelerisque est feugiat in.Sed nisl neque, maximus et enim quis, tincidunt posuere turpis.Donec sit amet rhoncus massa.Nullam ut ornare sapien.Duis ornare eros vel elit iaculis vehicula.Nulla quis ullamcorper neque, quis ultricies massa.Etiam porta sed ex non sagittis.Sed faucibus tempus quam, nec euismod mauris fringilla eu.Ut et viverra magna.Etiam ligula mauris, porta eu tempor ac, blandit vitae arcuwhite_check_mark");
+
+let numberOfWords = "";
+for (let i = 0; i < paragraph.length; i++) {
+    let space = " ";
+    if (paragraph[i] === space) {
+        numberOfWords++;
+    }
+}
+console.log(numberOfWords + 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
