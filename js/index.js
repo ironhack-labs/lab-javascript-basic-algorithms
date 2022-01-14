@@ -18,4 +18,40 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
 
-// Iteration 3: Loops
+// Interation 3.1
+
+let driverSpace = ''
+
+for (let i = 0; i < hacker1.length; i++) {
+  if (i + 1 < hacker1.length) {
+    driverSpace += hacker1[i] + ' '
+  } else {
+    driverSpace += hacker1[i]
+  }
+}
+
+console.log(driverSpace.toUpperCase())
+
+// Interation 3.2
+
+let navigatorReverse = ''
+
+for (let i = hacker2.length-1; i >= 0; i--) {
+  navigatorReverse += hacker2[i]
+}
+
+console.log(navigatorReverse)
+
+// Interation 3.3
+
+if (hacker1 !== hacker2) {
+  let names = [hacker1, hacker2]
+  names.sort()
+  if (names[0] === hacker1) {
+    console.log("The driver's name goes first.")
+  } else {
+    console.log("Yo, the navigator goes first definitely.")
+  }
+} else {
+  console.log("What?! You both have the same name?")
+}
