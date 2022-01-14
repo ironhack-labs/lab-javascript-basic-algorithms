@@ -18,7 +18,8 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
 
-// Interation 3.1
+// Iteration 3: Loops
+// Iteration 3.1
 
 let driverSpace = ''
 
@@ -32,7 +33,7 @@ for (let i = 0; i < hacker1.length; i++) {
 
 console.log(driverSpace.toUpperCase())
 
-// Interation 3.2
+// Iteration 3.2
 
 let navigatorReverse = ''
 
@@ -42,7 +43,7 @@ for (let i = hacker2.length-1; i >= 0; i--) {
 
 console.log(navigatorReverse)
 
-// Interation 3.3
+// Iteration 3.3
 
 if (hacker1 !== hacker2) {
   let names = [hacker1, hacker2]
@@ -55,3 +56,6 @@ if (hacker1 !== hacker2) {
 } else {
   console.log("What?! You both have the same name?")
 }
+
+// Bonus 1
+
