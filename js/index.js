@@ -59,3 +59,37 @@ if (hacker1 !== hacker2) {
 
 // Bonus 1
 
+const lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin egestas sagittis eros. Donec a nisl blandit, elementum velit eu, tempor dolor. Nam ac iaculis orci, ac tempus velit. Proin nulla ipsum, pharetra ac dui vel, ullamcorper mollis felis. Morbi imperdiet scelerisque risus, quis mollis est efficitur eget. Curabitur pretium orci ac nisi ornare pharetra. Curabitur non nisl in justo condimentum gravida. Vivamus eget libero lacinia, rhoncus risus non, elementum magna.
+
+Maecenas dui dolor, pharetra vitae ultrices id, posuere in eros. In at luctus augue, sit amet dictum dui. Curabitur ac nibh metus. Morbi urna orci, varius sit amet massa vitae, imperdiet accumsan dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus fringilla velit sem, ac eleifend dolor scelerisque vel. Curabitur eu nunc quis dolor sollicitudin lobortis quis eu ipsum. Integer et leo vehicula, bibendum nibh non, vulputate tortor. Proin quis ante at odio sodales commodo. Integer ligula dui, tempor ac odio in, egestas ullamcorper quam. Sed magna lacus, pretium vel ultricies vel, vestibulum id mi. Vivamus id pellentesque augue, sed aliquam lectus. Aenean commodo vulputate convallis.
+
+Nunc ultricies elementum nisl, iaculis porttitor ante rhoncus at. Suspendisse pretium augue a ligula aliquet, eu condimentum est lacinia. Fusce fermentum pellentesque nibh, vel dictum nibh dictum vitae. Nulla facilisi. Cras vitae purus aliquet lacus semper dictum. Fusce rutrum nisi massa, id molestie ante placerat non. Etiam a erat vel ex rhoncus porta. Vivamus non lacus in est aliquet finibus vitae eget urna.`
+
+const words = lorem.split(' ')
+console.log(`Number of words: ${words.length}`)
+
+let etCount = 0
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === 'et') {
+    etCount++
+  }
+}
+console.log(`Et count: ${etCount}`)
+
+// Bonus 2
+
+let phraseToCheck = 'tenet'
+
+let palindrome = true
+for (let i = 0; i <= Math.floor(phraseToCheck.length / 2); i++) {
+  if (phraseToCheck[i] !== phraseToCheck[(phraseToCheck.length - 1) - i]) {
+    palindrome = false
+    break
+  }
+}
+
+if (palindrome === true) {
+  console.log(`${phraseToCheck} is a palindrome!`)
+} else {
+  console.log(`${phraseToCheck} is not a palindrome :(`)
+}
