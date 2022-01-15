@@ -5,7 +5,7 @@ const hacker1 = "Fernando";
 console.log(`The driver's name is ${hacker1}`);
 
 //Navigator
-const hacker2 = "SecondName";
+const hacker2 = "Breogán";
 console.log(`The navigator's name is ${hacker2}`);
 
 
@@ -35,16 +35,11 @@ console.log("3.1.: ", newName)
 /*
 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"*/
 
-//str.reversed wouldn't stop returning undefined
-
-let reversedString = "";
-let i = hacker1.length;
-
-for (i; i > 1; i--) {
-  reversedString += hacker1[i]
+function reverseString(str) {
+    return str.split('').reverse( ).join('');
 }
-console.log("3.2.: ", reversedString)
 
+console.log("3.2.: ", reverseString(hacker1));
 
 /*
 3.3 Depending on the lexicographic ox5rder of the strings, print:
@@ -79,4 +74,44 @@ Proin elementum felis vel mauris convallis dignissim. Maecenas condimentum neque
 let numberOfWords = paragraphs.split(" ")
 console.log("Number of words: ", numberOfWords.length)
 
-console.log("Number of et: ", paragraphs.count("et"))
+
+let numberOfOcurrances = 0;
+for (i = 0; i < numberOfWords.length; i++) {
+  if (numberOfWords[i] === "et") {
+    numberOfOcurrances += 1
+  }
+}
+
+console.log("Number of et: ", numberOfOcurrances)
+
+/*Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:*/
+
+
+function phraseToCheck (aString) {
+  if (hacker1.localeCompare(hacker2.split("").reverse().join())) {
+    return true
+  }
+    else {
+      return false
+    }
+  }
+
+phraseToCheck ("hola")
+
+
+function palindromeCheck (aString) {
+  let reversedString = "";
+  
+  for (let i = aString.length; i > 0; i--) {
+    reversedString += aString[i]
+  }
+  console.log(aString, reversedString)
+  if (aString.toLowerCase() === reversedString.toLowerCase()) {
+    return true
+  } else {
+    return false
+  }
+}
+
+palindromeCheck ("amor")
