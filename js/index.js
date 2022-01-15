@@ -56,3 +56,20 @@ for (let i=0; i< loremIpsum.length; i++) {
   };
 }
 console.log(countEt);
+
+// Bonus 2:
+
+let phraseToCheck;
+let phraseReverse;
+
+let phraseCheck = phraseToCheck.toLowerCase()
+console.log(phraseCheck)
+for ((i= phraseCheck.length -1); i>=0; i--){
+  phraseReverse += phraseCheck[i];
+}
+
+if (phraseReverse === phraseCheck) {
+  console.log ('It is a Palindrome!');
+} else {
+  console.log('It\'s not a Palindrome.');
+}
