@@ -15,9 +15,20 @@ if (hacker1.length > hacker2.length){
 }
 
 // Iteration 3: Loops
-console.log (`${hacker1[0].toUpperCase()} ${hacker1[1].toUpperCase()} ${hacker1[2].toUpperCase()} ${hacker1[3].toUpperCase()}`)
+let mai = ''
+for (let i = 0; i < hacker1.length; i++){
+    mai += hacker1[i].toUpperCase()
+}
+console.log (mai)
 
-console.log (`${hacker1[3]}${hacker1[2]}${hacker1[1]}${hacker1[0]}`)
+//console.log (`${hacker1[0].toUpperCase()} ${hacker1[1].toUpperCase()} ${hacker1[2].toUpperCase()} ${hacker1[3].toUpperCase()}`)
+
+let invertida = ''
+for ( let i = hacker1.length -1; i >= 0; i--) {
+    invertida += hacker1[i]
+}
+console.log (invertida)
+
 
 
   if (hacker1<hacker2) {
