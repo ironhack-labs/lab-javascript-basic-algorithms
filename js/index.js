@@ -1,6 +1,6 @@
 
-let driver = "Hacker1";
-let navigator = "Hacker2";
+let driver = "Becky";
+let navigator = "Jack";
 
 // 1
 
