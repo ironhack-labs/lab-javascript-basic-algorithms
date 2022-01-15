@@ -86,17 +86,17 @@ Create a new variable phraseToCheck and have it contain some string value. Write
 "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 */
 
-let phraseToCheck = 'put itd up';
+let phraseToCheck = "step on no pets";
 
 function checkPalindrome(phrase){
   let halfPhrase = "";
-  let halfReversedPhrase = "";
+  let reversedPhrase = "";
   phrase = phrase.toLowerCase().replace(/\s/g, '');
 
-  for (let i = 0; i < phrase.length/2 - 1; i++) halfPhrase += phrase[i];
-  for (let i = phrase.length - 1; i >= phrase.length/2; i--) halfReversedPhrase += phrase[i];
+  for (let i = 0; i < phrase.length; i++) halfPhrase += phrase[i];
+  for (let i = phrase.length - 1; i >= 0; i--) reversedPhrase += phrase[i];
 
-  if (halfPhrase === halfReversedPhrase) return true;
+  if (halfPhrase === reversedPhrase) return true;
   else return false;
 }
 
