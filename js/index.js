@@ -72,3 +72,32 @@ for (let i = 0; i < words.length; i++) {
 
 console.log(wordsCount);
 console.log(etCount);
+
+/* Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".
+*/
+
+let phraseToCheck = 'put itd up';
+
+function checkPalindrome(phrase){
+  let halfPhrase = "";
+  let halfReversedPhrase = "";
+  phrase = phrase.toLowerCase().replace(/\s/g, '');
+
+  for (let i = 0; i < phrase.length/2 - 1; i++) halfPhrase += phrase[i];
+  for (let i = phrase.length - 1; i >= phrase.length/2; i--) halfReversedPhrase += phrase[i];
+
+  if (halfPhrase === halfReversedPhrase) return true;
+  else return false;
+}
+
+checkPalindrome(phraseToCheck);
