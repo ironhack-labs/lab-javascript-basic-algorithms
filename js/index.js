@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
-let hacker1 = "Nathalia Maia"
+let hacker1 = "Nathalia "
 console.log(`The driver's name is ${hacker1}.`);
 
-let hacker2 = "Flávia Maia"
+let hacker2 = "Rebeca"
 console.log(`The navigator's name is ${hacker2}.`);
 
 // Iteration 2: Conditionals
