@@ -49,3 +49,15 @@ if(lexicographicOrder === -1){
   console.log("What?! You both have the same name?");
 }
 
+//bonus 1
+
+const splitWords = text.split(" ");
+
+let etCount = 0;
+splitWords.forEach((word) => {
+  if(word === "et") {
+    etCount++;
+  }
+})
+
+//bonus 2
