@@ -19,4 +19,45 @@ if ( hacker1.length > hacker2.length ) {
 
 // 3.1
 
-console.log(hacker1.split('').join(' ').toUpperCase())
+function splitDrivName(driver) {
+  var drivArr = driver.split("");
+  var drivStr = drivArr.join(' ');
+  var drivUpper = drivStr.toUpperCase();
+  return drivUpper;
+}
+console.log(splitDrivName(hacker1))
+
+// Diffeent method
+//console.log(hacker1.split('').join(' ').toUpperCase())
+
+// 3.2
+
+function reversedName(nav) {
+let reversedName = "";
+for (let i = nav.length - 1; i >= 0; i--) {
+reversedName += nav[i];
+  }
+  return reversedName;
+}
+console.log(reversedName(hacker2))
+/*
+//Different method that I found
+function reverseNavName(nav) {
+   var navArr = nav.split("");
+   var reversedNavArr = navArr.reverse();
+   var reversedNavStr = reversedNavArr.join("");
+   return reversedNameStr;
+}
+
+console.log(reverseNavName("Rosa"));
+*/
+
+// 3.3
+// console.log ('a' < 'b') = true;
+if ( hacker1 < hacker2 ) {
+  console.log("The driver's name goes first")
+} else if ( hacker2 < hacker1 ){
+  console.log("Yo, the navigator goes first definitely")
+} else {
+  console.log("What?! You both have the same name?")
+}
