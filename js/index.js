@@ -88,30 +88,31 @@ console.log("Number of et: ", numberOfOcurrances)
 Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:*/
 
 
-function phraseToCheck (aString) {
-  if (hacker1.localeCompare(hacker2.split("").reverse().join())) {
-    return true
-  }
-    else {
-      return false
-    }
-  }
-
-phraseToCheck ("hola")
-
-
-function palindromeCheck (aString) {
+function reversingString (aString) {
+  
+  //Generting palindrome
   let reversedString = "";
   
-  for (let i = aString.length; i > 0; i--) {
+  for (let i = aString.length-1; i >= 0; i--) {
     reversedString += aString[i]
   }
-  console.log(aString, reversedString)
-  if (aString.toLowerCase() === reversedString.toLowerCase()) {
-    return true
-  } else {
-    return false
-  }
-}
 
-palindromeCheck ("amor")
+  //Iterating over palindrome & original
+   for (let a = 0; a < aString.length; a++) {
+     for (let b = reversedString.length; b < 0 ; b--) {
+      console.log("Entering second loop")
+       console.log(aString[a], reversedString[b]);
+       if (aString[a] === reversedString[b]) {
+         console.log("It is a match")
+         continue
+       } else {
+         console.log(`The word "${aString}" is NOT a palindrome`)
+         return false
+       }
+   }}
+console.log(`The word "${aString}" IS a palindrome`)
+return true
+   }
+
+reversingString("amor")
+reversingString("holaquétal")
