@@ -52,15 +52,52 @@ if ((hacker1.localeCompare(hacker2)) == -1) {
 
 // Bonus 1
 
+//count words
+
 const loremIpsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius, eros at auctor tempor, mi orci accumsan tellus, vitae laoreet erat nibh quis orci. Vestibulum porta aliquet dignissim. Vivamus quis magna scelerisque, auctor ipsum finibus, porta magna. Donec euismod in est ac accumsan. Donec interdum diam ac nulla vehicula auctor. Vestibulum eget mi facilisis, auctor tellus sed, facilisis risus. Pellentesque scelerisque tortor libero, non pharetra nisl hendrerit vitae. Donec quis ipsum erat. Sed feugiat, nunc ullamcorper dignissim commodo, ex justo convallis leo, at aliquam sem metus sed justo. Fusce at lobortis purus. Aliquam fringilla placerat hendrerit. Aliquam erat volutpat. Donec tempor nisl nec dapibus pretium. Suspendisse at nunc turpis. Donec quam odio, pulvinar ut neque quis, tincidunt bibendum ante. Suspendisse rutrum, dolor sed iaculis hendrerit, quam elit efficitur ipsum, vitae scelerisque mauris turpis vitae magna. Mauris urna ex, accumsan eu varius eget, suscipit sit amet lacus. Aenean maximus laoreet augue, et varius lacus tempus eget. Ut vestibulum arcu nulla, vitae lacinia turpis venenatis at. Sed ut convallis enim. Nam vestibulum tellus at arcu dignissim vulputate. Sed in mi iaculis, pulvinar quam quis, gravida nulla. Fusce orci nibh, faucibus eget congue ac, ultricies ac sem. Sed id dolor lectus. Aliquam ut quam sem. Sed tincidunt diam non tortor scelerisque, vehicula volutpat nulla auctor. In volutpat hendrerit imperdiet. Mauris dictum semper egestas. Nunc eu ullamcorper sem, a volutpat quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas convallis mattis condimentum. Nam in sapien ornare, gravida dolor posuere, euismod mauris. Nullam suscipit suscipit tortor non sollicitudin.'
 
-console.log(loremIpsum.length);
+let numOfWords = 0;
 
-// Count et
+for (let i=0; i< loremIpsum.length; i++) {
+    numOfWords ++;
+}
+
+console.log(numOfWords);
+
+// count et redo - I may have made this a bit complicated hahaha
+
+let countEt = 0
+
+for (let i=0; i< loremIpsum.length; i++) {
+if (loremIpsum.charAt(i-1)=== ' ' && loremIpsum.charAt(i)=== 'e' && loremIpsum.charAt(i+1) ==='t' && loremIpsum.charAt(i+2)=== ' ') {
+  countEt ++;
+} else {
+  continue;
+}}
+
+console.log(countEt);
+
+// Count et - original submission
 
 let checkEt = ' et ';
 
 let etCount = loremIpsum.split(checkEt).length - 1;
 console.log(etCount);
 
-// Bonus 2 - Still to do.
+// Bonus 2 - I'm pretty sure this isn't the right answer, but it sort of works haha.
+
+let phraseToCheck = 'cat tac';
+let characterCount = 0;
+let phraseLength = phraseToCheck.length;
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (phraseToCheck.charAt(i) === phraseToCheck.charAt(phraseLength - (i+1))) {
+    characterCount ++;
+  }
+  else {
+    continue
+  }}
+
+if (characterCount === phraseLength) {
+  console.log('PALINDROME')
+}
