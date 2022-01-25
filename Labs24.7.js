@@ -37,16 +37,22 @@ console.log (driverRevers)
 
 //iternation 3.3
 
+let hacker1 = "Tommy";
+let hacker2 = "Amy"
+
 hacker1 = hacker1.toLowerCase();
 hacker2 = hacker2.toLowerCase();
-let hackerCont = (hacker1 ,hacker2);
+let hackerCont = 0;
 
-for (let i = 0; i <= hackerCont.length; i++) {
-	if (hackerCont[i] === "a") {
+for (let i = 0; i <= hacker1.length; i++) {
+	if (hacker1[i] === "a") {
 	  hackerCont++
-	}
+    console.log ("The driver's name goes first.")
+    break;
+	}else if(hacker2[i] === "a"){
+    console.log("Yo, the navigator goes first definitely.")
+    break;
+  }else console.log ("What?! You both have the same name?")
 }
 
 console.log(hackerCont)
-
-//En la 3.3 no se exactamente que debo cambiar para que no me de como resultado NaN.
