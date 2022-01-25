@@ -42,11 +42,9 @@ let hacker2 = "Amy"
 
 hacker1 = hacker1.toLowerCase();
 hacker2 = hacker2.toLowerCase();
-let hackerCont = 0;
 
 for (let i = 0; i <= hacker1.length; i++) {
-	if (hacker1[i] === "a") {
-	  hackerCont++
+	if (hacker1[i] === "a") {	 
     console.log ("The driver's name goes first.")
     break;
 	}else if(hacker2[i] === "a"){
@@ -54,5 +52,3 @@ for (let i = 0; i <= hacker1.length; i++) {
     break;
   }else console.log ("What?! You both have the same name?")
 }
-
-console.log(hackerCont)
