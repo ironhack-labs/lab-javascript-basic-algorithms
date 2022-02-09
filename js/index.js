@@ -44,7 +44,7 @@ if ((hacker1.localeCompare(hacker2)) == -1) {
     console.log("Yo, the navigator goes first definitely.")
   } else {
     console.log("What?! You both have the same name?")
-  }
+  };
 
 
 
