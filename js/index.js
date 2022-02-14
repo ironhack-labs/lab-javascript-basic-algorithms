@@ -40,24 +40,22 @@ console.log(`Navigator's name, in reverse order: ${newHacker2Name}`);
 const minLength = Math.min(lengthName1, lengthName2);
 message = "";
 
-if (hacker1UpperCase === hacker2UpperCase) {
-    message = "What?! You both have the same name?";
-} else {
-    for (i = 0; i < minLength; i++){
-        if (hacker1UpperCase[i] < hacker2UpperCase[i]){
-            message = "The driver's name goes first.";
-            break;
-        } else if (hacker2UpperCase[i] < hacker1UpperCase[i]) {
-            message = "Yo, the navigator goes first definitely.";
-            break;
-        }
+for (i = 0; i < minLength; i++){
+    if (hacker1UpperCase[i] < hacker2UpperCase[i]){
+        message = "The driver's name goes first.";
+        break;
+    } else if (hacker2UpperCase[i] < hacker1UpperCase[i]) {
+        message = "Yo, the navigator goes first definitely.";
+        break;
     }
-    if (message === "") {
-        if (lengthName1 < lengthName2) {
-            message = "The driver's name goes first.";
-        } else {
-            message = "Yo, the navigator goes first definitely.";
-        }
+}
+if (message === "") {
+    if (lengthName1 === lengthName2) {
+        message = "What?! You both have the same name?";
+    } else if (lengthName1 < lengthName2) {
+        message = "The driver's name goes first.";
+    } else {
+        message = "Yo, the navigator goes first definitely.";
     }
 }
 console.log(message);
