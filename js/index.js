@@ -28,7 +28,21 @@ console.log(word.toUpperCase());
 
 let word2 = "";
 for(let i=hacker2.length-1; i >= 0; i--){
-word2 += hacker2[i];
+    word2 += hacker2[i];
 }
-console.log(word2);
+console.log(word2.toLocaleLowerCase());
+// 3.3
+let bothHacker = [hacker1, hacker2];
+bothHacker.sort()
+
+if (hacker1 !== hacker2 && bothHacker[0] === hacker1) 
+    console.log(`The drivers name goes first.`);
+
+else if(hacker1 === hacker2) 
+    console.log(`What?! You both have the same name?`);
+
+else
+    console.log(`Yo, the navigator goes first definitely.`);
+  
+
 
