@@ -21,14 +21,14 @@ if (hacker1.length > hacker2.length){
 // Iteration 3: Loops
 let word = "";
 console.log(word);
-for(let i=0; i<hacker1.length;i++){
+for(let i=0; i<hacker1.length -1;i++){
     word += hacker1[i]+ " ";
 }
-/*
 console.log(word.toUpperCase());
+
 let word2 = "";
-for(let i = 10;i<hacker2.length;i--){
+for(let i=hacker2.length-1; i >= 0; i--){
 word2 += hacker2[i];
 }
-console.log(word2)
-*/
+console.log(word2);
+
