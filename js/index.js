@@ -32,22 +32,35 @@ if (hacker1.length > hacker2.length){
 
 //3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 
-const hacker1Splitted = hacker1.split("");
-const hacker1Space = hacker1Splitted.join(" ");
-const upperCasedHacker1 = hacker1Space.toUpperCase();
 
-console.log(upperCasedHacker1) 
-// Question: How can I make a loop out of hacker1? //
+let result = ""
+  for (let i=0; i<hacker1.length; i++){
+  result += hacker1[i].toUpperCase();
+  result += " "
+}
+console.log(result)
+
 
 
 //3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 
-const hacker2Splitted = hacker2.split("");
-const reverseHacker2 = hacker2Splitted.reverse();
-const joinedHacker2 = reverseHacker2.join("")
-
-console.log(joinedHacker2)
+let newResult = ""
+for (let char of hacker2){
+  newResult = char + newResult
+}
+console.log(newResult)
 
 
 // 3.3 Depending on the lexicographic order of the strings, print:
 
+function orderedNames(){
+
+  if (hacker1.localeCompare(hacker2) === -1){
+  console.log("The driver's name goes first.");
+} else if (hacker1.localeCompare(hacker2) === 1){
+  console.log("Yo, the navigator goes first definitely.")
+} else {
+  console.log("What?! You both have the same name?")
+}
+}
+orderedNames()
