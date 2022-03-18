@@ -34,7 +34,8 @@ git push origin master
 
 ## Instructions
 
-You will work on the `src/functions-and-arrays.js` file, which is already loaded in the `index.html` file. To run the JavaScript code open the `index.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension. 
+You will work on the `src/functions-and-arrays.js` file, which is already loaded in the `index.html` file. 
+To run the JavaScript code open the `index.html` file use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension. 
 
 To see output of your JavaScript code open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
 
