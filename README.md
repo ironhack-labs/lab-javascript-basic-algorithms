@@ -11,12 +11,14 @@ Manipulating arrays in code is a very common operation. Whether you are creating
 ## Requirements
 
 - Fork this repo
+
 - Clone it to your machine
-- Visit the "actions" tab in your fork, and enable workflows.
+
+  
 
 ## Submission
 
-Upon completion, run the following commands:
+- Upon completion, run the following commands:
 
 ```bash
 git add .
@@ -24,70 +26,29 @@ git commit -m "Solved lab"
 git push origin master
 ```
 
-Create Pull Request so your TAs can check up your work.
+- Create a Pull Request so that your TAs can check your work.
 
 <br>
 
-## Automated Testing Introduction
 
-<br>
-
-### What is automated testing?
-
-Automated software testing is the process of programmatically executing an application in order to validate and verify that it meets the business needs, as well as the technical requirements, and that it behaves as expected.
-
-Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
-
-Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
-
-<br>
-
-### Testing labs
-
-This lab, along with some of the labs you will be working on during the bootcamp, has a complete test suite that is meant to ensure that your work fulfills the requirements we established.
-
-<br>
-
-### Testing with Jest
-
-Jest is an automated test-runner for JavaScript.
-
-Before start coding, we will explain the project structure we have provided you.
-
-We will be working with the `src/functions-and-arrays.js` file. 
-The process you will be following step by step in this lab stays the same for all the following labs. It will take you a bit to actually become comfortable with it, but don't worry, it is completely okay to get stuck! We are here to help. 🤝
-
-Let's go!
-
-To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. 
-
-```shell
-$ cd lab-javascript-functions-and-arrays
-$ npm install
-$ npm run test:watch
-```
-
-<br>
-
-In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
-
-Open the `lab-solution.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-<br>
-
-#### Pass the tests
-
-You should work on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's _passing_, before moving on.
-
-Do not rush. You should take your time to carefully read every iteration, and you should address the _breaking_ tests as you progress through the exercise.
-
-When coding with tests, it is super important that you carefully read and understand the errors you are getting, this way you will know for sure what's expected from your code.
-
-Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
-
-<br>
 
 ## Instructions
+
+You will work on the `src/functions-and-arrays.js` file, which is already loaded in the `index.html` file. To run the JavaScript code open the `index.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension. 
+
+To see output of your JavaScript code open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
+
+While following the instructions for each iteration, make sure to carefully read the instructions to fully understand the task requirements. Do not rush. You should take your time to carefully read every iteration.
+
+
+
+### Note about tests
+
+This LAB, along with some of the labs you will be working on during the bootcamp, is equipped with unit tests to provide automated feedback on your lab progress.
+
+**After you’ve completed the basic iterations**, go to the **"Test Your Code"** section at the bottom. There you'll be asked to install the testing dependencies and run the tests to check how many tests your code is passing and then correct your code to pass the failing tests.
+
+
 
 <br>
 
@@ -304,5 +265,53 @@ const matrix = [
 Following the logic you've used in iteration #8, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
 
 <br>
+
+
+
+## Test Your Code
+
+<br>
+
+### Automated Testing
+
+Automated software testing is the process of automatically testing an application in order to verify that it meets the technical requirements, and that it behaves as expected.
+
+Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
+
+Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
+
+
+
+<br>
+
+### Testing with Jest
+
+Jest is an automated test-runner for JavaScript.
+
+To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. 
+
+```shell
+$ cd lab-javascript-functions-and-arrays
+$ npm install
+$ npm run test:watch
+```
+
+<br>
+
+In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
+
+Open the `lab-solution.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
+
+<br>
+
+#### Pass the tests
+
+When coding with tests, it is super important that you carefully read and understand the errors you are getting, this way you will know for sure what's expected from your code.
+
+Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
+
+<br>
+
+## 
 
 **Happy coding!** :heart:
