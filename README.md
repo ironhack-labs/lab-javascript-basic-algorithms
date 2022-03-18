@@ -277,8 +277,6 @@ Following the logic you've used in iteration #8, declare a function called `grea
 
 Automated software testing is the process of automatically testing an application in order to verify that it meets the technical requirements, and that it behaves as expected.
 
-Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
-
 Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
 
 
