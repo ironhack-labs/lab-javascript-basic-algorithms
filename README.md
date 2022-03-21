@@ -38,7 +38,7 @@ Ready to start?
 Upon completion, run the following commands:
 ```
 $ git add .
-$ git commit -m "done"
+$ git commit -m "done"$
 $ git push origin master
 ```
 Create Pull Request so your TAs can check up your work.
