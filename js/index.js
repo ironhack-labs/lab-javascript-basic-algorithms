@@ -55,9 +55,9 @@ console.log(etCounter(paragraph))
 
 //BONUS 2
 
-let string = "miami"
+let phraseToCheck = "miami"
 
-if (string === [...string].reverse().join("")) {
+if (phraseToCheck === [...phraseToCheck].reverse().join("")) {
     console.log("this is a palindrome")
 }
 else {
