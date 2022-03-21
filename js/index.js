@@ -22,7 +22,7 @@ hacker1 = hacker1.toUpperCase();
 console.log(hacker1.split("").join(" "));
 
 let reverse = [...hacker2].reverse().join(""); // the three dots?
-console.log(reverse);
+console.log(reverse); /// what it should be: console.log(hacker2.split('').reverse().join('')) ---- reverse only works on arrays, so you have to use it after .split, which turns the string into an array.  
 
 if (hacker1.localeCompare(hacker2) < 0) {
     console.log("The driver's name goes first")
@@ -45,7 +45,7 @@ function etCounter() {
     let newArr = [];
     for (let i = 0; i < paragraph.length; i++) {
         if (paragraph[i] + paragraph[i + 1] + paragraph[i + 2] === " et") {
-            newArr.push((paragraph[i] + paragraph[i + 1]))
+            newArr.push((paragraph[i] + paragraph[i + 1] + paragraph[1+2]))
         }
     }
     return newArr.length;
@@ -53,13 +53,18 @@ function etCounter() {
 
 console.log(etCounter(paragraph))
 
-//BONUS 2
+//BONUS 2 ****
 
-let phraseToCheck = "miami"
+function palindrome(str) {
+ let re = /[^A-Za-z0-9]/g; //this eliminates all punction/special characters
+ str = str.toLowerCase().replace(re, '');
+ let len = str.length;
+ for (let i = 0; i < len/2; i++) {
+   if (str[i] !== str[len - 1 - i]) {
+       return false;
+   }
+ }
+ return true;
+}
+console.log(palindrome("A man, a plan, a canal. Panama"));
 
-if (phraseToCheck === [...phraseToCheck].reverse().join("")) {
-    console.log("this is a palindrome")
-}
-else {
-    console.log("this is not a palindrome")
-}
