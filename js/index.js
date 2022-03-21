@@ -38,7 +38,7 @@ for (let j = hacker2.length - 1; j >=0; j--) {
 
 console.log(nameReverse);
 
-// 3.3
+// 3.3 - without using loop
 if (hacker1 < hacker2) {
     console.log(`The driver's name goes first.`)
 } else if (hacker2 < hacker1) {
@@ -47,9 +47,9 @@ if (hacker1 < hacker2) {
     console.log(`What?! You both have the same name?`)
 }
 
-
 let minimumLength = Math.min(hacker1.length, hacker2.length);
 
+// 3.3 - using a loop-based solution
 
 let k = 0
 let firstAlphabeticName = ''
@@ -67,23 +67,26 @@ do {
 console.log(firstAlphabeticName)
 
 if (firstAlphabeticName === hacker1 ) {
-    console.log();
+    console.log(`The driver's name goes first.`);
 } else if (firstAlphabeticName === hacker2) {
-    console.log();
+    console.log(`Yo, the navigator goes first definitely.`);
 } else {
-    console.log();
+    console.log(`What?! You both have the same name?`);
 }
 
+
+// Bonus 1
+
+// creating the lorem-ipsum strings
 let string1 = 'Lorem et ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non arcu non elit viverra fringilla. Mauris dapibus vulputate turpis, viverra placerat leo varius ut. Sed convallis condimentum odio, quis pharetra justo convallis vel. Praesent eu lacus ac mi tincidunt auctor. Fusce in mi convallis, varius lorem eget, tincidunt turpis. Etiam cursus mi efficitur lacus pharetra tempus. Aliquam semper sapien magna, tempor vestibulum mauris tristique vel. Suspendisse tempor pulvinar justo et scelerisque. Donec a placerat velit, a interdum quam. Vivamus feugiat neque neque, nec tempus nisl molestie a. Morbi ac dolor eu erat aliquet sodales. Nullam vitae lacus fermentum, tempus tortor in, pellentesque massa.'
 
 let string2 = 'In eu rhoncus dui. Cras pulvinar dolor eu mi commodo facilisis. Quisque condimentum facilisis enim eu rutrum. Praesent volutpat efficitur ipsum. Nunc lobortis viverra magna ut sodales. Vestibulum laoreet tellus non lobortis tempus. Cras fringilla lacus eros, ut molestie sem fermentum nec. Vivamus maximus sapien nec augue ornare, a porta diam ornare.'
 
 let string3 = 'Maecenas eget nisi consequat, fsdet tristique ipsum at, commodo orci. Etiam blandit elit eu turpis bibendum finibus non sed eros. Ut pulvinar quis ex eget tincidunt. Vestibulum pulvinar tincidunt convallis. Etiam consequat nisl ipsum, et luctus erat varius vitae. Aenean ut felis dolor. Vivamus et mi lobortis magna vehicula molestie in vel eros. In non justo ornare, iaculis metus sit amet, consequat ante. Ut laoreet lectus eget augue tristique lobortis eget at metus. Aliquam rhoncus lobortis nibh, id sollicitudin nulla sagittis quis. Curabitur aliquet vehicula orci, quis consectetur sapien tincidunt at. Donec a malesuada dolor. Maecenas iaculis auctor urna, sit amet feugiat nulla auctor vitae. Etiam gravida, sapien ac interdum auctor, ligula est commodo purus, eu aliquam orci ex in ligula.'
 
-// B2.2 / B2.3
-//slice from ' ' to the end
-
-console.clear()
+// counting words
+// and the word et
+// in this example for string3
 
 let wordCount = 1
 let etCount = 0;
@@ -100,18 +103,28 @@ while(string3.indexOf(' ') > 0) {
 console.log(wordCount);
 console.log(etCount);
 
+// Bonus 2
 
+let phraseToCheck = 'A man, a plan, a canal, Panama!'
+;
+let phraseWithoutSpaces = '';
+let letter = '';
 
+for (let k = 0; k < phraseToCheck.length; k++) {
+    letter = phraseToCheck[k];
+    if (letter.toLocaleLowerCase() !== letter.toUpperCase()) {
+        phraseWithoutSpaces = phraseWithoutSpaces + letter.toLocaleLowerCase();
+    }
+}
 
+let phraseWithoutSpacesReverse = '';
 
+for (let l = phraseWithoutSpaces.length - 1; l >= 0; l--) {
+    phraseWithoutSpacesReverse = phraseWithoutSpacesReverse + phraseWithoutSpaces[l];
+}
 
-
-
-// let etCount = 0;
-
-// while(string3.indexOf(' et ') !== -1 || string3.indexOf(' et') !== -1 || string3.indexOf('et ') !== -1) {
-//     etCount ++;
-//     string3 = string3.slice( string3.indexOf('et') + 2 );
-// }
-
-// console.log(etCount);
+if (phraseWithoutSpacesReverse === phraseWithoutSpaces) {
+    console.log('It is a Palindrome.');
+} else {
+    console.log('It\'s no Palindrome.');
+}
