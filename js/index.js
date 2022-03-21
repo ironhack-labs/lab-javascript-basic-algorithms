@@ -10,3 +10,5 @@ console.log(`"The second's navigator's name is ${hacker3}"`);
 console.log(`"The longest name has: ${hacker3.length} letters"`);
 
 // Iteration 3: Loops
+
+//Comment
