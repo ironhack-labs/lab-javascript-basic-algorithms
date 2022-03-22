@@ -21,20 +21,21 @@ if (hacker1.length>hacker2.length){
 // Iteration 3: Loops
 
 let hacker1Name=" ";
-for (let i=0; i<hacker1.length; i++){
- hacker1Name = hacker1Name + " " + hacker1[i].toUpperCase();
+
+for(let i=0; i<hacker1.length;i++){
+  hacker1Name += hacker1[i].toUpperCase() + " ";
 }
 console.log(hacker1Name);
 
 let hacker2Name=" ";
-for (let i=hacker2.length-1; i>=0; i--){
- hacker2Name = hacker2Name + hacker2[i];
+for(let i=hacker2.length-1; i>=0;i--){
+  hacker2Name += hacker2[i];
 }
 console.log(hacker2Name);
 
-
 let nameComparison = hacker1.localeCompare(hacker2);
 console.log(nameComparison);
+
 
 if(nameComparison==-1){
   console.log("The driver's name goes first.");
