@@ -21,5 +21,10 @@ console.log((`"${hacker1[0]} ${hacker1[1]} ${hacker1[2]} ${hacker1[3]} ${hacker1
 console.log((`"${hacker2[3]} ${hacker2[2]} ${hacker2[1]} ${hacker2[0]}"`).toLowerCase())
 
 // Iteration 3: Loops
-console.log(hacker1.localeCompare(hacker2))
-console.log("Yo, the navigator goes first definitely.")
+if(hacker1.localeCompare(hacker2)===-1){
+  console.log("Yo, the navigator goes first definitely.")
+} else if(hacker1.localeCompare(hacker2)===1){
+  console.log("The driver's name goes first.")
+} else{
+  console.log("What?! You both have the same name?")
+}
