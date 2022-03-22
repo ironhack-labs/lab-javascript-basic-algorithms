@@ -26,8 +26,6 @@ for (let i = 0; i < hacker1.length; i ++) {
   printedName += (`${hacker1[i]} `);
 }
   console.log(printedName.toUpperCase());
-  
-let hacker2 = 'Alexander';
 
 let x = 0;
 let printedNavName= '';
