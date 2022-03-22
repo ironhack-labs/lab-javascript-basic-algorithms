@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-const hacker1 = 'Anna'
+const hacker1 = 'Nataly'
 console.log(`"The diver's name is ${hacker1}"`);
 
 const hacker2 = 'Arne'
