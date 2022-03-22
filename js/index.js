@@ -27,4 +27,4 @@ if(hacker1.localeCompare(hacker2)===-1){
   console.log("The driver's name goes first.")
 } else{
   console.log("What?! You both have the same name?")
-}
+};
