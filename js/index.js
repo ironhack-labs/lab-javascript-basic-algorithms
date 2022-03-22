@@ -17,7 +17,7 @@ if (hacker1.length > hacker2.length){
 
 console.log(hacker1.toUpperCase().split("").join(" "));
 
-console.log(hacker1.split("").reverse().join(" "));
+console.log(hacker1.split("").reverse().join(""));
 
 if (hacker1.localeCompare(hacker2) === 1){
     console.log("The driver's name goes first.")
