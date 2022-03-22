@@ -31,21 +31,22 @@ let arr = hacker2.split('');
                 console.log(nome);
                 }
 
-/* 3.3 */   const arr1 = Array.from(hacker1); 
-            const arr2 = Array.from(hacker2);
+/* 3.3 */   //const arr1 = Array.from(hacker1); 
+            //const arr2 = Array.from(hacker2);
 
           function comparar(a, b) {
-            if (arr1 < arr2 ) {
-              return `The driver's name goes first.`;
+            if ( a < b ) {
+              console.log("The driver's name goes first.");
             }
-            if (arr1 > arr2 ) {
-              return `Yo, the navigator goes first definitely.`;
-            }
-            // a deve ser igual a b
-            return `What?! You both have the same name?`;
+            if (a > b ) {
+              console.log("Yo, the navigator goes first definitely.");
+            } else if 
+            ( a === b ){
+            console.log("What?! You both have the same name?");
           }
+        }
                        
-comparar(arr1, arr2)
+comparar(hacker1, hacker2);
 // console.log( arr1, arr2);
      
 
