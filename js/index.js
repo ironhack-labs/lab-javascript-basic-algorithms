@@ -28,5 +28,3 @@ if (hacker1.length > hacker2.length && hacker1.length > hacker3.length) {
 for (i = 0; i < hacker1.length; i++) console.log(hacker1[i]);
 
 for (i = hacker2.length; i > 0; i--) console.log(hacker2[i]);
-
-//Comment
