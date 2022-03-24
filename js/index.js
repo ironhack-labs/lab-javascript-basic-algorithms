@@ -19,8 +19,29 @@ if (hacker1.length > hacker2.length) {
     console.log(
         `Wow, you both have equally long names, ${hacker2.length} characters!.`
     );
+
 }
+
 // Iteration 3: Loops
+
+
+let upperCase = "";
+for (let i = 0; i < hacker1.length; i++) {
+    const char = hacker1.charAt(i);
+    upperCase += char.toUpperCase() + " ";
+}
+console.log(upperCase);
+
+
+
+let reverse = "";
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    reverse += hacker2.charAt(i);
+}
+console.log(reverse);
+
+
+
 let team = [hacker1, hacker2];
 let alf = team.sort();
 console.log(alf);
