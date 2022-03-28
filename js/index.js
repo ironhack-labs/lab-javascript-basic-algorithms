@@ -26,3 +26,5 @@ if (hacker1.localeCompare(hacker2) === 1){
   } else{
     console.log("What?! You both have the same name?")
   }
+
+  
