@@ -18,10 +18,7 @@ if (hacker1.length > hacker2.length) {
 //3.1
 let driverTrick = "";
 for (i = 0; i < hacker1.length; i++) {
-  driverTrick += hacker1[i].toUpperCase();
-  if (i < (hacker1.length - 1)) {
-    driverTrick += " ";
-  }
+  driverTrick = driverTrick + " " + hacker1[i].toUpperCase();
 };
 
 console.log(driverTrick);
@@ -49,17 +46,17 @@ let text = `Le Lorem Ipsum est simplement du faux texte employé dans la composi
 On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
 
 Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour.`
-var textWord = text.split(" ").length
+let arrayText = text.split(" ")
+let textWord = arrayText.length
 console.log(textWord)
 
-let arrayText = text.replace(",", " ").split(" ")
-let arr = []
+let arrayEt = []
 arrayText.map(function (element) {
   if (element.startsWith("et")) {
-    arr.push(element)
+    arrayEt.push(element)
   }
 })
-console.log(arr.length)
+console.log(arrayEt.length)
 
 
 //Bonus 2
