@@ -1,10 +1,11 @@
-// Iteration 1: Names and Input
-//
-const hacker1 = "Ronald";
-const hacker2 = "Pieter";
+//iteration 1
+
+const hacker1 = "Pieter"; // tested this with other names so can be different from pauline
+const hacker2 = "John";
 console.log(`The driver's name is ${hacker1}`);
 console.log(`The navigator's name is ${hacker2}`);
-// Iteration 2: Conditionals
+
+//iteration 2
 
 if (hacker1.length > hacker2.length) {
   console.log(
@@ -15,13 +16,31 @@ if (hacker1.length > hacker2.length) {
     `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`
   );
 } else {
-  console.log(`Wow, you both have equally long names, ${hacker1.length}`);
+  console.log(
+    `Wow, you both have equally long names, ${hacker1.length} characters`
+  );
 }
 
-// Iteration 3: Loops
+//iteration 3
 
-const printCharacters = function (driverName, navigatorName) {
-  for (let i = 0; i < driverName.length; i++) {
-    console.log([i].toUpperCase());
-  }
-};
+let driverCapitalized = "";
+let navigatorReversed = "";
+
+for (let i = 0; i < hacker1.length; i++) {
+  driverCapitalized += hacker1[i].toUpperCase() + " ";
+}
+console.log(driverCapitalized);
+
+for (let y = hacker2.length - 1; y > 0 - 1; y--) {
+  navigatorReversed += hacker2[y];
+}
+console.log(navigatorReversed);
+
+const lexicOrder = hacker1.localeCompare(hacker2);
+if (lexicOrder === 1) {
+  console.log(`The driver's name goes first.`);
+} else if (lexicOrder === -1) {
+  console.log(`The driver's name goes first.`);
+} else if (lexicOrder === 0) {
+  console.log(`What?! You both have the same name?`);
+}
