@@ -11,10 +11,9 @@ Manipulating arrays in code is a very common operation. Whether you are creating
 ## Requirements
 
 - Fork this repo
-
 - Clone it to your machine
 
-  
+
 
 ## Submission
 
