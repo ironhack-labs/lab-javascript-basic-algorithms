@@ -43,7 +43,14 @@ let paragraph = `Lorem Ipsum is simply dummy text of the printing and typesettin
 let divide = paragraph.split(' ');
 let words = divide.length;
 
-console.log(words);
+let wordEt = paragraph.includes(' et ');
+let divide2 = paragraph.split('  et ');
+let wordsEt = divide2.length;
+
+
+console.log('Number of words:'+" "+words);
+console.log('Number of word Et:'+' '+wordsEt);
+
 
 //BONUS 2
 
