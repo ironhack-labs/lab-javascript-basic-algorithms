@@ -78,6 +78,7 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
     - `The driver's name goes first.` <br>
     - `Yo, the navigator goes first definitely.` <br>
     - `What?! You both have the same name?`
+    // local compare para lexicographic
 
 ### Bonus Time!
 
