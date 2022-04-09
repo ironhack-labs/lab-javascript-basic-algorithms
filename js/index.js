@@ -153,3 +153,5 @@ if(phraseReverse[i] === phraseClean[i] ){
 if (counter == phraseClean.length){
     console.log("Es palindrome, we!")
 }
+
+console.log("hola")
