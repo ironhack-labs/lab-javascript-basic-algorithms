@@ -54,3 +54,31 @@ console.log('Number of word Et:'+' '+wordsEt);
 
 //BONUS 2
 
+let palindromo = "Amor,Roma";
+palindromo = palindromo.toUpperCase;
+palindromo = palindromo.split("");
+palindromo = palindromo.reverse();
+palindromo = palindromo.join();
+
+let positive = "";
+let negative = "";
+
+for (i=0;i<palindromo.length;i++){
+  if (prueba[i] === '' || prueba [i] === ',' || prueba[i] === '?' || prueba[i] === '!' || prueba[i] === '.'){
+    continue;
+  }
+  positive += palindrome[i];
+}
+
+for (i=palindromo.length;i>=0;i--){
+  if (prueba[i] === '' || prueba [i] === ',' || prueba[i] === '?' || prueba[i] === '!' || prueba[i] === '.'){
+    continue;
+  }
+  negative += palindrome[i];
+}
+
+if (positive === negative){
+  console.log("Es un palindromo");
+}else{
+  console.log("No es un palindromo");
+}
