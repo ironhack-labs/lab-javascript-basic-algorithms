@@ -1,9 +1,9 @@
 console.log("I'm ready!");
 
 // Iteration 1: Names and Input
-let hacker1 = "Driver";
+let hacker1 = "Yash";
 console.log(`The driver's name is : ${hacker1}`);
-let hacker2 = 'Navigator';
+let hacker2 = 'Tapan';
 console.log(`The Navigator's name is : ${hacker2}`);
 
 //
@@ -19,5 +19,7 @@ console.log(`The Navigator's name is : ${hacker2}`);
 // Iteration 3: Loops
 let toUpperCaseSpace = hacker1.toUpperCase().split("").join(" ");
 console.log(`The Driver's Name separated by space and in capitals is : ${toUpperCaseSpace}`);
-let reverse = hacker2.split("").reverse().join("");
-console.log(`Navigators's Name in reverse order is: ${reverse}`);
+let reversed = hacker2.split("").reverse().join("");
+console.log(`Navigators's Name in reverse order is: ${reversed}`);
+
+
