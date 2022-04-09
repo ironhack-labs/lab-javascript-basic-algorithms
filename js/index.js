@@ -14,6 +14,13 @@ if (hacker1.length > hacker2.length) {
   }else if (hacker1.length === hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
   } 
+  let array1 = hacker1.toUpperCase().split('')
+console.log(array1)
+
+let array2 = hacker2.split('')
+array2 = (array2.reverse())
+hacker2 = array2.join('')
+console.log(hacker2)
 
 // Iteration 3: Loops
 switch(hacker1.localeCompare(hacker2)){
