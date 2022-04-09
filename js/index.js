@@ -42,3 +42,41 @@ if (order[0] === hacker1) {
     console.log(`What!? You both have the same name?`);
 }
         
+let paragraph = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac cursus lorem. Nulla fringilla dapibus lorem, ac porta diam dignissim eget. Maecenas fermentum elit arcu, ac tempor ante fermentum eget. Duis sit amet arcu nisi. Maecenas euismod pellentesque neque, quis tristique augue eleifend sed.  et Aliquam auctor sollicitudin turpis, at consequat ligula iaculis nec. Cras varius sem eu massa fermentum laoreet eu id neque.';
+let paragraph1 = 'Duis malesuada, neque vel imperdiet tempor, et mi mi consectetur magna, blandit eleifend dui quam ornare lectus. Sed porttitor dolor est, at facilisis tellus luctus a. Nunc vehicula est odio, interdum pulvinar nunc accumsan sed. Proin lacinia congue diam, non bibendum lorem ullamcorper eget. Proin sit amet convallis orci. Vestibulum ac vehicula libero. Donec cursus eros vel velit hendrerit, eget tincidunt turpis pulvinar. Nunc sed nulla eu dolor tristique varius at pharetra sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+let paragraph2 = 'Integer iaculis, leo vel viverra euismod, et nibh augue ultricies augue, et mattis ex orci nec diam. Aliquam placerat orci vitae purus egestas, eget mattis orci bibendum. Nulla sit amet finibus purus, quis ultricies lectus. Aliquam lacinia rhoncus nibh eu suscipit. Vivamus ut massa et risus ullamcorper suscipit. Donec posuere orci vitae elementum convallis. Sed vel finibus lectus, a dictum dolor. Vivamus id tellus mauris.';
+
+let parWords = paragraph.split(' ');
+let parWdsLength = parWords.length;
+let parWords1 = paragraph1.split(' ');
+let parWords1LLength = parWords1.length;
+let parWords2 = paragraph2.split(' ');
+let parWords2LLength = parWords2.length;
+
+function counterWords(parragraphs){
+    let parWords = paragraph.split(' ');
+    let parWdsLength = parWords.length;
+    let parWords1 = paragraph1.split(' ');
+    let parWords1LLength = parWords1.length;
+    let parWords2 = paragraph2.split(' ');
+    let parWords2LLength = parWords2.length;
+    let totalWords = parWdsLength + parWords1.length + parWords2.length;
+    return totalWords
+}
+
+let totalWords = counterWords(paragraph, paragraph1, paragraph2);
+console.log(totalWords);
+let counter = 0;
+countEtInParagraph =(array) => {
+    for (let i = 0; i < array.length; i++){
+        if(array[i].includes("et")  || array[i].includes("et.") || array[i].includes("Et") || array[i].includes("Et.")){
+            counter++;
+        }
+    }
+    return counter
+}
+
+let totalEt = countEtInParagraph(parWords, parWords1, parWords2);
+console.log(totalEt);
+console.log(`The total number of et in text are: ${totalEt}`);
+
