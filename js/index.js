@@ -111,30 +111,3 @@ for( let i = phraseToCheck.length; i > 0; i-- )
     }
     break;
 }
-
-
-
-/* let phraseToCheck = 'cat driving a car.';
-let phraseWords = phraseToCheck.split (' ');
-
-for (i = 0; i < phraseToCheck.length; i++) {
-    if (phraseToCheck[i] === phraseToCheck[i] / 2) {
-    console.log(true)
-    }
-    else {
-        console.log(false)
-    }
-    break;
-} */
-
-/* let phraseToCheck = 'I have a race car';
-let count = 0;
-for (let i = 0; i < phraseToCheck.length; i++) {
-  const char1 = phraseToCheck[i];
-  const char2 = phraseToCheck[i + 1];
-  if (char1 === "race" && char2 === "car") {
-    count++;
-    console.log(true);
-  };
-  break;
-}; */
