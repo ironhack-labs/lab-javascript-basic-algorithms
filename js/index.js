@@ -101,7 +101,7 @@ Here are some examples of palindromes:
 
 let phraseToCheck = 'I have a race car';
 
-for( var i = phraseToCheck.length; i > 0; i-- )
+for( let i = phraseToCheck.length; i > 0; i-- )
 {
     if( phraseToCheck[i] = phraseToCheck.charAt(phraseToCheck.length)-1 )
     {
