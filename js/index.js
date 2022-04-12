@@ -21,7 +21,7 @@ console.log(`The Navigator's name is : ${hacker2}`);
 
 // Iteration 3: Loops
 
-/*
+
 let driver = 'Yash';
 let navigator = 'Tapan';
 
@@ -38,8 +38,9 @@ for(i = navigator.length - 1; i >= 0; i--) {
   reversedName += navigator[i];
   console.log(reversedName);
 }
-*/
 
+
+/*
 let capsSpace = hacker1.toUpperCase().split("").join(" ");
 console.log(`The Driver's Name separated by space and in capitals is : ${capsSpace}`);
 
@@ -57,5 +58,5 @@ console.log(`Navigators's Name in reverse order is: ${reversed}`);
      console.log("What?! You both have the same name?");
 }
 
-
+*/
 
