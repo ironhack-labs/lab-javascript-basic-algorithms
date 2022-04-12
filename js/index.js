@@ -69,3 +69,14 @@ for (let i = 0; i < sentence.length; i++) {
 
 console.log(number);
 
+//Bonus 2
+
+let phraseToCheck = "step on no pets";
+let pTCLenght = phraseToCheck.length;
+for(let i = 0 ; i < pTCLenght / 2; i++ ) {
+    if(phraseToCheck[i] === phraseToCheck[pTCLenght -1 -i]){
+        console.log("It's a Palindrome")
+    } else {
+        console.log("It's not a Palindrome")
+    }
+}
