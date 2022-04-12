@@ -57,8 +57,8 @@ let countEt = 0;
 for (let i = 0; i < loremIpsum.length; i++) {
   let latinWord = `${loremIpsum[i - 3]}${loremIpsum[i - 2]}${
     loremIpsum[i - 1]
-  }${loremIpsum[i]}`.toLowerCase();
-  if (latinWord == " et ") {
+  }`.toLowerCase();
+  if (latinWord == " et") {
     countEt++;
   }
 }
