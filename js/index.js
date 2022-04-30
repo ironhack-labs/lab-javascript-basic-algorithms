@@ -24,8 +24,8 @@ console.log(driver.toUpperCase());
 
 let navigator = ""
 
-for (let j = hacker2.length -1 ; j => 0 ; j-- ){
-    navigator += hacker2[i]
+for (let j = hacker2.length -1 ; j >= 0 ; j-- ){
+    navigator += hacker2[j]
 }
 
 console.log(navigator);
