@@ -1,8 +1,46 @@
 // Iteration 1: Names and Input
-//
-// Iteration 2: Conditionals
+const hacker1 = "Manolito"
+console.log(`The driver's name is ${hacker1}`)
 
+const hacker2 = "firefox-2.0"
+console.log(`The navigator's name is ${hacker2}`)
+// Iteration 2: Conditionals
+if (hacker1.length > hacker2.length){
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.` )
+} else if (hacker2.length > hacker1.length){
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+} else {
+    console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`)
+}
 
 // Iteration 3: Loops
+let driver = ""
+for (let i = 0 ; i < hacker1.length ; i++ ){
+    driver += hacker1[i] + " "
+}
+console.log(driver.toUpperCase());
 
-console.log ( "¡Estoy listo!" ) ;
+
+
+let navigator = ""
+
+for (let j = hacker2.length -1 ; j => 0 ; j-- ){
+    navigator += hacker2[i]
+}
+
+console.log(navigator);
+
+
+
+
+
+
+
+
+
+
+
+
+console.log ( "I'm ready" ) ;
+
+
