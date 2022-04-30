@@ -38,7 +38,7 @@ for (let i = hackerLength; i>=0; i--) {
     const word = hacker2[i]
     navigatorName += word
 }
-console.log(`${navigatorName}`)
+console.log(navigatorName)
 
 const boat = [hacker1, hacker2]
 let 
