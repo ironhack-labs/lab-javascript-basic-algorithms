@@ -24,3 +24,21 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
+let driverName = ''
+
+for (let i = 0; i < hacker1.length; i++) {
+    driverName += hacker1[i] + ' '
+}
+console.log(driverName.toUpperCase())
+
+let hackerLength = hacker2.length - 1
+let navigatorName = ''
+
+for (let i = hackerLength; i>=0; i--) {
+    const word = hacker2[i]
+    navigatorName += word
+}
+console.log(`${navigatorName}`)
+
+const boat = [hacker1, hacker2]
+let 
