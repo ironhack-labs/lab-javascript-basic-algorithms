@@ -24,6 +24,8 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
+
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals
 let driverName = ''
 
 for (let i = 0; i < hacker1.length; i++) {
@@ -31,14 +33,21 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 console.log(driverName.toUpperCase())
 
+// 3.2 Print all the characters of the navigator's name, in reverse order.
 let hackerLength = hacker2.length - 1
 let navigatorName = ''
 
-for (let i = hackerLength; i>=0; i--) {
+for (let i = hackerLength; i >= 0; i--) {
     const word = hacker2[i]
     navigatorName += word
 }
 console.log(navigatorName)
 
-const boat = [hacker1, hacker2]
-let 
+// 3.3 Depending on the lexicographic order of the strings
+if (hacker1 < hacker2) {
+    console.log("The driver's name goes first.")
+  } else if (hacker1 > hacker2) {
+    console.log("Yo, the navigator goes first definitely.")
+  } else {
+    console.log("What?! You both have the same name?")
+  }
