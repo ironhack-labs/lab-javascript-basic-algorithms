@@ -2,7 +2,7 @@
 const hacker1 = "Manolito"
 console.log(`The driver's name is ${hacker1}`)
 
-const hacker2 = "firefox-2.0"
+const hacker2 = "firefox"
 console.log(`The navigator's name is ${hacker2}`)
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length){
@@ -33,7 +33,13 @@ console.log(navigator);
 
 
 
-
+if (hacker1.toUpperCase() < hacker2.toUpperCase()) {
+    console.log("The driver's name goes first.")
+  } else if (hacker1.toUpperCase() > hacker2.toUpperCase()) {
+    console.log("Yo, the navigator goes first definitely.")
+  } else {
+    console.log("What?! You both have the same name?")
+  }
 
 
 
