@@ -34,25 +34,22 @@ if (hacker1.length > hacker2.length) {
 //3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
 //i.e. `"J O H N"`
 
-for (let string = 0; string < hacker1.length; string++){
-    console.log(`${hacker1[string].toUpperCase()} \r`)
-}
-/* Trying to print the result as a line, instead of a column 
+// Changed to print only one line by copying the name into an empty string
 let hacker1Capital = ""
 for (let string = 0; string < hacker1.length; string++){
 
-    hacker1Capital[string] = hacker1[string.toUpperCase()] +  " "
+    hacker1Capital += hacker1[string].toUpperCase() +  " "
     
 }
-*/
+console.log(hacker1Capital)
 
 //3.2 Print all the characters of the navigator's name, in reverse order. 
 //i.e. `"nhoJ"`
-
+let hacker2Reverse = ""
 for (let string = hacker2.length-1; string >= 0; string--){
-    console.log(`${hacker2[string]} `)
+    hacker2Reverse += hacker2[string]
 }
-
+console.log(hacker2Reverse)
 //3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
 //  - `The driver's name goes first.` <br>
 //  - `Yo, the navigator goes first definitely.` <br>
