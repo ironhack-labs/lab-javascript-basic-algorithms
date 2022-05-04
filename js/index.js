@@ -52,7 +52,8 @@ if (hacker1 < hacker2) {
     console.log("What?! You both have the same name?")
   }
 
-// Bonus 1:
+
+  // Bonus 1:
 const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet neque et ipsum tristique auctor. Pellentesque leo massa, egestas in varius ut, fermentum dignissim nunc. In vel tincidunt ex, quis faucibus dolor. In at vehicula nulla. Pellentesque dui mauris, consequat in ipsum et, viverra euismod risus. Donec pellentesque nisl in neque gravida mollis. Phasellus posuere mattis tincidunt. Proin erat leo, hendrerit at purus eget, aliquam tincidunt nunc. Ut sit amet imperdiet ipsum, sit amet bibendum turpis. Sed sagittis commodo euismod. Curabitur faucibus accumsan condimentum. Cras accumsan rutrum arcu, id malesuada odio pharetra in. In hac habitasse platea dictumst.
 
 Vivamus et enim pellentesque, dictum lectus id, molestie felis. Donec feugiat facilisis gravida. Donec vulputate condimentum nisl vitae ornare. Aenean tincidunt efficitur tellus, nec semper enim interdum a. Vestibulum tempor, ipsum at vestibulum vehicula, lorem nunc mollis erat, at ornare sem nunc id turpis. Phasellus sagittis ultrices diam congue semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum venenatis nulla sed gravida. Nullam vestibulum nulla in risus placerat aliquet.
