@@ -15,6 +15,16 @@ if(hacker1.length > hacker2.length){
     console.log(`Wow, you both got equally long names, ${hacker1.length} characters!`);
   }
 
+//Separando los caracteres del nombre
+let separado = hacker1.split('')
+
+console.log(separado);
+
+// Retornando el nombre de reversa
+let reversa = hacker1.split('').reverse().join('')
+
+console.log(reversa)
+
 // Iteration 3: Loops
 hacker1 = hacker1.toUpperCase();
 let otherHacker1 = "";
