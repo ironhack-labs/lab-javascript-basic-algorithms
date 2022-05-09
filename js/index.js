@@ -1,10 +1,10 @@
 console.log("I'm ready!");
 // Iteration 1: Names and Input
 
-const hacker1 = 'Valerian';
+let hacker1 = 'Valerian';
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = 'Haroun';
+let hacker2 = 'Haroun';
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -40,6 +40,33 @@ for (let i = hacker2.length - 1; i >= 0; i--){
 
 console.log(reverseH2);
 
+if (hacker1 === hacker2){
+    console.log( "What?! You both have the same name?")
+}
+
+if (hacker1.length < hacker2.length){
+    for (let i = 0; i < hacker2.length - hacker1.length; i++){
+        hacker1 += ' ';
+    }
+}
+
+else if (hacker2.length < hacker1.length){
+    for (let i = 0; i < hacker1.length - hacker2.length; i++){
+        hacker2 += ' ';
+    }
+}
+
+for (let i = 0; i < hacker1.length; i++){
+    if (hacker1[i] < hacker2[i]) {
+        console.log("The driver's name goes first.");
+        break
+    }
+    else if (hacker2[i] < hacker1[i]){
+        console.log("Yo, the navigator goes first definitely.");
+        break
+    }
+}
+
 // Bonus Time !
 // Bonus 1
 
@@ -64,6 +91,12 @@ console.log(`The number of words is ${numberOfWords + 1}.`,`The number of 'et' i
 const phraseToCheck = "la marine en ira mal";
 
 let phraseWithoutSpaces = phraseToCheck.replaceAll(' ','');
+phraseWithoutSpaces.replaceAll(',','');
+phraseWithoutSpaces.replaceAll('.','');
+phraseWithoutSpaces.replaceAll('!','');
+phraseWithoutSpaces.replaceAll('?','');
+phraseWithoutSpaces.replaceAll("'",'');
+
 
 let firstHalf = '';
 let secondHalf = '';
@@ -91,6 +124,5 @@ else if (phraseWithoutSpaces.length % 2 !== 0){
 }
 
 if (firstHalf === secondHalf){
-    console.log("The phrase is a palindrome !")
+    console.log("The phrase is a palindrome !");
 }
-
