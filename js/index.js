@@ -61,7 +61,7 @@ console.log(`The number of words is ${numberOfWords + 1}.`,`The number of 'et' i
 
 //Bonus 2
 
-const phraseToCheck = "La marine en ira mal";
+const phraseToCheck = "la marine en ira mal";
 
 let phraseWithoutSpaces = phraseToCheck.replaceAll(' ','');
 
@@ -81,11 +81,11 @@ if (phraseWithoutSpaces.length % 2 === 0){
 
 else if (phraseWithoutSpaces.length % 2 !== 0){
     const middleIndex = Math.floor(phraseWithoutSpaces.length / 2) + 1;
-    for (let i = middleIndex; i > 0; i--){
+    for (let i = middleIndex-1; i > 0; i--){
         firstHalf += phraseWithoutSpaces[i];
     }
 
-    for (let i = middleIndex; i < phraseWithoutSpaces.length - 1; i++){
+    for (let i = middleIndex-1; i < phraseWithoutSpaces.length - 1; i++){
         secondHalf += phraseWithoutSpaces[i];
     }
 }
