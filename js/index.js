@@ -41,12 +41,9 @@ for (let i = hacker2.length - 1; i >= 0; i--){
 console.log(reverseH2);
 
 // Bonus Time !
+// Bonus 1
 
-const loremIpsum = `Aliquam urna orci, cursus nec risus quis, volutpat suscipit erat. Nulla vel ligula massa. Proin et orci id lectus interdum varius ut vel enim. Donec eleifend ullamcorper facilisis. Vivamus in ultricies lectus, tempus auctor turpis. Nunc sit amet mauris cursus, mollis orci eget, vulputate sem. Cras accumsan turpis sem, non mollis augue porta sit amet. Fusce pretium turpis id tempus facilisis. Proin accumsan magna sit amet velit lacinia, quis hendrerit libero auctor. Quisque et mi turpis. Phasellus tincidunt sed dolor et porttitor. Nam mollis tempor tempus. Phasellus ut lorem at ex hendrerit aliquet et aliquet ex. Aliquam vehicula ex sodales quam congue tristique.
-
-Fusce vitae odio commodo, vulputate justo a, gravida est. Suspendisse finibus facilisis turpis. Donec cursus metus eu ipsum convallis, sed cursus nisi rhoncus. Suspendisse fringilla blandit sem, id sodales tortor tincidunt vitae. In ut est magna. Sed cursus arcu odio, vitae tempus libero porta in. Sed molestie est eu ipsum consectetur, sit amet vehicula augue maximus. Donec ut convallis magna, vitae convallis mauris. Pellentesque pulvinar, ligula et ornare porta, ex felis pharetra tortor, sed euismod lorem risus in magna. Sed odio dolor, tempor a finibus at, finibus eget lectus. Sed tincidunt magna nec nisi rhoncus congue. Mauris vitae vehicula velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur ac dictum sapien, eget pretium arcu. Etiam ac tempus lacus, vel pharetra metus. Fusce in suscipit ipsum.
-
-Mauris posuere mi in quam gravida eleifend. Donec pulvinar nisi arcu, vestibulum facilisis purus tincidunt vitae. Ut gravida risus vel commodo vestibulum. Vivamus ultrices imperdiet interdum. Maecenas ac nibh risus. Maecenas sed diam eget nisi feugiat tincidunt sed et justo. Aenean pellentesque lorem massa, eget faucibus nulla vulputate id.`;
+const loremIpsum = `Aliquam urna orci, cursus nec risus quis, volutpat suscipit erat. Nulla vel ligula massa. Proin et orci id lectus interdum varius ut vel enim. Donec eleifend ullamcorper facilisis. Vivamus in ultricies lectus, tempus auctor turpis. Nunc sit amet mauris cursus, mollis orci eget, vulputate sem. Cras accumsan turpis sem, non mollis augue porta sit amet. Fusce pretium turpis id tempus facilisis. Proin accumsan magna sit amet velit lacinia, quis hendrerit libero auctor. Quisque et mi turpis. Phasellus tincidunt sed dolor et porttitor. Nam mollis tempor tempus. Phasellus ut lorem at ex hendrerit aliquet et aliquet ex. Aliquam vehicula ex sodales quam congue tristique. Fusce vitae odio commodo, vulputate justo a, gravida est. Suspendisse finibus facilisis turpis. Donec cursus metus eu ipsum convallis, sed cursus nisi rhoncus. Suspendisse fringilla blandit sem, id sodales tortor tincidunt vitae. In ut est magna. Sed cursus arcu odio, vitae tempus libero porta in. Sed molestie est eu ipsum consectetur, sit amet vehicula augue maximus. Donec ut convallis magna, vitae convallis mauris. Pellentesque pulvinar, ligula et ornare porta, ex felis pharetra tortor, sed euismod lorem risus in magna. Sed odio dolor, tempor a finibus at, finibus eget lectus. Sed tincidunt magna nec nisi rhoncus congue. Mauris vitae vehicula velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur ac dictum sapien, eget pretium arcu. Etiam ac tempus lacus, vel pharetra metus. Fusce in suscipit ipsum. Mauris posuere mi in quam gravida eleifend. Donec pulvinar nisi arcu, vestibulum facilisis purus tincidunt vitae. Ut gravida risus vel commodo vestibulum. Vivamus ultrices imperdiet interdum. Maecenas ac nibh risus. Maecenas sed diam eget nisi feugiat tincidunt sed et justo. Aenean pellentesque lorem massa, eget faucibus nulla vulputate id.`;
 
 let numberOfWords = 0;
 let numberOfEt = 0;
@@ -61,3 +58,39 @@ for (let i = 0; i < loremIpsum.length; i++) {
 }
 
 console.log(`The number of words is ${numberOfWords + 1}.`,`The number of 'et' is ${numberOfEt}`);
+
+//Bonus 2
+
+const phraseToCheck = "La marine en ira mal";
+
+let phraseWithoutSpaces = phraseToCheck.replaceAll(' ','');
+
+let firstHalf = '';
+let secondHalf = '';
+
+if (phraseWithoutSpaces.length % 2 === 0){
+    const middleIndex = phraseWithoutSpaces.length / 2;
+    for (let i = middleIndex - 1; i > 0; i--){
+        firstHalf += phraseWithoutSpaces[i];
+    }
+
+    for (let i = middleIndex; i < phraseWithoutSpaces.length - 1; i++){
+        secondHalf += phraseWithoutSpaces[i];
+    }
+}
+
+else if (phraseWithoutSpaces.length % 2 !== 0){
+    const middleIndex = Math.floor(phraseWithoutSpaces.length / 2) + 1;
+    for (let i = middleIndex; i > 0; i--){
+        firstHalf += phraseWithoutSpaces[i];
+    }
+
+    for (let i = middleIndex; i < phraseWithoutSpaces.length - 1; i++){
+        secondHalf += phraseWithoutSpaces[i];
+    }
+}
+
+if (firstHalf === secondHalf){
+    console.log("The phrase is a palindrome !")
+}
+
