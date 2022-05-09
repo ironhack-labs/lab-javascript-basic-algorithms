@@ -77,13 +77,13 @@ const palindromeMaybe = `A man, a plan, a canal, Panama!`;
 function isPalindrome(string) {
   const punctuation = `,;.?'!-:`;
 
-  str = string.toLowerCase();
+  let str = string.toLowerCase();
 
   for (let i = 0; i < punctuation.length; i++) {
     str = str.replaceAll(punctuation[i], ``);
   }
   str = str.replaceAll(` `, ``);
-  
+
   let reversedStr = ``;
   for (let i = str.length - 1; i >= 0; i--) {
     reversedStr += str[i];
