@@ -74,7 +74,7 @@ console.log(countEt(loremIpsum));
 // Bonus 2
 const palindromeMaybe = `A man, a plan, a canal, Panama!`;
 
-function isPalindrome(string) {
+function checkIfPalindrome(string) {
   const punctuation = `,;.?'!-:`;
 
   let str = string.toLowerCase();
@@ -92,4 +92,4 @@ function isPalindrome(string) {
   return str === reversedStr ? `"${string}" is a palindrome!` : `${string} is not a palindrome :(`;
 }
 
-console.log(isPalindrome(palindromeMaybe));
+console.log(checkIfPalindrome(palindromeMaybe));
