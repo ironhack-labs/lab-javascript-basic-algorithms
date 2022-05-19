@@ -65,7 +65,7 @@ if (hacker1.localeCompare(hacker2) === 1) {
 */
 
 // BONUS 1
-
+/*
 let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 let loremWord = lorem.split(' ')
@@ -78,7 +78,36 @@ for (let i = 0; i < loremWord.length; i++) {
         etCounter++
     }
 }
-
+ 
 console.log(`Number of "et" words: ${etCounter}`)
-
+*/
 // BONUS 2
+
+let phraseToCheck = "Amor, Roma"
+phraseToCheck = phraseToCheck.toLowerCase()
+
+let phrase1 = ""
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+    if(phraseToCheck[i] === ' ' || phraseToCheck[i] === ',' || phraseToCheck[i] === '?') {
+        phrase1 += ""
+    } else {
+        phrase1 += phraseToCheck[i]
+    }
+}
+
+let phrase2 = ""
+
+for (let i = phrase1.length -1; i >= 0; i--) {
+
+    phrase2 += phrase1[i]
+
+}
+
+console.log (`Phrase 1 is ${phrase1} and Phrase2 is ${phrase2}`)
+
+if (phrase1 === phrase2) {
+    console.log("Is a Palindrome")
+} else {
+    console.log("Is not a Palidrome")
+}
