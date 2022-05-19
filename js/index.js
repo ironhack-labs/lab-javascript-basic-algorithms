@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-
+/*
 // console.log("I'm ready!");
 
 let hacker1 = "Homer"
@@ -62,3 +62,23 @@ if (hacker1.localeCompare(hacker2) === 1) {
     console.log("What?! You both have the same name?")
 
 }
+*/
+
+// BONUS 1
+
+let lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+let loremWord = lorem.split(' ')
+console.log(`Number of words is: ${loremWord.length}`)
+
+let etCounter = 0;
+
+for (let i = 0; i < loremWord.length; i++) {
+    if (loremWord[i] === "et") {
+        etCounter++
+    }
+}
+
+console.log(`Number of "et" words: ${etCounter}`)
+
+// BONUS 2
