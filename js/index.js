@@ -102,9 +102,9 @@ Create a new variable phraseToCheck and have it contain some string value. Write
 Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin' 😃
 */
 
-let sentence = "Dábale arroz a la zorra el abad"
+let phraseToCheck = "Dábale arroz a la zorra el abad"
 
-let splitSentence = sentence.toLowerCase().replace(/[^0-9a-z]/gi, '').split('')
+let splitSentence = phraseToCheck.toLowerCase().replace(/[^0-9a-z]/gi, '').split('')
 
 let cleanSentence = splitSentence.join("")
 
