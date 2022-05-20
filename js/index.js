@@ -63,6 +63,29 @@ if (anotherResult  === 1){
 else if (anotherResult === -1) {
   console.log("The driver's name goes first.");
   }
-else if (ranotherResult === 0) {
+else if (anotherResult === 0) {
   console.log("What?! You both have the same name?");
 }
+
+// bonus 1
+
+const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+function countWords (){
+  console.log(text.trim().split(/\s+/).length);
+}
+
+countWords (); //207
+
+let numbEt = "et";
+
+function countEt (text, numbEt) {
+  //console.log(text.split(numbEt).lenght -1);
+  
+  let spliteText = text.split("numbEt");
+  console.log(spliteText);
+  return
+}
+countEt ();
+
+
