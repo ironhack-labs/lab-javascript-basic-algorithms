@@ -12,11 +12,11 @@ hacker1 = hacker1.length;
 hacker2 = hacker2.length;
 
 if (hacker1 > hacker2) {
-    console.log(`The driver has the longest name, it has ${hacker1} characters`);
+  console.log(`The driver has the longest name, it has ${hacker1} characters`);
 } else if (hacker2 > hacker1) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2} characters`);
+  console.log(`It seems that the navigator has the longest name, it has ${hacker2} characters`);
 } else {
-    console.log(`Wow, you both have equally long names, ${hacker1} characters!.`);
+  console.log(`Wow, you both have equally long names, ${hacker1} characters!.`);
 }
 
 // Iteration 3: Loops
@@ -24,8 +24,8 @@ if (hacker1 > hacker2) {
 //3.1
 const driverName = 'John';
 const result = driverName.split('').join(' ').toUpperCase();
-    console.log(result);
-    
+console.log(result);
+
 //3.2
 const navigatorName = 'Mario';
 const reverseName = navigatorName.split('').reverse().join('');
@@ -36,10 +36,10 @@ console.log(reverseName)
 const driverOrder = 'John'.localeCompare('Mario');
 const navigatorOrder = 'Mario'.localeCompare('John');
 
-if (driverOrder > navigatorOrder ){
-  console.log("The driver's name goes first.")
-} else if ( navigatorOrder > driverOrder){
-  console.log("Yo, the navigator goes first definitely.")
+if (driverOrder > navigatorOrder) {
+  console.log("The driver's name goes first.");
+} else if (navigatorOrder > driverOrder) {
+  console.log("Yo, the navigator goes first definitely.");
 } else {
-  console.log("What?! You both have the same name?")
+  console.log("What?! You both have the same name?");
 }
