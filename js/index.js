@@ -69,15 +69,15 @@ console.log (`the number of times the Latin word et appears is ${count}`);
 
 
 //Bonus 2
-let phraseToCheck = "No 'x' in Nixon";
-phraseToCheck = phraseToCheck.toUpperCase;
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+phraseToCheck = phraseToCheck.toUpperCase();
 let phraseToChecklength = phraseToCheck.length;
 let newPhrase="";
 let phraseToCheckRevers = "";
 
 
 for (let i = 0; i < phraseToChecklength ; i++){
-    if (phraseToCheck[i]=== " " || phraseToCheck[i]=== "'"  ){
+    if (phraseToCheck[i]=== " " || phraseToCheck[i]=== "'"|| phraseToCheck[i]=== "?"|| phraseToCheck[i]=== ","|| phraseToCheck[i]=== "!"  ){
         continue
     }else{
         newPhrase+=phraseToCheck[i]
@@ -89,13 +89,14 @@ for (let i = newPhraseLength-1 ; i >= 0 ; i--){
     phraseToCheckRevers += newPhrase[i];
 }
 
-
 if (newPhrase.substring(0,(newPhraseLength/2)) == phraseToCheckRevers.substring(0,(newPhraseLength/2 ))){
     console.log( "They are the same!!!");
 }else {
     console.log (" they are no de same :( ");
 
 }
+console.log(phraseToCheckRevers);
+console.log(newPhrase);
 
 
 
