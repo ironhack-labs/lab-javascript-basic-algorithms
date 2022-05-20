@@ -30,3 +30,10 @@ for (let i = 0; i < hacker1.length; i++) {
     console.log(`"${hacker1.split("").reverse().join("")}"`)
 }
 
+if (hacker1 < hacker2) {
+    console.log(`The driver's name goes first.`)
+} else if (hacker1  > hacker2) {
+    console.log(`Yo, the navigator goes first definitely.`)
+} else if (hacker1 == hacker2) {
+    console.log(`What?! You both have the same name?`)
+}
