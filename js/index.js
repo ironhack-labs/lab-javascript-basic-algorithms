@@ -94,3 +94,46 @@ for (let i = 0; i < paragraph.length; i++) {
   }
 }
 console.log(countEt);
+
+// Kira solo programming: Bonus 2
+
+// "A man, a plan, a canal, Panama!"
+// "Amor, Roma"
+// "race car"
+// "stack cats"
+// "step on no pets"
+// "taco cat"
+// "put it up"
+// "Was it a car or a cat I saw?" and "No 'x' in Nixon"
+
+let phraseToCheck = "No 'x' in Nixon";
+let phraseNoSpace = "";
+let phraseReverse = "";
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  let character = phraseToCheck[i];
+  if (
+    character !== " " &&
+    character !== "," &&
+    character !== "." &&
+    character !== "!" &&
+    character !== "?" &&
+    character !== "'"
+  ) {
+    phraseNoSpace += character;
+  }
+}
+
+console.log(phraseNoSpace);
+
+for (let i = phraseNoSpace.length - 1; i > -1; i--) {
+  phraseReverse += phraseNoSpace[i];
+}
+
+console.log(phraseReverse);
+
+if (phraseNoSpace.toLowerCase() === phraseReverse.toLowerCase()) {
+  console.log("The assigned value is a Palindrome!");
+} else {
+  console.log("Sorry, no Palindrome.");
+}
