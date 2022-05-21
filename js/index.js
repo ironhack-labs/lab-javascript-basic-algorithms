@@ -23,7 +23,7 @@ let outputCapitalize = "";
 for (let i = 0; i < hacker1.length; i++) {
     outputCapitalize += hacker1[i].toUpperCase();
 }
-console.log(outputCapitalize);
+console.log(outputCapitalize.split('').join(' '));
 console.log(outputCapitalize.split('').reverse().join(''));
 
 if(hacker1.localeCompare.hacker2){
