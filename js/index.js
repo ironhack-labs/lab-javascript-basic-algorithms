@@ -42,7 +42,7 @@ let hacker2Letter = hacker2.split("")
 
 if (hacker1Letter[0] > hacker2Letter[0]) {
     console.log("The driver's name goes first.")
-} else if (hacker1Letter[0] < hacker2Letter[0]) {
+}else if (hacker1Letter[0] < hacker2Letter[0]) {
     console.log("Yo, the navigator goes first definetly.")
 }else if (hacker1Letter === hacker2Letter) {
     console.log("What?! You both have the same name?")
@@ -50,56 +50,30 @@ if (hacker1Letter[0] > hacker2Letter[0]) {
 
 // bonus 1
 
-const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 
 let text1 = text.split("")
-let wordCount = 0
 let etCount = 0
 
-for (i = 0; i < text1.length; i++) {
-    if (" ") {
-        wordCount += 1
-    }else {
-        continue
-    }
-}
-
-console.log (wordCount)
+console.log("Words " + text.split('').length);
 
 
-for (j = 0; j < text1.length; j++) {
-    if ("et") {
-        etCount += 1
-    }else {
-        continue
-    }
-}
-
-console.log (etCount)
+console.log("Et matchs: " + (text.match(/et/g) || []).length); // ["et", "et", "et."].length
 
 
 // bonus 2
 
 let phraseToCheck = "A man, a plan, a canal, Panama!"
+phraseToCheck = phraseToCheck.replace(/[\s,.!¡¿?:;']/g, '').toLowerCase();
 let phraseToCheckPunctuationless = ""
 
-// solution 1
-for (i = 0; i < phraseToCheck.length; i++) {
-    if (",") {
-        continue
-    } else if ("!") {
-        continue
-    } else {
-        phraseToCheckPunctuationless += 
-    }
-    console.log(phraseToCheckPunctuationless)
-}
-
-// solution 2
 
 if (phraseToCheck.toLowerCase().split("").reverse().join("") === phraseToCheck) {
     console.log("true")
 }
 
-console.log(phraseToCheck.toLowerCase().split("").reverse().join(""))
+phraseToCheckPunctuationless = phraseToCheck.replace(/[\s,.!¡¿?:;']/g, '').toLowerCase();
 
+if (phraseToCheck === phraseToCheckPunctuationless) {
+    console.log(true)
+}
