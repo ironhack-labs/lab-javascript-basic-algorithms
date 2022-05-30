@@ -94,25 +94,21 @@ console.log(
 // ########################
 
 let phraseToCheck = "race car";
-let reversedWord = phraseToCheck
+phraseToCheckCleaned = phraseToCheck
   .replace(",", "")
   .replace(" ", "")
   .toLowerCase()
   .split("")
-  .reverse()
   .join("");
 
-console.log(`reversed ${reversedWord}`);
-phraseToCheck = phraseToCheck
-  .replace(",", "")
-  .replace(" ", "")
-  .toLowerCase()
-  .split("")
-  .join("");
-console.log(`phrase ${phraseToCheck}`);
+let reversedWord = phraseToCheckCleaned.split("").reverse().join("");
+
+console.log(`phrase to check: ${phraseToCheck}`);
+console.log(`phrase to check cleaned: ${phraseToCheckCleaned}`);
+console.log(`reversed: ${reversedWord}`);
 
 console.log(
-  reversedWord === phraseToCheck
+  reversedWord === phraseToCheckCleaned
     ? "It is a Palindrome"
     : "It is not a Palindrome"
 );
