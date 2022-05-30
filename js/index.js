@@ -13,7 +13,7 @@ else if (hacker1.length == hacker2.length){
 else{
   console.log(`It seems that the navigator has the longest name, it has  ${hacker2.length} characters.`)
 }
-
+//iteration 3
 for(let i = 0; i<hacker1.length;i++){
   console.log(hacker1[i].toUpperCase() + " ")
 }
@@ -21,7 +21,7 @@ for(let i = 0; i<hacker1.length;i++){
 for(let i = hacker2.length-1; i>=0;i--){
   console.log(hacker2[i])
 }
-//iteration 3
+
 if(hacker1.localeCompare(hacker2) == -1){
   console.log(`The driver's name goes first.`)
 }
