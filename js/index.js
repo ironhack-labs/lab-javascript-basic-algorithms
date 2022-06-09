@@ -31,10 +31,8 @@ for (char of hacker1){
 console.log("3.1:",upperDriver.trim());
 // 3.2
 let reverseNavigator = "";
-let substractor = 1;
-for (let i = 0; i < navigator; i++){
-    reverseNavigator += hacker2[navigator - substractor];
-    substractor += 1;
+for (let i = 1; i <= navigator; i++){
+    reverseNavigator += hacker2[navigator - i];
 }
 console.log("3.2:",reverseNavigator);
 // 3.3
