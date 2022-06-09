@@ -32,10 +32,10 @@ console.log(result2);
 - What?! You both have the same name?*/
 hacker1=hacker1.toLowerCase();
 hacker2=hacker2.toLowerCase();
-if (hacker1.localeCompare(hacker2)<0){
+if (hacker1.localeCompare(hacker2)===-1){
     console.log (`${hacker1} goes first.`)
 }
-else if (hacker1.localeCompare(hacker2)>0){
+else if (hacker1.localeCompare(hacker2)===1){
     console.log (`Yo, ${hacker2} goes first definitely.`)
 }
 else {
