@@ -1,7 +1,7 @@
 // Iteration 3: Loops
 
 let driver = "jamie";
-let navigator = "samantha";
+let navigator = "jamie";
 
 // 1.
 let i = 0;
@@ -31,12 +31,14 @@ for (let i = navigator.length - 1; i >= 0; i--) {
 console.log(str2);
 
 // 3.
-const compare = driver.localeCompare(navigator);
 
-if (driver.localeCompare(navigator) > 0) {
-	console.log("The drivers name goes first.");
-} else if (driver.localeCompare(navigator) < 0) {
-	console.log("Yo, the navigator goes first definitely.");
+const driver1 = "sam";
+const navigator1 = "sam";
+
+if (driver1.localeCompare(navigator1) < 0) {
+	console.log(`The driver's name goes first.`);
+} else if (driver1.localeCompare(navigator1) > 0) {
+	console.log(`Yo, the navigator goes first definitely.`);
 } else {
-	console.log("What!? You both have the same name?");
+	console.log("What?! You both have the same name?");
 }
