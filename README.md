@@ -36,7 +36,8 @@ Ready to start?
 ## Submission
 
 Upon completion, run the following commands:
-```
+
+```shell
 $ git add .
 $ git commit -m "done"
 $ git push origin master
@@ -54,10 +55,10 @@ _You should make a PR (stands for Pull Request) as soon as you make any signific
 
 ### Iteration 1: Names and Input
 
-   1.1 Create a variable `hacker1` with the driver's name. <br>
-   1.2 Print `"The driver's name is XXXX"`.<br>
-   1.3 Create a variable `hacker2` with the navigator's name.<br>
-   1.4 Print `"The navigator's name is YYYY"`.
+  1.1 Create a variable `hacker1` with the driver's name. <br>
+  1.2 Print `"The driver's name is XXXX"`.<br>
+  1.3 Create a variable `hacker2` with the navigator's name.<br>
+  1.4 Print `"The navigator's name is YYYY"`.
 
 ### Iteration 2: Conditionals
   2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
