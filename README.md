@@ -142,7 +142,12 @@ const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart',
 
 #### Bonus - Iteration #4.1: A generic `avg()` function
 
-Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans. We are following a similar logic to the one applied on the bonus iteration 4.1. :wink:
+Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans.
+
+The non-numerical values should be counted as follows:
+- Booleans: `true` counts as `1` and `false` counts as `0`.
+- Strings: use the string `length` as the numeric value.
+
 
 ```javascript
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
