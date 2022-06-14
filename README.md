@@ -8,6 +8,8 @@ The goal of this exercise is to get you familiarized with the primitive data str
 
 Ready?
 
+![qrjeCm](https://user-images.githubusercontent.com/76580/167263489-bd345c02-6c3b-425e-9a9c-96390dea9ba6.gif)
+
 ## Introduction
 
 For this **pair-programming** activity we are going to have both people in the pair work in their own repos.
