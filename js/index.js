@@ -6,19 +6,19 @@ let navigator = "Smith"
 //console.log("The driver's name is "+ hacker1);
 //newer, but could cause problems on i.e. older TV-Browser-->
 //1.2,1.4
-console.log(`The driver's name is ${hacker1}`);
-console.log(`The navigator's name is ${navigator}`);
+console.log(`1.1 Iteration Names and Input: The driver's name is ${hacker1}`);
+console.log(`1.4 Iteration Names and Input: The navigator's name is ${navigator}`);
 
 //----------------------------------------------------------------------------------------------------
 // Iteration 2: Conditionals
 
 if (hacker1.length > navigator.length) {
-  console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+  console.log(`2.1 Conditionals: The driver has the longest name, it has ${hacker1.length} characters.`);
   } 
   else if (hacker1.length < navigator.length) {
-    console.log(`The driver has the longest name, it has ${navigator.length} characters.`);
+    console.log(`2.1 Conditionals: The driver has the longest name, it has ${navigator.length} characters.`);
   } else {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
+    console.log(`2.1 Conditionals: Wow, you both have equally long names, ${hacker1.length} characters!`);
   }
 
 
@@ -34,11 +34,11 @@ let helper = "";
 for (let i=0; i<hacker1.length; i++){
   helper += hacker1[i].toUpperCase() +" ";
 }
-console.log(helper);
+console.log(`3.1 Iteration: Loops${helper}`);
 
 
 //3.2
-console.log(hacker1.split("").reverse().join(""));
+console.log(`3.2 Iteration Loops: ${hacker1.split("").reverse().join("")}`);
 
 //or like above in 3.1, but: 
 // helper = "";
@@ -63,6 +63,7 @@ for (let i=0; i<myArr.length; i++){
     helperArr[i] = myArr[j];
   } 
 }
+console.log("3.3 Iteration Loops:");
 console.log(helperArr);
 
 //----------------------------------------------------------------------------------------------------
@@ -130,12 +131,12 @@ if    (phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").join()
 
 
 // notes
-// 1. Iterations  : complete without special methods        -check
-// 2. Conditionals: complete without special methods        -check
-// 3. Loops: 3.1  : complete without special methods        -check
-//           3.2  : complete without special methods (both) -check
-//           3.3  : complete, missing "loop" solution(both) -check
-// 4. Bonus Lorem : complete, missing "loop" solution       -half check
-// 4. Bonus Paly..: complete, missing "loop" solution       -half check
+// 1. Iterations   : complete without special methods        -check
+// 2. Conditionals : complete without special methods        -check
+// 3. Loops: 3.1   : complete without special methods        -check
+//           3.2   : complete without special methods (both) -check
+//           3.3   : complete (both)                         -check
+// 4.1 Bonus Lorem : complete,(both)                         -check
+// 4. Bonus Paly.. : complete, missing "loop" solution       -half check
 
 // end notes
