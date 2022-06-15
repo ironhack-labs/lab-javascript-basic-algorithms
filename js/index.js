@@ -27,3 +27,14 @@ if (hacker1NameLength > hacker2NameLength) {
 // Iteration 3: Loops
 let hacker1InCapital = hacker1.toUpperCase()
 console.log(hacker1InCapital);
+
+const reverseArrayHacker1 = hacker1InCapital.split("").reverse().join("");
+console.log(reverseArrayHacker1);
+
+let hacker1Loop = "";
+for (let i = hacker1.length -1; i >= 0; i--) {
+    console.log(hacker1[i]);
+  hacker1Loop += hacker1[i]
+}
+
+console.log(hacker1Loop);
