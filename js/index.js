@@ -34,18 +34,18 @@ let helper = "";
 for (let i=0; i<hacker1.length; i++){
   helper += hacker1[i].toUpperCase() +" ";
 }
-console.log(`3.1 Iteration: Loops${helper}`);
+console.log(`3.1 Iteration Loops(loop)  : ${helper}`);
 
 
 //3.2
-console.log(`3.2 Iteration Loops: ${hacker1.split("").reverse().join("")}`);
+console.log(`3.2 Iteration Loops(method): ${hacker1.split("").reverse().join("")}`);
 
 //or like above in 3.1, but: 
-// helper = "";
-// for (let i=hacker1.length-1; i>=0; i--){
-//   helper += hacker1[i];
-// }
-// console.log(helper);
+helper = "";
+for (let i=hacker1.length-1; i>=0; i--){
+  helper += hacker1[i];
+}
+console.log(`3.2 Iteration Loops(loop)  : ${helper}`);
 
 
 //3.3
@@ -53,8 +53,9 @@ myArr= ["The driver's name goes first.",
         "Yo, the navigator goes first definitely.",
         "What?! You both have the same name?"];
 
-//3.3 short with method        
-//console.log(myArr.sort());
+// 3.3 short with method      
+console.log("3.3 Iteration Loops(method):");  
+console.log(myArr.sort());
 
 //3.3 with loop
 let helperArr=[];
@@ -63,56 +64,62 @@ for (let i=0; i<myArr.length; i++){
     helperArr[i] = myArr[j];
   } 
 }
-console.log("3.3 Iteration Loops:");
+console.log("3.3 Iteration Loops(loop):");
 console.log(helperArr);
 
 //----------------------------------------------------------------------------------------------------
 //4.1 Bonus lorem
 let lorys=`
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis tristique lectus, sed faucibus nibh suscipit nec. Vivamus et dui porta sem scelerisque fermentum. Phasellus lacinia id massa non tempor. Nunc finibus ex ex, vitae gravida sem rutrum consectetur. Quisque nec augue dictum, iaculis lectus vel, porta orci. Sed porttitor sem nec lectus posuere porta. Aliquam fermentum lorem placerat placerat pharetra. Vivamus lobortis lectus sed tellus ultrices cursus. Quisque eu aliquam risus. Mauris sollicitudin tincidunt libero, at dictum neque. Sed a erat faucibus, tempor dolor ac, luctus velit. Ut facilisis aliquet metus, vel sagittis ante interdum ut. Duis nulla tellus, placerat non lacus in, luctus pellentesque nulla. Morbi at luctus nisl.
-
-Quisque elementum nisi ac rhoncus sollicitudin. Fusce tortor augue, lobortis et purus nec, consectetur hendrerit est. Phasellus posuere sapien consectetur, lacinia lectus in, porttitor orci. Donec tortor velit, euismod ut tempor in, vehicula ac velit. Maecenas consequat venenatis cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent ut iaculis nulla. Pellentesque sollicitudin urna in enim luctus, non faucibus tortor posuere.
-
-Aliquam blandit orci ut mi mattis placerat. Etiam nibh ante, euismod a suscipit ut, rutrum non est. Pellentesque sed lacus sed tortor condimentum pretium non non ipsum. Maecenas efficitur gravida velit, nec fermentum nulla placerat at. Vestibulum mauris ipsum, porttitor nec odio a, finibus cursus tortor. Sed consectetur, ipsum venenatis aliquam pharetra, justo lacus semper nisl, eget imperdiet elit odio sit amet tellus. Vestibulum tempus feugiat ullamcorper. Vivamus odio odio, hendrerit ac aliquam eget, rhoncus eget lacus. Nullam vitae leo id massa venenatis pulvinar. Mauris quis gravida tellus. Cras bibendum, sapien non vulputate tempor, neque risus efficitur lectus, et aliquet nibh dolor vel neque.`;
+Lorem ipsum dolor et et`;
 
 //4.1 Bonus: count words with methods
-//console.log("4.1 Bonus: word count: " + lorys.trim().split(" ").length);
+console.log(`4.1 Bonus word cout(method) :  ${lorys.trim().split(" ").length}`);
 //the HP says 281 not as mine 279..but works correct if i try to short lorys to 3-5 words
 // +trim() if the string possibly could start/end with a/ blank(s)
 
 //4.1 Bonus: count words with a loop
 
 let helpCounter = 1;
-//using i=1 & lorys.length-1 to avoid errors if the string starts/ends with an blank
+//using i=1 & lorys.length-2 to avoid errors if the string starts/ends with an blank
 //so if the loop finds the first blank there is already a word before, so helpCounter=1
-for(let i=1; i < lorys.length-1; i++){
+for(let i=0; i < lorys.length-1; i++){
   if (lorys[i] === " ")
     helpCounter++;
 }
-console.log(`4.1 Bonus count words: ${helpCounter}`);
+console.log(`4.1 Bonus word count(loop)   : ${helpCounter}`);
 
 
 
 
 
-//4.2 Bonus: count "et" as single word(s) (not content of a word)
+//4.2 Bonus: count "et" as single word(s) (method)
 let extraCount=0;
   if(lorys.startsWith("et ")) {extraCount++}
   if(lorys.endsWith(" et"))   {extraCount++}
   //no else !!
-console.log("4.2 Bonus count the word 'et': " + (lorys.split(" et ").length + extraCount));
+console.log("4.2 Bonus count the word 'et'(method): " + (lorys.split(" et ").length - 1 + extraCount));
 
+
+extraCount=0;
+if(lorys[0] + lorys[1] + lorys[2] === ("et ")) {extraCount++}
+if(lorys[lorys.length-3] + lorys[lorys.length-2] + lorys[lorys.length-1] === (" et")) {extraCount++}
+for(let i=1; i<lorys.length-2; i++){
+  if(lorys[i] + lorys[i+1] + lorys[i+2] + lorys[i+3] === " et ") {extraCount++}
+}
+console.log("4.2 Bonus count the word 'et'(loop): " + extraCount);
+
+//4.3 Bonus palyndrome check
 //21times if you look after "et", don't forget the spaces " et " so it will be a word and not content of one (4times)
 //add 1 or 2 if the string String.startWith("et ") or string String.endWith(" et")
 
-//4.3 Bonus palyndrome check
+//4.3 Bonus palyndrome check (methods)
 
 //safe for just a single word or an even amount of words (2,4,6,...)
 // let phraseToCheck="otto";
 // if (phraseToCheck.split("").join() == phraseToCheck.split("").reverse().join()) {
 //   console.log("4.3 Bonus is palyndrome: " + phraseToCheck + " is a palyndrome");
 // } else {
-//   console.log("4.3 Bonus no palyndrome: " + phraseToCheck + " is no palyndrome");
+//   console.log("4.3 Bonus no palyndrome(by word/even amount/loop): " + phraseToCheck + " is no palyndrome");
 // }
 
 
@@ -121,19 +128,74 @@ console.log("4.2 Bonus count the word 'et': " + (lorys.split(" et ").length + ex
 let phraseToCheck="stack cats";
 if    (phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").join() 
     == phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").reverse().join()) {
-  console.log(`4.3 Bonus Palyndrome: "${phraseToCheck}" is a palyndrome`);
+  console.log(`4.3 Bonus Palyndrome(method, phrase)(no special Characters counted):\n "${phraseToCheck}" is a palyndrome`);
 } else {
-  console.log(`4.3 Bonus Palyndrome: "${phraseToCheck}" is no palyndrome`);
+  console.log(`4.3 Bonus Palyndrome(method, phrase):\n "${phraseToCheck}" is no palyndrome`);
 }
 
 
-// notes
-// 1. Iterations   : complete without special methods        -check
-// 2. Conditionals : complete without special methods        -check
-// 3. Loops: 3.1   : complete without special methods        -check
-//           3.2   : complete without special methods (both) -check
-//           3.3   : complete (both)                         -check
-// 4.1 Bonus Lorem : complete,(both)                         -check
-// 4. Bonus Paly.. : complete, missing "loop" solution       -half check
+//4.3 starting palyndrome check(loop)
 
+phraseToCheck = "abc ot!!!to cba";
+let filteredPhraseToCheck = "";
+let filteredReversePhrase = "";
+
+for (let i=0; i<phraseToCheck.length; i++) {
+  if (phraseToCheck[i].toUpperCase() != phraseToCheck[i].toLowerCase()) {
+    filteredPhraseToCheck += phraseToCheck[i];
+  }
+}
+for (let i = filteredPhraseToCheck.length - 1; i >= 0; i--) {
+  filteredReversePhrase += filteredPhraseToCheck[i];
+}
+if (filteredPhraseToCheck === filteredReversePhrase) {
+  console.log(`4.3 Bonus Palyndrome(loop, phrase)(no special Characters counted):\n "${phraseToCheck}" is a palyndrome`);
+  } else {
+  console.log(`4.3 Bonus Palyndrome(loop, phrase):}\n "${phraseToCheck}" is no palyndrome`);
+  }
+//using upperCase != lowerCase to exclude special Characters
+
+
+
+
+
+
+// personal notes
+// 1. Iterations         : complete without special methods        -check
+// 2. Conditionals       : complete without special methods        -check
+// 3. Loops: 3.1         : complete without special methods        -check
+//           3.2         : complete (both)                         -check
+//           3.3         : complete (both)                         -check
+// 4.1 Bonus Lorem words : complete (both)                         -check
+// 4.2 Bonus Lorem et    : complete (both)                         -check
+// 4. Bonus Paly..       : complete (both)                         -check
 // end notes
+
+
+//first try for 4.3 (want to keep it)
+
+// let phraseToCheck="st!!s";
+// let toExcludeArr = ["!","\ ",
+// ,"@","#","$","%","^","&","*","(",")","_",
+// "+","\\","-","\=","[","]",",","{","}",";","'",
+// "+",":","|",",",".","<",">","/","?"]
+// // boring, but better exclude all special Characters for those people not using the latin alphabet
+// // note: here i keept the numbers,0,1,2,3
+
+// let filteredPhraseToCheck= "abc";
+// //start value to check log.c
+// console.log(filteredPhraseToCheck);
+
+// for(let i=0; i<phraseToCheck.length; i++){
+// console.log(phraseToCheck[i]);
+
+// for(let j=0 ; j < toExcludeArr.length; j++){
+//   if(phraseToCheck[i] !== toExcludeArr[j]){
+//      continue;}
+//      else {
+//     filteredPhraseToCheck += phraseToCheck.slice(i,1);
+//   } 
+// }
+
+// }
+// console.log(filteredPhraseToCheck);
