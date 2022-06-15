@@ -25,3 +25,5 @@ if (hacker1NameLength > hacker2NameLength) {
 
 
 // Iteration 3: Loops
+let hacker1InCapital = hacker1.toUpperCase()
+console.log(hacker1InCapital);
