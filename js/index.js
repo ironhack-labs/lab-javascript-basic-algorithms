@@ -102,3 +102,15 @@ if    (phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").join()
 }
 
 
+// notes
+// 1. Iterations  : complete without special methods        -check
+// 2. Conditionals: complete without special methods        -check
+// 3. Loops: 3.1  : complete without special methods        -check
+//           3.2  : complete without special methods(both)  -check
+//           3.3  : complete, missing "loop" solution       -half check
+//                  --really iterate through a-zA-Z to sort ??
+//                    no contains, indexOf ??
+// 4. Bonus Lorem : complete, missing "loop" solution       -half check
+// 4. Bonus Paly..: complete, missing "loop" solution       -half check
+
+// end notes
