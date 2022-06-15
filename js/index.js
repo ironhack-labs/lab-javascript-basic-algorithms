@@ -119,9 +119,6 @@ console.log("4.2 Bonus count the word 'et': " + (lorys.split(" et ").length + ex
 //this one is better (if you don't wan't to include special chars) so... -->
 //remove all special Characters like ",.?=§&/(....." only allow latin alphabet (even without numbers 1,2,3,4,5...)
 let phraseToCheck="stack cats";
-for (let i=0; i<phraseToCheck.length; i++){
-//  phraseToCheck = phraseToCheck.replace(/[^a-zA-Z]/g, '');
-}
 if    (phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").join() 
     == phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").reverse().join()) {
   console.log(`4.3 Bonus Palyndrome: "${phraseToCheck}" is a palyndrome`);
