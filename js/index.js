@@ -40,7 +40,7 @@ console.log(helper);
 console.log(hacker1.split("").reverse().join(""));
 
 //or like above in 3.1, but: 
-// helper ="";
+// helper = "";
 // for (let i=hacker1.length-1; i>=0; i--){
 //   helper += hacker1[i];
 // }
@@ -52,7 +52,20 @@ myArr= ["The driver's name goes first.",
         "Yo, the navigator goes first definitely.",
         "What?! You both have the same name?"];
 
-console.log(myArr.sort());
+//3.3 short with methods        
+//console.log(myArr.sort());
+
+//3.3 with loop
+let helperArr=[];
+for (let i=0; i<myArr.length; i++){
+  for (let j=i; myArr[i] >= myArr[j];j++){
+    helperArr[i] = myArr[j];
+  } 
+}
+
+console.log(helperArr);
+
+//  if (myArr[i] > myArr[j]){
 
 
 //4.1 Bonus lorem
@@ -106,10 +119,8 @@ if    (phraseToCheck.replace(/[^a-zA-Z]/g, '').split("").join()
 // 1. Iterations  : complete without special methods        -check
 // 2. Conditionals: complete without special methods        -check
 // 3. Loops: 3.1  : complete without special methods        -check
-//           3.2  : complete without special methods(both)  -check
-//           3.3  : complete, missing "loop" solution       -half check
-//                  --really iterate through a-zA-Z to sort ??
-//                    no contains, indexOf ??
+//           3.2  : complete without special methods (both) -check
+//           3.3  : complete, missing "loop" solution(both) -check
 // 4. Bonus Lorem : complete, missing "loop" solution       -half check
 // 4. Bonus Paly..: complete, missing "loop" solution       -half check
 
