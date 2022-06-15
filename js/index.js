@@ -17,3 +17,19 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+
+
+let hacker1WithSpace = "";
+for (let i = 0; i < hacker1.length; i++) {
+    hacker1WithSpace += hacker1[i] + " ";
+}
+hacker1WithSpace = hacker1WithSpace.slice(0, -1);
+hacker1UpperCase = hacker1WithSpace.toUpperCase();
+console.log(hacker1UpperCase);
+
+
+let hacker2Reversed = "";
+for (let j = hacker2.length-1; j >= 0; j--) {
+    hacker2Reversed += hacker2[j];
+}
+console.log(hacker2Reversed);
