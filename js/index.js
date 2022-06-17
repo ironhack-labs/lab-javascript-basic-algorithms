@@ -15,9 +15,14 @@ if(hacker1.length > hacker2.length) {
     // dúvida sobre o que colocar nesse último template string 
 }
 // Iteration 3: Loops
-let driverName = ' '
+// 3.1:
+let driversName = ' '
 for (let i = 0; i < hacker1.length; i++) {
-    driverName += hacker1[i] + ' '
+    driversName += hacker1[i] + ' '
 }
 console.log(driverName.toUpperCase());
+
+//3.2: 
+let navigatorsName
+for (let i = 0; i < hacker2.length; i--)
 
