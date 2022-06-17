@@ -14,3 +14,8 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let driver = ''
+for (let i = 0; i < hacker1.length; i++) {
+    driver += hacker1[i] + ' '
+}
+console.log(driver.toUpperCase());
