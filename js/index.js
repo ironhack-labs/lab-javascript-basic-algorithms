@@ -14,5 +14,10 @@ if(hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`)
     // dúvida sobre o que colocar nesse último template string 
 }
-
 // Iteration 3: Loops
+let driverName = ' '
+for (let i = 0; i < hacker1.length; i++) {
+    driverName += hacker1[i] + ' '
+}
+console.log(driverName.toUpperCase());
+
