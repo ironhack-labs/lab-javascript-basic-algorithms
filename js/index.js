@@ -20,9 +20,8 @@ let driversName = ' '
 for (let i = 0; i < hacker1.length; i++) {
     driversName += hacker1[i] + ' '
 }
-console.log(driverName.toUpperCase());
+console.log(driversName.toUpperCase());
 
 //3.2: 
-let navigatorsName
-for (let i = 0; i < hacker2.length; i--)
+
 
