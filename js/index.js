@@ -34,8 +34,10 @@ console.log(navigatorsName);
 for (let i = 0; i > hacker1.length; i++) {
     if (hacker1[i]<hacker2[i]) {
         console.log('The driver\'s name goes first.') 
+        break;
     } else if (hacker2[i]< hacker1[i]) {
         console.log('Yo, the navigator goes first definitely.') 
+        break;
     } else if (hacker1[i] === hacker2[i]) {
         console.log('What?! You both have the same name?') 
     }
