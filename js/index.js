@@ -31,7 +31,7 @@ console.log(navigatorsName);
 
 //3.3
 
-for (let i = 0; i > hacker1.length; i++) {
+for (let i = 0; i < hacker1.length; i++) {
     if (hacker1[i]<hacker2[i]) {
         console.log('The driver\'s name goes first.') 
         break;
