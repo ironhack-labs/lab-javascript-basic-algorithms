@@ -38,13 +38,16 @@ nome2 += hacker2[i-1] + " ";
 
 console.log(nome2)
 
-
-if (hacker1[0] < hacker2[0]) {
-  console.log(`The ${hacker} name goes first`) 
-} else if (hacker1[0] > hacker2[0]) {
-  console.log(`Yo, the ${hacker2} goes first definitely.`)
+for (let i = 0; i < hacker1.length; i++) {
+if (hacker1[i] < hacker2[i]) {
+  console.log(`The driver's name goes first.`) 
+  break;
+} else if (hacker1[i] > hacker2[i]) {
+  console.log(`Yo, the navigator goes first definitely.`)
+  break;
 } else if (hacker1 === hacker2) {
   console.log("What?! You both have the same name?")
+}
 }
 
 // Bonus 1
