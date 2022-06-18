@@ -53,3 +53,9 @@ function countingWords(words){
 }
 
 console.log(countingWords(paragrafo))
+
+//Bonus 2
+
+let phraseToCheck = "";
+
+
