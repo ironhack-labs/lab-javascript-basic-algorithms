@@ -76,3 +76,17 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(`The latin word "et" appears ${textcount} times`)
+
+// Bonus 2
+let phraseToCheck = "arara";
+let invertedPhrase = "";
+
+for (let i = phraseToCheck.length; i > 0; i--) {
+  invertedPhrase += phraseToCheck[i-1];
+}
+console.log(invertedPhrase)
+if (phraseToCheck == invertedPhrase) {
+  console.log(`${phraseToCheck} is a Palindrome`);
+} else {
+  console.log(`Is not a Palindrome`);
+}
