@@ -13,3 +13,16 @@ if (hacker1.length > hacker2.length) {
   }
 
 // Iteration 3: Loops
+let splittedString = hacker1.split('');
+let stringWithSpaces = splittedString.join(' ');
+let upperCaseStringWithSpaces = stringWithSpaces.toUpperCase();
+console.log(upperCaseStringWithSpaces);
+
+
+function reverse(s){ 
+	var str = "";
+	for(var i = s.length-1; i >= 0; i--)
+	str+=s[i];
+	return str;
+}
+console.log(reverse(hacker1));
