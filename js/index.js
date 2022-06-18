@@ -31,14 +31,16 @@ console.log(navigatorsName);
 
 //3.3
 
-for (let i = 0; i > hacker1.length; i++) {
-    for (let i = 0; i > hacker2.length; i++) {
-        if (hacker1[i] > hacker2[i]) {
-            console.log('The driver\'s name goes first.')
-        } else if (hacker2[i] > hacker1[i]) {
-            console.log ('Yo, the navigator goes first definitely.')
-        } else if (hacker1[i] === hacker2[i]) {
-            console.log ('What?! You both have the same name?')
-        }
-    }
+let lexicoGraphical = [hacker1 , hacker2]
+lexicoGraphical.sort()
+console.log(lexicoGraphical)
+
+let i = 0;
+switch(lexicoGraphicalorder) {
+    case lexicoGraphical[0] > lexicoGraphical[1]:
+    console.log('The driver\'s name goes first.');
+    case lexicoGraphical[1] > lexicoGraphical[0]:
+    console.log('Yo, the navigator goes first definitely.');
+    case lexicoGraphical[0] === lexicoGraphical[1]:
+    console.log('What?! You both have the same name?');
 }
