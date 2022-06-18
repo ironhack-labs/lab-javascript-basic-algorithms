@@ -23,5 +23,7 @@ for (let i = 0; i < hacker1.length; i++) {
 console.log(driversName.toUpperCase());
 
 //3.2: 
-
-
+let navigatorsName = ''
+for (let i = 0; i < hacker2.length; i--) {
+navigatorssName = hacker2[i]
+}
