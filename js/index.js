@@ -55,14 +55,47 @@ Ut in ex volutpat, pellentesque arcu id, tempus ex.      Duis ac dapibus metus. 
 
 let wordCounter = 1;
 for (let i = 0; i < paragraph.length; i++) {
-  
-  let isSigleLineBreak = paragraph[i] === "\n" ;
+  let isSigleLineBreak = paragraph[i] === "\n";
   let isDoubleLineBreak = paragraph[i] === "\n" && paragraph[i - 1] === "\n";
   let isDoubleSpace = paragraph[i - 1] === " " && paragraph[i] === " ";
   let isASingleSpace = paragraph[i] === " ";
 
-  if ((isASingleSpace && !isDoubleSpace) || (isSigleLineBreak && !isDoubleLineBreak)) {
+  if (
+    (isASingleSpace && !isDoubleSpace) ||
+    (isSigleLineBreak && !isDoubleLineBreak)
+  ) {
     wordCounter++;
   }
 }
 console.log(wordCounter);
+
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+// const phraseToCheck = "Amor, Roma";
+// const phraseToCheck = "race car";
+// const phraseToCheck = "stack cats";
+// const phraseToCheck = "step on no pets";
+// const phraseToCheck = "taco cat";
+// const phraseToCheck = "put it up";
+// const phraseToCheck = "Was it a car or a cat I saw?";
+// const phraseToCheck = "No 'x' in Nixon";
+
+// first normalize the string to remove special chars and converting the whole string to lowercase
+let normalizedString = "";
+for (let character of phraseToCheck) {
+  let isALetter = character.toUpperCase() != character.toLowerCase();
+  if (isALetter) {
+    normalizedString += character.toLowerCase();
+  }
+}
+
+//Compare first char with last, second char with second last, etc.. If all match, is a Palindrome
+let isPalindrome = true;
+for (let i = 0; i < normalizedString.length / 2; i++) {
+  let begginingChar = normalizedString[i];
+  let lastingChar = normalizedString[normalizedString.length - i - 1];
+  if (begginingChar !== lastingChar) {
+    isPalindrome = false;
+    break;
+  }
+}
+console.log(`The phrase: ${phraseToCheck} is palindrome?: ${isPalindrome}`);
