@@ -40,3 +40,29 @@ if (hacker1.localeCompare(hacker2) === 0) {
 } else {
   console.log("Yo, the navigator goes first definitely.");
 }
+
+//Bonus
+
+const paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec interdum lacus. Suspendisse aliquam molestie enim ut molestie. Quisque eros erat, interdum eget pretium nec, placerat eget leo. Praesent volutpat sed ligula et mollis. Pellentesque sit amet neque odio. Duis volutpat nibh vel varius gravida. Etiam tincidunt, elit id feugiat cursus, odio lectus finibus purus, in sollicitudin sapien orci suscipit dolor. Nullam gravida dignissim varius. Maecenas malesuada vulputate justo, id varius risus luctus sit amet. In eget faucibus nulla. Nullam sed rutrum mi.
+
+Integer imperdiet lobortis iaculis. Aenean ultricies, justo in interdum pretium, ligula eros vulputate odio, vitae consectetur lacus urna ut enim. Nulla faucibus vel quam a facilisis. Etiam congue diam ex. Vestibulum mattis tincidunt erat pulvinar tincidunt. Aenean pellentesque nisi at porta volutpat. Maecenas pulvinar nec enim in porta. Nulla facilisis arcu mollis dolor molestie, vel auctor elit tempor. Mauris ultricies blandit arcu ac congue. Nam facilisis gravida risus non commodo. Nullam venenatis felis nec sem molestie, vitae facilisis massa facilisis. Quisque ut justo ultricies, bibendum nunc non, posuere odio. Praesent quis magna ac sapien eleifend malesuada. Sed nec leo et lacus fermentum pulvinar fermentum consectetur magna. Cras malesuada, ipsum a porttitor lobortis, dui ligula egestas mauris, et faucibus diam arcu eu neque. Vestibulum a hendrerit nulla, placerat ornare lectus.
+
+Ut in ex volutpat, pellentesque arcu id, tempus ex.      Duis ac dapibus metus. Suspendisse semper ligula sed turpis laoreet rhoncus. Nunc quis lectus dictum, maximus ex a, dapibus augue. Phasellus volutpat tincidunt leo, at imperdiet metus pulvinar eget. Nam ac ligula ac tellus maximus sollicitudin non sit amet ex. Phasellus venenatis ligula rhoncus diam placerat elementum.`;
+// If I could, I would use something like...
+// const MULTIPLE_NEW_LINE_REGEXP = /\n\s*\n/g;
+// let wordCounter = paragraph.replace(MULTIPLE_NEW_LINE_REGEXP, ' ').split(' ').filter(w => w!== '').length;
+// console.log(wordCounter);
+
+let wordCounter = 1;
+for (let i = 0; i < paragraph.length; i++) {
+  
+  let isSigleLineBreak = paragraph[i] === "\n" ;
+  let isDoubleLineBreak = paragraph[i] === "\n" && paragraph[i - 1] === "\n";
+  let isDoubleSpace = paragraph[i - 1] === " " && paragraph[i] === " ";
+  let isASingleSpace = paragraph[i] === " ";
+
+  if ((isASingleSpace && !isDoubleSpace) || (isSigleLineBreak && !isDoubleLineBreak)) {
+    wordCounter++;
+  }
+}
+console.log(wordCounter);
