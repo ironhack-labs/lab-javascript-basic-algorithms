@@ -10,28 +10,21 @@ Ready?
 
 ![qrjeCm](https://user-images.githubusercontent.com/76580/167263489-bd345c02-6c3b-425e-9a9c-96390dea9ba6.gif)
 
-## Introduction
-
-For this **pair-programming** activity we are going to have both people in the pair work in their own repos.
-At the end of the exercise, both students should have identical code in their respective repos.
-
-Ready to start?
-
 
 ## Requirements
 
 - Fork this repo
 - Clone this repo
-- Type this in the *File Tab* (left panel)
+- Type this in the */js/index.js*
 
   ```javascript
   console.log("I'm ready!");
   ```
 - Save
-- Open a terminal and navigate to the directory where the script file is, then issue the following command `node js/index.js`
-- If you can see the message in the terminal panel (bottom), you are really ready!
+- Open index.html with *Live Server*
+- In the Browser, open the Console Tab
+- If you can see the message you are really ready!
 
-- __After the first iteration, or later at any point, or once you finish, follow the steps for submission.__
 
 ## Submission
 
@@ -43,8 +36,6 @@ $ git commit -m "done"
 $ git push origin master
 ```
 Create Pull Request so your TAs can check up your work.
-
-_You should make a PR (stands for Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it._
 
 <!-- ## Submission -->
 
