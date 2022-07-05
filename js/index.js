@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
 //
 let hacker1 = 'Fitipaldi';
-let hacker2 = 'Oracle';
+let hacker2 = 'Aracle';
 
 console.log("the driver's name is " + hacker1);
 console.log("The navigator's name is " + hacker2);
@@ -20,6 +20,7 @@ if (driverName > navigatorName) {
 
 
 // Iteration 3: Loops
+
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 let allCaps = '';
 for ( let i = 0; i < hacker1.length; i++ ){
@@ -28,11 +29,27 @@ for ( let i = 0; i < hacker1.length; i++ ){
 console.log(allCaps);
 
 // 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
-function wordFlipper(hacker1) {
+
+function wordFlipper(hacker2) {
     let reverseName = '';
-    for (let i = hacker1.length - 1; i >= 0; i--) {
-        reverseName += hacker1[i];
+    for (let i = hacker2.length - 1; i >= 0; i--) {
+        reverseName += hacker2[i];
     }
     return reverseName;
 }
-console.log(wordFlipper(hacker1));
+console.log(wordFlipper(hacker2));
+
+/* 3.3 Depending on the lexicographic order of the strings, print:
+- The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! You both have the same name? */
+
+    let allNames = [hacker1, hacker2];
+    allNames.sort();
+    if (allNames[0] === hacker1) {
+       console.log("The driver's name goes first.");
+    } else if (allNames[0] === hacker2){
+        console.log("Yo, the navigator goes first definitely.");
+    } else {
+        console.log("What?! You both have the same name?")
+    }
