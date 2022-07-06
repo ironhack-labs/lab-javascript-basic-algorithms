@@ -21,3 +21,8 @@ else {
 }
 
 // Iteration 3: Loops
+let sepLetters = '';
+for (i in hacker1) {
+   sepLetters = sepLetters.concat(hacker1[i],' ');
+}
+console.log(sepLetters.toUpperCase());
