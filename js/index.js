@@ -26,3 +26,19 @@ for (i in hacker1) {
    sepLetters = sepLetters.concat(hacker1[i],' ');
 }
 console.log(sepLetters.toUpperCase());
+
+//3.2 reverse a string
+
+let tempArr = [];
+// add every letter to an array
+for (i in hacker2) {
+    tempArr.push(hacker2[i]);
+}
+console.log(tempArr);
+
+let reverse = '';
+// iterate through the array backwards
+for (i = tempArr.length - 1; i >=0; i--) { //length - 1, because arrays start at [0]
+    reverse = reverse.concat(tempArr[i]);
+}
+console.log(reverse);
