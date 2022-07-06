@@ -4,7 +4,7 @@
 let hacker1 = 'Diana';
 console.log("The driver's name is " + hacker1);
 let hacker2 = 'Bogdi';
-console.log("The driver's name is " + hacker2);
+console.log("The navigator's name is " + hacker2);
 
 
 
@@ -34,7 +34,6 @@ let tempArr = [];
 for (i in hacker2) {
     tempArr.push(hacker2[i]);
 }
-console.log(tempArr);
 
 let reverse = '';
 // iterate through the array backwards
@@ -42,3 +41,16 @@ for (i = tempArr.length - 1; i >=0; i--) { //length - 1, because arrays start at
     reverse = reverse.concat(tempArr[i]);
 }
 console.log(reverse);
+
+// 3.3 lexicographic order
+if (hacker1 < hacker2) {
+    console.log("The driver's name goes first.");
+}
+else if (hacker1 > hacker2) {
+    console.log("Yo, the navigator goes first definitely.");
+}
+else {
+    console.log("What?! You both have the same name?");
+}
+
+
