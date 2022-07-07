@@ -32,6 +32,13 @@ for (let i = 1; i < name.length; i++) {
 
 console.log(name2)
 
+let nameReverse = '';
+let name3 = hacker1.toString();
+
+for (let i = name3.length -1; i >= 0; i--) {
+    nameReverse = nameReverse + name3[i];
+}
 
 
+console.log(nameReverse)
 
