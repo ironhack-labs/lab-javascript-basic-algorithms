@@ -62,8 +62,8 @@ Make your program count the number of words in the string.
 Make your program count the number of times the Latin word et appears. */
 
 const loremWords = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-let count=0;
-for (i = 0; i < loremWords.length; i++) {
+let count = 0;
+for (let i = 0; i < loremWords.length; i++) {
       
     if (loremWords[i] === ' ' && loremWords[i + 1] === 'e' && loremWords[i + 2] === 't' && loremWords[i + 3] === ' ') {
       count += 1;
@@ -71,3 +71,15 @@ for (i = 0; i < loremWords.length; i++) {
 }
 console.log(count);
 
+/* Bonus 2:
+Create a new variable phraseToCheck and have it contain some string value. 
+Write a code that will check if the value we assigned to this variable is a Palindrome. */
+
+
+const phraseToCheck = 'A man, a plan, a canal, Panama'.toLowerCase().replace(/[^a-zA-Z0-9]/g,'')
+const phraseReverse = [...phraseToCheck].reverse().join('')
+if (phraseToCheck === phraseReverse) {
+    console.log("It's a palindrome")
+} esle {
+    console.log('Is not a palindrome')
+}
