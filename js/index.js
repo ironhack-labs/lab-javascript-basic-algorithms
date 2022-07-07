@@ -1,23 +1,23 @@
 // Iteration 1: Names and Input
 //
 
-let hacker1 = 'Diana';
+const hacker1 = 'Diana';
 console.log("The driver's name is " + hacker1);
-let hacker2 = 'Bogdi';
+const hacker2 = 'Bogdi';
 console.log("The navigator's name is " + hacker2);
 
-
-
 // Iteration 2: Conditionals
+let h1length = hacker1.length;
+let h2length = hacker2.length;
 
-if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+if (h1length > h2length) {
+    console.log(`The driver has the longest name, it has ${h1length} characters.`);
 }
-else if (hacker1.length < hacker2.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
+else if (h1length < h2length) {
+    console.log(`It seems that the navigator has the longest name, it has ${h2length} characters.`);
 }
 else {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
+    console.log(`Wow, you both have equally long names, ${h1length} characters!`);
 }
 
 // Iteration 3: Loops
@@ -25,6 +25,7 @@ let sepLetters = '';
 for (i in hacker1) {
    sepLetters = sepLetters.concat(hacker1[i],' ');
 }
+sepLetters.length--;
 console.log(sepLetters.toUpperCase());
 
 //3.2 reverse a string
@@ -88,3 +89,8 @@ if (etCount === 0) {
 else {
     console.log(etCount);
 }
+
+//BONUS 2 Palindrome
+let phraseToCheck = 'aismimwdomwad';
+//split it in half, ideally 2 arrays
+//reverse one of the halves, compare to the other one, if equal -> !!!
