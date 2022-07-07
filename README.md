@@ -7,12 +7,13 @@
 ## Introduction
 
 Array manipulation is a common task in programming. Whether you are calculating a total for a shopping cart, grabbing only the first names from a list of people, or moving a piece on a chessboard, you are probably modifying or manipulating an array somewhere in the code.
+<br>
 
 ## Requirements
 
 - Fork this repo
 - Clone it to your machine
-
+<br>
 
 
 ## Submission
@@ -26,9 +27,6 @@ git push origin master
 ```
 
 - Create a Pull Request so that your TAs can check your work.
-
-
-
 <br>
 
 
@@ -42,20 +40,19 @@ Automated software testing is the process of programmatically executing an appli
 Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
 
 Having a strong *test suite* can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
+<br>
 
 ### Testing labs
 
 This LAB, along with some of the labs you will be working on during the bootcamp, is equipped with unit tests to provide automated feedback on your lab progress.
-
-
+<br>
 
 ### Testing with Jasmine
 
 Jasmine is an automated testing framework for JavaScript. It is designed to be used in Behavior-driven Development (**BDD**) programming, which focuses more on the business value than on the technical details.
 
 We have already included Jasmine in the project you just forked, so let's see how to use it to implement our code.
-
-
+<br>
 
 ### Usage
 
@@ -78,13 +75,11 @@ We will be working with the `src/functions-and-arrays.js`. In the `jasmine` fold
 In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
 
 
-
 #### Run tests
 
 Running automated tests with Jasmine is super easy. All you need to do is open the `SpecRunner.html` file in your browser. You will find something similar to this:
 
 [![image](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)
-
 
 
 #### Pass the tests
@@ -100,16 +95,14 @@ To see output of your JavaScript code open the [Console in the Developer Tools](
 
 
 **Important:** Note that **you don't need to execute the functions yourself**; the tests will automatically load and execute the functions on each test run. All you need to do is declare the functions, ensure that they handle the parameters passed, and that they return what is indicated in the iteration instructions and the test description. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
-
+<br>
 
 
 ## Instructions
 
 While following the instructions for each iteration, make sure to carefully read the instructions and tests descriptions to fully understand the task requirements. Do not rush. You should take your time to carefully read every iteration.
 
-
-
-
+<br>
 
 ### Iteration #1: Find the maximum
 
