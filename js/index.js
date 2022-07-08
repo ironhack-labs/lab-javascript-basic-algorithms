@@ -73,14 +73,14 @@ console.log(etWords)
 
 // BONUS 2
 
-let phraseToCheck = "Was it a car or a cat I saw?"
+let phraseToCheck = "aWas it a car or a cat I saw?"
 let phraseClean = phraseToCheck.replace(/[^a-zA-Z_]/g, "").toLowerCase();
 let palindrome = true;
 
 for (i=0; i<phraseClean.length/2; i++){
     if (phraseClean[i]!==phraseClean[phraseClean.length - i -1]) {
         palindrome=false;
-        break;
+        i=phraseClean.length;
     }
 }
 
