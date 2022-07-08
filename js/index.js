@@ -49,25 +49,43 @@ if(hacker1.localeCompare(hacker2) < 0){
 
 // BONUS 1
 
-var text =`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec tempor enim. Nullam eu lacinia leo, nec laoreet leo. Vestibulum elit massa, finibus sed urna sit amet, pretium gravida ligula. Praesent finibus libero nec nisi iaculis euismod. Aenean sed justo nec ante ornare feugiat nec et tellus. Donec fermentum purus eget mauris molestie, ac pretium tellus accumsan. Sed in convallis risus. Vestibulum non nisi mollis, suscipit quam id, aliquam nibh. Maecenas sit amet justo in quam consectetur vestibulum. Nulla facilisi. Phasellus condimentum auctor felis ac rutrum. Aenean mattis ultrices tortor sit amet venenatis. Phasellus id elit id massa tristique euismod nec eget nulla.
+var text =`Etiam est mi, pulvinar id lectus et, bibendum ultricies odio. Duis vitae tincidunt sapien. Etiam accumsan pellentesque risus. Vestibulum dictum ultricies urna a gravida. Duis dignissim vehicula ipsum et porttitor. Mauris ex lectus, bibendum eu nunc vel, gravida placerat massa. Nulla ornare, lectus sed convallis dictum, nisi mi posuere enim, pharetra maximus arcu ex non mauris. In vel dictum nibh. Integer ullamcorper luctus magna ac eleifend. Aliquam quis nibh hendrerit, placerat turpis eget, molestie neque. Aenean massa ex, blandit at bibendum ut, consequat et purus. Ut commodo diam lacus, sed feugiat ipsum vehicula eget.
 
-Suspendisse vel mauris id arcu vestibulum tempus. Aenean cursus turpis lorem, vitae tempus ipsum sagittis sed. Duis lacinia venenatis leo, ac venenatis nunc pharetra eu. Morbi vel vestibulum ligula. Fusce vel ligula tempus, ultrices lorem et, lobortis augue. Nulla id dolor nunc. Proin vehicula ultricies massa vel laoreet. Quisque efficitur faucibus velit, ut sodales elit aliquet sed. Quisque in diam eleifend libero pharetra placerat. Sed venenatis arcu quis lorem scelerisque, at ultrices tortor finibus. Nulla vel purus mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at lobortis mi. Pellentesque sagittis non enim vitae finibus. Nunc tincidunt quis enim tempus porttitor. Pellentesque eu blandit nisi.
+Proin mattis sapien a tortor pretium, ut maximus turpis tincidunt. Nulla sed sodales metus. Quisque condimentum pulvinar arcu sed sodales. Donec malesuada bibendum velit, in commodo sem volutpat sit amet. Duis eleifend, quam non tincidunt lobortis, tortor libero bibendum ante, ut vulputate nunc purus eu dui. Vestibulum diam nulla, scelerisque ac lobortis quis, consectetur nec risus. Vestibulum vel nulla sed ligula condimentum tristique. Integer auctor dictum lectus eu volutpat. Maecenas et justo et erat feugiat pharetra. Donec ut quam sodales, tincidunt purus id, fermentum neque.
 
-Nullam quis tortor elit. Maecenas suscipit molestie purus. Aenean vehicula id magna sed congue. Proin quam leo, vulputate ut odio id, porttitor porttitor augue. Quisque consequat ullamcorper lorem quis rutrum. Integer eget justo fermentum, pellentesque turpis sit amet, iaculis mi. Aliquam nec massa vel tellus bibendum ultrices a non arcu. Ut ultricies porttitor libero. Mauris eu molestie magna, non viverra enim. Phasellus fermentum ante et nisi imperdiet, in feugiat ex pellentesque. Curabitur velit orci, faucibus non consectetur in, molestie quis nisi. Nam gravida finibus nunc, ut placerat lacus vulputate sit amet.`
-var words=1;
-for (i=0; i<text.length; i++) {
-    if (text[i]===" "){
-        words+=1
-    }
-}
-console.log(words)
-
+Etiam augue ipsum, tempus feugiat ullamcorper id, posuere et velit. Sed lobortis tellus lorem. Donec non ipsum leo. Donec ut elit vitae mauris pretium tincidunt. Praesent placerat posuere tortor, pharetra pretium sem viverra id. Nam eget nunc tempus, sodales velit nec, iaculis urna. Nulla eu augue fermentum, bibendum justo in, efficitur mauris. In nec velit congue, euismod risus in, egestas risus. Duis venenatis urna est, non scelerisque ipsum pretium ac. Phasellus quis faucibus libero. Vestibulum in mi tristique, semper tortor at, blandit enim. Duis rutrum ligula in quam consectetur malesuada. Vivamus tempus sem eu congue tempus. Suspendisse in nibh consectetur eros mollis volutpat. Sed quis mollis elit, id ornare arcu. Sed sollicitudin ante nec consequat pretium.`
+let numberOfWords=1;
 textClean = text.replace(/[^a-zA-Z ]/g, "");
-console.log(textClean)
-var words2=0;
-for (i=0; i<text.length; i++) {
-    if (textClean[i]==="e" && textClean[i+1]==="t" && textClean[i+2]=== " "&& textClean[i-1]===" "){
-        words2+=1
+for (i=0; i<textClean.length; i++) {
+    if (textClean[i]===" " && textClean[i-1]!==" "&& textClean[i+1]!==" "){
+        numberOfWords++
     }
 }
-console.log(words2)
+console.log(numberOfWords)
+
+let etWords=0;
+for (i=0; i<textClean.length; i++) {
+    if (textClean[i]==="e" && textClean[i+1]==="t" && textClean[i+2]=== " " && textClean[i-1]===" "){
+        etWords++
+    }
+}
+console.log(etWords)
+
+// BONUS 2
+
+let phraseToCheck = "Was it a car or a cat I saw?"
+let phraseClean = phraseToCheck.replace(/[^a-zA-Z_]/g, "").toLowerCase();
+let palindrome = true;
+
+for (i=0; i<phraseClean.length/2; i++){
+    if (phraseClean[i]!==phraseClean[phraseClean.length - i -1]) {
+        palindrome=false;
+        break;
+    }
+}
+
+if (palindrome){
+    console.log("IS A PALINDROME!")
+} else {
+    console.log("IS NOT A PALINDROME!")
+}
