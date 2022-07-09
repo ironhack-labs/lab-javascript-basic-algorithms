@@ -91,6 +91,18 @@ else {
 }
 
 //BONUS 2 Palindrome
-let phraseToCheck = 'aismimwdomwad';
-//split it in half, ideally 2 arrays
-//reverse one of the halves, compare to the other one, if equal -> !!!
+const phraseToCheck = 'Was it a car or a cat I saw?'.toLowerCase();
+let phrasePalindrom = '';
+
+//remove spaces and punctuation signs
+phrasePalindrom = phraseToCheck.replace(/\s|[.,!?'']/g,'');
+
+let phraseReversed = '';
+for (i = phrasePalindrom.length - 1; i >=0; i--) { //length - 1, because arrays start at [0]
+    phraseReversed = phraseReversed.concat(phrasePalindrom[i]);
+}
+
+if (phraseReversed === phrasePalindrom) {
+    console.log("Palindrome");
+}
+else console.log("Not palindrome");
