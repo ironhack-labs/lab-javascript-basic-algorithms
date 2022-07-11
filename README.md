@@ -6,13 +6,14 @@
 
 ## Introduction
 
-Manipulating arrays in code is a very common operation. Whether you are creating a total for a shopping cart, grabbing only the first names out of a list of people, or moving a piece on a chessboard, you are probably going to be modifying or manipulating an array in some way.
+Array manipulation is a common task in programming. Whether you are calculating a total for a shopping cart, grabbing only the first names from a list of people, or moving a piece on a chessboard, you are probably modifying or manipulating an array somewhere in the code.
+<br>
 
 ## Requirements
 
 - Fork this repo
 - Clone it to your machine
-
+<br>
 
 
 ## Submission
@@ -26,38 +27,90 @@ git push origin master
 ```
 
 - Create a Pull Request so that your TAs can check your work.
-
 <br>
 
 
 
-## Instructions
+## Automated Testing Introduction
 
-You will work on the `src/functions-and-arrays.js` file, which is already loaded in the `index.html` file. 
+### What is automated testing?
 
-To run the JavaScript code open the `index.html` file use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension. 
+Automated software testing is the process of programmatically executing an application in order to validate and verify that it meets the business needs, as well as the technical requirements, and that it behaves as expected.
+
+Testing should be viewed as a continuous process, not a discrete operation or single activity in the development lifecycle. Designing tests at the beginning of the product lifecycle can be help to mitigate common issues that arise when developing complex code bases.
+
+Having a strong *test suite* can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
+<br>
+
+### Testing labs
+
+This LAB, along with some of the labs you will be working on during the bootcamp, is equipped with unit tests to provide automated feedback on your lab progress.
+<br>
+
+### Testing with Jasmine
+
+Jasmine is an automated testing framework for JavaScript. It is designed to be used in Behavior-driven Development (**BDD**) programming, which focuses more on the business value than on the technical details.
+
+We have already included Jasmine in the project you just forked, so let's see how to use it to implement our code.
+<br>
+
+### Usage
+
+Before start coding, we will explain the project structure we have provided you:
+
+```
+lab-js-functions-and-arrays
+  ├── README.md
+  ├── SpecRunner.html
+  ├── jasmine
+  │   └── ...
+  ├── src
+  │   └── functions-and-arrays.js
+  └── tests
+      └── functions-and-arrays.spec.js
+```
+
+We will be working with the `src/functions-and-arrays.js`. In the `jasmine` folder you can find all of the files needed to use Jasmine. All these files are already linked with the `SpecRunner.html` file. 
+
+In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
+
+
+#### Run tests
+
+Running automated tests with Jasmine is super easy. All you need to do is open the `SpecRunner.html` file in your browser. You will find something similar to this:
+
+[![image](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)](https://user-images.githubusercontent.com/23629340/33389609-c2f3965c-d533-11e7-9a03-e0a89314dd98.png)
+
+
+#### Pass the tests
+
+You should write your code on the `src/functions-and-arrays.js` file. While following the instructions for each iteration, you should check every test and make sure it's *passing*, before moving on.
+
+Do not rush. You should take your time to carefully read every iteration, and you should address the *breaking* tests as you progress through the exercise.
+
+When coding with tests, it is super important that you carefully read and understand the errors you are getting, this way you will know for sure what's expected from your code.
 
 To see output of your JavaScript code open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
 
-While following the instructions for each iteration, make sure to carefully read the instructions to fully understand the task requirements. Do not rush. You should take your time to carefully read every iteration.
 
 
-
-### Note about tests
-
-This LAB, along with some of the labs you will be working on during the bootcamp, is equipped with unit tests to provide automated feedback on your lab progress.
-
-**After you’ve completed the basic iterations**, go to the **"Test Your Code"** section at the bottom. There you'll be asked to install the testing dependencies and run the tests to check how many tests your code is passing.
+**Important:** Note that **you don't need to execute the functions yourself**; the tests will automatically load and execute the functions on each test run. All you need to do is declare the functions, ensure that they handle the parameters passed, and that they return what is indicated in the iteration instructions and the test description. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
+<br>
 
 
+## Instructions
+
+While following the instructions for each iteration, make sure to carefully read the instructions and tests descriptions to fully understand the task requirements. Do not rush. You should take your time to carefully read every iteration.
 
 <br>
 
 ### Iteration #1: Find the maximum
 
-Implement the function `maxOfTwoNumbers` that takes two numbers as arguments and returns the largest.
+Implement the function `maxOfTwoNumbers` that takes two numbers as arguments and returns the bigger number.
 
 <br>
+
+
 
 ### Iteration #2: Find the longest word
 
@@ -71,7 +124,13 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 <br>
 
+
+
 ### Iteration #3: Calculate the sum
+
+
+
+#### Iteration #3.1: Sum numbers
 
 Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
 
@@ -85,7 +144,9 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 <br>
 
-#### Bonus - Iteration #3.1: A generic `sum()` function
+
+
+#### Bonus - Iteration #3.2: A generic `sum()` function
 
 **The goal: Learn how to refactor your code.** :muscle:
 
@@ -105,20 +166,24 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 
 <br>
 
+
+
 ### Iteration #4: Calculate the average
 
-Calculating an average is an extremely common task. Let's practice it a bit.
+Calculating an average is a very common task. Let's practice it a bit.
 
 **The logic behind this:**
 
-1. Find the sum as we did in the first exercise (or how about reusing that the _sumNumbers()_?)
-2. Take that sum and divide it by the number of elements in the list.
+1. Find the sum as we did in the first exercise (or how about reusing that the function `sumNumbers()`?)
+2. Take that sum and divide it by the number of elements in the array.
 
 <br>
 
-#### Level 1: Array of numbers
 
-Implement the function `averageNumbers` that expects an array of numbers and returns the average of the numbers:
+
+#### Iteration #4.1: Array of numbers
+
+Implement the function `averageNumbers` that expects an array of numbers and returns the average of the numbers.
 
 You can use the following array to test your solution:
 
@@ -128,7 +193,9 @@ const numbers = [2, 6, 9, 10, 7, 4, 1, 9];
 
 <br>
 
-#### Level 2: Array of strings
+
+
+#### Iteration #4.2: Array of strings
 
 Implement the function named `averageWordLength` that receives as a single argument an array of words and returns the average length of the words:
 
@@ -140,7 +207,9 @@ const words = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart',
 
 <br>
 
-#### Bonus - Iteration #4.1: A generic `avg()` function
+
+
+#### Bonus - Iteration #4.3: A generic `avg()` function
 
 Create function `avg(arr)` that receives any mixed array and calculates average. Consider as mixed array an array filled with numbers and/or strings and/or booleans.
 
@@ -157,11 +226,15 @@ const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 
 <br>
 
+
+
 ### Iteration #5: Unique arrays
 
-Take the following array, remove the duplicates, and return a new array. You are more than likely going to want to check out the [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) Array method.
+Take the following array, remove the duplicates, and return a new array. You are more than likely going to want to check out the Array methods [`indexOf`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) and [`includes`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes).
 
 Do this in the form of a function `uniquifyArray` that receives an array of words as a argument.
+
+
 
 You can use the following array to test your solution:
 
@@ -183,11 +256,15 @@ const words = [
 
 <br>
 
+
+
 ### Iteration #6: Find elements
 
 Let's create a simple array search.
 
-Declare a function named `doesWordExist` that will take in an array of words as one argument, and a word to search for as the other. Return `true` if it exists, otherwise, return `false`. **Don't** use `indexOf` for this one.
+Declare a function named `doesWordExist` that will take in an array of words as one argument, and a *word to search* for as the other. Return `true` if the word exists in the array, otherwise, return `false`.
+
+
 
 You can use the following array to test your solution:
 
@@ -196,6 +273,8 @@ const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', '
 ```
 
 <br>
+
+
 
 ### Iteration #7: Count repetition
 
@@ -221,11 +300,17 @@ const words = [
 
 <br>
 
-### Bonus - Iteration #8: Product of adjacent numbers
 
-What is the greatest product of four adjacent numbers? We consider adjacent any four numbers that are next to each other horizontally or vertically.
 
-For example, if we have a 5x5 Matrix like:
+### Bonus - Iteration #8
+
+
+
+#### Bonus - Iteration #8.1: Product of adjacent numbers
+
+Given multiple arrays, find the greatest product of four adjacent numbers. 
+
+We consider adjacent any four numbers that are next to each other horizontally or vertically. For example, if we have a 5x5 Matrix like:
 
 ```bash
 [ 1,  2, 3, 4, 5]
@@ -236,6 +321,10 @@ For example, if we have a 5x5 Matrix like:
 ```
 
 The greatest product will be the `20`x`20`x`20`x`4` = `32000`.
+
+<br>
+
+
 
 Declare a function named `greatestProduct(matrix)` to find it in the 20×20 grid below!
 
@@ -266,54 +355,14 @@ const matrix = [
 
 <br>
 
-### Bonus - Iteration #8.1: Product of diagonals
-
-Following the logic you've used in iteration #8, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
-
-<br>
 
 
+#### Bonus - Iteration #8.2: Product of diagonals
 
-## Test Your Code
+Following the logic you've used in iteration #8.1, declare a function called `greatestProductOfDiagonals(matrix)`. It takes a matrix as a parameter and returns the greatest product of any four values layed out diagonally, in either direction.
 
 <br>
 
-### Automated Testing
 
-Automated software testing is the process of automatically testing an application in order to verify that it meets the technical requirements, and that it behaves as expected.
-
-Having strong _test suites_ can provide you ease of mind, since you will be able to confidently improve upon your work while knowing that your not breaking a previously developed feature.
-
-
-
-<br>
-
-### Testing with Jest
-
-Jest is an automated test-runner for JavaScript.
-
-To run your tests, open your terminal at the root directory of the lab, run `npm install` to install your dependencies and `npm run test:watch` to run the tests and generate the `lab-solution.html` file. 
-
-```shell
-$ cd lab-javascript-functions-and-arrays
-$ npm install
-$ npm run test:watch
-```
-
-<br>
-
-In case you want to check the tests, they are in the `tests/functions-and-arrays.spec.js` file.
-
-Open the `lab-solution.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-<br>
-
-#### Pass the tests
-
-When coding with tests, it is super important that you carefully read and understand the errors you are getting, this way you will know for sure what's expected from your code.
-
-Note that **you don't need to execute the functions yourself**, the tests are responsible for doing that. All you should do is declare them, make sure they deal with the parameters passed and that they return what is indicated on the iterations and in the test messages. For some iterations we provide you with a sample array, so that you can do some **manual** testing, if you wish.
-
-<br>
 
 **Happy coding!** :heart:
