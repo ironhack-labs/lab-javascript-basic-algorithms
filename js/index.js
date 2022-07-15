@@ -11,9 +11,9 @@ function NamesAndInput(){
   // Iteration 2: Conditionals
 
   if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+    console.log(`The driver's has the longest name, it has ${hacker1.length} characters.`)
   } else if (hacker2.length > hacker2.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+    console.log(`It seems that the pet has the longest name, it has ${hacker2.length} characters.`)
   } else if (hacker1.length === hacker2.length){
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
   }
@@ -22,9 +22,9 @@ function NamesAndInput(){
 
   let lexicalValueHacker1 = [];
   let lexicalValueHacker2 = [];
-  const hacker2Reverse = hacker2.split("").reverse().join("")
   let totalLexicalValueHacker1 = 0;
   let totalLexicalValueHacker2 = 0;
+  const hacker2Reverse = hacker2.split("").reverse().join("")
 
   for (let i = 0; i < hacker1.length; i++) {
     console.log(hacker1[i].toLocaleUpperCase())
@@ -48,7 +48,7 @@ function NamesAndInput(){
   if (totalLexicalValueHacker1 > totalLexicalValueHacker2){
     console.log("The driver's name goes first.")
   }else if (totalLexicalValueHacker2 > totalLexicalValueHacker1){
-    console.log("Yo, the navigator goes first definitely.")
+    console.log("Yo, the pet goes first definitely.")
   }else if (totalLexicalValueHacker2 === totalLexicalValueHacker1){
     console.log("What?! You both have the same name?")
   }
