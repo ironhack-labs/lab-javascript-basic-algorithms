@@ -2,7 +2,7 @@
 let hacker1 = 'Shania'
 return `the driver's name is ${hacker1}`
 let hacker2 = 'Safira'
- return `the navigator's name is ${hacker2}`
+return `the navigator's name is ${hacker2}`
 
 // Iteration 2: Conditionals
 if( hacker1.length > hacker2.length){
@@ -19,13 +19,13 @@ for(let letter of hacker1){
   let name = letter.toUpperCase() + ' '
   string += name 
 }
- return string;
+return string
 
 let stringReverse =''
 for(let i = hacker2.length - 1; i > -1 ; i--){
    stringReverse += hacker2[i];
-  }
- return stringReverse
+}
+return stringReverse
 
 if(hacker1.localeCompare(hacker2) === -1){
     return "The driver's name goes first."
