@@ -29,7 +29,6 @@ function NamesAndInput(){
   for (let i = 0; i < hacker1.length; i++) {
     console.log(hacker1[i].toLocaleUpperCase())
     lexicalValueHacker1.push(hacker1.charCodeAt(i))
-
   }
 
   for (let j = 0; j < hacker2.length; j++) {
