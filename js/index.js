@@ -2,7 +2,7 @@ function NamesAndInput(){
   // Iteration 1: Names and Input
 
   let hacker1 = prompt("Name, please:")
-  let hacker2 = prompt("Navigators Name, please:")
+  let hacker2 = prompt("Pet Name, please:")
 
   console.log(`The driver's name is ${hacker1}`)
   console.log(`The pet name is ${hacker2}`)
