@@ -39,11 +39,11 @@ console.log(printResults);
  */
 
 function string_separator(someString) {
-  let spaced = "";
+  let letters = "";
   for (let i = 0; i < someString.length; i++) {
-    spaced += someString[i] + " ";
+    letters += someString[i] + " ";
   }
-  let upperCasedString = spaced.toUpperCase();
+  let upperCasedString = letters.toUpperCase();
   return upperCasedString;
 }
 
@@ -58,5 +58,5 @@ function reverseString(someString) {
   return newString;
 }
 
-let reverseResult = reverseString(hacker2);
+let reverseResult = reverseString("john");
 console.log(reverseResult);
