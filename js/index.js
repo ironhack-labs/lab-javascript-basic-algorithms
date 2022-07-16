@@ -22,5 +22,8 @@ console.log(splittedString);
 const newString =hacker2.split('').reverse().join('');
 console.log (newString);
 
+const randomArray = ['Romina', 'John'];
+{ console.log({sortedArray:randomArray.sort()})
+}
 
 
