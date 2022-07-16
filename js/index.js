@@ -15,6 +15,29 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
+let spacedName = "";
+for (let i = 0; i < hacker1.length; i++) {
+  if (i === hacker1.length - 1 ) {
+      spacedName += hacker1[i].toUpperCase();
+    continue;
+  }
+spacedName += hacker1[i].toUpperCase() + ' ';
+ 
+}
+//DIVER's NAME SAPCES
+console.log(spacedName);
+
+
+let slicedName = "";
+
+for (let i = hacker2.length; i >= 0; i--) {
+  
+  slicedName += hacker2.slice(i, i+1);
+  
+}
+
+console.log(slicedName);
+
 let compareTest = hacker1.localeCompare(hacker2);
 if (compareTest === 0) {
     console.log("What?! You both have the same name?!");
