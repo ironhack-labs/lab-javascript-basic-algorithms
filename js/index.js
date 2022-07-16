@@ -19,3 +19,6 @@ else if (hacker2.length >= hacker1.length) {
 const splittedString =hacker1.split('').join(' ').toUpperCase();
 console.log(splittedString);
 
+const newString =hacker2.split('').reverse().join('');
+console.log (newString);
+
