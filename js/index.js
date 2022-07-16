@@ -22,3 +22,5 @@ console.log(splittedString);
 const newString =hacker2.split('').reverse().join('');
 console.log (newString);
 
+
+
