@@ -68,28 +68,42 @@ console.log(reverseResult);
 // Go to lorem ipsum generator and:
 
 // Generate 3 paragraphs. Store the text in a variable type of string.
-
-let paras = `
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac enim ultrices ante porttitor ultrices. Nulla placerat sem nisi, cursus venenatis urna congue rutrum. Vestibulum tempor velit nec malesuada ullamcorper. In nec mollis mauris, sit amet imperdiet dolor. Donec elementum feugiat mauris eu aliquet. Praesent dapibus felis id accumsan dignissim. Etiam blandit ipsum quam, quis tincidunt dui sodales in. Morbi ac finibus urna.
-
-Morbi ut leo facilisis, tincidunt libero ac, lacinia nisi. Vivamus odio erat, porttitor nec ligula nec, vestibulum vulputate dolor. Nunc eu nisi ipsum. Curabitur convallis ligula sit amet justo posuere, nec lacinia ante cursus. Donec vestibulum sodales quam sit amet lacinia. Donec venenatis mi in vehicula sodales. Nullam ac mauris vel lorem ullamcorper suscipit nec vitae felis. Aliquam vitae nisl laoreet ante convallis lacinia. Fusce et libero quis ex tristique pulvinar in quis ex. Quisque eget congue diam. Praesent elementum dictum eros, ultrices feugiat odio. Curabitur pharetra condimentum mauris in vehicula. Phasellus pulvinar ullamcorper nisi sed efficitur. Nulla sit amet elementum metus, sed elementum odio. Donec vehicula arcu non malesuada elementum.
-
-Morbi at metus ac urna faucibus pretium. Mauris efficitur rutrum egestas. Quisque mollis neque aliquam nisl sollicitudin, non feugiat quam elementum. Vestibulum euismod dolor eget ipsum tincidunt, nec commodo elit dignissim. Proin scelerisque turpis eget elit finibus, vel imperdiet ex accumsan. Etiam in erat vitae dui lacinia mollis. Suspendisse rhoncus posuere bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sed quam non ligula mattis pellentesque. Maecenas eget velit vitae tortor elementum consectetur sit amet a diam. Fusce ornare erat nibh, id lobortis leo pellentesque eget. Maecenas nec tristique eros. Etiam vehicula ultrices eros et volutpat. Proin quis aliquam ipsum. Mauris tempus nulla vel semper consectetur.`
-// => 286 words
-
-
 // Make your program count the number of words in the string.
+
+let para= `The bridge will only take You halfway there, to those mysterious lands you long to see. 
+Through gypsy camps and swirling Arab fair, and moonlit woods where unicorns run free. 
+
+So come and walk awhile with me and share the twisting trails and wondrous worlds I've known. 
+
+But this bridge will only take you halfway there. The last few steps you have to take alone.
+
+`
+
 
  function countWords(str){
    let countedWords = 1;
-   for(let i = 0; i < str.length; i ++){
-     if(str[i] ===" "){
-       countWords += 1;
-     }
+
+   for(let i = 0 ; i < str.length; i ++){
+      if(str[i] ===" "){
+        countedWords += 1;
+      }
    }
-   console.log(countWords);
+  return `there are ${countedWords} words`;
  }
 
- countWords(paras);
-// Make your program count the number of times the Latin word et appears.
+ console.log(countWords(para));
 
+// Make your program count the number of times a specific word is repeated. for example purpuses, let's take the word "you" from the paragraphs. 
+
+ function repeatedWords(str){
+   let words = str.split(" ")
+   let repeated = 0;
+   for(let i = 0 ; i < words.length; i ++){
+    if (words[i].toLowerCase() ==="you"){
+       repeated += 1;
+    }
+   }
+
+   return `the word "you" is mentioned ${repeated} times`;
+ }
+ console.log(repeatedWords(para));
