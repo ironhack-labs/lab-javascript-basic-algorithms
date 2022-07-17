@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
-let hacker1="aamigoa";
+let hacker1="david";
 console.log(`The driver's name is ${hacker1}`);
-let hacker2="aamigoa";
+let hacker2="David";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -85,10 +85,10 @@ console.log(lexicographic);
 
 // bonus 1
 
-let lorestr = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus metus erat, dignissim sed condimentum id, pharetra vel mauris. Praesent non felis non enim dapibus suscipit. Aliquam nibh nulla, luctus vitae magna maximus, auctor fermentum neque. Integer lacinia mattis mi, vel tristique nibh placerat quis. Aliquam lacinia mauris quam, eu dapibus ipsum interdum a. Donec ac blandit eros. Donec scelerisque molestie pulvinar. Integer quis velit rhoncus, egestas quam eget, efficitur tortor. Phasellus cursus dui non sagittis auctor. Integer convallis leo non dapibus maximus. In euismod dapibus porta. Nullam quis mattis est. Morbi non egestas nunc. Proin placerat, mi in maximus consequat, mi quam dictum quam, quis sodales dui sem vel diam. Nulla mauris sem, congue sit amet ante id, varius fermentum odio. Integer facilisis elit eu lacinia vehicula.
+let loreStr = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In commodo orci at odio sodales, sit amet viverra nulla semper. Cras ultrices efficitur nulla et mattis. Maecenas tincidunt sit amet nisl venenatis fermentum. Nulla interdum augue ex, vitae malesuada libero tristique id. Proin sagittis felis ligula, quis lacinia massa efficitur elementum. Proin vulputate diam nisl, ut maximus augue tristique eget. Integer mollis laoreet enim in pretium. Vivamus vel ullamcorper quam. Praesent sit amet mollis metus. Donec vitae leo et tellus commodo rutrum id a nisl. Donec tempus ultrices magna, id semper elit blandit eget. Praesent dui arcu, semper sed nunc ac, maximus sollicitudin odio. Ut vitae turpis non metus ultrices pulvinar vitae nec magna. Suspendisse ac tempor enim, non gravida magna.
 
-Quisque gravida odio ac semper ultricies. Aliquam in ornare leo. Integer in dolor et ex commodo placerat. Aliquam pulvinar condimentum laoreet. Integer tincidunt ex sed libero tempus viverra. Nunc pretium nisi nec sem sagittis, at porta sapien euismod. Nulla facilisi. Curabitur risus justo, condimentum ornare lacus facilisis, blandit pulvinar risus. Etiam vitae velit placerat, tincidunt risus ut, elementum tellus. Cras fringilla accumsan luctus. Nulla felis nunc, sagittis vel nunc ut, faucibus feugiat odio. Curabitur pellentesque facilisis porta. Fusce ullamcorper porttitor lorem sagittis dignissim. Etiam mattis leo nec magna cursus semper. Morbi ut odio nec velit faucibus semper in sit amet ex.
+Quisque molestie mauris quis libero faucibus, sit amet cursus justo commodo. Nam eget ipsum a lorem varius elementum. Etiam commodo, tortor eget interdum pretium, tellus massa dignissim nisl, vel lobortis felis magna non enim. Praesent augue lacus, maximus quis mattis at, condimentum ac ante. Fusce tempus arcu a neque blandit, vitae gravida nulla auctor. Donec metus quam, semper vitae tellus ornare, varius molestie risus. Aliquam augue orci, venenatis a velit nec, consectetur varius justo. Praesent et metus eget augue maximus feugiat. Nullam sit amet enim urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 
-Aenean sit amet leo mi. Aliquam ornare eget leo accumsan tempus. Proin congue mauris lacus, quis laoreet elit ornare vitae. Quisque quis ante elit. Phasellus ultricies eleifend turpis, sit amet posuere eros vehicula sit amet. Nunc libero leo, molestie ac porttitor eu, tincidunt vitae orci. Maecenas ac neque varius, mollis lorem et, tristique dui.`
+Vivamus ac nisi ut ante euismod rutrum. Maecenas velit diam, posuere a hendrerit id, lacinia eget metus. Aliquam feugiat velit tellus. Sed dolor tellus, placerat id neque sed, condimentum varius augue. Vivamus fringilla quam nunc, suscipit ultrices magna consectetur vitae. Etiam laoreet iaculis blandit. Sed vehicula pulvinar velit vulputate sodales. Vivamus faucibus ultrices sem at sodales. Morbi quis turpis ut orci pharetra iaculis non nec sem. Vestibulum eget est vel nibh malesuada faucibus. Vestibulum sed augue ligula. Curabitur aliquet, nulla vestibulum faucibus ultricies, lacus metus suscipit ligula, id rhoncus tortor lacus et nulla. Pellentesque condimentum eget turpis ac tempus. Donec rhoncus mauris nec elit maximus placerat. Curabitur auctor augue ut tortor venenatis fringilla. Sed porttitor scelerisque augue, eu egestas libero dictum bibendum.`
 
-    
+
