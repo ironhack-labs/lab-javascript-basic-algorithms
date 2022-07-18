@@ -44,38 +44,20 @@ let paragraph =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla expedita cum nobis nostrum exercitationem sed facilis maxime impedit unde. Veniam quo, magnam nemo nostrum ipsam voluptate. Ab, corrupti et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facilis autem dolores temporibus iusto delectus dolorem porro praesentium! Nihil facilis quas laudantium blanditiis doloremque ex eveniet facere error cupiditate dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nam aut ipsa, corrupti fuga sed nulla laudantium laborum doloremque tenetur, accusamus commodi voluptatibus dolore repellat dolorem libero optio, quos delectus.";
 let char;
 let counterWords = 0,
-  counterEt = 0;
+  counterEtWrd = 0;
 for (let i = 0; i < paragraph.length; i++) {
   char = paragraph[i];
   if (char === " ") {
     counterWords++;
   } else if (char === "e" && paragraph[i + 1] === "t") {
-    counterEt++;
+    counterEtWrd++;
   }
 }
-console.log("the number of words in the string is " + counterWords + 1);
-console.log("the number of times the Latin word et appears is " + counterEt);
+console.log("the number of words in the string is " + ++counterWords);
+console.log("the number of times the Latin word et appears is " + counterEtWrd);
 
 // Bonus2
-// const phraseToCheck = "racecar";
-// counter = 0;
-// for (let i = 0; i < phraseToCheck.length; i++) {
-//   const charFromLeft = phraseToCheck[i].toLowerCase();
-//   const charFromRight =
-//     phraseToCheck[phraseToCheck.length - 1 - i].toLowerCase();
-//   console.log(`${charFromLeft} - ${charFromRight}`);
-
-//   if (charFromLeft === charFromRight) {
-//     counter++;
-//   }
-// }
-// if (counter === phraseToCheck.length) {
-//   console.log("Palindrome found");
-// } else {
-//   console.log("Not a Palindrome. Try again.");
-// }
-
-let phraseToCheck = "Amor, Roma";
+let phraseToCheck = "put it up";
 let straightPhrase = "";
 let reversedPhrase = "";
 
