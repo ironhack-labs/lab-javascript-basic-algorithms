@@ -43,14 +43,18 @@ if (hacker1.localeCompare(hacker2) === -1) {
 let paragraph =
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nulla expedita cum nobis nostrum exercitationem sed facilis maxime impedit unde. Veniam quo, magnam nemo nostrum ipsam voluptate. Ab, corrupti et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit facilis autem dolores temporibus iusto delectus dolorem porro praesentium! Nihil facilis quas laudantium blanditiis doloremque ex eveniet facere error cupiditate dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nam aut ipsa, corrupti fuga sed nulla laudantium laborum doloremque tenetur, accusamus commodi voluptatibus dolore repellat dolorem libero optio, quos delectus.";
 let char;
-let counter = 0;
+let counterWords = 0,
+  counterEt = 0;
 for (let i = 0; i < paragraph.length; i++) {
   char = paragraph[i];
-  if (char === " " || char === ".") {
-    counter++;
+  if (char === " ") {
+    counterWords++;
+  } else if (char === "e" && paragraph[i + 1] === "t") {
+    counterEt++;
   }
 }
-console.log(counter);
+console.log("the number of words in the string is " + counterWords + 1);
+console.log("the number of times the Latin word et appears is " + counterEt);
 
 // Bonus2
 // const phraseToCheck = "racecar";
