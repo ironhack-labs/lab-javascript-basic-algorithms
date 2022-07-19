@@ -39,8 +39,39 @@ let par1 = "Pellentesque habitant morbi tristique senectus et netus et malesuada
 let par2 = "Aenean vel ipsum leo. Quisque at leo purus. Fusce semper consequat justo et porta. Maecenas metus diam, pharetra vitae lacus eget, elementum vehicula dolor. Mauris ac gravida nulla. Nam magna sem, lobortis eget nunc quis, maximus facilisis quam. Vestibulum dapibus, velit luctus hendrerit venenatis, dolor libero venenatis velit, vel aliquet enim lectus tempus mi. Sed maximus, felis id congue rhoncus, augue enim gravida mauris, at bibendum mauris quam eget dui. Integer vel risus scelerisque, varius odio ut, porttitor neque. Cras nec nisl in ex interdum cursus. Ut luctus laoreet mauris, a porttitor risus vestibulum elementum. Praesent commodo lacus non diam malesuada blandit ac in metus. Sed a semper est. Morbi volutpat erat quis elit porttitor, eu mollis felis cursus. Pellentesque magna enim, dictum a venenatis sit amet, efficitur vitae eros. Aliquam auctor, nisl non ullamcorper finibus, dolor tortor suscipit eros, non vulputate nunc mi nec risus."
 let par3 = "Nulla bibendum ante eget feugiat efficitur. Nullam efficitur ultricies libero et feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum interdum pharetra ligula, ac efficitur diam. Ut placerat, lacus quis elementum eleifend, eros mi efficitur ex, eget cursus libero lectus sed odio. Phasellus feugiat nisl et mauris faucibus luctus. Sed sed bibendum justo, at porta tortor. Praesent id facilisis ex. In dui lacus, aliquam dictum dui id, blandit ornare diam. Vivamus lacinia ipsum nec nulla elementum dictum. Quisque ullamcorper, erat ut dictum iaculis, elit arcu finibus dolor, vel mattis nunc dui sed nibh. Vivamus est sapien, euismod et consequat sit amet, condimentum ut augue. Pellentesque volutpat eu mi ut dictum. Nam tempus, sem eget rutrum viverra, mauris lectus lacinia neque, cursus venenatis ex lorem eu risus."
 
-for (let countWord of par1) {
-console.log(countWord)}
+let words = par1.split(" ");
+console.log(words.length);
+
+let count = 0;
+let query = "et";
+for (let i = 0; i < words.length; i++) {
+  if ( words[i] === query) {
+    count++;
+  }
+}
+console.log(count);
+
+let words2 = par2.split(" ");
+console.log(words2.length);
+
+let query2 = "et";
+for (let i = 0; i < words2.length; i++) {
+  if ( words2[i] === query2) {
+    count++;
+  }
+}
+console.log(count);
+
+let words3 = par3.split(" ");
+console.log(words3.length);
+
+let query3 = "et";
+for (let i = 0; i < words3.length; i++) {
+  if ( words3[i] === query3) {
+    count++;
+  }
+}
+console.log(count);
 
 // Bonus 2:
 let phraseToCheck = "Amor, Roma"
