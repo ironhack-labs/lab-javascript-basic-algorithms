@@ -43,11 +43,10 @@ if(hacker1.length > hacker2.length){
 
 const parrafo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus vel neque eget rhoncus. Donec commodo nibh vitae enim vestibulum, non pellentesque justo fermentum. Aenean auctor, mi a volutpat lobortis, urna ante varius est, quis vulputate magna dolor non ipsum. Nulla eu blandit diam. Nam accumsan nec lectus ut eleifend. Suspendisse purus nisi, feugiat id congue sed, dapibus ac urna. Fusce condimentum ante tortor, non consequat turpis lacinia sit amet. Aliquam tristique auctor lectus, a semper urna. Ut lacinia nulla vel neque tempor vestibulum. Vivamus euismod at neque non venenatis. Praesent tempus, nibh quis pulvinar dignissim, enim massa efficitur risus, a laoreet orci nisi ut diam. Cras non tellus interdum, pharetra ante id, fermentum leo. Integer facilisis, tellus eu vulputate volutpat, dolor lacus volutpat sapien, id rhoncus mi risus sed quam. Nullam ultrices velit in viverra tempus. Etiam tristique, orci et efficitur cursus, risus magna bibendum urna, non maximus mi nisl et risus. In quis rutrum enim. Fusce blandit dolor id imperdiet viverra. Praesent convallis sed mi ut porttitor. Nulla facilisi. Aliquam pulvinar sollicitudin orci in consequat. Nullam sit amet rhoncus nunc, fringilla sodales orci. Pellentesque ultrices iaculis arcu eu scelerisque. Nunc purus metus, rhoncus eget mauris vel, pretium sodales dolor. Sed ultricies ante semper erat eleifend, non luctus ligula lacinia. Curabitur eleifend velit sit amet felis finibus semper. Duis lacinia ullamcorper elit, at fermentum nisl efficitur a. Donec et condimentum massa. Nam quis sollicitudin libero, ac euismod lectus. Fusce at varius velit. Sed nec porta massa. Nulla tempus pretium convallis. Nullam non leo ligula."
 
-// inicialización de las variables
+
 let palabras = 0;
 let etContador = 0;
 
-// convertimos el párrafo en un array de palabras
 let separadorPalabras = parrafo.split(' ');
 console.log(separadorPalabras);
 
