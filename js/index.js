@@ -4,3 +4,6 @@
 
 
 // Iteration 3: Loops
+
+
+console.log("I'm ready!");
