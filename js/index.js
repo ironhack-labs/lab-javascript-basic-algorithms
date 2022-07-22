@@ -88,4 +88,18 @@ if(age <= 16){
 
 //Bonus 2
 
-let phraseToCheck;
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+console.log(phraseToCheck);
+
+
+phraseToCheck = phraseToCheck.replace(/[ ,!.]/g, "").toLowerCase();
+console.log(phraseToCheck);
+
+let phraseToCheckReverse = phraseToCheck.split('').reverse().join('');
+
+if (phraseToCheck === phraseToCheckReverse) {
+   console.log('Is a palindrome');
+}
+else {
+   console.log('Not a palindrome');
+}
