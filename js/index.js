@@ -98,8 +98,8 @@ if (cleanedUpPhrase.toUpperCase() === backwardsPhrase.toUpperCase()) {
   console.log("Neh, try again next time.");
 }
 
-// Bonus-Bonus
-const possiblePalindrome = "Red roses run no risk, sir, on Nurse’s order. ";
+// Extra-Bonus - I´m thinking about a program that scans any text for palindromes "inside"...
+const possiblePalindrome = "Red roses run no risk, sir, on Nurse's order. ";
 
 function checkPalindrom(phraseInput) {
   const regEx = /[a-z/A-Z]/g;
@@ -113,3 +113,17 @@ function checkPalindrom(phraseInput) {
   }
 }
 checkPalindrom(possiblePalindrome);
+
+// Add some point this method-chaining get´s ridiculous, right? Or is this something one would do?
+function evenShortercheckPalindrom(phraseInput) {
+  const regEx = /[a-z/A-Z]/g;
+  if (
+    phraseInput.match(regEx).join("").toLowerCase() ===
+    phraseInput.match(regEx).join("").toLowerCase().split("").reverse().join("")
+  ) {
+    console.log("Yeah, that's a palindrome.");
+  } else {
+    console.log("Neh, try again next time.");
+  }
+}
+evenShortercheckPalindrom(possiblePalindrome);
