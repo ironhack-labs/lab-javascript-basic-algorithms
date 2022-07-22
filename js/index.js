@@ -97,3 +97,19 @@ if (cleanedUpPhrase.toUpperCase() === backwardsPhrase.toUpperCase()) {
 } else {
   console.log("Neh, try again next time.");
 }
+
+// Bonus-Bonus
+const possiblePalindrome = "Red roses run no risk, sir, on Nurse’s order. ";
+
+function checkPalindrom(phraseInput) {
+  const regEx = /[a-z/A-Z]/g;
+  const cleanedUpPhrase = phraseInput.match(regEx).join("").toLowerCase();
+  const backwardsPhrase = cleanedUpPhrase.split("").reverse().join("");
+
+  if (cleanedUpPhrase === backwardsPhrase) {
+    console.log("Yeah, that's a palindrome.");
+  } else {
+    console.log("Neh, try again next time.");
+  }
+}
+checkPalindrom(possiblePalindrome);
