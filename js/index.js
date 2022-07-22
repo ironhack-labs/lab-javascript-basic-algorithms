@@ -53,14 +53,24 @@ for (let word of lorumCount) {
 }
 console.log(countEt);
 
-// Bonus 2
+// Bonus 2 -  Write a code that will check if the value we assigned to this variable is a Palindrome.
+
+// const phraseInput = "A man, a plan, a canal, Panama!";
+// const phraseInput = "Amor, Roma";
+// const phraseInput = "race car";
+// const phraseInput = "stack cats";
+// const phraseInput = "step on no pets";
+// const phraseInput = "taco cat";
+// const phraseInput = "put it up";
+// const phraseInput = "Was it a car or a cat I saw?";
+// const phraseInput = "No 'x' in Nixon";
+// const phraseInput = "No, this is no palindrome";
 const phraseInput = "step on no pets";
 
 let cleanedUpPhrase = "";
 let backwardsPhrase = "";
 
 // .split(" ").join("") would be easier here, but how to lose ".,!?" ?
-
 for (let i = phraseInput.length - 1; i >= 0; i--) {
   if (
     phraseInput[i] == " " ||
@@ -68,7 +78,7 @@ for (let i = phraseInput.length - 1; i >= 0; i--) {
     phraseInput[i] == "." ||
     phraseInput[i] == "!" ||
     phraseInput[i] == "?" ||
-    phraseInput[i] == "'" //A RegEx would be nice here
+    phraseInput[i] == "'" //RegEx would be nice here
   ) {
     continue;
   } else {
