@@ -12,22 +12,18 @@ if(hacker2.length > hacker1.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 
-//Creo quees una laogica mal aplicada pues 
-//si bien son los comandos no se estan aplicando como esperava
-let hack1split = hacker1.split("");
-let hackspace = hack1split.join(" ");
-let hack1may= hackspace.toUpperCase();
-
+let hack1may = hacker1.toUpperCase().split("").join(" ");
+let hackRev = hacker2.split("").reverse().join("");
 console.log(hack1may);
+console.log(hackRev);
+// let hackrev = hacker2.reverse();
+// console.log(hackrev);
 
-let hackrev = hacker2.reverse();
-console.log(hackrev);
 
-
-if(hacker2.length > hacker1.length) {
-    console.log(`Yo, the navigator goes first definitely.`);
-}else if(hacker1.length > hacker2.length) {
-    console.log(`The driver's name goes first.`);
-}else{
-    console.log(`What?! You both have the same name?`);
-}
+// if(hacker2.length > hacker1.length) {
+//     console.log(`Yo, the navigator goes first definitely.`);
+// }else if(hacker1.length > hacker2.length) {
+//     console.log(`The driver's name goes first.`);
+// }else{
+//     console.log(`What?! You both have the same name?`);
+// }
