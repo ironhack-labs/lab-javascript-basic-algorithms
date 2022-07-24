@@ -12,6 +12,8 @@ if(hacker2.length > hacker1.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 
+//Creo quees una laogica mal aplicada pues 
+//si bien son los comandos no se estan aplicando como esperava
 let hack1split = hacker1.split("");
 let hackspace = hack1split.join(" ");
 let hack1may= hackspace.toUpperCase();
@@ -20,6 +22,7 @@ console.log(hack1may);
 
 let hackrev = hacker2.reverse();
 console.log(hackrev);
+
 
 if(hacker2.length > hacker1.length) {
     console.log(`Yo, the navigator goes first definitely.`);
