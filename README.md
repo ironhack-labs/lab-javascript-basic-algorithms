@@ -90,7 +90,7 @@ Go to [lorem ipsum generator](http://www.lipsum.com/) and:
 #### Bonus 2:
 Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
   - "A man, a plan, a canal, Panama!"
-  - "Amor, Roma"
+  - "Amor, Roma" 
   - "race car"
   - "stack cats"
   - "step on no pets"
