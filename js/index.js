@@ -82,4 +82,3 @@ for (let i = 0 ; i < phraseLength ; i++)
     break ;
   }
 }
-console.log(isPalindrome);
