@@ -71,20 +71,58 @@ lexiOrder(hacker, hacker2);
 
 //BONUS1
 
-let text = " hola hol et et eedfuivni et e"
+let text = "     palaetbra1  et palabra2 et  "
  function wordEtCounter(str) {
 	let counter = 0;
 	let etCounter = 0;
+	let i = 0;
 
-	for (let i = 0; i < str.length; i++)
-	{
-		if (str[i] === " ")
-			counter++;
-		else if (str[i] === 'e' && str[i+1] === 't')
-			etCounter++;
-	}
-	counter++;
+	
+		while(str[i] && str[i] === " ")
+			i++;
+		while (str[i])
+		{
+			if(str[i] != " "){
+				counter++;
+				while(str[i] && str[i] != " "){
+					if (str[i] === 'e' && str[i+1] && str[i+1] === 't'){
+						etCounter++;
+					}
+					i++;
+				}
+			}
+			else
+				i++;
+		}
+	
 	return `The number of words is ${counter} and the number of 'et' is ${etCounter}`;
 }
 
 console.log(wordEtCounter(text));
+
+//BONUS2
+
+let word = "raccar";
+
+function palinCheck(word){
+	
+	let len = word.length - 1;
+	let i = 0;
+
+	len = word.length - 1;
+	while(i <= len){
+		if (word[i]=== " ")
+			i++;
+		else if (word[len]=== " ")
+			len--;
+		else if  (word[i] === word[len]){
+	 		i++;
+			len--;
+	 	}
+		else 
+			return false;
+	}
+	return true;
+}
+
+console.log(palinCheck(word));
