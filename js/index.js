@@ -42,7 +42,7 @@ const lorum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vari
 
 const lorumCount = lorum.split(" ").length
 
-console.log(lorumCount)
+console.log(lorumCoun)
 
 //Bonus 2
 
