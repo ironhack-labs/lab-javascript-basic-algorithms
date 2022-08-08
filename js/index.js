@@ -6,7 +6,7 @@ const hacker1 = "Erika"
 
 console.log(`The driver's name is ${hacker1}`)
 
-const hacker2 = "Erika"
+const hacker2 = "Johanna"
 
 console.log(`The navigator's name is ${hacker2}`)
 
@@ -22,6 +22,7 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
+
 const capitalAndSpace = console.log(hacker1.toUpperCase().split('').join(' '))
 
 
@@ -33,6 +34,45 @@ if (hacker1.localeCompare(hacker2) == -1) {
   } else if (hacker1.localeCompare(hacker2) == 1) {
     console.log('Yo, the navigator goes first definitely')
   } else {
-    console.log('What?! You both have the same name?') }
+    console.log('What?! You both have the same name?') 
+}  
 
-    
+
+// Bonus 1 
+
+
+let string = "Loremipsumdolor sit am et, consect et ur adipiscing elit."
+
+
+
+console.log (string.split(' ').length)
+
+ 
+
+function countOccurences(string, word) {
+    console.log (string.split(word).length - 1) // why do we have to put -1 ?, because when it starts counting with 0, the result would be 1 (2 times et in the sentence)? 
+ }
+ 
+ let count = countOccurences(string,"et")
+ 
+
+ // Bonus 2
+
+
+ function checkPhrase (testString) {
+      let unifyString = testString.replace(/[^A-Z0-9]/ig, "").toLowerCase('');
+console.log (unifyString)
+   let checkingPalindrome = unifyString.split('').reverse().join('');
+console.log (checkingPalindrome)  
+   if(unifyString === checkingPalindrome){
+     
+     console.log ("It is a Palindrome")
+   }
+   else {
+     console.log ("It no Palindrome")
+   }
+   
+ }
+
+
+ checkPhrase ("A man, a plan, a canal, Panama!") 
