@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const hacker1 = prompt("nombre hacker1");
+        const hacker2 = prompt("nombre hacker2");
+        console.log(`The driver's name ${hacker1}`);
+        console.log(`The navigator's name ${hacker2}`);
+        let arrNavigator = []
+
+       function largestName(hacker1, hacker2) {
+
+            if (hacker1.length > hacker2.length) {
+                console.log(`Es mas largo ${hacker1}`)
+            } else if (hacker1.length == hacker2.length) {
+                console.log("iguales")
+            } else {
+                console.log("hacker 2 mas largo")
+            }
+
+        }
+
+        function loopNames(nombre1, nombre2) {
+            let str = "";
+            let arrWords = []
+            let arrReverse;
+            for (let i = 0; i < nombre1.length; i++) {
+                str += hacker1[i] + " "
+
+            }
+
+            console.log(str)
+
+         
+            /*arrNavigator.push(nombre2)
+            let arr = arrNavigator.reverse()*/
+            for (let i = 0; i < nombre2.length; i++) {
+                console.log(nombre2[i]);
+                arrWords.push(nombre2[i])
+            }
+
+           console.log(arrWords.reverse().toString())
+
+
+        }
+
+        largestName(hacker1, hacker2)
+        loopNames(hacker1, hacker2)
+
+    </script>
+</body>
+
+</html>
