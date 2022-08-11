@@ -11,6 +11,7 @@ if (hacker1.length > hacker2.length){
         console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
     }
 
+
 // Iteration 3: Loop
 
 let result = hacker1.toUpperCase().split("").join(" ")
@@ -23,9 +24,9 @@ console.log(result)
  }
 reverseString(hacker2)
 
-if (hacker1 > hacker2) {
+if (hacker1 < hacker2) {
   console.log(`The driver's name goes first.`);
-} else if (hacker1 < hacker2) {
+} else if (hacker1 > hacker2) {
   console.log(`Yo, the navigator goes first definitely.`);
 } else {
   console.log(`What?! You both have the same name?`);
