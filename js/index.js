@@ -35,7 +35,7 @@ let casedDriver = hacker1.toUpperCase();
 let upperSpaced = "";
 
  for (let i = 0; i < casedDriver.length; i++){
-    upperSpaced = upperSpaced.concat(casedDriver[i] , " ");
+    upperSpaced += casedDriver[i] + " " ;
      
  }
 
@@ -44,7 +44,7 @@ let upperSpaced = "";
  let reversedNavigator = "";
 
  for (let j = secondlength; j >= 0; j--){
-    reversedNavigator = reversedNavigator.concat(hacker2[j] , "");
+    reversedNavigator += hacker2[j];
      
  }
 
