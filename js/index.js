@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
-const hacker1 = 'Johnny Hackerman';
+let hacker1 = 'Andrew Hackerman';
 console.log(`The driver's name is ${hacker1}.`);
 
-const hacker2 = 'Louie Robbero';
+let hacker2 = 'Chris Robbero';
 console.log(`The navigator's name is ${hacker2}.`)
 // Iteration 2: Conditionals
 
@@ -30,5 +30,16 @@ for (value of hacker1) {
     console.log(hacker1.split('').reverse().join(''))
 }
 
+hacker1 = hacker1.toLowerCase();
+hacker2 = hacker2.toLowerCase();
 
-console.log(hacker2.localeCompare(hacker1))
+console.log(hacker2)
+
+
+if (hacker1.localeCompare(hacker2)) {
+    console.log(`The driver's name goes first`)
+} else if (hacker2.localeCompare(hacker1)) {
+    console.log(`Yo, the navigators name goes first definetely.`)
+} else {
+    console.log('What?! Yoe u both have the same name?')
+}
