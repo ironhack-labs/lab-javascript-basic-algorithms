@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 
-const hacker1 = "Marc";
+let hacker1 = "Marc";
 console.log(`The driver's name is ${hacker1}.`);
 const hacker2 = "Wil";
 console.log(`The navigator's name is ${hacker2}.`)
@@ -19,6 +19,16 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3.1: Loops
 
 let capital = hacker1.toUpperCase();
-console.log(capital.split('').join(' '));
+console.log(capital.split().join(' '));
 
 // Iteration 3.2: Loops
+// via https://stackabuse.com/how-to-reverse-a-string-in-javascript/
+// One possibility
+console.log('Reversed string 1: ' +[...hacker1].reverse().join(''));
+// Another possibility
+let reversed = '';
+for (let i = hacker1.length - 1; i >= 0; i--) {
+    reversed += hacker1[i];
+  }
+console.log('Reversed string 2: ' + reversed);
+
