@@ -32,3 +32,12 @@ for (let i = hacker1.length - 1; i >= 0; i--) {
   }
 console.log('Reversed string 2: ' + reversed);
 
+// Iteration 3.3: Loops
+if (hacker1.localeCompare(hacker2) === -1) {
+    console.log("The driver's name goes first.")
+} else if (hacker1.localeCompare(hacker2) === 1) {
+    console.log("Yo, the navigator goes first definitely.")
+} else {
+    console.log("What?! You both have the same name?")
+}
+
