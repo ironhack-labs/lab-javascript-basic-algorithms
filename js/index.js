@@ -45,3 +45,28 @@ if (hacker2.localeCompare(hacker1) === 1) {
 } else if (hacker2.localeCompare(hacker1) === 0) {
   console.log("What?! You both have the same name?");
 }
+
+// Bonus 1
+let par =
+  "Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Sed fermentum diam nec urna consequat tincidunt vitae quis dolor. Sed in ullamcorper ante, id auctor odio. Morbi ullamcorper suscipit ligula. Mauris pharetra lorem dolor, vel sodales justo rhoncus eu. Donec dolor tortor, semper in nulla eu, fermentum sollicitudin metus. Ut pretium neque vitae lacus rutrum, sed luctus quam hendrerit.";
+
+const countedWords = par.split(" ").length;
+
+console.log(`The number of words is: ${countedWords}`);
+
+let numberOfTimesEtAppears = 0;
+for (let i = 0; i < par.length; i++) {
+  if (
+    par[i] === " " &&
+    par[i + 1] === "e" &&
+    par[i + 2] === "t" &&
+    par[i + 3] === " "
+  ) {
+    numberOfTimesEtAppears++;
+  }
+  if (i === par.length - 1) {
+    console.log(
+      `There is ${numberOfTimesEtAppears} times "et" word appears in the paragraph`
+    );
+  }
+}
