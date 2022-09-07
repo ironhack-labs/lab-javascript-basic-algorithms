@@ -24,3 +24,9 @@ for (let character = 0; character < hacker1.length; character++ ){
     name += space
 }
 console.log(name)
+
+
+for (let i = (hacker2.length - 1); i >= 0; i--) {
+    name += hacker2[i]
+}
+console.log(name)
