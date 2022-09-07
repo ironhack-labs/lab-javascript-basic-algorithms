@@ -18,3 +18,32 @@ else {
 }
 
 // Iteration 3: Loops
+
+let hacker1Upper = hacker1.toUpperCase();
+let hacker2Reverse;
+let hacker1Result = '';
+let hacker2Result = '';
+
+for (i=0; i<hacker1.length; i++) {
+    
+    hacker1Result = hacker1Result + hacker1Upper.charAt(i) + ' ';
+}
+for (let i = hacker2.length; i>=0; i--) {
+    hacker2Result = hacker2Result + hacker2.charAt(i);
+}
+console.log(hacker1Result);
+console.log(hacker2Result);
+
+let orderHackers = hacker1.localeCompare(hacker2);
+switch (orderHackers) {
+    case -1:
+        console.log("The driver's name goes first.");
+    break;
+    case 1:
+        console.log("Yo, the navigator goes first definitely.");
+    break;
+    case 0:
+        console.log("What?! You both have the same name?");
+    break;
+}
+
