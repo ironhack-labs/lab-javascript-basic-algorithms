@@ -43,3 +43,36 @@ if (hacker1.localeCompare(hacker2) < 0){
     console.log("What?! You both have the same name?");
 }
 
+// Bonus 1
+const loremIpsum = `Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Donec congue ultricies risus, condimentum interdum enim feugiat in. Duis bibendum consequat leo, a viverra libero interdum ut. Nunc non magna condimentum lorem pellentesque dignissim sit amet eu metus. Praesent pulvinar eros dictum, viverra massa eu, convallis velit. Nunc luctus ex sit amet velit pellentesque interdum. Nam tempus nec ipsum eget lobortis. Maecenas in tellus vel nulla sodales efficitur vel ut nibh. Praesent sed enim a ex blandit egestas. Proin egestas nunc nec ipsum congue lobortis. Nam egestas volutpat bibendum. Aliquam dapibus pulvinar ipsum sit amet facilisis. Nunc consectetur nunc lorem, in vehicula urna condimentum quis. Nam sit amet libero vitae dui euismod viverra ut non sem. Nulla cursus dignissim purus, eget sollicitudin orci. Nullam id rutrum ex, in dapibus nisi. Nulla consequat vulputate leo, eu ullamcorper ante aliquet id. 
+Mauris in est non sem vulputate laoreet. Morbi venenatis non urna a volutpat. In at porttitor purus. Suspendisse eget suscipit dui. Donec felis lorem, blandit non velit quis, imperdiet volutpat lacus. Quisque a magna risus. Suspendisse euismod tempus vehicula. Pellentesque consequat libero sed quam consequat laoreet. Etiam odio felis, volutpat vitae faucibus sit amet, sodales vel turpis. Sed vel luctus purus. Nulla viverra lorem lectus, ut facilisis urna eleifend et. Nunc sed diam id felis fermentum rutrum. Sed ac accumsan nisl. Integer at erat non enim tincidunt fermentum nec eu ipsum. Praesent gravida accumsan egestas. Nam iaculis, sapien eget aliquet pharetra, odio justo vulputate enim, at tempor dolor erat eu ante. Nullam eleifend efficitur tortor. Suspendisse pellentesque, turpis id dignissim faucibus, ipsum lorem lobortis nisi, ornare aliquet lectus lorem ultricies diam. Orci varius natoque et penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque scelerisque placerat mattis. Nam risus lorem, pulvinar ac tincidunt sed, lobortis rhoncus arcu. Sed id hendrerit urna.`
+
+let counter = 0;
+
+for (let i = 0; i < loremIpsum.length; i++) {
+    if (loremIpsum.charAt(i) === " ") {
+        counter += 1;
+    }
+}
+
+console.log(counter);
+
+let counterEt = 0;
+
+for (let i = 0; i < loremIpsum.length; i++) {
+    if (loremIpsum.substring(i,i+4) == " et ") {
+        counterEt += 1;
+    }
+}
+
+console.log(counterEt);
+
+// // Bonus 2
+// let phraseToCheck = "A man, a plan, a canal, Panama!";
+
+
+// const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+// for (let i = 0; i < phraseToCheck.length; i++)
+
+
