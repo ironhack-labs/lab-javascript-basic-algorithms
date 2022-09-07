@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
 const hacker1 = "Marc";
-// console.log(`The driver's name is ${hacker1}.`);
+console.log(`The driver's name is ${hacker1}.`);
 const hacker2 = "Wil";
-// console.log(`The navigator's name is ${hacker2}.`)
+console.log(`The navigator's name is ${hacker2}.`)
 
 
 // Iteration 2: Conditionals
@@ -16,4 +16,9 @@ if (hacker1.length > hacker2.length) {
         console.log(`Wow, you both have equally long names`)
     }
 
-// Iteration 3: Loops
+// Iteration 3.1: Loops
+
+let capital = hacker1.toUpperCase();
+console.log(capital.split('').join(' '));
+
+// Iteration 3.2: Loops
