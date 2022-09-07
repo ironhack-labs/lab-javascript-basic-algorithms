@@ -68,11 +68,26 @@ for (let i = 0; i < loremIpsum.length; i++) {
 console.log(counterEt);
 
 // // Bonus 2
-// let phraseToCheck = "A man, a plan, a canal, Panama!";
-
-
-// const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-// for (let i = 0; i < phraseToCheck.length; i++)
-
-
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let phraseToCheck = 'A man, a plan, a canal, Panama!';
+let check = '';
+let checkReverse = '';
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (alphabet.includes(phraseToCheck.toUpperCase().charAt(i))) {
+    check += phraseToCheck.charAt(i);
+  } else {
+    continue;
+  }
+}
+for (let i = phraseToCheck.length; i >= 0; i--) {
+  if (alphabet.includes(phraseToCheck.toUpperCase().charAt(i))) {
+    checkReverse += phraseToCheck.charAt(i);
+  } else {
+    continue;
+  }
+}
+if (check.toUpperCase() === checkReverse.toUpperCase()) {
+    console.log('It is a Palindrome!!!');
+  } else {
+    console.log('Not a Palindrome.');
+  }
