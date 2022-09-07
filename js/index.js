@@ -16,28 +16,29 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 
-const space = " "
-let name = ""
 
-for (let character = 0; character < hacker1.length; character++ ){
-    name += hacker1[character].toUpperCase()
-    name += space
+let upperCaseName = ' ';
+
+for (let i = 0; i < hacker1.length; i++) {
+  upperCaseName += hacker1[i] + ' ';
 }
-console.log(name)
+console.log(upperCaseName.toUpperCase());
 
+let reverseName = ' ';
 
-name = ""
-for (let i = (hacker2.length - 1); i >= 0; i--) {
-    name += hacker2[i]
+for (let i = (hacker2.length -1); i >= 0; i-- ){
+    reverseName += hacker2[i]
 }
-console.log(name)
+console.log(reverseName)
 
-
-let compare = 'hacker1'.localeCompare('hacker2')
-if (compare > 0){
+switch(hacker2.localeCompare(hacker1)){
+case 1 :
     console.log(`The driver's name goes first.`)
-} else if (compare < 0){
-    console.log(`Yo, the navigator does first definitely.`)
-} else if (compare === 0){
+    break;
+case -1 :
+    console.log(`Yo, the navigator goes first definitely.`) 
+    break;
+case 0 :
     console.log(`What?! You both have the same name?`)
+    break;       
 }
