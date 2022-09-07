@@ -67,7 +67,7 @@ for (let i = 0; i < loremIpsum.length; i++) {
 
 console.log(counterEt);
 
-// // Bonus 2
+// Bonus 2 (by Mauro) , Julian's Version is beneath
 const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let phraseToCheck = 'A man, a plan, a canal, Panama!';
 let check = '';
@@ -91,3 +91,33 @@ if (check.toUpperCase() === checkReverse.toUpperCase()) {
   } else {
     console.log('Not a Palindrome.');
   }
+
+// Bonus 2 (by Julian)
+let phraseToCheck2 = "Was it a car or a cat I saw?";
+const alphabet2 = "abcdefghijklmnopqrstuvwxyz";
+let isPalindrom;
+
+let phraseLetters = ""; // phrase to check without other characters than letters 
+
+for (let i = 0; i < phraseToCheck2.length; i++) {
+  if (alphabet2.includes(phraseToCheck2.charAt(i).toLowerCase())) {
+    phraseLetters += (phraseToCheck2.charAt(i).toLowerCase());
+  }
+}
+
+for(let i = 0; i < phraseLetters.length/2; i++){
+   
+  if(phraseLetters.charAt(i) === phraseLetters.charAt(phraseLetters.length-(1+i))){ //comparing from both ends
+    isPalindrom = true; 
+    continue;
+   } else {
+     isPalindrom = false;
+     break;
+   } 
+}
+
+if(isPalindrom){
+  console.log("Yes it is a palindrom");
+} else {
+  console.log("No it is not a palindrom");
+}
