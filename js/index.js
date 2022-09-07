@@ -24,3 +24,16 @@ const result = driver.split('').join(' ');
   }
   
   console.log(navigator ('Serhii'));
+
+  const user1 = 'Daniel';
+  const user2 = 'Serhii';
+  const results = user1.localeCompare(user2);
+  
+  if (results === -1){
+    console.log ("The driver's name goes first");
+  }else if (results === 0){
+    console.log ("What?! You both have the same name?")
+  }
+  else{
+    console.log ("Yo, the navigator goes first definitely.")
+  }
