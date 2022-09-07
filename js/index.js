@@ -17,3 +17,9 @@ if (hacker1.length > hacker2.length) {
     }
 
 // Iteration 3: Loops
+
+let capital = hacker1.toUpperCase();
+console.log(capital);
+let capitalSpace = capital.text.split("")
+let word = capitalSpace[1]
+console.log(capitalSpace);
