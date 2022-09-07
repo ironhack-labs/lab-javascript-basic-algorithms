@@ -26,7 +26,18 @@ for (let character = 0; character < hacker1.length; character++ ){
 console.log(name)
 
 
+name = ""
 for (let i = (hacker2.length - 1); i >= 0; i--) {
     name += hacker2[i]
 }
 console.log(name)
+
+
+let compare = 'hacker1'.localeCompare('hacker2')
+if (compare > 0){
+    console.log(`The driver's name goes first.`)
+} else if (compare < 0){
+    console.log(`Yo, the navigator does first definitely.`)
+} else if (compare === 0){
+    console.log(`What?! You both have the same name?`)
+}
