@@ -119,4 +119,4 @@ if(firstStringCompare === reversedSecondString){
   console.log(`It's a palindrome`);
 }else{
     console.log(`It's not a palindrome`);
-gt}
+}
