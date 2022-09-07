@@ -9,13 +9,13 @@ if(hacker1.length > hacker2.length){
 } if (hacker2.length > hacker1.length){
     console.log('It seems that the navigator has the longest name, it has XX characters.')
 } else if (hacker2.length === hacker1.length){
-    console.log('Wow, you both have equally long names, XX characters!')
+    console.log('Wow, you both have equally long names, 6 characters!')
 } 
 
 // Iteration 3: Loops
 let spacedName = "";
 for(const char of hacker1){
-    spacedName += char + '_'
+    spacedName += char + ' '
     
 }
 console.log(spacedName.toUpperCase())
@@ -23,9 +23,12 @@ console.log(spacedName.toUpperCase())
 // 3.2 // 
 
 let reversed = "";      
-   for (var i = hacker1.length - 1; i >= 0; i--){         
+   for (let i = hacker1.length - 1; i >= 0; i--){         
      reversed += hacker1[i];  
    }     
+
+// let the loop begin with the length of our loop - 1. The condition is that as long as i is greater than 0, minus.
+// as the loop runs - put each iteration(letter) from hacker1 into the 'reversed' variable. 
 
   console.log(reversed)
 
