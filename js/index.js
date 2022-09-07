@@ -15,3 +15,12 @@ if (hacker1.length > hacker2.length){
 }
 
 // Iteration 3: Loops
+
+const space = " "
+let name = ""
+
+for (let character = 0; character < hacker1.length; character++ ){
+    name += hacker1[character].toUpperCase()
+    name += space
+}
+console.log(name)
