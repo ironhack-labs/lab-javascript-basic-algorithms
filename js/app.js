@@ -1,18 +1,11 @@
-const people = {
-  hacker1: 'Penelopo',
-  hacker2: 'Robert',
+import utils from './utils.js';
+
+const hackers = {
+  names: ['Robert', 'Penelopo'],
 }
 
-function compareLenghts(a, b) {
-  if (a < b) {
-    return `The driver has the longer name, it has ${a.length} characters `;
-  }
-  else if (b > a) {
-    return `The navigator has the longer name, it has ${b.length} characters `;
-  }
-  else {
-    return `Wow, you both have equally long names, ${a.length} characters!`;
-  }
+const hardcode = {
+  palyndrome: 'reconocer',
 }
 
 function spellNames(a, b) {
@@ -60,26 +53,52 @@ function checkPalyndrome (word) {
   }
 }
 
-function greet (people) {
-  let finalResult = '';
-  let {hacker1, hacker2} = people;
-  let wordToCheck = "reconocer";
-  finalResult = `1) The driver's name is ${hacker1} and the navigator's name is ${hacker2}`;
-  finalResult = finalResult.concat('\n1) ', compareLenghts(hacker1, hacker2), '\n2) ', spellNames(hacker1, hacker2), '\n3) ', lexicographic(), '\n', loremIpsum(), '\n5) ', checkPalyndrome(wordToCheck));
+function compareNames(hackers) {
+  let { names } = hackers;
+  let result = findLongestName(...names);
 
-  return finalResult;
+  return result;
 }
 
+function printNames (hackers) {
+  let result = '';
+  let { names } = hackers;
+  result = generateString(...names);
+
+  return result;
+}
+//TODO: Spell names
+
+//Here is where the magic starts...
+console.log(''.concat(printNames(hackers), compareNames(hackers)));
+//and ends.
 
 
 
+//----------------------------------------------------------------------------------
+// Helper functions, this makes the code above more hermoso and easier to leer betch
 
+function generateString (...names) {
+  let result = '';
+  names.forEach((hacker, i) => {
+    result += `${utils.iteration_One.messages[i]}${hacker} `;
+    if (i === names.length - 1) result += `\n`;
+  });
 
+  return result;
+}
 
-
-
-
-
-
-
-console.log(greet(people));
+function findLongestName (...names) {
+  let result = '';
+  let currentLargest = '';
+  let id = 0;
+  names.forEach((name, index) => {
+    if (name.length > currentLargest.length) {
+      currentLargest = name;
+      id = index;
+    }
+  })
+  result = `${utils.iteration_Two.messages[id]}${currentLargest.length}\n`;
+  
+  return result;
+}
