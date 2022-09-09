@@ -50,8 +50,6 @@ function compareNames(names) {
 
 function printNames (names) {
   let result = '';
-  //let { names } = hackers;
-
   result = generateString(iteration, ...names);
 
   return result;
