@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
-//
-// Iteration 2: Conditionals
+const hacker1 = "El Vaquilla";
+console.log(`The driver's name is ${hacker1}`);
 
-
-// Iteration 3: Loops
+const hacker2 = "El Gita";
+console.log(`The driver's name is ${hacker2}`);
