@@ -19,3 +19,14 @@ if (hacker1 > hacker2) {
     `Wow, you both have equally long names, ${hacker2.length} characters!`
   );
 }
+
+// Iteration 3: Loops
+
+// 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
+let newHacker1 = "";
+for (let i = 0; i < hacker1.length; i++) {
+  newHacker1 += hacker1[i].toUpperCase() + " ";
+}
+console.log(
+  `The characters of the driver's name in capital are ${newHacker1.trim()}`
+);
