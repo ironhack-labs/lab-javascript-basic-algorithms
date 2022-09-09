@@ -30,3 +30,12 @@ for (let i = 0; i < hacker1.length; i++) {
 console.log(
   `The characters of the driver's name in capital are ${newHacker1.trim()}`
 );
+
+// 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+let newHacker2 = "";
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  newHacker2 += hacker2[i];
+}
+console.log(
+  `The characters of the navigator's name in reverse order are ${newHacker2}`
+);
