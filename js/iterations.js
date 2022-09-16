@@ -24,3 +24,8 @@ export default {
   },
 
 }
+
+
+// `The driver's name goes first`,
+// `Yo, the navigator goes first definitely`,
+// `What?! You both have the same name?`,

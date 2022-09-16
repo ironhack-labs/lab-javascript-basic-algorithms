@@ -16,7 +16,7 @@ function lexicographic() {
   let secondText = iteration.iteration_Two.messages[5];
   let thirdText = iteration.iteration_Two.messages[6];
 
-  let firstSentence = `${firstText.split(' ').sort().join('')}\n`;
+  let firstSentence = `\n${firstText.split(' ').sort().join('')}\n`;
   let secondSentence = `${secondText.split(' ').sort().join('')}\n`;
   let thirdSentence =   thirdText.split(' ').sort().join('');
 
@@ -28,13 +28,13 @@ function lexicographic() {
 function loremIpsum() {
   let result = '';
   let lorem = iteration.iteration_Three.lorem;
-  result = `\nThe sum of all the characters of the lorem text is ${lorem.length} and the word "et" has ${(lorem.match(/et/g) || []).length} ocurrences`;
+  result = `\nThe sum of all the characters of the lorem text is ${lorem.length}. It has ${lorem.split(' ').length} words and the word "et" has ${(lorem.match(/et/g) || []).length} ocurrences`;
 
   return result;
 }
 
 function checkPalyndrome (palyndromes) {
-  if(palyndromes[0] === palyndromes[0].split('').reverse().join('')){
+  if(palyndromes[0].split(' ').join('') === palyndromes[0].split(' ').reverse().join('')){
     return '\n ' + palyndromes[0] + ' is a palyndrome!'
   }
   else{

@@ -1,6 +1,6 @@
 export default {
   hackers: {
-    nameList: ['Robert', 'Penelopo', 'UnexpectedDude', 'AnIntruder'],
+    nameList: ['Robert', 'Penelopo'],
   },
-  palyndromes: ['reconocer', 'ama', 'rotomotor', 'aegis', 'WuTang'],
+  palyndromes: ['taco cat', 'reconocer', 'ama', 'rotomotor', 'aegis', 'WuTang'],
 }

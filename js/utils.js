@@ -23,7 +23,6 @@ function findLongestName (iteration, ...names) {
       if (id > 1) id = 3;
     }
   })
-  console.log(iteration);
   result = `${iteration.iteration_Two.messages[id]}${currentLargest.length}`;
   
   return result;
@@ -37,9 +36,7 @@ function spellNamesHelper (...names) {
     }
     else {
       let reversedName = names[i].split('').reverse().join('');
-      for (let j = 0; j < reversedName.length; j++) {
-        result += `${reversedName[j]}`;
-      }
+      result += `${reversedName}`;
     }
   }
 
