@@ -56,6 +56,16 @@ for (i=0; i<hacker1.length; i++) {
     break;
   }
 
+  else if (hacker1.length>hacker2.length) {
+    console.log("Yo, the navigator goes first definitely.")
+    break;
+  }
+
+  else if (hacker1.length<hacker2.length) {
+    console.log("The driver's name goes first.")
+    break;
+  }
+    
   else {
     continue;
   }
