@@ -46,3 +46,18 @@ function countWords(string) {
 countWords(loremIpsum);
 
 console.log(countWords(loremIpsum));
+
+
+//Bonus 1.3
+let loremIpsumArray = loremIpsum.split(" ");
+console.log(loremIpsumArray);
+
+let etCount = 0;
+
+for (let i = 0; i < loremIpsumArray.length; i++) {
+    if (loremIpsumArray[i] === "et") {
+        etCount++;
+    }
+}
+
+console.log(etCount);
