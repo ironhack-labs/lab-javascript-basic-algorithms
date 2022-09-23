@@ -21,4 +21,16 @@ if(hacker1.length > hacker2.length ){
 // Iteration 3: Loop
 
 
+//3.1
+let newString= "";
+
+for(let i = 0; i < hacker1.length; i++) {
+   newString+=hacker1[i] + " ";
+}
+
+console.log(newString.toUpperCase());
+
+//3.2
+console.log(hacker2.split("").reverse().join(""))
+
 
