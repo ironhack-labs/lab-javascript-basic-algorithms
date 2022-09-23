@@ -33,4 +33,19 @@ console.log(newString.toUpperCase());
 //3.2
 console.log(hacker2.split("").reverse().join(""))
 
+//3.3
+let arrayNames = [hacker1, hacker2];
+let sortedArray = arrayNames.sort()
+
+if(sortedArray[0] == hacker1){
+    console.log("El nombre del conductor va primero.")
+} 
+else if(sortedArray[0] == hacker2){
+    console.log("Yo, el navegador va primero definitivamente.")
+} 
+else{
+    console.log("¿Qué? ¿Los dos tienen el mismo nombre?")
+}
+
+
 
