@@ -6,10 +6,11 @@ let hacker2 = "Albert"
 console.log(`The hacker1 is ${hacker1}`);
 console.log(`The hacker2 is ${hacker2}`);
 
-
-
 // Iteration 2: Conditionals
 
+
+console.log(`El usuario ${hacker1} tiene ${hacker1.length} caracteres`)
+console.log(`El usuario ${hacker2} tiene ${hacker2.length} caracteres`)
 
 
 // Iteration 3: Loops
