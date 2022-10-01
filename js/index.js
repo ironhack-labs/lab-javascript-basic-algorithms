@@ -24,3 +24,30 @@ if(hacker1.localeCompare(hacker2) === -1){
 }
 
 // Bonus 1
+let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt eleifend pulvinar. Donec ac nisl porttitor, commodo dolor eu, convallis nisl. Fusce massa nunc, sodales in libero eu, dignissim tempus orci. Quisque eget nisi finibus lorem tincidunt efficitur ac at urna. Praesent quis sapien tortor. Vivamus quis varius diam. Aenean ullamcorper interdum risus, et tincidunt risus posuere eu. 
+Morbi condimentum auctor lorem et pretium. Morbi ornare mi felis, consequat finibus nisl maximus non. Integer a nunc a lorem pulvinar luctus. Vestibulum pharetra velit vitae nulla pulvinar laoreet. In hac habitasse platea dictumst. Phasellus congue id nibh cursus interdum. Curabitur vitae lacus nec nisi vehicula sodales at in erat. Nulla facilisi. 
+Pellentesque vel efficitur velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lectus dolor, ullamcorper nec posuere et, aliquet non orci. Nulla a auctor dui. Nulla tristique in dui nec pulvinar. Nulla facilisi. Aliquam finibus elementum enim. Mauris sit amet ante eu ligula finibus accumsan.`
+
+let totalWords=1;
+for(i in text){
+    if(text[i] === " "){
+        totalWords +=1       
+    }
+}
+console.log(totalWords);
+
+let response = (text.match(/et/g) || []).length;
+console.log(response)
+
+//Bonus 2
+let phraseToCheck="A man, a plan, a canal, Panama!";
+let phraseWithoutEspChar = phraseToCheck.split('').replace(/[^a-zA-Z0-9]/g, '');    
+for(i in phraseWithoutEspChar){
+    for(j in phraseWithoutEspChar){
+        if(phraseWithoutEspChar[i] === phraseWithoutEspChar[phraseWithoutEspChar.length-j]){
+            console.log('is a Palindrome')
+        } else {
+            console.log('is not a Palindrome')
+        }
+    }
+}
