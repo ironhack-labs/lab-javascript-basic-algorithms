@@ -1,6 +1,22 @@
-// Iteration 1: Names and Input
-//
-// Iteration 2: Conditionals
+let hacker1 = "Carlota"
+console.log (`The drivers name is ${hacker1}`)
+
+let hacker2 = "André"
+console.log (`The navigator name is ${hacker2}`)
+
+if (hacker1.length > hacker2.length) {
+    console.log (`The driver has the longest name, it has ${hacker1.length} characters`)
+} else if (hacker1.length < hacker2.length) {
+    console.log (`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
+} else { 
+    console.log (`Wow, you both have equally long names, ${hacker1.length} characters!`)
+}
+
+for ( i = 0; i < hacker1.length; i++) {
+}
+console.log(hacker1.length) 
+
+console.log('André'.localeCompare('Carlota')); 
 
 
-// Iteration 3: Loops
+
