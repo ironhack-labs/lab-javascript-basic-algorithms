@@ -19,13 +19,27 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
-const capitalizeDriverName = hacker1.toUpperCase().split("").join(" ");
 
+// no loops
+const capitalizeDriverName = hacker1.toUpperCase().split("").join(" ");
 console.log(capitalizeDriverName);
 
 const reverseNavName = hacker2.split("").reverse().join("");
-
 console.log(reverseNavName);
+
+// with loops
+let capitalizeDriverName_2 = ""
+for (let i = 0; i < hacker1.length; i++){
+   capitalizeDriverName_2 += hacker1[i].toUpperCase() + " ";
+}
+console.log(capitalizeDriverName_2);
+
+let reverseNavName_2 = "";
+for (let j = hacker2.length -1 ; j >= 0; j--){
+    reverseNavName_2 += hacker2[j];
+}
+console.log(reverseNavName_2);
+
 
 
     if (hacker1.localeCompare(hacker2) === -1){
