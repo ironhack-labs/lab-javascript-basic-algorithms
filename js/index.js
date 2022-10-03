@@ -37,7 +37,6 @@ function reverse (hacker2) {
     let reverseStringIs = reverse(hacker2)
     console.log(reverseStringIs)
 
-
     
     
 // console.log(hacker1.length)
