@@ -29,9 +29,23 @@ console.log(separatedChar);
 let reversedChar = hacker2.split("").reverse().join("");
 console.log(reversedChar);
 
-if (hacker2.localeCompare(hacker1) > 1) {
+let spaceStr = "";
+
+for (let i = 0; i < hacker1.length; i++) {
+  spaceStr += hacker1[i] + " ";
+}
+console.log(spaceStr);
+
+let reversedStr = "";
+
+for (let j = hacker2.length - 1; j >= 0; j--) {
+  reversedStr += hacker2[j];
+}
+console.log(reversedStr);
+
+if (hacker2.localeCompare(hacker1) === 1) {
   console.log("The driver's name goes first.");
-} else if (hacker2.localeCompare(hacker1) < 1) {
+} else if (hacker1.localeCompare(hacker2) === 1) {
   console.log("Yo, the navigator goes first definitely.");
 } else {
   console.log("What?! You both have the same name?");
