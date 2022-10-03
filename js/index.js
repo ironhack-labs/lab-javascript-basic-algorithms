@@ -21,10 +21,10 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 
-  for (let i = 0; i <= hacker1.length; i++){   
-    console.log(hacker1[i].toUpperCase());
-  }
+  //for (let i = 0; i <= hacker1.length; i++){   
+    console.log(hacker1.toUpperCase());
+ // }
 
-  for (let j = 0; j <= hacker2.length; j++){   
-    console.log(hacker2[j].reverse());
-  }
+  //for (let j = 0; j <= hacker2.length; j++){   
+    console.log(hacker2.split('').reverse().join(''));
+ // }
