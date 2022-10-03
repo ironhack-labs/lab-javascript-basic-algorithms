@@ -14,5 +14,21 @@ if(hacker1.length > hacker2.length){
 }
 
 
-let charactersName = hacker1.toUpperCase();
+let charactersName = hacker1.toUpperCase().split("").join(" ");
 console.log(charactersName);
+
+let reverseName = hacker2.split("").reverse().join("");
+console.log(reverseName);
+
+
+if (hacker1.localeCompare(hacker2) === 0){
+    console.log("What?! You both have the same name?");
+} else if (hacker1.localeCompare(hacker2) === 1) {
+    console.log("The driver's name goes first.");
+} else {
+    console.log("Yo, the navigator goes first definitely.");
+    
+}
+
+
+
