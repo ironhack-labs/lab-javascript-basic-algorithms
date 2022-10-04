@@ -66,13 +66,14 @@ console.log(name2);
 
 
 // 3.3
-if(hacker1.localeCompare(hacker2) === -1){
+if(hacker1.toUpperCase().localeCompare(hacker2.toUpperCase()) === -1){
     console.log("The driver's name goes first.")
-} else if (hacker1.localeCompare(hacker2) === 1) {
+} else if (hacker1.toUpperCase().localeCompare(hacker2.toUpperCase()) === 1) {
     console.log("Yo, the navigator goes first definitely.")
-} else if (hacker1.localeCompare(hacker2) === 0) {
+} else {
     console.log("What?! You both have the same name?")
 }
+
 
 // Bonus 1
 let text = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt eleifend pulvinar. Donec ac nisl porttitor, commodo dolor eu, convallis nisl. Fusce massa nunc, sodales in libero eu, dignissim tempus orci. Quisque eget nisi finibus lorem tincidunt efficitur ac at urna. Praesent quis sapien tortor. Vivamus quis varius diam. Aenean ullamcorper interdum risus, et tincidunt risus posuere eu. 
@@ -91,6 +92,7 @@ let response = (text.match(/et/g) || []).length;
 console.log(response)
 
 //Bonus 2
+/*
 let phraseToCheck="A man, a plan, a canal, Panama!";
 let phraseWithoutEspChar = phraseToCheck.split('').replace(/[^a-zA-Z0-9]/g, '');    
 for(i in phraseWithoutEspChar){
@@ -102,3 +104,4 @@ for(i in phraseWithoutEspChar){
         }
     }
 }
+*/
