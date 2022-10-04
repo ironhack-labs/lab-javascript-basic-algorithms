@@ -36,7 +36,6 @@ console.log(`The navigator´s name is ${hacker2}`);
 //         }
 //     }
 // }
-// let equal = 0;
 
 for (let i = 0; i < hacker1.length; i++) {
     if ((hacker1[i].localeCompare(hacker2[i])) === -1 ) {
@@ -51,4 +50,19 @@ for (let i = 0; i < hacker1.length; i++) {
         continue;
     }
     }
+
+/* Bonus 1:
+Go to lorem ipsum generator and:
+
+Generate 3 paragraphs. Store the text in a variable type of string.
+Make your program count the number of words in the string.
+Make your program count the number of times the Latin word et appears. */
+
+let sentence = "O Benfica é grande."
+
+function countWords(str) {
+    return str.split('').length
+}
+
+console.log("Total words:" +countWords(sentence));
 
