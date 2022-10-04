@@ -35,7 +35,36 @@ console.log(reverseNavigator);
 if((hacker2.localeCompare(hacker1)) === 1){
     console.log("The driver's name goes first.")
 }
-else if((hacker1.localeCompare(hacker2)) === 1){
+else if((hacker2.localeCompare(hacker1)) === -1){
+    console.log("Yo, the navigator goes first definitely.")
+}
+else{
+    console.log("What?! You both have the same name?")
+}
+
+/* other solution with FOR 
+
+for (let i = 0; i < hacker1.length; i++) {
+    if ((hacker1[i].localeCompare(hacker2[i])) === -1 ) {
+        console.log("The driver's name goes first") 
+        break;
+    } else if ((hacker1[i].localeCompare(hacker2[i])) === 1 ) { 
+        console.log("Yo, the navigator's name goes first definitely")
+        break;
+    } else if (i === (hacker1.length - 1)) {
+        console.log("What?! You both have the same name?")
+    } else if ((hacker1[i].localeCompare(hacker2[i])) === 0 ) {
+        continue;
+    }
+    }
+*/
+
+/* we should use .toLowerCase because .localeCompare is sensitive to Capital letters
+
+if(hacker2 > hacker1){
+    console.log("The driver's name goes first.")
+}
+else if(hacker 2 < hacker1){
     console.log("Yo, the navigator goes first definitely.")
 }
 else{
