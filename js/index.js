@@ -7,7 +7,7 @@ const hacker1 = "Nosha";
 const hacker2 = "Macadamia";
 // console.log(`The navigator's name is ${hacker2}`); 
 
-// Iteration 2: Conditionals
+// Iteration 2: Conditional
 
 /*
 if (sum1 === sum2) {
