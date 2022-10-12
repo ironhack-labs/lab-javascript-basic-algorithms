@@ -53,13 +53,14 @@ for (let i = 0; i < paragraphCounter.length; i++) {
 
 console.log("Words " + counterOne);
 
-// other method with condition ( the best to me because i dont need to initialise my var counter to 1 to have the good result)
+// other method with condition ( the best to me )
 
 let counterThree = 0;
 
 for (let i = 0; i < paragraphCounter.length; i++) {
   if (paragraphCounter[i] === " ") {
     counterThree++;
+    // console.log("test 1 " + counterThree);
   }
 }
 
@@ -67,7 +68,7 @@ if ((counterThree === 0 && paragraphCounter.length > 0) || counterThree > 0) {
   counterThree++;
 }
 
-console.log("Words " + counterThree);
+console.log("Words  " + counterThree);
 
 // other method with Array.from
 
@@ -85,9 +86,12 @@ console.log("Words: " + counterTwo);
 let counterFour = 0;
 
 for (let i = 0; i < paragraphCounter.length; i++) {
-  if (paragraphCounter[i] === "et") {
+  if (paragraphCounter.indexOf() === "et") {
     counterFour++;
   }
 }
 
 console.log("Words et = " + counterFour);
+
+// I know to do with this method but its not a loop ...
+console.log(paragraphCounter.split("et").length - 1);
