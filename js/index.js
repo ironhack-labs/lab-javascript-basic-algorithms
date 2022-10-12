@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
-let hacker1 = 'John'
+let hacker1 = 'Amandine'
 console.log(`The driver's name is`, hacker1)
 
-let hacker2 = 'Paul'
+let hacker2 = 'john'
 console.log(`The navigator's name is`, hacker2)
 
 // Iteration 2: Conditionals
@@ -36,31 +36,99 @@ for (let i = hacker1.length - 1; i >=0; i--) {
 }
 console.log(hackerNameReverse);
 
-
 // 3.3
 
+// const alphabetObject = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
-const alphabetObject = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+// if (alphabetObject.indexOf(hacker1[0]) < alphabetObject.indexOf(hacker2[0])) {
+//     console.log(`The driver's name goes first.`)
+// }   else if (alphabetObject.indexOf(hacker2[0]) < alphabetObject.indexOf(hacker1[0])) {
+//     console.log("Yo, the navigator goes first definitely.")
+// } else if (alphabetObject.indexOf(hacker2[0]) === alphabetObject.indexOf(hacker1[0])) {
+//     console.log("What?! You both have the same name?")
+// }
 
-if (alphabetObject.indexOf(hacker1[0]) < alphabetObject.indexOf(hacker2[0])) {
-    console.log(`The driver's name goes first.`)
-}   else if (alphabetObject.indexOf(hacker2[0]) < alphabetObject.indexOf(hacker1[0])) {
-    console.log("Yo, the navigator goes first definitely.")
-} else if (alphabetObject.indexOf(hacker2[0]) === alphabetObject.indexOf(hacker1[0])) {
-    console.log("What?! You both have the same name?")
-}
+    if (hacker1.localeCompare(hacker2, 'fr', { sensitivity: 'base' }) === -1) {
+        console.log(`The driver's name goes first.`)
+    } else if (hacker1.localeCompare(hacker2, 'fr', { sensitivity: 'base' }) === -1)  {
+        console.log(`Yo, the navigator goes first definitely.`)
+    } else if (hacker1.localeCompare(hacker2, 'fr', { sensitivity: 'base' }) === 0) {
+        console.log("What?! You both have the same name?")
+    }
 
-// Bonus
+// Bonus 1 numer of words 
 
-let bonusParagraph = 
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac felis nec arcu blandit dignissim. Donec et accumsan eros. Duis tincidunt eget lectus at vulputate. Pellentesque euismod tortor eu luctus commodo. Curabitur mi libero, tempus quis posuere eu, eleifend sit amet elit. Nullam dapibus congue auctor. Etiam mattis enim quis porttitor vulputate.
-Cras aliquam non nunc eu venenatis. Nulla condimentum enim lorem, vel mattis risus lobortis a. Maecenas leo felis, elementum ac libero laoreet, pharetra sodales urna. Nullam vitae arcu eget nibh laoreet fringilla sit amet id mauris. Nulla ultricies velit sed quam venenatis iaculis. Nulla dignissim augue vel neque laoreet, a hendrerit eros fringilla. Sed viverra justo at egestas suscipit. Praesent justo nisi, hendrerit mollis venenatis ut, eleifend vitae eros. Ut tempus sagittis sapien volutpat tincidunt. Proin lobortis nulla eget suscipit auctor. Mauris eu magna nec dui commodo accumsan eu ullamcorper justo.
-Donec vitae lorem viverra, tempus lacus vitae, molestie leo. Ut eleifend ex a laoreet efficitur. Proin congue justo et congue luctus. Duis non libero vel tortor fringilla aliquam. Nam id sem felis. Suspendisse id luctus tellus, at elementum lacus. Suspendisse ligula quam, volutpat sit amet fermentum rutrum, tincidunt sit amet turpis. Aliquam varius, odio ut aliquam vulputate, libero orci pretium dui, at sagittis nibh nibh vel mi. Aliquam rhoncus dictum massa, id tempor velit commodo eget. Nam justo metus, venenatis quis tellus sed, pharetra rhoncus justo. Mauris placerat, enim at fermentum tristique, urna arcu bibendum est, vel lacinia sapien nibh sit amet magna. Integer porta suscipit vehicula. Nunc quis nisi neque. Nulla at rutrum sem.
+let loremParagraph = 
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum eget urna in ullamcorper. Pellentesque facilisis quis nisi vitae posuere. Suspendisse ullamcorper euismod sem, in sodales ipsum sollicitudin convallis. Vivamus eleifend enim a lectus vestibulum laoreet. Phasellus ut ornare nibh, sed fringilla dolor. Integer venenatis nisl et leo fermentum aliquam. Integer venenatis euismod turpis, sed semper nisl sagittis a. Pellentesque eu massa eget ipsum maximus ullamcorper a non velit. Phasellus in urna augue. Suspendisse ut blandit nulla.
+
+Aliquam erat volutpat. Mauris ac mattis eros. Aliquam facilisis erat non mauris fringilla malesuada a in eros. Praesent mattis in ipsum non sagittis. Aliquam egestas, est in ultrices faucibus, nunc tellus pretium purus, fringilla lobortis ex risus sit amet arcu. Aenean velit nisi, euismod in erat et, cursus fermentum eros. Aliquam vitae aliquet turpis, quis interdum erat. Sed non vestibulum tellus. Fusce suscipit suscipit convallis. In sit amet venenatis est. Sed ut arcu vitae arcu tempor consequat. Suspendisse in neque nisl.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam vulputate neque nec risus condimentum cursus. In hac habitasse platea dictumst. Nam mollis iaculis euismod. Nunc rutrum vitae ante eget sollicitudin. Morbi tempus felis vel leo dictum facilisis at quis nibh. Nunc tincidunt metus in consectetur tempor.
 `
 
-let bonusParagraphWords = bonusParagraph.split() 
+console.log(loremParagraph.split(" ").length)
 
-console.log(bonusParagraphWords)
-console.log(bonusParagraphWords.length)
+// Bonus 1 numer of "et"
 
-// // .includes('et')
+let counter = 0
+for (let i = 0; i < loremParagraph.length; i++) {
+    if (loremParagraph[i-1] + loremParagraph[i] + loremParagraph[i+1] + loremParagraph[i+2] === " et " ) {
+        counter =+ 1
+    }
+}
+
+console.log(counter)
+
+
+
+
+
+
+
+let counterBis = 0
+let newArr = loremParagraph.split(" ") 
+
+for (let i = 0; i < newArr.length; i++) {
+    if (newArr[i] === "et" ) {
+        counterBis += 1;
+    }
+}
+
+console.log(counterBis)
+
+let counterTer = 0
+for (let word of newArr) {
+    if (word = "et") {
+        counterTer =+ 1;
+    }
+}
+
+console.log(counterTer)
+
+// Bonus 2
+
+phraseToCheck = "A man, a plan, bonjour a canal, Panama!"
+phraseToCheckPunctuationLess = phraseToCheck.replace(/[.,\/\s#!$%\^&\*;:{}=\-_`~()]/g,``);
+phraseToCheckPunctuationLess = phraseToCheckPunctuationLess.toLowerCase()
+console.log(phraseToCheckPunctuationLess)
+
+let phraseReverse = "";
+for (let i = phraseToCheckPunctuationLess.length - 1; i >=0; i--) {
+    phraseReverse += phraseToCheckPunctuationLess[i]
+}
+phraseReverse = phraseReverse.toLowerCase()
+console.log(phraseReverse)
+
+if (phraseToCheckPunctuationLess === phraseReverse) {
+    console.log('It is a palindrome')
+} else {
+    console.log('It is not a palindrome')
+}
+
+
+
+// var s = "This., -/ is #! an $ % ^ & * example ;: {} of a = -_ string with `~)() punctuation";
+// var punctuationless = s.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+// var finalString = punctuationless.replace(/\s{2,}/g," ");
+
+console.log(phraseToCheckPunctuationLess)
