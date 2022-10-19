@@ -12,6 +12,8 @@ console.log(`The navigator's name is ${hacker2}.`);
 
 // Iteration 2: Conditionals
 
+//Format 1
+
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
 } else if (hacker1.length < hacker2.length) {
@@ -20,7 +22,15 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
 
+//Format 2
+
+hacker1.length > hacker2.length ? console.log(`The driver has the longest name, it has ${hacker1.length} characters.`) : hacker1.length < hacker2.length ? 
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`) : console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+
 // Iteration 3: Loops
+
+//3.1 and 3.2
+
 let hacker1Final = ``;
 
 let hacker2Final = ``;
@@ -36,6 +46,10 @@ for (let i = (hacker2.length - 1); i >= 0; i--) {
 console.log(hacker1Final);
 
 console.log(hacker2Final);
+
+// 3.3
+
+hacker1 < hacker2 ? console.log(`The driver's name goes first.`) : hacker1 > hacker2 ? console.log(`Yo, the navigator goes first definitely.`) : console.log(`What?! You both have the same name?`); 
 
 // Bonus 1:
 
@@ -88,5 +102,3 @@ if (phraseModified === phraseReversed) {
 }else{
     console.log(`This phrase (${phraseToCheck}) is not a Palindrome.`)
 }
-
-
