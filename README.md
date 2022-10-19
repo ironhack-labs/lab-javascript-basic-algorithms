@@ -27,7 +27,7 @@ Ready to start?
   ```javascript
   console.log("I'm ready!");
   ```
-- Save
+- Save 
 - Open a terminal and navigate to the directory where the script file is, then issue the following command `node js/index.js`
 - If you can see the message in the terminal panel (bottom), you are really ready!
 
