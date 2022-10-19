@@ -18,7 +18,8 @@ if (lenName(hacker1) > lenName(hacker2))
   console.log(driverIsLonger(lenName(hacker1)));
 else if (lenName(hacker1) < lenName(hacker2))
   console.log(navigatorIsLonger(lenName(hacker2)));
-else lenName(hacker1) === lenName(hacker2);
-console.log(sameLength(lenName(hacker1)));
+else {
+  console.log(sameLength(lenName(hacker1)));
+}
 
 // Iteration 3: Loops
