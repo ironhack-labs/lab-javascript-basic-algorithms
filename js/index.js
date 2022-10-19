@@ -74,7 +74,7 @@ let phraseModified = ``;
 let phraseReversed = ``;
 
 for (let i = 0; i < phraseToCheck.length; i++) {
-  if (phraseToCheck[i] !== `.` && phraseToCheck[i] !== ` ` && phraseToCheck[i] !== `,` && phraseToCheck[i] !== `!` && phraseToCheck[i] !== `?` ) {
+  if (phraseToCheck[i].toLowerCase() === /[a-z]/) {  
         phraseModified += phraseToCheck[i];
   }   
 }
