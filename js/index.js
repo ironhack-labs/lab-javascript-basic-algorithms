@@ -58,15 +58,3 @@ console.log(totalEt)
 
 // palindrome
 
-const phraseToCheck = "No 'x' in Nixon"
-let phraseReversed = ""
-
-for (i = phraseToCheck.length - 1; i >= 0 ; i--) {
-  phraseComp = phraseReversed += phraseToCheck[i]
-  if (phraseComp === phraseReversed) {
-    console.log(`${phraseToCheck} is a palindrome`)
-    break;
-  } else {
-    console.log(`This is not a palindrome`)
-  }
-}
