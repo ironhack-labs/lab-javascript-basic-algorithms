@@ -7,3 +7,13 @@ let etCount = 0
 arrParagrafo.map( x =>  x = `et`? etCount = etCount + 1 : 0)
 
 console.log(etCount);
+
+// bonus 2
+
+let phraseToCheck = prompt(`Palindrome check: `)
+
+if (phraseToCheck.toUpperCase() === phraseToCheck.toUpperCase().split("").reverse().join("")){
+    console.log('YES')
+} else {
+    console.log('YESN`T')
+}
