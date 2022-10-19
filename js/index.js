@@ -82,37 +82,38 @@ console.log(etCounter);
 
 let phraseToCheck = "Storkower strasse"
 
-function palindromeChecker(word) {
-    word = word.toLowerCase();
-    word = word.replaceAll(",", "");
-    word = word.replaceAll("!", "");
-    word = word.replaceAll(".", "");
+// function palindromeChecker(word) {
+//     word = word.toLowerCase();
+//     word = word.replaceAll(",", "");
+//     word = word.replaceAll("!", "");
+//     word = word.replaceAll(".", "");
+//     word = word.replaceAll("?", "");
 
-    word = word.split(" ").join("");
+//     word = word.split(" ").join("");
 
-    let wordArr = word.split("");
-    let reverseArr = wordArr.reverse();
+//     let wordArr = word.split("");
+//     let reverseArr = wordArr.reverse();
 
-    let reversedWord = reverseArr.join("");
+//     let reversedWord = reverseArr.join("");
 
-    return word === reversedWord;
-}
+//     return word === reversedWord;
+// }
 
 /* -----------------------------------------------------------*/
 
 
 function palindromeCheckerLooped (word) {
-    let trimmedWord = word.replace(/[^0-9a-z]/gi, '').toLowerCase().split("");
-    trimmedWord = trimmedWord.join("");
-
+    let trimmedWord = word.replace(/[^0-9a-z]/gi, '').toLowerCase();
     let trimmedWordReverse= "";
     for(let i = trimmedWord.length-1; i >= 0; i--) {
         trimmedWordReverse += trimmedWord[i];
     }
     return trimmedWord === trimmedWordReverse;
+
+    // .split("")
+    // trimmedWord = trimmedWord.join("");
 }
-palindromeChecker ("Amor, Roma!");
-palindromeCheckerLooped ("Amor, Roma!");
+
 
 
 
