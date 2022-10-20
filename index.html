@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    .
+    <script>
+
+        const hacker1 = prompt("the navigator's name is")
+
+
+        const hacker2 = prompt("the driver's name is")
+        console.log(`the driver's name is ${hacker2}`)
+        console.log(`the navigator's name is ${hacker1}`)
+
+        if (hacker1.length > hacker2.length) {
+            console.log(`the navigator has the longest name: ${hacker1}, it has ${hacker1.length}`)
+        } else if (hacker1.length < hacker2.length) {
+            console.log(`the driver has the longest name: ${hacker2}, it has ${hacker2.length}`)
+        } else {
+            console.log(`Wow, you both have equally long names, ${hacker1.length}`)
+        }
+
+        console.log(hacker2.toUpperCase().split(" ")[0])
+        console.log(hacker1.split("").reverse().join(""))
+
+
+        const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur esse minima eos a, aspernatur quisquam veniam et accusamus voluptatem animi veritatis libero perspiciatis molestias placeat unde dolores. Vel, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur esse minima eos a, aspernatur quisquam veniam et accusamus voluptatem animi veritatis libero perspiciatis molestias placeat unde dolores. Vel, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur esse minima eos a, aspernatur quisquam veniam et accusamus voluptatem animi veritatis libero perspiciatis molestias placeat unde dolores. Vel, cumque."
+
+        let count = 0
+        let arrayText = text.split(" ")
+        for (let i = 0; i < arrayText.length - 1; i++) {
+            if (arrayText[i] === "et") {
+                count += 1
+            }
+        }
+        console.log(count)
+
+
+        function phraseToCheck(text) {
+            text.split(" " "/\w/")
+        }
+
+    </script>
+</body>
+
+</html>
