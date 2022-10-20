@@ -18,7 +18,7 @@ let nome = "";
 for (let i = 0; i < hacker1.length; i++) {
     nome += `${hacker1[i]} `;
 }
-console.log(nome);
+console.log(nome.toLocaleUpperCase());
 
 nome = "";
 for (let i = hacker1.length -1; i >= 0; i--) {
