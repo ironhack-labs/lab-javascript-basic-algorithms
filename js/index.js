@@ -45,6 +45,16 @@ const navigatorsName = "Josip";
   }
 
 
+Bonus
+1
+t wordCount = 1;
+for(let i = 0; i < lorem.lenght -1; i++) {
+if (lorem[i] === '') {
+  wordCount++;
+}
+
+
+
 
 
 
