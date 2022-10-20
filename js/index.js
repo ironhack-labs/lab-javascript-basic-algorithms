@@ -5,6 +5,7 @@ console.log("the driver's name is "+ hacker1)
 
 const hacker2= "Someone"
 console.log("the navigator's name is "+hacker2)
+
 // Iteration 2: Conditionals
 if (hacker1.length>hacker2.length){
     console.log("The driver has the longest name!, it has "+ hacker1.length+" characters")
@@ -50,15 +51,23 @@ else {
 // Bonus 1
 const lorem= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor, magna sit amet imperdiet feugiat, tortor lacus interdum dui, quis euismod nunc ligula et tellus. Quisque mollis ullamcorper dapibus. Duis sit amet magna a justo scelerisque tincidunt vel at sapien. Proin ac magna mattis risus imperdiet egestas. Suspendisse nulla felis, luctus eget finibus quis, ultricies et metus. Vivamus pharetra odio nec ex rutrum, a auctor urna pulvinar. Duis at auctor mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin suscipit mauris vitae massa auctor hendrerit. Morbi ultrices interdum erat, id cursus urna sollicitudin in. Maecenas finibus arcu vel mi interdum condimentum. Etiam vitae metus sagittis, sollicitudin odio nec, rhoncus dui. Mauris ac lacinia elit. Ut ac ultricies lorem, efficitur rutrum mi. Proin a ante vitae lacus lacinia eleifend. Fusce nec nibh sit amet dolor dapibus vestibulum id eu nisi. Nunc sed risus nec metus sodales sodales vitae quis justo. Aliquam laoreet sagittis venenatis. Nunc finibus et ligula eu aliquet. Aliquam nec leo a quam bibendum aliquet eu id risus. Suspendisse ut sodales nulla. Nam tempor euismod cursus. Nam magna erat, ullamcorper quis enim id, ullamcorper mattis tortor. Nullam a vulputate dui. Duis placerat ex dui, blandit dictum elit viverra nec. Proin ut vulputate justo. Morbi a tempor ex. Aenean porta arcu leo, quis consectetur ligula ultricies quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus interdum arcu mi, eu posuere nunc imperdiet ac. Pellentesque tincidunt mollis interdum. Nullam auctor egestas orci nec laoreet. Nam aliquam, mi quis vestibulum laoreet, mauris nulla pretium urna, nec feugiat orci urna ut nulla. Maecenas lacinia ornare urna pellentesque condimentum. Sed bibendum velit in commodo tincidunt. Pellentesque nec aliquet mi."
 
-const numWords = lorem.split(' ')
+
+/* it starts with 1 because we are counting the spaces to deduce the number of words. the first word doesnt have a space */
+const numWords = 1
+for (let i=0; i<lorem.length -1; i++){
+    if (lorem[i] === " "){
+        numWords ++;
+    }
+} 
+console.log(numWords)
 
 let numEt= 0
 
-console.log("the number of words in lorem are "+numWords.length)
+console.log("the number of words in lorem are "+lorem.length)
 
-for (let i=0; i<numWords.length; i++){
+for (let i=0; i<lorem.length; i++){
     
-    if (numWords[i] === "et"){
+    if (lorem[i] + lorem [i+1] === " et"){
         numEt++;
     }
 }
@@ -73,7 +82,7 @@ let alphabetic = ""
 let check = ""
 
 for (let i= 0; i<phraseToCheck.length; i++){
-    if (phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z" ||phraseToCheck[i] >= "A" && phraseToCheck[i] <= "Z" ){
+    if (phraseToCheck[i] >= "a" && phraseToCheck[i] <= "z" || phraseToCheck[i] >= "A" && phraseToCheck[i] <= "Z" ){
         alphabetic += phraseToCheck[i]
     }
 }
