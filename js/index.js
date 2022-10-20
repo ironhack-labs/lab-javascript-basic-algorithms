@@ -82,6 +82,14 @@ if (navigatorCount > driverCount) {
 const lorem3 =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla odio elit, vel scelerisque ipsum pharetra sed. Duis porta felis lectus, eget malesuada velit tristique vel. Praesent sit amet purus quis lectus scelerisque laoreet. Quisque fringilla, diam eu ultrices feugiat, massa tellus eleifend ante, eu gravida erat diam at metus. Aliquam suscipit eleifend justo vitae sodales. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin lacinia tempus risus. Duis eget convallis orci. Donec a blandit enim, sagittis sollicitudin risus. Fusce ligula neque, posuere ultricies dignissim a, volutpat non erat. Pellentesque in ultricies sapien. Proin nisi enim, aliquam sit amet lorem vel, ultrices lacinia massa. Morbi congue orci neque. Quisque eget dolor fringilla, venenatis urna at, mollis mi. Aenean sem justo, blandit id bibendum sit amet, pharetra et orci. Praesent a urna a erat interdum venenatis vitae sit amet risus. Proin vitae risus ac elit malesuada pretium at vitae urna. Nullam consectetur accumsan elementum. Integer nec tempor lacus. Fusce accumsan, nunc vitae viverra varius, erat nibh finibus mauris, a congue est mi blandit lorem. Donec aliquet dolor tincidunt nibh placerat, ac aliquam velit semper. Morbi nec elit egestas, accumsan quam non, consectetur ante. Pellentesque sodales eleifend odio a commodo. Aliquam posuere dolor diam, at tristique leo congue a. Duis non egestas nibh. Donec volutpat lacus et quam pulvinar blandit. Etiam auctor convallis nibh, et posuere lorem volutpat in. Maecenas eget finibus nibh, non porta eros. Pellentesque sagittis molestie odio a lacinia. Praesent dapibus eu ipsum quis interdum. Quisque ornare nisl gravida mauris tincidunt, vel tempor nisi auctor. Fusce vel mi laoreet, auctor dui sit amet, vestibulum dui. Donec fringilla eu justo eu consectetur. Ut augue enim, tempor ac tortor quis, faucibus accumsan diam. Ut eu ex id dolor luctus interdum. Sed et metus eget lorem ultrices vulputate in eu ipsum. Curabitur in tellus hendrerit leo cursus lobortis a non tortor. Aenean sapien libero, gravida a pulvinar quis, mattis quis neque.";
 console.log(lorem3.length);
+
+let wordCount = 1;
+for (let let i = 0; i < lorem3.length; i++) {
+  if(lorem3 [i] === '') {
+    wordCount++;
+  }
+}
+
 let count = 0;
 for (let i = 0; i < lorem3.length; i++) {
   const twoChars = lorem3[i] + lorem3[i + 1];
