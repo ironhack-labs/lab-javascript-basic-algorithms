@@ -26,7 +26,17 @@ if (driver.lenght> navigator.lenght) {
  console.log (driver.toUpperCase().split("").join(" "));
  console.log (navigator.split("").reverse().join(""));
 
+ //'A' < 'B'
+ //'driver' < 'navigator'
+
+ //const palindrome = "A man, a plan, a canal, Panama!"
+ //const regex = /[Â-Za-z]/
+
+ //const plainWord = palindrome.replace(regex, "").toLowerCase()
+
+ //console.log("ESTO HACE EL REGEX ==>", plainWord
  
+
 
     
 
