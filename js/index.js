@@ -82,6 +82,9 @@ function isPalindrome(str){
   }
   
   isPalindrome("Race, car!");
+
+
+// instead of going through each alphabet, use regular expression: /[^A-Za-z0-9]/g to represent everything that's not alphabets?
   
 
 
