@@ -16,9 +16,13 @@ if (hacker1.length > hacker2.length) {
 //Iteration 3: Loops
 let nome = "";
 for (let i = 0; i < hacker1.length; i++) {
-    nome += `${hacker1[i].toUpperCase()} `;
+    if ( i !== hacker1.length - 1) {
+        nome += `${hacker1[i].toUpperCase()} `;
+    } else {
+        nome += `${hacker1[i].toUpperCase()}`;
+    }
 }
-console.log(nome);
+console.log(nome, nome.length);
 
 nome = "";
 for (let i = hacker1.length -1; i >= 0; i--) {
