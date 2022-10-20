@@ -1,4 +1,3 @@
-
 // Iteration 1: Names and Input
 const hacker1 = "vika";
 console.log("The driver's name is", hacker1);
@@ -29,10 +28,9 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 }
 console.log(revNav);
 
-
 //bonus 1
 //1
-const lorem = "Lorem ipsum dolor et. amet, consectetur adipiscing et, sed et eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi et aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit et voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+const lorem = "Lorem ipsum dolor et. am Et, Et consectetur adipiscing et, sed et eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi et aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit et voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 const arr = lorem.split(" ");
 console.log(arr);
@@ -41,54 +39,51 @@ console.log(arr.length);
 //2
 let count = 0;
 for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === "et") {
+    if (arr[i].toLowerCase().replace(/[^a-z]/g, "") === "et") {
         count++;
     }
 }
 console.log(count);
 
-//or
-let co = 0;
-let j = 0;
-
-for (i = 0; i < lorem.length; i++) {
-    if (lorem[i] === "e") {
-        j++; //1
-        if (lorem[i+j] === "t") { 
-            co++;
-        } 
-    }
+//3
+if (hacker1 < hacker2) {
+    console.log("The driver's name goes first.");
 }
-console.log(co);
-
-//bonus 2
-const phraseToCheck = "No 'x' in Nixon";
-
-let revPhrase = "";
-for (let i = phraseToCheck.length - 1; i >= 0; i--) { //to reverse
-    revPhrase += phraseToCheck[i].toLowerCase();
+else if (hacker1 > hacker2) {
+    console.log("Yo, the navigator goes first definitely.");
 }
-let l = "";
-for (let i = 0; i < revPhrase.length; i++) {
-    if(revPhrase[i] >= 'a' && revPhrase[i] <= 'z') { //to select alphabetical
-        l += revPhrase[i];
-    }
-}
-let v = "";
-for (let i = 0; i < phraseToCheck.length; i++) {
-    if(phraseToCheck[i] >= 'a' && phraseToCheck[i] <= 'z' || phraseToCheck[i] >= 'A' && phraseToCheck[i] <= 'Z') {
-        v += phraseToCheck[i].toLowerCase();
-    }
-}
-
-if (l === v) {
-    console.log("this is a palindrom!");
-} 
 else {
-    console.log("this is not a palindrom!");
+    console.log("What?! You both have the same name?");
 }
 
-console.log(revPhrase);
-console.log(v);
-console.log(l);
+//bonus 2 long 
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+const lowPhraseToCheck = phraseToCheck.toLowerCase();
+let alphaNorm = "";
+for (let i = 0; i < lowPhraseToCheck.length; i++) {
+    if ((lowPhraseToCheck[i] >= 'a' && lowPhraseToCheck[i] <= 'z')) { //to select alphabetical 
+        alphaNorm += lowPhraseToCheck[i];
+    }
+}
+let revPhrase = "";
+for (let i = lowPhraseToCheck.length - 1; i >= 0; i--) { //to reverse
+    revPhrase += lowPhraseToCheck[i];
+}
+let alphaRev = "";
+for (let i = 0; i < revPhrase.length; i++) {
+    if (revPhrase[i] >= 'a' && revPhrase[i] <= 'z') { //to select alphabetical in reversed one
+        alphaRev += revPhrase[i];
+    }
+}
+
+console.log(alphaRev === alphaNorm ? "this is a palindrom!" : "this is not a palindrom!");
+
+//or bonus 2 short
+
+const modPhraseToCheck = phraseToCheck.toLowerCase().replace(/[^a-z]/g, "");
+let modRev = "";
+for (let i = modPhraseToCheck.length - 1; i >= 0; i--) { //to reverse already alpha phrase
+    modRev += modPhraseToCheck[i];
+}
+console.log(modRev === modPhraseToCheck ? "this is a palindrom!" : "this is not a palindrom!"); 
 
