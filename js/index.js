@@ -43,7 +43,7 @@ for (let i = (hacker2.length - 1); i >= 0; i--) {
     hacker2Final += hacker2[i];
 }
 
-console.log(hacker1Final);
+console.log(hacker1Final.trimEnd());
 
 console.log(hacker2Final);
 
