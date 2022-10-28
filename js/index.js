@@ -19,7 +19,6 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 // Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
-let hacker1 = "Nicole";
 let newName = hacker1.toUpperCase();
 let finalDriverName = "";
 
@@ -30,7 +29,6 @@ console.log(finalDriverName.trim());
 
 //  Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 
-let hacker2 = "Dhruv";
 let reverseName = [];
 
 for (i=0; i < hacker2.length; i++) {
@@ -50,16 +48,13 @@ console.log(reverseName.toString().replaceAll(',', ''));
 // Yo, the navigator goes first definitely.
 // What?! You both have the same name?
 
-let hacker1 = "Nicole";
-let hacker2 = "Dhruv";
-
 let hackerArr = [hacker1, hacker2];
 
 console.log(hackerArr.sort());
 
 if (hacker1 == hacker2) {
     console.log(`What?! You both have the same name?`)
-} else if (hacker1 || hacker2 == "") {
+} else if ((hacker1 || hacker2) == "") {
     console.log(`Add driver and navigator names.`)
 } else if (hackerArr[0]== hacker1) {
     console.log(`The driver's name goes first.`)
