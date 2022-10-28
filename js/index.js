@@ -34,3 +34,26 @@ for (let driversName of hacker1) {
 }
 
 // Print the characters of the navigators name in reverse order
+
+for (let i = hacker2.length; i >= 0; i--) {
+  let newNav = hacker2.slice(i - 1, i);
+  console.log(newNav);
+}
+
+// Depending on the lexicographic order of the strings, print
+
+if (hacker1.localeCompare(hacker2) === -1) {
+  console.log("The driver's name goes first");
+} else if (hacker1.localeCompare(hacker2) === 1) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
+
+// Bonus:
+// Make your program count the number of words in the string.
+
+let loremIpsum =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat ex ac sem vestibulum, eu dapibus turpis eleifend. Vestibulum sollicitudin tortor quis pellentesque elementum. Ut at odio et nulla tincidunt sollicitudin volutpat nec justo. Suspendisse nec imperdiet augue, eu dapibus metus. Fusce vel aliquam lacus. Mauris quis orci sit amet lorem efficitur tincidunt sed id dolor. Aenean placerat augue ut convallis tempor. Phasellus hendrerit nec felis eget rutrum. Vestibulum at feugiat lorem, nec volutpat elit. Curabitur in odio hendrerit, venenatis diam sed, aliquam felis. Cras ultrices tempus lorem, vel venenatis mi condimentum eu. Nunc eget auctor orci, sed condimentum tellus. Suspendisse dignissim gravida consequat. Ut posuere eget arcu quis rhoncus. Nunc sit amet porttitor odio. Donec gravida, tortor eget elementum dictum, turpis mauris fermentum mauris, aliquam pretium mi nulla sed nunc. ";
+
+// Make your program count the number of times the Latin word et appears.
