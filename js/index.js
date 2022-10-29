@@ -6,6 +6,7 @@ console.log(`The drive's name is ${hacker1}`);
 
 let hacker2 = "Pedro"
 console.log(`The navigator's name is ${hacker2}`);
+console.log(`The navigator's name is ${hacker2}`);
 
 
 
