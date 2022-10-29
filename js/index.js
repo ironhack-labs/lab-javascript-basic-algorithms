@@ -19,7 +19,13 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 //P A B L O (3.1)
-console.log(`${hacker1[0].toUpperCase()} ${hacker1[1].toUpperCase()} ${hacker1[2].toUpperCase()} ${hacker1[3].toUpperCase()} ${hacker1[4].toUpperCase()}`)
+const driverUpp = hacker1.toUpperCase()
+
+//VERSION PRO
+console.log(driverUpp.split('').join(' '))
+
+//VERSION MENOS PRO
+console.log(`${driverUpp[0]} ${driverUpp[1]} ${driverUpp[2]} ${driverUpp[3]} ${driverUpp[4]}`)
 
 //nauJ (3.2)
 console.log(`${hacker2[3]}${hacker2[2]}${hacker2[1]}${hacker2[0]}`)
