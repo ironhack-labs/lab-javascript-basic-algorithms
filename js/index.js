@@ -15,27 +15,40 @@ else{
   console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
 }
 
+//3.1
+let driversName = "Fernandito"
+let navegatorsName = "Iñaki"
+let result = ''
+let casual= " "
 
-// Iteration 3: Loops
+for (let i = 0; i < driversName.length; i++) {
+  let nameUp = driversName.toUpperCase()
+  result += nameUp[i] + " " 
+}
+console.log(result.trim())
+
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
+
+for (let i = navegatorsName.length -1; i >= 0; i--) {
+  let nameUp = navegatorsName.toUpperCase()
+  casual += nameUp[i] + " " 
+}
+
+console.log(casual.trim())
 
 
+/*3.3 Depending on the lexicographic order of the strings, print:
+- The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! You both have the same name?
+  */
 
-
-
-
-
-
-/*Iteration 1: Names and Input
-
-  1.1 Create a variable `hacker1` with the driver's name. <br>
-  1.2 Print `"The driver's name is XXXX"`.<br>
-  1.3 Create a variable `hacker2` with the navigator's name.<br>
-  1.4 Print `"The navigator's name is YYYY"`.
-
-### Iteration 2: Conditionals
-  2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
-  <br>
-	  - `The driver has the longest name, it has XX characters.` or <br>
-	  - `It seems that the navigator has the longest name, it has XX characters.` or <br>
-	  - `Wow, you both have equally long names, XX characters!`.
-*/
+if (driversName.localeCompare(navegatorsName) === -1) {
+  console.log(`the ${driversName} goes first`)
+}
+else if(driversName.localeCompare(navegatorsName) === 1) {
+  console.log(`yo,${navegatorsName} goes first definitely`)
+}
+else{
+  console.log('What?! You both have the same name?')
+}
