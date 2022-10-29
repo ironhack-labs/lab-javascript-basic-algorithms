@@ -14,7 +14,7 @@ else console.log( `Wow, you both have equally long names, ${hacker1.length} char
 // Iteration 3: Loops
 let res = '';
 for (const char of hacker1) res += char.toUpperCase() + ' '
-console.log(res)
+console.log(res.trim())
 
 res = '';
 for (const char of hacker2) res = char + res;
@@ -37,6 +37,11 @@ const words = lorem.split(' ')
 const numWords = words.length
 console.log(`There are ${numWords} words in the paragraphs`);
 
+// I initially used regex but I guess that was missing the point of the exercise.
+// but since I liked my solution I left it in.
+// const numEts = lorem.match(/(^|[^\w])et([^\w]+|$)/ig).length
+// console.log(numEts);
+
 count = 0
 for (const word of words) {
     if (
@@ -47,10 +52,6 @@ for (const word of words) {
 }
 console.log(`There are ${count} "et"s in the paragraphs`)
 
-// I initially used regex but I guess that was missing the point of the exercise.
-// but since I liked my solution I left it in.
-// const numEts = lorem.match(/(^|[^\w])et([^\w]+|$)/ig).length
-// console.log(numEts);
 
 // Bonus2
 
