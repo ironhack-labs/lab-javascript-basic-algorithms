@@ -25,3 +25,32 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 
+/* 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N" */
+
+let result = ''
+for (let i = 0; i < hacker1.length ; i++){
+  let upperName = hacker1.toUpperCase();
+  result += upperName[i] + " ";
+}
+console.log(result.trim());
+
+/* 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ" */
+
+let result = ''
+for (let i = hacker2.length -1 ; i >= 0; i--){
+  result += hacker2[i];
+}
+console.log(result);
+
+/* 3.3 Depending on the lexicographic order of the strings, print:
+- The driver's name goes first.
+- Yo, the navigator goes first definitely.
+- What?! You both have the same name? */
+
+if (hacker1.localeCompare(hacker2) === -1) {
+  console.log (`The driver's name goes first`)
+} else if (hacker1.localeCompare(hacker2) === 1) {
+  console.log (`Yo, the navigator goes first definitely.`)
+} else {
+  console.log (`What?! You both have the same name?`)
+}
