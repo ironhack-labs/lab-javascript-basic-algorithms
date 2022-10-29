@@ -22,7 +22,7 @@ if (hacker1.length > hacker2.length) {
 let newName = hacker1.toUpperCase();
 let finalDriverName = "";
 
-for (i=0; i< newName.length; i++) {
+for (let i=0; i< newName.length; i++) {
     finalDriverName += newName[i] + " ";
 };
 console.log(finalDriverName.trim());
@@ -31,7 +31,7 @@ console.log(finalDriverName.trim());
 
 let reverseName = [];
 
-for (i=0; i < hacker2.length; i++) {
+for (let i=0; i < hacker2.length; i++) {
     reverseName.unshift(hacker2[i]);
 };
 console.log(reverseName.toString().replaceAll(',', ''));
@@ -64,3 +64,21 @@ if (hacker1 == hacker2) {
     console.log(`Add driver and navigator names.`)
 };
 
+// Bonus 1:
+// Go to lorem ipsum generator and:
+// Generate 3 paragraphs. Store the text in a variable type of string.
+// Make your program count the number of words in the string.
+// Make your program count the number of times the Latin word et appears.
+
+
+// Bonus 2:
+// Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+/* "A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".*/
