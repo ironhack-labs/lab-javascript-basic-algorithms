@@ -79,3 +79,19 @@ for (i = 0; i < textArr.length; i++) {
 }
 
 console.log(count)
+
+
+// BONUS 2
+
+const phraseToCheck = "A man, a plan, a canal, Panama!"
+const phraseToCheck2 = phraseToCheck.replace(/[\s,.!¡¿?:;‘]/g, "").toLowerCase()
+console.log(phraseToCheck2)
+
+let potentialPalindrome = ""
+for(i = phraseToCheck2.length - 1; i >= 0; i--) {
+  potentialPalindrome += phraseToCheck2[i]
+}
+
+if (potentialPalindrome === phraseToCheck2) {
+  console.log("Palindrome!")
+}
