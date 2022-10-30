@@ -67,16 +67,24 @@ if (hacker1 == hacker2) {
 // Bonus 1:
 // Go to lorem ipsum generator and:
 // Generate 3 paragraphs. Store the text in a variable type of string.
-// Make your program count the number of words in the string.
-// Make your program count the number of times the Latin word et appears.
+
 
 let paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit tortor vel nunc semper lacinia. Cras id faucibus risus. Ut eu massa eget turpis vulputate pretium. Vestibulum tincidunt dapibus odio, quis iaculis magna venenatis non. Vivamus faucibus metus ac finibus laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam scelerisque consectetur dapibus. In eros sapien, ultrices at metus et, facilisis sagittis quam. Curabitur nec ex finibus, elementum ligula vitae, ornare eros. Aliquam erat volutpat. Quisque et nisi ipsum. Nulla vulputate non erat in laoreet. Ut vitae viverra nisl. Nulla eu ipsum sit amet erat mollis lacinia. Vestibulum sodales auctor orci et vestibulum. Integer accumsan enim nulla, at varius eros facilisis quis. Mauris lobortis aliquet hendrerit. Etiam quis erat quis velit rutrum volutpat vel et eros. Mauris luctus rutrum iaculis. Nullam rhoncus euismod odio, sed eleifend tortor iaculis vel. Nam euismod urna eu diam laoreet accumsan. Curabitur eget ullamcorper velit. Donec gravida sagittis aliquam. Nam eu dui mi. Vestibulum laoreet, metus sit amet pharetra pulvinar, massa est sodales arcu, ac pulvinar lacus risus vitae nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin condimentum dictum augue. Nullam vehicula dolor quis dui blandit vehicula. Duis semper lectus tincidunt dolor faucibus, id porttitor mauris hendrerit. Nulla quis est eu ex mattis rutrum. Donec eget lacus porttitor, placerat risus vitae, egestas massa.";
 
+// Make your program count the number of words in the string.
 
 function countWords(para) {
     let newString = para.split(" ");
     return newString.length; 
 };
+
+// Make your program count the number of times the Latin word et appears.
+
+function countLatinWords(para) {
+    let newArr = para.match(/et/gi);
+    return newArr.length;
+};
+
 
 // Bonus 2:
 // Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
