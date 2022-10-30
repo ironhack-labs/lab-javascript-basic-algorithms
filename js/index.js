@@ -17,13 +17,31 @@ if (hacker1.length > hacker2.length) {
     } else {console.log(`Both have equally long names, ${hacker2.length} characters!`)}
 
 // Iteration 3: Loops
+//3.1
 
 let capitalName = hacker1.toUpperCase()
 let result = ''
-//console.log(capitalName)
-
 
 for (let i = 0; i < capitalName.length; i ++) {
   result += capitalName[i]+ ' '
 }
 console.log(result)
+
+//3.2
+
+let reverseName = ''
+let lastIndex = hacker2.length - 1
+
+for (let i = lastIndex; i >= 0 ; i --) {
+  reverseName += hacker2[i]
+}
+console.log(reverseName)
+
+//3.3
+
+if (hacker1 > hacker2) {
+  console.log ("The driver's name goes first")
+} else if (hacker2 > hacker1) {
+  console.log ("Yo, the navigator goes first definitely")
+} else { console.log ("What?! You both have the same name?")
+       }
