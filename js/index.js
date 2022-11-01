@@ -83,6 +83,43 @@ for (let i = 0; i < randomParragraph.length; i++) {
 
 console.log(countEt)
 
+// BONUS 2
+let phraseToCheck = "A man, a plan, a canal, Panama!"
+
+let phraseForward = ""
+let phraseBackwards = ""
+
+//Le saco carácteres especiales y mayúsculas
+phraseToCheck = phraseToCheck.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
+
+//Itero frase de adelante para atrás
+for (let i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i] === " " || phraseToCheck[i] === ",") {
+        continue
+    }
+    else {
+        phraseForward += phraseToCheck[i]
+    }
+}
+
+//Itero frase de atrás para adelante
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+    if (phraseToCheck[i] === " " || phraseToCheck[i] === ",") {
+        continue
+    }
+    else {
+        phraseBackwards += phraseToCheck[i]
+    }
+}
+
+//Chequeo si es un palíndromo
+if (phraseForward === phraseBackwards) {
+    console.log(`This value is a Palindrome!`)
+    } else {
+        console.log (`This value is NOT a Palindrome!`)
+        }
+
+
 
 
 
