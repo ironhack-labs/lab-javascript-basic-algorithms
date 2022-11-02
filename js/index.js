@@ -38,8 +38,12 @@ console.log(printSeparatedName);
 
 //  3.2 Print all the characters of the navigator's name, in reverse order. 
  
+let nameReverse = "";
 
-
+for (let i = hacker1.length - 1; i >= 0; i--){
+  nameReverse += hacker1[i]
+}
+console.log(nameReverse)
   
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
     - `The driver's name goes first.` <br>
