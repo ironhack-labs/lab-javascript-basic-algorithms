@@ -33,7 +33,7 @@ console.log(capsName)
 console.log(reversedName)
 
 
-function getNamesOrder (name1, name2) {
+function lexOrder (name1, name2) {
 
     let comparison = name1.localeCompare(name2);
 
@@ -47,6 +47,8 @@ function getNamesOrder (name1, name2) {
 }
 // Function tests
 // --------------
-// console.log(getNamesOrder("Ana", "Pablo"))
-// console.log(getNamesOrder("Zola", "Pablo"))
-// console.log(getNamesOrder("Ana", "Ana"))
+// console.log(lexOrder("Ana", "Pablo"))
+// console.log(lexOrder("Zola", "Pablo"))
+// console.log(lexOrder("Ana", "Ana"))
+
+console.log(lexOrder(hacker1, hacker2))
