@@ -23,3 +23,30 @@ if (hacker1Len > hacker2Len) {
 } 
 
 // Iteration 3: Loops
+
+let capsName, reversedName 
+
+capsName = hacker1.toUpperCase().split("").join(" ");
+reversedName = hacker1.split("").reverse().join("");
+
+console.log(capsName)
+console.log(reversedName)
+
+
+function getNamesOrder (name1, name2) {
+
+    let comparison = name1.localeCompare(name2);
+
+    if (comparison < 0) {
+        return "The driver's name goes first.";
+    } else if (comparison == 0) {
+        return "What?! You both have the same name?";
+    } else {
+        return "Yo, the navigator goes first definitely.";
+    }
+}
+// Function tests
+// --------------
+// console.log(getNamesOrder("Ana", "Pablo"))
+// console.log(getNamesOrder("Zola", "Pablo"))
+// console.log(getNamesOrder("Ana", "Ana"))
