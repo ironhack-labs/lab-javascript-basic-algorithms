@@ -69,3 +69,32 @@ let et = textInLatin.split(' et ').length -1 ;
 console.log(et)
 
 //Bonus 2
+
+let phraseToCheck = "race car";
+let backwardsPhrase = ""
+for(let i = (phraseToCheck.length - 1); i >= 0; i--){
+   backwardsPhrase += phraseToCheck[i]
+};
+
+let lowerCasePhrase = backwardsPhrase.toLowerCase()
+console.log(lowerCasePhrase)
+
+let comparePhrase = "";
+for (char of lowerCasePhrase ){
+    if ( char !== "," && char !== " "){
+        comparePhrase += char;
+    }
+}
+
+let secondComparePhrase = "";
+for(char of phraseToCheck.toLowerCase()){
+    if ( char !== "," && char !== " "){
+        secondComparePhrase += char;
+    }
+}
+
+console.log(comparePhrase)
+console.log(secondComparePhrase)
+if( comparePhrase === secondComparePhrase){
+    console.log("WE HAVE A PALINDROME!!")
+}
