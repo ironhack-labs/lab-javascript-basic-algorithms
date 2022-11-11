@@ -1,4 +1,6 @@
 // Iteration 1: Names and Input
+// ----------------------------
+
 let hacker1, hacker2;
 
 hacker1 = "Ana";
@@ -8,6 +10,7 @@ console.log("The driver's name is "+ hacker1)
 console.log("The navigator's name is "+ hacker2)
 
 // Iteration 2: Conditionals
+// -------------------------
 
 let hacker1Len, hacker2Len;
 
@@ -23,6 +26,7 @@ if (hacker1Len > hacker2Len) {
 } 
 
 // Iteration 3: Loops
+// ------------------
 
 let capsName, reversedName 
 
@@ -33,7 +37,18 @@ console.log(capsName)
 console.log(reversedName)
 
 
-function lexOrder (name1, name2) {
+if (hacker1 > hacker2) {
+    console.log("The driver's name goes first.")
+}
+else if (hacker1 < hacker2) {
+    console.log("Yo, the navigator goes first definitely.")
+}
+else {
+    console.log("What?! You both have the same name?")
+} 
+
+
+/* function lexOrder (name1, name2) {
 
     let comparison = name1.localeCompare(name2);
 
@@ -45,10 +60,12 @@ function lexOrder (name1, name2) {
         return "Yo, the navigator goes first definitely.";
     }
 }
-// Function tests
-// --------------
-// console.log(lexOrder("Ana", "Pablo"))
-// console.log(lexOrder("Zola", "Pablo"))
-// console.log(lexOrder("Ana", "Ana"))
 
 console.log(lexOrder(hacker1, hacker2))
+
+TESTS
+-----
+console.log(lexOrder("Ana", "Pablo"))
+console.log(lexOrder("Zola", "Pablo"))
+console.log(lexOrder("Ana", "Ana")) */
+
