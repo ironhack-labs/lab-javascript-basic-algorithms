@@ -71,20 +71,27 @@ console.log(et)
 //Bonus 2
 
 let phraseToCheck = "race car";
+
+//I put it backwards
 let backwardsPhrase = ""
 for(let i = (phraseToCheck.length - 1); i >= 0; i--){
    backwardsPhrase += phraseToCheck[i]
 };
 
+//I put it in lowercase
+
 let lowerCasePhrase = backwardsPhrase.toLowerCase()
 console.log(lowerCasePhrase)
 
+//I take away the , and the spaces
 let comparePhrase = "";
 for (char of lowerCasePhrase ){
     if ( char !== "," && char !== " "){
         comparePhrase += char;
     }
 }
+
+//I take away the , and spaces in my first phrase in lowercase
 
 let secondComparePhrase = "";
 for(char of phraseToCheck.toLowerCase()){
@@ -93,8 +100,7 @@ for(char of phraseToCheck.toLowerCase()){
     }
 }
 
-console.log(comparePhrase)
-console.log(secondComparePhrase)
+//I compare if they are the same!
 if( comparePhrase === secondComparePhrase){
     console.log("WE HAVE A PALINDROME!!")
 }
