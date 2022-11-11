@@ -22,7 +22,7 @@ let capitalised = ''
 for (let character of hacker1) {
     capitalised = capitalised + ' ' + character.toUpperCase()
 }
-console.log(capitalised)
+console.log(capitalised.trim())
 
 
 console.log('Excersise 3.2:')
