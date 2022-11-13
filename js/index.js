@@ -101,8 +101,17 @@ for (let i = phraseLength - 1; i >= 0; i--) {
     
 }
 
+phraseToCheck = phraseToCheck.replace(","," ")
+phraseReversed = phraseReversed.replace(","," ")
+
 
 
 console.log(phraseToCheck)
 console.log(phraseReversed)
+
+if (phraseToCheck === phraseReversed) {
+  console.log("Yess! Its a palindrome")
+} else {
+  console.log("Nooop! Its not a palindrome")
+}
 
