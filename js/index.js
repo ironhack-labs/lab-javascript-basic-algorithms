@@ -89,3 +89,59 @@ if (
 } else {
   console.log("is not");
 }
+
+/* EXAMPLES */
+
+const user = { name: "Nick", id: 7 };
+user.name = "Dani";
+user.id = 22;
+const user2 = { name: "Nick5", id: 98 };
+//console.log(user)
+
+const book1 = {
+  title: "The Catcher in the Rye",
+  author: "J.D Salinger",
+  isbn: "0316769487",
+  category: "Classic Literature",
+};
+const book2 = {
+  title: "To Kill a Mockingbird",
+  author: "Harper Lee",
+  isbn: "0446310786",
+  category: "Classic Literature",
+};
+const book3 = {
+  title: "El Leon",
+  author: "Joseph Kessel",
+  isbn: "0446310782",
+  category: "Classic Literature",
+};
+
+user.books = [book1, book2];
+//console.log(user)
+user2.books = [book3];
+
+const library = [];
+let arrayLibraryLength = library.length;
+
+library[arrayLibraryLength] = user;
+//console.log(library[0])
+
+arrayLibraryLength = library.length;
+
+library[arrayLibraryLength] = user2;
+//console.log(library)
+
+let arrayLength = library[0].books.length;
+//console.log(arrayLength);
+library[0].books[arrayLength] = book3;
+//console.log(library.user)
+//console.log(library)
+
+for (let user of library) {
+  console.log("\n");
+  console.log(`${user.name} books:\n`);
+  for (let book of user.books) {
+    console.log(`- ${book.title}, ${book.author}`);
+  }
+}
