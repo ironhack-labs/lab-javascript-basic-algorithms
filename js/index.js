@@ -68,18 +68,15 @@ for (let i = 0; i < text.length; i++){
 
 //Bonus 2
 
-let phraseToCheck = "A man, a plan, a canal, Panama!";
-let phrase = phraseToCheck.replace(/[^a-zA-Z ]/g, "");
-let phraseUnited = phrase.split(' ').join('');
-let phraseUp = phraseUnited.toUpperCase();
+function isPalindrome(phraseToCheck){
+  let phrase = phraseToCheck.replace(/[^a-zA-Z ]/g, "");
+  let phraseUnited = phrase.split(' ').join('');
+  let phraseUp = phraseUnited.toUpperCase();
 
-for (let i = 0; i < phraseUp.length; i++){
-  if (phraseUp[i] !== phraseUp[phraseUp.length -1 -i]){
-    console.log("This is not a palindrome");
-    break;
-  }
-  else {
-    console.log("Is a palindrome")
-    break;
-  }
- }
+  for (let i = 0; i < phraseUp.length; i++) {
+    if (phraseUp[i] !== phraseUp[phraseUp.length -1 -i]) {
+      return false;
+      }
+    }
+  return true;
+}
