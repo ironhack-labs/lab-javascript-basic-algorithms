@@ -90,6 +90,13 @@ if (
   console.log("is not");
 }
 
+let cleanPhrase = "";
+for (let i = 0; i < phraseToCheck.length; i++) {
+  // only add characters between "A" and "z"
+  if (phraseToCheck[i] >= "A" && phraseToCheck[i] <= "z") {
+    cleanPhrase = cleanPhrase + phraseToCheck[i];
+  }
+}
 /* EXAMPLES */
 
 const user = { name: "Nick", id: 7 };
