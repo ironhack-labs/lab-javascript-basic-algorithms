@@ -68,7 +68,7 @@ for (char of phraseToCheck.toLocaleLowerCase()) {
 }
 
 for (let charIndex = phraseToCheckNoSpaces.length - 1; charIndex >= 0; charIndex--) {
-    phraseToCheckReverse += phraseToCheckNoSpaces[charIndex]
+    phraseToCheckReverse += phraseToCheckNoSpaces[charIndex];
 }
 
 if (phraseToCheckNoSpaces === phraseToCheckReverse) {
