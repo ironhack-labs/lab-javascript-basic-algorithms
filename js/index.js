@@ -57,21 +57,21 @@ console.log(`Bonus 1 >> Palabras totales: ${countWords}. Palabras "et": ${countW
 
 // Bonus 2:
 let phraseToCheck = 'A man, a plan, a canal, Panama!';
-let phraseToCheckNoSpaces = '';
+let phraseToCheckNoSpecialCharacters = '';
 let phraseToCheckReverse = '';
 
 for (char of phraseToCheck.toLocaleLowerCase()) {
     if (char === " " || char === "," || char === "." || char === "!") {
         continue;
     }
-    phraseToCheckNoSpaces += char
+    phraseToCheckNoSpecialCharacters += char
 }
 
-for (let charIndex = phraseToCheckNoSpaces.length - 1; charIndex >= 0; charIndex--) {
-    phraseToCheckReverse += phraseToCheckNoSpaces[charIndex];
+for (let charIndex = phraseToCheckNoSpecialCharacters.length - 1; charIndex >= 0; charIndex--) {
+    phraseToCheckReverse += phraseToCheckNoSpecialCharacters[charIndex];
 }
 
-if (phraseToCheckNoSpaces === phraseToCheckReverse) {
+if (phraseToCheckNoSpecialCharacters === phraseToCheckReverse) {
     console.log(`La cadena de texto: "${phraseToCheck}" es un palíndromo.`)
 } else {
     console.log(`La cadena de texto: "${phraseToCheck}" no es un palíndromo.`)
