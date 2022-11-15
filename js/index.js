@@ -56,8 +56,33 @@ if (hacker1.localeCompare(hacker2) === -1) {
 }
 
 //Bonus 1
-/*const longString= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget porta nunc. Pellentesque eu fermentum massa. Ut pharetra at felis ut fringilla. Donec sagittis augue at dui gravida, sit amet consequat dolor viverra. Curabitur pharetra ligula magna, a posuere sapien condimentum et. Morbi mi magna, ultrices quis ligula et, consequat facilisis turpis. Sed cursus sed quam sed fermentum. Donec sit amet tellus eu magna pharetra posuere nec eget lorem. In hac habitasse platea dictumst. Etiam faucibus neque a lorem pharetra sollicitudin. Nam ut mattis mi. Nam dapibus ex id ligula commodo euismod. Nullam tempor mollis dolor, sed vulputate dolor congue sit amet. Donec vitae consectetur ipsum. Nulla at commodo mauris, in congue nisi. Aliquam aliquam eget neque eget volutpat.
+const longString = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat non quam ut consectetur. Cras velit nisl, ultrices vitae eros volutpat, volutpat aliquam dolor. Donec iaculis mauris tellus, suscipit ultricies diam congue eget. Sed consequat ornare purus, eget auctor libero molestie in. Suspendisse a magna condimentum, vulputate tortor dignissim, finibus augue. Ut rutrum, nisl lobortis aliquet tempus, velit magna elementum nisl, id suscipit lorem est ut augue. Nunc nec ornare odio, ac lobortis leo. In ut molestie leo. Quisque at lacus nulla.
 
-Nam eu placerat massa. Duis scelerisque aliquam mi. Donec eget dolor magna. Sed a iaculis mauris. Maecenas auctor euismod sapien, in volutpat metus facilisis non. Pellentesque accumsan, metus vel molestie tristique, ante lorem fringilla sem, quis suscipit tellus tortor eget tellus. Suspendisse bibendum mattis accumsan. Aliquam quis elit pretium, placerat nunc ac, aliquet quam. Vivamus dolor velit, gravida sed scelerisque vel, dictum sed tellus. Suspendisse sit amet erat non sem euismod tempor in pulvinar ipsum. Curabitur id felis dui. Etiam sagittis metus et orci porta ornare. Proin ultricies mauris felis, non malesuada odio porttitor quis. Nunc venenatis, dolor quis blandit auctor, diam nulla tincidunt ex, a sodales dolor odio interdum lectus. Aenean nunc ipsum, venenatis sit amet ullamcorper quis, tempus vel ex. Etiam cursus, tellus non vestibulum sagittis, ipsum nulla sodales enim, vitae ornare lorem turpis vel ante.
+Vivamus a justo justo. Cras dictum, enim in lobortis malesuada, ex tortor ultricies eros, a fermentum justo augue et lectus. Praesent aliquam dui et ligula aliquet congue ornare eu eros. Maecenas non euismod ante, quis fermentum ex. Aenean convallis eros ac rutrum faucibus. Fusce suscipit suscipit lectus. Praesent molestie tortor placerat placerat elementum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam ullamcorper, sapien ut euismod maximus, velit ipsum volutpat ante, sed gravida velit metus in nunc.
 
-Nulla viverra congue ipsum, vel facilisis leo interdum at. Etiam ipsum tortor, laoreet eget risus id, congue cursus est. Maecenas et venenatis nisl. Sed pharetra congue ligula ac placerat. Vivamus cursus euismod rutrum. Pellentesque vestibulum justo sed lacus tincidunt, in imperdiet sem blandit. Fusce quis hendrerit massa. Ut sagittis, est id tincidunt fringilla, diam sem egestas est, accumsan fringilla justo enim sit amet risus."*/
+Duis dapibus, lorem id consectetur interdum, justo diam imperdiet ligula, quis bibendum odio nisl non lacus. Sed eget nulla faucibus, posuere libero quis, facilisis risus. Nunc laoreet fringilla mi quis venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et dolor elit. Nulla a mattis nibh. Duis et ex neque. Sed vitae vulputate libero, vel accumsan nisl. Pellentesque sed leo tempus, auctor est non, aliquam massa. Ut eget ex erat.`
+
+let wordCounter = 0
+
+for (let i = 0; i < longString.length; i++) {
+  if (longString[i] === " " && longString[i + 1] !== " " || longString[i] === "." && longString[i + 1] !== " ") {
+      wordCounter += 1;
+  }
+}
+console.log(wordCounter);
+
+let etCounter = 0
+
+for (let i = 0; i < longString.length; i++) {
+  if (longString[i] === "e" && longString[i + 1] === "t" && longString[i-1] === " " && (longString[i + 2] === " " || longString[i + 2] === ",") ) {
+      etCounter += 1;
+  }
+}
+console.log(etCounter);
+
+//Bonus 2
+let phraseToCheck = ""
+let phraseReversed = ""
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+    phraseReversed += phraseToCheck[i];
+}
