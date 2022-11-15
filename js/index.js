@@ -54,3 +54,25 @@ for (char of loremIpsum) {
 }
 
 console.log(`Bonus 1 >> Palabras totales: ${countWords}. Palabras "et": ${countWordsEt}`)
+
+// Bonus 2:
+let phraseToCheck = 'A man, a plan, a canal, Panama!';
+let phraseToCheckNoSpaces = '';
+let phraseToCheckReverse = '';
+
+for (char of phraseToCheck.toLocaleLowerCase()) {
+    if (char === " " || char === "," || char === "." || char === "!") {
+        continue;
+    }
+    phraseToCheckNoSpaces += char
+}
+
+for (let charIndex = phraseToCheckNoSpaces.length - 1; charIndex >= 0; charIndex--) {
+    phraseToCheckReverse += phraseToCheckNoSpaces[charIndex]
+}
+
+if (phraseToCheckNoSpaces === phraseToCheckReverse) {
+    console.log(`La cadena de texto: "${phraseToCheck}" es un palíndromo.`)
+} else {
+    console.log(`La cadena de texto: "${phraseToCheck}" no es un palíndromo.`)
+}
