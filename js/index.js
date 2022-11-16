@@ -81,8 +81,27 @@ for (let i = 0; i < longString.length; i++) {
 console.log(etCounter);
 
 //Bonus 2
-let phraseToCheck = ""
-let phraseReversed = ""
-for (let i = phraseToCheck.length - 1; i >= 0; i--) {
-    phraseReversed += phraseToCheck[i];
+const phraseToCheck = "Hello man!"
+
+let phraseAllTogether = ""
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (phraseToCheck[i] !== " " && phraseToCheck[i] !== "," && phraseToCheck[i] !== "." && phraseToCheck[i] !== "!" && phraseToCheck[i] !== "?" && phraseToCheck[i] !== "'") {
+    phraseAllTogether += phraseToCheck[i].toLowerCase();
+  }
+}
+
+let answer = true;
+
+for (let i = 0; i < phraseAllTogether.length; i++) {
+  if (phraseAllTogether[i] !== phraseAllTogether[phraseAllTogether.length - 1 - i]) { 
+      answer = false;
+      break;
+  } 
+ }
+
+if (answer) {
+  console.log(`The phrase "${phraseToCheck}" is a palindrome`)
+} else {
+  console.log('Keep looking for a palindrome');
 }
