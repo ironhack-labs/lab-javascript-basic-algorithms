@@ -25,13 +25,11 @@ else if (hacker1.length === hacker2.length) {
 
 let upper = '';
 
-for (let i = 0; i < hacker1.length; i++){
-    upper = upper.concat(hacker1[i]);
-    }
+for (let i = 0; i < hacker1.length; i++) {
+  upper += hacker1[i].toUpperCase();
+}
 
-
-console.log();
-
+console.log(upper.split(''))
 
 let reverse = '';
 
@@ -40,4 +38,8 @@ for (let i = hacker2.length -1; i >=0; i--){
     }
 
     console.log(reverse)
+
+let alphabetic = '';
+
+
 
