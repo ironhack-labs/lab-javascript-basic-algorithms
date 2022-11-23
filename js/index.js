@@ -63,5 +63,35 @@ for (let i=0; i<loremIpsum.length; i++){
 console.log(wordCount);
 console.log(etCount);
 
-
 //Bonus 2
+let phraseToCheck = "stack t y cats";
+
+function checkPalindrome(phrase) {
+    let phraseArr = [];
+    for (let i=0; i<=phrase.length; i++) {
+        if (phrase[i] !== " " && phrase[i] !== "," && phrase[i] !== "!" && phrase[i] !== ".")
+        phraseArr.push(phrase[i]);
+    }
+
+    let linkWord = phraseArr.join('').toLowerCase();
+    //console.log(linkWord);
+    let checkValue = linkWord.length / 2;
+    console.log(checkValue);
+    if (Number.isInteger(checkValue) == false) {
+        checkValue = Math.round(checkValue);
+    }
+    let isPalindromeValue = 0;
+    for (let j=0; j<checkValue; j++){
+        if (linkWord[j] === linkWord[linkWord.length - 1 -j]) {
+            isPalindromeValue++;
+        } 
+    }
+    console.log(isPalindromeValue);
+    if (isPalindromeValue === checkValue) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(checkPalindrome(phraseToCheck));
