@@ -13,20 +13,29 @@ if(hacker1.length === hacker2.length){
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 }
 
-// Iteration 3: Loops
-let driver = [];
-for(let i = 0; i < hacker1.length; i++){
-    driver.push(hacker1[i].toUpperCase());
+//3.1 
+let driver = '';
+for(let characters of hacker1){
+    driver = driver + ' ' + characters
 }
 
-const driverUpper = driver.toString();
-console.log(driverUpper.replace(',', ' '));
-/*let characters = '';
-for(let i = 0; i< hacker1.length; i++){
-    if(i < hacker1.length -1){
-        
-    }
-    characters = hacker1.charAt(i).toUpperCase();
-    
-    console.log(`${characters}`);
-}*/
+console.log(driver.toUpperCase());
+
+//3.2
+let navigator = '';
+for(let characters of hacker2){
+    navigator = characters + navigator
+}
+
+console.log(navigator);
+//3.3
+if(hacker1.localeCompare(hacker2) < 0){
+    console.log("the driver's name goes first");
+}
+else if(hacker2.localeCompare(hacker1) > 0){
+    console.log("Yo, the navigator goes first definitely.");
+}
+else{
+    console.log("What?! You both have the same name?");
+}
+   
