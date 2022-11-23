@@ -37,3 +37,10 @@ for(let characters of hacker2){
 console.log(navigator)
 
 //3.3
+if (hacker1 < hacker2) {
+    console.log(`${hacker1} goes first`);
+} else if (hacker1 > hacker2) {
+    console.log(`${hacker2} goes first definetely`);
+} else if (hacker1 === hacker2) {
+    console.log(`What?! You both have the same name?`);
+}
