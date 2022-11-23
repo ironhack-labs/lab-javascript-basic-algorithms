@@ -12,8 +12,28 @@ if (hacker1.length>hacker2.length) {
     console.log (`It seems that the navigator has the longest name, it has ${hacker2.length}`)
 
 } else if (hacker1.length === hacker2.length) {
-    console.log (`Wow, you both have equally long names, ${hacker1.length }!`)
+    console.log (`Wow, you both have equally long names, ${hacker1.length } charachters!`)
 }
 
 
 // Iteration 3: Loops
+//3.1
+let driver = ""
+for(let characters of hacker1 ){
+
+    driver = driver + ' ' + characters;
+
+    
+}
+console.log(driver.toUpperCase());
+//3.2
+
+let navigator = '';
+// one way
+for(let characters of hacker2){
+
+    navigator = characters + navigator;
+}
+console.log(navigator)
+
+//3.3
