@@ -14,3 +14,19 @@ if(hacker1.length === hacker2.length){
 }
 
 // Iteration 3: Loops
+let driver = [];
+for(let i = 0; i < hacker1.length; i++){
+    driver.push(hacker1[i].toUpperCase());
+}
+
+const driverUpper = driver.toString();
+console.log(driverUpper.replace(',', ' '));
+/*let characters = '';
+for(let i = 0; i< hacker1.length; i++){
+    if(i < hacker1.length -1){
+        
+    }
+    characters = hacker1.charAt(i).toUpperCase();
+    
+    console.log(`${characters}`);
+}*/
