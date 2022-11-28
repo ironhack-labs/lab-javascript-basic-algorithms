@@ -4,7 +4,7 @@
 
 Welcome to your first JavaScript lab at Ironhack!
 
-The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we have covered in the class. Feel free to reference lesson materials and don't limit yourself but be curious and use Google to explore multiple solutions.
+The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we have covered in the class. Feel free to reference lesson materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
 
 ![qrjeCm](https://user-images.githubusercontent.com/76580/167263489-bd345c02-6c3b-425e-9a9c-96390dea9ba6.gif)
 
@@ -12,7 +12,7 @@ The goal of this exercise is to get you familiarized with the primitive data str
 
 ## Introduction
 
-For this **pair-programming** activity we are going to use a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop). You can find a REPL that runs in the browser for programming languages as JavaScript in https://repl.it/languages/babel.
+For this **pair-programming** activity, we are going to use a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop). To make things as simple as possible, we are going to use an in-browser JavaScript REPL that is provided by the browser-based IDE, [repl.it](https://replit.com/languages/javascript).
 
 Ready to start?
 
@@ -42,7 +42,7 @@ Ready to start?
 
   
 
-- **When you are done completely or at any point after the first iteration, copy your code into the `index.js` file and follow the steps for submission.**
+- **When you are done completely, or at any point after the first iteration, copy your code into the `index.js` file and follow the steps for submission.**
 
   
 
@@ -58,7 +58,7 @@ $ git push origin master
 
 Create a Pull Request so that the TAs can check your work.
 
-*You should make a PR (stands for Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.*
+*You should make a PR (Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.*
 
 <!-- ## Submission -->
 
@@ -84,22 +84,20 @@ Create a Pull Request so that the TAs can check your work.
 	  - `Wow, you both have equally long names, XX characters!`.
 
 ### Iteration 3: Loops
-  3.1 Print all the characters of the driver's name, separated by a space and [in capitals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)
-  i.e. `"J O H N"`
+  3.1 Print the characters of the driver's name, separated by space, and [in capital letters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), i.e., `"J O H N"`.
 
-  3.2 Print all the characters of the navigator's name, in reverse order. 
-  i.e. `"nhoJ"`
+  3.2 Print all the characters of the navigator's name, in reverse order, i.e., `"nhoJ"`.
 
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
-    - `The driver's name goes first.` <br>
-    - `Yo, the navigator goes first definitely.` <br>
-    - `What?! You both have the same name?`
+- `The driver's name goes first.` <br>
+- `Yo, the navigator goes first definitely.` <br>
+- `What?! You both have the same name?`
 
 ### Bonus Time!
 
 #### Bonus 1:
-Go to [lorem ipsum generator](http://www.lipsum.com/) and:
-  - Generate 3 paragraphs. Store the text in a variable type of string.
+Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
+  - Generate 3 paragraphs. Store the text in a new string variable named `longText`.
   - Make your program count the number of words in the string.
   - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
 
@@ -114,7 +112,9 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
   - "put it up"
   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
-  __Hint__: If you use Google to help you to find solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using `for` loop, `if-else` statements with some `break` and `continue`... Just sayin' :smiley: 
+  __IMPORTANT__: If you use Google to help you to find solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply the knowledge you currently have and try to come up with a solution by just using `for` loop and `if-else` statements with some `break` and `continue`.
+
+
 
 ## Extra Resources
 
