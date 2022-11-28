@@ -6,9 +6,11 @@ Welcome to your first JavaScript lab at Ironhack!
 
 The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we have covered in the class. Feel free to reference lesson materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
 
-![qrjeCm](https://user-images.githubusercontent.com/76580/167263489-bd345c02-6c3b-425e-9a9c-96390dea9ba6.gif)
+<br>
 
+![lab-js-basic-algorithms-code-collaboration-gif](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-code-collaboration-gif.gif)
 
+<br>
 
 ## Introduction
 
@@ -38,9 +40,7 @@ Ready to start?
 
 - If you can see the message in the right side panel, you are really ready!
 
-  [![img](https://camo.githubusercontent.com/6aec8c457badb991e89cb96014311a46296f0dbaf3f5c17f88f8c7fab30f436c/68747470733a2f2f73332d65752d776573742d312e616d617a6f6e6177732e636f6d2f69682d6d6174657269616c732f75706c6f6164732f75706c6f61645f31376630393562396262346661346264316265653163303137633034333332372e706e67)](https://camo.githubusercontent.com/6aec8c457badb991e89cb96014311a46296f0dbaf3f5c17f88f8c7fab30f436c/68747470733a2f2f73332d65752d776573742d312e616d617a6f6e6177732e636f6d2f69682d6d6174657269616c732f75706c6f6164732f75706c6f61645f31376630393562396262346661346264316265653163303137633034333332372e706e67)
-
-  
+  ![lab-js-basic-algorithms-replit-ready](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-replit-ready.png)
 
 - **When you are done completely, or at any point after the first iteration, copy your code into the `index.js` file and follow the steps for submission.**
 
@@ -96,6 +96,7 @@ Create a Pull Request so that the TAs can check your work.
 ### Bonus Time!
 
 #### Bonus 1:
+
 Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
   - Generate 3 paragraphs. Store the text in a new string variable named `longText`.
   - Make your program count the number of words in the string.
@@ -114,14 +115,14 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
 
   __IMPORTANT__: If you use Google to help you to find solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply the knowledge you currently have and try to come up with a solution by just using `for` loop and `if-else` statements with some `break` and `continue`.
 
-
-
 ## Extra Resources
 
 - [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [if - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [while - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 - [for - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+
+<br>
 
 __Happy coding!__ :heart:
 
