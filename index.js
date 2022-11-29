@@ -18,12 +18,6 @@ else if (hacker1.length = hacker2.length ){
     `Wow, you both have equally long names, ${hacker2.length} characters.`
 }
 
-// ternary operator version if needed
-hacker1.length > hacker2.length ? console.log(`The driver has the longest name, it has ${hacker1.length} characters.`) :
-hacker1.length < hacker2.length ? console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`) :
-console.log(`Wow, you both have equally long names, ${hacker2.length} characters.`)
-
-
 //Iteration 3: Loops
 
 // 3.1
