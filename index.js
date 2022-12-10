@@ -59,23 +59,19 @@ function phraseToCheck(str) {
     let newString = '' ;
 
     for (let i = 0; i <= str.length -1; i++) {
-        //check for punctuation marks and skip 'em
-        if (str[i] === ',' || str[i] === '!' || str[i] === ' ' || str[i] === `'` || str[i] === '?' ) {
+        //check for the most common punctuation marks and skip 'em
+        if (str[i] === ',' || str[i] === '!' || str[i] === ' ' || str[i] === `'` || str[i] === '?' || str[i] === ':' || str[i] === ';' ) {
             continue
         } else {newString += str[i]}; //create new string with all letters pushed together
     }
 
     //check to see if the characters from first half of string correspond to characters from second half
-
     for (let i = 0; i < newString.length / 2; i++) {
     if (newString[i] !== newString[newString.length - 1 - i]) {
             console.log("NOT A PALINDROME!");
         }
     }
-
 console.log("It's a palindorome alright!");
-
-
 }
 
-phraseToCheck('A man, a plan, a canal, Panama!');
+
