@@ -21,7 +21,31 @@ else
 }
 
 // Iteration 3: Loops
-console.log("this is driver's name in capital:" + hacker1.toUpperCase().split("").join(" "))
-console.log("this is investigator name reversed:"+ hacker2.split('').reverse().join(''))
+ // console.log("this is driver's name in capital:" + hacker1.toUpperCase().split("").join(" "))
+ // console.log("this is investigator name reversed:"+ hacker2.split('').reverse().join(''))
+ // Create an empty string to store the modified name
+let driverName = "";
+ // Use a for loop to iterate over the characters in the name
+for (let i = 0; i < hacker1.length; i++) {
+  // Get the character at the current position in the string
+  let char = hacker1.charAt(i);
+  // Convert the character to uppercase and add it to the result string
+  driverName += char.toUpperCase() + " ";
+}
+ // Print the modified name
+console.log("The driver's name is " + driverName);
 
-// I don't know how to do the Lexicographic order using Loops?
+ // Create an empty string to store the reversed name
+let navigatorName = "";
+
+ // Use a for loop to iterate over the characters in the name in reverse
+for (let i = hacker2.length - 1; i >= 0; i--) {
+// Get the character at the current position in the string
+  let char = hacker2.charAt(i);
+
+// Add the character to the result string
+  navigatorName += char;
+}
+
+// Print the reversed name
+console.log("The navigator's name in reverse is " + navigatorName);
