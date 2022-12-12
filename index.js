@@ -27,7 +27,7 @@ else
 let driverName = "";
  // Use a for loop to iterate over the characters in the name
 for (let i = 0; i < hacker1.length; i++) {
-  // Get the character at the current position in the string
+  // Get the character at the current position in the string  
   let char = hacker1.charAt(i);
   // Convert the character to uppercase and add it to the result string
   driverName += char.toUpperCase() + " ";
