@@ -200,7 +200,7 @@ __Happy coding!__ :heart:
   ```js
   let str = "hello world";
 
-  console.log(str.indexOf("h"));                  // 0
+  console.log(str.indexOf("h"));      // 0
   console.log(str.indexOf("world"));  // 6
   console.log(str.indexOf("bye"));    // -1
   ```
@@ -294,18 +294,18 @@ __Happy coding!__ :heart:
 
   1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
 
-  ```bash
-  git add .
-  git commit -m "Your commit message"
-  git push
-  ```
+    ```bash
+    git add .
+    git commit -m "Your commit message"
+    git push
+    ```
 
   2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
    To check which remote repository you have cloned, run the following terminal command from the project folder:
 
-   ```bash
-   git remote -v
-   ```
+    ```bash
+    git remote -v
+    ```
 
   If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
 
