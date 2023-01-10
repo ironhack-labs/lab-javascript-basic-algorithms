@@ -40,7 +40,7 @@ Upon completion, run the following commands:
 ```bash
 $ git add .
 $ git commit -m "done"
-$ git push origin master
+$ git push origin main
 ```
 
 Create a Pull Request so that the TAs can check your work.
