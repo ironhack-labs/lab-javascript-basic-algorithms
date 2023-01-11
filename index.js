@@ -82,3 +82,21 @@ for (let i = 0; i <= longText.length -1; i++) {
 }
 
 console.log(count)
+
+
+// Bonus 2
+
+let phraseToCheck = "racecar"
+let phraseBack = ""
+let lastIndex = phraseToCheck.length -1
+
+for (let i = lastIndex; i >= 0; i--) {
+  phraseBack += phraseToCheck[i];
+}
+
+if (phraseToCheck === phraseBack){
+  console.log("It is a Palindrome!!!")
+}
+else {
+  console.log("These are random words!")
+}
