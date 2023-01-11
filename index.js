@@ -11,5 +11,25 @@ console.log(`The drivers name is ${hacker1}`);
 
 // Iteration 2: Conditionals
 
+/* 2.1. Depending on which name is longer, print:
+- The driver has the longest name, it has XX characters. or
+- It seems that the navigator has the longest name, it has XX characters. or
+- Wow, you both have equally long names, XX characters!. */
+
+const driverName = "Silur";
+const navigatorName = "Lorexiam";
+
+if (driverName.length > navigatorName.length) {
+  console.log(`The driver has the longest name, it has ${driverName.length} characters.`)
+} 
+
+else if (driverName.length < navigatorName.length) {
+  console.log(`The navigator has the longest name, it has ${navigatorName.length} characters.`)
+} 
+
+else {
+  console.log(`They both have the same length!`)
+};
+
 
 // Iteration 3: Loops
