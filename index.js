@@ -92,3 +92,34 @@ console.log(`Number of words in paragraphs is ${words.length}`);
 
 let allEt = longTextWithoutPunctuation.match(/et/g);
 console.log(`Number of times the word "et" appears is ${allEt.length}`);
+
+// Bonus 2
+
+function isPalindrome(stringToCheck) {
+  // replace all punctuation marks and white spaces with empty string
+  let cleanedString = stringToCheck
+    .toLowerCase()
+    .replace(/[.?,\'\"\/#!$%\^&\*;:{}=\-_`~()/\s+/]/g, "");
+
+  // reverse the string
+  let reversed = cleanedString.split("").reverse().join("");
+
+  // if they are same, then it's a palindrome
+  return cleanedString === reversed;
+}
+
+// should be true
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome("A man, a plan, a canal, Panama!"));
+console.log(isPalindrome("Amor, Roma"));
+console.log(isPalindrome("race car"));
+console.log(isPalindrome("stack cats"));
+console.log(isPalindrome("step on no pets"));
+console.log(isPalindrome("taco cat"));
+console.log(isPalindrome("put it up"));
+console.log(isPalindrome("Was it a car or a cat I saw?"));
+console.log(isPalindrome("No 'x' in Nixon"));
+
+// should be false
+console.log(isPalindrome("rat"));
+console.log(isPalindrome("We don't need no education"));
