@@ -48,4 +48,4 @@ let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
 
 console.log(longText.length) //2212 - with spaces
 console.log(longText.indexOf('et')) //24
-console.log(longText.split(" ").length) //323 - without spaces
+console.log(longText.split(" ").length) //323 - without spaces 
