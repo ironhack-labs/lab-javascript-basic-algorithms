@@ -21,7 +21,7 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 //Option 1:
-let nameWithSpace ="";
+let nameWithSpace = "";
 for (letters in hacker1){
    // console.log(hacker1[letters].toUpperCase());
    // console.log(” “);
