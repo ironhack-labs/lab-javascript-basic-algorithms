@@ -73,8 +73,8 @@ Create Pull Request so your TAs can check up your work.
 ### Bonus Time!
 
 #### Bonus 1:
-Go to [lorem ipsum generator](http://www.lipsum.com/) and:
-  - Generate 3 paragraphs. Store the text in a variable type of string.
+Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
+  - Generate 3 paragraphs. Store the text in a new string variable named `longText`.
   - Make your program count the number of words in the string.
   - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
 
@@ -89,7 +89,7 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
   - "put it up"
   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
   
-  __Hint__: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as _join()_, _reverse()_, etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using `for` loop, `if-else` statements with some `break` and `continue`... Just sayin' :smiley: 
+  __IMPORTANT__: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply the knowledge you currently have and try to come up with a solution by just using the `for` loop and `if-else` statements with some `break` and `continue`.
 
 ## Extra Resources
 
