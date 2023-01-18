@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
-let hacker1 = "Aba";
+let hacker1 = "Antonio";
 console.log(`The driver's name is ${hacker1}`)
 
-let hacker2 = "Aba";
+let hacker2 = "Alba";
 console.log(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
@@ -59,7 +59,7 @@ Aliquam iaculis laoreet nisi, et dictum ipsum gravida ac. Nam placerat in tortor
 Vivamus dignissim id tellus vel commodo. Donec non risus non leo imperdiet eleifend. Sed fermentum aliquam nisl ut eleifend. Suspendisse nisl nulla, ornare id libero id, convallis egestas risus. Sed rutrum urna non posuere porta. Suspendisse maximus vulputate purus at rhoncus. Donec mollis dolor dolor, non viverra libero lacinia vitae. Nulla volutpat eros nisl, a tincidunt nulla egestas quis.`
 
 let numberTotalWords = longText.split(' ').length
-console.log(numberTotalWords);
+console.log(`Total number of words: ${numberTotalWords}`);
 
 let counter = 0;
 let indexResult = 0;
@@ -75,52 +75,21 @@ while (i < numberTotalWords) {
   }
   i++;
 }
-console.log(counter);
-
-// Bonus 1
-
-let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere faucibus ante eu convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sed ligula sodales, dapibus metus in, accumsan nulla. Pellentesque scelerisque ipsum vitae nibh luctus pharetra. Nulla ut quam eu est volutpat bibendum nec vel sem. Pellentesque fringilla facilisis posuere. Etiam ac elit facilisis, congue orci eu, molestie arcu. Sed eu hendrerit nisi. Mauris blandit nec est in ultricies. Quisque pulvinar semper justo.
-
-Aliquam iaculis laoreet nisi, et dictum ipsum gravida ac. Nam placerat in tortor at lobortis. Nullam vitae turpis quis libero vulputate vulputate. Vivamus ac ex elit. Nulla consequat pellentesque arcu, in tincidunt nibh bibendum vel. Nam viverra mauris vitae mauris imperdiet, ac volutpat augue sagittis. Fusce nisl ipsum, aliquam quis varius in, malesuada et neque.
-
-Vivamus dignissim id tellus vel commodo. Donec non risus non leo imperdiet eleifend. Sed fermentum aliquam nisl ut eleifend. Suspendisse nisl nulla, ornare id libero id, convallis egestas risus. Sed rutrum urna non posuere porta. Suspendisse maximus vulputate purus at rhoncus. Donec mollis dolor dolor, non viverra libero lacinia vitae. Nulla volutpat eros nisl, a tincidunt nulla egestas quis.`
-
-let numberTotalWords = longText.split(' ').length
-console.log(numberTotalWords);
-
-let counter = 0;
-let indexResult = 0;
-let i = 0;
-while (i < numberTotalWords) {
-  indexResult = longText.indexOf(" et ", indexResult);
-  if (indexResult != -1) {
-    counter++;
-    indexResult += 2;
-  }
-  else {
-    break;
-  }
-  i++;
-}
-console.log(counter);
+console.log(`"et" appears ${counter} times`);
 
 //Bonus 2
 
-let phraseToCheck = "Amor, -Roma";
+let phraseToCheck = "A man, a plan, a canal, Panama!";
 let sentence1 = "";
 let sentence2 = "";
 let count1 = 0;
 let count2 = 0;
-phraseToCheck = phraseToCheck.replace(/[ªº!|"·$%&()=?¿^*¨Ç;:_,.-]/g,'');
-phraseToCheck = phraseToCheck.replace(' ', '').toLowerCase();
-console.log(phraseToCheck);
-console.log(phraseToCheck.length-0);
-for ( let i=0 ; i<phraseToCheck.length ; i++) {
-  sentence1 += phraseToCheck[i];
-  sentence2 += phraseToCheck[phraseToCheck.length-i];
+phraseToCheck = phraseToCheck.replace(/[ªº!|"·$%'&()=?¿^*¨Ç;: _,.-]/g,'').toLowerCase();
+
+for ( let i=1 ; i<=phraseToCheck.length ; i++) {
+  sentence1 += phraseToCheck[phraseToCheck.length-i];
 }
-if (sentence1 === sentence2) {
-  console.log("OK");
+
+if (sentence1 === phraseToCheck) {
+  console.log("This is a Palindrome");
 }
-console.log(sentence1);
-console.log(sentence2);
