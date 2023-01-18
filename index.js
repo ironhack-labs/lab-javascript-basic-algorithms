@@ -73,3 +73,23 @@ console.log('Wordcount: ', countWords);
 console.log('Et count:', countEt);
 
 
+//Bonus 2
+let phraseToCheck = "No 'x' in Nixon";
+phraseToCheck = phraseToCheck.toLowerCase();
+
+let phraseForward = "";
+let phraseBackward = "";
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (phraseToCheck[i] >= 'a' && phraseToCheck[i] <= "z") {
+    phraseForward += phraseToCheck[i];
+    phraseBackward = phraseToCheck[i] + phraseBackward;
+  }
+}
+
+if (phraseForward === phraseBackward) {
+  console.log("This is Palindrome.")
+} else {
+  console.log("This is not Palindrome.")
+}
+
