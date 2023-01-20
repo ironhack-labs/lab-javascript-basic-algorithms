@@ -75,3 +75,48 @@ else if(hacker1.toUpperCase().localeCompare(hacker2.toUpperCase())===-1){
 else if(hacker1.toUpperCase().localeCompare(hacker2.toUpperCase())===0){
     console.log("What?! You both have the same name?")
 }
+
+
+/* bonus */
+
+let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer cursus faucibus urna, eget mattis quam. Sed eget purus nec sapien auctor sodales. Ut ut porta felis. Etiam laoreet consectetur nibh non elementum. Maecenas nec tortor in lorem cursus semper. Etiam in urna felis. Aliquam efficitur vehicula magna vel venenatis. Vivamus at venenatis augue. Morbi aliquet ipsum ac pulvinar condimentum. Donec pharetra turpis vel felis sodales volutpat.
+
+Ut ac tellus ut purus venenatis dignissim sed id nunc. Sed ac urna eu nunc dignissim vestibulum eget vel ex. Pellentesque ac urna urna. Donec tincidunt nisi nibh, in viverra sem elementum sed. Sed vel laoreet metus. Nulla commodo mauris quis odio mollis pulvinar. Donec vel elementum odio.
+
+Sed enim nulla, dignissim finibus nulla id, semper pulvinar dolor. Morbi semper viverra augue, eu pellentesque erat vulputate vitae. Curabitur lacinia, sem et rhoncus blandit, lacus tellus dapibus odio, id posuere nibh mi sit amet arcu. Morbi id lobortis urna. Integer arcu dolor, fringilla sed sem gravida, congue egestas risus. Duis quis libero et metus lacinia condimentum eu id leo. Mauris non magna in eros viverra consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi sagittis dolor in odio placerat commodo. Duis nec nisl urna. Etiam sit amet vehicula purus, tincidunt posuere massa. Curabitur feugiat ante urna, vitae tempus magna interdum eu. Cras arcu libero, semper quis sem sit amet, tristique posuere tortor. Integer at vestibulum dolor. Fusce eget rhoncus urna. Praesent hendrerit tincidunt risus, sed luctus elit tincidunt et.`
+
+
+let seppareted = longText.split(" ");
+let textWordsNum = seppareted.length;
+console.log(textWordsNum)
+
+let count = 0;
+
+for(let i = 0; i < seppareted.length; i++){
+  
+  if(seppareted[i]==="et"){
+    count ++
+  }
+  
+}
+console.log(count);
+
+
+let phraseToCheck = "step on no pets";
+let invertedPhrase = "";
+
+for (let i = phraseToCheck.length-1;i >= 0; i--){
+  
+  invertedPhrase += phraseToCheck[i]
+  
+}
+
+if(phraseToCheck===invertedPhrase){
+  console.log("It's a Palindrome")
+}
+
+else{
+  console.log("not a Palindrome")
+}
+
+
