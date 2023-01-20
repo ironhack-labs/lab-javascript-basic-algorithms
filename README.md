@@ -354,35 +354,6 @@ Following the logic you've used in iteration #8.1, declare a function called `gr
 </details>
 
 <details>
-  <summary>I am unable to push changes to the repository. What should I do?</summary>
-  <br>
-
-  There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
-
-  1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
-
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
-
-
-  2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
-   To check which remote repository you have cloned, run the following terminal command from the project folder:
-
-   ```bash
-   git remote -v
-   ```
-
-  If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
-
-  Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
-
-  [Back to top](#faqs)
-</details>
-
-<details>
   <summary>All of the Jasmine tests are failing and in red. Why did this happen?</summary>
   <br>
 
