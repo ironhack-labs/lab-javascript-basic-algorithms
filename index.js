@@ -85,3 +85,4 @@ function checkPalindrome() {
 }
 
 checkPalindrome(phraseToCheck);
+console.log("test");
