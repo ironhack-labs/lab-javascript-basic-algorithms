@@ -79,6 +79,34 @@ console.log(reversedString1);
 
 // }
 
+// #### Bonus 1:
 
+// Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
 
+//   - Generate 3 paragraphs. Store the text in a new string variable named `longText`.
+//   - Make your program count the number of words in the string.
+//   - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
 
+const longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et fermentum ante. Phasellus scelerisque, eros et aliquet sollicitudin, magna metus suscipit libero, in bibendum ligula ante fringilla orci. Nullam pellentesque lobortis mauris, in aliquam risus venenatis ut. Quisque ac quam ut sem interdum pretium. Donec quis lobortis sapien, non volutpat ante. Donec nibh felis, lobortis ac condimentum vitae, congue ac felis. Integer fringilla massa sit amet euismod pretium. Nulla et augue mauris. Donec eget luctus velit, quis ultrices mauris. Sed magna felis, eleifend vitae ornare accumsan, suscipit sed eros. Vivamus condimentum mauris nec tortor fermentum rutrum. Vestibulum eget ipsum mi. Sed rhoncus porta ligula, in euismod odio fringilla eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et fermentum ante. Phasellus scelerisque, eros et aliquet sollicitudin, magna metus suscipit libero, in bibendum ligula ante fringilla orci. Nullam pellentesque lobortis mauris, in aliquam risus venenatis ut. Quisque ac quam ut sem interdum pretium. Donec quis lobortis sapien, non volutpat ante. Donec nibh felis, lobortis ac condimentum vitae, congue ac felis. Integer fringilla massa sit amet euismod pretium. Nulla et augue mauris. Donec eget luctus velit, quis ultrices mauris. Sed magna felis, eleifend vitae ornare accumsan, suscipit sed eros. Vivamus condimentum mauris nec tortor fermentum rutrum. Vestibulum eget ipsum mi. Sed rhoncus porta ligula, in euismod odio fringilla eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et fermentum ante. Phasellus scelerisque, eros et aliquet sollicitudin, magna metus suscipit libero, in bibendum ligula ante fringilla orci. Nullam pellentesque lobortis mauris, in aliquam risus venenatis ut. Quisque ac quam ut sem interdum pretium. Donec quis lobortis sapien, non volutpat ante. Donec nibh felis, lobortis ac condimentum vitae, congue ac felis. Integer fringilla massa sit amet euismod pretium. Nulla et augue mauris. Donec eget luctus velit, quis ultrices mauris. Sed magna felis, eleifend vitae ornare accumsan, suscipit sed eros. Vivamus condimentum mauris nec tortor fermentum rutrum. Vestibulum eget ipsum mi. Sed rhoncus porta ligula, in euismod odio fringilla eu."
+
+let countWords = 0
+
+for (let i = 0; i < longText.length; i++) {
+    if (longText[i] === " ") { 
+        countWords++; 
+  }
+
+}
+
+console.log(countWords);
+
+let countEt = 0
+
+for (let i = 0; i < longText.length; i++) {
+    if (longText[i] + longText[i + 1] +  longText[i + 2] + longText[i + 3]=== " et ") { 
+        countEt++; 
+  }
+
+}
+
+console.log(countEt);
