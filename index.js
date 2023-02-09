@@ -110,3 +110,35 @@ for (let i = 0; i < longText.length; i++) {
 }
 
 console.log(countEt);
+
+// ### Bonus 2:
+
+// Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
+
+//   - "A man, a plan, a canal, Panama!"
+//   - "Amor, Roma"
+//   - "race car"
+//   - "stack cats"
+//   - "step on no pets"
+//   - "taco cat"
+//   - "put it up"
+//   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+
+//   __IMPORTANT__: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply the knowledge you currently have and try to come up with a solution by just using the `for` loop and `if-else` statements with some `break` and `continue`.
+
+const phraseToCheck = "racecar"
+
+let reversedPhrase = ""
+
+for (let i = phraseToCheck.length -1; i >=0; i--) {
+    reversedPhrase += phraseToCheck[i];
+    
+}
+
+if (phraseToCheck === reversedPhrase) {
+    console.log(`${phraseToCheck } is a palindrome!`);
+
+} else {
+    console.log(`${phraseToCheck } is not a palindrome!`);
+
+}
