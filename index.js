@@ -20,3 +20,8 @@ let name = '';
 for (let i = 0; i < hacker1.length; i++) {
   name += hacker1[i].toUpperCase() + " ";
 }
+
+let name2 = '';
+for(let i = hacker2.length - 1; 0 <= i; i--){
+  name2 += hacker2[i] + " ";
+}
