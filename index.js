@@ -65,6 +65,32 @@ for (let i=0; i<longText.length; i++) {
 }
 console.log(`Number of "et": ${etCount}`);
 
-
-
 // Iteration 5: Bonus 2
+let phraseToCheck ="Was it a car or a cat I saw?";
+
+// prepare the phrase: remove special characters first & make lowercase
+let phraseNoSpaces="";
+for (let i=0; i<phraseToCheck.length; i++) {
+    if (phraseToCheck.charCodeAt(i) <= 90 && phraseToCheck.charCodeAt(i) >= 65) {
+        phraseNoSpaces += phraseToCheck[i];}  
+    else if (phraseToCheck.charCodeAt(i) <= 122 && phraseToCheck.charCodeAt(i) >= 97) {
+        phraseNoSpaces += phraseToCheck[i];
+    }
+}
+let phraseLowercase=phraseNoSpaces.toLowerCase();
+
+// check if first char is the same as last one etc. 
+let palindromCount="";
+for (let j=0; j<phraseLowercase.length/2; j++) {
+    if (phraseLowercase[j] === phraseLowercase[phraseLowercase.length-1-j]) {
+        palindromCount++;
+    }
+ }
+
+// now, write down the result of the analysis 
+ if (palindromCount >= phraseLowercase.length/2) {
+    console.log(`Yes, the phrase "${phraseToCheck}" is a palindrom.`);
+ }
+ else {
+    console.log(`No, the phrase "${phraseToCheck}" is not a palindrom.`);;
+ }
