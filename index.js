@@ -1,8 +1,9 @@
 // Iteration 1: Names and Input
-
-let hacker1 = 'Paul';
+// 1.1, 1.2
+let hacker1 = 'Tim';
 console.log (`The driver's name is ${hacker1}`);
 
+// 1.3, 1.4
 let hacker2 = "Simon";
 console.log (`The navigators's name is ${hacker2}`);
 
@@ -17,6 +18,7 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
+// 3.1
 let hacker1UpperCase = "";
 
 for (let i=0; i < hacker1.length; i++) {
@@ -24,8 +26,28 @@ for (let i=0; i < hacker1.length; i++) {
 }
 console.log(hacker1UpperCase)
 
+// 3.2
 let hacker2Reverse = "";
 for (let i= hacker2.length -1; i >=0; i--) {
   hacker2Reverse += hacker2[i]
 }
 console.log(hacker2Reverse)
+
+// 3.3
+const hackerSorted = [
+  hacker1, hacker2
+];
+
+function mySort(a, b) {
+  if (a > b)  {
+      console.log("The driver's name goes first");
+  } else if (a < b) {
+      console.log("Yo, the navigator goes first definitely.")
+  } else {
+      console.log("What?! You both have the same name?")
+  }
+}
+
+hackerSorted.sort(mySort)
+
+
