@@ -25,3 +25,11 @@ let name2 = '';
 for(let i = hacker2.length - 1; 0 <= i; i--){
   name2 += hacker2[i] + " ";
 }
+
+if(hacker1 < hacker2){
+    console.log("The driver's name goes first.");
+  }else if(hacker2 < hacker1){
+    console.log("Yo, the navigator goes first definitely.");
+  }else if(hacker1 === hacker2){
+    console.log("What?! You both have the same name?");
+  }
