@@ -42,3 +42,29 @@ else if (hacker2<hacker1) {
 else if (hacker1=== hacker2) {
     console.log("What?! You both have the same name?");
 }
+
+// Iteration 4: Bonus 1
+let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna vitae quam sagittis efficitur vel non leo. Proin aliquet ultricies erat non dapibus. Donec ornare scelerisque porttitor. Morbi aliquet laoreet mauris fringilla ullamcorper. Vivamus volutpat, libero nec porttitor dapibus, libero risus mollis elit, eu lacinia magna tellus vitae ligula. Praesent laoreet nunc et sapien facilisis, ut varius nisi sagittis. Mauris semper, diam sit amet ultricies bibendum, magna dolor dapibus odio, nec ullamcorper nibh urna id tortor. Vestibulum sollicitudin lectus eget semper accumsan. Nunc scelerisque condimentum eleifend. Quisque sit amet sapien neque. Etiam tempor, arcu id rhoncus mollis, lacus nisi facilisis orci, sed porttitor mi turpis vitae dui. Suspendisse consequat purus sed elit suscipit, non pellentesque libero hendrerit. Phasellus dictum massa nec justo lobortis, vitae iaculis eros ultrices. Quisque sit amet leo suscipit, auctor felis sit amet, congue erat. Cras hendrerit erat ut tellus ultricies, eu eleifend tortor ullamcorper. Etiam a lectus ut ex elementum posuere sit amet non risus. Pellentesque ut quam id tortor consectetur eleifend. Proin velit enim, volutpat quis augue quis, laoreet fringilla quam. Integer hendrerit, ipsum placerat hendrerit hendrerit, lorem lorem vehicula ipsum, blandit mollis nisi dui et felis. Praesent odio dui, pulvinar et quam rhoncus, aliquet facilisis sapien. Fusce tincidunt posuere metus, quis auctor est maximus eu. Ut vel volutpat orci, ac vulputate sapien.Vivamus sodales elit a arcu placerat, quis tempus eros auctor. Mauris pellentesque pretium purus, eu ultrices odio auctor quis. Sed tortor nunc, pellentesque in leo aliquet, finibus accumsan massa. Aliquam et molestie erat, non vestibulum justo. Integer tincidunt et massa ac efficitur. Duis mi ex, hendrerit non mauris id, dignissim convallis nunc. Vestibulum et tempus diam. Aliquam urna elit, feugiat quis pretium ac, convallis nec erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. ";
+
+let wordCount =0;
+for (let i=0; i<longText.length; i++) {
+    if (longText[i]=== " ") {
+        wordCount++;
+    }
+}
+console.log(`Number of words: ${wordCount}`);
+
+let etCount =0;
+for (let i=0; i<longText.length; i++) {
+    if (longText[i] + longText[i+1] === "et" && longText[i-1] === (" " || "." ) && longText[i+2] === (" " || "." )){
+        etCount++;
+    }
+    else if (longText[i] + longText[i+1] === "Et" && longText[i-1] === (" " || "." ) && longText[i+2] === (" " || "." )){
+        etCount++;
+    }
+}
+console.log(`Number of "et": ${etCount}`);
+
+
+
+// Iteration 5: Bonus 2
