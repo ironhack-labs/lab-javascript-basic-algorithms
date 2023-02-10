@@ -10,34 +10,36 @@ console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 
-// if (hacker1.length > hacker2.length) {
-//     console.log( `The driver has the longest name, it has ${hacker1.length} characters`)
-// } else if (hacker1.length < hacker2.length) {
-//     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
-// } else {
-//     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
-// }
+if (hacker1.length > hacker2.length) {
+    console.log( `The driver has the longest name, it has ${hacker1.length} characters`)
+} else if (hacker1.length < hacker2.length) {
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
+} else {
+    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+}
 
 
 // Iteration 3: Loops
 
+// Driver Name UpperCase:
 
-// let driverNamesUppercase = "";
+let driverNamesUppercase = "";
 
-// for (let i = 0; i < hacker1.length; i++ ) {
-//     driverNamesUppercase += hacker1[i].toUpperCase() + " ";
-// }
+for (let i = 0; i < hacker1.length; i++ ) {
+    driverNamesUppercase += hacker1[i].toUpperCase() + " ";
+}
 
-// console.log(driverNamesUppercase);
+console.log(driverNamesUppercase);
 
+// Driver Name Reverse:
 
-// let driverNameReverse = "";
+let driverNameReverse = "";
 
-// for (let i = hacker1.length - 1; i >= 0 ; i--) {
-//     driverNameReverse += hacker1[i];
-// }
+for (let i = hacker1.length - 1; i >= 0 ; i--) {
+    driverNameReverse += hacker1[i];
+}
 
-// console.log(driverNameReverse);
+console.log(driverNameReverse);
 
 // Lexicographic order:
 
