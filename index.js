@@ -33,3 +33,27 @@ if(hacker1 < hacker2){
   }else if(hacker1 === hacker2){
     console.log("What?! You both have the same name?");
   }
+
+//Bonus 1
+const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus hendrerit tellus et scelerisque. Mauris non magna felis. Vestibulum urna velit, faucibus eu erat in, venenatis gravida nunc. Aliquam erat volutpat. Nullam fringilla sapien sit amet metus semper, nec porta dolor pretium. Donec iaculis nisi mattis quam ullamcorper condimentum. Nam maximus ex sit amet sem bibendum scelerisque. Vivamus facilisis dui justo, sed ultricies nisi dictum a. Pellentesque vitae suscipit mauris. Donec sed feugiat risus.
+
+Etiam vitae tempus lorem. Donec at iaculis tortor. Suspendisse potenti. Phasellus et rhoncus erat. Morbi pharetra ex a malesuada suscipit. Mauris justo nulla, sagittis eget congue bibendum, tincidunt quis augue. Sed gravida, augue sit amet ullamcorper ultricies, nulla neque commodo leo, eu posuere mi erat quis magna. Nullam at porta urna. Mauris ac dictum mauris, id volutpat sapien. Nulla nisl nisl, finibus in velit nec, congue pharetra arcu. Integer ullamcorper nisl vel ligula pellentesque dictum. Pellentesque in mi quam. Nullam molestie arcu in sapien fermentum, vel imperdiet urna lacinia. Etiam commodo et dui at finibus. Proin nec dignissim massa, vel iaculis leo.Duis pellentesque dignissim dui. Sed viverra posuere est, sed dictum odio molestie ut. Cras vel sodales est. Suspendisse potenti. Aliquam erat volutpat. Mauris sodales justo in convallis egestas. Mauris finibus lorem sit amet semper fringilla. Vestibulum sit amet porta neque. Fusce non tincidunt erat.`;
+
+function wordCounter(){
+    let numberOfStrings = 0;
+    for(let i = 0; i < longText.length;i++){
+     if(longText[i] === " "){
+       numberOfStrings++;
+     }
+  }
+  return numberOfStrings++;
+  }
+
+let textCount = 0;
+for(let i = 0; i < longText.length; i++){
+  if(longText[i] === "e" || longText[i] === "E"){
+        if(longText[i] + longText[i + 1] === "et" || longText[i] + longText[i + 1] === "Et"){
+          textCount++;
+        }
+     }
+}
