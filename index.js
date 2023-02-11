@@ -57,3 +57,32 @@ for(let i = 0; i < longText.length; i++){
         }
      }
 }
+
+//Bonus 2
+const phraseToCheck = "A man, a plan, a canal, Panama!";
+
+function checkPhrase(){
+  let cleanPhrase = "";
+  let phraseForwards = "";
+  let phraseBackwards = "";
+ for(let i = 0; i < phraseToCheck.length; i++){
+  if(phraseToCheck[i] === "!" || phraseToCheck[i] === "," || phraseToCheck[i] === "." || phraseToCheck[i] === `''` || phraseToCheck[i] === "?" || phraseToCheck[i] === ` ` || phraseToCheck[i] === `'`){
+     continue;
+     }else{
+      cleanPhrase += phraseToCheck[i];  
+  }
+}
+  for(let i = 0; i < cleanPhrase.length; i++){
+    phraseForwards += cleanPhrase[i].toLowerCase();
+  }
+  for(let i = cleanPhrase.length - 1; 0 <= i; i--){
+    phraseBackwards += cleanPhrase[i].toLowerCase();
+  }
+  if(phraseForwards === phraseBackwards){
+    console.log(`Found a Palindrome "${phraseForwards}"`);
+  }else{
+    console.log(`It is not a Palindrome`);
+  }
+}
+
+checkPhrase();
