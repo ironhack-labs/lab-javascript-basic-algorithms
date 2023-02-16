@@ -1,11 +1,7 @@
 // Iteration 1: Names and Input
 let hacker1 = "Nicolas";
-<<<<<<< HEAD
 console.log("the driver's name is", hacker1)
 
-=======
-console.log(`the driver's name is ${hacker1} ` )
->>>>>>> 820255e08fcc4595eef04357c3057e1be4821174
 let hacker2= "Rayane";
 console.log("the navigator's name is " ,hacker2);
 
