@@ -50,25 +50,35 @@ let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce e
 
 Nam in neque et dui consectetur pulvinar. Etiam interdum congue purus nec cursus. Fusce finibus ante vel odio tincidunt suscipit. Suspendisse vel urna ex. Proin a lectus urna. Maecenas ac tempor lacus. Fusce quis auctor lacus. Vestibulum sit amet hendrerit dolor, vel dapibus risus. Ut vel orci fringilla ligula ultricies varius ut sit amet nisi. Maecenas nec urna porttitor, auctor est a, cursus arcu. Aenean at imperdiet tellus, nec viverra purus. Nullam ac ultricies nisi. Praesent sapien nibh, convallis et nunc a, ultrices rutrum eros. Aenean nec ex urna. Sed ultricies volutpat ante vitae cursus.
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec neque ipsum, consequat sed imperdiet ut, porttitor ac urna. Duis ac venenatis mauris. Nam egestas massa sed lectus fringilla fermentum. Curabitur rhoncus nibh lorem, vitae iaculis nunc interdum a. Proin ac posuere sem, eget ultrices enim. Vestibulum lacinia magna ut pharetra consequat. Mauris a eleifend sem, sit amet hendrerit tellus. Nulla sed aliquet turpis. Quisque lorem tortor, tempor ut pellentesque sed, ultrices at risus. Etiam eu molestie nisl. Aliquam non placerat quam.`
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec neque ipsum, consequat sed imperdiet ut, porttitor ac urna. Duis ac venenatis mauris. Nam egestas massa sed lectus fringilla fermentum. Curabitur rhoncus nibh lorem, vitae iaculis nunc interdum a. Proin ac posuere sem, eget ultrices enim. Vestibulum lacinia magna ut pharetra consequat. Mauris a eleifend sem, sit amet hendrerit tellus. Nulla sed aliquet turpis. Quisque lorem tortor, tempor ut pellentesque sed, ultrices at risus. Etiam eu molestie nisl. Aliquam non placerat quam.`;
 
-let spacesCounter = 1
+let spacesCounter = 0;
 // index 0 for the first space
 
-console.log(longText.length)
+console.log(longText.length);
 
 for (let i = 0; i <= longText.length; i++) {
-    if (longText[i] === " ") {
-        spacesCounter += 1
-    } 
+  if (longText[i] === " ") {
+    spacesCounter += 1;
+  }
 }
 
-let wordCounter = spacesCounter + 2
-// +2 because there is a word before the first space and one after the last one.
-console.log(wordCounter)
-// 268
+let wordCounter = spacesCounter + 3;
+// +3 paragraphs
+console.log(wordCounter);
+// 269
 
-let etCounter = 1
-console.log(longText.indexOf("et"))
-let indexMarker = longText.indexOf("et") + 1
-console.log(longText.indexOf("et", indexMarker))
+function CountTotalAmountOfSpecificWordInaString(str1, str2)
+{
+    let next = 0;
+    let findedword = 0;
+        do {
+            var n = str2.indexOf(str1, next);
+            findedword = findedword +1;
+            next = n + str1.length;
+            }while (n>=0);
+     console.log("total finded word :" , findedword - 1 );
+     return findedword;
+   }
+
+CountTotalAmountOfSpecificWordInaString("et", longText)
