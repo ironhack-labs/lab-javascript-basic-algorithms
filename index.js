@@ -6,5 +6,9 @@ let hacker2 = "singabe" ;
 console.log(`the navigator name is ${hacker2}`);
 // Iteration 2: Conditionals
 
+if (hacker1.length === 8 ){
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+    
+  }
 
 // Iteration 3: Loops
