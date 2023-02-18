@@ -14,3 +14,7 @@ if (hacker1.length === 8 ){
 // Iteration 3: Loops
 
 // JE COMMENCE L'ITERATION 3
+
+for (let i = 0; i < hacker1.length; i++) {
+  console.log(hacker1[i].toUpperCase() + " ");
+ }
