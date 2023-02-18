@@ -12,3 +12,5 @@ if (hacker1.length === 8 ){
   }
 
 // Iteration 3: Loops
+
+// JE COMMENCE L'ITERATION 3
