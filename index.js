@@ -22,6 +22,41 @@ for (let i=0; i<hacker1.length; i++) {
 } 
 console.log(printHacker1)
 
+let printHacker2 = ''
+
+for (let j=hacker2.length; j>=0; j--) {
+  printHacker2 += `${hacker2[j]}`
+}
+console.log(printHacker2);
+
+let largestWordChars = 0;
+if (hacker1.length>hacker2.length){
+  largestWordChars = hacker1.length
+}
+
+else {largestWordChars = hacker2.length}
+
+function compare(name1='', name2=''){
+  for (let a=0; a<=largestWordChars; a++){
+
+    if (hacker1===hacker2) {
+      return console.log (`What? You both have the same name?`)
+    } 
+    
+    else if (hacker1[a]<hacker2[a]){
+      return console.log(`The driver's name goes first`)
+    } 
+    
+    else if (hacker1[a]>hacker2[a]){
+      return console.log(`Yo, the navigator go first definitely`)
+    } 
+  }
+} 
+
+compare (hacker1, hacker2)
+
+
+
 
 //Bonus one Realizado por Pepe Alacid
 
