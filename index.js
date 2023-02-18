@@ -41,7 +41,7 @@ else{
 let UpperCased = hacker1.toUpperCase();
 let UpperCasedSpace = ""
 for(let i=0 ; i < hacker1.length ; i++){
-  UpperCasedSpace += UpperCased[i] 
+  UpperCasedSpace += UpperCased[i]
   UpperCasedSpace += ' '
 }
 console.log(UpperCasedSpace)
@@ -90,12 +90,31 @@ Praesent egestas sollicitudin rutrum. Fusce sodales augue id purus laoreet, ut v
 console.log(`Ce texte fait ${longText.length} caractères`)
 let numberEt=0
 
-for(let i=0; i<(longText.length-1); i++){
-  if(longText[i]==="e"&&longText[i+1]==="t"){
-    numberEt += 1;
+
+/*1ère version pour compter le nombre de fois où l'enchainement "et" apparait
+for(let i=0; i<(longText.length-2); i++){
+  if((longText[i]==="E" || longText[i]==="e") && longText[i+1]==="t"){
+    if(i===0 && longText[i+2]===" "){
+
+    numberEt+=1;
   }
 }
 console.log(`il y a ${numberEt} "et" dans ce texte`);
+*/
+
+for(let i=0; i<(longText.length-1); i++){
+  if(longText[i]==="e" && longText[i+1]==="t"){
+    if(i===0 && longText[i+2]===" "){
+    }
+    else if(i===(longText.length-2) && longText[i-1]==" "){
+    }
+    else if(longText[i-1]===" " && longText[i+2]===" "){
+      numberEt += 1;
+      
+    }
+  }
+}
+console.log(`il y a ${numberEt} "et" isolés dans ce texte`);
 
 //Bonus 2//
 let phraseToCheck= "step on no pets";
