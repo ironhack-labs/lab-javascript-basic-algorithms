@@ -12,5 +12,18 @@ if (driver > navigator) { console.log(`The driver has the longest name, it has $
 else if (navigator > driver) { console.log(`It seems that the navigator has the longest name, it has ${navigator} characters`) }
 else console.log(`Wow, you both have equally long names, ${egality} characters!`)
 
-// Iteration 3: Loops
-console.log(hacker1.toUpperCase())// Iteration 1: Names and Input
+// // Iteration 3: Loops
+
+let majDriver = ""
+for (let i = 0; i < hacker1.length; i++) {
+    majDriver += hacker1[i].toUpperCase()
+    majDriver += " "
+}
+console.log(majDriver)
+
+
+let invNavigator = ""
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    invNavigator += hacker2[i]
+}
+console.log(invNavigator)
