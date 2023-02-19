@@ -1,8 +1,10 @@
 // Iteration 1: Names and Input
+
 const hacker1 = prompt("driver's name ?");
 console.log(`The driver's name is ${hacker1}`)
 const hacker2 = prompt("navigator's name ?")
 console.log(`The navigator's name is ${hacker2}`)
+
 // Iteration 2: Conditionals
 
 let driver = hacker1.length
