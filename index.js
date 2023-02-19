@@ -21,7 +21,6 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 console.log(majDriver)
 
-
 let invNavigator = ""
 for (let i = hacker2.length - 1; i >= 0; i--) {
     invNavigator += hacker2[i]
