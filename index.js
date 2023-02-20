@@ -18,3 +18,10 @@ if (hacker1.length === 8 ){
 for (let i = 0; i < hacker1.length; i++) {
   console.log(hacker1[i].toUpperCase() + " ");
  }
+ if (hacker2 < hacker1) {
+  console.log("The driver's name goes first.");
+} else if (hacker1 < hacker2) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
