@@ -22,3 +22,31 @@ if (driverLength > navigatorLength) {
 }
 
 // Iteration 3: Loops
+
+let driverSpace=[];
+for (let i=0; i < driverLength; i++){
+  driverSpace += hacker1[i].toUpperCase() + " "
+}
+console.log(driverSpace)
+
+let reverseNavigator=[];
+for (let i=navigatorLength-1; i>=0; i--){
+  reverseNavigator += hacker2[i]
+}
+console.log(reverseNavigator)
+
+
+const order = hacker1.localeCompare(hacker2);
+switch (order){
+  case -1 : 
+    console.log("The drivers name goes first.")
+    break;
+  case 0 :
+    console.log("That means thats we have the same name.")
+    break;
+  case 1 :
+    console.log("Yo, the navigator goes first definitely.")
+    break;
+}
+
+  
