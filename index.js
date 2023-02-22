@@ -5,3 +5,9 @@
 
 
 // Iteration 3: Loops
+
+console.log(test)
+//comment
+
+let test = 1
+console.log(test)
