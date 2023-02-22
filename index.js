@@ -87,7 +87,7 @@ if (etCount === 1) {
   console.log(`The word "et" appears ${etCount} times in the paragraph`);
 }
 
-//Bonus two
+//Bonus two Realizado por Pepe Alacid
 
 let phraseToCheck = "";
 
