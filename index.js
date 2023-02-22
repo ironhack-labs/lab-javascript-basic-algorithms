@@ -22,3 +22,23 @@ if (valiCharacters > senemCharacters) {
 	);
 }
 // Iteration 3: Loops
+
+const splittedString = hacker1.split('');
+const stringWithSpaces = splittedString.join(' ');
+const upperCaseStringWithSpaces = stringWithSpaces.toUpperCase();
+console.log(upperCaseStringWithSpaces);
+
+
+for (let i=hacker2.length; i>=0; i--) {
+ console.log(hacker2[i]);
+}
+
+let result = hacker1.localeCompare(hacker2);
+
+if (result<0) {
+ console.log("The driver's name goes first.")
+} else if (result>0) {
+ console.log("Yo, the navigator goes first definetely!")
+} else {
+ console.log("What, you both have the same name?")
+}
