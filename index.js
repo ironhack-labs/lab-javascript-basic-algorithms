@@ -85,4 +85,31 @@ while (position !== -1) {
 console.log(counterSpace);
 console.log(counterEt);
 
+//PART 2
+
+const phrase = "Was it a car or a cat I saw?";
+let phraseNoPunc = phrase.slice(0);
+phraseNoPunc = phrase.replace(/[.,?\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+phraseNoPunc = phraseNoPunc.replace(/\s/g, '');
+/* We researched intensly the replace method and how /g works, don't worry! */
+let phraseUpper = [];
+
+
+for (let i=0; i < phraseNoPunc.length; i++){
+  
+  phraseUpper += phraseNoPunc[i].toUpperCase() 
+}
+
+let phraseToCheck=[];
+for (let i=phraseUpper.length-1; i>=0; i--){
+  phraseToCheck += phraseUpper[i]
+}
+
+if (phraseToCheck === phraseUpper){
+  console.log("It's a Palindrome!")
+}
+else {
+  console.log("It's not a Palindrome...")
+}
+
   
