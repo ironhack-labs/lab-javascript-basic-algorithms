@@ -131,13 +131,9 @@ const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 #### Bonus - Iteration #3.2: A generic `sum()` function
 
-**The goal: Learn how to refactor your code.** :muscle:
+In iteration 3, you created a function that returns the sum of an array of numbers. But what if we want to calculate the sum of the length of words in an array? What if it also includes _boolean_ values? To achieve this, we must create a function allowing this flexibility.
 
-In iteration 3, you created a function that returns the sum of an array of numbers. But what if we wanted to know what was the sum of the length of all of the words in an array? What if we wanted to add _boolean_ values to the mix? We wouldn't be able to use the same function as above, or better saying, we would have to _tweak_ it a little bit so that it can be reused no matter what is in the array that is passed as an argument when function `sumNumbers()` is called.
-
-Here we are applying a concept we call **polymorphism**, that is, dealing with a function's input independently of the types they are passed as.
-
-Let's implement the function `sum()` that calculates the sum for an array filled with (_almost_) any type of data. Note that strings should have their length added to the total, and boolean values should be coerced into their corresponding numeric values. Check the tests for more details.
+In this iteration, you should implement the function `sum()`. The function should take an array of mixed values - numbers, strings, and booleans. The function should add all the string lengths, numeric values, and numeric values of booleans to the total sum and return the sum. Check the tests for more details.
 
 You can use the following array to test your solution:
 
