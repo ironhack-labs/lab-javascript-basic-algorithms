@@ -5,3 +5,5 @@
 
 
 // Iteration 3: Loops
+
+const name= "cherry"
