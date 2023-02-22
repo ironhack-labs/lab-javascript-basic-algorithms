@@ -49,3 +49,35 @@ if(hacker1.localeCompare(hacker2) === -1) {
 } else {
     console.log(`What? You both have the same name?!`);
 }
+
+//Iteration 4 BONUS TIME :)
+//Bonus 1
+//If we check MDN documentation we can see that the .split() function
+//takes a pattern and divides a string into a list of substrings and 
+//puts them into an array. So, knowing that, we can just separate our
+//words by telling split to literally split them when it finds a blank 
+//space. We store each word in an array and then we can simply use the
+//.lenght to know how many words we have. 
+const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam commodo cursus diam, ac hendrerit enim auctor sed. Suspendisse feugiat, neque sit amet condimentum accumsan, massa sapien facilisis purus, sed auctor elit nulla quis tellus. In venenatis lorem ac nunc congue, id dignissim nisl porttitor. Praesent in pharetra erat. In hac habitasse platea dictumst. Quisque mattis sagittis leo, et hendrerit tortor viverra nec. Proin ac felis at magna rutrum dictum. Donec vulputate tellus a faucibus interdum. In iaculis posuere purus, sed luctus elit maximus non. Donec pharetra elit sit amet sollicitudin gravida. Donec in placerat orci, id elementum purus. Suspendisse vel justo id dolor feugiat cursus nec sed felis. Nullam efficitur non mi nec tincidunt. Nunc sit amet sollicitudin ligula. Proin a quam eu ante ullamcorper tempus eget at arcu.
+Fusce a dolor eleifend, dignissim mauris sed, faucibus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tellus id lorem aliquam molestie non tristique lorem. Phasellus consectetur, sem a congue suscipit, erat neque consequat nunc, sed viverra tortor diam ac ipsum. Ut sodales dapibus scelerisque. Vestibulum dui justo, aliquam a nisi nec, pretium convallis erat. Quisque viverra dapibus lectus viverra pretium. Donec vel orci sit amet dolor viverra mattis. Vivamus magna enim, ornare ut facilisis eget, vulputate at mi. Quisque non odio eget nunc ullamcorper consequat. Vivamus at consectetur purus. Etiam feugiat velit sed nunc varius, at porttitor sem tempus. In vel eros viverra, porttitor justo et, pulvinar turpis. Etiam ullamcorper ante quis ex pharetra vehicula.`;
+
+const wordsArray = longText.split(" ");
+
+console.log(`${wordsArray.length}`);
+
+//Bonus 2
+const phraseToCheck = 'amor roma';
+
+function checkPalindrome(phrase) {
+    phrase.toLowerCase();
+    const phraseLength = phrase.length;
+    for(let i = 1; i < phraseLength / 2; i++) {
+        if(phrase[i] !== phrase[phraseLength - 1 - i]) {
+            return `This is not a palindrome!`
+        }
+    }
+    return `You found a palindrome!`
+}
+
+const palindromeChecked = checkPalindrome(phraseToCheck);
+console.log(palindromeChecked);
