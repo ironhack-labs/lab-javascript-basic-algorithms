@@ -16,3 +16,23 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let driversName = "";
+for (let i=0; i < hacker1.length; i++){
+  driversName += hacker1[i].toUpperCase() + " ";
+  }
+console.log(driversName);
+
+let navigatorName = "";
+for (let g=hacker2.length - 1; g>=0; g--){
+  navigatorName += hacker2[g]
+}
+console.log(navigatorName);
+
+if (hacker1.localeCompare(hacker2) === -1){
+  console.log("The driver's name goes first");
+}else if (hacker2.localeCompare(hacker1) === -1){
+  console.log("Yo, the navigator goes first definitely");
+}else if (hacker1.localeCompare(hacker2) === 0){
+  console.log("What?! You both have the same name?");
+}
+  
