@@ -61,5 +61,60 @@ else {
   console.log(`What?! You both have the same name?`)
 }
 
-//comment
+/*Generate 3 paragraphs. Store the text in a new string variable named longText.*/
+
+const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum pretium lacus. Sed lorem ante, tristique ac libero eu, volutpat sagittis libero. Phasellus in urna sed neque eleifend luctus. Maecenas et ipsum maximus, ornare neque non, sagittis augue. Maecenas vehicula placerat quam, vel mollis elit ornare a. Sed vestibulum, libero id ullamcorper ullamcorper, nunc dolor consequat ante, sit amet placerat lacus justo eget ipsum. Curabitur eget neque nunc. Proin quis orci ante. Vestibulum vitae euismod ante, ultrices faucibus nunc.
+
+Sed lorem lacus, fringilla sed sapien id, dignissim placerat ante. Aenean tellus odio, eleifend ut leo quis, ultrices tristique nisl. Vivamus felis nunc, euismod at rutrum eget, dignissim quis sem. Pellentesque eget erat quis erat vehicula consequat. Etiam ac ullamcorper tortor, ut faucibus libero. Ut ultrices egestas neque et tristique. Duis eget molestie nulla. Aenean non sapien quis urna pellentesque egestas at in ante. Suspendisse potenti. Suspendisse pulvinar imperdiet varius. Pellentesque nisi lectus, volutpat quis viverra at, commodo non turpis. Cras lacus justo, semper ut purus id, egestas tincidunt massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam cursus id leo ut molestie.
+
+Duis vel interdum odio, eget vehicula nunc. Cras nec orci pretium, porttitor velit vel, fermentum libero. Curabitur scelerisque placerat dui, non convallis tellus imperdiet sit amet. Suspendisse ultricies, diam sed cursus eleifend, nisl metus feugiat sem, quis mollis purus dolor id velit. Mauris ultricies ac dui quis ullamcorper. Maecenas luctus quam quis ex ullamcorper, vitae blandit ligula tempor. Praesent condimentum pretium nulla, ac tincidunt enim tempor ut. In rhoncus nisi id diam vulputate, a auctor purus molestie. Aenean ornare ligula id suscipit sodales. Duis eget turpis est. Proin convallis porttitor nisi. Vestibulum vitae lacus quis ipsum elementum venenatis id non ligula. Vestibulum at quam at eros dapibus convallis id quis tortor. Nunc cursus nibh eu maximus elementum. Morbi vel vulputate odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus..`
+
+/*Make your program count the number of words in the string.*/
+
+const wordCount = longText.split(" ").length;
+console.log(wordCount)
+
+
+/*Make your program count the number of times the Latin word et appears.*/
+
+let count = 0
+for (let i = 0; i < longText.length; i++) {
+const latinWord  = longText[i] + longText[i + 1]
+
+  if (latinWord === "et") {
+    count++;
+  }
+} 
+console.log(count)
+
+
+/*Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".*/
+
+
+const phraseToCheck = `amor`
+
+
+const lastIndex2 = phraseToCheck.length - 1;
+let phraseReversed = "";
+
+for (let x = lastIndex2; x >= 0; x--) {
+  const char2 = phraseToCheck[x];
+  phraseReversed += char2;
+}
+console.log(phraseReversed)
+if (phraseToCheck == phraseReversed){
+console.log(`the word ${phraseToCheck} is a Palindrome.`)
+}
+else {
+  console.log(`the word is not a Palindrome`)
+}
 
