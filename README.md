@@ -7,7 +7,7 @@
    <h2>Learning Goals</h2>
   </summary>
 
-  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+  This exercise allows you to practice and apply the concepts and techniques taught in class. 
 
   Upon completion of this exercise, you will be able to:
 
@@ -15,7 +15,7 @@
   - Identify expected code behavior by reading and understanding test results and errors.
   - Declare and invoke functions using function declaration, function expression, and arrow function syntax.
   - Use the `return`  keyword to return a value from a function.
-  - Pass primitive value as arguments to functions.
+  - Pass primitive values as arguments to functions.
   - Pass arrays to functions as arguments.
   - Access items stored in arrays using the indexes,
   - Add, remove and check for items in an array using the index and array methods (`unshift`, `push`, `splice`, `shift`, `pop`, `indexOf`, and `includes`).
@@ -61,7 +61,7 @@ Having a strong *test suite* can provide you the ease of mind since you will be 
 
 ### Testing labs
 
-This LAB and some of the labs you will work on during the bootcamp are equipped with unit tests to provide automated feedback on your lab progress.
+This LAB and some labs you will work on during the bootcamp are equipped with unit tests to provide automated feedback on your lab progress.
 <br>
 
 ### Testing with Jasmine
@@ -174,7 +174,7 @@ Calculating an average is a prevalent task. So let's practice it a bit.
 **The logic behind this:**
 
 1. Find the sum as we did in the first exercise (or how about reusing the function `sumNumbers()`?)
-2. Take that sum and divide it by the number of elements in the array.
+2. Divide that sum by the number of elements in the array.
 
 <br>
 
@@ -262,7 +262,7 @@ const words = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', '
 
 ### Iteration #7: Count repetition
 
-Declare a function named `howManyTimes` that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
+Declare a function named `howManyTimes` that will take in an array of words as the first argument and a word to search for as the second argument. The function will return the number of times that word appears in the array.
 
 You can use the following array to test your solution:
 
@@ -504,7 +504,7 @@ Following the logic you've used in iteration #8.1, declare a function called `gr
   <summary>What could cause <code>array.length</code> to return <code>undefined</code>?</summary>
   <br>
 
-  If you try to access the `.length` property on an array (e.g., `array.length`) but you are getting `undefined` it means that the variable you are accessing is not actually an array.
+  If you try to access the `.length` property on an array (e.g., `array.length`) but get `undefined`, it means that the variable you are accessing is not actually an array.
 
   <br>
 
@@ -562,26 +562,22 @@ Following the logic you've used in iteration #8.1, declare a function called `gr
   <summary>I am unable to push changes to the repository. What should I do?</summary>
   <br>
 
-  There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
+There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
 
-  1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. First, make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
+1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
+  ```bash
+  git add .
+  git commit -m "Your commit message"
+  git push
+  ```
+2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
+To check which remote repository you have cloned, run the following terminal command from the project folder:
+  ```bash
+  git remote -v
+  ```
+If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
 
-   ```bash
-   git add .
-   git commit -m "Your commit message"
-   git push
-   ```
-
-  2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
-  To check which remote repository you have cloned, run the following terminal command from the project folder:
-
-   ```bash
-   git remote -v
-   ```
-
-  If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
-
-   Note: You should make a copy of your local code to avoid losing it in the process.
+Note: You should make a copy of your local code to avoid losing it in the process.
 
   [Back to top](#faqs)
 
