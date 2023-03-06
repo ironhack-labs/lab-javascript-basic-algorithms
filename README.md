@@ -326,7 +326,7 @@ To check which remote repository you have cloned, run the following terminal com
   ```
 If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
 
-Note: You should make a copy of your local code to avoid losing it in the process.
+**Note**: You should make a copy of your local code to avoid losing it in the process.
 
   [Back to top](#faqs)
 
