@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | JS Basic Algorithms 
+# LAB | JS Basic Algorithms
 
 Welcome to your first JavaScript lab at Ironhack!
 
@@ -11,6 +11,28 @@ The goal of this exercise is to get you familiarized with the primitive data str
 ![lab-js-basic-algorithms-code-collaboration-gif](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-code-collaboration-gif.gif)
 
 <br>
+
+<details>
+  <summary>
+   <h2>Learning Goals</h2>
+  </summary>
+
+  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+
+  Upon completion of this exercise, you will be able to:
+
+  - Declare variables using `const` and `let` keywords and use them to store values.
+  - Assign values to variables using assignment operators (`=` , `+=` , `-=` , etc.).
+  - Use conditional statements (`if`, `else if`, `else`) and logical operators (AND, OR, NOT) to control the flow of the program.
+  - Access and compare string characters, substrings and length.
+  - Manipulate strings using basic string methods and proper (`toUpperCase()`, `toLowerCase()`, etc.).
+  - Compare values using the comparison operators (`<` , `>` , `<=` , `>=` , `===`).
+  - Use `for` or `while` loops to iterate over strings in normal and reverse order.
+
+  <br>
+  <hr> 
+
+</details>
 
 ## Introduction
 
