@@ -4,7 +4,7 @@
 
 Welcome to your first JavaScript lab at Ironhack!
 
-The goal of this exercise is to get you familiarized with the primitive data structures in JavaScript, which we have covered in class. Feel free to reference lesson materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
+This exercise aims to familiarize you with the primitive data structures in JavaScript, which we have covered in class. Feel free to reference lesson materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
 
 <br>
 
@@ -17,7 +17,7 @@ The goal of this exercise is to get you familiarized with the primitive data str
    <h2>Learning Goals</h2>
   </summary>
 
-  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+  This exercise allows you to practice and apply the concepts and techniques taught in class. 
 
   Upon completion of this exercise, you will be able to:
 
@@ -36,7 +36,7 @@ The goal of this exercise is to get you familiarized with the primitive data str
 
 ## Introduction
 
-For this **pair-programming** activity, we are going to use a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop). To make things as simple as possible, we are going to use an in-browser JavaScript REPL that is provided by the browser-based IDE, [repl.it](https://replit.com/languages/javascript).
+For this **pair-programming** activity, we will use a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop). To make things as simple as possible, we are going to use an in-browser JavaScript REPL that is provided by the browser-based IDE, [repl.it](https://replit.com/languages/javascript).
 
 Ready to start?
 
@@ -62,14 +62,14 @@ Ready to start?
 Upon completion, run the following commands:
 
 ```bash
-$ git add .
-$ git commit -m "done"
-$ git push origin master
+git add .
+git commit -m "done"
+git push origin master
 ```
 
 Create a Pull Request so that the TAs can check your work.
 
-*You should make a PR (Pull Request) as soon as you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.*
+*You should make a PR (Pull Request) when you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.*
 
 <!-- ## Submission -->
 
@@ -97,12 +97,12 @@ Create a Pull Request so that the TAs can check your work.
 
   3.1 Print the characters of the driver's name, separated by space, and [in capital letters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), i.e., `"J O H N"`.
 
-  3.2 Print all the characters of the navigator's name, in reverse order, i.e., `"nhoJ"`.
+  3.2 Print all the characters of the navigator's name in reverse order, i.e., `"nhoJ"`.
 
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
 
 - `The driver's name goes first.` <br>
-- `Yo, the navigator goes first definitely.` <br>
+- `Yo, the navigator goes first, definitely.` <br>
 - `What?! You both have the same name?`
 
 ### Bonus Time!
@@ -117,7 +117,7 @@ Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
 
 #### Bonus 2:
 
-Create a new variable `phraseToCheck` and have it contain some string value. Write a code that will check if the value we assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
+Create a new variable, `phraseToCheck`, containing some string value. Write a code to check if the value assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
 
   - "A man, a plan, a canal, Panama!"
   - "Amor, Roma"
@@ -128,7 +128,7 @@ Create a new variable `phraseToCheck` and have it contain some string value. Wri
   - "put it up"
   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
-  __IMPORTANT__: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply the knowledge you currently have and try to come up with a solution by just using the `for` loop and `if-else` statements with some `break` and `continue`.
+  __IMPORTANT__: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply your current knowledge and try to come up with a solution by just using the `for` loop and `if-else` statements with some `break` and `continue`.
 
 __Happy coding!__ :heart:
 
@@ -151,7 +151,6 @@ __Happy coding!__ :heart:
 
   If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
 
-
   For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
 
   Once you have a clear understanding of the problem, you will be able to start working toward the solution.
@@ -163,7 +162,7 @@ __Happy coding!__ :heart:
   <summary>How do you find a length of a string in JavaScript?</summary>
   <br>
 
-  To find the length of a string you can use the `length` property. Here is an example:
+  To find the length of a string, you can use the `length` property. Here is an example:
 
   ```js
   const str = "Hello, world!"";
@@ -325,9 +324,9 @@ To check which remote repository you have cloned, run the following terminal com
   ```bash
   git remote -v
   ```
-If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first, and then clone your fork to your local machine to be able to push the changes.
+If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
 
-Note: You may want to make a copy of the code you have locally, to avoid losing it in the process.
+Note: You should make a copy of your local code to avoid losing it in the process.
 
   [Back to top](#faqs)
 
