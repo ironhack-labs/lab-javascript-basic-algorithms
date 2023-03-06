@@ -2,7 +2,29 @@
 
 # LAB | JS Functions & Arrays
 
-<br>
+<details>
+  <summary>
+   <h2>Learning Goals</h2>
+  </summary>
+
+  This exercise is designed to allow you practice and apply the concepts and techniques taught in class. 
+
+  Upon completion of this exercise, you will be able to:
+
+  - Run predefined tests in Jasmine to verify that the program meets the technical requirements.
+  - Identify expected code behavior by reading and understanding test results and errors.
+  - Declare and invoke functions using function declaration, function expression, and arrow function syntax.
+  - Use the `return`  keyword to return a value from a function.
+  - Pass primitive value as arguments to functions.
+  - Pass arrays to functions as arguments.
+  - Access items stored in arrays using the indexes,
+  - Add, remove and check for items in an array using the index and array methods (`unshift`, `push`, `splice`, `shift`, `pop`, `indexOf`, and `includes`).
+  - Iterate over arrays using the `for`  and `forEach` loops.
+
+  <br>
+  <hr> 
+
+</details>
 
 ## Introduction
 
