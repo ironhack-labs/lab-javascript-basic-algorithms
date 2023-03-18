@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 let hacker1 = "Daniel Cornejo";
- console.log(hacker1);
+ //console.log(hacker1);
 
 let hacker2 = "Amber Moody";
  console.log(hacker2);
