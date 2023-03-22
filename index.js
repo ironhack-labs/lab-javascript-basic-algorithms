@@ -124,7 +124,7 @@ advanced solutions that use string or array methods (such as _join()_, _reverse(
  However, we want you to apply your current knowledge and try to come up with a solution by just using the `for` loop 
  and `if-else` statements with some `break` and `continue`.*/
 
-let phraseToCheck = "Johhnyy was a racecardriver"
+let phraseToCheck = "This sentence is not a palindrome"
 /* Things that need to be checked: 
 The length of the string, if character.length+1 = character.length-1 match eachother */
 
