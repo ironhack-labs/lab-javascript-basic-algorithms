@@ -101,9 +101,7 @@ Create a Pull Request so that the TAs can check your work.
 
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
 
-- `The driver's name goes first.` <br>
-- `Yo, the navigator goes first, definitely.` <br>
-- `What?! You both have the same name?`
+console.log (backward)
 
 ### Bonus Time!
 
