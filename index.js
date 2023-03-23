@@ -31,9 +31,18 @@ for ( i=hacker1.length-1; i>=0; i-- ) {
 }
 console.log(hacker1Reverse);
 // 3.3
+// case sensitive solution
 if ( hacker1 < hacker2 ) {
     console.log("The driver's name goes first.");
 } else if ( hacker1 > hacker2 ) {
+    console.log("Yo, the navigator goes first, definitely.");   
+} else {
+    console.log("What?! You both have the same name?");   
+}
+// case IN-sensitive solution
+if ( hacker1.toLowerCase() < hacker2.toLowerCase() ) {
+    console.log("The driver's name goes first.");
+} else if ( hacker1.toLowerCase() > hacker2.toLowerCase() ) {
     console.log("Yo, the navigator goes first, definitely.");   
 } else {
     console.log("What?! You both have the same name?");   
