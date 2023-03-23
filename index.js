@@ -37,9 +37,27 @@ console.log(homerWithUpperCase);
 
 // Iteration 3.2
 
+let wordReversed = "";
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  const char = hacker2[i];
+  wordReversed += char;
+}
+console.log(wordReversed);
+
+
+/* Solution 2 Using Methods:
 let splitName = hacker2.split("");
 console.log(splitName);
 //Turn string into an array to use reverse method
 splitName = ['M', 'a', 'r', 'g', 'e' ];
 let reverseName = splitName.reverse();
 console.log(reverseName)
+*/
+
+
+// 3.3 lexicographic order of the strings
+
+const hackersArray = ["Marge", "Homer"];
+hackersArray.sort();
+console.log(hackersArray)
