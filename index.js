@@ -78,7 +78,7 @@ for (let i = firstWord.length - 1; i >= 0; i--) {
 
 console.log(reversedWord);
 
-if (reversedWord === secondWord) {
+if (reversedWord.toLowerCase() === secondWord.toLowerCase()) {
   console.log("The phrase is a palindrome");
 } else {
   console.log("The phrase is not a palindrome");
