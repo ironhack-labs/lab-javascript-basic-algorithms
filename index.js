@@ -61,6 +61,18 @@ Sed finibus tempor mattis. Vivamus scelerisque ac arcu quis gravida. Praesent di
 
 console.log(longText.split(' ').length)
 
+// => Bonus 1 different solution: Please provide feedback, thanks
+
+let words = longText.split(' ')
+let chars = 0
+
+for (let i = 0; i < words.length; i++){
+  chars++
+}
+ console.log(chars)
+
+ //
+
 let etCount = 0;
 
 for(let i = 0; i <= longText.length; i++){
@@ -73,3 +85,7 @@ for(let i = 0; i <= longText.length; i++){
   
 }
 console.log(etCount)
+
+// Pending Bonus #2 ...
+
+
