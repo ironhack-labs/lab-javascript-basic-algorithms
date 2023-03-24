@@ -50,3 +50,32 @@ else if(names.sort()[0] === hacker2){
 else{
     console.log("What?! You both have the same name?");
 }
+
+//Bonus1
+//Generate 3 paragraphs. Store the text in a new string variable named longText.
+//Make your program count the number of words in the string.
+//Make your program count the number of times the Latin word et appears.
+
+let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue faucibus eros, a viverra augue ultrices vitae. Cras sit amet blandit sem. Maecenas luctus in est sit amet volutpat. Pellentesque quis imperdiet tortor. Sed in est ac odio mollis fringilla. Etiam porta eleifend eros, id dapibus urna. Praesent eros lacus, consequat sed risus a, varius auctor libero. Curabitur sagittis dui ante. Nulla facilisis pellentesque elit nec vestibulum. Quisque non vehicula nisl. Proin nunc eros, consectetur ut convallis sit amet, rutrum vel tortor. Nullam nec elit in lectus tincidunt venenatis sed in mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam arcu sem, sodales ut nulla eu, aliquet congue nisl. Vestibulum ultrices, mauris et eleifend laoreet, velit enim aliquam elit, sed placerat libero turpis a tellus. Curabitur bibendum est nibh, nec varius metus tincidunt eget. Nulla semper ornare ultricies. Phasellus at diam enim. Nullam mollis lobortis nulla, in commodo nulla eleifend vel. Ut quis blandit enim. Mauris aliquam aliquet scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed rhoncus aliquam neque, et mattis arcu tincidunt ut. Nulla nulla orci, congue sit amet diam sed, tincidunt sodales massa. Mauris volutpat ac turpis non laoreet. Mauris vel feugiat dui, et tristique magna. Sed vel facilisis leo. In non felis luctus, volutpat massa id, hendrerit elit. Morbi blandit, ante vitae faucibus tincidunt, mauris metus pretium orci, in tincidunt justo mi eu nibh. Curabitur at neque a eros pellentesque accumsan. Suspendisse nunc diam, bibendum id commodo non, euismod nec arcu. Nullam nec sagittis turpis. Quisque at enim at leo convallis finibus ac nec neque. Nam finibus lectus ex, sit amet aliquam dolor pellentesque id. Praesent ligula sapien, luctus at urna a, tempor sollicitudin orci."
+let spaceCount = longText.split(" ");
+console.log(spaceCount);
+console.log(longText.match(/\bet\b/gi));
+
+// Create a new variable, phraseToCheck, containing some string value. 
+//Write a code to check if the value assigned to this variable is a Palindrome. 
+
+let phraseToCheck = "step on no pets";
+
+phraseToCheck = phraseToCheck.replaceAll(' ', '');
+let reversePalindrome = "";
+for (let i = phraseToCheck.length-1; i >= 0; i--) {
+    reversePalindrome = reversePalindrome + phraseToCheck[i];
+}
+if (reversePalindrome === phraseToCheck) {
+    console.log("Palindrome");
+}
+else {
+    console.log('not palindrome');
+}
+
+
