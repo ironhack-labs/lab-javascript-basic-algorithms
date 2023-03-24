@@ -3,7 +3,7 @@ let hacker1 = "John";
 
 console.log(`The driver's name is ${hacker1}`);
 
-let hacker2 = "YYYY";
+let hacker2 = "Samuel";
 
 console.log(`The navigator's name is ${hacker2}`);
 
@@ -30,8 +30,8 @@ for (i = 0; i < uppercased.length; i++) {
 console.log(result.trim());
 
 let reverse = "";
-for (let j = hacker1.length - 1; j >= 0; j--) {
-  reverse = reverse + hacker1[j];
+for (let j = hacker2.length - 1; j >= 0; j--) {
+  reverse = reverse + hacker2[j];
 }
 console.log(reverse);
 
