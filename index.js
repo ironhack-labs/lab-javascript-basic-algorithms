@@ -35,9 +35,9 @@ for (let j = hacker2.length - 1; j >= 0; j--) {
 }
 console.log(reverse);
 
-if (hacker1[0] > hacker2[0]) {
+if (hacker1.localeCompare(hacker2)===-1) {
   console.log("driver's name go first");
-} else if (hacker1[0] < hacker2[0]) {
+} else if (hacker1.localeCompare(hacker2)===1) {
   console.log("navigator's name go first");
 } else {
   console.log("you both have same name");
