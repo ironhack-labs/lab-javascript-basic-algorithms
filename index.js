@@ -10,7 +10,6 @@ console.log(`The navigator's name is ${hacker2}`);
 
 //compare lenght of the name
 //depending on which one is longer, print some stuff
-
 if (hacker1.length > hacker2.length) {
   console.log(`The driver has the longest name, it has ${hacker1.length} characters`);
 } else if (hacker1.length < hacker2.length) {
@@ -19,25 +18,23 @@ if (hacker1.length > hacker2.length) {
   console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 
-
 // Iteration 3: Loops
-
 //3.1
-let nameDriverNew = "";
-for (let i = 0; i < hacker1.length; i++){
-    nameDriverNew += hacker1[i];
-}
-let splitName = nameDriverNew.split('').join(' ');
+//split with '' nothing, and join with space ' '
+let splitName = hacker1.split('').join(' ');
 console.log(splitName.toUpperCase());
 
 //3.2
+//loop back from the end of the string to the beginning.
 let nameNavigatorNew = "";
 for (let i = hacker2.length - 1; i >= 0; i--){
     nameNavigatorNew += hacker2[i];
 }
 console.log(nameNavigatorNew);
 
-//3.3 
+//3.3
+// lexicographic order can be reflected by comparing two characters, from a -> z, means from smaller number to large number.
+
 if (hacker1[0] < hacker2 [0]) {
     console.log("The driver's name goes first");
 } else if (hacker1[0] > hacker2 [0]){
@@ -82,7 +79,6 @@ console.log(countET);
 ///BONUS 2
 
 ///Method 2 - Looping -> find white space -> remove -> join -> new strings -> hcekc 
-
 
 ////////////////////METHOD 1 - Reverse strings, and do checking.
 let phraseToCheck = "Rac e c ar";
