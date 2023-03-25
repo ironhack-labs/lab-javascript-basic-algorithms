@@ -16,4 +16,12 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 // 3.1
+let hacker1Splitted = hacker1.split('');
+let hacker1WithSpace = hacker1Splitted.join(' ');
+console.log(hacker1WithSpace.toUpperCase());
 
+//3.2
+let hacker2Splitted = hacker2.split('');
+let hacker2Reverse = hacker2Splitted.reverse();
+let hacker2AfterReverse = hacker2Reverse.join('');
+console.log(hacker2AfterReverse);
