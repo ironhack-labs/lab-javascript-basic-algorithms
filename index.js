@@ -25,17 +25,32 @@ else {
 
 
 // Iteration 3: Loops
-let newNameDriver = " ";
-for (let i=0; i < hacker1.length; i++);
-    newNameDriver = hacker1[i].toUpperCase() + " ";
-console.log(newName.trim());
 
+//3.1
+let newNameDriver = " ";
+for (let i=0; i < hacker1.length; i++){
+    console.log(newNameDriver);
+
+    }
+
+    console.log(newNameDriver);
+
+ // Array
+ console.log(hacker1.toUpperCase().split('').join(''));
+
+//3.2
 let newNameNavigator = " ";
 for (let i = hacker2.length - 1; i>=0; i--){
     newNameNavigator = hacker2[i];
 }
 console.log(newNameNavigator);
 
+//Array
+console.log(newNameNavigator.split('').reverse().join(''));
+
+
+
+//3.3
 hacker1 = hacker1.toLowerCase;
 hacker2 = hacker2.toLocaleLowerCase;
 
@@ -60,10 +75,10 @@ let words = 0;
 let count = 0;
 let splitted = paragraph.split(` `);
 for (let i = o; i < paragraph.length; i++){
-    if (text[i].includes(`\n`)) {
+    if (paragraph[i].includes(`\n`)) {
         words++
     }
-    else if(text[i] === "et" || text[i] ==="et."){
+    else if(paragraph[i] === "et" || paragraph[i] ==="et."){
         count++
     }
     words++
