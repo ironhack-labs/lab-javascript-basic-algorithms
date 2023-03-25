@@ -1,5 +1,4 @@
 // Iteration 1: Names and Input
-// Iteration 1: Names and Input
 // 1.1
 let hacker1= "John";
 // 1.2
