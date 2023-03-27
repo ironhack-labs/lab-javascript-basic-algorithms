@@ -63,8 +63,8 @@ Etiam ac pharetra magna. Etiam id euismod ligula, mollis posuere arcu. Cras mole
 
 console.log(longText.length);
 
-// checks for the amount of words in the string
 let wordCount = 0;
+
 for (let i = 0; i < longText.length; i++) {
 if (longText[i + 1] === " ") {
 wordCount ++;
@@ -72,29 +72,37 @@ wordCount ++;
 }
 console.log(wordCount);
 
-// checks for "et" in a string
 let etWordCount = 0;
+
 for (let i = 0; i < longText.length; i++) {
 if (longText[i] + longText[i + 1] === "et") {
 etWordCount ++;
 }
 }
+
 console.log(etWordCount);
 
+//adds the phrase and turns it to lowercase
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+let phraseLowerCase = phraseToCheck.toLowerCase();
 
-let phraseToCheck = "Amor, Roma";
-
-// Remove spaces
+// remove all special characters so only letters remain
 let withoutSpaces = "";
-for (let i = 0; i < phraseToCheck.length; i++) {
-if (phraseToCheck[i] === " ") {}
+for (let i = 0; i < phraseLowerCase.length; i++) {
+if (phraseLowerCase[i] === " ") {}
+else if (phraseLowerCase[i] === ",") {}
+else if (phraseLowerCase[i] === ".") {}
+else if (phraseLowerCase[i] === "?") {}
+else if (phraseLowerCase[i] === "!") {}
+else if (phraseLowerCase[i] === "'") {}
+else if (phraseLowerCase[i] === '"') {}
 else {
-withoutSpaces += phraseToCheck[i];
+withoutSpaces += phraseLowerCase[i];
 }
 }
 console.log(withoutSpaces);
 
-// reverse the word
+// Then we reverse it
 let reversedPhrase = "";
 for (let i = withoutSpaces.length -1; i >= 0; i--) {
 reversedPhrase += withoutSpaces[i];
@@ -103,8 +111,8 @@ console.log(reversedPhrase);
 
 // if it's a palindrome it logs it
 if (reversedPhrase === withoutSpaces) {
-console.log(`'${phraseToCheck}' is a Palindrome!`)
+console.log(`'${phraseToCheck}' is Palindrome!`)
 }
 else {
-console.log(`'${phraseToCheck}' is not a Palindrome.`)
+console.log(`'${phraseToCheck}' is not Palindrome.`)
 }
