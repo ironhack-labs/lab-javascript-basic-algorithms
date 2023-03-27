@@ -82,37 +82,40 @@ etWordCount ++;
 
 console.log(etWordCount);
 
-//adds the phrase and turns it to lowercase
-let phraseToCheck = "A man, a plan, a canal, Panama!";
-let phraseLowerCase = phraseToCheck.toLowerCase();
+//function that checks the phrase, turns it to lower case, removes most special characters and turns it around.
 
-// remove all special characters so only letters remain
-let withoutSpaces = "";
-for (let i = 0; i < phraseLowerCase.length; i++) {
-if (phraseLowerCase[i] === " ") {}
-else if (phraseLowerCase[i] === ",") {}
-else if (phraseLowerCase[i] === ".") {}
-else if (phraseLowerCase[i] === "?") {}
-else if (phraseLowerCase[i] === "!") {}
-else if (phraseLowerCase[i] === "'") {}
-else if (phraseLowerCase[i] === '"') {}
-else {
-withoutSpaces += phraseLowerCase[i];
-}
-}
-console.log(withoutSpaces);
+function phraseToCheck (phrase) {
+  let phraseLowerCase = phrase.toLowerCase();
 
-// Then we reverse it
-let reversedPhrase = "";
-for (let i = withoutSpaces.length -1; i >= 0; i--) {
-reversedPhrase += withoutSpaces[i];
-}
-console.log(reversedPhrase);
+  let withoutSpaces = "";
+    for (let i = 0; i < phraseLowerCase.length; i++) {
+      if (phraseLowerCase[i] === " ") {}
+        else if (phraseLowerCase[i] === ",") {}
+        else if (phraseLowerCase[i] === ".") {}
+        else if (phraseLowerCase[i] === "?") {}
+        else if (phraseLowerCase[i] === "!") {}
+        else if (phraseLowerCase[i] === "'") {}
+        else if (phraseLowerCase[i] === '"') {}
+      else {
+        withoutSpaces += phraseLowerCase[i];
+      }
+    }
+// Then reverse it
+  let reversedPhrase = "";
+    for (let i = withoutSpaces.length -1; i >= 0; i--) {
+      reversedPhrase += withoutSpaces[i];
+    }
+  console.log(withoutSpaces)
+  console.log(reversedPhrase)
 
-// if it's a palindrome it logs it
-if (reversedPhrase === withoutSpaces) {
-console.log(`'${phraseToCheck}' is Palindrome!`)
+// if it's a palindrome it returns it and vice versa
+  if (reversedPhrase === withoutSpaces) {
+    return `'${phrase}' is a Palindrome`
+  }
+  else {
+    return `'${phrase}' is not a Palindrome`
+  }
 }
-else {
-console.log(`'${phraseToCheck}' is not Palindrome.`)
-}
+
+let result = phraseToCheck("put it up")
+console.log(result);
