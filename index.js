@@ -21,15 +21,13 @@ else {
 
 
 // Iteration 3: Loops
-
-// Turning the Driver's name into upperCase.
+// Turning the Driver's name into upperCase and adding spaces in between the letters.
 let upperCase = hacker1.toUpperCase();
 let finalName = '';
 for (let i = 0; i < upperCase.length; i++) {
   finalName += upperCase[i] + ' ';
 }
 let nameFinal = finalName.slice(0, -1);
-
 console.log(nameFinal);
 
 
@@ -39,7 +37,6 @@ let backwardsName = '';
 for (let i = lowerCase.length -1; i >= 0; i--) {
 backwardsName += lowerCase[i];
 }
-
 console.log(backwardsName);
 
 
@@ -54,36 +51,34 @@ else {
 console.log("What?! You both have the same name?")
 }
 
+
 const longText = `
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum varius neque ut sodales. Vivamus ac lacinia nisi, vel convallis odio. Suspendisse ut arcu velit. Suspendisse id gravida eros. Donec a convallis erat. Vivamus sit amet risus at sapien eleifend euismod a ut ante. Pellentesque lobortis, augue sed feugiat ultricies, nisi orci pellentesque lacus, congue molestie lectus risus in lacus.
 
 Ut luctus quam vitae vehicula luctus. Integer volutpat dapibus mi eget blandit. Integer sit amet blandit magna, nec rutrum augue. Phasellus pharetra semper mi quis accumsan. Morbi non eros et libero viverra porta vitae id lacus. Maecenas a volutpat nisi. Sed porttitor ex dui. Curabitur a nulla non odio congue dapibus eu vel felis. Vestibulum fringilla neque ac semper pharetra. Integer massa erat, congue sed eleifend vitae, porta vitae purus.
 
 Etiam ac pharetra magna. Etiam id euismod ligula, mollis posuere arcu. Cras molestie lectus a nisl luctus mollis. Nunc lorem dui, commodo non aliquam ut, hendrerit a turpis. Donec non venenatis massa, a viverra orci. Sed et tristique elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nec ipsum viverra, tincidunt lorem non, porttitor nisi. Vestibulum nec dolor non libero egestas eleifend nec sed libero. Sed nisi odio, accumsan non augue a, luctus vulputate elit. Maecenas ut elit dui. Proin ultricies augue nec dui aliquet convallis. `
-
-console.log(longText.length);
-
+//Checks for how many words there are in the given string.
 let wordCount = 0;
-
 for (let i = 0; i < longText.length; i++) {
-if (longText[i + 1] === " ") {
-wordCount ++;
-}
+  if (longText[i + 1] === " ") {
+  wordCount ++;
+  }
 }
 console.log(wordCount);
 
+
+//Checks for how many "et" words the text contains.
 let etWordCount = 0;
-
 for (let i = 0; i < longText.length; i++) {
-if (longText[i] + longText[i + 1] === "et") {
-etWordCount ++;
+  if (longText[i] + longText[i + 1] + longText[i + 2] === " et") {
+  etWordCount ++;
+  }
 }
-}
-
 console.log(etWordCount);
 
-//function that checks the phrase, turns it to lower case, removes most special characters and turns it around.
 
+//function that checks the phrase and then turns it to lower case, removes most special characters and turns it around to check if it's a palindrome.
 function phraseToCheck (phrase) {
   let phraseLowerCase = phrase.toLowerCase();
 
@@ -100,15 +95,14 @@ function phraseToCheck (phrase) {
         withoutSpaces += phraseLowerCase[i];
       }
     }
-// Then reverse it
+// Reverses it
   let reversedPhrase = "";
     for (let i = withoutSpaces.length -1; i >= 0; i--) {
       reversedPhrase += withoutSpaces[i];
     }
   console.log(withoutSpaces)
   console.log(reversedPhrase)
-
-// if it's a palindrome it returns it and vice versa
+// if it's a palindrome it returns it and vice versa.
   if (reversedPhrase === withoutSpaces) {
     return `'${phrase}' is a Palindrome`
   }
@@ -116,8 +110,5 @@ function phraseToCheck (phrase) {
     return `'${phrase}' is not a Palindrome`
   }
 }
-
 let result = phraseToCheck("put it up")
 console.log(result);
-
-// I believe I managed to do all the tasks, looking forward to the feedback.
