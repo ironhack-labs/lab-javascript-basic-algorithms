@@ -119,3 +119,5 @@ function phraseToCheck (phrase) {
 
 let result = phraseToCheck("put it up")
 console.log(result);
+
+// I believe I managed to do all the tasks, looking forward to the feedback.
