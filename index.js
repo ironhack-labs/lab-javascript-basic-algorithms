@@ -100,8 +100,6 @@ function phraseToCheck (phrase) {
     for (let i = withoutSpaces.length -1; i >= 0; i--) {
       reversedPhrase += withoutSpaces[i];
     }
-  console.log(withoutSpaces)
-  console.log(reversedPhrase)
 // if it's a palindrome it returns it and vice versa.
   if (reversedPhrase === withoutSpaces) {
     return `'${phrase}' is a Palindrome`
@@ -110,5 +108,5 @@ function phraseToCheck (phrase) {
     return `'${phrase}' is not a Palindrome`
   }
 }
-let result = phraseToCheck("put it up")
+let result = phraseToCheck("No 'x' in Nixon")
 console.log(result);
