@@ -49,9 +49,9 @@ for(let i = backwards; i >= 0; i--){
 
 const compareDriverAndNavigator = hacker1.localeCompare(hacker2);
 
-if(compareDriverAndNavigator === 1){
+if(compareDriverAndNavigator === -1){
   console.log("The driver's name goes first");
-} else if (compareDriverAndNavigator === -1){
+} else if (compareDriverAndNavigator === 1){
   console.log("Yo, the navigator goes first, definitely");
 } else{
   console.log("What?! You both have the same name");
@@ -64,6 +64,16 @@ const longtext = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praes
 Vivamus ipsum libero, commodo vel elementum eget, tincidunt at urna. Vestibulum eget volutpat purus, ut bibendum nibh. Integer vitae odio id nisl ultrices aliquam ac quis eros. Proin massa lectus, lobortis in consectetur ut, lacinia vestibulum massa. Sed sed nunc consequat, euismod tortor vel, molestie sapien. Fusce feugiat auctor dictum. Phasellus interdum pretium ante non faucibus. Vivamus et dictum ex, nec rutrum neque. Ut euismod leo nisi, mattis aliquam leo luctus condimentum. Duis porttitor augue odio, sed laoreet magna lacinia eu. Donec purus turpis, sodales eu hendrerit nec, congue et nunc. Mauris sit amet ipsum molestie, luctus sem eget, iaculis dolor. Nulla facilisi.
 
 Suspendisse sit amet justo molestie, convallis leo vitae, laoreet nulla. Cras malesuada quam neque, vel laoreet dui vestibulum eget. Suspendisse pretium, lorem a faucibus sodales, arcu orci interdum urna, et ultricies magna tellus et metus. Curabitur metus elit, aliquam at malesuada ut, imperdiet sit amet felis. Quisque sed purus tristique, laoreet dolor ac, lacinia magna. Donec fermentum, neque vitae dictum elementum, nulla erat dapibus erat, sed aliquam quam ligula a velit. Integer eu leo varius, maximus nisi nec, pharetra metus. Mauris maximus, enim quis pretium consequat, nisi odio dapibus diam, vel luctus lorem leo nec urna. Pellentesque eget est tempor, scelerisque velit ac, laoreet eros. Vivamus lacinia id arcu ut facilisis. Mauris rhoncus turpis dignissim condimentum pharetra. Proin risus tortor, feugiat sodales sem sed, fringilla auctor tellus. Sed tortor ipsum, dapibus lobortis metus eget, ultrices gravida odio. Aliquam orci leo, vestibulum et velit interdum, posuere consequat erat. Ut tortor eros, laoreet ut diam et, feugiat dignissim magna.`;
+
+//updated with correct code from class 
+let findNumOfWords = 1;
+
+for(let i = 0; i < longtext.length; i++){
+  if(longtext[i] === ' '){
+    findNumOfWords++;
+  }
+}
+
 
 let countIpsum = longtext.length;
 
