@@ -188,5 +188,3 @@ function isPalindrome(str) {
 }
 
 console.log(isPalindrome("Was it a car or a cat I saw?"));
-
-// I used .toLowerCase() because using regex or asci values of the character seems like overkill. Probably can simplify further.
