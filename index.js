@@ -82,6 +82,34 @@ for(let t=0 ; t<words.length; t++){
 console.log(countEt);
 
 
+// Bonus 2:
+let phraseToCheck = `A man, a plan, a canal, Panama!`;
+let phraseCutSpace = "";
+let reverdCheck = "";
+let phrase = phraseToCheck.replace(/[!,$@%?"]/g, '')
+
+
+for(let i= 0; i < phrase.length; i++){
+    if(phrase[i] !== " "){ 
+        phraseCutSpace += phrase[i].toLowerCase();
+    }
+}
+
+// console.log(phraseCutSpace);
+
+
+for(let y = phraseCutSpace.length-1; y>=0; y--){
+  reverdCheck += phraseCutSpace[y]
+}
+
+// console.log(reverdCheck)
+
+if(phraseCutSpace === reverdCheck){
+  console.log("It is a palindrome");
+} else {
+    console.log("It is not palindrome")
+}
+
 
 
 
