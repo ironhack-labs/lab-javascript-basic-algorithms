@@ -28,12 +28,13 @@ for(x=0; x < hacker1.length; x++) {
 }
 console.log(spacedName);
 
+//---------------3.2
 for(x=hacker2.length -1; x >= 0 ; x--) {
   reverseName += hacker2[x];
 }
 console.log(reverseName);
 
-
+//--------------3.3
 if (hacker1[0]<hacker2[0]){
   console.log("The driver's name goes first")
 } else if (hacker1[0]>hacker2[0]){
