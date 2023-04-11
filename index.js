@@ -76,8 +76,8 @@ function phraseToCheck(phrase) {
   for (let i = phraseFixed.length - 1; i >= 0; i--) {
     phraseReverse += phraseFixed[i]
   } 
-  print(phraseFixed)
-  print(phraseReverse)
+  // print(phraseFixed)
+  // print(phraseReverse)
   phraseFixed = phraseFixed.toLowerCase()
   phraseReverse = phraseReverse.toLowerCase()
   if (phraseFixed == phraseReverse) {
