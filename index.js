@@ -5,7 +5,7 @@ function print(data) {
 // Iteration 1: Names and Input
 let hacker1 = "Walter"
 print(`The driver's name is ${hacker1}`)
-let hacker2 = "John"
+let hacker2 = "Karla"
 print(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
@@ -48,26 +48,31 @@ for (let i = 0; i < 20; i++) {
     break
   }
 }
+// Solution with no loop iteration
+// if (hacker1Lowercase.localeCompare(hacker2Lowercase) === -1) {
+//   print("The driver's name goes first")
+// } else if (hacker1Lowercase.localeCompare(hacker2Lowercase) === 0) {
+//   print("What?! You both have the same name?")
+// } else if (hacker1Lowercase.localeCompare(hacker2Lowercase) === 1) {
+//   print("Yo, the navigator goes first, definitely")
+// }
 
 // Bonus 1
 const longText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 const longTextLowercase = longText.toLowerCase()
 let wordCount = 1
+let wordToSearch = "et"
 let etCount = 0
-let wordET = ""
 for (let i = 0; i < longText.length; i++) {
   if (longText[i] === " ") {
     wordCount++
   }
-  wordET += longTextLowercase[i]
-  wordET += longText[i + 1]
-  if (wordET === "et") {
-    etCount += 1
+  if (longTextLowercase.slice(i, i + 2) == wordToSearch) {
+    etCount++
   }
-  wordET = ""
 }
-print(wordCount)
-print(etCount)
+print(`Text word count: ${wordCount}`)
+print(`"et" appearances: ${etCount}`)
 
 // Bonus 2
 function phraseToCheck(phrase) {
@@ -81,7 +86,7 @@ function phraseToCheck(phrase) {
   phraseFixed = phraseFixed.toLowerCase()
   phraseReverse = phraseReverse.toLowerCase()
   if (phraseFixed == phraseReverse) {
-    print("Palindrome detected!")
+    print(`"${phrase}" is a palindrome`)
   }
 }
 
