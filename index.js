@@ -18,6 +18,7 @@ if (hacker1.length > hacker2.length) {
 
 // Iteration 3: Loops
 
+
 // 3.1
 let hacker1spaced = "";
 for (let i = 0; i < hacker1.length; i++) {
