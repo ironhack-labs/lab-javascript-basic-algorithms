@@ -1,3 +1,5 @@
+/***********  Copyright (c) 2023, Walter Eli Bernal Montero ***********/
+
 function print(data) {
   console.log(data)
 }
