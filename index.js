@@ -29,7 +29,7 @@ let hacker1Uppercase = hacker1.toUpperCase();
 let i;
 let nameUpper = ``;
 
-for (i = 0; i <= hacker1Uppercase.length -1; i++) {
+for (i = 0; i < hacker1Uppercase.length; i++) {
   nameUpper += `${hacker1Uppercase[i]} `
 };
 
