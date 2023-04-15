@@ -21,6 +21,8 @@ else{
 
 // Iteration 3: Loops
 
+//3.1
+
 let nameFormatted = "";
 
 for (let i=0; i<hacker1.length; i++){
@@ -30,3 +32,16 @@ for (let i=0; i<hacker1.length; i++){
 }
 
 console.log(nameFormatted)
+
+//3.2
+
+let nameInverted = "";
+
+for (let i=hacker2.length-1; i>=0; i--){
+
+  nameInverted += hacker2[i]; 
+  
+}
+
+console.log(nameInverted)
+
