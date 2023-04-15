@@ -20,3 +20,13 @@ else{
    
 
 // Iteration 3: Loops
+
+let nameFormatted = "";
+
+for (let i=0; i<hacker1.length; i++){
+
+  nameFormatted += hacker1[i].toUpperCase()+" "; 
+  
+}
+
+console.log(nameFormatted)
