@@ -65,3 +65,47 @@ for (let i = 0; i < words.length; i++) {
 }
 
 console.log("Count of Latin word 'et':", etCount);
+
+
+// emiliano arreola part
+
+/*
+// Bonus 1
+let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius justo sed nibh vestibulum ornare. Integer sed felis interdum, pulvinar odio id, tristique massa. Donec sed ante vitae purus faucibus pulvinar. Aenean euismod mauris sit amet massa lobortis blandit. Vestibulum aliquet velit nulla, non viverra lectus posuere sit amet. Donec maximus, enim a vehicula finibus, tellus velit elementum mauris, at venenatis massa ante quis mi. Phasellus tristique mauris nec metus iaculis luctus. Sed non leo ipsum. Nullam feugiat felis non purus porttitor aliquam. Donec dictum, turpis eget maximus iaculis, ante ex rhoncus sapien, quis bibendum nulla ipsum in ex. Etiam euismod hendrerit libero euismod sodales. Aliquam a sodales nunc, ut efficitur orci. Nulla tempor tincidunt ex nec sagittis. Nullam sit amet dolor purusligula enim bibendum urna, eu fringilla sapien magna in sem. Fusce sit amet ullamcorper odio. Proin vehicula, nisl ut lacinia feugiat, odio risus consectetur ex, nec bibendum est turpis ut libero. Fusce id ex non velit congue ultricies et et urna. Nam tincidunt quam id massa malesuada, ut fermentum turpis lacinia. Donec volutpat urna ut nunc venenatis rhoncus.";
+
+let wordCount = 0;
+let etCount = 0;
+for (let i = 0; i < longText.length; i++) {
+  if (longText[i] === " ") {
+    wordCount++;
+  }
+  if (longText.slice(i, i + 2) === "et") {
+    etCount++;
+  }
+}
+
+// Añadir 1 al conteo de palabras, ya que la última palabra no tiene espacio después de ella
+wordCount++;
+console.log("Número de palabras en el texto:", wordCount);
+console.log("Número de veces que aparece 'et' en el texto:", etCount);
+
+// Bonus 2
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+let isPalindrome = true;
+let cleanedPhrase = phraseToCheck.toLowerCase().replace(/[^a-z]/g, "");
+
+for (let i = 0; i < cleanedPhrase.length / 2; i++) {
+  if (cleanedPhrase[i] !== cleanedPhrase[cleanedPhrase.length - 1 - i]) {
+    isPalindrome = false;
+    break;
+  }
+}
+
+if (isPalindrome) {
+  console.log("'" + phraseToCheck + "' es un palíndromo.");
+} else {
+  console.log("'" + phraseToCheck + "' no es un palíndromo.");
+}
+
+*/
+
