@@ -46,25 +46,14 @@ for (let i=hacker2.length-1; i>=0; i--){
 console.log(nameInverted)
 
 //3.3
-for (let i=0; i<hacker1.length&&hacker2.length; i++){ 
-  
-  let caseDraw = "What?! You both have the same name?"
-  
-  let caseNavigatorWin = "Yo, the navigator goes first, definitely."
-  
-  let caseDriverWin = "The driver's name goes first."
-  
-  let currentCompare = hacker2[i].localeCompare(hacker1[i])
 
-  if (hacker1===hacker2){   
-    console.log(caseDraw)
-  }  
-  if(currentCompare < 0){  
-    console.log(caseNavigatorWin)
-    break
-  }  
-  if(currentCompare > 0){   
-    console.log(caseDriverWin)
-    break
-  }  
+let compareResult = hacker1.localeCompare(hacker2)
+console.log(compareResult)
+
+if (compareResult>0){
+  console.log("Yo, the navigator goes first, definitely.")
+} else if (compareResult<0){
+  console.log("The driver's name goes first.")  
+} else {
+  console.log("What?! You both have the same name?")
 }
