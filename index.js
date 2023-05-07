@@ -57,3 +57,40 @@ if (driver.localeCompare(navigator) === -1){
 }else{
   console.log('What?! You both have the same name?')
 }
+
+/*Bonus 1:
+Go to the lorem ipsum generator website and:
+
+Generate 3 paragraphs. Store the text in a new string variable named longText.
+Make your program count the number of words in the string.
+Make your program count the number of times the Latin word et appears.*/
+
+// Generate 3 random paragraphs
+const longText = `Lorem et ipsum dolor sit amet, consectetur adipiscing elit. Sed nec leo varius, placerat quam vitae, ultricies enim. Proin commodo, risus vitae ultricies pharetra, libero augue euismod mauris, vel aliquet nulla risus vitae arcu. Nunc consectetur nisl id libero aliquam, ac volutpat augue sagittis. Aenean eget lacus mi. Vivamus aliquet pharetra nunc vel sollicitudin. Ut aliquet massa enim, in facilisis nunc semper non.
+
+Duis blandit tellus eget feugiat tincidunt. Sed eu risus rutrum, convallis tellus id, ullamcorper odio. Proin bibendum augue ac magna interdum aliquet. Nullam volutpat odio id justo congue, eget commodo sapien tincidunt. Sed sit amet ipsum vitae nisl vulputate commodo a ut lectus. et Cras vel nisi ut velit facilisis ornare. Curabitur non libero ut justo sagittis imperdiet a ut nulla.
+
+Vestibulum ante ipsum primis mother in faucibus orci luctus et ultrices posuere cubilia curae; Aenean dignissim augue ac dolor fringilla euismod. Ut aliquet, enim eget ultricies ullamcorper, turpis nunc iaculis ipsum, id facilisis lacus magna in dolor. Morbi sit amet magna sed nisl placerat vehicula. Nunc rhoncus nibh a magna eleifend, ac tincidunt mauris posuere. Vivamus molestie, erat ac molestie bibendum, lorem sapien dictum nisi, eget hendrerit felis quam et tortor.`;
+
+
+const words = longText.split(' ')
+console.log(`the number of words in the string ${words.length}`)
+
+
+
+
+// Make your program count the number of times the Latin word et appears.
+
+function countCurrent (longText, subStrc) {
+  let counterCurrent = 0
+  let position = 0
+
+  while ((position = longText.indexOf(subStrc, position))!== -1){
+    ++counterCurrent;
+    position += subStrc.length;
+  }
+
+  return counterCurrent;
+}
+
+console.log(`the number of times the Latin word et appears is: ${countCurrent(longText, 'et')}`);
