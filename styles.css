@@ -27,6 +27,13 @@ h3{
     color: #63999f;
     text-align: center;
     font-size: 30px;
+    margin-top: 15px;
+}
+h4{
+    color: #63999f;
+    text-align: left;
+    font-size: 20px; 
+    margin-top: 10px;
 }
 main{
     display: flex;
@@ -42,4 +49,90 @@ section{
     border-radius: 15px;
     margin-top: 20px;
     padding: 5%;
+}
+.exercice1{
+ 
+    text-align: left;
+    display: block;
+}
+.form-exercices{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px 100px;
+    align-items: center;
+    
+}
+.form-exercices label{
+    font-size: 30px;
+    text-align: center;
+    color: #63999f;
+}
+input{
+    height: 70%;
+    border: 2px solid #ace3e9;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+input:hover{
+    background-color: #63999f;
+}
+input:focus{
+    background-color: #63999f;
+    border: 2px solid #ace3e9;
+    color: #ace3e9;
+}
+input::placeholder{
+    color: #ace3e9;
+}
+button{
+    width: 65%;
+    margin: 0 15% 0 15%;
+    height: 30px;
+    background-color: #63999f;
+    border: 2px solid #ace3e9;
+    border-radius: 20px;
+    box-shadow: 1px 3px 3px 1px #9ad1d7;
+    color: white;
+}
+button:hover{
+    scale: 110%;
+}
+
+div{
+    
+    border: 2px solid #ace3e9;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 5%;
+}
+
+/* Bonus 1 */
+.form-bonus-uno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-bonus-uno textarea{
+    padding: 5%;
+    border: 2px solid #ace3e9;
+    border-radius: 20px;
+    color: #63999f;
+}
+
+.form-bonus-uno textarea:focus{
+    background-color: #63999f;
+    border: 2px solid #ace3e9;
+    color: #ace3e9;
+}
+
+/* Bonus 2 */
+.section-bonus-dos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-bonus-dos input{
+    width: 80%;
+    height: 30px;
+    margin: 2% 5% 2% 5%;
 }

@@ -18,15 +18,15 @@
         <!-- Bonus Ejercicios -->
         <section>
             <h3>Exercices</h3>
-            <form>
-                <label for="driver">Driver´s name</label>
-                <input id="driver" name="driver" type="text" placeholder="Driver name" /><br>
-                <label for="navigator">Navigator´s name</label>
+            <form class="form-exercices">
+                <label for="driver" class="exercice1">Driver´s name</label>
+                <input id="driver" name="driver" type="text" placeholder="Driver name" />
+                <label for="navigator" class="exercice1">Navigator´s name</label>
                 <input id="navigator" name="navigator" type="text" placeholder="Navigator Name" /><br>
 
             </form>
             <button id="excercices">Send</button>
-            <div    id="result-section" style="display: none;">
+            <div id="result-section" style="display: none;">
                 <h3>Exercices 1</h3>
                 <p id="result1">The name of the Driver is <span id="driver-name"></span> and the name
                     of the navigator is <span id="navigator-name"></span></p>
@@ -42,13 +42,13 @@
                 <h4>Exercice 3.3</h4>
                 <p><strong>The lexicographic order of the hackers is:</strong></p>
                 <p id="result3.3"></p>
-            </div  >
+            </div>
         </section>
 
         <section>
             <!-- Bonus 1 -->
             <h3>Bonus 1</h3>
-            <form action="">
+            <form action="" class="form-bonus-uno">
                 <label for="bonus1">Enter a paragraph, you can go to the lorem ipsum generator website and take de
                     paragraph</label><br>
                 <textarea name="bonus1" id="bonus1" cols="30" rows="10"></textarea><br>
@@ -61,7 +61,7 @@
                         id="et-number"> times.</span> </p>
             </div>
         </section>
-        <section>
+        <section class="section-bonus-dos">
             <!-- Bonus 2 -->
             <h3>Bonus 2</h3>
             <form action="">
@@ -76,11 +76,14 @@
                     "put it up"
 
                 </p><br>
-                <strong>Important: Important: The program does not take into account commas and spaces</strong><br>
-                <input type="text" name="bonus2" id="bonus2"><br>
+                <strong>Important: The program does not take into account commas and spaces</strong><br>
+                <input type="text" name="bonus2" id="bonus2" placeholder="Enter the palindrome here"><br>
             </form>
             <button id="button-bonus2">Send</button>
-            <p id="result-bonus2"></p>
+            <div>
+                <p id="result-bonus2"></p>
+            </div>
+
         </section>
 
     </main>
