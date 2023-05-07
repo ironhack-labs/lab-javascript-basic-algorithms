@@ -67,7 +67,7 @@ Make your program count the number of times the Latin word et appears. */
 
 const longText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra porttitor urna, ac tincidunt arcu ornare eget. Etiam risus risus, porta sit amet ullamcorper eget, congue vel urna. Nunc sapien quam, sodales non fermentum at, venenatis et eros. Pellentesque pulvinar dolor a convallis ultricies. Nam in placerat tortor. Nunc varius ut nisl ut commodo. Aliquam auctor ac erat nec tincidunt. Donec arcu felis, hendrerit in metus eu, porta facilisis ipsum. Sed facilisis diam leo, eu porttitor magna lacinia ut. Mauris sit amet dictum ante. Pellentesque viverra massa eget molestie faucibus. Etiam nec molestie mi. Pellentesque a gravida risus. Ut sed arcu at lorem accumsan accumsan a nec lacus. In hac habitasse platea dictumst. Praesent at convallis libero, id ultricies libero.\nDuis hendrerit rhoncus sollicitudin. In hac habitasse platea dictumst. Sed tempus nulla nec sapien sagittis auctor. Fusce rutrum mauris ac pretium elementum. Quisque ultrices auctor nisi nec ornare. Donec magna lacus, tempus vitae aliquam et, ultricies sed urna. Sed interdum imperdiet nisl et ullamcorper. Nullam convallis et sem ac ultrices.\nDonec imperdiet hendrerit arcu. Mauris commodo vehicula est, eu malesuada urna rutrum eget. Proin eget elit vestibulum, aliquam ipsum quis, vehicula dolor. Donec sed justo in nisi condimentum congue a eget nisl. Proin viverra vulputate tortor in fermentum. Sed urna elit, consequat ut vehicula consectetur, sodales non ante. Nullam eu neque quis lectus cursus fringilla.'
 
-
+//OPCION 1
 let dividedText = longText.split(" ")
 let numberWords = dividedText.length
 let latinWord = longText.split(" et ")
@@ -81,6 +81,23 @@ let numberLatinWords = latinWord.length
 }*/
 
 console.log(`This text have ${numberWords}, and "et" appears ${numberLatinWords} times`); //funciona usando comando split, pero no con metodos de clase
+
+//OPCION 2
+
+longText = longText.replace(/(^\s*)/g,""); // la primera barra significa expresion regular y la barra g es para que busque en todo el texto
+
+console.log(`This text have ${longText.split(' ').length} words`)
+
+let latinWord = 0
+
+  for (let i =0; i < longText.length; i++){
+    if (longText[i] === 'e' && longText[i+1] === 't' && longText[i-1] === ' '){
+      latinWord++
+    }
+  }
+
+console.log(`In this text appears "et" ${latinWord} times.`)
+
 
 /*Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:*/
 
