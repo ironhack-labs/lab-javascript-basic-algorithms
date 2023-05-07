@@ -94,3 +94,30 @@ function countCurrent (longText, subStrc) {
 }
 
 console.log(`the number of times the Latin word et appears is: ${countCurrent(longText, 'et')}`);
+
+
+
+/*Bonus 2:
+Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".*/
+
+
+let phraseToCheck = "Was it a car or a cat I saw?"
+
+const repla = phraseToCheck.replace(/[^A-Za-z]/g, "").toLowerCase();
+const union = repla.split('').reverse().join('')
+
+if (repla === union) {
+  console.log('esto es un Palindrome');
+}else{
+  console.log('esto no es un Palindrome')
+}
+  
