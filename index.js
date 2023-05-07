@@ -81,3 +81,21 @@ for (let i = 0; i < longText.length; i++){
 console.log(numberWords, latinWord);
 /*cuenta los et, incluidos los que son palabra larga,
 no solo los que tienen espacios*/
+
+/*Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:*/
+
+const phraseToCheck = prompt('Escribe la frase')
+let result = ''
+let resultReverse = ''
+
+for (let i = 0; i < phraseToCheck.length; i++){
+  result = phraseToCheck[i].toLowerCase(); 
+}
+for (let i = phraseToCheck.length -1; i >=0; i--){
+  resultReverse = phraseToCheck[i].toLowerCase();
+}
+if (result === resultReverse){
+  console.log(`${phraseToCheck} is a Palindrome`)
+}else {
+  console.log(`'${phraseToCheck}' is not a Palindrome`)
+}
