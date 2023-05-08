@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs Juan Cruz</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lab JavaScript basic Algoorithms</h1>
+        <h2>Juan Cruz</h2>
+    </header>
+    <main>
+        <!-- Bonus Ejercicios -->
+        <section>
+            <h3>Exercices</h3>
+            <form class="form-exercices">
+                <label for="driver" class="exercice1">Driver´s name</label>
+                <input id="driver" name="driver" type="text" placeholder="Driver name" />
+                <label for="navigator" class="exercice1">Navigator´s name</label>
+                <input id="navigator" name="navigator" type="text" placeholder="Navigator Name" /><br>
+
+            </form>
+            <button id="excercices">Send</button>
+            <div id="result-section" style="display: none;">
+                <h3>Exercices 1</h3>
+                <p id="result1">The name of the Driver is <span id="driver-name"></span> and the name
+                    of the navigator is <span id="navigator-name"></span></p>
+                <h3>Exercice 2</h3>
+                <p>The name of the driver has <span id="driver-letters"></span>
+                    letters and the navigator has <span id="navigator-letters"></span></p>
+                <p id="result2"></p>
+                <h3>Exercice 3</h3>
+                <h4>Exercice 3.1</h4>
+                <p id="result3.1"></p>
+                <h4>Exercice 3.2</h4>
+                <p id="result3.2"></p>
+                <h4>Exercice 3.3</h4>
+                <p><strong>The lexicographic order of the hackers is:</strong></p>
+                <p id="result3.3"></p>
+            </div>
+        </section>
+
+        <section>
+            <!-- Bonus 1 -->
+            <h3>Bonus 1</h3>
+            <form action="" class="form-bonus-uno">
+                <label for="bonus1">Enter a paragraph, you can go to the lorem ipsum generator website and take de
+                    paragraph</label><br>
+                <textarea name="bonus1" id="bonus1" cols="30" rows="10"></textarea><br>
+
+            </form>
+            <button id="button-bonus1">Send</button>
+            <div id="result-bonus1" style="display: none;">
+                <p><strong>the paragraph shows the following information </strong></p>
+                <p>The paragraph has <span id="words-number"></span> words and the Latin word et appears <span
+                        id="et-number"> times.</span> </p>
+            </div>
+        </section>
+        <section class="section-bonus-dos">
+            <!-- Bonus 2 -->
+            <h3>Bonus 2</h3>
+            <form action="">
+                <label for="bonus2">Enter a Palindrome</label>
+                <p>Here are some examples of palindromes:
+                    "A man, a plan, a canal, Panama!"
+                    "Amor, Roma"
+                    "race car"
+                    "stack cats"
+                    "step on no pets"
+                    "taco cat"
+                    "put it up"
+
+                </p><br>
+                <strong>Important: The program does not take into account commas and spaces</strong><br>
+                <input type="text" name="bonus2" id="bonus2" placeholder="Enter the palindrome here"><br>
+            </form>
+            <button id="button-bonus2">Send</button>
+            <div>
+                <p id="result-bonus2"></p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
