@@ -33,3 +33,11 @@ for (let i = 0; i < hacker1.length; i++, capitals += ' ') {
 }
 
 console.log('drivers capitals:', capitals);
+
+// 3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
+
+let reverse = '';
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  reverse += hacker2[i];
+}
+console.log('reverse:', reverse);
