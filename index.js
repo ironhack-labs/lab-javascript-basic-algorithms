@@ -1,7 +1,6 @@
-// Iteration 1: Names and Input
+console.log("I'm ready!");
 
+const hacker1 = 'Felipe';
 
-// Iteration 2: Conditionals
+console.log(hacker1);
 
-
-// Iteration 3: Loops
