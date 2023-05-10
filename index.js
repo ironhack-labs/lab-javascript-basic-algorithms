@@ -99,3 +99,61 @@ for (let i = 0; i < longText.length; i++) {
 }
 
 console.log("number of 'et':", etCount);
+
+
+
+// Bonus 2:
+
+function checkForPalindrome(phraseToCheck) {
+    phraseToCheck = phraseToCheck.toLowerCase();
+    let phraseToCheckWithOnlyLetters = '';
+  
+    //Remove characters that are not letters
+    for (let i = 0; i < phraseToCheck.length; i++) {
+      if (isLetter(phraseToCheck[i])) {
+        phraseToCheckWithOnlyLetters += phraseToCheck[i];
+      }
+    }
+  
+    // console.log("phraseToCheckWithOnlyLetters:", phraseToCheckWithOnlyLetters)
+  
+    let isPalindrome = true;
+    for (let i = 0; i < phraseToCheckWithOnlyLetters.length; i++) {
+      if (
+        phraseToCheckWithOnlyLetters[i] !==
+        phraseToCheckWithOnlyLetters[phraseToCheckWithOnlyLetters.length - 1 - i]
+      ) {
+        isPalindrome = false;
+        break;
+      }
+    }
+  
+    console.log(
+      phraseToCheck,
+      ' => ',
+      isPalindrome ? '😃 Palindrome!!' : '😐 Not Palindrome'
+    );
+  }
+  
+  const palindromes = [
+    // palindromes
+    'A man, a plan, a canal, Panama!',
+    'race car',
+    'stack cats',
+    'step on no pets',
+    'taco cat',
+    'put it up',
+    'Was it a car or a cat I saw?',
+    "No 'x' in Nixon.",
+    'Elu par cette crapule',
+    // not palindromes
+    'A man, no plan, a canal, ...',
+    'I would like to be a palindrome',
+    // It is a palindrom but it is not 😁
+    '"Grand Palindrome" by Georges Perec (1969)',
+  ];
+  
+  for (let p = 0; p < palindromes.length; p++) {
+    checkForPalindrome(palindromes[p]);
+  }
+  
