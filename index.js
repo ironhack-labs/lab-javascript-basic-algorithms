@@ -23,3 +23,20 @@ if(hacker1.length > hacker2.length){
 }
 
 // Iteration 3: Loops
+
+let driversName = "";
+let navigatorsName = "";
+  
+for(let i=0; i < hacker1.length; i++){
+  driversName = driversName + hacker1[i].toUpperCase() + " ";
+}
+ console.log(driversName);
+
+for(let i=hacker2.length-1; i >=0; i--){
+  navigatorsName = navigatorsName + hacker2[i];
+}
+console.log(navigatorsName);
+
+const result = hacker1.localeCompare(hacker2);
+if (const result =-1){console.log(result);
+                     }
