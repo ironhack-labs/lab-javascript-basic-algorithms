@@ -24,4 +24,12 @@ if (driverCount > navigatorCount) {
   );
 }
 
+
 // Iteration 3: Loops
+// 3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N".
+let capitals = '';
+for (let i = 0; i < hacker1.length; i++, capitals += ' ') {
+  capitals += hacker1[i].toUpperCase();
+}
+
+console.log('drivers capitals:', capitals);
