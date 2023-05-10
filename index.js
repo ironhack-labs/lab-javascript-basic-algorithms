@@ -92,3 +92,62 @@ for (let i = 0; i <= longtext.length; i++) {
   }
 }
 console.log(count1, "the number of et in the variable.");
+
+
+//2-
+
+let phraseToCheck = "A man, a plan, a canal, Panama!";
+
+phraseToCheck = phraseToCheck.toLowerCase();
+let phraseToCheckNoSpace = "";
+let halfString = "";
+let reverseHalfString = "";
+
+// with this loop i remove spaces and special character from the original string
+// only include special characters for the examples given in the exercise. I could keep adding all special characters or create a switch to simplify
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (
+    phraseToCheck[i] === " " ||
+    phraseToCheck[i] === "," ||
+    phraseToCheck[i] === "?" ||
+    phraseToCheck[i] === "'" ||
+    phraseToCheck[i] === "!"
+  ) {
+    continue;
+  } else {
+    phraseToCheckNoSpace += phraseToCheck[i];
+  }
+}
+
+// I put in the variable the second half of the string without spaces and special characters
+halfString = phraseToCheckNoSpace.slice(phraseToCheckNoSpace.length / 2);
+
+// reverse the second half of the string
+for (let i = halfString.length - 1; i >= 0; i--) {
+  reverseHalfString += halfString[i];
+}
+
+//if the string with no spaces and special characters is even
+if (phraseToCheckNoSpace.length % 2 === 0) {
+  //compare if the first half of the string and the second(reversed) are equal
+  if (
+    reverseHalfString ===
+    phraseToCheckNoSpace.slice(0, phraseToCheckNoSpace.length / 2)
+  ) {
+    console.log("It is a palindrome");
+  } else {
+    console.log("It is NOT a palindrome");
+  }
+  //if the string with no spaces and special characters is odd
+} else {
+  //compare if the first half of the string and the second(reversed) are equal
+  if (
+    reverseHalfString ===
+    phraseToCheckNoSpace.slice(0, phraseToCheckNoSpace.length / 2 + 1)
+  ) {
+    console.log("It is a palindrome");
+  } else {
+    console.log("It is NOT a palindrome");
+  }
+}
+
