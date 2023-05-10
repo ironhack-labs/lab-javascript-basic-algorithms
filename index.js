@@ -91,3 +91,39 @@ for (i = 0; i < longText.length; i++) {
   }
 }
 console.log(etCount);
+
+//bonus 2
+let phraseToCheck = "Amor, Roma";
+
+function isPalindrome(phrase) {
+  let justTheLetters = "";
+  let halfReversed = "";
+  let midSentence = Math.ceil(phrase.length / 2);
+  let midLetter = phrase.length % 2 === 0;
+  // remove commas and spaces from phrase, capitalizing for comparison
+  for (let i = 0; i < phrase.length; i++) {
+    if (
+      phrase[i] !== " " &&
+      phrase[i] !== "!" &&
+      phrase[i] !== "." &&
+      phrase[i] !== "?" &&
+      phrase[i] !== `"`
+    ) {
+      justTheLetters += phrase[i].toUpperCase;
+    }
+  }
+  // check the length of the phrase to confirm if there is a letter in the middle
+  for (let j = phrase.length / 2; j < phrase.length; j++) {
+    halfReversed += phrase[j];
+  }
+
+  //when there is an isolated letter in the middle it will be used in both slices of the string: the reversed one, and the sliced one. 
+  
+  if ((halfReversed = phrase.slice(0, midSentence))) {
+    console.log(`It is a Palindrome: ${phrase.slice(0, midSentence)} + ${halfReversed}`);
+  } else {
+    console.log("Sorry, not a Palindrome");
+  }
+}
+
+isPalindrome(letPhraseToCheck);
