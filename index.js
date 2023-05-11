@@ -94,7 +94,7 @@ for (let i = 0; i <= longtext.length; i++) {
 console.log(count1, "the number of et in the variable.");
 
 
-//2-
+//2- Bonus of Fernando
 
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 
@@ -151,3 +151,49 @@ if (phraseToCheckNoSpace.length % 2 === 0) {
   }
 }
 
+
+
+
+// Bonus 2 of Pierre
+
+let phraseToCheck = "Was it a car or a cat I saw?";
+
+phraseToCheck = phraseToCheck.toLowerCase();
+
+let phraseToCheckWithoutSpace = "";
+
+// We can write phraseToCheck = phraseToCheck.replaceAll(` `,`"`, `,` , `?` , `!`, `'` , )
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  if (
+    phraseToCheck[i] === " " ||
+    phraseToCheck[i] === "," ||
+    phraseToCheck[i] === "?" ||
+    phraseToCheck[i] === "'" ||
+    phraseToCheck[i] === "!"
+  ) {
+    continue;
+  } else { 
+    phraseToCheckWithoutSpace += phraseToCheck[i];
+  }
+}
+
+let read = "";
+let reverse = "";
+
+for (let i = 0; i < phraseToCheckWithoutSpace.length; i++) {
+  read += phraseToCheckWithoutSpace[i];
+}
+
+for (let i = phraseToCheckWithoutSpace.length -1; i >= 0; i--) {
+  reverse += phraseToCheckWithoutSpace[i];
+}
+
+if (reverse === read) {
+  console.log("It's a Palindrome");
+} else {
+  console.log("It's not a Palindrome");
+}
+
+console.log(read)
+console.log(reverse)
