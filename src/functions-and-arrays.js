@@ -159,7 +159,7 @@ function doesWordExist(arr, str) {
     }
   });
 }
-
+ 
 
 // Iteration #7: Count repetition
 const wordsCount = [
