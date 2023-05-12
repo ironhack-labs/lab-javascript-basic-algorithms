@@ -57,3 +57,26 @@ for (let i=0; i<longText.length; i++) {
   }
 }
 console.log(counter) */
+
+let phraseToCheck = `Was it a car or a cat I saw?`
+let arrayToCheck = phraseToCheck.replace(/[,.;?!]/g,``).split(` `)
+
+loop1:
+for(let i=0; i<arrayToCheck.length;i++) {
+  let reverseWord = ``
+  for(let j=arrayToCheck[i].length-1; j>=0;j--) {
+    reverseWord += arrayToCheck[i][j].toLowerCase()
+  }
+  loop2:
+  for(let j=0; j<arrayToCheck.length; j++) {
+    if(j!=i && arrayToCheck[j].length>1){
+      if(reverseWord.includes(arrayToCheck[j].toLowerCase()) || arrayToCheck[j].toLowerCase().includes(reverseWord)) {
+        console.log(`We have a palindrome in "${phraseToCheck}". That's ${arrayToCheck[j].toLowerCase()} & ${arrayToCheck[i].toLowerCase()}.`)
+        break loop1;
+      }
+    }
+  }
+  if(i===arrayToCheck.length-1) {
+    console.log(`We don't have a palindrome in "${phraseToCheck}".`)
+  }
+}
