@@ -67,7 +67,7 @@ let isPalindrome = true;
 
 const limpiarFrase = phraseToCheck.replace(/[^a-zA-Z]/g, "").toLowerCase();
 
-for (let i = 0; i < limpiarFrase.length / 2; i++) {
+for (let i = 0; i < Math.floor(limpiarFrase.length / 2); i++) {
   if (limpiarFrase[i] !== limpiarFrase[limpiarFrase.length - 1 - i]) {
     isPalindrome = false;
     break;
