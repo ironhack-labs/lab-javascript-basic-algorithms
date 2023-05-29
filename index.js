@@ -65,15 +65,14 @@ console.log(`The text has ${numWords} words, and the latin word "et" appears ${n
 const phraseToCheck = "amo la paloma"
 let reversedPhrase = "", cleanPhrase = "";
 
-for (let i = 0; i < phraseToCheck.length; i++) {
-  const char = phraseToCheck[i].toLowerCase();
+for (let i = 0, j = phraseToCheck.length - 1; i < phraseToCheck.length; i++, j--) {
+  const char = phraseToCheck[i].toLowerCase(), reverseChar = phraseToCheck[j].toLowerCase();
   if (char >= "a" && char <= "z") {
     cleanPhrase += char;
   }
-}
-
-for (let i = cleanPhrase.length - 1; i >= 0; i--) {
-  reversedPhrase += cleanPhrase[i];
+  if (reverseChar >= "a" && reverseChar <= "z") {
+    reversedPhrase += reverseChar;
+  }
 }
 
 if (reversedPhrase === cleanPhrase) {
