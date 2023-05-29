@@ -53,7 +53,7 @@ for (let i = 0; i < longText.length; i++) {
   if (longText[i] === " ") {
     numWords++;
   }
-  if (longText[i] + longText[i + 1] === "et") {
+  if (longText[i] + longText[i + 1] + longText[i + 2] + longText[i + 3] === " et ") {
     numEt++
   }
 }
