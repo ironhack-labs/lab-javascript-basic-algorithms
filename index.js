@@ -21,7 +21,7 @@ for(let i=0; i<letterUp.length; i++){
 }
 console.log(up)
 
-let reverso = "";
+let reverso = '';
 for(let i = hacker1.length -1; i >= 0; i--) {
   reverso += hacker1[i];
 }
