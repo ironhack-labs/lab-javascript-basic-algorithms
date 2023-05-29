@@ -1,7 +1,8 @@
 console.log("I'm ready!");
 // Iteration 1: Names and Input
 
-let hacker1 = prompt("Driver name"), hacker2 = prompt("Navigator name");
+const hacker1 = 'Alejandro';
+const hacker2 = 'Naiim';
 
 console.log(`The driver's name is ${hacker1}`);
 console.log(`The navigator's name is ${hacker2}`);
