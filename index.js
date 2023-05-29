@@ -75,3 +75,20 @@ const longText = `
 
  }
  console.log(count)
+
+// Iteration Bonus 2: Palindrome
+
+ const phrase = "A man, a plan, a canal, Panama!"
+const phraseWithoutSpaces = phrase.replace(/[^a-zA-Z0-9]/g, '')
+console.log(phraseWithoutSpaces)
+  
+let reversePhrase = ('');
+for (let i = phraseWithoutSpaces.length -1; i >= 0; i--){
+reversePhrase += phraseWithoutSpaces.charAt(i)
+}
+ console.log(reversePhrase)
+if (reversePhrase.toLowerCase() === phraseWithoutSpaces.toLowerCase()){
+  console.log("this variable is a Palindrome")
+} else {
+  console.log("this variable is NOT a Palindrome")
+}
