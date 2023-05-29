@@ -62,7 +62,7 @@ console.log(`The text has ${numWords} words, and the latin word "et" appears ${n
 
 // Bonus 2:
 
-const phraseToCheck = prompt("Palindrome check")
+const phraseToCheck = "amo la paloma"
 let reversedPhrase = "", cleanPhrase = "";
 
 for (let i = 0; i < phraseToCheck.length; i++) {
