@@ -14,7 +14,7 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
-let letterUp = hacker1.toUpperCase();
+const letterUp = hacker1.toUpperCase();
 let up = '';
 for(let i=0; i<letterUp.length; i++){
    up += letterUp[i] + ' ';     
