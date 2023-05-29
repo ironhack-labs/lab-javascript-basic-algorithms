@@ -53,8 +53,10 @@ for (let i = 0; i < longText.length; i++) {
   if (longText[i] === " ") {
     numWords++;
   }
-  if (longText[i] + longText[i + 1] + longText[i + 2] + longText[i + 3] === " et ") {
-    numEt++
+  if (longText[i + 1] + longText[i + 2]=== "et") {
+    if ((longText[i].toLowerCase() < "a" || longText[i].toLowerCase() > "z") && (longText[i + 3].toLowerCase() < "a" || longText[i + 3].toLowerCase() > "z")) {
+      numEt++;
+    }
   }
 }
 
