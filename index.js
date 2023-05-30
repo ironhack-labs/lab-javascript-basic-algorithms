@@ -134,14 +134,8 @@ console.log(`The text has ${words.length} words, and the latin word "et" appears
 // Bonus 2:
 
 const phraseToCheck = "No 'x' in Nixon"
-let cleanPhrase = "";
+const cleanPhrase = phraseToCheck.replace(/\W/g, '').toLowerCase()
 
-for (let i = 0; i < phraseToCheck.length; i++) {
-  const char = phraseToCheck[i].toLowerCase();
-  if ((/[a-zA-Z]/).test(char)) {
-    cleanPhrase += char;
-  }
-}
 if (cleanPhrase === cleanPhrase.split("").reverse().join("")) {
   console.log(`"${phraseToCheck}" is a Palindrome`);
 } else {
