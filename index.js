@@ -134,19 +134,15 @@ console.log(`The text has ${words.length} words, and the latin word "et" appears
 // Bonus 2:
 
 const phraseToCheck = "No 'x' in Nixon"
-let reversedPhrase = "", cleanPhrase = "";
+let cleanPhrase = "";
 
-for (let i = 0, j = phraseToCheck.length - 1; i < phraseToCheck.length; i++, j--) {
-  const char = phraseToCheck[i].toLowerCase(), reverseChar = phraseToCheck[j].toLowerCase();
+for (let i = 0; i < phraseToCheck.length; i++) {
+  const char = phraseToCheck[i].toLowerCase();
   if ((/[a-zA-Z]/).test(char)) {
     cleanPhrase += char;
   }
-  if ((/[a-zA-Z]/).test(reverseChar)) {
-    reversedPhrase += reverseChar;
-  }
 }
-
-if (reversedPhrase === cleanPhrase) {
+if (cleanPhrase === cleanPhrase.split("").reverse().join("")) {
   console.log(`"${phraseToCheck}" is a Palindrome`);
 } else {
   console.log(`"${phraseToCheck}" is not a Palindrome`);
