@@ -108,3 +108,46 @@ function lengthAndWords(sentence, specificWord) {
 }
 
 console.log(lengthAndWords(longText, "et"));
+
+/*
+
+Bonus 2:
+Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+"A man, a plan, a canal, Panama!"
+"Amor, Roma"
+"race car"
+"stack cats"
+"step on no pets"
+"taco cat"
+"put it up"
+"Was it a car or a cat I saw?" and "No 'x' in Nixon".
+IMPORTANT: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as join(), reverse(), etc.). However, we want you to apply your current knowledge and try to come up with a solution by just using the for loop and if-else statements with some break and continue.
+
+*/
+
+let phraseToCheck = "?";
+
+function palenDromeChecker(word) {
+  word = word
+    .replace(/[^A-Za-z]/g, " ")
+    .split(" ")
+    .join("");
+
+  if (word) {
+    for (let i = 0; i < word.length; i++) {
+      if (word[i].toLowerCase() !== word[word.length - [i + 1]].toLowerCase()) {
+        return false;
+      }
+    }
+  } else {
+    return false;
+  }
+
+  return true;
+}
+
+console.log(palenDromeChecker(phraseToCheck));
+console.log(palenDromeChecker("A man, a plan, a canal, Panama!"));
+console.log(palenDromeChecker("Was it a car or a cat I saw?"));
+console.log(palenDromeChecker("No 'x' in Nixon"));
