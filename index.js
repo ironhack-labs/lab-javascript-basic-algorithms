@@ -92,3 +92,52 @@ for (let i = 0; i < longText.length - 2; i++) {
 
 console.log(count);
 
+
+// Bonus 2
+
+
+
+let phraseToCheck = "Amor, Roma";
+
+const halfLenght = Math.floor(phraseToCheck.length / 2);
+
+console.log(halfLenght);
+
+let wordToCheck = "";
+
+for (let i = 0; i <= halfLenght; i++) {
+  wordToCheck += phraseToCheck[i];
+}
+
+console.log(wordToCheck);
+
+let secondWordToCheck = "";
+
+for (let e = phraseToCheck.length - 1; e > halfLenght; e--) {
+  secondWordToCheck += phraseToCheck[e];
+}
+
+console.log(secondWordToCheck);
+
+let wordOne = wordToCheck.toUpperCase();
+let wordTwo = secondWordToCheck.toUpperCase();
+
+let firstLetters = wordOne.slice(0, 2);
+let lastLetters = wordTwo.slice(0, 2);
+
+let secondFirstLetters = wordOne.slice(2, 3);
+let secondLastLetters = wordTwo.slice(2, 3);
+
+let ThirdFirstLetters = wordOne.slice(2, 3);
+let ThirdLastLetters = wordTwo.slice(2, 3);
+
+if (firstLetters == lastLetters || secondFirstLetters == secondLastLetters) {
+  console.log("yes");
+} else if (
+  firstLetters == lastLetters &&
+  ThirdFirstLetters == ThirdLastLetters
+) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
