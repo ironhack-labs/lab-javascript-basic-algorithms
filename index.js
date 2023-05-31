@@ -59,7 +59,8 @@ console.log(wordcounter);
 let count = 0;
 
 for (i = 0; i < longText.length; i++) {
-  if (longText[i] + longText[i + 1] === "et") count++;
+  if (longText[i] + longText[i + 1] === "et" && longText[i - 1] === " ")
+    count++;
 }
 
 console.log(count);
