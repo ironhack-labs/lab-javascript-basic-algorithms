@@ -20,7 +20,7 @@ if (hacker1.length > hacker2.length) {
 let nombreMayus = ""
 
 for (let i = 0; i < hacker1.length; i++) {
-  nombreMayus += hacker1[i].toUpperCase()+ " "
+  nombreMayus += hacker1[i].toUpperCase() + " "
 }
 
 console.log(nombreMayus);
