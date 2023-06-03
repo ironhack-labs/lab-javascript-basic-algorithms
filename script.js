@@ -26,8 +26,37 @@ else {
 let message = "";
 for (let i = 0; i < hacker1.length; i++) {
     //console.log(hacker1.toUpperCase(i).charAt(i));
-    message = message + hacker1.charAt(i).toUpperCase()+" ";
-    
+    message = message + hacker1.charAt(i).toUpperCase() + " ";
+
 }
-console.log(message)
+
+console.log(message);
+
+// question 3.2
+
+let reversed = "";
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    reversed += hacker2[i];
+}
+
+console.log(reversed);
+
+// 3.3
+let compValue = hacker1.localeCompare(hacker2);
+
+switch (compValue) {
+    case -1:
+        console.log("The driver's name goes first.");
+        break;
+    case 1:
+        console.log("Yo, the navigator goes first, definitely.");
+        break;
+    case 0:
+        console.log("What?! You both have the same name?")
+            ; break;
+}
+
+
+
 
