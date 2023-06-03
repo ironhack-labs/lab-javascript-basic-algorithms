@@ -123,8 +123,8 @@ const longText = "Morbi commodo, nunc sit amet finibus vestibulum, leo est egest
 const words = longText.split(' ');
 let numEt = 0;
 
-for (let i = 0; i < words.length; i++) {
-  if (words[i] === "et") {
+for (const word of words) {
+  if (word === "et") {
     numEt++;
   }
 }
