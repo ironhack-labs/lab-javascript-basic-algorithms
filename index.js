@@ -50,10 +50,11 @@ const palabras = longText.split(" ");
 const cantidadPalabras = palabras.length;
 console.log(`Cantidad de palabras: ${cantidadPalabras}`);
 
-let cantidadEt = ""
+const words = longText.split(" ");
+let cantidadEt = 0;
 
-for (let i = 0; i < longText.length - 1; i++) {
-  if (longText[i] === "e" && longText[i+1] === "t") {
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "et") {
     cantidadEt++;
   }
 }
