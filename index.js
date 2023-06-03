@@ -59,8 +59,6 @@ for (let i = 0; i < words.length; i++) {
   }
 }
 
-console.log(`Se repite et ${cantidadEt} veces`);
-
 // Bonus 2
 
 const phraseToCheck = "A man, a plan, a canal, Panama!";
