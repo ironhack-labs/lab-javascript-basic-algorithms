@@ -1,7 +1,101 @@
+console.log("I'm ready!");
+
+
 // Iteration 1: Names and Input
+
+let hacker1 = "Mohammed";
+console.log(`The driver's name is ${hacker1}`);
+
+let hacker2 = "Qasim";
+console.log(`The navigator's name is ${hacker2}`);
 
 
 // Iteration 2: Conditionals
 
+if (hacker1.length > hacker2.length) {
+  console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
+} else if (hacker2.length > hacker1.length) {
+  console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+} else if (hacker1.length === hacker2.length) {
+  console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
+}
 
 // Iteration 3: Loops
+
+
+// 3.1
+let hacker1spaced = "";
+for (let i = 0; i < hacker1.length; i++) {
+  hacker1spaced += `${hacker1[i].toUpperCase()} `};
+hacker1spaced = hacker1spaced.slice(0, hacker1spaced.length - 1);
+console.log(hacker1spaced);
+
+// 3.2
+hacker2reversed = "";
+for (let i = 1; i <= hacker2.length; i++) {
+  hacker2reversed += hacker2[hacker2.length - i];
+};
+console.log(hacker2reversed);
+
+// 3.3
+if (hacker1 < hacker2) {
+  console.log("The driver's name goes first.");
+} else if (hacker1 > hacker2) {
+  console.log("Yo, the navigator goes first, definitely.");
+} else if (hacker1 == hacker2) {
+  console.log("What?! You both have the same name?");
+}
+
+
+
+// Iteration 4: Bonus 1
+let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel urna vitae quam sagittis efficitur vel non leo. Proin aliquet ultricies erat non dapibus. Donec ornare scelerisque porttitor. Morbi aliquet laoreet mauris fringilla ullamcorper. Vivamus volutpat, libero nec porttitor dapibus, libero risus mollis elit, eu lacinia magna tellus vitae ligula. Praesent laoreet nunc et sapien facilisis, ut varius nisi sagittis. Mauris semper, diam sit amet ultricies bibendum, magna dolor dapibus odio, nec ullamcorper nibh urna id tortor. Vestibulum sollicitudin lectus eget semper accumsan. Nunc scelerisque condimentum eleifend. Quisque sit amet sapien neque. Etiam tempor, arcu id rhoncus mollis, lacus nisi facilisis orci, sed porttitor mi turpis vitae dui. Suspendisse consequat purus sed elit suscipit, non pellentesque libero hendrerit. Phasellus dictum massa nec justo lobortis, vitae iaculis eros ultrices. Quisque sit amet leo suscipit, auctor felis sit amet, congue erat. Cras hendrerit erat ut tellus ultricies, eu eleifend tortor ullamcorper. Etiam a lectus ut ex elementum posuere sit amet non risus. Pellentesque ut quam id tortor consectetur eleifend. Proin velit enim, volutpat quis augue quis, laoreet fringilla quam. Integer hendrerit, ipsum placerat hendrerit hendrerit, lorem lorem vehicula ipsum, blandit mollis nisi dui et felis. Praesent odio dui, pulvinar et quam rhoncus, aliquet facilisis sapien. Fusce tincidunt posuere metus, quis auctor est maximus eu. Ut vel volutpat orci, ac vulputate sapien.Vivamus sodales elit a arcu placerat, quis tempus eros auctor. Mauris pellentesque pretium purus, eu ultrices odio auctor quis. Sed tortor nunc, pellentesque in leo aliquet, finibus accumsan massa. Aliquam et molestie erat, non vestibulum justo. Integer tincidunt et massa ac efficitur. Duis mi ex, hendrerit non mauris id, dignissim convallis nunc. Vestibulum et tempus diam. Aliquam urna elit, feugiat quis pretium ac, convallis nec erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. ";
+
+let wordCount =0;
+for (let i=0; i<longText.length; i++) {
+    if (longText[i]=== " ") {
+        wordCount++;
+    }
+}
+console.log(`Number of words: ${wordCount}`);
+
+let etCount =0;
+for (let i=0; i<longText.length; i++) {
+    if (longText[i] + longText[i+1] === "et" && longText[i-1] === (" " || "." ) && longText[i+2] === (" " || "." )){
+        etCount++;
+    }
+    else if (longText[i] + longText[i+1] === "Et" && longText[i-1] === (" " || "." ) && longText[i+2] === (" " || "." )){
+        etCount++;
+    }
+}
+console.log(`Number of "et": ${etCount}`);
+
+// Iteration 5: Bonus 2
+let phraseToCheck ="Was it a car or a cat I saw?";
+
+// prepare the phrase: remove special characters first & make lowercase
+let phraseNoSpaces="";
+for (let i=0; i<phraseToCheck.length; i++) {
+    if (phraseToCheck.charCodeAt(i) <= 90 && phraseToCheck.charCodeAt(i) >= 65) {
+        phraseNoSpaces += phraseToCheck[i];}  
+    else if (phraseToCheck.charCodeAt(i) <= 122 && phraseToCheck.charCodeAt(i) >= 97) {
+        phraseNoSpaces += phraseToCheck[i];
+    }
+}
+let phraseLowercase=phraseNoSpaces.toLowerCase();
+
+// check if first char is the same as last one etc. 
+let palindromCount="";
+for (let j=0; j<phraseLowercase.length/2; j++) {
+    if (phraseLowercase[j] === phraseLowercase[phraseLowercase.length-1-j]) {
+        palindromCount++;
+    }
+ }
+
+// now, write down the result of the analysis 
+ if (palindromCount >= phraseLowercase.length/2) {
+    console.log(`Yes, the phrase "${phraseToCheck}" is a palindrom.`);
+ }
+ else {
+    console.log(`No, the phrase "${phraseToCheck}" is not a palindrom.`);;
+ }
