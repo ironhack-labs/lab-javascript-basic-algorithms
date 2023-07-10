@@ -22,14 +22,12 @@ else if (hacker1.length === hacker2.length) {
 }
 // Iteration 3: Loops
 
-let hacker1NameSpaced = "";
-let hacker2Reversed ="";
-
 //3.1
 
 console.log(hacker1.split("").join(" ").toUpperCase());
 
 //3.2
+let hacker2Reversed ="";
 
 for (let i = hacker2.length-1; i >= 0; i--) {
 
@@ -52,4 +50,3 @@ else if(hacker1.localeCompare(hacker2) === 1){
 else if(hacker1.localeCompare(hacker2) === 0){
 console.log(`What?! You both have the same name?`);
 }
-
