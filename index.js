@@ -47,3 +47,20 @@ function WordCount(str) {
 }
 
 console.log(`The number of words is ${WordCount(longText)}`);
+
+// Bonus 2
+
+let myName = "Michael";
+let myAge = 67;
+
+if(myAge > 65){
+  console.log("price is 2.99");
+} else if(myAge === 15 && myName === "Michael" ){
+  console.log("Are you Michael Scott from Dunder Mifflin?");
+} else if(myAge > 16){
+  console.log("price is 1.99€");
+} else {
+  console.log("price is 5.99€");
+}
+
+// calculatePrices(17, "Michael");
