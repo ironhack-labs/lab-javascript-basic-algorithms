@@ -26,7 +26,7 @@ let anotherString = '';
 for (let j = hacker2.length-1 ; j >= 0; j--){
   anotherString += hacker2[j];
 } 
-console.log(anotherString.toUpperCase());
+console.log(anotherString);
 
 //Print 
 if(hacker>hacker2){
@@ -40,7 +40,7 @@ else {console.log(`The names are equal`)}
 //Loem ipsum
 let paragraph = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lobortis nibh nec neque laoreet volutpat. Pellentesque suscipit consectetur ante, eget molestie dolor vehicula vel. Morbi molestie rhoncus mi quis efficitur. Nunc blandit nulla in vulputate consectetur. Cras vitae tellus non justo rhoncus malesuada vel eu sem. Aliquam in sollicitudin leo, quis faucibus massa. Nullam nec ipsum non velit pharetra porttitor ac eget quam. Fusce scelerisque dui et tortor maximus tincidunt. Proin id pharetra magna, accumsan luctus erat. Curabitur ultricies molestie orci, nec auctor purus lobortis vitae. Integer elit sapien, scelerisque iaculis pharetra in, sollicitudin non justo. Integer ultrices odio neque, sit amet commodo nibh tristique sit amet. Aliquam molestie condimentum aliquet. Donec condimentum tincidunt eleifend. Nullam volutpat eget purus in scelerisque. Nulla sagittis vel neque ut tempor. Vivamus nec massa velit. Fusce varius lobortis dolor sed pulvinar. Vivamus rutrum lorem a porttitor tempus. Integer tincidunt sodales arcu, a blandit justo interdum vel. Vestibulum tempus sapien sit amet orci condimentum cursus. Proin velit metus, ultricies sed augue quis, aliquet aliquam urna. Nam vulputate et quam eu laoreet. Suspendisse eu mattis libero. Donec quis iaculis felis. Fusce elit libero, semper in nulla sit amet, scelerisque ullamcorper magna. Aenean at dui a urna blandit finibus sit amet pulvinar ipsum. Morbi libero nulla, condimentum ac sem sed, aliquam dignissim tortor. Curabitur mi libero, gravida ac congue ac, imperdiet posuere nunc. Etiam orci elit, convallis at ligula non, fringilla vulputate massa. Curabitur dignissim massa ut neque rutrum sollicitudin. In in augue fringilla, fermentum est eu, ullamcorper libero. Fusce eu purus sit amet magna rhoncus molestie. Suspendisse egestas ultricies mi, et accumsan ante pretium at. Sed pulvinar purus augue, mattis feugiat massa gravida vel. Nam vel dignissim turpis. Integer vitae porttitor ante, ut dapibus leo. Donec volutpat dignissim nibh in mollis. Proin cursus vehicula lectus, sed placerat orci placerat ut. Quisque at sapien sed elit dictum tempor a nec tellus. Aenean a mi vulputate, ullamcorper eros eu, imperdiet quam. Duis in nibh lacus. Sed dapibus ex sed erat elementum tincidunt. Nulla congue faucibus fringilla. Etiam vitae mi elementum, ornare justo at, tincidunt eros. Quisque eget felis nisi.`
 
-let wordCounter = 1;
+let wordCounter = 0;
 let etCounter = 0; 
 for(let counter = 0; counter < paragraph.length; counter++){
   if(paragraph[counter] == " "){
@@ -62,7 +62,7 @@ for(let x = 0; x < phraseToCheck.length; x++){
     continue;
   };
   phraseNoSpaces += phraseToCheck[x];
-}
+}``
 phraseNoSpaces = phraseNoSpaces.toLowerCase()
 //Turn sideways from new created string
 let phraseSideWays = "";
