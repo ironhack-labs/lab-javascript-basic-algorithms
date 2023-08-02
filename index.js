@@ -46,5 +46,5 @@ if (hacker1 === hacker2) {
   console.log("Yo, the navigator goes first, definitely.");
 }
 // We made this first without a loop, step by step, 
-// and we figured out it already works like this so 
+// and we figured out it already works like this so   
 // we're not sure how, and why, to make a loop out of this.
