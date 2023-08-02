@@ -69,7 +69,7 @@ else {
 
 //string1.localeCompare(string2) 
 
-/*function noName (a, b){
+function noName (a, b){
   return a+b
 }
-console.log(noName(5,9))+ */
+console.log(noName(5,9))
