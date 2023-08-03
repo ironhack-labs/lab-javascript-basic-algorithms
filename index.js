@@ -7,7 +7,7 @@ console.log("I'm ready!");
 1.4 Print "The navigator's name is YYYY".*/
 
 const driverName = "Utku";
-const navigatorName = "Mr. Navigator";
+const navigatorName = "Hanna";
 
 const hacker1 = `The driver's name is ${driverName}`;
 console.log(hacker1);
