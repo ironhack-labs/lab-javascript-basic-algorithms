@@ -23,7 +23,7 @@ else if (hacker1.length === hacker2.length) {
 
 let newDriverName = "";
 for (let i=0; i < hacker1.length; i++) {
-newDriverName += hacker1[i].toUpperCase () + " ";
+newDriverName += hacker1[i].toUpperCase() + " ";
 }
 
 console.log(newDriverName.trim());
