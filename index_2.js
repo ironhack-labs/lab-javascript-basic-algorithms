@@ -26,7 +26,7 @@ if (varone >vartwo) {
 let newStringOne ="";
 
 for (let i=0; i<hacker1.length; i++) {
-    newStringOne+=hacker1[i]+" "  
+    newStringOne+=hacker1[i].toUpperCase()+" "  
   }
 console.log (newStringOne);
 
