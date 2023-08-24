@@ -1,8 +1,8 @@
 // Iteration 1: Names and Input
-let hacker1 = "Ian";
+const hacker1 = "Ian";
 console.log("The driver's name is", hacker1);
 
-let hacker2 = "Ian's cat";
+const hacker2 = "Ian's cat";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals (.length)
@@ -12,25 +12,19 @@ The driver has the longest name, it has XX characters. or
 It seems that the navigator has the longest name, it has XX characters. or
 Wow, you both have equally long names, XX characters!. */
 
-    let hackerA = "Ian";
-    let hackerB = "Yildiz";
-
-    if (hackerA.length > hackerB.length) {
-        console.log (`The driver has the longest name, it has ${hackerA.length} characters`);
+    if (hacker1.length > hacker2.length) {
+        console.log (`The driver has the longest name, it has ${hacker1.length} characters`);
     }
     
-    else if (hackerA.length < hackerB.length) {
-        console.log (`It seems that the navigator has the longest name, it has ${hackerB.length} characters`);
+    else if (hacker1.length < hacker2.length) {
+        console.log (`It seems that the navigator has the longest name, it has ${hacker2.length} characters`);
     }
 
     else {
-        console.log (`Wow, you both have equally long names, ${hackerA.length} characters!`);
+        console.log (`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
-
-// Iteration 2: Conditionals
-
-
 // Iteration 3: Loops
+
 
 /* 3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N". - .toUpperCase, space " "
 
@@ -42,4 +36,3 @@ The driver's name goes first.
 Yo, the navigator goes first, definitely.
 What?! You both have the same name?*/
 
-for (let i = 0; i <= ) " "
