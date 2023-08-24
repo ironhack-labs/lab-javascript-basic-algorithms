@@ -31,12 +31,14 @@ for (let i=0; i<hacker1.length; i++){
 }
 console.log (hacker1Caps.toUpperCase());
 
-let hacker2Reversed = "";
 
-for (let i = hacker2.length-1; i >=0; i--) {
-    hacker2Reversed += hacker2[i];
-    console.log (hacker2Reversed);
+let hacker2Reversed = "";
+let hacker2LastIndex = hacker2.length -1;
+    for (let i = hacker2LastIndex; i >=0; i--) {
+    const char = hacker2[i];
+    hacker2Reversed += (char);
 }
+console.log (hacker2Reversed);
 
 /* 3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N". - .toUpperCase, space " "
 
