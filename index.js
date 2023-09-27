@@ -77,12 +77,18 @@ console.log (etCount (longText))
 
 //Bonus 2
 
+let phraseToCheck = "amor roma";
+let reversedPalindrome = "";
+for (i = phraseToCheck.length -1; i >= 0; i--){
+  reversedPalindrome += phraseToCheck[i];
+}
 
-
-
-
-
-
+if (phraseToCheck == reversedPalindrome){
+  console.log (phraseToCheck + " is a palindrome")
+}
+else{
+  console.log (phraseToCheck + " is not a palindrome")
+}
 
 
 
