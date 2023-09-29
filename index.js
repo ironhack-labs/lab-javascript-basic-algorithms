@@ -29,4 +29,14 @@ for (let i = 0; i < hacker1.length; i++) {
  
 }
 
-console.log (newName) 
+console.log (newName); 
+
+let reversedName = '';
+
+for (let j = hacker2.length -1; j >= 0; j-- ) { 
+  reversedName += hacker2[j]; 
+} 
+
+console.log (reversedName); 
+
+
