@@ -39,9 +39,9 @@ for (let j = hacker2.length -1; j >= 0; j-- ) {
 
 console.log (reversedName); 
 
-if (hacker1.localeCompare(hacker2) === 1) {
+if (hacker1.localeCompare(hacker2) > 0) {
     console.log ("The driver's name goes first.")
-  } else if (hacker1.localeCompare(hacker2) === -1) {
+  } else if (hacker1.localeCompare(hacker2) < 0) {
     console.log ("Yo, the navigator goes first, definitely.")
   } else {
     console.log ("What?! You both have the same name?")
@@ -63,6 +63,8 @@ for (let l = 0; longText.length > l; l++) {
   }
 }
 console.log (count); 
+
+let etCount = 0
 
 for (let k = 0; longText.length > k; k++) {
     const twoLetters = longText[k] + longText[k + 1];
