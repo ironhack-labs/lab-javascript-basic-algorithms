@@ -76,5 +76,27 @@ for (let k = 0; longText.length > k; k++) {
   console.log(etCount); 
 
   //Bonus 2
+  const phraseToCheck = "A man, a plan, a canal, Panama!";
 
+  const charactersPhrase = phraseToCheck.replace(/[^a-zA-Z ]/g, '').split(' ').join('').toLowerCase()
+  const reversedPhrase = charactersPhrase.split('').reverse().join('')
+  
+  if (charactersPhrase === reversedPhrase) {
+    console.log("palindrome")
+  } 
+  
+  // OtherWay 
+  
+  const cleanedPhrase = phraseToCheck.replace(/[^a-zA-Z]/g, '').toLowerCase();
+  
+  checkPalindrome = '';
+  
+  for (let i = cleanedPhrase.length -1; i >= 0; i -- ) { 
+    checkPalindrome += cleanedPhrase[i]; 
+  } 
+  
+  if (checkPalindrome === cleanedPhrase) {
+    console.log("palindrome")
+  }
+  
 
