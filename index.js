@@ -60,3 +60,19 @@ console.log(`The latin word "et" appears ${countLatinWord} times`)
 
 // Bonus 2
 
+function isPalindrome(phrase) {
+    let cleanPhrase = phrase.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    let cleanPhraseL = cleanPhrase.length;
+
+    for (let m = 0; m < cleanPhraseL / 2; m++) {
+        if (cleanPhrase[m] !== cleanPhrase[cleanPhraseL - 1 - m]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPalindrome("A man, a plan, a canal: Panama"));
+
+
+
