@@ -1,5 +1,5 @@
 // Iteration 1: Names and Input
-/*
+
 let hacker1 = "Carol";
 console.log(`The driver's name is ${hacker1}`);
 
@@ -63,7 +63,7 @@ for (i=0; i<longText.length; i++){
 }
 console.log(count)
 
-*/
+
 // 2)
 const phraseToCheck2 = "A man, a plan, a canal, Panama!"
 const stringToCheck = phraseToCheck2.toLowerCase().replace(/[^a-z0-9]/g, '');
