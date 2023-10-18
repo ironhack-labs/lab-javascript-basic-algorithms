@@ -15,4 +15,8 @@ if (hacker1.length > hacker2.length) {
 
 
 // Iteration 3: Loops
-// sss
+let arr = ["Mauli", "banshree", "apples"];
+arr.sort(function(a, b) {
+    return a.localeCompare(b);
+});
+console.log(arr);
