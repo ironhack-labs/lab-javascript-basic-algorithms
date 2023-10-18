@@ -13,8 +13,14 @@ if (hacker1.length > hacker2.length) {
   console.log(`The ${hacker2} has ${hacker2.length} characters`);
 }
 
-
 // Iteration 3: Loops
+console.log(hacker1.toUpperCase().split("").join(" "));
+let splitString = hacker1.split("");
+let reverseArray = splitString.reverse();
+let newString = reverseArray.join("");
+console.log(newString);
+
+// //
 let arr = ["Mauli", "banshree", "apples"];
 arr.sort(function(a, b) {
     return a.localeCompare(b);
