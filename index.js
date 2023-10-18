@@ -118,7 +118,39 @@ console.log(countEt(longText))
 // Bonus 2
 
 const phraseToCheck = `Lorem ipsum dolor sit amet, consetetur sadipscing elitr`
+let preparedPhraseToCheck = ``;
+let preparedPhraseToCheckReverse = ``;
 
-function checkPalindrome (text) {
-    
+// Prepare phrase
+
+for(i = 0; i < phraseToCheck.length; i++) {
+    if(phraseToCheck[i] === "," || phraseToCheck[i] === " " || phraseToCheck[i] === ";" || phraseToCheck[i] === "?" || phraseToCheck[i] === "!") {
+        continue;
+    } else {
+        preparedPhraseToCheck += phraseToCheck[i].toLocaleLowerCase();
+    }
+}
+
+for (let i = preparedPhraseToCheck.length-1; i >= 0; i--) {
+    preparedPhraseToCheckReverse += preparedPhraseToCheck[i].toLowerCase();
+}
+
+if (preparedPhraseToCheckReverse.includes(preparedPhraseToCheck)) {
+    console.log("It's a palandrome PHRASE")
+} else {
+    console.log("Sorry, it's not a palandrome PHRASE")
+}
+
+
+// Word Palandrome Check
+const wordToCheck = `Madam`
+
+let wordToCheckReverse = ``;
+
+for (let i = wordToCheck.length-1; i >= 0; i--) {
+    wordToCheckReverse += wordToCheck[i].toLowerCase();
+}
+
+if (wordToCheckReverse.includes(wordToCheck.toLowerCase())) {
+    console.log("It's a palandrome WORD")
 }
