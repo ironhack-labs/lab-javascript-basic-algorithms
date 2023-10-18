@@ -85,7 +85,7 @@ Nulla a tincidunt risus. Vestibulum aliquet massa eu fringilla aliquet. Mauris p
 
 let wordsArray = [];
 
-wordsArray = longText.split(/\s+\b/);
+wordsArray = longText.split(/\s+\b/);  // RegExp (Regular Expressions are written between / /) \s+ means one or more spaces and \b asserts that current position in the string is a word boundary
 
 console.log(`There are ${wordsArray.length} words in this paragraph.`);
 
