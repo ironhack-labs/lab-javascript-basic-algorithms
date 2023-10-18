@@ -78,3 +78,33 @@ for(let i = 0; i<longText.length; i++) {
 }
 
 console.log(countEt)
+
+// Bonus 2, still rocking:
+
+let phraseToCheck = "No 'x' in Nixon";
+
+let lowerCase = phraseToCheck.toLowerCase();
+let phraseFromStart = "";
+let phraseFromEnd = "";
+
+for (let i = 0; i < lowerCase.length; i++) {
+    if (lowerCase[i] === " " || lowerCase[i] === "," || lowerCase[i] === "!" || lowerCase[i] === "'") {
+        continue;
+    } else {
+        phraseFromStart += lowerCase[i];
+    }
+} //console.log(phraseFromStart);
+
+for (let i = lowerCase.length-1; i >= 0; i--) {
+    if (lowerCase[i] === " " || lowerCase[i] === "," || lowerCase[i] === "!" || lowerCase[i] === "'") {
+        continue;
+    } else {
+        phraseFromEnd += lowerCase[i];
+    }
+} //console.log(phraseFromEnd);
+
+if (phraseFromStart === phraseFromEnd) {
+    console.log("It's a palindrome! YAY!");
+    } else {
+        console.log("Not a palindrome.")
+    }
