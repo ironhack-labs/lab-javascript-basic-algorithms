@@ -80,7 +80,7 @@ const phraseToCheck = "step on no pets";
 
 const checkPalindrome = (phraseToCheck) => {
   let word1 = "";
-  for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  for (let i = phraseToCheck.length - 1; i>= 0; i--) {
     word1 += phraseToCheck[i];
   }
   if (word1 === phraseToCheck) {
