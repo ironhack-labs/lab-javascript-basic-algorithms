@@ -59,7 +59,9 @@ const longText =
 
 //Make your program count the number of words in the string.
 
-console.log(`the length of the text : ${longText.length}`);
+
+
+console.log(`the length of the text : ${longText.split(" ").length}`);
 
 //Make your program count the number of times the Latin word et appears.
 
