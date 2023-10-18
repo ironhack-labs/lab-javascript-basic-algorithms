@@ -43,3 +43,34 @@ if(hacker1.localeCompare(hacker2) === -1){
      console.log("What?! You both have the same name?")
    }
   
+   const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non dapibus erat. Integer libero ligula, ullamcorper ut vestibulum eget, pretium et justo. Suspendisse non urna quis ex dictum semper. Vestibulum at rhoncus dui. Suspendisse potenti. Quisque rutrum viverra ultrices. Donec a hendrerit nibh. Fusce bibendum ultrices sapien ut tempor. Ut faucibus dictum interdum.
+
+   Cras nec libero at arcu dapibus facilisis. Aenean id magna luctus est tristique tincidunt. Ut sed justo consequat, ornare nisi at, vehicula enim. Curabitur sit amet sapien quis dolor scelerisque hendrerit. Integer blandit, tellus luctus fringilla mollis, ex ex interdum lectus, ac ultrices leo nisl at justo. Donec vehicula erat velit, eu ultrices mi pharetra non. Vestibulum non interdum dui. Ut elementum in magna nec finibus. Morbi ante magna, tincidunt at porttitor vel, aliquet a dolor. Sed nec libero tellus.
+   
+   Aenean eget velit eu ante tempor porta vel pretium dui. Nulla non erat a metus sagittis egestas sed nec metus. Duis sit amet metus ante. Curabitur rhoncus hendrerit fringilla. Sed ante mi, sagittis et sem nec, mattis facilisis justo. In pellentesque cursus leo, vitae iaculis ipsum sollicitudin id. Ut placerat arcu suscipit, tincidunt lorem at, vestibulum tellus. Fusce a egestas lacus, eu finibus massa. Proin vehicula placerat turpis, tempus convallis eros blandit et.`;
+  
+   // i search on google and take the code from slingacademy.com - Adriano
+  
+   const countWords = (str) => {
+    const words = str.split(' ');
+  
+    let count = 0;
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] !== '') {
+        count++;
+      }
+    }
+    return count;
+  };
+  
+  console.log(`The number of words in is ${countWords(longText)}`);
+  
+  // this is the code from Fran
+  
+  const numberOfWords = longText.split(' ').length;
+  console.log(numberOfWords);
+  
+  // this is by Adriano
+  let count = longText.split(" et ").length
+  console.log(count)
+  
