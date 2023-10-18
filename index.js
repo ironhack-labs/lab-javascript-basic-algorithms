@@ -35,3 +35,11 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 }
 console.log(reverseName);
 
+if(hacker1.localeCompare(hacker2) === -1){
+    console.log("The driver's name goes first")   // Driver 'Fran' comes first
+   } else if(hacker1.localeCompare(hacker2)=== 1){
+     console.log("Yo, the navigator goes first, definitely.")  // Adriano Nav comes first
+   } else if (hacker2.localeCompare(hacker1) === 0) {
+     console.log("What?! You both have the same name?")
+   }
+  
