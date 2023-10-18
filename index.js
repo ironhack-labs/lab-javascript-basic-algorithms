@@ -48,7 +48,7 @@ if(hacker1.localeCompare(hacker2) > 0) {
     console.log("What?! You both have the same name?")
 }
 
-// Bonus 1, because we rock:
+// Bonus 1.1, because we rock:
 
 let longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et sapien sed mi tincidunt ornare. Integer ac nisi varius, dapibus risus eu, dignissim purus. Nulla facilisi. Quisque consectetur nunc sem, eu molestie elit condimentum ac. Etiam non euismod risus. Donec imperdiet odio eget metus varius, ut faucibus lectus volutpat. Nullam ornare consectetur nisl at convallis. Aenean tellus metus, laoreet eu tincidunt ut, porta at lorem. Suspendisse potenti.
 
@@ -65,3 +65,16 @@ for (let i = 0; i<longText.length; i++) {
 }
 
 console.log(count);
+
+
+// Bonus 1.2, because we rock:
+
+let countEt = 0;
+
+for(let i = 0; i<longText.length; i++) {
+    if((longText[i] + longText[i+1]) === "et") {
+        countEt++;
+    }
+}
+
+console.log(countEt)
