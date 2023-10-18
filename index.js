@@ -5,7 +5,7 @@ console.log(`The drivers's name is ${hacker1}`);
 
 const hacker2 = "Banashree";
 console.log(`The navigator's name is ${hacker2}`);
-
+// ss
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length) {
   console.log(`The ${hacker1} has ${hacker1.length} characters`);
