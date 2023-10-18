@@ -1,5 +1,4 @@
 // Iteration 1: Names and Input
-
 let hacker1= "Sena";
 console.log(`The driver's name is ${hacker1}.`);
 
@@ -19,3 +18,11 @@ if (hacker1.length > hacker2.length) {
     }
 
 // Iteration 3: Loops
+let driversName = "";
+
+
+for(let i = 0; i < hacker1.length; i++) {
+   driversName+= `${hacker1[i]} `;
+}
+
+console.log(driversName.toUpperCase())
