@@ -7,7 +7,7 @@ console.log(`The navigator name is ${hacker2}`);
 
 Iteration 2:
 
-f(hacker1.length > hacker2.length){
+if(hacker1.length > hacker2.length){
     console.log(`The driver has the longest name, it has ${hacker1.length}characters`);
   }
   else if(hacker1.length < hacker2.length){
