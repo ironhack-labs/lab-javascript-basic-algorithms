@@ -100,6 +100,33 @@ At vero eos et accusam et justo duo dolores et ea rebum.
 Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`
 
 
+// Count words
+// With a normal for loop you can just count the white spaces between the words
+
+let countWords = 0;
+
+for (i = 0; i < longText.length; i++) {
+    if (longText[i] === " " || longText[i] === "." && longText[i+1] !=== " ") {
+        countWords++;
+    }
+}
+
+
+// With a method .split you can count the arrays created
+
+const arrayOfWords = longText.split(" ");
+let countWords2 = 0; 
+
+for(i = 0; i < arrayOfWords.length; i++) {
+    countWords2++;
+}
+
+console.log(countWords2)
+
+
+
+// Count the number of "et"
+
 function countEt (text) {
     let countEtTotal = 0;
 
