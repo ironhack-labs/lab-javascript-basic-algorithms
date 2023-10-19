@@ -56,18 +56,25 @@ Nulla eu lacus ante. Morbi tincidunt efficitur consequat. Aliquam sed ante non n
 Vestibulum nec ex dapibus, vehicula purus imperdiet, ultrices justo. Praesent tristique nulla erat, quis cursus turpis cursus et. Aliquam erat volutpat. Morbi urna neque, finibus id tortor sed, porttitor porttitor massa. Quisque accumsan odio id felis malesuada, in iaculis mauris posuere. Maecenas a viverra nunc. Quisque nec nulla at augue aliquam dapibus. Nullam arcu enim, convallis eu faucibus et, congue a velit. Quisque eget augue neque. Sed a feugiat erat, eu tincidunt magna.`;
 
 let countWords = 0;
-let countEt = 0;
+let countEtWord = 0;
 
-for (let i = 0; i < longText.length; i++) {
+for (let i = 0; i <= longText.length; i++) {
   if (longText[i] === ' ' || (longText[i] === '.' && longText[i + 1] !== ' ')) {
     countWords++;
-  } else if (longText[i] + longText[i + 1] === 'et') {
-    countEt++;
+  }
+  if (longText[i] === ' ') {
+    if (longText[i + 1] === 'e') {
+      if (longText[i + 2] === 't') {
+        if (longText[i + 3] === ' ') {
+          countEtWord++;
+        }
+      }
+    }
   }
 }
 
 console.log(countWords);
-console.log(countEt);
+console.log(countEtWord);
 
 // Bonus 2
 
@@ -98,3 +105,6 @@ if (fromLeftToRight === fromRightToLeft) {
 } else {
   console.log(`${fromLeftToRight} is NOT a palindrome`);
 }
+
+// Check if the character is the same in lower- and uppercasse eliminates everything that is not a letter Eg: commas and spaces
+// if (char.toUpperCase() === char.toLowerCase(){continue});
