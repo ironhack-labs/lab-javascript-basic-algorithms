@@ -55,42 +55,25 @@ Aenean et eros odio. Curabitur aliquet nisi orci, ac laoreet orci eleifend at. I
 
 Aliquam accumsan, ante eget egestas iaculis, nunc dui commodo massa, sit amet convallis arcu diam et felis. Vivamus eu euismod libero, a sollicitudin felis. Suspendisse vitae diam vitae orci maximus condimentum. Donec id ligula dapibus, ultrices nunc volutpat, euismod dui. Suspendisse eleifend ac erat et fermentum. Cras mollis ligula non iaculis iaculis. Curabitur porttitor tincidunt arcu at sollicitudin. Vivamus non aliquam neque. Nulla eget lobortis magna, maximus finibus tortor. Integer eget magna vel nulla varius rhoncus.`;
 
+let email = 'alice@alice.com';
+email.split('@');
+
 let words = longText.split(' ');
 console.log(`Number of words in the long text: ${words.length}`);
 
 // Bonus 2:
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
 function checkPalindrome(phraseToCheck) {
   let result = false;
-  // get the middle
-  // check from both sides
-  let middle = 0;
-  let startToMiddle = '';
-  let endToMiddle = '';
-  if (phraseToCheck.length % 2 == 0) {
-    middle = (phraseToCheck.length - 1) / 2;
-    startToMiddle = phraseToCheck.slice(0, middle + 1);
-    endToMiddle = phraseToCheck.slice(-middle - 1);
-  } else if (phraseToCheck.length % 2 == 1) {
-    middle = (phraseToCheck.length - 1) / 2;
-    startToMiddle = phraseToCheck.slice(0, middle);
-    endToMiddle = phraseToCheck.slice(-middle);
-  } else {
-    return 'Something went wrong.';
-  }
-  // to reverse the endToMiddle doing it per hand since we should not use reverse() or others
-  let endToMiddleReversed = '';
-  for (let i = endToMiddle.length - 1; i >= 0; i--) {
-    endToMiddleReversed += endToMiddle[i];
-  }
-  /*
-  console.log(`Middle: ${middle}`);
-  console.log(`Start to middle: ${startToMiddle}`);
-  console.log(`End to middle: ${endToMiddle}`);
-  console.log(`End to middle reversed: ${endToMiddleReversed}`);
-  */
-  result = startToMiddle == endToMiddleReversed;
+  let transformedPhrase = phraseToCheck
+    .toLowerCase()
+    .replace(/[^a-z0-9]/gi, '');
 
-  return result;
+  let reversedTransformedPhrase = reverseString(transformedPhrase);
+  return transformedPhrase == reversedTransformedPhrase;
 }
 
 console.log(checkPalindrome('A man, a plan, a canal, Panama!'));
@@ -100,6 +83,7 @@ console.log(checkPalindrome('stack cats'));
 console.log(checkPalindrome('step on no pets'));
 console.log(checkPalindrome('taco cat'));
 console.log(checkPalindrome('put it up'));
-console.log(
-  checkPalindrome(`Was it a car or a cat I saw?" and "No 'x' in Nixon`)
-);
+console.log(checkPalindrome(`Was it a car or a cat I saw?`));
+console.log(checkPalindrome("No 'x' in Nixon"));
+
+console.log(checkPalindrome('Not a palindrome'));
