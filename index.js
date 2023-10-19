@@ -4,7 +4,7 @@ let hacker1 = 'Tina';
 let hacker2 = 'Gene';
 
 console.log(`The driver's name is ${hacker1}`);
-console.log(`The driver's name is ${hacker2}`);
+console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 
@@ -37,7 +37,7 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 
 console.log(backwardsName);
 
-//   3.3
+//3.3
 
 if (hacker2.localeCompare(hacker1) > 0) {
   console.log("The driver's name goes first.");
