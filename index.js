@@ -89,7 +89,6 @@ for (let j = 0; j < longText.length; j++)
          if (longText.charAt(j + 1) === `e` && longText.charAt(j + 2) === `t`)
            {
              count++;
-             continue;
            }
       }
   }
@@ -115,7 +114,7 @@ let reversePhraseToCheck = "";
 
 for (let n = newPhraseToCheck.length - 1; n >= 0 ; n--)
 {
-  reversePhraseToCheck += newPhraseToCheck[n].toLowerCase();
+  reversePhraseToCheck += newPhraseToCheck[n];
 }
 
 if (newPhraseToCheck === reversePhraseToCheck)
