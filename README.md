@@ -59,7 +59,7 @@ Ready to start?
 
 ## Submission
 
-Upon completion, run the following commands:
+- Upon completion, run the following commands:
 
 ```bash
 git add .
@@ -67,9 +67,9 @@ git commit -m "done"
 git push origin master
 ```
 
-Create a Pull Request so that the TAs can check your work.
+- Create a Pull Request and submit your assignment.
 
-*You should make a PR (Pull Request) when you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR and your TAs will be able to check it.*
+*You should make a PR (Pull Request) when you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR allowing the teaching staff to check your progress.*
 
 <!-- ## Submission -->
 
