@@ -46,3 +46,21 @@ console.log(navigatorNameReverseOrder)
 
 // Iteration 3.3: Loops
 
+let driverName = "Eleanor";
+let navigatorName = "Marta";
+
+let minLength = Math.min(driverName.length, navigatorName.length);
+let result = 0;
+
+for (let i = 0; i < minLength; i++) {
+  result = driverName[i].localeCompare(navigatorName[i]);
+  }
+
+
+if (result < 0) {
+  console.log("The driver's name goes first.");
+} else if (result > 0) {
+  console.log("Yo, the navigator goes first, definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
