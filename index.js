@@ -33,5 +33,14 @@ console.log(driverSpaces)
 
 // Iteration 3.2: Loops
 
+let navigatorName = "Marta";
+let navigatorNameReverseOrder = '';
+
+for (let i = navigatorName.length-1; i>=0; i--) {
+navigatorNameReverseOrder += navigatorName[i]
+}
+
+console.log(navigatorNameReverseOrder)
+
 
 // Iteration 3.3: Loops
