@@ -42,9 +42,15 @@ console.log(input)
 
 //3.3
 
+let i = 0
+
+while (hacker1[i] === hacker2[i]) {
+  i++
+}
+
 if (hacker1 < hacker2) {
   console.log("The driver's name goes first")
-} else if (hacker2 < hacker1) {
+} else if (hacker1 > hacker2) {
   console.log("Yo, the navigator goes first, definitely")
 } else {
   console.log("What?! You both have the same name?")
