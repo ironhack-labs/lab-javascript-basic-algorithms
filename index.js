@@ -50,3 +50,10 @@ console.log (reverseText)
 
 // 3.3
 
+if (hacker1 < hacker2) {
+  console.log("The drivers name goes first.")
+} else if(hacker2 < hacker1){
+  console.log("Yo, the navigator goes first, definitely.")
+} else {
+  console.log("What?! You both have the same name?")
+}
