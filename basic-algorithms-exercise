@@ -1,0 +1,25 @@
+//Iteration 1: Names and Input
+let hacker1 = "nico"
+console.log ("The driver's name is " + hacker1)
+let hacker2 = "juan"
+console.log("The navigator's name is " + hacker2)
+
+//Iteration 2: Conditionals
+if (hacker1.length > hacker2.length) {
+  console.log (`The driver has the longest name, it has ${hacker1.length} characters.`)
+  console.log(`${hacker1} ${hacker1.length}`);
+}
+else if (hacker2.length > hacker1.length) {
+  console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
+  console.log(`${hacker2} ${hacker2.length}`);
+}
+else {
+  console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`)
+}
+
+//Iteration 3: Loops
+let hacker1Upper = hacker1.toUpperCase().split("").join(" ")
+console.log(hacker1Upper)
+
+let hacker2reverse = hacker2.reverse()
+console.log(hacker2reverse)
