@@ -82,11 +82,11 @@ let words = 0;
 let etCount = 0;
 
   for (let i = 0; i <paragraphs.length; i++) {
-    if (paragraphs[i] === " " {
+    if (paragraphs[i] === " ") {
       words++
-    })
+    }
     
-    if (paragraphs[i] === "e" && paragraphs[i+1] === "t") {
+    if (paragraphs[i] === "e" && paragraphs[i+1] === "t" && paragraphs[i+2] === " ") {
       etCount++
     }
   }
