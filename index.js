@@ -27,7 +27,7 @@ for (let i = 0; i < hacker1.length; i++) {
 
   result += char + " "
 }
-console.log(result)
+console.log(result.trim())
 
 //3.2
 
@@ -46,12 +46,13 @@ let i = 0
 
 while (hacker1[i] === hacker2[i]) {
   i++
+
+  if (hacker1[i] < hacker2[i]) {
+    console.log("The driver's name goes first")
+  } else if (hacker1[i] > hacker2[i]) {
+    console.log("Yo, the navigator goes first, definitely")
+  } else {
+    console.log("What?! You both have the same name?")
+  }
 }
 
-if (hacker1 < hacker2) {
-  console.log("The driver's name goes first")
-} else if (hacker1 > hacker2) {
-  console.log("Yo, the navigator goes first, definitely")
-} else {
-  console.log("What?! You both have the same name?")
-}
