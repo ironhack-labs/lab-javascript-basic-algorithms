@@ -20,7 +20,11 @@ if (hacker1.length > hacker2.length) {
 
 let hacker1UpperCase = "";
 for (let i = 0; i < hacker1.length; i++) {
-  hacker1UpperCase += hacker1[i].toUpperCase() + " ";
+  if (i === hacker1.length - 1) {
+    hacker1UpperCase += hacker1[i].toUpperCase(); 
+  } else {
+    hacker1UpperCase += hacker1[i].toUpperCase() + " ";
+  }
 }
 console.log(hacker1UpperCase);
 
@@ -60,9 +64,17 @@ console.log(`The number of times the Latin word "et" appears is ${countEt}`);
 // Bonus 2
 
 const phraseToCheck = "A man, a plan, a canal, Panama!";
+const ignoredChars = [" ", ",", "?", "!", "'"];
 let phraseModified = "";
+
 for (let i = 0; i < phraseToCheck.length; i++) {
-  if (phraseToCheck[i] !== " " && phraseToCheck[i] !== "," && phraseToCheck[i] !== "?" && phraseToCheck[i] !== "!" && phraseToCheck[i] !== "'") {
+  let counter = 0;
+  for (let j = 0; j < ignoredChars.length; j++) {
+    if (phraseToCheck[i] !== ignoredChars[j]) {
+      counter++;
+    }
+  }
+  if (counter === ignoredChars.length) {
     phraseModified += phraseToCheck[i].toLowerCase();
   }
 }
