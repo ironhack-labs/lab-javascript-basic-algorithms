@@ -41,7 +41,7 @@ let lexicographicResult = 0;
 
 if (hacker1 === hacker2) {
   console.log('What?! You both have the same name?');
-} else if (hacker1[0] < hacker2[0]) {
+} else if (hacker1 < hacker2) {
   console.log("The driver's name goes first.");
 } else {
   console.log('Yo, the navigator goes first, definitely.');
@@ -57,9 +57,10 @@ Duis consectetur neque et nisl condimentum, porttitor volutpat nulla condimentum
 let word = '';
 let countWords = 0;
 let countEt = 0;
+const punctuation = '.,; \n\t';
 
 for (let i = 0; i < longText.length; i++) {
-  if (longText[i] !== '.' && longText[i] !== ',' && longText[i] !== ' ' && longText[i] !== '\n' && longText[i] !== '\t') {
+  if (!punctuation.includes(longText[i])) {
     word += longText[i];
   } else {
     if (word){
