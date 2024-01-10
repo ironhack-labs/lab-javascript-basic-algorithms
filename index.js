@@ -127,3 +127,5 @@ console.log(checkPhrase(phraseToCheck));
 
 // created the function on my own and then had chat help me with += and not ++ for the phrases and I forgot the [i]
 // it works for simple words, but not sure if this works for entire sentences, like in the example
+
+// forgot to add commit done
