@@ -55,3 +55,31 @@ if (lastBit !== " "){
 
 console.log(wordCount)
 console.log(etCount)
+
+const possiblePalindrome = "Anna";
+const possiblePalindromeLowerCase = possiblePalindrome.toLowerCase();
+let finalPossiblePAlindrome = "";
+for (let i= 0; i < possiblePalindromeLowerCase.length; i++){
+    if(possiblePalindromeLowerCase[i]!== " " && possiblePalindromeLowerCase[i]!== ","){
+        finalPossiblePAlindrome += possiblePalindromeLowerCase[i]
+    }
+}
+console.log(finalPossiblePAlindrome)
+const length = finalPossiblePAlindrome.length;
+const half = Math.floor(length / 2);
+
+const firstPart = finalPossiblePAlindrome.substring(0, half);
+const secondPart = finalPossiblePAlindrome.substring(half + (length % 2), length);
+console.log(firstPart)
+console.log(secondPart)
+let reversedSecondPart = "";
+for (let i = secondPart.length-1; i >= 0; i--){
+    reversedSecondPart += secondPart[i];
+}
+console.log(reversedSecondPart)
+
+if(firstPart.includes(reversedSecondPart)){
+    console.log("We have a palindrome here!")
+} else {
+    console.log("Sorry, not a palindrome!")
+};
