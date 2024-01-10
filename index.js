@@ -99,3 +99,31 @@ if (etCount === 1) {
 countWords(longText);
 
 //got lost, asked chatgpt to correct my code and analyzed it step by step.
+
+
+
+// BONUS 2 //
+
+let phraseToCheck = "saippuakauppias"
+
+function checkPhrase (phrase) {
+    let phrase1 = "";
+    for (let i = 0; i < phrase.length; i++) {
+        phrase1 += phrase [i];
+    };
+    let phrase2 = "";
+    for (let i = phrase.length - 1; i >= 0; i--) {
+        phrase2 += phrase[i]
+    };
+    if (phrase1 === phrase2) {
+        return ("The phrase is a plaindrome!")
+    } else {
+        return ("Not a palindrome!")
+    }
+}
+
+console.log(checkPhrase(phraseToCheck));
+
+
+// created the function on my own and then had chat help me with += and not ++ for the phrases and I forgot the [i]
+// it works for simple words, but not sure if this works for entire sentences, like in the example
