@@ -79,3 +79,48 @@ for (let i = 0; i < longText.length; i++) {
 
 console.log("Number of times et appears: " + countEt)
 
+
+// Bonus 2
+const phraseToCheck = "hello";
+
+let fullPhrase = "";
+
+for (let i = 0; i < phraseToCheck.length; i++) {
+  switch (phraseToCheck[i]) {
+    case " ":
+    case ".":
+    case ",":
+    case "!":
+    case "?":
+      continue;
+    default:
+      fullPhrase += phraseToCheck[i];
+      break;
+  }
+}
+
+fullPhrase = fullPhrase.toLowerCase()
+
+const strLength = fullPhrase.length;
+
+let phrase1 = fullPhrase.slice(0, strLength/2);
+let phrase2 = fullPhrase.slice(strLength/2);
+
+let phrase2Reverse = "";
+for(let i = phrase2.length - 1 ; i >= 0; i--){
+  const char = phrase2[i];
+  phrase2Reverse += char;
+}
+
+if (fullPhrase.length % 2 !== 0) {
+  phrase2Reverse = phrase2Reverse.slice(0, phrase2Reverse.length - 1)
+}
+
+const comp = phrase1.localeCompare(phrase2Reverse);
+
+if (comp === 0) {
+  console.log("Palindrome")
+}
+else {
+  console.log("Not a palindrome")
+}
