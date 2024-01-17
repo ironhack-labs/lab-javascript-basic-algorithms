@@ -48,6 +48,35 @@ else {
 }
 
 
+// Bonus 1
 
+const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut diam ut nisl blandit dapibus id aliquet magna. Etiam dictum et felis vel sollicitudin. Praesent accumsan, ex at pretium gravida, enim purus sodales ex, nec rhoncus leo libero ut nibh. Etiam vehicula orci eu leo molestie, vitae porttitor urna posuere. Nullam auctor maximus tellus, egestas pharetra odio imperdiet non. Nam laoreet ligula ac sapien maximus sagittis. Quisque sed tincidunt odio. Nunc lobortis luctus arcu ut fermentum. Vivamus pretium metus eget ante congue condimentum. Pellentesque justo turpis, pellentesque in sapien sed, feugiat varius turpis. Morbi eget arcu ut est malesuada dictum. Etiam vel sem volutpat, consequat lacus vitae, consectetur felis.
 
+Quisque ultricies dolor eu metus interdum cursus. Morbi sodales turpis quam, vel tincidunt sapien fermentum id. Morbi eu massa a arcu finibus congue id eget massa. Pellentesque porttitor eget orci quis suscipit. In laoreet quam a luctus condimentum. Quisque iaculis elementum molestie. Ut pretium tellus sit amet faucibus volutpat. Morbi nisl justo, aliquet non dignissim vitae, consequat eget urna. Ut mi ipsum, gravida at posuere eget, malesuada sit amet justo.
+
+Quisque aliquam laoreet eleifend. Phasellus ornare, nulla luctus eleifend pulvinar, magna ante congue neque, quis interdum enim ante id metus. Aliquam varius massa sit amet massa fringilla ornare. Quisque elementum turpis libero, vel aliquet augue faucibus id. Nullam varius nibh nec facilisis aliquet. Nullam rhoncus dolor sed tellus cursus ultrices. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis diam ante, luctus eget nunc et, ultrices mollis dui. Maecenas augue nisl, pellentesque sit amet orci ac, dictum blandit sem. Mauris ac eros lacinia ex interdum mollis vitae nec purus. Fusce tempus in justo in ultrices. Maecenas porttitor lorem et nibh egestas hendrerit. Pellentesque tincidunt, tellus sed aliquam hendrerit, neque eros vehicula elit, a congue magna lorem id nisl. Aliquam erat volutpat. Sed porttitor mi quis justo lobortis fringilla. Aliquam vehicula erat a justo vehicula malesuada.`;
+
+function countWords (text) {
+  let wordsArray = [];
+
+  wordsArray = text.trim().split(/\s+/)
+
+  return wordsArray.length;
+}
+
+const words = countWords(longText);
+
+console.log("Number of words: " + words);
+
+let countEt = 0;
+
+for (let i = 0; i < longText.length; i++) {
+  const word = longText[i] + longText[i + 1] + longText[i + 2] + longText[i + 3];
+  
+  if (word === " et ") {
+    countEt += 1;
+  }
+}
+
+console.log("Number of times et appears: " + countEt)
 
