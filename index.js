@@ -32,3 +32,19 @@ for (j = hacker2.length-1; j >= 0; j--) {
 
     console.log(hacker2[j])
 }
+
+
+
+// Iteration 3.3: Loops
+
+if (hacker1.localeCompare(hacker2) === -1) {
+    console.log("The driver's name goes first")
+}
+else if (hacker2.localeCompare(hacker1) === -1) {
+    console.log("Yo, The navigators's goes first")
+}
+else if (hacker2.localeCompare(hacker1) === 0) {
+    console.log("WOW! You both have equally names!")
+}
+
+
