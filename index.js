@@ -74,14 +74,14 @@ console.log(countEt);
 
 
 
-const phraseToCheck = "Taco cat";
+const phraseToCheck = "No 'x' in Nixon";
 
 let onlyCaps = "";
 let reversed = "";
 
 for (let i = 0; i< phraseToCheck.length; i++){
     
-    if (phraseToCheck[i] !== " "){
+    if (phraseToCheck[i] !== " " && phraseToCheck[i] !== "," && phraseToCheck[i] !== "!" && phraseToCheck[i] !== "'" && phraseToCheck[i] !== "?"){
         onlyCaps+= phraseToCheck[i].toUpperCase();
         
     }
