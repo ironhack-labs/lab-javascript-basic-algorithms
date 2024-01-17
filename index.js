@@ -68,5 +68,5 @@ else if(hacker1.localeCompare(hacker2) < 0){
 }
 
 else {
-    console.log("The navigator's name goes first");
+    console.log("The navigator's name goes first ");
 }
