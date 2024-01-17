@@ -70,3 +70,50 @@ else if(hacker1.localeCompare(hacker2) < 0){
 else {
     console.log("The navigator's name goes first ");
 }
+
+
+
+
+//Bonus 1:
+
+//Generate 3 paragraphs. Store the text in a new string variable named longText.
+
+const longText =`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pulvinar, ligula vitae commodo gravida, turpis felis bibendum justo, pretium volutpat nulla arcu nec neque. Curabitur non justo eu lectus laoreet finibus. Suspendisse pellentesque tellus ut tempor pretium. Vestibulum eleifend quam et molestie faucibus. Pellentesque in vulputate lacus, nec euismod lectus. In a odio massa. Proin vitae metus vel justo varius porta eget ut massa. Donec venenatis nec felis ut volutpat. Suspendisse ut quam pharetra, porta lacus nec, semper arcu.
+
+Vestibulum in pulvinar erat. Vivamus laoreet odio quis libero iaculis molestie. Vestibulum risus ante, sagittis et tempus nec, commodo in turpis. Cras ac elit ipsum. Vivamus nec dui egestas, suscipit augue non, laoreet leo. Fusce tristique diam laoreet aliquet varius. Suspendisse rhoncus porta tempor. Fusce congue ipsum egestas lacinia blandit. Nunc scelerisque scelerisque nunc, eget consectetur velit volutpat at. Sed dignissim risus eget tincidunt varius. Nunc iaculis vitae ligula eget ornare. Fusce tincidunt felis congue libero elementum tristique.
+
+Sed eu vestibulum leo. Suspendisse iaculis dui eu turpis maximus ultricies et quis orci. Aenean posuere in nibh ac vestibulum. Pellentesque quis nunc sed erat dapibus auctor sit amet id elit. Nam et nulla vel nulla commodo viverra. Nam elit orci, blandit eget dapibus non, efficitur quis leo. Phasellus id eros vitae diam venenatis porta.`;
+
+
+
+//Make your program count the number of words in the string.
+
+
+let count = 0;
+
+for(let i=0; i<longText.length; i++){
+    if(longText[i] === " " && longText[i+1] !== " "){
+    count++;
+    }
+}
+console.log(count);
+
+
+//Make your program count the number of times the Latin word et appears.
+
+
+let countEt = 0;
+
+for(let i=0; i<longText.length; i++){
+    if(longText[i] === " " && longText[i+1] === "e" && longText[i+2] === "t" && longText[i+3] === " "){
+    countEt++;
+    }
+}
+console.log(countEt);
+
+
+
+
+
+
+
