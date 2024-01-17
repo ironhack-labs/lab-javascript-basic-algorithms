@@ -118,7 +118,7 @@ let filteredPhrase = "" //phraseToCheck without special characters
             filteredPhrase += phraseToCheck[i];
         }
     }
-    console.log(filteredPhrase)
+    // console.log(filteredPhrase)
     
 
 
