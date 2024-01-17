@@ -105,7 +105,7 @@ console.log(count);
 let countEt = 0;
 
 for(let i=0; i<longText.length; i++){
-    if(longText[i] === " " && longText[i+1] === "e" && longText[i+2] === "t" && longText[i+3] === " "){
+    if(longText[i+1] === "e" && longText[i+2] === "t"){
     countEt++;
     }
 }
