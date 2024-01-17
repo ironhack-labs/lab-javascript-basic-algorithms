@@ -49,7 +49,6 @@ else {
 
 
 // Bonus 1
-
 const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut diam ut nisl blandit dapibus id aliquet magna. Etiam dictum et felis vel sollicitudin. Praesent accumsan, ex at pretium gravida, enim purus sodales ex, nec rhoncus leo libero ut nibh. Etiam vehicula orci eu leo molestie, vitae porttitor urna posuere. Nullam auctor maximus tellus, egestas pharetra odio imperdiet non. Nam laoreet ligula ac sapien maximus sagittis. Quisque sed tincidunt odio. Nunc lobortis luctus arcu ut fermentum. Vivamus pretium metus eget ante congue condimentum. Pellentesque justo turpis, pellentesque in sapien sed, feugiat varius turpis. Morbi eget arcu ut est malesuada dictum. Etiam vel sem volutpat, consequat lacus vitae, consectetur felis.
 
 Quisque ultricies dolor eu metus interdum cursus. Morbi sodales turpis quam, vel tincidunt sapien fermentum id. Morbi eu massa a arcu finibus congue id eget massa. Pellentesque porttitor eget orci quis suscipit. In laoreet quam a luctus condimentum. Quisque iaculis elementum molestie. Ut pretium tellus sit amet faucibus volutpat. Morbi nisl justo, aliquet non dignissim vitae, consequat eget urna. Ut mi ipsum, gravida at posuere eget, malesuada sit amet justo.
