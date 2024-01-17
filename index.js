@@ -11,16 +11,16 @@ console.log(hacker2);
 let hacker1Length = hacker1.length;
 let hacker2Length = hacker2.length;
 
-if (hacker1Length > hacker2Length) {
+if (hacker1.length > hacker2.length) {
   console.log(
-    `The driver has the longest name, it has ${hacker1Length} characters.`
+    `The driver has the longest name, it has ${hacker1.length} characters.`
   );
-} else if (hacker1Length < hacker2Length) {
+} else if (hacker1.length < hacker2.length) {
   console.log(
-    `It seems that the navigator has the longest name, it has ${hacker2Length} characters`
+    `It seems that the navigator has the longest name, it has ${hacker2.length} characters`
   );
 } else {
-  console.log(`What?! You both have the same name?`);
+  console.log(`Wow, you both have equally long names, ${hacker2.length} characters!`);
 }
 
 // Iteration 3: Loops
@@ -31,7 +31,7 @@ for (let i = 0; i <= hacker1Length - 1; i++) {
   hacker1Update += hacker1[i] + " ";
 }
 
-console.log(hacker1Update);
+console.log(hacker1Update.toUpperCase());
 
 // 3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
 let hacker2Update = "";
@@ -53,7 +53,7 @@ if (hacker1.localeCompare(hacker2) < 0) {
   console.log("What?! You both have the same name?");
 }
 
-// Bonus
+// Bonus 1
 // Generate 3 paragraphs. Store the text in a new string variable named longText.
 // const longText = `Lorem ipsum dolor. Lorem ipsum dolor. Lorem ipsum dolor.`;
 const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat pellentesque magna sit amet commodo. Integer felis est, dapibus at felis luctus, scelerisque ullamcorper diam. Nulla lectus sapien, fringilla eget sollicitudin in, bibendum id est. Fusce tempus eu dui vel tempus. Pellentesque nisl lorem, tristique quis commodo id, pretium nec sem. Fusce maximus faucibus congue. Suspendisse risus orci, suscipit sed euismod rutrum, tincidunt eget nisl. Cras at lacinia erat. Nam mollis ex risus. Phasellus et egestas neque, quis sollicitudin arcu. Praesent suscipit leo a lectus eleifend viverra.
@@ -72,7 +72,6 @@ function textAnalysis(text) {
             wordCount++
         } 
 
-        // console.log(text.slice(i, i+2))
         if (text.slice(i, i+2) === "et"){
             etCount++
         }
@@ -96,3 +95,47 @@ console.log(`Total words in the text: ${words[0]}`)
 console.log(`Total words of "et": ${words[1]}`)
 
 
+// Bonus 2
+// Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:
+// "A man, a plan, a canal, Panama!"
+// "Amor, Roma"
+// "race car"
+// "stack cats"
+// "step on no pets"
+// "taco cat"
+// "put it up"
+// "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+
+let phraseToCheck = "Was it a car or a cat I saw?"
+let filteredPhrase = "" //phraseToCheck without special characters
+
+// remove all special characters first
+
+    for (let i=0; i <= phraseToCheck.length-1; i++) {
+        if ("&/\\#,+()$~%.'\":*?!<>{} ".includes(phraseToCheck[i])){
+            filteredPhrase += ""
+        } else {
+            filteredPhrase += phraseToCheck[i];
+        }
+    }
+    console.log(filteredPhrase)
+    
+
+
+// reverse phraseToCheck
+
+let reversedWord = ""
+
+for (let i=filteredPhrase.length-1; i >= 0; i--) {
+    reversedWord += filteredPhrase[i]
+}
+// console.log(filteredPhrase.toLowerCase())
+// console.log(reversedWord.toLowerCase())
+
+if (filteredPhrase.toLowerCase() == reversedWord.toLowerCase()) {
+    
+    console.log("Yes, this is a palindrome!")
+} else {
+    
+    console.log("This is not a palindrome!")
+}
