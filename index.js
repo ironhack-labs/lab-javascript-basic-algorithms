@@ -113,6 +113,32 @@ console.log(countEt);
 
 
 
+//Bonus 2:
+
+//Create a new variable, phraseToCheck, containing some string value. Write a code to check if the value assigned to this variable is a Palindrome. Here are some examples of palindromes:
+
+let phraseToCheck = "Was it a car or a cat I saw?";
+let str = ""; 
+let strReverse=""; 
+const escapeChars = [" ",",","!","?","'"];
+
+for (let i=0; i<phraseToCheck.length; i++){
+
+    if(!escapeChars.includes(phraseToCheck[i])){
+        str += phraseToCheck[i];
+    } 
+}
+
+for( let i=str.length-1; i>=0; i--){
+    strReverse += str[i];   
+}
+
+if(str.toUpperCase() === strReverse.toUpperCase()){
+    console.log("Palindrome");
+}
+else{
+    console.log("Not palindrome");
+}
 
 
 
