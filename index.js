@@ -101,17 +101,17 @@ console.log(etCount)
 
 // Bonus 2
 
-/* A primeira solução foi uma tentativa sobre a quela ficámos com dúvidas.
+// A primeira solução foi uma tentativa sobre a qual ficámos com dúvidas.
 
 let phraseToCheck = "Amor, Roma"
 
-let phraseToCheck2 = phraseToCheck.toUpperCase
+let phraseToCheck2 = phraseToCheck.toUpperCase();
 
 let phraseToCheck2Simple = ""
 
-for (i = 0; i < phraseToCheck2; i++) {
+for (i = phraseToCheck2.length-1 ; i >= 0 ; i--) {
 
-    const contagem = phraseToCheck2[i];
+    let contagem = phraseToCheck2[i];
     
     if (phraseToCheck2[i] === ",") continue;
 
@@ -139,8 +139,9 @@ console.log(phraseToCheck2Simple)
 
 
 
-*/
 
+
+/*
 let phraseToCheck = "A man, a plan, a canal, Panama!";
 
 let phraseToCheck2 = phraseToCheck.toUpperCase();
@@ -171,6 +172,8 @@ for (let i = cleanWord.length - 1; i >= 0; i--) {
 
 
 console.log(cleanWord === reversedWord)
+
+*/
 
 
 
