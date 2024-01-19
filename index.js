@@ -97,7 +97,6 @@ phraseToCheck = phraseToCheck.replace(/\?/g, "");
 phraseToCheck = phraseToCheck.replace(/!/g, "");
 phraseToCheck = phraseToCheck.replace(/\./g, "");
 phraseToCheck = phraseToCheck.replace(/'/g, "");
-console.log(phraseToCheck);
 
 function pcheck(text) {
     let abc = 0;
