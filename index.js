@@ -17,19 +17,19 @@ if (hacker1.length > hacker2.length){
 //Iteration 3: Loops
 //3.1 Print the characters of the driver's name, separated by space, and in capital letters,
 let hacker1Capital = "";
-for (let i = 0; i < hacker1.length; i++){
-  const hacker1Name = hacker1[i];  
-  hacker1Capital+= hacker1[i];
-  console.log(`${hacker1Name}`.toUpperCase() + " ")
+for (let i = 0; i < hacker1.length; i++){  
+  hacker1Capital+= hacker1[i]+ " "; 
 }
+console.log(hacker1Capital.toUpperCase() + " ")
 
 //Print all the characters of the navigator's name in reverse order
 let hacker2Reverse = "";
 for (let i = hacker2.length-1; i >=0; i--){
   const hacker2Name = hacker2[i];  
   hacker2Reverse+= hacker2[i];
-  console.log(`${hacker2Name}`.toUpperCase() + " ")
+  
 }
+console.log(hacker2Reverse.toUpperCase() + " ")
 
 //Depending on the lexicographic order of the strings, print:
 if(hacker1.localeCompare(hacker2) === -1){
