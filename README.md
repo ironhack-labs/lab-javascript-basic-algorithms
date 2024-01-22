@@ -2,10 +2,6 @@
 
 # LAB | JS Basic Algorithms
 
-Welcome to your first JavaScript lab at Ironhack!
-
-This exercise aims to familiarize you with the primitive data structures in JavaScript, which we have covered in class. Feel free to reference lesson materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
-
 <br>
 
 ![lab-js-basic-algorithms-code-collaboration-gif](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-code-collaboration-gif.gif)
@@ -37,9 +33,11 @@ This exercise aims to familiarize you with the primitive data structures in Java
 
 ## Introduction
 
-In this **pair-programming** lab, you will have a chance to practice and reinforce your understanding of the basic JavaScript concepts you have learned so far.
+Welcome to your first JavaScript lab at Ironhack!
 
-You will be working with a partner on this lab, practicing pair-programming. During the exercise, you should work together on one computer or code editor and take turns writting the code with your partner. One person will act as the **driver** and the other will be the **navigator**. The driver is the one writing the code and the navigator is the one reviewing the code and guiding the driver.
+This exercise aims to familiarize you with and allow you to practice the primitive data types and basic JavaScript concepts, which we have covered so far. Feel free to reference lesson and pre-work materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
+
+You will be working with a partner on this lab, practicing **pair-programming**. During the exercise, you should work together on one computer or code editor and take turns writting the code with your partner. One person will act as the **driver** and the other will be the **navigator**. The driver is the one writing the code and the navigator is the one reviewing the code and guiding the driver.
 
 You should switch roles every 15 minutes or after completing each iteration, to give both of you a chance to write code and practice discussing problems and solutions.
 
@@ -48,7 +46,7 @@ Ready to start?
 <br>
 
 ## Getting Started
-For this exercise, we will use VSCode and the Live Server extension to run the JavaScript code. To do it, follow these steps:
+For this exercise, we will use VS Code and the Live Server extension to run the JavaScript code. To do it, follow these steps:
 
 
 
