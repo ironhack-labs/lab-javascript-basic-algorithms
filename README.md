@@ -37,26 +37,42 @@ This exercise aims to familiarize you with the primitive data structures in Java
 
 ## Introduction
 
-For this **pair-programming** activity, we will use a [REPL](https://en.wikipedia.org/wiki/Read–eval–print_loop). To make things as simple as possible, we are going to use an in-browser JavaScript REPL that is provided by the browser-based IDE, [repl.it](https://replit.com/languages/javascript).
+In this **pair-programming** lab, you will have a chance to practice and reinforce your understanding of the basic JavaScript concepts you have learned so far.
+
+You will be working with a partner on this lab, practicing pair-programming. During the exercise, you should work together on one computer or code editor and take turns writting the code with your partner. One person will act as the **driver** and the other will be the **navigator**. The driver is the one writing the code and the navigator is the one reviewing the code and guiding the driver.
+
+You should switch roles every 15 minutes or after completing each iteration, to give both of you a chance to write code and practice discussing problems and solutions.
 
 Ready to start?
 
-## Requirements
+<br>
+
+## Getting Started
+For this exercise, we will use VSCode and the Live Server extension to run the JavaScript code. To do it, follow these steps:
+
+
 
 - Fork this repo
-- Clone this repo
-- Go to [repl.it](https://repl.it/languages/nodejs) and create an account (or log in if you have one)
-- Create a new reply by clicking on <kbd>+ Create Repl</kbd>
-- Type this in the *Code Editor* (left panel)
-  ```javascript
-  console.log("I'm ready!");
-  ```
-- Press `run ►`
-- If you can see the message in the right side panel, you are really ready!
 
-  ![lab-js-basic-algorithms-replit-ready](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-replit-ready.png)
+  
 
-- **When you are done completely, or at any point after the first iteration, copy your code into the `index.js` file and follow the steps for submission.**
+- Clone it to your machine
+
+  
+
+- Open the project folder in VS Code
+
+  
+
+- Once in VS Code, open the file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension. To do this, right-click on the `index.html` file and select **Open with Live Server**.
+
+  
+
+- A new browser window will open with the `index.html` file loaded. You can now start working on the exercise.
+
+<br>
+
+
 
 ## Submission
 
@@ -64,20 +80,32 @@ Ready to start?
 
 ```bash
 git add .
-git commit -m "done"
+git commit -m "Solved lab"
 git push origin master
 ```
 
 - Create a Pull Request and submit your assignment.
 
-*You should make a PR (Pull Request) when you make any significant change. You shouldn't have to wait until you're completely done with this or any other exercise to make the PR. After you do the first PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR allowing the teaching staff to check your progress.*
+<br>
 
-<!-- ## Submission -->
+*At Ironhack, we use Pull Requests (PR) to submit lab assignments and verify student's work. After completing all the mandatory iterations, you should commit your code and create a Pull Request. If you can't finish a part of an iteration or still haven't completed all the iterations or the bonuses, it's okay; you should still submit the Pull Request before the start of the class on the next day.*<br>
+*Once you make a PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR, allowing the teaching staff to verify your submission.*
 
-<!-- When you are done and you have checked that everything works fine, click on the **Share** button and copy the link from the *Share Link* field. Send this link to your TAs so they can check up on your work.
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b2aa98f91affe5d4c5f12f216b069184.png) -->
+<br>
+
+
 
 ## Instructions
+
+You should do all your work in the `index.js` file. The file is already linked to the `index.html` file, so you can open the `index.html` file in the browser and see the results of your work in the console.
+
+<br>
+
+Before you start writing any code, make sure to carefully read the instructions provided for each iteration and understand what you are asked to do.
+
+We hope you enjoy it! :blue_heart:
+
+<br>
 
 ### Iteration 1: Names and Input
 
