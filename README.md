@@ -21,6 +21,7 @@ This exercise aims to familiarize you with the primitive data structures in Java
 
   Upon completion of this exercise, you will be able to:
 
+  - Run JavaScript code from your IDE, using a local server to load it in the browser
   - Declare variables using `const` and `let` keywords and use them to store values.
   - Assign values to variables using assignment operators (`=` , `+=` , `-=` , etc.).
   - Use conditional statements (`if`, `else if`, `else`) and logical operators (AND, OR, NOT) to control the flow of the program.
