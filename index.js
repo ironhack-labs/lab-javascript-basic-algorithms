@@ -22,10 +22,6 @@ if (hacker1Length === hacker2Length) {
 
 // Iteration 3: Loops
 
-/* for (const i of hacker1) {
-    console.log(i + "space");
-} */
-
 const hacker1SpacesUpperCase = hacker1.split("").join(" ").toUpperCase();
 console.log(hacker1SpacesUpperCase);
 
@@ -41,3 +37,21 @@ if (lexicalCompare == 1) {
 } else {
     console.log("What?! You both have the same name?");
 }
+
+// Bonus 1:
+
+const longText = "Lorem ipsum dolor sit amet et consectetur adipisicing elit. Nisi iste, rem est, incidunt nam a assumenda tempore, aperiam cum magni eum earum accusamus minima! Molestiae, ullam sapiente quisquam minus porro neque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus cum, debitis aut placeat consequuntur deleniti necessitatibus inventore laborum quod cum, et corcumporis, libero adipisci ut? Provident delectus quia et modi non et, tempore? Lorem cum ipsum dolor sit, amet consectetur adipisicing elit. Praesentium harum quaerat eos assumenda voluptatibus temporibus, at dolorum tempore recusandae rem impedit, corrupti hic commodi sapiente? Deserunt quos quas eveniet vitae?"
+
+const numberOfWords = longText.split(" ").length;
+console.log(numberOfWords);
+
+const longTextWords = longText.split(" ")
+/* console.log(longTextWords); */
+let numberOfTimes = 0;
+const targetWord = "et";
+for (const word of longTextWords) {
+    if (word.replace(/[.,?!]/g,"") == targetWord) {
+        numberOfTimes++;
+    }
+}
+console.log(numberOfTimes);
