@@ -21,3 +21,23 @@ if (hacker1Length === hacker2Length) {
 }
 
 // Iteration 3: Loops
+
+/* for (const i of hacker1) {
+    console.log(i + "space");
+} */
+
+const hacker1SpacesUpperCase = hacker1.split("").join(" ").toUpperCase();
+console.log(hacker1SpacesUpperCase);
+
+const hacker2Reverse = hacker2.split("").reverse().join("");
+console.log(hacker2Reverse);
+
+const lexicalCompare = hacker1.localeCompare(hacker2);
+
+if (lexicalCompare == 1) {
+    console.log("Yo, the navigator goes first, definitely.");
+} else if (lexicalCompare == -1 ) {
+    console.log("The driver's name goes first.");
+} else {
+    console.log("What?! You both have the same name?");
+}
