@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 let hacker1 = "Max";
-console.log(hacker1);
+console.log(`The driver's name is ${hacker1}`);
 
 let hacker2 = "Alex";
-console.log(hacker2);
+console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length) {
