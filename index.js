@@ -89,9 +89,11 @@ let phraseToCheck2 = "This phrase is obiusly not a Palindrome";
 //Function to check if a phrase is a Palindrome or not
 function isPalindrome(phrase) {
     let phraseWithoutSpace = phrase.toLowerCase().replace(/[^a-zA-Z]/g, '');
-    let invertedPhrase = phraseWithoutSpace.split('').reverse().join('');
+    let invertedPhrase= "";
     let res = `This phrase is a Palindrome!`;
-
+    for(let letter of phraseWithoutSpace){
+        invertedPhrase= letter + invertedPhrase;
+    }
     if (phraseWithoutSpace !== invertedPhrase) {
         res = `This phrase is not a Palindrome!`;
     }
