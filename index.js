@@ -25,15 +25,15 @@ const navigatorLength = hacker2.length;
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 } */
 
-/* if (hacker1.length > hacker2.length) {
+if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker1.length === hacker2.length) {
    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 } else {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
-}*/
+}
 
-const comparison = ""
+/* let comparison = ""
 
 switch (comparison) {
     case (hacker1.length > hacker2.length):
@@ -44,8 +44,18 @@ switch (comparison) {
         break;
     default:
         console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
-}
+} */
 
+/* switch (comparison) {
+    case (hacker1.length > hacker2.length):
+        console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+        break;
+    case (hacker1.length < hacker2.length):
+        console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
+        break;
+    default:
+        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+} */
 
 /* Preguntas:
 - Cuando está bien así o habría que convertirlo a string?
