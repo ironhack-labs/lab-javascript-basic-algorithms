@@ -21,16 +21,29 @@ const navigatorLength = hacker2.length;
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker1.length < hacker2.length) {
    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
-} else if (hacker1.length = hacker2.length) {
+} else if (hacker1.length === hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 } */
 
-if (hacker1.length > hacker2.length) {
+/* if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker1.length === hacker2.length) {
    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 } else {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
+}*/
+
+const comparison = ""
+
+switch (comparison) {
+    case (hacker1.length > hacker2.length):
+        console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+        break;
+    case (hacker1.length === hacker2.length):
+        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+        break;
+    default:
+        console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
 
 
