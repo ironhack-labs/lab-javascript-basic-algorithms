@@ -13,40 +13,68 @@ console.log(hacker1Length);
 console.log(hacker2Length);
 
 if (hacker1Length === hacker2Length) {
-    console.log("Wow, you both have equally long names, " + hacker1Length + " characters!");
-} else if (hacker1Length > hacker2Length ) {
-    console.log("The driver has the longest name, it has " + hacker1Length + " characters.");
+  console.log(
+    "Wow, you both have equally long names, " + hacker1Length + " characters!"
+  );
+} else if (hacker1Length > hacker2Length) {
+  console.log(
+    "The driver has the longest name, it has " + hacker1Length + " characters."
+  );
 } else {
-    console.log("It seems that the navigator has the longest name, it has " + hacker2Length + " characters.");
+  console.log(
+    "It seems that the navigator has the longest name, it has " +
+      hacker2Length +
+      " characters."
+  );
 }
 
 // Iteration 3: Loops
 
-const hacker1SpacesUpperCase = hacker1.split("").join(" ").toUpperCase();
-console.log(hacker1SpacesUpperCase);
+let hacker1Spaced = "";
+for (const i of hacker1) {
+  hacker1Spaced += i + " ";
+}
+console.log(hacker1Spaced);
+let hacker1SpacedUpperCase = hacker1Spaced.toUpperCase();
+console.log(hacker1SpacedUpperCase);
 
-const hacker2Reverse = hacker2.split("").reverse().join("");
-console.log(hacker2Reverse);
+let hacker2Reversed = "";
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  hacker2Reversed += hacker2[i];
+}
+console.log(hacker2Reversed);
 
 const lexicalCompare = hacker1.localeCompare(hacker2);
-
 if (lexicalCompare == 1) {
-    console.log("Yo, the navigator goes first, definitely.");
-} else if (lexicalCompare == -1 ) {
-    console.log("The driver's name goes first.");
+  console.log("Yo, the navigator goes first, definitely.");
+} else if (lexicalCompare == -1) {
+  console.log("The driver's name goes first.");
 } else {
-    console.log("What?! You both have the same name?");
+  console.log("What?! You both have the same name?");
 }
 
 // Bonus 1:
 
-const longText = "Lorem ipsum dolor sit amet et consectetur adipisicing elit. Nisi iste, rem est, incidunt nam a assumenda tempore, aperiam cum magni eum earum accusamus minima! Molestiae, ullam sapiente quisquam minus porro neque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus cum, debitis aut placeat consequuntur deleniti necessitatibus inventore laborum quod cum, et corcumporis, libero adipisci ut? Provident delectus quia et modi non et, tempore? Lorem cum ipsum dolor sit, amet consectetur adipisicing elit. Praesentium harum quaerat eos assumenda voluptatibus temporibus, at dolorum tempore recusandae rem impedit, corrupti hic commodi sapiente? Deserunt quos quas eveniet vitae?"
+const longText =
+  "Lorem ipsum dolor sit amet et consectetur adipisicing elit. Nisi iste, rem est, incidunt nam a assumenda tempore, aperiam cum magni eum earum accusamus minima! Molestiae, ullam sapiente quisquam minus porro neque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus cum, debitis aut placeat consequuntur deleniti necessitatibus inventore laborum quod cum, et corcumporis, libero adipisci ut? Provident delectus quia et modi non et, tempore? Lorem cum ipsum dolor sit, amet consectetur adipisicing elit. Praesentium harum quaerat eos assumenda voluptatibus temporibus, at dolorum tempore recusandae rem impedit, corrupti hic commodi sapiente? Deserunt quos quas eveniet vitae?";
+text = longText.toLowerCase().replace(/[.,?!]/g, "");
+targetWord = "et".toLowerCase();
+let count = 0;
+let currentWord = "";
+for (var i = 0; i < text.length; i++) {
+  let currentChar = text[i];
+  if (currentChar === " " || i === text.length - 1) {
+    if (currentWord === targetWord) {
+      count++;
+    }
+    currentWord = "";
+  } else {
+    currentWord += currentChar;
+  }
+}
+console.log(count);
 
-const numberOfWords = longText.split(" ").length;
-console.log(numberOfWords);
-
-const longTextWords = longText.split(" ")
-/* console.log(longTextWords); */
+/* const longTextWords = longText.split(" ")
 let numberOfTimes = 0;
 const targetWord = "et";
 for (const word of longTextWords) {
@@ -54,4 +82,18 @@ for (const word of longTextWords) {
         numberOfTimes++;
     }
 }
-console.log(numberOfTimes);
+console.log(numberOfTimes); */
+
+let phraseToCheck = "stack cats".replace(/[.,?! ]/g, "");
+
+let phraseToCheckReversed = "";
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+  phraseToCheckReversed += phraseToCheck[i];
+}
+let isPalindrome = "";
+if (phraseToCheck.toLowerCase() == phraseToCheckReversed.toLowerCase()) {
+  isPalindrome = true;
+} else {
+  isPalindrome = false;
+}
+console.log(isPalindrome);
