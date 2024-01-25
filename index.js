@@ -20,6 +20,8 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 //3.1
+
+/* Paso palabras en may, saco cada letra         */
 let i = 0;
 while (i < hacker1.length) {
   console.log(hacker1.toUpperCase());
