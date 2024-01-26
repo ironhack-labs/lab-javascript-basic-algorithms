@@ -24,7 +24,7 @@ if (hackerOne.length > hackerTwo.length) {
 
 // Iteration 3: Loops
 
-/* This part converts the name of the driver to uppercase, then creates an empty container for the letters, then uses a for loop to iterate through the letters of the */
+/* This part spells the driver's name in capital letters and with spaces between each characters. It converts the name of the driver to uppercase, then creates an empty container for the letters. After that, it uses a for loop to iterate through the characters of the new uppercase variable. The if statement adds empty spaces to the spaced name, except for the last character. Finally, the spaced name is output to the console log. */
 
 const mayuscDriver = hackerOne.toUpperCase();
 
@@ -39,11 +39,7 @@ for (let i = 0; i < hackerOne.length; i++) {
 
 console.log(`${spacedMayuscDriver}`);
 
-/* for (let i = 0; i < mayuscDriver.length; i++) {
-    console.log(str[1]);
-}*/
-
-/* preguntas: is it more correct to use hackerOne or mayuscDriver here? */
+/* This part spells the navigator's name backwards. It creates an empty variable to contain the reverse name, then it iterates backwards through the letters of the navigataor until it reaches the last one. Finally, the reverse name is output to the console log. */
 
 let reverseNavigator = "";
 
@@ -53,16 +49,19 @@ for (let i = hackerTwo.length - 1; i >= 0; i--) {
 
 console.log(`${reverseNavigator}`);
 
-let hackerOneInitial = "";
+/* This part combines various if else statements to compare the initial character of each driver's name and outputs to the console a message about which name comes first in lexicographical order */
 
-for (let i = 0; i < hackerOne.length; i++) {
-    hackerOneInitial = hackerOne[0];
-    break;
+if (hackerOne[0] > hackerTwo[0]) {
+    console.log(`The driver's name goes first.`);
+} else if (hackerOne[0] < hackerTwo[0]) {
+    console.log(`Yo, the navigator goes first, definitely.`); 
+} else {
+    console.log(`What?! You both have the same name?`);
 }
 
-/*for (let i = hackerOne.length; i <= hackerOne.length; i = hackerOne[0]) {
+/* for (let i = hackerOne.length; i <= hackerOne.length; i = hackerOne[0]) {
     hackerOneInitial = hackerOne[0];
-}*/
+}
 
 let hackerTwoInitial = "";
 
@@ -78,9 +77,9 @@ if (hackerOneInitial > hackerTwoInitial) {
     console.log(`What?! You both have the same name?`);
 }
 
-/* for (let i = hackerOne.length; i = 1; hackerOne[i]);
-for (let i = hackerTwo.length; i = 1; hackerTwo[i]); */
+for (let i = hackerOne.length; i = 1; hackerOne[i]);
+for (let i = hackerTwo.length; i = 1; hackerTwo[i]);
 
-/* if (hackerOne[i] < hackerTwo[i]) {
+if (hackerOne[i] < hackerTwo[i]) {
     console.log(`The driver's name goes first.`);
-}*/
+} */
