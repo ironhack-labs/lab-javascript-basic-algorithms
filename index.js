@@ -12,21 +12,7 @@ console.log(`The navigator's name is ${hackerTwo}`);
 
 // Iteration 2: Conditionals
 
-/* This part counts the length of each name */
-
-const driverLength = hackerOne.length;
-
-const navigatorLength = hackerTwo.length;
-
-/* Commenting out next part where the strict equality condition is put at the end, waiting to discuss the best option in class with the teacher */
-
-/* if (hackerOne.length > hackerTwo.length) {
-    console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
-} else if (hackerOne.length < hackerTwo.length) {
-   console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
-} else if (hackerOne.length === hackerTwo.length) {
-    console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
-} */
+/* This part uses else if to compare the length of the 2 names and outputs a message to the console about which name is longer */
 
 if (hackerOne.length > hackerTwo.length) {
     console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
@@ -36,12 +22,9 @@ if (hackerOne.length > hackerTwo.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
 }
 
-/* Preguntas:
-- Cuando está bien así o habría que convertirlo a string?
-- El ejemplo de str.length pone ${}
-- Tengo que usar el valor mayor o el valor menor? */
-
 // Iteration 3: Loops
+
+/* This part converts the name of the driver to uppercase, then creates an empty container for the letters, then uses a for loop to iterate through the letters of the */
 
 const mayuscDriver = hackerOne.toUpperCase();
 
