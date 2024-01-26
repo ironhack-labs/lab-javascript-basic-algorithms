@@ -12,12 +12,13 @@ console.log(`The navigator's name is ${hackerTwo}`);
 
 // Iteration 2: Conditionals
 
-/* console.log(`${hackerOne.length}`);
-console.log(`${hackerTwo.length}`); */
+/* This part counts the length of each name */
 
 const driverLength = hackerOne.length;
 
 const navigatorLength = hackerTwo.length;
+
+/* Commenting out next part where the strict equality condition is put at the end, waiting to discuss the best option in class with the teacher */
 
 /* if (hackerOne.length > hackerTwo.length) {
     console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
@@ -34,6 +35,8 @@ if (hackerOne.length > hackerTwo.length) {
 } else {
     console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
 }
+
+/* Commenting out next part where I tried to solve it with a switch statement */
 
 /* let comparison = ""
 
@@ -135,7 +138,7 @@ if (hackerOneInitial > hackerTwoInitial) {
     console.log(`The driver's name goes first.`);
 } else if (hackerOneInitial < hackerTwoInitial) {
     console.log(`Yo, the navigator goes first, definitely.`); 
-} else if (hackerOneInitial = hackerTwoInitial) {
+} else {
     console.log(`What?! You both have the same name?`);
 }
 
