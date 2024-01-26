@@ -58,28 +58,3 @@ if (hackerOne[0] > hackerTwo[0]) {
 } else {
     console.log(`What?! You both have the same name?`);
 }
-
-/* for (let i = hackerOne.length; i <= hackerOne.length; i = hackerOne[0]) {
-    hackerOneInitial = hackerOne[0];
-}
-
-let hackerTwoInitial = "";
-
-for (let i = hackerTwo.length; i <= hackerTwo.length; i = hackerOne[0]) {
-    hackerTwoInitial = hackerTwo[0];
-}
-
-if (hackerOneInitial > hackerTwoInitial) {
-    console.log(`The driver's name goes first.`);
-} else if (hackerOneInitial < hackerTwoInitial) {
-    console.log(`Yo, the navigator goes first, definitely.`); 
-} else {
-    console.log(`What?! You both have the same name?`);
-}
-
-for (let i = hackerOne.length; i = 1; hackerOne[i]);
-for (let i = hackerTwo.length; i = 1; hackerTwo[i]);
-
-if (hackerOne[i] < hackerTwo[i]) {
-    console.log(`The driver's name goes first.`);
-} */
