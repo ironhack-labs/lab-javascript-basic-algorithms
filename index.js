@@ -102,6 +102,14 @@ console.log(`${spacedMayuscDriver}`);
 
 /* preguntas: is it more correct to use hacker1 or mayuscDriver here? */
 
+let reverseNavigator = "";
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    reverseNavigator += hacker2[i];
+}
+
+console.log(`${reverseNavigator}`);
+
 
 
 /* for (let i = hacker1.length; i = 1; hacker1[i]);
