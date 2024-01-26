@@ -51,9 +51,9 @@ console.log(`${reverseNavigator}`);
 
 /* This part combines various if else statements to compare the initial character of each driver's name and outputs to the console a message about which name comes first in lexicographical order */
 
-if (hackerOne[0] > hackerTwo[0]) {
+if (hackerOne > hackerTwo) {
     console.log(`The driver's name goes first.`);
-} else if (hackerOne[0] < hackerTwo[0]) {
+} else if (hackerOne < hackerTwo) {
     console.log(`Yo, the navigator goes first, definitely.`); 
 } else {
     console.log(`What?! You both have the same name?`);
