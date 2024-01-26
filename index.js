@@ -43,14 +43,6 @@ if (hackerOne.length > hackerTwo.length) {
 
 // Iteration 3: Loops
 
-/* for (const value of hackerOne) {
-    console.log (value.toUpperCase());
-}
-
-for (const value of hackerTwo) {
-    console.log (value.toUpperCase());
-} */
-
 const mayuscDriver = hackerOne.toUpperCase();
 
 let spacedMayuscDriver = "";
