@@ -36,32 +36,6 @@ if (hackerOne.length > hackerTwo.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
 }
 
-/* Commenting out next part where I tried to solve it with a switch statement */
-
-/* let comparison = ""
-
-switch (comparison) {
-    case (hackerOne.length > hackerTwo.length):
-        console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
-        break;
-    case (hackerOne.length === hackerTwo.length):
-        console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
-        break;
-    default:
-        console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
-} */
-
-/* switch (comparison) {
-    case (hackerOne.length > hackerTwo.length):
-        console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
-        break;
-    case (hackerOne.length < hackerTwo.length):
-        console.log(`It seems that the navigator has the longest name, it has ${hackerTwo.length} characters.`);
-        break;
-    default:
-        console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
-} */
-
 /* Preguntas:
 - Cuando está bien así o habría que convertirlo a string?
 - El ejemplo de str.length pone ${}
