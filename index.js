@@ -69,17 +69,6 @@ switch (comparison) {
 
 // Iteration 3: Loops
 
-/* 3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N".
-
-3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
-
-3.3 Depending on the lexicographic order of the strings, print:
-
-The driver's name goes first.
-Yo, the navigator goes first, definitely.
-What?! You both have the same name? */
-
-
 /* for (const value of hackerOne) {
     console.log (value.toUpperCase());
 }
@@ -114,8 +103,6 @@ for (let i = hackerTwo.length - 1; i >= 0; i--) {
 }
 
 console.log(`${reverseNavigator}`);
-
-
 
 let hackerOneInitial = "";
 
