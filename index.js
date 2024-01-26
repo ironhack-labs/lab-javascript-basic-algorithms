@@ -112,6 +112,26 @@ console.log(`${reverseNavigator}`);
 
 
 
+let hackerOneInitial = "";
+
+for (let i = hacker1.length; i <= hacker1.length; i = hacker1[0]) {
+    hackerOneInitial = hacker1[0];
+}
+
+let hackerTwoInitial = "";
+
+for (let i = hacker2.length; i <= hacker2.length; i = hacker1[0]) {
+    hackerTwoInitial = hacker2[0];
+}
+
+if (hackerOneInitial > hackerTwoInitial) {
+    console.log(`The driver's name goes first.`);
+} else if (hackerOneInitial < hackerTwoInitial) {
+    console.log(`Yo, the navigator goes first, definitely.`); 
+} else if (hackerOneInitial = hackerTwoInitial) {
+    console.log(`What?! You both have the same name?`);
+}
+
 /* for (let i = hacker1.length; i = 1; hacker1[i]);
 for (let i = hacker2.length; i = 1; hacker2[i]); */
 
