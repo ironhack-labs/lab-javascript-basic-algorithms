@@ -1,34 +1,34 @@
 // Iteration 1: Names and Input
 
-const hacker1 = 'Stefano';
+const hackerOne = 'Stefano';
 
-console.log(`The driver's name is ${hacker1}`);
+console.log(`The driver's name is ${hackerOne}`);
 
-const hacker2 = 'Laura';
+const hacker2 = 'Waura';
 
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
 
-/* console.log(`${hacker1.length}`);
+/* console.log(`${hackerOne.length}`);
 console.log(`${hacker2.length}`); */
 
-const driverLength = hacker1.length;
+const driverLength = hackerOne.length;
 
 const navigatorLength = hacker2.length;
 
-/* if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
-} else if (hacker1.length < hacker2.length) {
+/* if (hackerOne.length > hacker2.length) {
+    console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
+} else if (hackerOne.length < hacker2.length) {
    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
-} else if (hacker1.length === hacker2.length) {
-    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+} else if (hackerOne.length === hacker2.length) {
+    console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
 } */
 
-if (hacker1.length > hacker2.length) {
-    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
-} else if (hacker1.length === hacker2.length) {
-   console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+if (hackerOne.length > hacker2.length) {
+    console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
+} else if (hackerOne.length === hacker2.length) {
+   console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
 } else {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
@@ -36,25 +36,25 @@ if (hacker1.length > hacker2.length) {
 /* let comparison = ""
 
 switch (comparison) {
-    case (hacker1.length > hacker2.length):
-        console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+    case (hackerOne.length > hacker2.length):
+        console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
         break;
-    case (hacker1.length === hacker2.length):
-        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+    case (hackerOne.length === hacker2.length):
+        console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
         break;
     default:
         console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 } */
 
 /* switch (comparison) {
-    case (hacker1.length > hacker2.length):
-        console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+    case (hackerOne.length > hacker2.length):
+        console.log(`The driver has the longest name, it has ${hackerOne.length} characters.`);
         break;
-    case (hacker1.length < hacker2.length):
+    case (hackerOne.length < hacker2.length):
         console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
         break;
     default:
-        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
+        console.log(`Wow, you both have equally long names, ${hackerOne.length} characters!.`);
 } */
 
 /* Preguntas:
@@ -75,7 +75,7 @@ Yo, the navigator goes first, definitely.
 What?! You both have the same name? */
 
 
-/* for (const value of hacker1) {
+/* for (const value of hackerOne) {
     console.log (value.toUpperCase());
 }
 
@@ -83,13 +83,13 @@ for (const value of hacker2) {
     console.log (value.toUpperCase());
 } */
 
-const mayuscDriver = hacker1.toUpperCase();
+const mayuscDriver = hackerOne.toUpperCase();
 
 let spacedMayuscDriver = "";
 
-for (let i = 0; i < hacker1.length; i++) {
+for (let i = 0; i < hackerOne.length; i++) {
     spacedMayuscDriver += mayuscDriver[i];
-    if (i !== hacker1.length - 1) {
+    if (i !== hackerOne.length - 1) {
         spacedMayuscDriver += " ";
     }
 }
@@ -100,7 +100,7 @@ console.log(`${spacedMayuscDriver}`);
     console.log(str[1]);
 }*/
 
-/* preguntas: is it more correct to use hacker1 or mayuscDriver here? */
+/* preguntas: is it more correct to use hackerOne or mayuscDriver here? */
 
 let reverseNavigator = "";
 
@@ -114,13 +114,18 @@ console.log(`${reverseNavigator}`);
 
 let hackerOneInitial = "";
 
-for (let i = hacker1.length; i <= hacker1.length; i = hacker1[0]) {
-    hackerOneInitial = hacker1[0];
+for (let i = 0; i < hackerOne.length; i++) {
+    hackerOneInitial = hackerOne[0];
+    break;
 }
+
+/*for (let i = hackerOne.length; i <= hackerOne.length; i = hackerOne[0]) {
+    hackerOneInitial = hackerOne[0];
+}*/
 
 let hackerTwoInitial = "";
 
-for (let i = hacker2.length; i <= hacker2.length; i = hacker1[0]) {
+for (let i = hacker2.length; i <= hacker2.length; i = hackerOne[0]) {
     hackerTwoInitial = hacker2[0];
 }
 
@@ -132,9 +137,9 @@ if (hackerOneInitial > hackerTwoInitial) {
     console.log(`What?! You both have the same name?`);
 }
 
-/* for (let i = hacker1.length; i = 1; hacker1[i]);
+/* for (let i = hackerOne.length; i = 1; hackerOne[i]);
 for (let i = hacker2.length; i = 1; hacker2[i]); */
 
-/* if (hacker1[i] < hacker2[i]) {
+/* if (hackerOne[i] < hacker2[i]) {
     console.log(`The driver's name goes first.`);
 }*/
