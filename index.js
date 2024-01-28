@@ -43,8 +43,8 @@ for (let i = 0; i < hackerOne.length; i++) {
 
 // Para imprimir el nombre al revés
 
-for (let i = hacker2.length - 1; i >= 0; i--) { //starts with last letter and goes backwards toward the first one
-    console.log(hacker2[i]); // shows letters 
+for (let i = hackerTwo.length - 1; i >= 0; i--) { //starts with last letter and goes backwards toward the first one
+    console.log(hackerTwo[i]); // shows letters 
 }
 
 //3.3 Depending on the lexicographic order of the strings, print:
