@@ -61,6 +61,13 @@ if (hackerOne.localeCompare(hackerTwo) < 0) {
     console.log("You must be joking.");
 }
 
+//Bonus 1:
 
+const str = "Welcome to the United States of Cryptids, where mysterious monsters lurk in the dark forests, deep lakes, and sticky swamps of all fifty states. From the infamous Jersey Devil to the obscure Snallygaster, travel writer and chronicler of the strange J. W. Ocker uncovers the bizarre stories of these creatures and investigates the ways in which communities embrace and celebrate their local cryptids.";
 
-
+function parLength(str) { 
+    const array = str.trim().split(/\s+/); 
+    return array.length; 
+} 
+  
+console.log("Word count:" ,parLength(str));
