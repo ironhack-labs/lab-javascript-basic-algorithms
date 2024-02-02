@@ -24,15 +24,14 @@ if (hackerOneLength < hackerTwoLength) {
 
 console.log(res)
 
+
 // Iteration 3: Loops
-let spacedName = "";
+let spacedCapitalizedName = "";
 
 for (let i = 0; i < hackerOneLength; i++) {
-  spacedName += hackerOne[i] + " ";
+  spacedCapitalizedName += hackerOne[i].toUpperCase() + " ";
 }
 
-//console.log(hacker1.toUpperCase() spacedName.slice(0, -1));
-// console.log(spacedName.slice(0, -1)); // Remove the last space
 
+console.log(spacedCapitalizedName.slice(0, -1)); // Remove the last space
 
-// cambia 1 a one y revusar texo it.1
