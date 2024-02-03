@@ -41,4 +41,8 @@ console.log(`The navigator's name is ${hacker2}`);
     
     Nulla pellentesque tortor nec suscipit rhoncus. Maecenas accumsan, libero nec imperdiet sollicitudin, risus tellus hendrerit quam, id tincidunt dui eros a lacus. Proin erat massa, laoreet in ornare eleifend, tempus vel odio. Quisque scelerisque mi id leo rhoncus, sed tincidunt elit mollis. Nullam suscipit pulvinar magna, ut tempor urna euismod vel. Sed vel ipsum sit amet arcu laoreet tempor. Praesent molestie sit amet lectus nec consectetur. Ut eget ex quam. Maecenas luctus nisi vitae vehicula maximus. Etiam imperdiet condimentum enim vitae porta. Nam tempor quis ante nec vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis magna et euismod maximus. Sed auctor neque in ex fermentum rutrum. Fusce non finibus mi, ac rhoncus eros.`
 
-    
+    let quantity = loremIpsum.split(" ").length;
+    console.log(`Total words: ` + quantity);
+
+    let etCounter = loremIpsum.split("et").length;
+    console.log(`Total of et counts: ` + etCounter);
