@@ -6,18 +6,18 @@ console.log(`Il nome del driver è ${hackerOne}`);
 
 
 // Iteration 2: Conditionals
-let numberOfLettersDriver = hackerOne.length;
-let numberOfLettersNavigator = hackerTwo.length;
+let driverNameLength = hackerOne.length;
+let navigatorNameLength = hackerTwo.length;
 
     if  (hackerOne > hackerTwo) { 
-        console.log(`The driver has the longest name, it has ${numberOfLettersDriver} characters.`);
+        console.log(`The driver has the longest name, it has ${driverNameLength} characters.`);
     }
 else if (hackerOne < hackerTwo) { 
-    console.log(`It seems that the navigator has the longest name, it has ${numberOfLettersNavigator} characters.`);
+    console.log(`It seems that the navigator has the longest name, it has ${ navigatorNameLength} characters.`);
 }
 
 else { 
-    console.log(`Wow, you both have equally long names, ${numberOfLettersDriver} characters!`);
+    console.log(`Wow, you both have equally long names, ${driverNameLength} characters!`);
 }
 
 
