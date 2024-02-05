@@ -38,7 +38,7 @@ for (let value of reversedCharacters) {
 
 let reversed = '';
 for (let i = hackerTwo.length -1; i>= 0; i--){
-    reversed += hackerOne[i];
+    reversed += hackerTwo[i];
  }
  console.log(reversed);
 
