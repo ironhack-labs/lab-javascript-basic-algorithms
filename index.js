@@ -30,7 +30,7 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, they both have ${hacker1.length} characters!.
     `)
 }
-//Must do refactoring above 
+//MUST DO REFACTORING ABOVE - don't know what approach to take 
 
 
 
@@ -46,11 +46,37 @@ if (hacker1.length > hacker2.length) {
 // Yo, the navigator goes first, definitely.
 // What?! You both have the same name?
 
-console.log(`${hacker1.toLocaleUpperCase()}`);
-
+console.log(`${hacker1.toLocaleUpperCase().split('')}`);
 function reverseString(hacker2) {
-    return ( hacker2 === "" ? "" :reverseString(hacker2.substr(1)) + hacker2.charAt(0));
- 
+    return (hacker2 === "" ? "" : reverseString(hacker2.substr(1)) + hacker2.charAt(0));
+
 }
 
 console.log(reverseString(hacker2));
+
+//Another example: 
+
+const driver = "Driver name"; //Print separated by space in capital letters
+console.log(driver.toLocaleUpperCase().split(''));
+console.log(typeof (driver)); //string
+
+const nav = "Angelica"; // Print all the characters of the navigator's name in reverse order
+// console.log(nav);
+let reverseNav = "";
+for (let i = nav.length-1 ; i >= 0; i--) {
+    // console.log(reverseNav); //empty string with a lenght of 8 
+    reverseNav += nav[i];
+
+}
+
+console.log(reverseNav);
+
+// for (let i = nav.length - 1; i >= 0; i--) {
+//     console.log(nav[i]);
+// }
+
+// let reversedName = '';
+// for (let i = hacker2.length - 1; i >= 0; i--) {
+//   reversedName += hacker2[i];
+// }
+// console.log(reversedName);
