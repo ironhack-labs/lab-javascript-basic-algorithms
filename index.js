@@ -77,7 +77,6 @@ if (driverName === navigatorName) {
 
 
 
-
 // didnt work out, of-course,  localCompare return value of 0, 1, -1. ONLY
 // const driverName = "AXXX";
 // const navigatorName = "XXXX";
