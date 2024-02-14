@@ -52,14 +52,14 @@ console.log(etNumber.length)
 
 // bonus 2
 
-const phraseToCheck  = "amor";
+const phraseToCheck  = "A man, a plan, a canal, Panama!";
 
 
-for (let i= 0; i < phraseToCheck.length; i++) {
+for (let i= 0; i < phraseToCheck.length / 2; i++) {
     
-    if(phraseToCheck[i] === phraseToCheck[phraseToCheck.length-1] ){
-        console.log("is a Palindrome")
-    }else{
+    if(phraseToCheck[i] !== phraseToCheck[phraseToCheck.length -1 - i] ){
         console.log("try a new word")
+    }else{
+        console.log("it's a palindrom")
     }
 }
