@@ -60,13 +60,14 @@ Proin sit amet neque at odio consectetur tincidunt. Ut maximus elit sit amet nul
 
 function numberOfWords(string) { 
     let count = 0; 
-    let check = false; 
+    let check = false;
+    string = string.toLowerCase() 
   
-    for (let i = 0; i < LongText.length; i++) { 
-        if (LongText[i] !== ' ' && !check) { 
+    for (let i = 0; i < string.length; i++) { 
+        if (string[i] !== ' ' && !check) { 
             count++; 
             check = true; 
-        } else if (LongText[i] === ' ') { 
+        } else if (string[i] === ' ') { 
             check = false; 
         } 
     } 
@@ -92,7 +93,7 @@ console.log(testString)
 
 function checkPalindrome(string) {
     let stringCheck = "";
-    string = string.replace(/[^A-Z0-9]/ig,'');
+    string = string.replace(/[^A-Z0-9]/ig,'').toLowerCase();
     for (let i = string.length - 1; i >= 0; i--) {
         stringCheck += string[i];
     }
@@ -112,6 +113,7 @@ let str5 = "step on no pets"
 let str6 = "taco cat"
 let str7 = "put it up"
 let str8 = "Was it a car or a cat I saw? and No 'x' in Nixon"
+
 
 console.log(checkPalindrome(str1));
 console.log(checkPalindrome(str2));
