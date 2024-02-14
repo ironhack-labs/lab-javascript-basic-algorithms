@@ -2,6 +2,7 @@
 const hacker1 = "Phillip"
 const hacker2 = "Gloria"
 
+console.log(`The driver's name is ${hacker1}`)
 console.log(`The navigator's name is ${hacker2}`)
 
 
@@ -17,12 +18,6 @@ if (hacker1.length > hacker2.length){
 
 // Iteration 3: Loops
 
-
-const nameSlice =`${hacker1.slice(0,1).toUpperCase()} ${hacker1.slice(1,2).toUpperCase()} +" " hacker1.slice(2,3) +" " hacker1.slice(3,4) +" " hacker1.slice(4,5) +" " hacker1.slice(5,6) +" "hacker1.slice(6,7"`
-console.log(nameSlice[2])
-
-
-// let newhacker1Name
 let newDriverName = "";
 
 for (let i = 0; i < hacker1.length; i++) {
@@ -52,4 +47,8 @@ if(compare == 1) {
 } else {
     console.log("What?! You both have the same name?")
 }
+
+
+
+// Bonus 1
 
