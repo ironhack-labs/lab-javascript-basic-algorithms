@@ -41,7 +41,8 @@ let navigatorName = "Gloria"
 let compare = driverName.localeCompare(navigatorName)
 
 if(compare == 1) { 
-    console.log("The driver's name goes first. ")}
+    console.log("The driver's name goes first. ")
+}
     else if (compare == -1) {
     console.log("Yo, the navigator goes first, definitely.")
 } else {
