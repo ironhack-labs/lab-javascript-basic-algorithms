@@ -37,3 +37,12 @@ for (let i = hacker2.length - 1; i >= 0; i--) {
 }
 
 console.log(newNav);
+
+let result = hacker1.localeCompare(hacker2);
+if (result === -1) {
+  console.log("the driver's name goes first.");
+} else if (result === 1) {
+  console.log("yo, the navigator goes first, definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
