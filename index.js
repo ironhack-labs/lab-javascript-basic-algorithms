@@ -38,3 +38,22 @@ for( let i=0; i < hacker1.length; i++) {
 
 console.log (capitalAndSpacedName)
 
+
+// reverse
+
+let backwardsName= ''
+for(let i=hacker2.length-1; i>=0;i--){
+    backwardsName +=hacker2[i];
+}
+console.log(backwardsName);
+
+
+///lexigraphical order
+
+let compare =hacker1.localeCompare(hacker2)
+if(compare ===1){
+    console.log('Drivers name goes first')
+}else if(compare ===-1){
+    console.log(?)
+}
+
