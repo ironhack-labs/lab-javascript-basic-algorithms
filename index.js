@@ -21,3 +21,11 @@ if (lengthHacker1 > lengthHacker2) {
 }
 
 // Iteration 3: Loops
+hacker1=hacker1.toUpperCase()
+let space =""
+for(let i = 0 ; i < hacker1.length ; i++){
+    space += hacker1[i] + " "
+}
+console.log(space)
+
+
