@@ -21,11 +21,15 @@ if (lengthHacker1 > lengthHacker2) {
 }
 
 // Iteration 3: Loops
-hacker1=hacker1.toUpperCase()
-let space =""
-for(let i = 0 ; i < hacker1.length ; i++){
-    space += hacker1[i] + " "
+hacker1Upper = hacker1.toUpperCase();
+let space = "";
+for (let i = 0; i < hacker1.length; i++) {
+  space += hacker1Upper[i] + " ";
 }
-console.log(space)
+console.log(space);
 
-
+let reverse = "";
+for (let i = hacker1.length - 1; i >= 0; i--) {
+  reverse += hacker1[i];
+}
+console.log(reverse);
