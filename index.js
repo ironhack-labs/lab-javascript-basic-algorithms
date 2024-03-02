@@ -112,3 +112,34 @@ for (let i = 0; i<longText.length; i++) {
 }
 
 console.log(etCount);
+
+// Bonus 2
+
+let example = "A man, a plan, Panama!";
+
+example = example.toUpperCase();
+
+let newPhrase = "";
+
+for (let i = 0; i < example.length; i++) {
+    if (example[i] >= "A" && example[i] <= "Z") {
+        newPhrase = newPhrase + example[i];
+    }
+}
+
+let backWord = "";
+
+for (let i = newPhrase.length-1; i >= 0; i--) {
+    backWord = backWord + newPhrase[i];
+}
+console.log(backWord);
+if (backWord === newPhrase) {
+    console.log("It is a Palindrome!")
+} else {
+    console.log("It is not a Palindrome!")
+}
+
+
+
+
+
