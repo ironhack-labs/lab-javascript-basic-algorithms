@@ -82,4 +82,19 @@ switch(check){
 }
 
 
+//Bonus 1
 
+const longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at neque tellus. Nunc condimentum ultricies dignissim. Mauris porttitor mi neque, sed laoreet augue commodo in. Vestibulum tortor tellus, auctor eget mauris eu, porttitor rhoncus lacus. Vestibulum convallis congue tincidunt. Vestibulum sit amet convallis nisi, sit amet accumsan erat. Integer dignissim convallis augue laoreet ullamcorper. Etiam ac feugiat orci, sed pulvinar eros. Donec non felis lacinia, lacinia mauris ac, dignissim dolor. Mauris eu metus hendrerit, porttitor velit non, dapibus sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut pretium eros diam, quis blandit lorem ullamcorper ut. Proin feugiat enim nec tortor auctor varius. Donec metus eros, porttitor eget maximus non, malesuada ac elit.Maecenas egestas aliquam viverra. Donec et scelerisque massa. Sed laoreet dapibus risus, eget pulvinar elit pretium non. Cras tempor sem orci, non porttitor nibh hendrerit non. Aliquam porta massa scelerisque, suscipit nisi sit amet, vulputate ligula. Etiam sed lectus rutrum, commodo elit sed, mollis nulla. Duis vulputate vehicula fringilla. Quisque urna dolor, convallis sit amet iaculis id, venenatis id ligula. Mauris semper tincidunt mi. Nunc quam massa, ultricies at magna nec, fermentum semper mi. Fusce sit amet blandit ex. Suspendisse potenti. Quisque pellentesque, urna vel pulvinar bibendum, sem ex consectetur neque, vel dignissim libero diam eu dui. Nullam a placerat diam, vel pharetra mauris. Vivamus sit amet libero odio. Duis ultrices velit finibus risus ornare mattis. Sed aliquet feugiat elementum. Nullam tristique metus sit amet aliquet sollicitudin. Sed porta sapien eleifend eros vehicula rutrum. Integer in tempor dolor. Proin sit amet tincidunt sapien. Morbi quis risus sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+console.log(longText);
+
+let count = 0;
+
+for (let i = 0; i<longText.length; i++) {
+    if (longText[i]===" ") {
+        count++;
+    } 
+    }
+    count = count + 1;
+
+console.log(count);
