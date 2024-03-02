@@ -132,7 +132,7 @@ let backWord = "";
 for (let i = newPhrase.length-1; i >= 0; i--) {
     backWord = backWord + newPhrase[i];
 }
-console.log(backWord);
+
 if (backWord === newPhrase) {
     console.log("It is a Palindrome!")
 } else {
