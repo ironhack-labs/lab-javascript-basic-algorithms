@@ -21,3 +21,12 @@ else {
 }
 
 // Iteration 3: Loops
+
+let newName = "";
+
+for (let i = 0; i<hacker1.length; i++) {
+    newName = newName + hacker1[i].toUpperCase() + " ";
+   
+}
+
+console.log(newName);
