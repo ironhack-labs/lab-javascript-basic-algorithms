@@ -90,6 +90,7 @@ console.log(longText);
 
 let count = 0;
 
+
 for (let i = 0; i<longText.length; i++) {
     if (longText[i]===" ") {
         count++;
@@ -98,3 +99,16 @@ for (let i = 0; i<longText.length; i++) {
     count = count + 1;
 
 console.log(count);
+
+let etCount = 0;
+
+for (let i = 0; i<longText.length; i++) {
+    if (longText[i]===" ") {
+        if(longText.slice(i,i+4)===" et "){
+            etCount++;
+        }
+   
+    } 
+}
+
+console.log(etCount);
