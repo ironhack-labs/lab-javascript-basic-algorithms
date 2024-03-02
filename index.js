@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
-const driver = "adrian";
+const driver = "Adrian";
 const navigator = "Michael";
-let empty = " ";
+let empty = "";
 let reversed= "";
 
 console.log(`The driver's name is ${driver}`);
@@ -19,13 +19,10 @@ if (driver.length > navigator.length){
 // Iteration 3: Loops
 
 for (let i = 0; i < driver.length; i++){
-empty += driver.toUpperCase()[i] + " ";
-if (empty.length === driver.length + 7){
-    console.log(empty);
+empty += driver.toUpperCase()[i] + " ";   
 }
+console.log(empty);
 
-}
- 
    
 for (let i = driver.length-1 ; i >= 0; i--) {
   let single= driver[i];
