@@ -145,6 +145,9 @@ function checkIfPalindrome(phrase) {
     for (let i=0;i<cleanedPhrase.length/2;i++){
         
         isPalidrom &&= cleanedPhrase[i] === cleanedPhrase[cleanedPhrase.length-i-1];
+        if (!isPalidrom){
+            return isPalidrom;
+        }
     }
     return isPalidrom;
 }
