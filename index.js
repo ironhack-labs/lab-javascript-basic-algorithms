@@ -129,9 +129,9 @@ console.log(`The text has ${generalWordCount} words. The word "${specialWord}" a
     "put it up"
     "Was it a car or a cat I saw?"
     "No 'x' in Nixon"
-    
+
 */
-const phrase = `Was it a car or a cat I saw?`
+const phrase = `A man, a plan, a canal, Panama!`
 function checkIfPalindrome(phrase) {
     
     let cleanedPhrase = "";
@@ -141,14 +141,10 @@ function checkIfPalindrome(phrase) {
         }
     }
     
-    let isPalidrom;
+    let isPalidrom = true;
     for (let i=0;i<cleanedPhrase.length/2;i++){
-        if(cleanedPhrase[i] === cleanedPhrase[cleanedPhrase.length-i-1]){
-            isPalidrom = true;
-        }
-        else {
-            return isPalidrom = false;
-        }
+        
+        isPalidrom &&= cleanedPhrase[i] === cleanedPhrase[cleanedPhrase.length-i-1];
     }
     return isPalidrom;
 }
