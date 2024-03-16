@@ -45,7 +45,13 @@ const longText = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reru
 
 let wordCount = 0;
 
+for (let i = 0; i < longText.length; i++) {
+    if (longText[i] === ' ' || longText[i] === '\n' || longText[i] === '\t') {
+        wordCount++;
+    }
+}
 
+console.log(`The text contains ${wordCount += 1} words`);
 
 let etCount = 0;
 
