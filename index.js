@@ -14,58 +14,37 @@ console.log("The navigator's name is " + hacker2 + ".");
 
 // Iteration 2: Conditionals
 /* 2.1 */
-const driverName = "Roberto";;
-const navigatorName = "Francisca";
-const driverNameLength = driverName.Length;
-const navigatorNameLength = navigatorName.length;
+const driverName = "John";
+const navigatorName = "Jane";
 
-if (driverNameLength > navigatorNameLength) {
-    console.log(`The driver has the longest name. It has 
-    ${driverNameLength} characters.`);
+// Print the characters of the driver's name, separated by space, and in capital letters
+console.log("Driver's Name:", driverName.toUpperCase().split('').join(' '));
 
- } else if (navigatorNameLength > driverNameLength) {
-    console.log(`It seems that the ${navigatorName} has the longest name. 
-    It has ${navigatorNameLength} characters.`); } else {
-        console.log(`Wow. You both have actually long names ${driverNameLength} characters.`);
- }
+// Print all the characters of the navigator's name in reverse order
+console.log("Navigator's Name in Reverse:", navigatorName.split('').reverse().join(''));
 
+// Depending on the lexicographic order of the strings, print appropriate messages
+if (driverName < navigatorName) {
+  console.log("The driver's name goes first.");
+} else if (driverName > navigatorName) {
+  console.log("Yo, the navigator goes first, definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}
 
 // Iteration 3: Loops
 /* 3.1 */
-const driName = "John";
+console.log(driverName.toUpperCase().split('').join(' ')); // Output: J O H N
 
-const formattedName = "";
+// 3.2 Print all the characters of the navigator's name in reverse order
+console.log("Navigator's Name in Reverse:", navigatorName.split('').reverse().join(''));
 
-for (let i = 0; i < driName.length; i++) {
-    formattedName += driName[i].toUpperCase();
-
-    if (i !== driName.length -1){
-        formattedName += " ";
-    }
-}
-
-console.log(formattedName);
-
-/* 3.2 */
-const navigatorName = "John";
-const reversedName = "";
-for (const i = navigatorName.length - 1; i >= 0; i--) {
-    reversedName += navigatorName [i];
-
-    if (i !== 0) {
-        reversedName += "-";
-    }
-}
-
-console.log(reversedName);
-
-/* 3.3 */
-const driName = "John";
-const navigatorName = "Jane";
-
-if (driverName < navigatorName) {
-    console.log("The driver's Name goes first.");
-} else if {navigatorName < driName) {
-    console.log("Yo, the navigator goes first, definitely.") } else {
-        console.log("What ?! You both have the same name?");
+// 3.3 Depending on the lexicographic order of the strings, print
+const order = driverName.localeCompare(navigatorName);
+if (order < 0) {
+    console.log("The driver's name goes first.");
+} else if (order > 0) {
+    console.log("Yo, the navigator goes first, definitely.");
+} else {
+    console.log("What?! You both have the same name?");
 }
