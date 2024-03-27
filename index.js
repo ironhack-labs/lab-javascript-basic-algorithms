@@ -84,29 +84,23 @@ console.log(countEt())
 //Bonus 2
 
 let phraseToCheck = "A man, a plan, a canal, Panama!"
+let cleanPhrase = phraseToCheck.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
+console.log(cleanPhrase)
+
 let reversedPhrase = ""
 
-
-for (let i = phraseToCheck.length - 1; i >= 0; i--) {
-    reversedPhrase += phraseToCheck[i];
+for (let i = cleanPhrase.length - 1; i >= 0; i--) {
+    reversedPhrase += cleanPhrase[i];
 }
 
-let cleanPhrase = reversedPhrase.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
 let cleanReversedPhrase = reversedPhrase.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
 
-console.log(cleanPhrase);
-console.log(cleanReversedPhrase);
-
-
-function checkPalindrome() {
-  
-  if  ( phraseToCheck === reversedPhrase)   {
-    return true
-  } else {
-    return false
-  }
-   
+function checkPhrase() {
+    if ( cleanPhrase === cleanReversedPhrase ) {
+        return true
+    } else {
+        return false
+    }
 }
 
-
-console.log(checkPalindrome())
+console.log(checkPhrase(phraseToCheck))
