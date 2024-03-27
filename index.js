@@ -70,7 +70,7 @@ console.log(countWords())
 function countEt() {
     let etCount = 0;
     for (let i=0; i < longText.length; i++) {
-        if (" " + longText[i] + longText[i+1] + " " === " et ") {
+        if (longText[i] + longText[i+1] === "et") {
             etCount += 1
         }
     }
@@ -97,12 +97,15 @@ let cleanReversedPhrase = reversedPhrase.toLowerCase().replace(/[^a-zA-Z0-9]/g, 
 console.log(cleanPhrase);
 console.log(cleanReversedPhrase);
 
+
 function checkPalindrome() {
-  if  ( cleanPhrase === cleanReversedPhrase) {
+  
+  if  ( phraseToCheck === reversedPhrase)   {
     return true
   } else {
     return false
   }
+   
 }
 
 
