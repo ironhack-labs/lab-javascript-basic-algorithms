@@ -6,6 +6,7 @@ let hacker2 = "Greg"; //navigator
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
+/*
 function verifyName (hacker1, hacker2) {
     if (hacker1.length > hacker2.length) {
         console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
@@ -15,9 +16,18 @@ function verifyName (hacker1, hacker2) {
     } else {
         console.log("Wow, you both have equally long names, XX characters!");
     }
-}
+}*/
+// verifyName (hacker1, hacker2);
+    //feedback suggests the following, without needing a function: 
 
-verifyName (hacker1, hacker2);
+    if (hacker1.length > hacker2.length) {
+        console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+      } else if (hacker1.length < hacker2.length) {
+        console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
+      } else {
+        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
+      }
+
 
 // Iteration 3: Loops
 
@@ -50,8 +60,23 @@ namesArray.push(hacker2);
 
 console.log(namesArray.sort()); //sorted array => Camila, Greg
 
+    //Feedback suggests that not needed to sort the array
+    //use localeCompare method 
 
-//bonus 01 
+    /*
+    if (hacker1.localeCompare(hacker2) < 0) {
+        console.log("The driver's name goes first.");
+      } else if (hacker1.localeCompare(hacker2) > 0) {
+        console.log("Yo, the navigator goes first, definitely.");
+      } else {
+        console.log("What?! You both have the same name?");
+      }
+      */ 
+
+
+
+
+
 
 /*
 Generate 3 paragraphs. Store the text in a new string variable named longText.
@@ -85,7 +110,6 @@ return str.split(' ').length; */
     */
 
 //BONUS 01 
-
 let longText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac ante tempus, iaculis nunc iaculis, pharetra mauris. Nunc sollicitudin scelerisque interdum. Phasellus egestas diam at tempus venenatis. Fusce felis neque, hendrerit ac aliquam sed, tempor bibendum erat. Mauris scelerisque ligula non risus commodo, vel tempor diam vulputate. Suspendisse sit amet tempor arcu, in egestas lorem. Maecenas pretium ipsum vel tortor dapibus, nec interdum dui pretium. Maecenas fermentum dolor vitae mi ultrices, non pretium ex dapibus. Cras pulvinar justo ac felis sodales rhoncus. Morbi facilisis risus ac ultricies vestibulum. Aliquam accumsan, ante ac efficitur porttitor, mi nunc lobortis felis, non tempus nibh mi sed diam. Cras leo sapien, finibus eu lobortis eu, ornare fermentum urna. Nullam cursus consequat tellus, ac porta purus. Proin efficitur enim in lorem imperdiet luctus. Aenean vel purus faucibus, ultricies urna eu, fringilla felis. Maecenas sed diam tincidunt elit imperdiet fermentum. Quisque aliquet, tellus non vehicula viverra, ligula nunc condimentum ligula, vel ullamcorper lacus leo nec erat. Duis a tristique magna, sed blandit tellus. Donec vehicula magna sem, id egestas tortor luctus in. Donec faucibus venenatis lacus, in volutpat est tempus egestas. Proin mollis urna id lacus vulputate mollis. Vestibulum diam eros, tincidunt sed nibh vel, malesuada feugiat ligula. Nulla elementum erat non nibh fermentum scelerisque. Pellentesque vehicula justo sed eros rutrum pharetra. In tristique, est at sollicitudin porttitor, tellus metus molestie dolor, et faucibus sem nibh id lectus. Nulla facilisi. Suspendisse pharetra consectetur sem, eget auctor eros luctus a. Integer et pharetra risus. Curabitur convallis, metus sed iaculis malesuada, dolor libero viverra diam, at scelerisque metus est eu ex. Nam non dolor rutrum felis commodo finibus quis sodales quam. Nunc ut finibus augue. Pellentesque dignissim malesuada hendrerit. Sed finibus convallis dui a ultrices. Donec ornare lacinia risus vel fermentum. Nulla facilisi. Maecenas sit amet quam sit amet tortor varius auctor. Praesent semper elit at felis cursus, ut condimentum magna aliquam"
 
 //lets split the string into an array cutting when we find a space 
