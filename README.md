@@ -3,7 +3,6 @@
 # LAB | JS Basic Algorithms
 
 <br>
-
 ![lab-js-basic-algorithms-code-collaboration-gif](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-code-collaboration-gif.gif)
 
 <br>
