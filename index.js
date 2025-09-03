@@ -77,7 +77,7 @@ if (isSameNames) {
   console.log("Yo, the navigator goes first, definitely.");
 }
 
-/******BONUS******/
+/******************* BONUS 1 *******************/
 const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla varius lectus et ligula pharetra, quis pellentesque magna mattis. Morbi eu dictum urna. Vivamus porttitor, leo et tincidunt fringilla, diam sapien blandit erat, sit amet auctor felis felis sit amet leo. Cras auctor dictum orci, quis iaculis nibh mollis eget. Nulla iaculis tortor vel ligula elementum, ac efficitur turpis interdum. Donec vulputate mi eros, eu luctus nibh ullamcorper eu. Nulla ultrices eget ligula eget congue. Nam scelerisque elementum felis, ac rutrum risus aliquam ac. Vivamus elit massa, elementum eu felis in, vestibulum ullamcorper nibh. Phasellus pretium lectus id dui feugiat, ac lobortis turpis mattis. Nulla facilisi. Nunc volutpat, lectus vitae facilisis tempus, mauris neque pharetra risus, sed sollicitudin ipsum est vitae justo. Nulla et lorem velit. Phasellus nulla nibh, laoreet rutrum enim id, tristique scelerisque felis. Ut id nibh at ipsum laoreet tristique vitae non nisl. Morbi iaculis eu sapien non accumsan.
 
 Nullam arcu turpis, tincidunt nec sollicitudin at, elementum eu purus. Aliquam auctor orci ac aliquet commodo. Nam neque quam, viverra sit amet accumsan eu, laoreet a felis. Donec tristique lacinia dolor. Integer luctus urna nec orci pulvinar congue. Proin tempus orci vehicula, vulputate tellus nec, mollis ante. Phasellus venenatis malesuada nibh id cursus. Vestibulum cursus lacus vitae sapien pellentesque gravida. Maecenas porttitor faucibus sem, nec porta ligula tristique a. Etiam cursus odio dolor. Duis non urna a lectus feugiat fermentum. Maecenas sit amet ex at odio molestie tempor nec eu odio.
@@ -119,3 +119,29 @@ while (i < str.length) {
 
 console.log(`wordCountNum: ${wordCountNum}`);
 console.log(`I saw ${etNum} ET in the text!`);
+
+/************** BONUS 2 ****************/
+const phraseToCheck = "No 'x' in Nixon";
+const phraseLowerCase = phraseToCheck.toLowerCase();
+let phraseWithoutSymbols = "";
+
+for (let i = 0; i < phraseLowerCase.length; i++) {
+  //skipping symbols
+  if (notAWord.indexOf(phraseLowerCase[i]) >= 0) continue;
+
+  phraseWithoutSymbols += phraseLowerCase[i];
+}
+
+//comparing simetrical letters
+const len = phraseWithoutSymbols.length;
+let isPalindrome = true;
+for (let i = 0; i < len; i++) {
+  if (phraseWithoutSymbols[i] !== phraseWithoutSymbols[len - 1 - i]) {
+    isPalindrome = false;
+    break;
+  }
+}
+
+console.log(`Initial string: ${phraseToCheck}`);
+console.log(`String without symbols: ${phraseWithoutSymbols}`);
+console.log(`String is palindrome? ${isPalindrome ? "YES!" : "no..."}`);
