@@ -53,6 +53,17 @@ Aliquam maximus arcu quam, id aliquam ante pharetra a. Nam posuere laoreet justo
 const words = text.split(" ");
 console.log(words.length);
 
+let counter = 0;
+
+for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    if(word == "et"){
+        counter++;
+    }
+}
+
+console.log("Number of 'et': ",counter);
+
 
 //Bonus 2
 const phraseToCheck = "stack cats";
