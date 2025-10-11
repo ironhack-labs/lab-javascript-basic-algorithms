@@ -52,3 +52,21 @@ Aliquam maximus arcu quam, id aliquam ante pharetra a. Nam posuere laoreet justo
 `;
 const words = text.split(" ");
 console.log(words.length);
+
+
+//Bonus 2
+const phraseToCheck = "stack cats";
+
+let sentence = phraseToCheck.replace(/[^a-zA-Z]/g, "");
+let sentenceReversed = "";
+
+for (let i = 0; i < sentence.length; i++){
+    const char = sentence[i];
+    sentenceReversed += char;
+}
+
+if(sentence === sentenceReversed) {
+    console.log("It's a palindrome");
+} else {
+    console.log("It's not a palindrome");
+}
