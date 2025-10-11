@@ -36,7 +36,7 @@ names.sort();
 if (names[0] === "Sergio") {
     console.log(`The driver's name goes first`);
 } else if (names[0] === "Carlos") {
-    console.log(`Yo, the navigator goes first, definetely`);
+    console.log(`Yo, the navigator goes first, definitely`);
 } else {
     console.log(`What?! You both have the same name?`);
 }
@@ -57,7 +57,7 @@ let counter = 0;
 
 for (let i = 0; i < words.length; i++) {
     const word = words[i];
-    if(word == "et"){
+    if(word === "et"){
         counter++;
     }
 }
@@ -71,7 +71,7 @@ const phraseToCheck = "stack cats";
 let sentence = phraseToCheck.replace(/[^a-zA-Z]/g, "");
 let sentenceReversed = "";
 
-for (let i = sentence.length - 1; i > 0; i--){
+for (let i = sentence.length - 1; i >= 0; i--){
     const char = sentence[i];
     sentenceReversed += char;
 }
