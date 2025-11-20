@@ -9,7 +9,7 @@ console.log(`The navigator's name is ${hacker2}`);
 if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 } else if (hacker2.length > hacker1.length) {
-    console.log(`The driver has the longest name, it has ${hacker2.length} characters.`);
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 } else if (hacker1.length === hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters!.`);
 }
@@ -34,8 +34,8 @@ for(let i=hacker2.length - 1; i >= 0; i--) {
 console.log(reversedWord);
 
 3.3
-const driver = hacker1[0].toLowerCase();
-const navigator = hacker2[0].toLowerCase();
+const driver = hacker1.toLowerCase();
+const navigator = hacker2.toLowerCase();
 
 if(navigator.localeCompare(driver) === 1) {
     console.log("The driver's name goes first.");
