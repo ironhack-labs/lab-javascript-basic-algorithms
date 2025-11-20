@@ -23,10 +23,10 @@ console.log(isLonger(hacker1, hacker2));
 let resultDriver = "";
 const hacker1Spaced = hacker1.toUpperCase().split("");
 //console.log(hacker1Spaced)
-for (let i = hacker1Spaced.length - 1; i >= 0; i--) {
+for (let i = 0; i < hacker1Spaced.length; i++) {
   resultDriver += `${hacker1Spaced[i]} `;
 }
-console.log(resultDriver);
+console.log(resultDriver.trim()); //.trim() foi mencionado na aula, mas não estudei ainda. melhor solução.
 
 //------3.2-------
 let hacker2Mirror = "";
@@ -38,12 +38,23 @@ console.log(hacker2Mirror);
 
 //------3.3-------
 
-if (hacker1 < hacker2) {
-  console.log(`The driver's name goes first.`);
-} else if (hacker1 > hacker2) {
-  console.log(`Yo, the navigator goes first, definitely.`);
-} else {
-  console.log(`What?! You both have the same name?`);
+///////////the way that i did.
+// if (hacker1.toLocaleLowerCase() < hacker2.toLocaleLowerCase) {
+//   console.log(`The driver's name goes first.`);
+// } else if (hacker1.toLocaleLowerCase() > hacker2.toLocaleLowerCase()) {
+//   console.log(`Yo, the navigator goes first, definitely.`);
+// } else {
+//   console.log(`What?! You both have the same name?`);
+// }
+
+//////////the corection
+const newLecicalName = hacker2.localeCompare(hacker1)
+  if (newLecicalName === -1)  {
+console.log(`Yo, the navigator goes first, definitely.`);
+  } else if (newLecicalName === 1)  {
+ console.log(`The driver's name goes first.`);
+} else  if (newLecicalName === 0){
+   console.log(`What?! You both have the same name?`);
 }
 
 /************BONUS 01*******************/
