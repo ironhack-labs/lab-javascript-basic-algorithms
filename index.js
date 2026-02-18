@@ -80,7 +80,7 @@ for (let i = 0; i < phraseToCheck.length; i++) {
   let derecho = "";
   derecho += phraseToCheck[i];
   let derechoSinEspacios = derecho.replaceAll(" ", "");
-  resultDerecho += derechoSinEspacios;
+  resultDerecho += derechoSinEspacios.toLocaleLowerCase();
 }
 console.log(resultDerecho);
 
@@ -88,7 +88,7 @@ for (i = phraseToCheck.length - 1; i >= 0; i--) {
   let reves = "";
   reves += phraseToCheck[i];
   let revesSinEspacios = reves.replaceAll(" ", "");
-  resultReves += revesSinEspacios;
+  resultReves += revesSinEspacios.toLowerCase();
 }
 
 console.log(resultReves);
