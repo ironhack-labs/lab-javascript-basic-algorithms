@@ -62,6 +62,13 @@ for (let j = hacker2.length-1; j >= 0; j--){
 }
 console.log(reverseName);
 
+if (hacker1 > hacker2) {
+  console.log("Yo, the navigator goes first, definitely.");
+} else if (hacker1 < hacker2) {
+  console.log("The driver's name goes first.");
+} else {
+  console.log("What?! You both have the same name?");
+}
 
 /*
 Bonus Time!
