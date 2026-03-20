@@ -1,6 +1,6 @@
 // Iteration 1: Names and Input
 
-let hacker1 = "Ramona"; 
+let hacker1 = "Antonio"; 
 
 console.log("The driver's name is " + hacker1)
 
@@ -29,15 +29,32 @@ for ( i = hacker1.length - 1; i > -1; i--) {
     console.log(hacker1[i]);
 }
 
-let lexicographicOrder = hacker1.localeCompare(hacker2);
 
-if (lexicographicOrder > 0) {
-    console.log("The driver's name goes first.")
-} else if (lexicographicOrder < 0) {
-    console.log("Yo, the navigator goes first, definitely.") 
-} else {
-    console.log("What?! You both have the same name?")
-}
+let compareH1H2 = 0;
+
+let hacker1Compare = hacker1.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+let hacker2Compare = hacker2.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+
+for (i = 0; i <= hacker1Compare.length && i <= hacker2Compare.length; i++) {
+    if (hacker1Compare[i] < hacker2Compare[i]) {
+        compareH1H2 += 1; break;
+    } else if (hacker2Compare[i] < hacker1Compare[i]) {
+        compareH1H2 -= 1; break;
+    } else if (hacker1Compare[i] == hacker2Compare[i]) {
+        continue
+    }
+    }
+
+    if (compareH1H2 == 1) {
+        console.log("The driver's name goes first.")
+    } else if (compareH1H2 == -1) {
+    console.log("Yo, the navigator goes first, definitely.")   
+    } else {
+       console.log("What?! You both have the same name?")     
+    }
+
+
 
 
 
