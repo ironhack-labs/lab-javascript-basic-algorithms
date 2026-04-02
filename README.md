@@ -15,7 +15,7 @@
 
   This exercise allows you to practice and apply the concepts and techniques taught in class. 
 
-  Upon completion of this exercise, you will be able to:
+  Upon completion of this exercise, you will be able to: 
 
   - Run JavaScript code from your IDE, using a local server to load it in the browser
   - Declare variables using `const` and `let` keywords and use them to store values.
