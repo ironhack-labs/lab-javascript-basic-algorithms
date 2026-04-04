@@ -115,7 +115,7 @@ prasesArray.forEach(element => {
 
     // check if the filtered phrase is a palindrome
     let isPalindrome = true;
-    for (let i=0; i < prasesArray.length /2; i++) {
+    for (let i=0; i < filteredPhrase.length /2; i++) {
         if (filteredPhrase[i] !== filteredPhrase[filteredPhrase.length - 1 - i]) {
             isPalindrome = false;
             break;
