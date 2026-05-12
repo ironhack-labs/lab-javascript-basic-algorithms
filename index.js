@@ -16,7 +16,7 @@ if (hacker1.length > hacker2.length) {
     console.log ("Wow, you both have equally long names, ") + hacker1.length + " characters!";
 }
 
-// Iteration 3: Loops
+// Iteration 3: Loops fhjdesk
 let driverUpper = hacker1.toUpperCase();
 let result= " ";
 
