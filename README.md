@@ -125,6 +125,7 @@ We hope you enjoy it! :blue_heart:
 
   3.1 Print the characters of the driver's name, separated by space, and [in capital letters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), i.e., `"J O H N"`.
 
+ 
   3.2 Print all the characters of the navigator's name in reverse order, i.e., `"nhoJ"`.
 
   3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
