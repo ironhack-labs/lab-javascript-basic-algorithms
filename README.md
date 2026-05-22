@@ -7,7 +7,9 @@
 ![lab-js-basic-algorithms-code-collaboration-gif](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/lab-js-basic-algorithms-code-collaboration-gif.gif)
 
 <br>
+## Console Output
 
+![Result](./images/result.png)
 <details>
   <summary>
    <h2>Learning Goals</h2>
