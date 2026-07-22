@@ -129,7 +129,7 @@ for (let i = 0; i < longText.length; i++) {
     }
 
     // Manually increase i, because we know how long the word was.
-    i += j;
+    i += j - 1;
   }
 }
 
@@ -142,6 +142,7 @@ let phraseWithOnlyLetters = "";
 
 // Add only letters to 'phraseWithOnlyLetters'
 for (let i = 0; i < phraseToCheck.length; i++) {
+  // In case it can be converted to upper case or lower case, we can be sure it's a letter
   if (phraseToCheck[i].toLocaleLowerCase() !== phraseToCheck[i].toUpperCase()) {
     phraseWithOnlyLetters += phraseToCheck[i].toLowerCase();
   }
@@ -155,6 +156,7 @@ for (let i = 0; i < phraseWithOnlyLetters.length; i++) {
     phraseWithOnlyLetters[phraseWithOnlyLetters.length - i - 1]
   ) {
     isPalindrome = false;
+    break;
   }
 }
 
