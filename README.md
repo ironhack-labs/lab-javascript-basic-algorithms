@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | JS Basic Algorithms
+# LAB | Algoritmos básicos de JS
 
 <br>
 
@@ -10,71 +10,71 @@
 
 <details>
   <summary>
-   <h2>Learning Goals</h2>
+   <h2>Objetivos de aprendizaje</h2>
   </summary>
 
-  This exercise allows you to practice and apply the concepts and techniques taught in class. 
+  Este ejercicio te permitirá practicar y aplicar los conceptos y las técnicas que se enseñaron en clase.
 
-  Upon completion of this exercise, you will be able to:
+  Al completar este ejercicio, podrás:
 
-  - Run JavaScript code from your IDE, using a local server to load it in the browser
-  - Declare variables using `const` and `let` keywords and use them to store values.
-  - Assign values to variables using assignment operators (`=` , `+=` , `-=` , etc.).
-  - Use conditional statements (`if`, `else if`, `else`) and logical operators (AND, OR, NOT) to control the flow of the program.
-  - Access and compare string characters, substrings and length.
-  - Manipulate strings using basic string methods and proper (`toUpperCase()`, `toLowerCase()`, etc.).
-  - Compare values using the comparison operators (`<` , `>` , `<=` , `>=` , `===`).
-  - Use `for` or `while` loops to iterate over strings in normal and reverse order.
+  - Ejecutar código JavaScript desde tu IDE y usar un servidor local para cargarlo en el navegador.
+  - Declarar variables con las palabras clave `const` y `let` y usarlas para almacenar valores.
+  - Asignar valores a variables mediante operadores de asignación (`=`, `+=`, `-=`, etc.).
+  - Usar sentencias condicionales (`if`, `else if`, `else`) y operadores lógicos (AND, OR, NOT) para controlar el flujo del programa.
+  - Acceder a caracteres y subcadenas, y consultar y comparar la longitud de cadenas.
+  - Manipular cadenas con métodos básicos como `toUpperCase()` y `toLowerCase()`.
+  - Comparar valores con operadores de comparación (`<`, `>`, `<=`, `>=`, `===`).
+  - Usar bucles `for` o `while` para recorrer cadenas en orden normal e inverso.
 
   <br>
   <hr> 
 
 </details>
 
-## Introduction
+## Introducción
 
-Welcome to your first JavaScript lab at Ironhack!
+¡Te damos la bienvenida a tu primer laboratorio de JavaScript en Ironhack!
 
-This exercise aims to familiarize you with and allow you to practice the primitive data types and basic JavaScript concepts, which we have covered so far. Feel free to reference lesson and pre-work materials, and don't limit yourself; be curious and use Google to explore multiple solutions.
+El objetivo de este ejercicio es que te familiarices con los tipos de datos primitivos y los conceptos básicos de JavaScript que hemos visto hasta ahora, y que puedas ponerlos en práctica. Consulta los materiales de las clases y del trabajo previo cuando lo necesites; no te limites: sé curioso y explora distintas soluciones en Google.
 
-You will be working with a partner on this lab, practicing **pair-programming**. During the exercise, you should work together on one computer or code editor and take turns writting the code with your partner. One person will act as the **driver** and the other will be the **navigator**. The driver is the one writing the code and the navigator is the one reviewing the code and guiding the driver.
+Trabajarás con un compañero o compañera en este laboratorio, practicando la **programación en pareja**. Durante el ejercicio, trabajarán juntos en un mismo ordenador o editor de código y se turnarán para escribir el código. Una persona será quien **conduce** y la otra quien **navega**. Quien conduce escribe el código, mientras que quien navega lo revisa y guía a su compañero o compañera.
 
-You should switch roles every 15 minutes or after completing each iteration, to give both of you a chance to write code and practice discussing problems and solutions.
+Cambien de rol cada 15 minutos o al completar cada iteración, para que ambos tengan la oportunidad de escribir código y practicar cómo conversar sobre problemas y soluciones.
 
-Ready to start?
-
-<br>
-
-## Getting Started
-For this exercise, we will use VS Code and the Live Server extension to run the JavaScript code. To do it, follow these steps:
-
-
-
-- Fork this repo
-
-  
-
-- Clone it to your machine
-
-  
-
-- Open the project folder in VS Code
-
-  
-
-- Once in VS Code, open the file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension. To do this, right-click on the `index.html` file and select **Open with Live Server**.
-
-  
-
-- A new browser window will open with the `index.html` file loaded. You can now start working on the exercise.
+¿Listos para empezar?
 
 <br>
 
+## Primeros pasos
+Para este ejercicio, usaremos VS Code y la extensión Live Server para ejecutar el código JavaScript. Sigue estos pasos:
 
 
-## Submission
 
-- Upon completion, run the following commands:
+- Crea un *fork* de este repositorio.
+
+  
+
+- Clónalo en tu ordenador.
+
+  
+
+- Abre la carpeta del proyecto en VS Code.
+
+  
+
+- Una vez en VS Code, abre el archivo con la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). Para hacerlo, haz clic derecho en el archivo `index.html` y selecciona **Open with Live Server**.
+
+  
+
+- Se abrirá una nueva ventana del navegador con el archivo `index.html`. Ya puedes empezar a trabajar en el ejercicio.
+
+<br>
+
+
+
+## Entrega
+
+- Cuando termines, ejecuta los siguientes comandos:
 
 ```bash
 git add .
@@ -82,70 +82,70 @@ git commit -m "Solved lab"
 git push origin master
 ```
 
-- Create a Pull Request and submit your assignment.
+- Crea un *pull request* para entregar tu trabajo.
 
 <br>
 
-*At Ironhack, we use Pull Requests (PR) to submit lab assignments and verify student's work. After completing all the mandatory iterations, you should commit your code and create a Pull Request. If you can't finish a part of an iteration or still haven't completed all the iterations or the bonuses, it's okay; you should still submit the Pull Request before the start of the class on the next day.*<br>
+*En Ironhack usamos las solicitudes de incorporación de cambios (PR) para entregar los laboratorios y revisar el trabajo del alumnado. Cuando hayas completado todas las iteraciones obligatorias, confirma tus cambios y crea una solicitud de incorporación de cambios. Si no puedes terminar alguna parte de una iteración, o aún no has completado todas las iteraciones o los retos adicionales, no pasa nada: de todas formas, entrega la solicitud antes de que empiece la clase del día siguiente.*<br>
 
-*Once you make a PR, any other time you push the changes (following the previous three steps), your change will appear automatically on the PR, allowing the teaching staff to verify your submission.*
-
-<br>
-
-
-
-## Instructions
-
-You should do all your work in the `index.js` file. The file is already linked to the `index.html` file, so you can open the `index.html` file in the browser and see the results of your work in the console.
+*Una vez creado el PR, cada vez que subas cambios (siguiendo los tres pasos anteriores), estos aparecerán automáticamente en el PR para que el equipo docente pueda revisar tu entrega.*
 
 <br>
 
-Before you start writing any code, make sure to carefully read the instructions provided for each iteration and understand what you are asked to do.
 
-We hope you enjoy it! :blue_heart:
+
+## Instrucciones
+
+Debes hacer todo el trabajo en el archivo `index.js`. Este archivo ya está vinculado a `index.html`, así que puedes abrir `index.html` en el navegador y ver los resultados en la consola.
 
 <br>
 
-### Iteration 1: Names and Input
+Antes de empezar a escribir código, lee atentamente las instrucciones de cada iteración y asegúrate de entender qué tienes que hacer.
 
-  1.1 Create a variable `hacker1` with the driver's name. <br>
-  1.2 Print `"The driver's name is XXXX"`.<br>
-  1.3 Create a variable `hacker2` with the navigator's name.<br>
-  1.4 Print `"The navigator's name is YYYY"`.
+¡Esperamos que lo disfrutes! :blue_heart:
 
-### Iteration 2: Conditionals
+<br>
 
-  2.1. Depending on which name [is longer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), print:
+### Iteración 1: Nombres y entrada
+
+  1.1 Crea una variable `hacker1` con el nombre de quien conduce. <br>
+  1.2 Muestra `"El nombre de quien conduce es XXXX"`.<br>
+  1.3 Crea una variable `hacker2` con el nombre de quien navega.<br>
+  1.4 Muestra `"El nombre de quien navega es YYYY"`.
+
+### Iteración 2: Condicionales
+
+  2.1. Según qué nombre [sea más largo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length), muestra:
   <br>
-    - `The driver has the longest name, it has XX characters.` or <br>
-    - `It seems that the navigator has the longest name, it has XX characters.` or <br>
-    - `Wow, you both have equally long names, XX characters!`.
+    - `El nombre de quien conduce es el más largo: tiene XX caracteres.` o <br>
+    - `Parece que el nombre de quien navega es el más largo: tiene XX caracteres.` o <br>
+    - `¡Vaya! Los dos nombres tienen la misma longitud: XX caracteres.`
 
-### Iteration 3: Loops
+### Iteración 3: Bucles
 
-  3.1 Print the characters of the driver's name, separated by space, and [in capital letters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), i.e., `"J O H N"`.
+  3.1 Muestra los caracteres del nombre de quien conduce, separados por espacios y [en mayúsculas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase); por ejemplo, `"J O H N"`.
 
-  3.2 Print all the characters of the navigator's name in reverse order, i.e., `"nhoJ"`.
+  3.2 Muestra todos los caracteres del nombre de quien navega en orden inverso; por ejemplo, `"nhoJ"`.
 
-  3.3 Depending on the [lexicographic order](https://en.wikipedia.org/wiki/Lexicographical_order) of the strings, print: <br>
+  3.3 Según el [orden lexicográfico](https://en.wikipedia.org/wiki/Lexicographical_order) de las cadenas, muestra: <br>
 
-- `The driver's name goes first.` <br>
-- `Yo, the navigator goes first, definitely.` <br>
-- `What?! You both have the same name?`
+- `El nombre de quien conduce va primero.` <br>
+- `¡Oye, el nombre de quien navega va primero, sin duda!` <br>
+- `¿Qué? ¿Los dos tienen el mismo nombre?`
 
-### Bonus Time!
+### ¡Hora de los retos adicionales!
 
-#### Bonus 1:
+#### Reto adicional 1:
 
-Go to the [lorem ipsum generator](http://www.lipsum.com/) website and:
+Ve al sitio web del [generador de Lorem Ipsum](http://www.lipsum.com/) y:
 
-  - Generate 3 paragraphs. Store the text in a new string variable named `longText`.
-  - Make your program count the number of words in the string.
-  - Make your program count the number of times the Latin word [`et`](https://en.wiktionary.org/wiki/et#Latin) appears.
+  - Genera 3 párrafos. Guarda el texto en una nueva variable de tipo cadena llamada `longText`.
+  - Haz que tu programa cuente el número de palabras de la cadena.
+  - Haz que tu programa cuente cuántas veces aparece la palabra latina [`et`](https://en.wiktionary.org/wiki/et#Latin).
 
-#### Bonus 2:
+#### Reto adicional 2:
 
-Create a new variable, `phraseToCheck`, containing some string value. Write a code to check if the value assigned to this variable is a [Palindrome](https://en.wikipedia.org/wiki/Palindrome). Here are some examples of palindromes: 
+Crea una nueva variable llamada `phraseToCheck` que contenga una cadena. Escribe código para comprobar si el valor asignado a esta variable es un [palíndromo](https://en.wikipedia.org/wiki/Palindrome). Aquí tienes algunos ejemplos:
 
   - "A man, a plan, a canal, Panama!"
   - "Amor, Roma"
@@ -156,57 +156,57 @@ Create a new variable, `phraseToCheck`, containing some string value. Write a co
   - "put it up"
   - "Was it a car or a cat I saw?" and "No 'x' in Nixon".
 
-  __IMPORTANT__: If you use Google to help you to find a solution to this iteration, you might run into some advanced solutions that use string or array methods (such as _join()_, _reverse()_, etc.). However, we want you to apply your current knowledge and try to come up with a solution by just using the `for` loop and `if-else` statements with some `break` and `continue`.
+  __IMPORTANTE__: Si buscas una solución para esta iteración en Google, puede que encuentres soluciones avanzadas que usan métodos de cadenas o arreglos (como _join()_, _reverse()_, etc.). Sin embargo, queremos que apliques lo que sabes hasta ahora e intentes resolverlo usando únicamente un bucle `for`, sentencias `if-else` y algunas instrucciones `break` y `continue`.
 
-__Happy coding!__ :heart:
+__¡A programar!__ :heart:
 
-## Extra Resources
+## Recursos adicionales
 
-- [String - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+- [Cadenas - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [if - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 - [while - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 - [for - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 
 <br>
 
-## FAQs
+## Preguntas frecuentes
 
 <br>
 
 <details>
-  <summary>I am stuck in the exercise and don't know how to solve the problem or where to start.</summary>
+  <summary>Me he quedado atascado en el ejercicio y no sé cómo resolver el problema ni por dónde empezar.</summary>
   <br>
 
-  If you are stuck in your code and don't know how to solve the problem or where to start, you should take a step back and try to form a clear question about the specific issue you are facing. This will help you narrow down the problem and come up with potential solutions.
+  Si te has quedado atascado con el código y no sabes cómo resolver el problema ni por dónde empezar, da un paso atrás e intenta formular una pregunta clara sobre el problema concreto. Esto te ayudará a delimitarlo y a encontrar posibles soluciones.
 
-  For example, is it a concept that you don't understand, or are you receiving an error message that you don't know how to fix? It is usually helpful to try to state the problem as clearly as possible, including any error messages you are receiving. This can help you communicate the issue to others and potentially get help from classmates or online resources. 
+  Por ejemplo, ¿hay algún concepto que no entiendes o recibes un mensaje de error que no sabes cómo solucionar? Por lo general, es útil describir el problema con la mayor claridad posible e incluir cualquier mensaje de error. Así podrás explicar la situación a otras personas y quizá recibir ayuda de tus compañeros o de recursos en línea.
 
-  Once you have a clear understanding of the problem, you will be able to start working toward the solution.
+  Cuando tengas claro cuál es el problema, podrás empezar a buscar una solución.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do you find a length of a string in JavaScript?</summary>
+  <summary>¿Cómo se obtiene la longitud de una cadena en JavaScript?</summary>
   <br>
 
-  To find the length of a string, you can use the `length` property. Here is an example:
+  Para obtener la longitud de una cadena, puedes usar la propiedad `length`. Aquí tienes un ejemplo:
 
   ```js
   const str = "Hello, world!"";
   console.log(str.length); // 13
   ```
 
-  The `length` property returns the number of characters in the string, including spaces and special characters.
+  La propiedad `length` devuelve el número de caracteres de la cadena, incluidos los espacios y los caracteres especiales.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do I loop over a string?</summary>
+  <summary>¿Cómo recorro una cadena?</summary>
   <br>
 
-  Here is an example of using a `for` loop to loop over a string:
+  Aquí tienes un ejemplo de cómo recorrer una cadena con un bucle `for`:
 
   ```js
   let str = "ironhack";
@@ -216,21 +216,21 @@ __Happy coding!__ :heart:
   }
   ```
 
-  This code will iterate over each character in the `str` string. The loop will run for as many iterations as there are characters in the string. 
-  On each iteration, the loop will log the current character to the console.
+  Este código recorre cada carácter de la cadena `str`. El bucle se ejecutará tantas veces como caracteres haya en la cadena.
+  En cada iteración, mostrará el carácter actual en la consola.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do I check if a substring exists in a given string?</summary>
+  <summary>¿Cómo compruebo si una cadena contiene una subcadena?</summary>
   <br>
 
-  You can use the `includes()` method to check if a substring exists in a given string. 
+  Puedes usar el método `includes()` para comprobar si una cadena contiene una subcadena.
 
-  This method returns a boolean value  (`true` or `false`) indicating whether the string it is called on includes the substring specified as an argument.
+  Este método devuelve un valor booleano (`true` o `false`) que indica si la cadena contiene la subcadena especificada como argumento.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = "hello world";
@@ -242,9 +242,9 @@ __Happy coding!__ :heart:
 
   <br>
 
-  You can also use the `indexOf()` method, which returns the index of the first occurrence of the substring within the string, or -1 if the substring is not found.
+  También puedes usar el método `indexOf()`, que devuelve el índice de la primera aparición de la subcadena o -1 si no la encuentra.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = "hello world";
@@ -254,18 +254,18 @@ __Happy coding!__ :heart:
   console.log(str.indexOf("bye"));    // -1
   ```
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do I convert a string to capital or lowercase letters?</summary>
+  <summary>¿Cómo convierto una cadena a mayúsculas o minúsculas?</summary>
   <br>
 
-  #### Uppercase
+  #### Mayúsculas
 
-  To convert a string to *uppercase* letters, use the `toUpperCase()` method. The method `toUpperCase()` returns a new string with all the characters in uppercase.
+  Para convertir una cadena a *mayúsculas*, usa el método `toUpperCase()`. Este método devuelve una cadena nueva con todos sus caracteres en mayúsculas.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = "ironhack";
@@ -275,11 +275,11 @@ __Happy coding!__ :heart:
 
   <br>
 
-  #### Lowercase
+  #### Minúsculas
 
-  To convert a string to all *lowercase* letters, you can use the `toLowerCase()` method. This method returns a new string with all the characters in lowercase.
+  Para convertir una cadena a *minúsculas*, puedes usar el método `toLowerCase()`. Este método devuelve una cadena nueva con todos sus caracteres en minúsculas.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = "IRONHACK";
@@ -287,18 +287,18 @@ __Happy coding!__ :heart:
   console.log(str.toLowerCase());  // "ironhack"
   ```
 
-  It's important to note that methods `toUpperCase()` and `toLowerCase()` do not modify the original string. They return a new string that has been converted to the desired case.
+  Ten en cuenta que los métodos `toUpperCase()` y `toLowerCase()` no modifican la cadena original. Devuelven una cadena nueva convertida al tipo de letra deseado.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do I reverse a string?</summary>
+  <summary>¿Cómo invierto una cadena?</summary>
   <br>
 
-  You can use a `for` loop to iterate over the characters of the string and add them to a new string in reverse order.
+  Puedes usar un bucle `for` para recorrer los caracteres de la cadena y añadirlos en orden inverso a una cadena nueva.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = "drawer";
@@ -311,18 +311,18 @@ __Happy coding!__ :heart:
   console.log(reversed);  // "reward"
   ```
 
-  The above example uses a `for` loop to iterate over the characters of the `str` string in reverse order, starting at the last character and ending at the first character. On each iteration, it adds the current character to the `reversed` string.
+  El ejemplo anterior usa un bucle `for` para recorrer los caracteres de `str` en orden inverso, desde el último hasta el primero. En cada iteración, añade el carácter actual a la cadena `reversed`.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>How do I create a multi-line string in JavaScript?</summary>
+  <summary>¿Cómo creo una cadena de varias líneas en JavaScript?</summary>
   <br>
 
-  To create a multi-line string in JavaScript, you must use template literals. Template literals are string literals denoted with backticks (`). They allow you to embed expressions inside string values and create strings that span multiple lines.
+  Para crear una cadena de varias líneas en JavaScript, debes usar plantillas de cadena (*template literals*). Se delimitan con acentos graves (`) y permiten insertar expresiones en cadenas y crear texto que abarque varias líneas.
 
-  Example:
+  Ejemplo:
 
   ```js
   let str = `This is an
@@ -332,31 +332,30 @@ __Happy coding!__ :heart:
   console.log(str);
   ```
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 </details>
 
 <details>
-  <summary>I am unable to push changes to the repository. What should I do?</summary>
+  <summary>No puedo subir cambios al repositorio. ¿Qué debo hacer?</summary>
   <br>
 
-There are a couple of possible reasons why you may be unable to *push* changes to a Git repository:
+Hay varios motivos por los que quizá no puedas hacer *push* de los cambios a un repositorio Git:
 
-1. **You have not committed your changes:** Before you can push your changes to the repository, you need to commit them using the `git commit` command. Make sure you have committed your changes and try pushing again. To do this, run the following terminal commands from the project folder:
+1. **No has confirmado tus cambios:** Antes de subirlos al repositorio, debes confirmarlos con el comando `git commit`. Asegúrate de haberlos confirmado e intenta hacer *push* de nuevo. Para hacerlo, ejecuta los siguientes comandos en la terminal desde la carpeta del proyecto:
   ```bash
   git add .
   git commit -m "Your commit message"
   git push
   ```
-2. **You do not have permission to push to the repository:** If you have cloned the repository directly from the main Ironhack repository without making a *Fork* first, you do not have write access to the repository.
-To check which remote repository you have cloned, run the following terminal command from the project folder:
+2. **No tienes permiso para subir cambios al repositorio:** Si clonaste directamente el repositorio principal de Ironhack sin crear primero un *fork*, no tienes permisos de escritura.
+Para comprobar qué repositorio remoto has clonado, ejecuta este comando en la terminal desde la carpeta del proyecto:
   ```bash
   git remote -v
   ```
-If the link shown is the same as the main Ironhack repository, you will need to fork the repository to your GitHub account first and then clone your fork to your local machine to be able to push the changes.
+Si el enlace que aparece corresponde al repositorio principal de Ironhack, primero tendrás que crear un *fork* en tu cuenta de GitHub y luego clonar ese *fork* en tu ordenador para poder subir los cambios.
 
-**Note**: You should make a copy of your local code to avoid losing it in the process.
+**Nota**: Haz una copia de tu código local para evitar perderlo durante el proceso.
 
-  [Back to top](#faqs)
+  [Volver al principio](#preguntas-frecuentes)
 
 </details>
-
